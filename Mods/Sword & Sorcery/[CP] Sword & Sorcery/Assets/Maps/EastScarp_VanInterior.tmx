@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="13" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="39">
+ <properties>
+  <property name="Music" value="SnS.CirrusTheme"/>
+  <property name="Warp" value="2 7 EastScarp_Village 90 82"/>
+ </properties>
+ <tileset firstgid="1" name="PizzaVanInterior" tilewidth="16" tileheight="16" tilecount="304" columns="19">
+  <image source="PizzaVanInterior.png" width="304" height="256"/>
+ </tileset>
+ <tileset firstgid="305" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="341" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,25,26,0,0,0,0,0,0,
+0,0,0,0,0,44,0,0,0,2720,0,0,0,
+0,0,0,0,0,63,64,65,66,67,68,0,0,
+0,79,80,81,82,83,84,85,86,87,88,88,0,
+0,0,98,0,100,101,102,103,104,105,106,107,108,
+0,0,117,0,1,1,1,1,1,1,1,1,1,
+1,0,0,0,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="15" name="Back2" width="13" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,2720,2721,0,0,
+0,0,0,0,0,138,139,140,0,0,0,0,0,
+0,0,0,0,0,157,158,159,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="Back"/>
+ <layer id="3" name="Buildings" width="13" height="9">
+  <data encoding="csv">
+1,2,3,4,5,6,7,8,9,10,11,12,13,
+20,21,22,23,24,1710,146,27,28,29,30,31,32,
+39,40,41,42,43,3230,165,46,47,48,49,50,51,
+58,59,60,61,62,3255,184,33,190,72,73,69,70,
+77,0,0,0,0,0,0,0,209,34,35,0,89,
+96,97,0,99,0,0,0,0,0,0,0,0,108,
+1,116,0,118,1,1,1,1,1,1,1,1,1,
+1,1,1,1,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="Buildings2" width="13" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,14,0,36,37,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="13" name="Buildings">
+  <object id="36" name="TileData" x="80" y="48" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SpotlessKitchen&quot;"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;FavoriteMug&quot;"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="192" y="48" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;80sRadio&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="13" height="9" visible="0">
+  <data encoding="csv">
+0,313,0,313,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,313,0,0,313,0,0,313,0,
+0,313,0,313,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,313,0,313,0,313,0,0,313,0,0,313,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,313,0,0,0,0,1,1,1,1,1,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="13" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,56,0,0,3205,0,0,152,17,18,0,0,
+0,0,0,0,0,0,0,0,171,53,54,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1,1,1,1,1,1,1,1,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="13" height="9">
+  <data encoding="csv">
+0,0,0,0,141,142,143,144,0,141,142,143,144,
+0,0,0,0,160,161,162,0,0,160,161,162,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,119,120,121,122,123,124,125,126,127,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

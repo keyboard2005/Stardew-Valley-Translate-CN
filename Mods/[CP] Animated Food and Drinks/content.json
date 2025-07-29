@@ -1,0 +1,2308 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "AlgaeSoup": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "ArtichokeDip": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Bacon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BaconCheeseburger": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BakedFish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BeanHotpot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Beer": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BlackberryCobbler": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BlueberryTart": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Bruschetta": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CarpSurprise": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Cheese": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CheeseCauliflower": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Chowder": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Coffee": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Coffee1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Coffee2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CompleteBreakfast": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CowboyDinner": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CrabCakes": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CranberryCandy": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CranberrySauce": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CrispyBass": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "DishOTheSea": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Escargot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FarmersLunch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FiddleheadRisotto": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FishStew": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FishTaco": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FriedCalamari": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FriedEel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FriedEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FriedMushroom": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GlazedHam": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GlazedYams": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GoatCheese": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GreenTea": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "GreenTea1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "GreenTea2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Hashbrowns": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "IceCream": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "JojaCola": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LifeElixir": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LobsterBisque": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LuckyLunch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MagicRockCandy1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MagicRockCandy2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "MapleBar": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Mead": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MeatLoaf": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MinersTreat": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MonteCristo": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Oil": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "OilofGarlic": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Omelet": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "OrangeChicken": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PaleAle": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PaleBroth": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pancakes": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "ParsnipSoup": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PepperPoppers": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pizza1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pizza2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "PlumPudding": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PoppyseedMuffin": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PumpkinPie": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PumpkinSoup": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RabbitAuVin": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RabbitStew": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RhubarbPie": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RoastDuck": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RoastedHazelnuts": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RootsPlatter": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SalmonDinner": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SeafoamPudding": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Spaghetti": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SpicyEel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SteakFajitas": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SteakWithMushrooms": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "StirFry": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "StrangeBun": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Stuffing": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SweetAndSourPork": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TomKhaSoup": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Tortilla": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TripleShotEspresso": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "TripleShotEspresso1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "TripleShotEspresso2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TroutSoup": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TruffleOil": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "VegetableMedley": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "WinterDuck": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Algae Soup",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "AlgaeSoup": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_AlgaeSoup": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 304,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/algaesoup.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Artichoke Dip",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ArtichokeDip": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_ArtichokeDip": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/artichokedip.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bacon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bacon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Bacon": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bacon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bacon Cheeseburger",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BaconCheeseburger": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_BaconCheeseburger": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/baconcheeseburger.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Baked Fish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BakedFish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_BakedFish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bakedfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bean Hotpot",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BeanHotpot": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_BeanHotpot": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/beanhotpot.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Beer",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Beer": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Beer": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 224,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/beer.png}}:0..23@15"
+                }
+            }
+        },
+        {
+            "LogName": "Blackberry Cobbler",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BlackberryCobbler": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_BlackberryCobbler": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blackberrycobbler.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blueberry Tart",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BlueberryTart": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_BlueberryTart": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blueberrytart.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bruschetta",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bruschetta": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Bruschetta": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bruschetta.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Carp Surprise",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CarpSurprise": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CarpSurprise": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/carpsurprise.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cheese",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Cheese": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Cheese": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 272,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cheese.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cheese Cauliflower",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CheeseCauliflower": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CheeseCauliflower": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cheesecauliflower.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Chowder",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Chowder": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Chowder": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/chowder.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Coffee",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Coffee": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Coffee": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/coffee.png}}:0..15@20"
+                }
+            }
+        },
+        {
+            "LogName": "Coffee1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Coffee1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Coffee1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/coffee1.png}}:0..15@20"
+                }
+            }
+        },
+        {
+            "LogName": "Coffee2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Coffee2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Coffee2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/coffee2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Complete Breakfast",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CompleteBreakfast": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CompleteBreakfast": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/completebreakfast.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cowboy Dinner",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CowboyDinner": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CowboyDinner": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cowboydinner.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crab Cakes",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrabCakes": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CrabCakes": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crabcakes.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cranberry Candy",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CranberryCandy": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CranberryCandy": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cranberrycandy.png}}:0..23@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cranberry Sauce",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CranberrySauce": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CranberrySauce": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cranberrysauce.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crispy Bass",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrispyBass": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_CrispyBass": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crispybass.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Dish O The Sea",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "DishOTheSea": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_DishOTheSea": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/dishothesea.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Escargot",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Escargot": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Escargot": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/escargot.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Farmers Lunch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FarmersLunch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FarmersLunch": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/farmerslunch.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fiddlehead Risotto",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FiddleheadRisotto": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FiddleheadRisotto": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fiddleheadrisotto.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fish Stew",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FishStew": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FishStew": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fishstew.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fish Taco",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FishTaco": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FishTaco": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fishtaco.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fried Calamari",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FriedCalamari": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FriedCalamari": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/friedcalamari.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Glazed Ham",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlazedHam": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GlazedHam": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glazedham.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fried Eel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FriedEel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FriedEel": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/friedeel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fried Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FriedEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FriedEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/friedegg.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fried Mushroom",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FriedMushroom": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_FriedMushroom": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/friedmushroom.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Glazed Yams",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlazedYams": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GlazedYams": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glazedyams.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "GoatCheese",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoatCheese": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GoatCheese": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 272,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/goatcheese.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Green Tea",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GreenTea": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GreenTea": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/greentea.png}}:0..19@25"
+                }
+            }
+        },
+        {
+            "LogName": "Green Tea1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GreenTea1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GreenTea1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/greentea1.png}}:0..19@25"
+                }
+            }
+        },
+        {
+            "LogName": "Green Tea2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GreenTea2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_GreenTea2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/greentea2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Hashbrowns",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Hashbrowns": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Hashbrowns": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/hashbrowns.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "IceCream",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "IceCream": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_IceCream": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/icecream.png}}:0..18@20"
+                }
+            }
+        },
+        {
+            "LogName": "Joja Cola",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "JojaCola": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_JojaCola": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/jojacola.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Life Elixir",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LifeElixir": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_LifeElixir": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lifeelixir.png}}:0..3@24"
+                }
+            }
+        },
+        {
+            "LogName": "Lobster Bisque",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LobsterBisque": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_LobsterBisque": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lobsterbisque.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lucky Lunch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LuckyLunch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_LuckyLunch": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/luckylunch.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "MagicRockCandy1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagicRockCandy1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MagicRockCandy1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 176,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/magicrockcandy1.png}}:0..4@25"
+                }
+            }
+        },
+        {
+            "LogName": "MagicRockCandy2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagicRockCandy2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MagicRockCandy2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 176,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/magicrockcandy2.png}}:0..11@30"
+                }
+            }
+        },
+        {
+            "LogName": "Maple Bar",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MapleBar": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MapleBar": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/maplebar.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Mead",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Mead": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Mead": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 304,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/mead.png}}:0..9@10"
+                }
+            }
+        },
+        {
+            "LogName": "Meat Loaf",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MeatLoaf": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MeatLoaf": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/meatloaf.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Miners Treat",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MinersTreat": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MinersTreat": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/minerstreat.png}}:0..11@60"
+                }
+            }
+        },
+        {
+            "LogName": "Monte Cristo",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MonteCristo": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_MonteCristo": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/montecristo.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Oil",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Oil": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Oil": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/oil.png}}:0..11@10"
+                }
+            }
+        },
+        {
+            "LogName": "Oil of Garlic",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "OilofGarlic": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_OilofGarlic": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/oilofgarlic.png}}:0..37@15"
+                }
+            }
+        },
+        {
+            "LogName": "Omelet",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Omelet": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Omelet": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/omelet.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Orange Chicken",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "OrangeChicken": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_OrangeChicken": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/orangechicken.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pale Ale",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PaleAle": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PaleAle": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 192,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/paleale.png}}:0..7@30"
+                }
+            }
+        },
+        {
+            "LogName": "PaleBroth",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PaleBroth": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PaleBroth": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 304,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/palebroth.png}}:0..15@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pancakes",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pancakes": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Pancakes": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pancakes.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Parsnip Soup",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ParsnipSoup": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_ParsnipSoup": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/parsnipsoup.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pepper Poppers",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PepperPoppers": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PepperPoppers": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pepperpoppers.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pizza1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pizza1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Pizza1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pizza1.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pizza2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pizza2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Pizza2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pizza2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "PlumPudding",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PlumPudding": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PlumPudding": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/plumpudding.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Poppyseed Muffin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PoppyseedMuffin": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PoppyseedMuffin": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/poppyseedmuffin.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pumpkin Pie",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PumpkinPie": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PumpkinPie": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pumpkinpie.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Rabbit Au Vin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RabbitAuVin": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RabbitAuVin": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rabbitauvin.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Rabbit Stew",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RabbitStew": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RabbitStew": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rabbitstew.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pumpkin Soup",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PumpkinSoup": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_PumpkinSoup": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pumpkinsoup.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Rhubarb Pie",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RhubarbPie": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RhubarbPie": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rhubarbpie.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Roast Duck",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RoastDuck": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RoastDuck": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/roastduck.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Roasted Hazelnuts",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RoastedHazelnuts": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RoastedHazelnuts": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/roastedhazelnuts.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Roots Platter",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RootsPlatter": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_RootsPlatter": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rootsplatter.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Salmon Dinner",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SalmonDinner": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SalmonDinner": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/salmondinner.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "SeafoamPudding",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SeafoamPudding": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SeafoamPudding": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 176,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seafoampudding.png}}:0..11@20"
+                }
+            }
+        },
+        {
+            "LogName": "Spaghetti",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Spaghetti": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Spaghetti": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/spaghetti.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "SpicyEel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SpicyEel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SpicyEel": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/spicyeel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Steak Fajitas",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SteakFajitas": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SteakFajitas": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/steakfajitas.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Steak With Mushrooms",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SteakWithMushrooms": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SteakWithMushrooms": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/steakwithmushrooms.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Stir Fry",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "StirFry": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_StirFry": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 400,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/stirfry.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Strange Bun",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "StrangeBun": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_StrangeBun": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/strangebun.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Stuffing",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Stuffing": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Stuffing": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/stuffing.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sweet And Sour Pork",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SweetAndSourPork": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_SweetAndSourPork": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sweetandsourpork.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Tom Kha Soup",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TomKhaSoup": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TomKhaSoup": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tomkhasoup.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Tortilla",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Tortilla": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_Tortilla": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tortilla.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Triple Shot Espresso",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TripleShotEspresso": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TripleShotEspresso": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tripleshotespresso.png}}:0..17@23"
+                }
+            }
+        },
+        {
+            "LogName": "Triple Shot Espresso1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TripleShotEspresso1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TripleShotEspresso1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tripleshotespresso1.png}}:0..17@23"
+                }
+            }
+        },
+        {
+            "LogName": "Triple Shot Espresso2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TripleShotEspresso2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TripleShotEspresso2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 160,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tripleshotespresso2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Trout Soup",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TroutSoup": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TroutSoup": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 144,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/troutsoup.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Truffle Oil",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TruffleOil": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_TruffleOil": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 288,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/truffleoil.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Vegetable Medley",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VegetableMedley": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_VegetableMedley": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 128,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/vegetablemedley.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Winter Duck",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WinterDuck": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFood_WinterDuck": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 432,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/winterduck.png}}:0..3@20"
+                }
+            }
+        }
+    ]
+}

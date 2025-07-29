@@ -1,0 +1,10 @@
+{
+  "IsModEnabled": true,
+  "IsActionButtonToggleAutoHook": false,
+  "IsAutoHook": false,
+  "IsRemoveAutoHook": false,
+  "IsIgnoreTreasureChests": false,
+  "MinimumCatchesRequired": 0,
+  "PerfectCatchChance": 100,
+  "IsPerfectMessageEnabled": true
+}

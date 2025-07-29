@@ -1,0 +1,141 @@
+{
+
+"Changes": [
+
+{ "LogName": "Cirrus's Marriage Dialogue",
+"Action": "editData",
+"Target": "Characters/Dialogue/MarriageDialogueCirrus",
+"Entries":
+
+// GENERIC MARRIAGE DIALOGUE 
+{
+
+    // OTHER   
+    "patio_Cirrus":"{{i18n:Marriage.Cirrus.Patio.{{Random:1++2++3++4++5++6|inputSeparator=++}}}}",
+    "spouseRoom_Cirrus":"{{i18n:Marriage.Cirrus.SpouseRoom.{{Random:1++2++3++4++5|inputSeparator=++}}}}",
+    "funLeave_Cirrus":"{{i18n:Marriage.Cirrus.funLeave.{{Random:1++2++3|inputSeparator=++}}}}",
+    "funReturn_Cirrus":"{{i18n:Marriage.Cirrus.funReturn.{{Random:1++2++3|inputSeparator=++}}}}",
+
+    // SPECIAL DATES - SPRING
+    "spring_Cirrus":"{{i18n:Marriage.Cirrus.Spring}}",
+    "spring_1":"{{i18n:Marriage.Cirrus.Spring1}}",
+	"spring_13":"{{i18n:Marriage.Cirrus.Spring13}}",
+    "spring_23":"{{i18n:Marriage.Cirrus.Spring23}}",
+    "spring_24":"{{i18n:Marriage.Cirrus.Spring24}}",   
+    "spring_28":"{{i18n:Marriage.Cirrus.Spring28}}",
+
+    // SPECIAL DATES - SUMMER
+    "summer_Cirrus":"{{i18n:Marriage.Cirrus.Summer}}",
+    "summer_1":"{{i18n:Marriage.Cirrus.Summer1}}",
+	"summer_11":"{{i18n:Marriage.Cirrus.Summer11}}",
+	"summer_28":"{{i18n:Marriage.Cirrus.Summer28}}",
+
+    // SPECIAL DATES - FALL
+    "fall_Cirrus":"{{i18n:Marriage.Cirrus.Fall}}",
+    "fall_1":"{{i18n:Marriage.Cirrus.Fall1}}",
+    "fall_16":"{{i18n:Marriage.Cirrus.Fall16}}",
+    "fall_25":"{{i18n:Marriage.Cirrus.Fall25}}",
+    "fall_27":"{{i18n:Marriage.Cirrus.Fall27}}",
+
+    // SPECIAL DATES - WINTER 
+    "winter_Cirrus":"{{i18n:Marriage.Cirrus.Winter}}",
+    "winter_1":"{{i18n:Marriage.Cirrus.Winter1}}",
+	"winter_8":"{{i18n:Marriage.Cirrus.Winter8}}",
+    "winter_14":"{{i18n:Marriage.Cirrus.Winter14}}",
+    "winter_25":"{{i18n:Marriage.Cirrus.Winter25}}",
+	"winter_28":"{{i18n:Marriage.Cirrus.Winter28}}",
+    
+    // GENERIC DIALOGUE - RAINY
+    "Rainy_Day_0":"{{i18n:Marriage.Cirrus.Rainy.Day.0}}",
+    "Rainy_Day_1":"{{i18n:Marriage.Cirrus.Rainy.Day.1}}",
+    "Rainy_Day_2":"{{i18n:Marriage.Cirrus.Rainy.Day.2}}",
+    "Rainy_Day_3":"{{i18n:Marriage.Cirrus.Rainy.Day.3}}", 
+    "Rainy_Day_4":"{{i18n:Marriage.Cirrus.Rainy.Day.4}}",
+    "Rainy_Day_5":"{{i18n:Marriage.Cirrus.Rainy.Day.5}}",
+    "Rainy_Day_6":"{{i18n:Marriage.Cirrus.Rainy.Day.6}}",
+    "Rainy_Night_0":"{{i18n:Marriage.Cirrus.Rainy.Night.0}}",
+    "Rainy_Night_1":"{{i18n:Marriage.Cirrus.Rainy.Night.1}}",
+    "Rainy_Night_2":"{{i18n:Marriage.Cirrus.Rainy.Night.2}}",
+    "Rainy_Night_3":"{{i18n:Marriage.Cirrus.Rainy.Night.3}}",
+    "Rainy_Night_4":"{{i18n:Marriage.Cirrus.Rainy.Night.4}}",
+    "Rainy_Night_5":"{{i18n:Marriage.Cirrus.Rainy.Night.5}}",
+    "Rainy_Night_6":"{{i18n:Marriage.Cirrus.Rainy.Night.6}}",
+    "Rainy_Night_Cirrus":"{{i18n:Marriage.Cirrus.Rainy.Night.Cirrus}}",
+
+    // GENERIC DIALOGUE - INDOOR & OUTDOOR
+    "Indoor_Day_0":"{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}}}}}",
+    "Indoor_Day_1":"{{i18n:Marriage.Cirrus.Indoor.Day.1}}",
+    "Indoor_Day_2":"{{i18n:Marriage.Cirrus.Indoor.Day.2}}",
+    "Indoor_Day_3":"{{i18n:Marriage.Cirrus.Indoor.Day.3}}",
+    "Indoor_Day_4":"{{i18n:Marriage.Cirrus.Indoor.Day.4}}",
+    "Indoor_Day_5":"{{i18n:Marriage.Cirrus.Indoor.Day.5}}",
+    "Indoor_Night_0":"{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}}}}}",
+    "Indoor_Night_1":"{{i18n:Marriage.Cirrus.Indoor.Night.1}}",
+    "Indoor_Night_2":"{{i18n:Marriage.Cirrus.Indoor.Night.2}}",
+    "Indoor_Night_3":"{{i18n:Marriage.Cirrus.Indoor.Night.3}}",
+    "Indoor_Night_4":"{{i18n:Marriage.Cirrus.Indoor.Night.4}}",
+    "Indoor_Night_5":"{{i18n:Marriage.Cirrus.Indoor.Night.5}}",
+    "Indoor_Night_6":"{{i18n:Marriage.Cirrus.Indoor.Night.6}}",
+    "Outdoor_0":"{{i18n:Marriage.Cirrus.Outdoor.0}}",
+    "Outdoor_1":"{{i18n:Marriage.Cirrus.Outdoor.1}}",
+    "Outdoor_2":"{{i18n:Marriage.Cirrus.Outdoor.2}}",
+    "Outdoor_3":"{{i18n:Marriage.Cirrus.Outdoor.3}}",
+    "Outdoor_4":"{{i18n:Marriage.Cirrus.Outdoor.4}}",
+    "Outdoor_Cirrus":"{{i18n:Marriage.Cirrus.Outdoor}}",
+
+    // GENERIC DIALOGUE - KIDS 
+    "OneKid_0":"{{i18n:Marriage.Cirrus.OneKid.0}}",
+    "OneKid_1":"{{i18n:Marriage.Cirrus.OneKid.1}}",
+    "OneKid_2":"{{i18n:Marriage.Cirrus.OneKid.2}}",
+    "OneKid_3":"{{i18n:Marriage.Cirrus.OneKid.3}}",
+    "OneKid_4":"{{i18n:Marriage.Cirrus.OneKid.4}}",
+    "TwoKids_0":"{{i18n:Marriage.Cirrus.TwoKids.0}}",
+    "TwoKids_1":"{{i18n:Marriage.Cirrus.TwoKids.1}}",
+    "TwoKids_2":"{{i18n:Marriage.Cirrus.TwoKids.2}}",
+    "TwoKids_3":"{{i18n:Marriage.Cirrus.TwoKids.3}}",
+    "TwoKids_4":"{{i18n:Marriage.Cirrus.TwoKids.4}}",
+
+    // AFFECTION DIALOGUE
+    "Good_0":"{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}}}}}",
+    "Good_1":"{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}}}}}",
+    "Good_2":"{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}}}}}",
+    "Good_3":"{{i18n:Marriage.Cirrus.Good.3}}",
+    "Good_4":"{{i18n:Marriage.Cirrus.Good.4}}",
+    "Good_5":"{{i18n:Marriage.Cirrus.Good.5}}",
+    "Good_6":"{{i18n:Marriage.Cirrus.Good.6}}",
+    "Good_8":"{{i18n:Marriage.Cirrus.Good.7}}",
+    "Good_9":"{{i18n:Marriage.Cirrus.Good.8}}",
+    "Neutral_0":"{{i18n:Marriage.Cirrus.Neutral.0}}",
+    "Neutral_1":"{{i18n:Marriage.Cirrus.Neutral.1}}",
+    "Neutral_2":"{{i18n:Marriage.Cirrus.Neutral.2}}",
+    "Neutral_3":"{{i18n:Marriage.Cirrus.Neutral.3}}",
+    "Neutral_4":"{{i18n:Marriage.Cirrus.Neutral.4}}",
+    "Neutral_5":"{{i18n:Marriage.Cirrus.Neutral.5}}",
+    "Neutral_6":"{{i18n:Marriage.Cirrus.Neutral.6}}",
+    "Neutral_7":"{{i18n:Marriage.Cirrus.Neutral.7}}",
+    "Bad_0":"{{i18n:Marriage.Cirrus.Bad.0}}",
+    "Bad_1":"{{i18n:Marriage.Cirrus.Bad.1}}",
+    "Bad_2":"{{i18n:Marriage.Cirrus.Bad.2}}",
+    "Bad_3":"{{i18n:Marriage.Cirrus.Bad.3}}",
+    "Bad_4":"{{i18n:Marriage.Cirrus.Bad.4}}",
+    "Bad_5":"{{i18n:Marriage.Cirrus.Bad.5}}",
+    "Bad_6":"{{i18n:Marriage.Cirrus.Bad.6}}",
+    "Bad_7":"{{i18n:Marriage.Cirrus.Bad.7}}",
+    "Bad_8":"{{i18n:Marriage.Cirrus.Bad.8}}",
+}
+},
+
+// ENGAGEMENT DIALOGUE
+{
+    "LogName": "Engagement Dialogue",
+    "Action": "EditData",
+    "Target": "Data/EngagementDialogue",
+    "Entries": {
+                    
+    "Cirrus0":"{{i18n:Marriage.Cirrus.Engagement.Cirrus0}}",
+    "Cirrus1":"{{i18n:Marriage.Cirrus.Engagement.Cirrus1}}",
+    "Cirrus2":"{{i18n:Marriage.Cirrus.Engagement.Cirrus2}}"                       
+}
+},
+]
+}

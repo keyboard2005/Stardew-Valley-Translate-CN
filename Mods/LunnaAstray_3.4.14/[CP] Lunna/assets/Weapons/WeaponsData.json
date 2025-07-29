@@ -1,0 +1,81 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "LASV/Weapons",
+            "FromFile": "assets/Weapons/Weapons.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "LASV_Lunna_s_Whip": {
+                    "Name": "Lunna's Whip",
+                    "DisplayName": "{{i18n:LASV_Lunna_s_Whip}}",
+                    "Description": "{{i18n:LASV_Lunna_s_Whip_Description}}",
+                    "MinDamage": 90,
+                    "MaxDamage": 150,
+                    "Knockback": 0.3,
+                    "Speed": 15,
+                    "Precision": 90,
+                    "Defense": 10,
+                    "Type": 3,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": -1,
+                    "CritChance": 0.5,
+                    "CritMultiplier": 2,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "LASV/Weapons",
+                    "SpriteIndex": 0,
+                    "Projectiles": null,
+                    "CustomFields": {}
+                },
+                "LASV_Void_Blessed_Hammer": {
+                    "Name": "Void Blessed Hammer",
+                    "DisplayName": "{{i18n:LASV_Void_Blessed_Hammer}}",
+                    "Description": "{{i18n:LASV_Void_Blessed_Hammer_Description}}",
+                    "MinDamage": 200,
+                    "MaxDamage": 300,
+                    "Knockback": 5,
+                    "Speed": 1,
+                    "Precision": 70,
+                    "Defense": 35,
+                    "Type": 2,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": -1,
+                    "CritChance": 0.1,
+                    "CritMultiplier": 3,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "LASV/Weapons",
+                    "SpriteIndex": 1,
+                    "Projectiles": null,
+                    "CustomFields": {}
+                },
+                "LASV_Void_Blessed_Sword": {
+                    "Name": "Void Blessed Sword",
+                    "DisplayName": "{{i18n:LASV_Void_Blessed_Sword}}",
+                    "Description": "{{i18n:LASV_Void_Blessed_Sword_Description}}",
+                    "MinDamage": 80,
+                    "MaxDamage": 120,
+                    "Knockback": 0.3,
+                    "Speed": 15,
+                    "Precision": 90,
+                    "Defense": 10,
+                    "Type": 3,
+                    "MineBaseLevel": 0,
+                    "MineMinLevel": -1,
+                    "AreaOfEffect": -1,
+                    "CritChance": 0.5,
+                    "CritMultiplier": 2,
+                    "CanBeLostOnDeath": true,
+                    "Texture": "LASV/Weapons",
+                    "SpriteIndex": 2,
+                    "Projectiles": null,
+                    "CustomFields": {}
+                }
+            }
+        }
+    ]
+}

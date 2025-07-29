@@ -1,0 +1,13 @@
+{
+	"Name": "Plain Slime Hutch",
+	"Author": "Sparrow",
+	"Version": "1.1",
+	"UniqueID": "Sparrow.SlimeHutchEdited",
+	"Description": "Makes the inside of the Slime Hutch look like a regular building. Optionally recolours the slime-related craftables and/or the water bowls to no longer be purple.",
+	"UpdateKeys": ["Nexus:13154"],
+	"MinimumApiVersion": "2.9.0",
+	"ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "1.6.0"
+  	 },
+}

@@ -1,0 +1,145 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Tweaked/{{Season}}_Clint_{{BeardVariant}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Clint_Clint",
+            "FromFile": "assets/Portraits/Tweaked/Winter_Clint_{{BeardVariant}}.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Tweaked/Winter_Clint_Outdoors_{{BeardVariant}}.png",
+            "When": {
+                "Season": "Winter",
+                "IsOutdoors": "true"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Tweaked/{{Season}}_Clint_Forge_{{BeardVariant}}.png",
+            "When":{
+                "LocationName": "Blacksmith"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Tweaked/Clint_FlowerDance_{{BeardVariant}}.png",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Temp"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Tweaked/Clint_SpiritsEve.png",
+            "When": {
+                "DayEvent": "spirit's eve",
+                "LocationName": "Temp"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Clint_Beach",
+            "FromFile": "assets/Portraits/Tweaked/Clint_Beach_{{BeardVariant}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Clint",
+            "FromFile": "assets/Characters/Tweaked/Spring_Clint_{{BeardVariant}}.png"
+        },
+        // {
+            // "Action": "Load",
+            // "Target": "Characters/Clint_Winter",
+            // "FromFile": "assets/Characters/Tweaked/Winter_Clint_{{BeardVariant}}.png"
+        // },
+        // {
+        //     "Action": "EditImage",
+        //     "Target": "Characters/Clint",
+        //     "FromFile": "assets/Characters/Tweaked/Winter_Clint_Outdoors_{{BeardVariant}}",
+        //     "When": {
+        //         "Season": "Winter",
+        //         "IsOutdoors": "true"
+        //     },
+        //     "Update": "OnLocationChange"
+        // },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Clint",
+            "FromFile": "assets/Characters/Tweaked/Spring_Clint_Forge_{{BeardVariant}}.png",
+            "When":{
+                "LocationName": "Blacksmith"
+            },
+            "Update": "OnLocationChange"
+        },
+        // {
+        //     "Action": "EditImage",
+        //     "Target": "Characters/Clint",
+        //     "FromFile": "assets/Characters/Tweaked/Clint_FlowerDance_{{BeardVariant}}.png",
+        //     "When": {
+        //         "DayEvent": "flower dance",
+        //         "LocationName": "Temp"
+        //     },
+        //     "Update": "OnLocationChange"
+        // },
+        // {
+        //     "Action": "EditImage",
+        //     "Target": "Characters/Clint",
+        //     "FromFile": "assets/Characters/Tweaked/Clint_SpiritsEve.png",
+        //     "When": {
+        //         "DayEvent": "spirit's eve",
+        //         "LocationName": "Temp"
+        //     },
+        //     "Update": "OnLocationChange"
+        // },
+        {
+            "Action": "Load",
+            "Target": "Characters/Clint_Beach",
+            "FromFile": "assets/Characters/Tweaked/Clint_Beach_{{BeardVariant}}.png"
+        },
+        {
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Characters/Tweaked/ClothesTherapyCharacters_Top_{{BeardVariant}}.png",
+			"ToArea": {
+				"X": 0,
+				"Y": 96,
+				"Width": 64,
+				"Height": 32
+			}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Characters/Tweaked/ClothesTherapyCharacters_Bottom_{{BeardVariant}}.png",
+			"ToArea": {
+				"X": 32,
+				"Y": 160,
+				"Width": 32,
+				"Height": 32
+			}
+		},
+        {
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/LooseSprites/emojis_{{BeardVariant}}.png",
+            "ToArea": {
+				"X": 54,
+				"Y": 117,
+				"Width": 9,
+				"Height": 9
+			}
+		}
+    ]
+}

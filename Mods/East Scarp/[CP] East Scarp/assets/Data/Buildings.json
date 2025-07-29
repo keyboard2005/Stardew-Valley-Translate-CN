@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {
+            "LogName": "Obelisk Texture Load",
+            "Action": "Load",
+            "Target": "Buildings/Scarp_Obelisk",
+            "FromFile": "assets/Buildings/eastscarpeobelisk_{{ObeliskOptions}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+                "Scarp Obelisk": {
+                    "Name": "{{i18n:obelisk.name}}",
+                    "Description": "{{i18n:obelisk.desc}}",
+                    "Texture": "Buildings\\Scarp_Obelisk",
+                    "Size": {
+                        "X": 3,
+                        "Y": 2
+                    },
+                    "Builder": "Wizard",
+                    "BuildDays": 0,
+                    "BuildCost": 500000,
+                    "BuildMaterials": [
+                        {
+                            "ItemId": "(O)337",
+                            "Amount": 5
+                        },
+                        {
+                            "ItemId": "(O)296",
+                            "Amount": 10
+                        },
+                        {
+                            "ItemId": "(O)393",
+                            "Amount": 10
+                        }
+                    ],
+                    "MagicalConstruction": true,
+                    "DefaultAction": "ObeliskWarp EastScarp_Village 24 97 false",
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+                "Scarp Obelisk": {
+                    "Name": "{{i18n:obelisk.name}}",
+                    "Description": "{{i18n:obelisk.desc}}",
+                    "Texture": "Buildings\\Scarp_Obelisk",
+                    "DrawShadow": "false",
+                    "FadeWhenBehind": "false",
+                    "Size": {
+                        "X": 1,
+                        "Y": 1
+                    },
+                    "Builder": "Wizard",
+                    "BuildDays": 0,
+                    "BuildCost": 500000,
+                    "BuildMaterials": [
+                        {
+                            "ItemId": "(O)337",
+                            "Amount": 5
+                        },
+                        {
+                            "ItemId": "(O)296",
+                            "Amount": 10
+                        },
+                        {
+                            "ItemId": "(O)393",
+                            "Amount": 10
+                        }
+                    ],
+                    "MagicalConstruction": true,
+                    "DefaultAction": "ObeliskWarp EastScarp_Village 24 97 false"
+                }
+            },
+            "When": {
+                "ObeliskOptions": "Juffuffles"
+            }			
+        },		
+    ]
+}

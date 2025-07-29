@@ -1,0 +1,167 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "LASV_OddiShop": {
+                    "Owners": [
+                        {
+                            "Name": "Oddi",
+                            "Dialogues": [
+                                {
+                                    "Id": "LASV_OddiShop_Default",
+                                    "Dialogue": "{{i18n:OddiShop}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "LASV_Umuwi_Rambutan_Sapling",
+                            "ItemId": "(O)LASV_Umuwi_Rambutan_Sapling",
+                            "Price": 7000
+                        },
+                        {
+                            "Id": "LASV_Umuwi_Lanzones_Sapling",
+                            "ItemId": "(O)LASV_Umuwi_Lanzones_Sapling",
+                            "Price": 5000
+                        },
+                        {
+                            "Id": "LASV_Eggroot_Seeds",
+                            "ItemId": "(O)LASV_Eggroot_Seeds",
+                            "Price": 180
+                        },
+                        {
+                            "Id": "LASV_Ghost_Cabbage_Seeds",
+                            "ItemId": "(O)LASV_Ghost_Cabbage_Seeds",
+                            "Price": 100
+                        },
+                        {
+                            "Id": "LASV_Pale_Berry_Seeds",
+                            "ItemId": "(O)LASV_Pale_Berry_Seeds",
+                            "Price": 110
+                        },
+                        {
+                            "Id": "LASV_Sour_Potato_Seeds",
+                            "ItemId": "(O)LASV_Sour_Potato_Seeds",
+                            "Price": 70
+                        },
+                        {
+                            "Id": "LASV_Thorn_Pepper_Seeds",
+                            "ItemId": "(O)LASV_Thorn_Pepper_Seeds",
+                            "Price": 100
+                        },
+                        {
+                            "Id": "LASV_Rare_Seed",
+                            "ItemId": "(O)347",
+                            "Price": 1500
+                        },
+                        {
+                            "Id": "LASV_Void_Egg",
+                            "ItemId": "(O)305",
+                            "Price": 480
+                        },
+                        {
+                            "Id": "LASV_Pale_Berry_Pies (Recipe)",
+                            "ItemId": "(O)LASV_Pale_Berry_Pies",
+                            "Price": 5000,
+                            "IsRecipe": true,
+                            "Condition": "PLAYER_HEARTS Current Bianka 8"
+                        },
+                        {
+                            "Id": "LASV_Sour_Hashbrown (Recipe)",
+                            "ItemId": "(O)LASV_Sour_Hashbrown",
+                            "Price": 5000,
+                            "IsRecipe": true,
+                            "Condition": "PLAYER_HEARTS Current Bianka 8"
+                        },
+                        {
+                            "Id": "LASV_Umuwi_Mash (Recipe)",
+                            "ItemId": "(O)LASV_Umuwi_Mash",
+                            "Price": 5000,
+                            "IsRecipe": true,
+                            "Condition": "PLAYER_HEARTS Current Raphael 8"
+                        },
+                        {
+                            "Id": "LASV_Umuwi_Salad(Recipe)",
+                            "ItemId": "(O)LASV_Umuwi_Salad",
+                            "Price": 5000,
+                            "IsRecipe": true,
+                            "Condition": "PLAYER_HEARTS Current Raphael 8"
+                        }
+                    ]
+                },
+                "LASV_RaphShop": {
+                    "Owners": [
+                        {
+                            "Name": "Raphael",
+                            "Dialogues": [
+                                {
+                                    "Id": "LASV_RaphShop_Default",
+                                    "Dialogue": "{{i18n:RaphShop}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "LASV_Void_Blessed_Hammer",
+                            "ItemId": "LASV_Void_Blessed_Hammer",
+                            "Price": 150000
+                        },
+                        {
+                            "Id": "LASV_Void_Blessed_Sword",
+                            "ItemId": "LASV_Void_Blessed_Sword",
+                            "Price": 150000
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add LASV Spouse Portrait Frames to Travelling Merchant",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                "LASV_LunnaPortrait.ShopItem": {
+                    "Id": "LASV_LunnaPortrait.ShopItem",
+                    "ItemId": "(F)LASV_LunnaPortrait",
+                    "TradeItemAmount": 1,
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Lunna 14"
+                },
+                "LASV_BiankaPortrait.ShopItem": {
+                    "Id": "LASV_BiankaPortrait.ShopItem",
+                    "ItemId": "(F)LASV_BiankaPortrait",
+                    "TradeItemAmount": 1,
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Bianka 14"
+                },
+                "LASV_RaphaelPortrait.ShopItem": {
+                    "Id": "LASV_RaphaelPortrait.ShopItem",
+                    "ItemId": "(F)LASV_RaphaelPortrait",
+                    "TradeItemAmount": 1,
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Raphael 14"
+                }
+            }
+        }
+    ]
+}

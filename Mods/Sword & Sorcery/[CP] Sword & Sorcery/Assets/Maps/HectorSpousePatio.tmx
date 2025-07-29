@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="6">
+ <tileset firstgid="1" name="Desty_Hector_Tilesheet" tilewidth="16" tileheight="16" tilecount="420" columns="15">
+  <image source="Desty_Hector_Tilesheet.png" width="240" height="448"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="4" height="4">
+  <properties>
+   <property name="Warp" value="1 2 EastScarp_DruidTower 6 28 2 2 EastScarp_DruidTower 6 28 3 2 EastScarp_DruidTower 6 28"/>
+  </properties>
+  <data encoding="csv">
+0,0,278,0,
+0,0,0,0,
+0,0,0,0,
+0,325,326,327
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,295,296,297,
+34,310,311,312,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="Buildings">
+  <object id="3" name="TileData" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 6 28 EastScarp_DruidTower"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 6 28 EastScarp_DruidTower"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="32" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 6 28 EastScarp_DruidTower"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="4" height="4">
+  <data encoding="csv">
+4,280,281,282,
+19,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front" offsetx="-32" offsety="0"/>
+ <layer id="9" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

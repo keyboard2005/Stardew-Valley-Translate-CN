@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="1" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="2">
+ <tileset firstgid="1" name="z_bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="270" columns="15">
+  <image source="z_bathhouse_tiles.png" width="240" height="288"/>
+ </tileset>
+ <tileset firstgid="271" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <layer id="8" name="Back" width="1" height="4">
+  <data encoding="csv">
+212,
+227,
+0,
+187
+</data>
+ </layer>
+ <layer id="7" name="Buildings" width="1" height="4">
+  <data encoding="csv">
+1560,
+1624,
+242,
+0
+</data>
+ </layer>
+ <layer id="6" name="Front" width="1" height="4">
+  <data encoding="csv">
+0,
+0,
+0,
+0
+</data>
+ </layer>
+ <layer id="1" name="Paths" width="1" height="4">
+  <data encoding="csv">
+0,
+0,
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="4" name="Buildings" visible="0">
+  <object id="1" name="TileData" x="0" y="0" width="16" height="48">
+   <properties>
+    <property name="Action" value="Warp 5 16 Custom_SolariumSpa"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Front"/>
+ <objectgroup id="2" name="Paths"/>
+</map>

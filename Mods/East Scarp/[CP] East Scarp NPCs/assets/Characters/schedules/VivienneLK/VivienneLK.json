@@ -1,0 +1,11 @@
+{
+    "spring": "700 EastScarp_Village 20 64 1/800 EastScarp_Village 30 100 2/1100 EastScarp_Village 54 85 2/1300 EastScarp_Village 47 40 2 viviennelk_write/1500 EastScarp_Village 23 36 0/1800 EastScarp_VetHouse 14 7 0/2200 EastScarp_VetHouse 17 7 3",
+    "Sat": "700 EastScarp_Village 20 64 1/800 EastScarp_Village 30 100 2/1100 EastScarp_Village 55 85 2/1300 EastScarp_Village 47 41 2 viviennelk_write/1500 EastScarp_Village 23 36 0/1800 EastScarp_VetHouse 14 7 0/2200 EastScarp_VetHouse 17 7 3",
+    "Sun_NoVindi": "700 EastScarp_Village 20 64 1/800 EastScarp_Village 30 100 2/950 EastScarp_Village 53 88 2/1300 EastScarp_Village 47 41 2 viviennelk_write/1500 EastScarp_Village 23 36 0/1800 EastScarp_VetHouse 14 7 0/2200 EastScarp_VetHouse 17 7 3",
+    "Sun": "MAIL Eyvind_Vivienne/GOTO Sun_NoVindi/700 EastScarp_Village 20 64 1/800 EastScarp_Village 30 100 2/950 EastScarp_Village 53 88 2/1300 EastScarp_Village 47 40 2 viviennelk_write/1800 EastScarp_Village 23 36 0/2000 EastScarp_VetHouse 14 7 0/2200 EastScarp_VetHouse 17 7 3",
+    "rain": "610 EastScarp_VetHouse 14 7 0/0730 EastScarp_VetHouse 31 16 0/900 EastScarp_VetHouse 26 12 2 viviennelk_write/1400 Saloon 9 22 1/2200 EastScarp_VetHouse 17 7 3",
+    "fall_27": "700 EastScarp_Village 20 64 1/800 EastScarp_Village 30 100 2/a1310 EastScarp_VillageInn 23 26 2 viviennelk_write/1700 EastScarp_VillageInn 16 27 2/2000 Town 15 51 2"
+}
+//Walks the Scarp most mornings, then writes in the afternoons/evenings.
+//Adjustments: Wanders into town to busybody on wednesdays maybe?
+//After reuniting with Eyvind, she and he meet on Sundays. She reads her novels to him and tries to teach him to read too. 

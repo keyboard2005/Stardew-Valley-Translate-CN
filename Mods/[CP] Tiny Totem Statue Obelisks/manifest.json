@@ -1,0 +1,23 @@
+{
+  "Name": "Tiny Totem Statue Obelisks",
+  "Author": "JennaJuffuffles",
+  "Version": "1.2.2",
+  "MinimumApiVersion": "4.0.8",
+  "Description": "Replaces the large obelisks with their much smaller totem statue counterparts",
+  "UniqueID": "jennajuffuffles.obelisk",
+  "UpdateKeys": ["Nexus:23118"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.5.3"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "lemurkat.eastscarpe.cp",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "rafseazz.rsvcp",
+      "IsRequired": false
+    }
+  ]
+}

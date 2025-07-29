@@ -1,0 +1,1116 @@
+{
+  "Changes": [
+  //MAP TILESHEET LOADS
+    //Buildings
+    {
+      "LogName": "Loads Building Tilesheets",
+      "Action": "Load",
+      "Target": "Maps/winter_CoastalGuild, Maps/summer_CoastalGuild, Maps/spring_CoastalGuild, Maps/fall_CoastalGuild, Maps/winter_CoastalGuildUpgrade, Maps/summer_CoastalGuildUpgrade, Maps/spring_CoastalGuildUpgrade, Maps/fall_CoastalGuildUpgrade, Maps/winter_LionsMane, Maps/summer_LionsMane, Maps/spring_LionsMane, Maps/fall_LionsMane, Maps/winter_LionsManeBroken, Maps/summer_LionsManeBroken, Maps/spring_LionsManeBroken, Maps/fall_LionsManeBroken, Maps/winter_MateoTent, Maps/summer_MateoTent, Maps/spring_MateoTent, Maps/fall_MateoTent, Maps/winter_PizzaVan, Maps/summer_PizzaVan, Maps/spring_PizzaVan, Maps/fall_PizzaVan, Maps/winter_z_Hector, Maps/summer_z_Hector, Maps/spring_z_Hector, Maps/fall_z_Hector, Maps/DN.SnS_ESBoat, Maps/DN.SnS_TravelingHouse",
+      "FromFile": "Assets/Tilesheets/Buildings/{{TargetWithoutPath}}.png"
+    },
+    //Caves
+    {
+      "LogName": "Loads Cave Tilesheets",
+      "Action": "Load",
+      "Target": "Maps/DN.SnS_mine_backup, Maps/DN.SnS_mine_lava, Maps/DN.SnS_volcano_dungeon",
+      "FromFile": "Assets/Tilesheets/Caves/{{TargetWithoutPath}}.png"
+    },
+    //Nature
+    {
+      "LogName": "Loads Natural Tilesheets",
+      "Action": "Load",
+      "Target": "Maps/DestyCommission_TreeNormal, Maps/DN.SnS_BigFern, Maps/DN.SnS_CropDecor, Maps/DN.SnS_EastScarp_Forest, Maps/DN.SnS_Water, Maps/EastScarp_Hector, Maps/Nova_WaterFall, Maps/DN.SNS_MountainBackground, Maps/DN.SnS_NightSky",
+      "FromFile": "Assets/Tilesheets/Nature/{{TargetWithoutPath}}.png"
+    },
+    //Tilesets
+    {
+      "LogName": "Loads Tilesets",
+      "Action": "Load",
+      "Target": "Maps/Desty_Hector_Tilesheet, Maps/DN.SnS_Festivals, Maps/DN.SnS_Logophile_Rugs, Maps/DN.SnS_thefrenchdodo-tilesheet-books, Maps/DN.SnS_Underforge, Maps/DN.SnS_VioletMoon_Booths, Maps/LionsMane, Maps/MadDog_Extras, Maps/MateoCustom, Maps/Matts_tent_by_Tiara, Maps/NEACustom, Maps/PizzaVanInterior, Maps/PlanetariumCustomInterior, Maps/roslin_wizard_furniture",
+      "FromFile": "Assets/Tilesheets/Tilesets/{{TargetWithoutPath}}.png"
+    },
+    //Other
+    {
+      "LogName": "Loads Other Tilesheets",
+      "Action": "Load",
+      "Target": "Maps/DN.SnS_Motes, Maps/DN.SnS_PurpleOverlay, Maps/MadDog_PlanetariumScreen",
+      "FromFile": "Assets/Tilesheets/Other/{{TargetWithoutPath}}.png"
+    },
+  //MAP LOADS
+    {
+      "Action": "Load",
+      "Target": "Maps/EastScarp_MateoHome, Maps/EastScarp_CoastalGuild, Maps/EastScarp_DruidTower, Maps/EastScarp_DruidGrove, Maps/EastScarp_RiverStage1, Maps/EastScarp_RiverStage2, Maps/EastScarp_RiverStage3, Maps/EastScarp_RiverStage4, Maps/EastScarp_DateMine, Maps/EastScarp_LavaMine, Maps/EastScarp_IntroMine, Maps/EastScarp_HectorForest, Maps/EastScarp_VanInterior, Maps/EastScarp_LionsMane, Maps/EastScarp_Planetarium, Maps/EastScarp_Underforge, Maps/EastScarp_DeepDarkEntrance, Maps/EastScarp_DeepDarkLv1, Maps/EastScarp_DeepDarkLv2, Maps/EastScarp_DeepDarkLv3, Maps/EastScarp_DeepDarkLv4, Maps/EastScarp_DeepDarkLv5, Maps/EastScarp_DuskspireLair, Maps/SolomonMagicalCavern, Maps/PocketDimension1, Maps/PocketDimension2, Maps/PocketDimension3, Maps/PocketDimension4, Maps/VioletMoon, Maps/VioletMoon_Blank",
+      "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+    },
+    {
+      "LogName": "Mateo's Tent",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_MateoHome": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.CoastalGuild.False}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_MateoHome"
+          },
+          "DefaultArrivalTile": {
+            "X": 4,
+            "Y": 8
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "CoastalGuild",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_CoastalGuild": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.CoastalGuild.True}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_CoastalGuild"
+          },
+          "DefaultArrivalTile": {
+            "X": 10,
+            "Y": 18
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESDruidTower",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DruidTower": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESDruidTower}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DruidTower"
+          },
+          "DefaultArrivalTile": {
+            "X": 6,
+            "Y": 28
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {
+            "ESDruidTowerPond": {
+              "DisplayName": "{{i18n:miscellaneous.mapname.ESDruidTowerPond}}",
+              "Position": null,
+              "CrabPotFishTypes": [],
+              "CrabPotJunkChance": 0.0
+            }
+          },
+          "Fish": [
+            {
+              "Id": "{{ModID}}_GoldieTheBatteryPoweredFish",
+              "ItemId": "{{ModID}}_GoldieTheBatteryPoweredFish",
+              "FishAreaID": "ESDruidTowerPond",
+              "Condition": "LOCATION_Season Here spring summer fall winter",
+              "Precedence": -500
+            }
+          ],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESDruidGrove",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DruidGrove": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESDruidGrove}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DruidGrove"
+          },
+          "DefaultArrivalTile": {
+            "X": 16,
+            "Y": 70
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {
+            "ESDruidGrovePond": {
+              "DisplayName": "{{i18n:miscellaneous.mapname.ESDruidGrovePond}}",
+              "Position": null,
+              "CrabPotFishTypes": [],
+              "CrabPotJunkChance": 0.0
+            }
+          },
+          "Fish": [
+            {
+              "Id": "{{ModID}}_SalmonOfKnowledge",
+              "ItemId": "{{ModID}}_SalmonOfKnowledge",
+              "FishAreaID": "ESDruidGrovePond",
+              "Condition": "LOCATION_Season Here spring summer",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_Fastitocalon",
+              "ItemId": "{{ModID}}_Fastitocalon",
+              "FishAreaID": "ESDruidGrovePond",
+              "Condition": "LOCATION_Season Here spring summer fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_PallidSailfin",
+              "ItemId": "{{ModID}}_PallidSailfin",
+              "FishAreaID": "ESDruidGrovePond",
+              "Condition": "LOCATION_Season Here winter spring",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_GiantDragonfish",
+              "ItemId": "{{ModID}}_GiantDragonfish",
+              "FishAreaID": "ESDruidGrovePond",
+              "Condition": "LOCATION_Season Here fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_FiveLinedConstellationFish",
+              "ItemId": "{{ModID}}_FiveLinedConstellationFish",
+              "FishAreaID": "ESDruidGrovePond",
+              "Condition": "LOCATION_Season Here summer fall",
+              "Precedence": -500
+            }
+          ],
+          "Forage": [
+            {
+              "Chance": 0.7,
+              "Season": "Spring",
+              "Condition": null,
+              "Id": "DruidForage1",
+              "ItemId": "(O)20",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Spring",
+              "Condition": null,
+              "Id": "DruidForage2",
+              "ItemId": "(O)16",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Summer",
+              "Condition": null,
+              "Id": "DruidForage3",
+              "ItemId": "(O)396",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.8,
+              "Season": "Summer",
+              "Condition": null,
+              "Id": "DruidForage4",
+              "ItemId": "(O)402",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.4,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage5",
+              "ItemId": "(O)404",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.4,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage6",
+              "ItemId": "(O)406",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.9,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage7",
+              "ItemId": "(O)408",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.85,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage8",
+              "ItemId": "(O)414",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.9,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage9",
+              "ItemId": "(O)418",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage10",
+              "ItemId": "(O)283",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            }
+          ],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESRiverStage1",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_RiverStage1": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESRiverStage1}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_RiverStage1"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 48
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESRiverStage2",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_RiverStage2": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESRiverStage2}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_RiverStage2"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 48
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESRiverStage3Maps",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_RiverStage3": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESRiverStage3}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_RiverStage3"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 48
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "ESRiverStage4Maps",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_RiverStage4": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.ESRiverStage4}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_RiverStage4"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 48
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "DateMine",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DateMine": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DateMine}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DateMine"
+          },
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 10
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "LavaMine",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_LavaMine": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.LavaMine}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_LavaMine"
+          },
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 10
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "IntroMine",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_IntroMine": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.IntroMine}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_IntroMine"
+          },
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 10
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "HectorForest",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_HectorForest": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.HectorForest}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_HectorForest"
+          },
+          "DefaultArrivalTile": {
+            "X": 21,
+            "Y": 32
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [
+            {
+              "Id": "EastScarp_Fairy_Betta_HectorForest",
+              "ItemId": "(O)EastScarp_Fairy_Betta",
+              "FishAreaID": "HectorForest",
+              "Condition": "LOCATION_Season Here spring summer fall"
+            },
+            {
+              "Id": "(O)698",
+              "ItemId": "(O)698",
+              "Condition": "LOCATION_Season Here spring fall"
+            },
+            {
+              "Id": "(O)699",
+              "ItemId": "(O)699"
+            },
+            {
+              "Season": "Spring",
+              "Id": "(O)129",
+              "ItemId": "(O)129"
+            },
+            {
+              "Season": "Summer",
+              "Id": "(O)137",
+              "ItemId": "(O)137"
+            },
+            {
+              "Season": "Summer",
+              "Id": "(O)148",
+              "ItemId": "(O)148"
+            },
+            {
+              "FishAreaId": "HectorForest",
+              "Id": "(O)136_HectorForest",
+              "ItemId": "(O)136"
+            },
+            {
+              "Season": "fall",
+              "FishAreaId": "HectorForest",
+              "Id": "(O)137_HectorForest",
+              "ItemId": "(O)137"
+            },
+            {
+              "Season": "summer",
+              "FishAreaId": "HectorForest",
+              "Id": "(O)138_HectorForest",
+              "ItemId": "(O)138"
+            },
+            {
+              "Season": "spring",
+              "FishAreaId": "OrchardOcean",
+              "Id": "(O)138_OrchardOcean",
+              "ItemId": "(O)138"
+            },
+            {
+              "Season": "fall",
+              "FishAreaId": "HectorForest",
+              "Id": "(O)139_HectorForest",
+              "ItemId": "(O)139"
+            }
+          ],
+          "Forage": [
+            {
+              "Chance": 0.7,
+              "Season": "Spring",
+              "Condition": null,
+              "Id": "DruidForage1",
+              "ItemId": "(O)20",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Spring",
+              "Condition": null,
+              "Id": "DruidForage2",
+              "ItemId": "(O)16",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Summer",
+              "Condition": null,
+              "Id": "DruidForage3",
+              "ItemId": "(O)396",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.8,
+              "Season": "Summer",
+              "Condition": null,
+              "Id": "DruidForage4",
+              "ItemId": "(O)402",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.4,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage5",
+              "ItemId": "(O)404",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.4,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage6",
+              "ItemId": "(O)406",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.9,
+              "Season": "Fall",
+              "Condition": null,
+              "Id": "DruidForage7",
+              "ItemId": "(O)408",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.85,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage8",
+              "ItemId": "(O)414",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.9,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage9",
+              "ItemId": "(O)418",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            },
+            {
+              "Chance": 0.5,
+              "Season": "Winter",
+              "Condition": null,
+              "Id": "DruidForage10",
+              "ItemId": "(O)283",
+              "RandomItemId": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1
+            }
+          ],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "VanInterior",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_VanInterior": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.VanInterior}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_VanInterior"
+          },
+          "DefaultArrivalTile": {
+            "X": 2,
+            "Y": 6
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "LionsMane",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_LionsMane": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.LionsMane}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_LionsMane"
+          },
+          "DefaultArrivalTile": {
+            "X": 26,
+            "Y": 35
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Planetarium",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_Planetarium": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.Planetarium}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_Planetarium"
+          },
+          "DefaultArrivalTile": {
+            "X": 1,
+            "Y": 15
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Underforge",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_Underforge": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.Underforge}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_Underforge"
+          },
+          "DefaultArrivalTile": {
+            "X": 24,
+            "Y": 5
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [
+            {
+              "Id": "EastScarp_Fairy_Betta_UnderFish",
+              "ItemId": "(O)EastScarp_Fairy_Betta",
+              "FishAreaID": "UnderFish",
+              "Condition": "LOCATION_Season Here spring summer fall"
+            },
+            {
+              "Id": "(O)698",
+              "ItemId": "(O)698",
+              "Condition": "LOCATION_Season Here spring fall"
+            },
+            {
+              "Id": "(O)699",
+              "ItemId": "(O)699"
+            },
+            {
+              "Season": "Spring",
+              "Id": "(O)129",
+              "ItemId": "(O)129"
+            },
+            {
+              "Season": "Summer",
+              "Id": "(O)137",
+              "ItemId": "(O)137"
+            },
+            {
+              "Season": "Summer",
+              "Id": "(O)148",
+              "ItemId": "(O)148"
+            },
+            {
+              "FishAreaId": "UnderFish",
+              "Id": "(O)136_UnderFish",
+              "ItemId": "(O)136"
+            },
+            {
+              "Season": "fall",
+              "FishAreaId": "UnderFish",
+              "Id": "(O)137_UnderFish",
+              "ItemId": "(O)137"
+            },
+            {
+              "Season": "summer",
+              "FishAreaId": "UnderFish",
+              "Id": "(O)138_UnderFish",
+              "ItemId": "(O)138"
+            },
+            {
+              "Season": "spring",
+              "FishAreaId": "OrchardOcean",
+              "Id": "(O)138_OrchardOcean",
+              "ItemId": "(O)138"
+            },
+            {
+              "Season": "fall",
+              "FishAreaId": "UnderFish",
+              "Id": "(O)139_UnderFish",
+              "ItemId": "(O)139"
+            },
+            {
+              "Season": "spring, summer, fall, winter",
+              "FishAreaId": "UnderFishLavaPool",
+              "Id": "(O)162_UnderFishLavaPool",
+              "ItemId": "(O)162"
+            }
+          ],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Entrance",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkEntrance": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv0}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkEntrance"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 15
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Lv 1",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkLv1": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv1}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkLv1"
+          },
+          "DefaultArrivalTile": {
+            "X": 5,
+            "Y": 9
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Lv 2",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkLv2": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv2}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkLv2"
+          },
+          "DefaultArrivalTile": {
+            "X": 21,
+            "Y": 31
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Lv 3",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkLv3": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv3}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkLv3"
+          },
+          "DefaultArrivalTile": {
+            "X": 25,
+            "Y": 20
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Lv 4",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkLv4": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv4}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkLv4"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 5
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Lv 5",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DeepDarkLv5": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv5}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DeepDarkLv5"
+          },
+          "DefaultArrivalTile": {
+            "X": 10,
+            "Y": 9
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Deep Dark Duskspire Lair",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_DuskspireLair": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.DuskspireLair}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/EastScarp_DuskspireLair"
+          },
+          "DefaultArrivalTile": {
+            "X": 3,
+            "Y": 15
+          },
+          "ExcludeFromNpcPathfinding": true,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Solomon's Magical Cavern",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_SolomonCavern": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.SolomonCavern}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/SolomonMagicalCavern"
+          },
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 10
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon Festival Grounds",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_VioletMoonFestivalGrounds": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.VioletMoonFestivalGrounds}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/VioletMoon"
+          },
+          "DefaultArrivalTile": {
+            "X": 36,
+            "Y": 113
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon Festival Grounds",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_VioletMoonFestivalGroundsBlank": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.VioletMoonFestivalGrounds}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/VioletMoon_Blank"
+          },
+          "DefaultArrivalTile": {
+            "X": 36,
+            "Y": 113
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "LogName": "Witchcraft - Pocket Dimension",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "EastScarp_PocketDimension": {
+          "DisplayName": "{{i18n:miscellaneous.mapname.PocketDimension}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/PocketDimension{{PocketDimensionUpgrade}}"
+          },
+          "DefaultArrivalTile": {
+            "X": 10,
+            "Y": 11
+          },
+          "ExcludeFromNpcPathfinding": false,
+          "ArtifactSpots": [],
+          "FishAreas": {
+            "ESPocketDimensionPond": {
+              "DisplayName": "{{i18n:miscellaneous.mapname.ESPocketDimensionPond}}",
+              "Position": null,
+              "CrabPotFishTypes": [],
+              "CrabPotJunkChance": 0.0
+            }
+          },
+          "Fish": [
+            {
+              "Id": "{{ModID}}_SalmonOfKnowledge",
+              "ItemId": "{{ModID}}_SalmonOfKnowledge",
+              "FishAreaID": "ESPocketDimensionPond",
+              "Condition": "LOCATION_Season Here spring summer",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_Fastitocalon",
+              "ItemId": "{{ModID}}_Fastitocalon",
+              "FishAreaID": "ESPocketDimensionPond",
+              "Condition": "LOCATION_Season Here spring summer fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_PallidSailfin",
+              "ItemId": "{{ModID}}_PallidSailfin",
+              "FishAreaID": "ESPocketDimensionPond",
+              "Condition": "LOCATION_Season Here winter spring",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_GiantDragonfish",
+              "ItemId": "{{ModID}}_GiantDragonfish",
+              "FishAreaID": "ESPocketDimensionPond",
+              "Condition": "LOCATION_Season Here fall winter",
+              "Precedence": -500
+            },
+            {
+              "Id": "{{ModID}}_FiveLinedConstellationFish",
+              "ItemId": "{{ModID}}_FiveLinedConstellationFish",
+              "FishAreaID": "ESPocketDimensionPond",
+              "Condition": "LOCATION_Season Here summer fall",
+              "Precedence": -500
+            }
+          ],
+          "Forage": [],
+          "CustomFields": {}
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+    "Changes": [
+        {
+            "LogName": "Conversation Topics - Hector",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Hector",
+            "Entries": // HECTOR'S REACTIONS 
+            {
+                // CH2:
+                "HectorIntro": "{{i18n:CT.Hector.HectorIntro}}",
+                "HectorBookIntro": "{{i18n:CT.Hector.HectorBookIntro}}",
+                "HectorShapeshift": "{{i18n:CT.Hector.HectorShapeshift}}",
+                "HectorBookQuest": "{{i18n:CT.Hector.HectorBookQuest}}",
+                "HectorVet": "{{i18n:CT.Hector.HectorVet}}",
+                "HectorVet2": "{{i18n:CT.Hector.HectorVet2}}",
+                "HectorGender": "{{i18n:CT.Hector.HectorGender}}",
+                "HectorVet3": "{{i18n:CT.Hector.HectorVet3}}",
+                "HectorDND": "{{i18n:CT.Hector.HectorDND}}",
+                "HectorRiver1": "{{i18n:CT.Hector.HectorRiver1}}",
+                "HectorDinner": "{{i18n:CT.Hector.HectorDinner}}",
+                "HectorRiver2": "{{i18n:CT.Hector.HectorRiver2}}",
+                "HectorRiver3": "{{i18n:CT.Hector.HectorRiver3}}", 
+                "HectorHeal": "{{i18n:CT.Hector.HectorHeal}}",
+                "HectorHeal2": "{{i18n:CT.Hector.HectorHeal2}}",
+                "HectorTrueGrove": "{{i18n:CT.Hector.HectorTrueGrove}}",
+                "HectorEngaged": "{{i18n:CT.Hector.HectorEngaged}}",
+
+                // CH3: 
+                "CirrusArrives":"{{i18n:CT.Hector.CirrusArrives}}",
+                "CirrusWoods":"{{i18n:CT.Hector.CirrusWoods}}",
+                "CirrusGuild":"{{i18n:CT.Hector.CirrusGuild}}",
+                "CirrusMom":"{{i18n:CT.Hector.CirrusMom}}",
+                "CirrusJJ1":"{{i18n:CT.Hector.CirrusJJ1}}",
+                "CirrusRain":"{{i18n:CT.Hector.CirrusRain}}",
+                "CirrusWoods2":"{{i18n:CT.Hector.CirrusWoods2}}",
+                "CirrusJJ2":"{{i18n:CT.Hector.CirrusJJ2}}",
+                "CirrusDnD":"{{i18n:CT.Hector.CirrusDnD}}",
+                "CirrusLionsMane":"{{i18n:CT.Hector.CirrusLionsMane}}",
+                "CirrusConcert":"{{i18n:CT.Hector.CirrusConcert}}",
+                "CirrusLionsMane2":"{{i18n:CT.Hector.CirrusLionsMane2}}",
+                "CirrusLionsMane3":"{{i18n:CT.Hector.CirrusLionsMane3}}",
+                "CirrusEngaged":"{{i18n:CT.Hector.CirrusEngaged}}",
+                "CirrusOvercomingFear":"{{i18n:CT.Hector.CirrusOvercomingFear}}",
+                "CirrusPlanetarium":"{{i18n:CT.Hector.CirrusPlanetarium}}",
+                "CirrusMakeup": "{{i18n:CT.Hector.CirrusMakeup}}",
+
+                // CH4:
+                "RoslinNeedsHelp": "{{i18n:CT.Hector.RoslinNeedsHelp}}",
+                "RoslinAndMateo": "{{i18n:CT.Hector.RoslinAndMateo}}",
+                "RoslinAndHector": "{{i18n:CT.Hector.RoslinAndHector}}",
+                "RoslinAndCirrus": "{{i18n:CT.Hector.RoslinAndCirrus}}",
+                "RoslinAndLewis": "{{i18n:CT.Hector.RoslinAndLewis}}",
+                "DandelionReturns": "{{i18n:CT.Hector.DandelionReturns}}",
+                "CirrusGingerBeer": "{{i18n:CT.Hector.CirrusGingerBeer}}",
+                "DandelionSettling": "{{i18n:CT.Hector.DandelionReturns}}",
+                "DandelionShieldRepair": "{{i18n:CT.Hector.DandelionShieldRepair}}",
+                "DandelionShieldRestored": "{{i18n:CT.Hector.DandelionShieldRestored}}",
+                "FullmetalDandelion": "{{i18n:CT.Hector.FullmetalDandelion}}",
+                "DandelionPendant": "{{i18n:CT.Hector.DandelionPendant}}",
+                "SolomonGift": "{{i18n:CT.Hector.SolomonGift}}",
+                "IntoTheDeepDark": "{{i18n:CT.Hector.IntoTheDeepDark}}",
+                "DuskspireEncounter": "{{i18n:CT.Hector.DuskspireEncounter }}",
+
+                // CH5: 
+                "DandelionProposes": "{{i18n:CT.Hector.DandelionProposes}}",
+                "WyattReturns": "{{i18n:CT.Hector.WyattReturns}}",
+                "HectorPromotion": "{{i18n:CT.Hector.HectorPromotion}}",
+                "CirrusAndMom": "{{i18n:CT.Hector.CirrusAndMom}}",
+                "RosalionWedding": "{{i18n:CT.Hector.RosalionWedding}}",
+                "VioletMoonRennFaire": "{{i18n:CT.Hector.VioletMoonRennFaire}}",
+                "SwordAndSorcery": "{{i18n:CT.Hector.SwordAndSorcery}}",
+            }
+        },
+    ]
+}

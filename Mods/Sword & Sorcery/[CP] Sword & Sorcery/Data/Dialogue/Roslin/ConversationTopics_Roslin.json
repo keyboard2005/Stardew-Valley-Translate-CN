@@ -1,0 +1,37 @@
+{
+    "Changes": [
+        {
+            "LogName": "Conversation Topics - Roslin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Roslin",
+            "Entries": // Roslin
+            {
+                // CH4:
+                "RoslinNeedsHelp": "{{i18n:CT.Roslin.RoslinNeedsHelp}}",
+                "RoslinAndMateo": "{{i18n:CT.Roslin.RoslinAndMateo}}",
+                "RoslinAndHector": "{{i18n:CT.Roslin.RoslinAndHector}}",
+                "RoslinAndCirrus": "{{i18n:CT.Roslin.RoslinAndCirrus}}",
+                "RoslinAndLewis": "{{i18n:CT.Roslin.RoslinAndLewis}}",
+                "DandelionReturns": "{{i18n:CT.Roslin.DandelionReturns}}",
+                "CirrusGingerBeer": "{{i18n:CT.Roslin.CirrusGingerBeer}}",
+                "DandelionSettling": "{{i18n:CT.Roslin.DandelionReturns}}",
+                "DandelionShieldRepair": "{{i18n:CT.Roslin.DandelionShieldRepair}}", 
+                "DandelionShieldRestored": "{{i18n:CT.Roslin.DandelionShieldRestored}}",
+                "FullmetalDandelion": "{{i18n:CT.Roslin.FullmetalDandelion}}",
+                "DandelionPendant": "{{i18n:CT.Roslin.DandelionPendant}}",
+                "SolomonGift": "{{i18n:CT.Roslin.SolomonGift}}",
+                "IntoTheDeepDark": "{{i18n:CT.Roslin.IntoTheDeepDark}}",
+                "DuskspireEncounter": "{{i18n:CT.Roslin.DuskspireEncounter }}",
+
+                // CH5: 
+                "DandelionProposes": "{{i18n:CT.Roslin.DandelionProposes}}",
+                "WyattReturns": "{{i18n:CT.Roslin.WyattReturns}}",
+                "HectorPromotion": "{{i18n:CT.Roslin.HectorPromotion}}",
+                "CirrusAndMom": "{{i18n:CT.Roslin.CirrusAndMom}}",
+                "RosalionWedding": "{{i18n:CT.Roslin.RosalionWedding}}",
+                "VioletMoonRennFaire": "{{i18n:CT.Roslin.VioletMoonRennFaire}}",
+                "SwordAndSorcery": "{{i18n:CT.Roslin.SwordAndSorcery}}",
+            }
+        },
+    ]
+}

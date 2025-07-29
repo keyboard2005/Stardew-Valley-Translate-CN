@@ -1,0 +1,408 @@
+{
+    "Format": "2.0",
+    "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "FestivalOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "ExtraOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "OlderSophia": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        },
+		"SlightlyCuterAlesia": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterAndy": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterCamilla": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterClaire": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterGunther": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterIsaac": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterJadu": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterJolyne": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterLance": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterMagnus": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterMarlon": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterMartin": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterMorgan": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterMorris": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterOlivia": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterSandy": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterScarlett": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterSophia": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterSusan": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterVictor": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+		"SlightlyCuterExtraNPCs": {
+            "AllowValues": "true, false",
+            "Default": "true",
+        },
+    },
+    "DynamicTokens": [
+        {
+            "Name": "SophiaMakeup",
+            "Value": "_Makeup",
+            "When": {
+                "DayOfWeek": "Friday, Saturday, Sunday"
+            }
+        },
+		{
+			"Name": "Outfit",
+			"Value": "Spring",
+		},
+		{
+			"Name": "Outfit",
+			"Value": "Summer",
+			"When": {
+				"Season": "summer",
+			},
+		},
+		{
+			"Name": "Outfit",
+			"Value": "Fall",
+			"When": {
+				"Season": "Fall",
+			},
+		},
+		{
+			"Name": "Outfit",
+			"Value": "Winter_Indoor",
+			"When": {
+				"Season": "winter",
+			},
+		},
+// Backup Aerobics Token
+        
+        {
+            "Name": "Aerobics",
+            "Value": "Spring",
+        },
+        
+        {
+            "Name": "Aerobics",
+            "Value": "Summer",
+            "When":
+            {
+                "Season": "Summer",
+            }
+        },
+        
+        {
+            "Name": "Aerobics",
+            "Value": "Fall",
+            "When":
+            {
+                "Season": "Fall",
+            }
+        },
+        
+        {
+            "Name": "Aerobics",
+            "Value": "Winter_Indoor",
+            "When":
+            {
+                "Season": "Winter",
+            },
+        },		
+    ],
+    "Changes": [
+		// Seasonal Character Includes
+
+		{  
+			"LogName": "Alesia Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Alesia.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterAlesia": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Andy Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Andy.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterAndy": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Camilla Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Camilla.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterCamilla": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Claire Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Claire.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterClaire": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Gunther Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/GuntherSilvian.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterGunther": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Isaac Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Isaac.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterIsaac": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Jadu Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Jadu.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterJadu": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Jolyne Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Jolyne.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterJolyne": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Lance Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Lance.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterLance": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Magnus Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Magnus.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMagnus": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Marlon Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/MarlonFay.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMarlon": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Martin Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Martin.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMartin": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Morgan Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Morgan.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMorgan": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Morris Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/MorrisTod.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMorris": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Olivia Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Olivia.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterOlivia": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Sandy Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sandy.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSandy": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Scarlett Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Scarlett.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterScarlett": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Sophia Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sophia.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSophia": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Susan Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Susan.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSusan": "True",
+			}
+		},
+		
+		{  
+			"LogName": "Victor Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Victor.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterVictor": "True",
+			}
+		},
+		
+		// Extras
+		
+		{  
+			"LogName": "Cuter Extra NPCs",
+			"Action": "Include",
+			"FromFile": "assets/Code/ExtraNPCs.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterExtraNPCs": "True",
+			}
+		},
+    ]
+}

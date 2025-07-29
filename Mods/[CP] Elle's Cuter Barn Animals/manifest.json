@@ -1,0 +1,11 @@
+{
+   "Name": "Elle's Cuter Barn Animals",
+   "Author": "Elle/Junimods",
+   "Version": "1.0.1",
+   "Description": "Adds new skins for all your barn animals!",
+   "UniqueID": "Elle.CuterBarnAnimals",
+   "UpdateKeys": [ "Nexus:20044" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

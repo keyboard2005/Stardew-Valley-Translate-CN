@@ -1,0 +1,205 @@
+{
+	"Changes": [
+
+		// TRIGGER ACTIONS
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_RiverQuest.1": {
+					"Id": "{{ModID}}_RiverQuest.1",
+					"Trigger": "LocationChanged",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.10",
+					"Actions": [
+						"AddMail Host HectorEssenceAltar1 Received",
+					]
+				}
+			}, 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_RiverQuest.2": {
+					"Id": "{{ModID}}_RiverQuest.2",
+					"Trigger": "LocationChanged",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.12",
+					"Actions": [
+						"AddMail Host HectorEssenceAltar2 Received",
+					]
+				}
+			}, 
+		},
+
+		{
+			"LogName": "River Quest pt 1",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"CAGQuest.UntimedSpecialOrder.River1": {
+
+					// RIVER QUESTLINE PT 1 
+
+					"Name": "[CAGQuest.UntimedSpecialOrder.River1_Name]",
+					"Requester": "Hector",
+					"Repeatable": "false",
+					"RequiredTags": "event_16032000, !dropbox_DruidAltarEssences",
+					"OrderType": "SwordSorcery",
+					"SpecialRule": "",
+					"Text": "[CAGQuest.UntimedSpecialOrder.River1_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River1.Objective_0_Text]",
+							"RequiredCount": "1",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_prismatic_shard"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River1.Objective_1_Text]",
+							"RequiredCount": "5",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_ancient_fruit"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River1.Objective_2_Text]",
+							"RequiredCount": "3",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_nautilus_shell"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River1.Objective_3_Text]",
+							"RequiredCount": "10",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_fiddlehead_fern"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River1.Objective_4_Text]",
+							"RequiredCount": "3",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_squid_ink"
+							}
+						}
+					],
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Hector_SpecialOrders_River1",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+
+		{
+			"LogName": "River Quest pt 2",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"CAGQuest.UntimedSpecialOrder.River2": {
+
+					// RIVER QUESTLINE PT 2 
+
+					"Name": "[CAGQuest.UntimedSpecialOrder.River2_Name]",
+					"Requester": "Hector",
+					"Repeatable": "false",
+					"RequiredTags": "event_16032000, !dropbox_DruidAltarEssences",
+					"OrderType": "SwordSorcery",
+					"SpecialRule": "",
+					"Text": "[CAGQuest.UntimedSpecialOrder.River2_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Collect",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River2.Objective_0_Text]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_druidic_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.River2.Objective_1_Text]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "DruidAltarEssences",
+								"DropBoxGameLocation": "EastScarp_DeepMountains",
+								"DropBoxIndicatorLocation": "14 15",
+								"AcceptedContextTags": "item_druidic_essence"
+							}
+						},
+					],
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Hector_SpecialOrders_River2",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+
+				// RIVER QUESTLINE PT 1
+
+				"CAGQuest.UntimedSpecialOrder.River1_Name":"{{i18n:Quests.Hector.SpecialOrders.River1.Name}}",
+				"CAGQuest.UntimedSpecialOrder.River1_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Text}}", 
+				"CAGQuest.UntimedSpecialOrder.River1.Objective_0_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Objective.0.Text}}",
+				"CAGQuest.UntimedSpecialOrder.River1.Objective_1_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Objective.1.Text}}",
+				"CAGQuest.UntimedSpecialOrder.River1.Objective_2_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Objective.2.Text}}",
+				"CAGQuest.UntimedSpecialOrder.River1.Objective_3_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Objective.3.Text}}",
+				"CAGQuest.UntimedSpecialOrder.River1.Objective_4_Text":"{{i18n:Quests.Hector.SpecialOrders.River1.Objective.4.Text}}",
+				
+				// RIVER QUESTLINE PT 2
+
+				"CAGQuest.UntimedSpecialOrder.River2_Name":"{{i18n:Quests.Hector.SpecialOrders.River2.Name}}",
+				"CAGQuest.UntimedSpecialOrder.River2_Text":"{{i18n:Quests.Hector.SpecialOrders.River2.Text}}", 
+				"CAGQuest.UntimedSpecialOrder.River2.Objective_0_Text":"{{i18n:Quests.Hector.SpecialOrders.River2.Objective.0.Text}}",
+				"CAGQuest.UntimedSpecialOrder.River2.Objective_1_Text":"{{i18n:Quests.Hector.SpecialOrders.River2.Objective.1.Text}}",
+
+			
+			}
+		}
+	]
+}

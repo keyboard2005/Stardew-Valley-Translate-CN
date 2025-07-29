@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "LumaJunimo": "{{i18n: gift.lumajunimo.love}}/Raisins 64 66 62 60 68 70 72 104 340 417 551/{{i18n: gift.lumajunimo.like}}/394 392 398 400 554 279/{{i18n: gift.lumajunimo.dislike}}/423 447 456 412 349/{{i18n: gift.lumajunimo.hate}}/346 348 303 265 257/{{i18n: gift.lumajunimo.neutral}}/562 568 563 416/"
+            }
+        },
+        {
+            "LogName": "NPC Sprite",
+            "Action": "Load", "Priority":"Low",
+            "Target": "Characters/LumaJunimo, Portraits/LumaJunimo",
+            "FromFile": "assets/{{target}}/LumaJunimo.png"
+        },
+        {
+            "LogName": "Load LumaJunimo schedule File",
+            "Action": "Load",
+            "Target": "Characters/schedules/LumaJunimo",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.json",
+            "When": {
+                "HasSeenEvent": "57871100"
+            }
+        },
+        {
+            "LogName": "Luma Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/LumaJunimo.json",
+        }
+    ]
+}

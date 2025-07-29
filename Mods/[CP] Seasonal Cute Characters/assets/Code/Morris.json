@@ -1,0 +1,174 @@
+{
+	"Changes": [
+	
+		{
+			"LogName": "Morris - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Morris, Characters/Morris",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Morris - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Morris",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+/*
+
+//The below works as Seasonals for Morris if he leaves JojaMart, but as Appearance Data only refreshes if the character changes locations, it is unused normally.
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Morris's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Morris_Spring, Portraits/Morris_Summer, Portraits/Morris_Fall, Portraits/Morris_Winter, Portraits/Morris_Winter2, Characters/Morris_Spring, Characters/Morris_Summer, Characters/Morris_Fall, Characters/Morris_Winter, Characters/Morris_Winter2",
+			"FromFile": "assets/{{TargetPathOnly}}/Morris/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Morris - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Morris_Spring, Characters/Morris_Summer, Characters/Morris_Fall, Characters/Morris_Winter, Characters/Morris_Winter2",
+			"FromFile": "assets/{{TargetPathOnly}}/Morris/Morris_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Morris Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morris", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorrisSpring": {
+					"Id": "{{ModId}}.MorrisSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Morris_Spring",
+					"Portrait": "Portraits/Morris_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MorrisSummer": {
+					"Id": "{{ModId}}.MorrisSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Morris_Summer",
+					"Portrait": "Portraits/Morris_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MorrisFall": {
+					"Id": "{{ModId}}.MorrisFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Morris_Fall",
+					"Portrait": "Portraits/Morris_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MorrisWinter": {
+					"Id": "{{ModId}}.MorrisWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Morris_Winter",
+					"Portrait": "Portraits/Morris_Winter",
+					"Precedence": -120,
+				},
+				"{{ModId}}.MorrisWinter2": {
+					"Id": "{{ModId}}.MorrisWinter2",
+					"Condition": "SEASON Winter, RANDOM 0.2",
+					"Sprite": "Characters/Morris_Winter2",
+					"Portrait": "Portraits/Morris_Winter2",
+					"Precedence": -120,
+				},
+			},
+		},
+*/
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Morris - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 99, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 99, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Joja Employees Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 50, "Y": 1387, "Width": 14, "Height": 30 },
+			"ToArea": { "X": 50, "Y": 1387, "Width": 14, "Height": 30 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Surprised Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Building Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 31 },
+			"ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 31 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Morris - Joja TownInteriors",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/{{NoNose}}/Random/townInterior_{{Season}}.png",
+            "FromArea": { "X": 368, "Y": 1008, "Width": 48, "Height": 32 },
+            "ToArea": { "X": 368, "Y": 1008, "Width": 48, "Height": 32 }
+		},
+		{   
+			"LogName": "Morris - Joja Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+		},
+	]
+}

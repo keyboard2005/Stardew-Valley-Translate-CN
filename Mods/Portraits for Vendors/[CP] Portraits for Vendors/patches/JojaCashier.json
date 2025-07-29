@@ -1,0 +1,330 @@
+{
+	"Changes":[
+		{
+			"LogName": "Joja Cashier",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/JojaCashier_{{Clerk}}",
+				"Dialogues":  [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": null,
+						"RandomDialogue": [
+							"{{i18n:JojaCashier1.{{Clerk}}}}",
+							"{{i18n:JojaCashier2.{{Clerk}}}}",
+							"{{i18n:JojaCashier3.{{Clerk}}}}",							
+						],
+					},
+					{
+						"Id": "JojaDay",
+						"Dialogue": "{{i18n:JojaCashier_JojaDay.Daena}}",
+						"Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
+					},						
+				],
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false		
+			}			
+		},
+// VENDOR ROTATION
+		{  
+			"LogName": "Joja Clerk Sprite Shift",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/LooseSprites/JojaCashier_{{Clerk}}.png",
+			"ToArea": { "X": 352, "Y": 944, "Width": 32, "Height": 32 },
+			"FromArea": { "X": 32, "Y": 0, "Width": 32, "Height": 32 },
+            "Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false,
+                "LocationName": "JojaMart"				
+			}
+		},
+// Juliet and Jessie Support
+		{
+			"LogName": "Joja Cashier J&J",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners"],
+			"Entries": {
+				"Juliet": {
+					"Name": "Juliet",
+					"Dialogues": [
+						{
+							"Id": "JojaDay",
+							"Dialogue": "{{i18n:JojaCashier_JojaDay.Juliet}}",
+							"Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
+						},
+						{
+							"Id": "Default",
+							"Dialogue": "{{i18n:JojaCashier.Juliet}}",
+						},
+					]
+				},
+				"Jessie": {
+					"Name": "Jessie",
+					"Dialogues": [
+						{
+							"Id": "Default",
+							"Dialogue": "{{i18n:JojaCashier.Jessie}}",
+						},
+					]
+				},
+				"Shane": {
+					"Name": "Shane",
+					"Dialogues": [
+						{
+							"Id": "Default",
+							"Dialogue": "{{i18n:JojaCashier.Shane}}",
+						},
+					]
+				},
+			},
+			"When": {"HasMod |contains=LemurKat.JulietHouse.NPC": true}		
+		},
+        {
+            "LogName": "JojaMart Shop Tile Property",
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "MapTiles": [
+                {
+                    "Position": { "X": 10, "Y": 24},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2300 9 25 1 1"
+                    }
+                },
+				{
+                    "Position": { "X": 10, "Y": 25},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2300 9 25 1 1"
+                    }
+                }
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true		
+			}		
+        },
+        {
+            "LogName": "JojaMart Shop Tile Property",
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "MapTiles": [
+                {
+                    "Position": { "X": 6, "Y": 24},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0900 2300 5 25 1 1"
+                    }
+                },
+				{
+                    "Position": { "X": 6, "Y": 25},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0900 2300 5 25 1 1"
+                    }
+                }
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true		
+			}		
+        },		
+		{  
+			"LogName": "Jessie Joja Sprite",
+			"Action": "Load",
+			"Target": "Characters/JojaCashier_Jessie",
+			"FromFile": "assets/LooseSprites/JojaCashier_Jessie.png",
+			"Priority": "Low",
+			"When": {"HasMod |contains=LemurKat.JulietHouse.NPC": true}
+		},
+		{
+			"LogName": "Juliet's JojaMart Uniform",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Juliet", "Appearance"],
+			"Entries":{
+				"DolphINaF.VendorPortraits_Juliet_JojaMart":
+				{
+					"Id": "DolphINaF.VendorPortraits_Juliet_JojaMartUnion",
+					"Condition": "ANY \"IS_EVENT 963070001\" \"IS_EVENT 963070002\"",
+					"Portrait": "Portraits/Juliet_Joja",
+					"Sprite": "Characters/Juliet_Joja",
+					"Precedence": 100
+				},
+			},
+			"When": {
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true,
+				"HasMod |contains=Poltergeister.SeasonalCuteSpritesJojaClerks": false,				
+			}		
+		},							
+		{
+			"LogName": "Jessie's JojaMart Uniform",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jessie", "Appearance"],
+			"Entries":{
+				"DolphINaF.VendorPortraits_Jessie_JojaMart":
+				{
+					"Id": "DolphINaF.VendorPortraits_Jessie_JojaMart",
+					"Condition": "LOCATION_NAME Target JojaMart",
+					"Portrait": "Portraits/JojaCashier_Jessie",
+					"Precedence": 100
+				},
+				"DolphINaF.VendorPortraits_Jessie_JojaMartUnion":
+				{
+					"Id": "DolphINaF.VendorPortraits_Jessie_JojaMartUnion",
+					"Condition": "IS_EVENT 963070002",
+					"Portrait": "Portraits/JojaCashier_Jessie",
+					"Sprite": "Characters/JojaCashier_Jessie",
+					"Precedence": 99
+				},				
+			},
+			"When": {
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true,
+				"HasMod |contains=Poltergeister.SeasonalCuteSpritesJojaClerks": false,
+			}		
+		},	
+// Additions
+        {
+			"LogName": "Sign number 1",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/LooseSprites/JojaCashier_Sign.png",
+			"ToArea": { "X": 352, "Y": 928, "Width": 16, "Height": 16 },
+			"Priority": "Late",
+			"When": {
+				"Clerk": "Daena, Naufal",
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+			}	
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/JojaCashier_Clerk, Characters/JojaCashier_Clerk",
+            "FromFile": "assets/LooseSprites/blank.png",
+			"Priority": "Low",
+			"When": {"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,}	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/JojaCashier_Clerk",
+            "FromFile": "assets/Portraits/JojaCashier_{{Clerk}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+			}	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/JojaCashier_Clerk",
+            "FromFile": "assets/LooseSprites/JojaCashier_{{Clerk}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+			}	
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "DolphINaF.VendorPortraits_Clerk": {
+                    "DisplayName": "{{i18n:CentralStation.PartTimer}}",
+					"CanSocialize": false,
+					"EndSlideShow": "Hidden",
+					"TextureName": "JojaCashier_Clerk",
+					"Shadow": {"Visible": true},
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "JojaMart",
+							"Tile": {"X": 1, "Y": 25},
+						}
+					],  
+                },
+            },
+			"When": {"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,}	
+        },	
+		{
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "DolphINaF.VendorPortraits_Clerk": {
+					"Shadow": {"Visible": false},
+                },
+            },
+			"When": {
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+				"Clerk |contains=Default": true,
+			}	
+        },		
+		{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"Entries": {"DolphINaF.VendorPortraits_Clerk": {"Exclude": true}},
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations",
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,	
+			},
+		},
+		{
+			"LogName": "Joja Cashier Extra Clerks",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners" ],
+			"Entries": {
+				"AnyOrNone": {
+					"Name": "DolphINaF.VendorPortraits_Clerk",
+					"Portrait": "Portraits/JojaCashier_{{Clerk}}",
+					"Dialogues":  [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"Dialogue": null,
+							"RandomDialogue": [
+								"{{i18n:JojaCashier1.{{Clerk}}}}",
+								"{{i18n:JojaCashier2.{{Clerk}}}}",
+								"{{i18n:JojaCashier3.{{Clerk}}}}",	
+							],
+						}
+					],
+				},
+			},
+			"When": {
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+			}	
+		},
+        {
+            "LogName": "JojaMart Shop Tile Property Extra Clerks",
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "MapTiles": [
+                {
+                    "Position": { "X": 2, "Y": 24},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2600 1 25 1 1"
+                    }
+                },
+				{
+                    "Position": { "X": 2, "Y": 25},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2600 1 25 1 1"
+                    }
+                }
+            ],
+			"When": {
+				"Clerk |contains=Default": false,
+				"Query: {{HasMod|contains=FlashShifter.StardewValleyExpandedCP}} OR {{HasMod|contains=LemurKat.JulietHouse.NPC}}": true,
+			}	
+        },	
+	],
+}

@@ -1,0 +1,18 @@
+{
+    "rain": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/1000 EastScarp_House1 3 19 0/1100 EastScarp_House1 5 11 3/1200 EastScarp_House1 3 11 2/1300 EastScarp_House1 3 11 square_4_1_2/1600 EastScarp_Village 11 46 square_3_1_0/1800 EastScarp_House1 19 19 0/1850 EastScarp_House1 19 20 2/2000 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep",
+    "spring": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/900 EastScarp_Village 12 50 square_5_2/1100 EastScarp_Village 43 106 1/1400 EastScarp_Village 52 41 2/1600 EastScarp_House1 3 11 2/1900 EastScarp_House1 19 20 2/2020 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep",
+    "summer": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/900 EastScarp_Village 12 50 square_5_2/1200 EastScarp_Village 46 41 2/1400 EastScarp_Village 44 91 square_5_5/1700 EastScarp_House1 19 19 0/1830 EastScarp_House1 19 20 2/1900 EastScarp_House1 3 11 2/2020 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep",
+    "winter": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/1000 EastScarp_House1 3 19 0/1100 EastScarp_House1 5 11 1/1200 EastScarp_House1 3 11 2/1300 EastScarp_House1 3 11 square_4_1_2/1600 EastScarp_Village 11 46 square_3_1_0/1800 EastScarp_House1 19 19 0/1850 EastScarp_House1 19 20 2/2000 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep",
+    "fall": "GOTO spring",
+    "spring_12": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/1000 Town 35 79 0/1630 JoshHouse 2 17 1/1900 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep", //helps Evelyn with the flowers
+    "Tue": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/900 Forest 68 43 square_5_5/1400 JoshHouse 2 17 1/1900 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep", //visits Evelyn
+    "Fri": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 19 20 2/900 Mountain 49 33 1/1600 EastScarp_House1 19 20 2/2020 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep",
+    "Thu": "700 EastScarp_House1 19 19 0/800 EastScarp_House1 4 11 2/1000 EastScarp_Village 24 13 0/1200 EastScarp_Village 63 17 1/1400 EastScarp_Village 47 20 2 square_3_3/1600 EastScarp_House1 19 20 2/1900 EastScarp_House1 3 11 2/2020 EastScarp_House1 5 11 1/2100 EastScarp_House1 6 8 3 aideen_sleep", //Jacob visits and Aideen walks with him up to Del's grave
+    "marriage_Mon": "900 EastScarp_Village 24 13 0/1400 EastScarp_Village 47 20 2 square_3_3/1800 bed",
+    "marriage_Wed": "900 Forest 68 43 square_5_5/1600 JoshHouse 2 17 1/2100 bed",
+    "marriage_Fri": "900 Mountain 49 33 1/1400 Town 34 75 3 square_3_3/1700 JoshHouse 2 17 1/2100 bed",
+    "fall_27_noMateo": "700 EastScarp_House1 19 19 0/a1240 EastScarp_VillageInn 17 18 1/1500 EastScarp_VillageInn 20 28 1/1900 EastScarp_House1 19 19 0",
+    "fall_27": "MAIL RivalHearts_AideenMateo/GOTO fall_27_noMateo/700 EastScarp_House1 19 19 0/a1240 EastScarp_VillageInn 17 18 1/1500 EastScarp_VillageInn 20 27 2/1700 EastScarp_VillageInn 20 27 2/1800 EastScarp_VillageInn 3 18 1/2200 Town 20 20 2",
+    "marriage_fall_27": "700 EastScarp_House1 19 19 0/a1240 EastScarp_VillageInn 47 18 3/1500 EastScarp_VillageInn 20 28 1/1900 bed",
+    "GreenRain":"0 EastScarp_VillageInn 17 31 3"
+}

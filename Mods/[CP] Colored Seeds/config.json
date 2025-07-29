@@ -1,0 +1,14 @@
+{
+  "ChangeCoffee": "true",
+  "ChangeSunflower": "true",
+  "ChangeCactus": "true",
+  "ChangeAncient": "true",
+  "ChangeRare": "true",
+  "ChangeTea": "false",
+  "ChangeRice": "true",
+  "ChangeTaro": "true",
+  "ChangeQi": "true",
+  "ChangeFiber": "true",
+  "ChangeForage": "true",
+  "ChangeMixed": "true"
+}

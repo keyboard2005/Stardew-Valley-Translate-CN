@@ -1,0 +1,199 @@
+{
+  "Changes": [
+    /*
+  _    _ ______          _____ _______   _____ _____          _      ____   _____ _    _ ______ 
+ | |  | |  ____|   /\   |  __ \__   __| |  __ \_   _|   /\   | |    / __ \ / ____| |  | |  ____|
+ | |__| | |__     /  \  | |__) | | |    | |  | || |    /  \  | |   | |  | | |  __| |  | | |__   
+ |  __  |  __|   / /\ \ |  _  /  | |    | |  | || |   / /\ \ | |   | |  | | | |_ | |  | |  __|  
+ | |  | | |____ / ____ \| | \ \  | |    | |__| || |_ / ____ \| |___| |__| | |__| | |__| | |____ 
+ |_|  |_|______/_/    \_\_|  \_\ |_|    |_____/_____/_/    \_\______\____/ \_____|\____/|______|
+
+*/
+    // GENERIC POOL
+    {
+      "LogName": "Cirrus Dialogue - 0-4",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.Generic.EarlyHeart.{{Random:{{Range: 1, 30}}}}}}"
+      }
+    },
+    {
+      "LogName": "Dialogue - 6-10",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.Generic.LateHeart.{{Random:{{Range: 1, 50}}}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.12": true,
+      }
+    },
+    // SEASONAL POOL
+    {
+      "LogName": "Dialogue - Cirrus Seasonal Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.{{Season}}.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Cirrus_OverrideSeenToday received"
+      },
+      "When": {
+        "Query: {{Random: {{Range: 1, 10}}|key=CSO}} = 1": true,
+        "HasFlag |contains=SnS_M_Cirrus_OverrideSeenToday": false
+      }
+    },
+    // 10H OVERRIDE POOL
+    {
+      "LogName": "Dialogue - Cirrus 10h Ending Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.LionsMane.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Cirrus_OverrideSeenToday received"
+      },
+      "When": {
+        "Hearts:Cirrus": "10",
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.12": true,
+        "Query: {{Random: {{Range: 1, 3}}|key=CLMO}} = 1": true,
+        "HasFlag |contains=SnS_M_Cirrus_OverrideSeenToday": false
+      }
+    },
+    // EPILOGUE POOL 
+    {
+      "LogName": "Dialogue - Cirrus Epilogue Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.Epilogue.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Cirrus_OverrideSeenToday received"
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch5.End": true,
+        "Query: {{Random: {{Range: 1, 3}}|key=CEO}} = 1": true,
+        "HasFlag |contains=SnS_M_Cirrus_OverrideSeenToday": false
+      }
+    },
+    // DATING POOL
+    {
+      "LogName": "Dialogue - Cirrus 10h Dating Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Cirrus.Dating.{{Random:{{Range: 1, 30}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Cirrus_OverrideSeenToday received"
+      },
+      "When": {
+        "Hearts:Cirrus": "10",
+        "Query: {{Random: {{Range: 1, 3}}|key=CDO}} = 1": true,
+        "Relationship:Cirrus |contains=Dating": true,
+        "HasFlag |contains=SnS_M_Cirrus_OverrideSeenToday": false
+      }
+    },
+    /*
+   _____ ______ _   _ ______ _____  _____ _____   _____ _____          _      ____   _____ _    _ ______ 
+  / ____|  ____| \ | |  ____|  __ \|_   _/ ____| |  __ \_   _|   /\   | |    / __ \ / ____| |  | |  ____|
+ | |  __| |__  |  \| | |__  | |__) | | || |      | |  | || |    /  \  | |   | |  | | |  __| |  | | |__   
+ | | |_ |  __| | . ` |  __| |  _  /  | || |      | |  | || |   / /\ \ | |   | |  | | | |_ | |  | |  __|  
+ | |__| | |____| |\  | |____| | \ \ _| || |____  | |__| || |_ / ____ \| |___| |__| | |__| | |__| | |____ 
+  \_____|______|_| \_|______|_|  \_\_____\_____| |_____/_____/_/    \_\______\____/ \_____|\____/|______|
+
+*/
+    {
+      "LogName": "Cirrus Dialogue - Platonic",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": {
+        // NAME & INTRO
+        "Name:": "{{i18n:Core.Cirrus.Name}}",
+        "Introduction": "{{i18n:Core.Cirrus.Introduction}}",
+        // COMMUNITY CENTER BUNDLES
+        "joja_Begin": "{{i18n:Core.Cirrus.JojaBegin}}",
+        "cc_Begin": "{{i18n:Core.Cirrus.CCBegin}}",
+        "cc_Bus": "{{i18n:Core.Cirrus.CCBus}}",
+        "cc_Minecart": "{{i18n:Core.Cirrus.CCMinecart}}",
+        "cc_Complete": "{{i18n:Core.Cirrus.CCComplete}}",
+        "movieTheater": "{{i18n:Core.Cirrus.MovieTheater}}",
+        // BIRTHDAYS
+        "fall_25": "{{i18n:Core.Cirrus.Fall25}}",
+        "winter_21": "{{i18n:Core.Cirrus.Winter21{{HectorPronouns}}}}",
+        // END OF SEASON
+        "spring_28": "{{i18n:Core.Cirrus.SpringEnd}}",
+        "summer_28": "{{i18n:Core.Cirrus.SummerEnd}}",
+        "fall_28": "{{i18n:Core.Cirrus.FallEnd}}",
+        "winter_28": "{{i18n:Core.Cirrus.WinterEnd}}",
+        // SVE COMMUNITY DAY
+        "CommunityCenter4": "{{i18n:Core.Cirrus.CommunityCenter4}}",
+        "CommunityCenter6": "{{i18n:Core.Cirrus.CommunityCenter6}}",
+        "CommunityCenter8": "{{i18n:Core.Cirrus.CommunityCenter8}}",
+        "CommunityCenter10": "{{i18n:Core.Cirrus.CommunityCenter10}}",
+        // FESTIVALS
+        "spring_12": "{{i18n:Core.Cirrus.EggFestival}}",
+        "spring_23": "{{i18n:Core.Cirrus.FlowerDance}}",
+        "summer_10": "{{i18n:Core.Cirrus.Luau}}",
+        "summer_27": "{{i18n:Core.Cirrus.MoonlightJelly}}",
+        "fall_15": "{{i18n:Core.Cirrus.SDVFair}}",
+        "fall_26": "{{i18n:Core.Cirrus.SpiritsEve}}",
+        "winter_7": "{{i18n:Core.Cirrus.IceFestival}}",
+        "winter_16": "{{i18n:Core.Cirrus.NightMarket}}",
+        "winter_24": "{{i18n:Core.Cirrus.WinterStar}}",
+        // ROMANTIC (POSITIVE)
+        "give_flowersA": "{{i18n:Core.Cirrus.GiveFlowersA}}",
+        "give_flowersB": "{{i18n:Core.Cirrus.GiveFlowersB}}",
+        "give_pendant": "{{i18n:Core.Cirrus.GivePendant}}",
+        "stardrop_giftA": "{{i18n:Core.Cirrus.StardropGiftA}}",
+        "stardrop_giftB": "{{i18n:Core.Cirrus.StardropGiftB}}",
+        // ROMANTIC (NEGATIVE)
+        "danceRejection": "{{i18n:Core.Cirrus.DanceRejection}}",
+        "divorced": "{{i18n:Core.Cirrus.Divorced}}",
+        "breakUp": "{{i18n:Core.Cirrus.BreakUp}}",
+        "dumped_Guys": "{{i18n:Core.Cirrus.DumpedGuys}}",
+        "secondChance_Guys": "{{i18n:Core.Cirrus.SecondChanceGuys}}",
+        "reject_two_heartA": "{{i18n:Core.Cirrus.Reject2HA}}",
+        "reject_two_heartB": "{{i18n:Core.Cirrus.Reject2HB}}",
+        "reject_four_heartA": "{{i18n:Core.Cirrus.Reject4HA}}",
+        "reject_four_heartB": "{{i18n:Core.Cirrus.Reject4HB}}",
+        "engageA": "{{i18n:Core.Cirrus.EngageA}}",
+        "engageB": "{{i18n:Core.Cirrus.EngageB}}",
+        "marriedA": "{{i18n:Core.Cirrus.MarriedA}}",
+        "marriedB": "{{i18n:Core.Cirrus.MarriedB}}",
+        "refusal_no_heartsA": "{{i18n:Core.Cirrus.RefusalNoHeartsA}}",
+        "refusal_no_heartsB": "{{i18n:Core.Cirrus.RefusalNoHeartsB}}",
+        "refusal_knownA": "{{i18n:Core.Cirrus.RefusalKnownA}}",
+        "refusal_knownB": "{{i18n:Core.Cirrus.RefusalKnownB}}",
+        "refusal_botherA": "{{i18n:Core.Cirrus.RefusalBotherA}}",
+        "refusal_botherB": "{{i18n:Core.Cirrus.RefusalBotherB}}",
+        // RESORT
+        "Resort_Entering": "{{i18n:Core.Cirrus.ResortEntering}}",
+        "Resort_Leaving": "{{i18n:Core.Cirrus.ResortLeaving}}",
+        "Resort_Shore": "{{i18n:Core.Cirrus.ResortShore}}",
+        "Resort_Umbrella": "{{i18n:Core.Cirrus.ResortUmbrella}}",
+        "Resort_Wander": "{{i18n:Core.Cirrus.ResortWander}}",
+        "Resort_Wander_2": "{{i18n:Core.Cirrus.ResortWander.2}}",
+        "Resort_Chair": "{{i18n:Core.Cirrus.ResortChair}}",
+        "Resort_Bar": "{{i18n:Core.Cirrus.ResortBar}}",
+        "Resort_Towel": "{{i18n:Core.CirrusResortTowel.}}",
+        "Resort_Towel_2": "{{i18n:Core.Cirrus.ResortTowel.2}}",
+        "Resort_Towel_3": "{{i18n:Core.Cirrus.Resort_Towel.3}}",
+        "Resort": "{{i18n:Core.Cirrus.Resort}}",
+        // GREEN RAIN 
+        "GreenRain": "{{i18n:Core.Cirrus.GreenRain}}",
+        "GreenRainFinished": "{{i18n:Core.Cirrus.GreenRainFinished}}",
+        "GreenRain_2": "{{i18n:Core.Cirrus.GreenRain2}}",
+        // POLYAMORY DIALOGUE
+        "RejectMermaidPendant_IsPolyamorous_PlayerWithSomeoneMonogamous": "{{i18n:Core.Cirrus.MarriedMonogamousNPC}}"
+      },
+    },
+    // ENGAGEMENT DIALOGUE
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Cirrus0": "{{i18n:Marriage.Cirrus.Engagement.Cirrus0}}",
+        "Cirrus1": "{{i18n:Marriage.Cirrus.Engagement.Cirrus1}}",
+        "Cirrus2": "{{i18n:Marriage.Cirrus.Engagement.Cirrus2}}"
+      }
+    }
+  ]
+}

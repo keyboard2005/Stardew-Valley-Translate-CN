@@ -1,0 +1,29 @@
+{
+    "Changes": 
+    [
+    {
+        "LogName": "Map Strings",
+        "Action": "EditData",
+        "Target": "strings/StringsFromMaps",
+        "Entries": 
+        {
+            //ROSLIN'S STRINGS 
+    
+            "DeepDarkNotReady":"{{i18n:Strings.Roslin.DeepDarkNotReady}}",
+            "RoslinResearch":"{{i18n:Strings.Roslin.RoslinResearch}}",
+            "Magic8Ball":"{{i18n:Strings.Roslin.Magic8Ball}}",
+            "RoslinJournal":"{{i18n:Strings.Roslin.RoslinJournal}}",
+            "RedRitualCircle":"{{i18n:Strings.Roslin.RedRitualCircle}}",
+            "ExtensiveLibrary":"{{i18n:Strings.Roslin.ExtensiveLibrary}}",
+            "ArmorDisplay":"{{i18n:Strings.Roslin.ArmorDisplay}}",
+            "ExtensiveLibrary2":"{{i18n:Strings.Roslin.ExtensiveLibrary2}}",
+            "PotionMaking1":"{{i18n:Strings.Roslin.PotionMaking1}}",
+            "PotionMaking2":"{{i18n:Strings.Roslin.PotionMaking2}}",
+            "PotionMaking3":"{{i18n:Strings.Roslin.PotionMaking3}}",
+            "HandmadeSwords":"{{i18n:Strings.Roslin.HandmadeSwords}}",
+            "EvenMoreSupplies":"{{i18n:Strings.Roslin.EvenMoreSupplies}}",
+    
+        }
+       }
+    ]
+}

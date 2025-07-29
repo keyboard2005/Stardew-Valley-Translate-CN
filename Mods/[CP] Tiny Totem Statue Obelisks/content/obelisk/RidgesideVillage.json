@@ -1,0 +1,73 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.load.ridgesidevillage",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_rsv_obelisk.png"
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.ridgesidevillage",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "RSV_Obelisk": {
+          "Texture": "Buildings\\Replacement_RSV Obelisk",
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "RidgesideVillageEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.ridgesidevillage",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "RSV_Obelisk": {
+          "DrawShadow": "true",
+          "FadeWhenBehind": "true",
+          "Texture": "Buildings\\RSV Obelisk",
+          "Size": {
+            "X": 3,
+            "Y": 2
+          }
+        }
+      },
+      "When": {
+        "RidgesideVillageEnabled": "false"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.ridgesidevillage",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/flowers/rsv_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.ridgesidevillage",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_RSV Obelisk",
+      "FromFile": "assets/moss/rsv_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

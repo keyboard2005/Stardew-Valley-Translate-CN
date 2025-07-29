@@ -1,0 +1,140 @@
+{
+	"Changes": [
+		{
+			"LogName": "Essence Quest Special Order",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence": {
+					// GATHERING ESSENCE
+					"Name": "[CAGQuest.UntimedSpecialOrder.RoslinEssence_Name]",
+					"Requester": "Roslin",
+					"Repeatable": "false",
+					"RequiredTags": "event_12360010, !dropbox_DandelionShield",
+					"OrderType": "SwordSorcery.Event",
+					"SpecialRule": "",
+					"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_0_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_earth_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_1_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_fire_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_2_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_water_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_3_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_air_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_4_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_druidic_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_5_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_void_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_6_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_solar_essence"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_7_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_spiritual_essence"
+							}
+						},
+					],
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Roslin_SpecialOrders_RoslinEssenceMail",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+				// GATHERING ESSENCE (TEXT)
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence_Name": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Name}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_0_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.0.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_1_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.1.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_2_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.2.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_3_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.3.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_4_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.4.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_5_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.5.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_6_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.6.Text}}",
+				"CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective_7_Text": "{{i18n:Quests.CAGQuest.UntimedSpecialOrder.RoslinEssence.Objective.7.Text}}",
+			}
+		}
+	]
+}

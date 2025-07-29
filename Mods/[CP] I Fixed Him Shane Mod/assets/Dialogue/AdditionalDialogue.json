@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "LogName": "Additional Marriage Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "Rainy_Day_Shane": "屋顶漏了吗？我刚还在想那是什么声音。",
+        "Indoor_Day_Shane": "空气中有种特别的味道…… *闻闻*…… 那是什么？ 哦……#$b#只是我几周前放在口袋里的玉米片。#$e#可能这样不太好，但我有点想吃一口……",
+        "fall_Shane": "我的迷你冰箱后面可能长了一种新的菌类。#$e#我们应该在 %pet 或者哪只动物碰到之前清理一下。",
+        "winter_Shane": "外面的世界很广阔……$3#$b#但这里更暖和。$6"
+      }
+    },
+  ]
+}

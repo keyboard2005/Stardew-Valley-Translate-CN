@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="3">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_AdditionalFarmCave" tilewidth="16" tileheight="16" tilecount="320" columns="20">
+  <image source="z_AdditionalFarmCave.png" width="320" height="256"/>
+  <tile id="61">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="673" name="z_neuralwiles_leaves" tilewidth="16" tileheight="16" tilecount="42" columns="7">
+  <image source="neuralwiles_leaves.png" width="112" height="96"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="4">
+  <data encoding="csv">
+376,376,376,
+139,139,139,
+139,139,139,
+139,139,139
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+619,619,619,
+639,639,639,
+659,659,659
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="4">
+  <data encoding="csv">
+353,414,355,
+373,414,375,
+393,414,395,
+413,414,415
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="3" height="4">
+  <data encoding="csv">
+353,0,355,
+373,374,375,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="14" name="AlwaysFront" width="3" height="4">
+  <data encoding="csv">
+0,354,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront2" width="3" height="4">
+  <data encoding="csv">
+682,683,682,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="13" name="Back2"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="11" name="AlwaysFront"/>
+ <objectgroup id="15" name="AlwaysFront2"/>
+</map>

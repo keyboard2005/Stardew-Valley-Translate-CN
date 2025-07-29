@@ -1,0 +1,93 @@
+{
+	"Changes": [
+		{
+			"LogName": "Coastal Guild Special Order",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Mateo.SpecialOrders.BuildGuild": {
+
+					// BUILDING THE COASTAL GUILD & ES SPECIAL ORDER BOARD (MECHANICS)
+
+					"Name": "[Mateo.SpecialOrders.BuildGuild_Name]",
+					"Requester": "Mateo",
+					"Repeatable": "false",
+					"RequiredTags": "event_12360010, !dropbox_RobinWood",
+					"OrderType": "SwordSorcery.Event",
+					"SpecialRule": "",
+					"Text": "[Mateo.SpecialOrders.BuildGuild_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_0_Text]",
+							"RequiredCount": "500",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_wood"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_1_Text]",
+							"RequiredCount": "300",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_stone"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_2_Text]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_hardwood"
+							}
+						}
+					],
+					"Rewards": [
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "5000"
+							}
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Mateo_SpecialOrders_BuildGuildMail",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+
+				// BUILDING THE COASTAL GUILD & ES SPECIAL ORDER BOARD (TEXT)
+
+				"Mateo.SpecialOrders.BuildGuild_Name":"{{i18n:Quests.Mateo.SpecialOrders.BuildGuild.Name}}",
+				"Mateo.SpecialOrders.BuildGuild_Text":"{{i18n:Quests.Mateo.SpecialOrders.BuildGuild.Text}}", 
+				"Mateo.SpecialOrders.BuildGuild.Objective_0_Text":"{{i18n:Quests.Mateo.SpecialOrders.BuildGuild.Objective.0.Text}}",
+				"Mateo.SpecialOrders.BuildGuild.Objective_1_Text":"{{i18n:Quests.Mateo.SpecialOrders.BuildGuild.Objective.1.Text}}",
+				"Mateo.SpecialOrders.BuildGuild.Objective_2_Text":"{{i18n:Quests.Mateo.SpecialOrders.BuildGuild.Objective.2.Text}}",
+
+				
+			}
+		}
+	]
+}

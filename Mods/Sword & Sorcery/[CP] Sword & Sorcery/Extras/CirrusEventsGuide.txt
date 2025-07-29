@@ -1,0 +1,64 @@
+Warp to Hector: debug wtc Cirrus
+Reload the content pack: patch reload DestyNova.Cirrus.CP 
+
+**MOST EVENTS ARE 1-3 DAYS APART.** (Probably) (I don't actually know how to check that)
+
+debug ebi SnS.Ch3.Cirrus.1 - 0 Hearts - "CirrusArrives"
+After seeing Hector's 10H event and unlocking Druidics, enter the Saloon between 12:00pm and 10:00 pm.
+
+debug ebi SnS.Ch3.Cirrus.2 - 1 Heart - "CirrusWoods"
+On a sunny day, enter the deep mountains, 3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.3 - 2 hearts - "CirrusGuild"
+On a sunny day, enter the Coastal Adventurer's Guild Hall between 12:00 and 10:00 pm, 3 days after seeing the previous event.
+*CHOICES DURING THIS EVENT ARE REQUIRED FOR CIRRUS' 7 HEART EVENT TO PLAY.*
+
+debug ebi SnS.Ch3.Cirrus.4 - 3 Hearts part 1 - "CirrusMom"
+On a sunny day, enter East Scarp between 12:00 and 8:00 pm ,3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.5 - 3 hearts part 2 - "CirrusJJ1"
+*REQUIRES JESSIE AND JULIET, at least until they become part of East Scarp by default*
+On a sunny day, enter East Scarp between 12:00 and 8:00 pm, 3 days after seeing part 1 of this event.
+
+debug ebi SnS.Ch3.Cirrus.6 - 4 Hearts - "CirrusRain"
+On a sunny day, enter East Scarp between 6:00pm and 10:00 pm, 3 days after seeing her 3 hearts part 1 event.
+
+debug ebi SnS.Ch3.Cirrus.7 - 5 Hearts - "CirrusWoods2"
+On a sunny day, enter the Deep Mountains between 6pm and 10pm, 3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.8 - 6 Hearts - "CirrusJJ2"
+*REQUIRES JESSIE AND JULIET (Until they join East Scarp proper.)
+On a sunny day, enter Pelican Town between 10:00 am and 3:00 pm, 3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.9 - 7 Hearts part 1 - "CirrusDND"
+*MUST HAVE MADE A CLASS CHOICE IN HER 2 HEART EVENT.*
+In any weather, enter the Coastal Adventurer's Guild Hall between 5:00pm and 10:00 pm, 3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.10 - 7 Hearts part 2 - "CirrusLionsMane"
+On a sunny day, enter East Scarp between 8:00 am and 5:00 pm, 3 days after seeing the previous event.
+
+debug ebi SnS.Ch3.Cirrus.11 - 8 Hearts part 1 - "Bus Stop"
+On a sunny day, enter the bus stop between 6:00 am and 12:00 pm, 3 days after having seen the previous event.
+
+debug ebi SnS.Ch3.Cirrus.12 - 8 hearts part 2 - "CirrusConcert"
+**FLIRTING IS REQUIRED TO MARRY CIRRUS**
+On a sunny day, enter East Scarp between 8:00 am and 5:00 pm, at least 3 days after having seen 'CirrusLionsMane'.
+
+debug ebi SnS.Ch3.Cirrus.13 - 9 Hearts - "CirrusLionsMane2"
+On a sunny day, after having satisfied Cirrus' materials request, enter East Scarp between 8:00 am and 5:00 pm, 3 days after having seen the previous event.
+
+debug ebi SnS.Ch3.Cirrus.14 - 10 Hearts - "CirrusLionsMane3"
+On a sunny day, enter the Lion's Mane between 12:00pm and 10:00 pm, 3 days after having seen the previous event.
+*IF YOU PREVIOUSLY FLIRTED, AND CHOOSE THE ROMANCE OPTION HERE, YOU WILL BEGIN DATING CIRRUS.*
+
+debug ebi SnS.Ch3.Cirrus.15 - Pendant Response: Romance Exclusive - "CirrusEngaged"
+28 or more days after you begin dating, offer Cirrus a Mermaid's Pendant.
+
+debug ebi SnS.Ch3.Cirrus.16 - 12 Hearts: Romance Exclusive - "CirrusOvercomingFear"
+On a sunny day in any season besides winter, enter the Deep Mountains between 8:00 am and 4:00 pm while married to Cirrus with at least 12 hearts.
+
+debug ebi SnS.Ch3.Cirrus.17 - 14 Hearts: Romance Exclusive - "CirrusPlanetarium"
+On a sunny day, enter the Bus Stop between 6:00 am and 12:00pm, while married to Cirrus with 14 hearts.
+
+debug ebi SnS.Ch3.Roslin - Mystery Adventurers Event - "DandelionLeaves"
+On a sunny day, enter East Scarp between 9:00 am and 6:00 pm, after having seen Roslin and Dandelion's Chapter 1 and Chapter 2 events.

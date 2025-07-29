@@ -1,0 +1,42 @@
+{
+"Changes": 
+[
+{
+    "LogName": "Map Strings",
+    "Action": "EditData",
+    "Target": "strings/StringsFromMaps",
+    "Entries": 
+    {
+        //CIRRUS' STRINGS 
+
+        "IncrediWoman": "{{i18n:Strings.Cirrus.IncrediWoman}}",
+        "SnackStash": "{{i18n:Strings.Cirrus.SnackStash}}",
+        "MaritaFlamingo": "{{i18n:Strings.Cirrus.MaritaFlamingo}}",
+        "CirrusStars": "{{i18n:Strings.Cirrus.CirrusStars}}",
+        "PlasticLunch": "{{i18n:Strings.Cirrus.PlasticLunch}}",
+        "BoardedDoor":"{{i18n:Strings.Cirrus.BoardedDoor}}",
+        "CirrusPoolTable": "{{i18n:Strings.Cirrus.PoolTable}}",
+        "SquirrelStatue": "{{i18n:Strings.Cirrus.SquirrelStatue}}",
+        "ModelTrain": "{{i18n:Strings.Cirrus.ModelTrain}}",
+        "ChefMike": "{{i18n:Strings.Cirrus.ChefMike}}",
+        "SpotlessKitchen": "{{i18n:Strings.Cirrus.SpotlessKitchen}}",
+        "BeatenCoffeeMachine": "{{i18n:Strings.Cirrus.BeatenCoffeeMachine}}",
+        "RecordShelf1": "{{i18n:Strings.Cirrus.RecordShelf1}}",
+        "RecordShelf2": "{{i18n:Strings.Cirrus.RecordShelf2}}",
+        "RecordShelf3": "{{i18n:Strings.Cirrus.RecordShelf3}}",
+        "BigTV": "{{i18n:Strings.Cirrus.BigTV}}",
+        "BottomEmpty": "{{i18n:Strings.Cirrus.BottomEmpty}}",
+        "80sRadio": "{{i18n:Strings.Cirrus.80sRadio.{{Random:1++2++3++4++5++6++7++8|inputSeparator=++}}}}",
+        "JukeboxHero": "{{i18n:Strings.Cirrus.JukeboxHero.{{Random:1++2++3++4++5++6++7++8|inputSeparator=++}}}}",
+        "JournalPile": "{{i18n:Strings.Cirrus.JournalPile}}",
+        "PosterShrine": "{{i18n:Strings.Cirrus.PosterShrine}}",
+        "SignedGuitar": "{{i18n:Strings.Cirrus.SignedGuitar}}",
+        "DumpItTable": "{{i18n:Strings.Cirrus.DumpItTable}}",
+        "DumpItTable2": "{{i18n:Strings.Cirrus.DumpItTable2}}",
+        "FavoriteMug": "{{i18n:Strings.Cirrus.FavoriteMug}}",
+        "GingerBeerFermenter": "{{i18n:Strings.Cirrus.GingerBeerFermenter}}",
+        "BouncyMeadowlark": "{{i18n:Strings.Cirrus.BouncyMeadowlark}}",
+    }
+   }
+  ]
+ }

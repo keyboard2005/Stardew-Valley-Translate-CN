@@ -1,0 +1,144 @@
+{
+
+"Changes": [
+
+{ "LogName": "Hector's Marriage Dialogue",
+"Action": "editData",
+"Target": "Characters/Dialogue/MarriageDialogueHector",
+"Entries":
+
+// GENERIC MARRIAGE DIALOGUE 
+{
+
+    // OTHER   
+    "patio_Hector":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "spouseRoom_Hector":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "funLeave_Hector":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "funReturn_Hector":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+
+    // SPECIAL DATES - SPRING
+    "spring_Hector":"{{i18n:Marriage.Hector.Spring}}",
+    "spring_1":"{{i18n:Marriage.Hector.Spring1}}",
+	"spring_13":"{{i18n:Marriage.Hector.Spring13}}",
+    "spring_23":"{{i18n:Marriage.Hector.Spring23}}",
+    "spring_24":"{{i18n:Marriage.Hector.Spring24}}",   
+    "spring_28":"{{i18n:Marriage.Hector.Spring28}}",
+
+    // SPECIAL DATES - SUMMER
+    "summer_Hector":"{{i18n:Marriage.Hector.Summer}}",
+    "summer_1":"{{i18n:Marriage.Hector.Summer1}}",
+	"summer_11":"{{i18n:Marriage.Hector.Summer11}}",
+	"summer_28":"{{i18n:Marriage.Hector.Summer28}}",
+
+    // SPECIAL DATES - FALL
+    "fall_Hector":"{{i18n:Marriage.Hector.Fall}}",
+    "fall_1":"{{i18n:Marriage.Hector.Fall1}}",
+	"fall_15":"{{i18n:Marriage.Hector.Fall15}}",
+    "fall_16":"{{i18n:Marriage.Hector.Fall16}}",
+    "fall_25":"{{i18n:Marriage.Hector.Fall25}}",
+	"fall_26":"{{i18n:Marriage.Hector.Fall26}}",
+    "fall_27":"{{i18n:Marriage.Hector.Fall27}}",
+
+    // SPECIAL DATES - WINTER 
+    "winter_Hector":"{{i18n:Marriage.Hector.Winter}}",
+    "winter_1":"{{i18n:Marriage.Hector.Winter1}}",
+	"winter_8":"{{i18n:Marriage.Hector.Winter8}}",
+    "winter_12":"{{i18n:Marriage.Hector.Winter12}}",
+    "winter_14":"{{i18n:Marriage.Hector.Winter14}}",
+    "winter_19":"{{i18n:Marriage.Hector.Winter19}}",
+  	"winter_24":"{{i18n:Marriage.Hector.Winter24}}",
+    "winter_25":"{{i18n:Marriage.Hector.Winter25}}",
+	"winter_28":"{{i18n:Marriage.Hector.Winter28}}",
+    
+    // GENERIC DIALOGUE - RAINY
+    "Rainy_Day_0":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Day_1":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Day_2":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Day_3":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}", 
+    "Rainy_Day_4":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Day_5":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Day_6":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_0":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_1":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_2":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_3":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_4":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_5":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_6":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+    "Rainy_Night_Hector":"{{i18n:Marriage.Hector.BadWeather.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}",
+
+    // GENERIC DIALOGUE - INDOOR & OUTDOOR
+    "Indoor_Day_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Day_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Day_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Day_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Day_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Day_5":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_5":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Indoor_Night_6":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Outdoor_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Outdoor_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Outdoor_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Outdoor_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Outdoor_Hector":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+
+    // GENERIC DIALOGUE - KIDS 
+    "OneKid_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "OneKid_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "OneKid_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "OneKid_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "TwoKids_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "TwoKids_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "TwoKids_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "TwoKids_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "TwoKids_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+
+    // AFFECTION DIALOGUE
+    "Good_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_5":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_6":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_8":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Good_9":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_5":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_6":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Neutral_7":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_0":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_1":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_2":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_3":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_4":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_5":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_6":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_7":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+    "Bad_8":"{{i18n:Marriage.Hector.GoodWeather.{{Random:{{Range: 1, 37}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Hector_OverrideSeenToday received",
+}
+},
+
+// ENGAGEMENT DIALOGUE
+{
+    "LogName": "Engagement Dialogue",
+    "Action": "EditData",
+    "Target": "Data/EngagementDialogue",
+    "Entries": {
+                    
+    "Hector0":"{{i18n:Marriage.Hector.Engagement.Hector0}}",
+    "Hector1":"{{i18n:Marriage.Hector.Engagement.Hector1}}",
+    "Hector2":"{{i18n:Marriage.Hector.Engagement.Hector2}}"                       
+}
+},
+]
+}

@@ -1,0 +1,11 @@
+{
+   "Name": "Elle's Cuter Cats",
+   "Author": "Elle/Junimods",
+   "Version": "1.0.0",
+   "Description": "Adds new skins/breeds for your cats!",
+   "UniqueID": "Elle.CuterCats",
+   "UpdateKeys": [ "Nexus:20041" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

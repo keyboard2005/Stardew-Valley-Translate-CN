@@ -1,0 +1,130 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Mateo",
+      "Entries": { // CUSTOM GIFT DIALOGUE
+        // STARDROP TEA 
+        "AcceptGift_(O)StardropTea": "{{i18n:Gifts.Mateo.GiftReaction.StardropTea}}",
+        // ANCIENT SWEET TEA
+        "AcceptGift_(O){{ModID}}_ancientsweettea": "{{i18n:Gifts.Mateo.GiftReaction.AncientSweetTea}}",
+        // FISH
+        "AcceptGift_category_fish": "{{i18n:Gifts.Mateo.GiftReaction.CategoryFish}}",
+        "AcceptGift_(O)397": "{{i18n:Gifts.Mateo.GiftReaction.SeaUrchin}}",
+        "AcceptGift_(O)717": "{{i18n:Gifts.Mateo.GiftReaction.Crab}}",
+        "AcceptGift_(O)732": "{{i18n:Gifts.Mateo.GiftReaction.CrabCakes}}",
+        // ARTISANAL GOODS
+        "AcceptGift_category_artisan_goods": "{{i18n:Gifts.Mateo.GiftReaction.CategoryArtisanalGoods}}",
+        // TRASH
+        "AcceptGiftCategory_trash": "{{i18n:Gifts.Mateo.GiftReaction.CategoryTrash}}",
+        // MINERALS & GEMS
+        "AcceptGiftCategory_minerals": "{{i18n:Gifts.Mateo.GiftReaction.CategoryGemsMinerals}}",
+        // LOVES
+        "AcceptGift_(O)74": "{{i18n:Gifts.Mateo.GiftReaction.PrismaticShard.{{MateoRomance}}}}",
+        "AcceptGift_(O)276": "{{i18n:Gifts.Mateo.GiftReaction.Pumpkin.{{MateoRomance}}}}",
+        "AcceptGift_(O)746": "{{i18n:Gifts.Mateo.GiftReaction.JackOLantern.{{MateoRomance}}}}",
+        "AcceptGift_(O)373": "{{i18n:Gifts.Mateo.GiftReaction.GoldenPumpkin.{{MateoRomance}}}}",
+        "AcceptGift_(O)595": "{{i18n:Gifts.Mateo.GiftReaction.FairyRose.{{MateoRomance}}}}",
+        "AcceptGift_(O)340": "{{i18n:Gifts.Mateo.GiftReaction.Honey.{{MateoRomance}}}}",
+        "AcceptGift_(O)394": "{{i18n:Gifts.Mateo.GiftReaction.RainbowShell}}",
+        "AcceptGift_(O)731": "{{i18n:Gifts.Mateo.GiftReaction.MapleBar}}",
+        "AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n:Gifts.Mateo.GiftReaction.AutographedPhoto}}",
+        "AcceptGift_(O){{ModID}}_salishbourbon": "{{i18n:Gifts.Mateo.GiftReaction.SalishBourbon}}",
+        "AcceptGift_(O){{ModID}}_autumnalstew": "{{i18n:Gifts.Mateo.GiftReaction.AutumnalStew}}",
+        "AcceptGift_(O){{ModID}}_ancientwildfairyrose": "{{i18n:Gifts.Mateo.GiftReaction.AncientFairyRose}}",
+        // LIKES
+        "AcceptGift_(O)236": "{{i18n:Gifts.Mateo.GiftReaction.PumpkinSoup}}",
+        "AcceptGift_(O)608": "{{i18n:Gifts.Mateo.GiftReaction.PumpkinPie}}",
+        "AcceptGift_(O)224": "{{i18n:Gifts.Mateo.GiftReaction.Spaghetti}}",
+        "AcceptGift_(O)372": "{{i18n:Gifts.Mateo.GiftReaction.Clam}}",
+        // ALCOHOL 
+        "AcceptGift_(O)346": "{{i18n:Gifts.Mateo.GiftReaction.Beer.{{MateoRomance}}}}",
+        "AcceptGift_(O)303": "{{i18n:Gifts.Mateo.GiftReaction.PaleAle.{{MateoRomance}}}}",
+        "AcceptGift_(O)348": "{{i18n:Gifts.Mateo.GiftReaction.Wine.{{MateoRomance}}}}",
+        // ARTIFACTS
+        "AcceptGift_(O)96": "{{i18n:Gifts.Mateo.GiftReaction.DwarfScrollI}}",
+        "AcceptGift_(O)97": "{{i18n:Gifts.Mateo.GiftReaction.DwarfScrollII}}",
+        "AcceptGift_(O)98": "{{i18n:Gifts.Mateo.GiftReaction.DwarfScrollIII}}",
+        "AcceptGift_(O)99": "{{i18n:Gifts.Mateo.GiftReaction.DwarfScrollIV}}",
+        "AcceptGift_(O)100": "{{i18n:Gifts.Mateo.GiftReaction.ChippedAmphora}}",
+        "AcceptGift_(O)101": "{{i18n:Gifts.Mateo.GiftReaction.Arrowhead}}",
+        "AcceptGift_(O)103": "{{i18n:Gifts.Mateo.GiftReaction.AncientDoll}}",
+        "AcceptGift_(O)104": "{{i18n:Gifts.Mateo.GiftReaction.ElvishJewelry}}",
+        "AcceptGift_(O)105": "{{i18n:Gifts.Mateo.GiftReaction.ChewingStick}}",
+        "AcceptGift_(O)106": "{{i18n:Gifts.Mateo.GiftReaction.OrnamentalFan}}",
+        "AcceptGift_(O)107": "{{i18n:Gifts.Mateo.GiftReaction.DinosaurEgg}}",
+        "AcceptGift_(O)108": "{{i18n:Gifts.Mateo.GiftReaction.RareDisc}}",
+        "AcceptGift_(O)109": "{{i18n:Gifts.Mateo.GiftReaction.AncientSword}}",
+        "AcceptGift_(O)110": "{{i18n:Gifts.Mateo.GiftReaction.RustySpoon}}",
+        "AcceptGift_(O)111": "{{i18n:Gifts.Mateo.GiftReaction.RustySpur}}",
+        "AcceptGift_(O)112": "{{i18n:Gifts.Mateo.GiftReaction.RustyCog}}",
+        "AcceptGift_(O)113": "{{i18n:Gifts.Mateo.GiftReaction.ChickenStatue}}",
+        "AcceptGift_(O)114": "{{i18n:Gifts.Mateo.GiftReaction.AncientSeed}}",
+        "AcceptGift_(O)115": "{{i18n:Gifts.Mateo.GiftReaction.PrehistoricTool}}",
+        "AcceptGift_(O)116": "{{i18n:Gifts.Mateo.GiftReaction.DriedStarfish}}",
+        "AcceptGift_(O)117": "{{i18n:Gifts.Mateo.GiftReaction.Anchor}}",
+        "AcceptGift_(O)118": "{{i18n:Gifts.Mateo.GiftReaction.GlassShards}}",
+        "AcceptGift_(O)119": "{{i18n:Gifts.Mateo.GiftReaction.BoneFlute}}",
+        "AcceptGift_(O)120": "{{i18n:Gifts.Mateo.GiftReaction.PrehistoricHandaxe}}",
+        "AcceptGift_(O)121": "{{i18n:Gifts.Mateo.GiftReaction.DwarvishHelm}}",
+        "AcceptGift_(O)122": "{{i18n:Gifts.Mateo.GiftReaction.DwarfGadget}}",
+        "AcceptGift_(O)123": "{{i18n:Gifts.Mateo.GiftReaction.AncientDrum}}",
+        "AcceptGift_(O)124": "{{i18n:Gifts.Mateo.GiftReaction.GoldenMask}}",
+        "AcceptGift_(O)125": "{{i18n:Gifts.Mateo.GiftReaction.GoldenRelic}}",
+        "AcceptGift_(O)126": "{{i18n:Gifts.Mateo.GiftReaction.StrangeDoll}}",
+        "AcceptGift_(O)127": "{{i18n:Gifts.Mateo.GiftReaction.StrangeDoll2}}",
+        // ITEM REJECTIONS 
+        "RejectItem_(O)458": "{{i18n:Mateo.GiftReject.Bouquet}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Mateo",
+      "Entries": { // CUSTOM GIFT DIALOGUE - BIRTHDAY
+        // BIRTHDAY
+        "AcceptGift_(O)276": "{{i18n:Gifts.Mateo.GiftReaction.Pumpkin.Birthday.{{MateoRomance}}}}",
+        "AcceptGift_(O)746": "{{i18n:Gifts.Mateo.GiftReaction.Jack-o-Lantern.Birthday.{{MateoRomance}}}}",
+        "AcceptGift_(O)236": "{{i18n:Gifts.Mateo.GiftReaction.PumpkinPie.Birthday.{{MateoRomance}}}}",
+        "AcceptGift_(O)608": "{{i18n:Gifts.Mateo.GiftReaction.PumpkinSoup.Birthday.{{MateoRomance}}}}",
+        "AcceptGift_(O)595": "{{i18n:Gifts.Mateo.GiftReaction.FairyRose.Birthday.{{MateoRomance}}}}"
+      },
+      "When": {
+        "Season": "fall",
+        "Day": "25"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Mateo",
+      "Entries": { // DATING COOLDOWN
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantCooldown}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=MateoMarriageCountdown": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Mateo",
+      "Entries": { // MARRIAGE PENDANT REACT
+        "RejectItem_(O)460": "{{i18n:miscellaneous.PendantResponse}}#$action spacechase0.SpaceCore_PlayEvent SnS.Ch1.Mateo.19 false"
+      },
+      "When": {
+        "HasConversationTopic |contains=MateoMarriageCountdown": false,
+        "Relationship:Mateo |contains=Dating": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Mateo",
+      "Entries": { // MARRIAGE PENDANT REACT NO FARMHOUSE UPGRADE
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantFarmhouse}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=MateoMarriageCountdown": false,
+        "Relationship:Mateo |contains=Dating": true,
+        "FarmhouseUpgrade": "0"
+      }
+    }
+  ]
+}

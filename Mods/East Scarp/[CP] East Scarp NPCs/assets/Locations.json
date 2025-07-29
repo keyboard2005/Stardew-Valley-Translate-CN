@@ -1,0 +1,90 @@
+{
+      "Changes": [
+            {
+                  "Action": "Load",
+                  "Target": "Maps/EastScarp_TNPCWaitingWarpRoom",
+                  "FromFile": "assets/Maps/TNPCWaitingRoom.tmx"
+            },
+            {
+                  "Action": "Load",
+                  "Target": "Maps/EastScarp_VetAwayWarpRoom",
+                  "FromFile": "assets/Maps/VetAwayWarp.tmx"
+            },
+            {
+                  "Action": "Load",
+                  "Target": "Maps/EastScarp_CatWarpRoom",
+                  "FromFile": "assets/Maps/CatWarpRoom.tmx"
+            },
+            {
+                  "Action": "Load",
+                  "Target": "Maps/EastScarp_AbyssCoop",
+                  "FromFile": "assets/Maps/AbyssCoop.tmx"
+            },
+            {
+                  "Action": "EditData",
+                  "Target": "Data/Locations",
+                  "Entries": {
+                        "EastScarp_VetAwayWarpRoom": {
+                              "DisplayName": "{{i18n:EastScarp.Locations.VetAwayWarp}}",
+                              "DefaultArrivalTile": {
+                                    "X": 0,
+                                    "Y": 0
+                              },
+                              "CreateOnLoad": {
+                                    "AlwaysActive": true,
+                                    "MapPath": "Maps\\EastScarp_VetAwayWarpRoom"
+                              },
+                              "FormerLocationNames": [
+                                    "Custom_ESVetAwayWarpRoom"
+                              ],
+                              "CustomFields": {}
+                        },
+                        "EastScarp_TNPCWaitingWarpRoom": {
+                              "DisplayName": "{{i18n:EastScarp.Locations.TNPCWaitingRoom}}",
+                              "DefaultArrivalTile": {
+                                    "X": 5,
+                                    "Y": 14
+                              },
+                              "CreateOnLoad": {
+                                    "AlwaysActive": true,
+                                    "MapPath": "Maps\\EastScarp_TNPCWaitingWarpRoom"
+                              },
+                              "FormerLocationNames": [
+                                    "Custom_ESTNPCWaitingWarpRoom"
+                              ],
+                              "CustomFields": {}
+                        },
+                        "EastScarp_CatWarpRoom": {
+                              "DisplayName": "{{i18n:EastScarp.Locations.CatWarpRoom}}",
+                              "DefaultArrivalTile": {
+                                    "X": 5,
+                                    "Y": 14
+                              },
+                              "CreateOnLoad": {
+                                    "AlwaysActive": true,
+                                    "MapPath": "Maps\\EastScarp_CatWarpRoom"
+                              },
+                              "FormerLocationNames": [
+                                    "Custom_ESCatWarpRoom"
+                              ],
+                              "CustomFields": {}
+                        },
+                        "EastScarp_AbyssCoop": {
+                              "DisplayName": "{{i18n:EastScarp.Locations.AbyssCoop}}",
+                              "DefaultArrivalTile": {
+                                    "X": 5,
+                                    "Y": 14
+                              },
+                              "CreateOnLoad": {
+                                    "AlwaysActive": true,
+                                    "MapPath": "Maps\\EastScarp_AbyssCoop"
+                              },
+                              "FormerLocationNames": [
+                                    "Custom_ESAbyssCoop"
+                              ],
+                              "CustomFields": {}
+                        }
+                  }
+            }
+      ]
+}

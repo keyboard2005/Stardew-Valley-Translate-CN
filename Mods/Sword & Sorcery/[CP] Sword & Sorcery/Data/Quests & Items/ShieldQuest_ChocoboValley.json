@@ -1,0 +1,124 @@
+{
+	"Changes": [
+		{
+			"LogName": "Shield Repair Special Order",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"CAGQuest.UntimedSpecialOrder.DandelionShield": {
+
+					// FORGING DANDELION'S SHIELD
+
+					"Name": "[CAGQuest.UntimedSpecialOrder.DandelionShield_Name]",
+					"Requester": "Dandelion",
+					"Repeatable": "false",
+					"RequiredTags": "event_12360010, !dropbox_DandelionShield",
+					"OrderType": "SwordSorcery.Event",
+					"SpecialRule": "",
+					"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_0_Text]",
+							"RequiredCount": "1",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_exquisite_aquamarine"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_1_Text]",
+							"RequiredCount": "25",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_kitsutsune.chocobovalley_orichalcumbar"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_2_Text]",
+							"RequiredCount": "10",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_kitsutsune.chocobovalley_mythrilbar"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_3_Text]",
+							"RequiredCount": "10",
+							"Data": {
+								"DropBox": "DandelionShield_CV",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_kitsutsune.chocobovalley_adamantitebar"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_4_Text]",
+							"RequiredCount": "25",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_hardwood"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_5_Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "DandelionShield",
+								"DropBoxGameLocation": "EastScarp_Underforge",
+								"DropBoxIndicatorLocation": "5 9",
+								"AcceptedContextTags": "item_solar_essence"
+							}
+						},
+						
+					],
+					
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Dandelion_SpecialOrders_DandelionShieldMail",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+
+				// REPAIRING DANDELION'S SHIELD (TEXT)  
+
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_Name":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield.Name}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield.Text}}", 
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_0_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.0.Text}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_1_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.1.Text}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_2_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.2.Text}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_3_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.3.Text}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_4_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.4.Text}}",
+				"CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective_5_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.DandelionShield_CV.Objective.5.Text}}",
+
+			}
+		}
+	]
+}

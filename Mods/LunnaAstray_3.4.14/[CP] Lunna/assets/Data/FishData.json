@@ -1,0 +1,342 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Fields": {
+                "Custom_LASV_Umuwi": {
+                    "Fish": [
+                        {
+                            "ItemID": "LASV_Umuwi_Carp"
+                        },
+                        {
+                            "ItemID": "LASV_Purple_Spotted_Trout"
+                        },
+                        {
+                            "ItemID": "LASV_Relicantlette"
+                        },
+                        {
+                            "ItemID": "LASV_Dewdrop_Fish"
+                        },
+                        {
+                            "ItemID": "LASV_Serafin"
+                        }
+                    ]
+                },
+                "Custom_LASV_LunnaLake": {
+                    "Fish": [
+                        {
+                            "ItemID": "LASV_Umuwi_Carp"
+                        },
+                        {
+                            "ItemID": "LASV_Purple_Spotted_Trout"
+                        },
+                        {
+                            "ItemID": "LASV_Relicantlette"
+                        },
+                        {
+                            "ItemID": "LASV_Dewdrop_Fish"
+                        },
+                        {
+                            "ItemID": "LASV_Serafin"
+                        }
+                    ]
+                },
+                "Custom_LASV_FallsCave": {
+                    "Fish": [
+                        {
+                            "ItemID": "LASV_Umuwi_Carp"
+                        },
+                        {
+                            "ItemID": "LASV_Purple_Spotted_Trout"
+                        },
+                        {
+                            "ItemID": "LASV_Relicantlette"
+                        },
+                        {
+                            "ItemID": "LASV_Dewdrop_Fish"
+                        },
+                        {
+                            "ItemID": "LASV_Serafin"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "LASV_Purple_Spotted_Trout": "Purple Spotted Trout/80/mixed/5/30/700 1800/spring summer fall winter/both/683 .4/1/.3/.4/0",
+                "LASV_Relicantlette": "Relicantlette/20/mixed/1/12/700 1800/spring summer fall winter/both/683 .4/1/.6/.8/0",
+                "LASV_Dewdrop_Fish": "Dewdrop Fish/20/mixed/3/10/700 1800/spring summer fall winter/both/683 .4/1/.6/.8/0",
+                "LASV_Serafin": "Serafin/50/mixed/8/20/700 1800/spring summer fall winter/both/683 .4/1/.3/.4/0",
+                "LASV_Umuwi_Carp": "Umuwi Carp/90/mixed/30/50/1200 2600/spring summer fall winter/both/683 .4/1/.1/.2/0"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "LASV_Purple_Spotted_Trout": {
+                    "Id": "LASV_Purple_Spotted_Trout",
+                    "RequiredTags": [
+                        "item_purple_spotted_trout"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.4,
+                            "ItemID": "(O)66",
+                            "MinQuantity": 4,
+                            "MaxQuantity": 8
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.45,
+                            "ItemID": "(O)66",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "ItemID": "(O)66",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)774",
+                            "MinQuantity": 5,
+                            "MaxQuantity": 8
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "(O)176 2"
+                        ],
+                        "4": [
+                            "(O)296 2"
+                        ],
+                        "8": [
+                            "(O)66 2"
+                        ]
+                    }
+                },
+                "LASV_Relicantlette": {
+                    "Id": "LASV_Relicantlette",
+                    "RequiredTags": [
+                        "item_relicantlette"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.4,
+                            "ItemID": "(O)729",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 4
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.45,
+                            "ItemID": "(O)214",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "ItemID": "(O)214",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)774",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 4
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "(O)340 2"
+                        ],
+                        "4": [
+                            "(O)724 4"
+                        ],
+                        "8": [
+                            "(O)724 6"
+                        ]
+                    }
+                },
+                "LASV_Dewdrop_Fish": {
+                    "Id": "LASV_Dewdrop_Fish",
+                    "RequiredTags": [
+                        "item_dewdrop_fish"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.4,
+                            "ItemID": "(O)729",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 4
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.45,
+                            "ItemID": "(O)214",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "ItemID": "(O)769",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)774",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "(O)340 2"
+                        ],
+                        "4": [
+                            "(O)724 4"
+                        ],
+                        "8": [
+                            "(O)724 6"
+                        ]
+                    }
+                },
+                "LASV_Serafin": {
+                    "Id": "LASV_Serafin",
+                    "RequiredTags": [
+                        "item_serafin"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.4,
+                            "ItemID": "(O)595",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 4
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.45,
+                            "ItemID": "(O)548",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "ItemID": "(O)60",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)68",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "(O)60 1"
+                        ],
+                        "4": [
+                            "(O)724 4"
+                        ],
+                        "8": [
+                            "(O)18 6"
+                        ]
+                    }
+                },
+                "LASV_Umuwi_Carp": {
+                    "Id": "LASV_Umuwi_Carp",
+                    "RequiredTags": [
+                        "item_umuwi_carp"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.01,
+                            "ItemID": "(O)499",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.01,
+                            "ItemID": "(O)347",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.05,
+                            "ItemID": "(O)72",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "(O)305 1"
+                        ],
+                        "4": [
+                            "(O)769 4"
+                        ],
+                        "8": [
+                            "(O)72 6"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Aquarium Data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "LASV_Umuwi_Carp": "0/fish/////LASV\\AquariumFish",
+                "LASV_Serafin": "1/fish/////LASV\\AquariumFish",
+                "LASV_Relicantlette": "2/fish/////LASV\\AquariumFish",
+                "LASV_Purple_Spotted_Trout": "3/fish/////LASV\\AquariumFish",
+                "LASV_Dewdrop_Fish": "4/fish/////LASV\\AquariumFish"
+            }
+        },
+        {
+            "LogName": "Aquarium Sprites",
+            "Action": "Load",
+            "Target": "LASV/AquariumFish",
+            "FromFile": "assets/Umuwi_aquarium_fish.png"
+        }
+    ]
+}

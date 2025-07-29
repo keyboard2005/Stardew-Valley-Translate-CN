@@ -1,0 +1,253 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Harvey's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Harvey_Spring, Portraits/Harvey_Summer, Portraits/Harvey_Fall, Portraits/Harvey_Winter_Outdoor, Portraits/Harvey_Winter_Indoor, Portraits/Harvey_FlowerDance, Portraits/Harvey_SpiritsEve, Portraits/Harvey_EggF, Portraits/Harvey_Fair, Portraits/Harvey_Jellies, Portraits/Harvey_Luau, Portraits/Harvey_Winter_IceF, Portraits/Harvey_Winter_WinterStar, Portraits/Harvey_Doctor, Portraits/Harvey_Aerobics, Characters/Harvey_Spring, Characters/Harvey_Summer, Characters/Harvey_Fall, Characters/Harvey_Winter_Outdoor, Characters/Harvey_Winter_Indoor, Characters/Harvey_FlowerDance, Characters/Harvey_SpiritsEve, Characters/Harvey_EggF, Characters/Harvey_Fair, Characters/Harvey_Jellies, Characters/Harvey_Luau, Characters/Harvey_Winter_IceF, Characters/Harvey_Winter_WinterStar, Characters/Harvey_Doctor, Characters/Harvey_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Harvey/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Harvey's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey_Beach, Characters/Harvey_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Harvey/{{TargetWithoutPath}}.png"
+		},
+		
+		// MUSTACHE OVERLAY
+		
+		{
+            "LogName": "Harvey - Mustache Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Spring, Portraits/Harvey_Summer, Portraits/Harvey_Fall, Portraits/Harvey_Winter_Outdoor, Portraits/Harvey_Winter_Indoor, Portraits/Harvey_FlowerDance, Portraits/Harvey_SpiritsEve, Portraits/Harvey_EggF, Portraits/Harvey_Fair, Portraits/Harvey_Jellies, Portraits/Harvey_Luau, Portraits/Harvey_Winter_IceF, Portraits/Harvey_Winter_WinterStar, Portraits/Harvey_Doctor, Portraits/Harvey_Aerobics",
+            "FromFile": "assets/Portraits/Harvey/MustacheOverlay.png",
+            "PatchMode": "Overlay",
+			"When":
+            {
+                "HarveyFacialHair": "True",
+            },
+        },
+		
+        {
+            "LogName": "Harvey - Mustache Overlay Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Beach",
+            "FromFile": "assets/Portraits/Harvey/Harvey_Beach_MustacheOverlay.png",
+            "PatchMode": "Overlay",
+			"When":
+            {
+                "HarveyFacialHair": "True",
+            },
+        },
+        
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Harvey - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey_Spring, Characters/Harvey_Summer, Characters/Harvey_Fall, Characters/Harvey_Winter_Outdoor, Characters/Harvey_Winter_Indoor, Characters/Harvey_FlowerDance, Characters/Harvey_SpiritsEve, Characters/Harvey_EggF, Characters/Harvey_Fair, Characters/Harvey_Jellies, Characters/Harvey_Luau, Characters/Harvey_Winter_IceF, Characters/Harvey_Winter_WinterStar, Characters/Harvey_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Harvey/Harvey_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Harvey - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Harvey/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Harvey Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Harvey", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.HarveySpring": {
+					"Id": "{{ModId}}.HarveySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Harvey_Spring",
+					"Portrait": "Portraits/Harvey_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.HarveySummer": {
+					"Id": "{{ModId}}.HarveySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Harvey_Summer",
+					"Portrait": "Portraits/Harvey_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HarveyFall": {
+					"Id": "{{ModId}}.HarveyFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Harvey_Fall",
+					"Portrait": "Portraits/Harvey_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HarveyWinterIndoor": {
+					"Id": "{{ModId}}.HarveyWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Harvey_Winter_Indoor",
+					"Portrait": "Portraits/Harvey_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HarveyWinterOutdoor": {
+					"Id": "{{ModId}}.HarveyWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Harvey_Winter_Outdoor",
+					"Portrait": "Portraits/Harvey_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.HarveyEggFest": {
+					"Id": "{{ModId}}.HarveyEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_EggF",
+					"Portrait": "Portraits/Harvey_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HarveyFlowerDance": {
+					"Id": "{{ModId}}.HarveyFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_FlowerDance",
+					"Portrait": "Portraits/Harvey_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HarveyLuau": {
+					"Id": "{{ModId}}.HarveyLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_Luau",
+					"Portrait": "Portraits/Harvey_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HarveyJellies": {
+					"Id": "{{ModId}}.HarveyJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_Jellies",
+					"Portrait": "Portraits/Harvey_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HarveyFair": {
+					"Id": "{{ModId}}.HarveyFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_Fair",
+					"Portrait": "Portraits/Harvey_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HarveySpirit": {
+					"Id": "{{ModId}}.HarveySpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Harvey_SpiritsEve",
+					"Portrait": "Portraits/Harvey_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HarveyIceFestival": {
+					"Id": "{{ModId}}.HarveyIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_Winter_IceF",
+					"Portrait": "Portraits/Harvey_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HarveyWinterStar": {
+					"Id": "{{ModId}}.HarveyWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Harvey_Winter_WinterStar",
+					"Portrait": "Portraits/Harvey_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.HarveyBeach": {
+					"Id": "{{ModId}}.HarveyBeach",
+					"Sprite": "Characters/Harvey_Beach",
+					"Portrait": "Portraits/Harvey_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Special
+				
+				"{{ModId}}.HarveyDoctor": {
+					"Id": "{{ModId}}.HarveyDoctor",
+					"Condition": "{{ExtraOutfits}}, LOCATION_NAME Target Hospital",
+					"Sprite": "Characters/Harvey_Doctor",
+					"Portrait": "Portraits/Harvey_Doctor",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HarveyAerobics": {
+					"Id": "{{ModId}}.HarveyAerobics",
+					"Condition": "IS_EVENT 58",
+					"Sprite": "Characters/Harvey_Aerobics",
+					"Portrait": "Portraits/Harvey_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+        {
+			"LogName": "Harvey - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Harvey - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 7, "Y": 311, "Width": 18, "Height": 18},
+			"ToArea": {"X": 7, "Y": 311, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Harvey Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Harvey",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

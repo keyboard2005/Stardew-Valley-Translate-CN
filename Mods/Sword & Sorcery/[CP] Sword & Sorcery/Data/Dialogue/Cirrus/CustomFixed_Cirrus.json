@@ -1,0 +1,51 @@
+{
+    "Changes": [
+        //EDITS TO CSFILES.JSON
+        {
+            "LogName": "Cirrus - Custom Wedding Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5371": "{{i18n:CFD.Cirrus.Utility.cs.5371}}",
+                "Utility.cs.5373": "{{i18n:CFD.Cirrus.Utility.cs.5373}}",
+                "Utility.cs.5375": "{{i18n:CFD.Cirrus.Utility.cs.5375}}",
+                "Utility.cs.5377": "{{i18n:CFD.Cirrus.Utility.cs.5377}}",
+                "Utility.cs.5367": "{{i18n:CFD.Cirrus.Utility.cs.5367}}",
+                "Utility.cs.5369": "{{i18n:CFD.Cirrus.Utility.cs.5369}}",
+            },
+            "When": {
+                "Relationship:Cirrus": "Engaged",
+            }
+        },
+        //EDITS TO EXTRADIALOGUE.JSON
+        {
+            "LogName": "Cirrus - Custom Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Intro_Spouse": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Intro_Cirrus}}", //greeting
+                "SummitEvent_Intro2_Spouse": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Intro2_Cirrus}}",
+                "SummitEvent_Intro2_Spouse_Gruff": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Intro2_Cirrus}}", //Only used if male, make same as SummitEvent_Intro2_Spouse
+                //spouse turn left
+                "SummitEvent_Dialogue1_Spouse": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Dialogue1_Cirrus}}",
+                "SummitEvent_Dialogue1B_Spouse": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Dialogue2_Cirrus}}",
+                "SummitEvent_Dialogue2_Spouse": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Dialogue3_Cirrus}}",
+                //spouse turn up
+                "SummitEvent_Dialogue3_Cirrus": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_Dialogue4_Cirrus}}", //change to NPC internal name
+                //roll credits
+                "SummitEvent_closingmessage": "{{i18n:CFD.Cirrus.ExtraDialogue_SummitEvent_closingmessage}}" // Qi speaking
+            },
+            "When": {
+                "Relationship:Cirrus": "Married"
+            }
+        },
+        { // EDITS TO CHARACTERS.JSON
+            "Logname": "Cirrus - Spouse Movie Invitation",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Cirrus": "{{i18n:MovieInvite_Spouse_Cirrus}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+   "Name": "Elle's Cuter Coop Animals",
+   "Author": "Elle/Junimods",
+   "Version": "1.0.2",
+   "Description": "Adds new skins for all your coop animals!",
+   "UniqueID": "Elle.CuterCoopAnimals",
+   "UpdateKeys": [ "Nexus:20043" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

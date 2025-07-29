@@ -1,0 +1,982 @@
+{
+  "Changes": [
+    // ANCIENT AMARANTH 
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientamaranth": {
+          "Name": "{{ModID}}_ancientamaranth",
+          "DisplayName": "{{i18n: crop.ancientamaranth.name}}",
+          "Description": "{{i18n: crop.ancientamaranth.description}}",
+          "Type": "Vegetable",
+          "Category": -75,
+          "Price": 160,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+        "{{ModID}}_ancientamaranth.seed": {
+          "Name": "{{ModID}}_ancientamaranth.seed",
+          "DisplayName": "{{i18n: crop.ancientamaranth.seed.name}}",
+          "Description": "{{i18n: crop.ancientamaranth.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 9
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientamaranth.seed": {
+          "Seasons": [
+            "summer",
+            "fall"
+          ],
+          "DaysInPhase": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "HarvestItemId": "{{ModID}}_ancientamaranth",
+          "HarvestMethod": "Scythe",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 2,
+          "ExtraHarvestChance": 0.03,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    // ANCIENT EPIPHYTIC FERN 
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientepiphyticfern": {
+          "Name": "{{ModID}}_ancientepiphyticfern",
+          "DisplayName": "{{i18n: crop.ancientepiphyticfern.name}}",
+          "Description": "{{i18n: crop.ancientepiphyticfern.description}}",
+          "Type": "Vegetable",
+          "Category": -75,
+          "Price": 300,
+          "Edibility": 50,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+            
+          ]
+        },
+
+        "{{ModID}}_ancientepiphyticfern.seed": {
+          "Name": "{{ModID}}_ancientepiphyticfern.seed",
+          "DisplayName": "{{i18n: crop.ancientepiphyticfern.seed.name}}",
+          "Description": "{{i18n: crop.ancientepiphyticfern.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 11
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientepiphyticfern.seed": {
+          "Seasons": [
+            "spring",
+            "summer"
+          ],
+          "DaysInPhase": [
+            1,
+            3,
+            3,
+            4,
+            3
+          ],
+          "RegrowDays": 3,
+          "HarvestItemId": "{{ModID}}_ancientepiphyticfern",
+          "HarvestMethod": "Scythe",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "ExtraHarvestChance": 0.03,
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 2
+        }
+      }
+    },
+    // ANCIENT GLOWING POLYPORE MUSHROOM
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_glowingpolyporemushrooms": {
+          "Name": "{{ModID}}_glowingpolyporemushrooms",
+          "DisplayName": "{{i18n: crop.ancientglowingpolyporemushrooms.name}}",
+          "Description": "{{i18n: crop.ancientglowingpolyporemushrooms.description}}",
+          "Type": "Vegetable",
+          "Category": -75,
+          "Price": 300,
+          "Edibility": 50,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_glowingpolyporemushrooms.seed": {
+          "Name": "{{ModID}}_glowingpolyporemushrooms.seed",
+          "DisplayName": "{{i18n: crop.ancientglowingpolyporemushrooms.seed.name}}",
+          "Description": "{{i18n: crop.ancientglowingpolyporemushrooms.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Price": 2,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 13
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_glowingpolyporemushrooms.seed": {
+          "Seasons": [
+            "fall",
+            "winter"
+          ],
+          "DaysInPhase": [
+            2,
+            7,
+            7,
+            7,
+            5
+          ],
+          "RegrowDays": 3,
+          "HarvestItemId": "{{ModID}}_glowingpolyporemushrooms",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 4
+        }
+      }
+    },
+    // ANCIENT WILD FAIRY ROSE
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientwildfairyrose": {
+          "Name": "{{ModID}}_ancientwildfairyrose",
+          "DisplayName": "{{i18n: crop.ancientwildfairyrose.name}}",
+          "Description": "{{i18n: crop.ancientwildfairyrose.description}}",
+          "Type": "Flower",
+          "Category": -80,
+          "Price": 345,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientwildfairyrose.seed": {
+          "Name": "{{ModID}}_ancientwildfairyrose.seed",
+          "DisplayName": "{{i18n: crop.ancientwildfairyrose.seed.name}}",
+          "Description": "{{i18n: crop.ancientwildfairyrose.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 10
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientwildfairyrose.seed": {
+          "Seasons": [
+            "spring",
+            "summer",
+            "fall"
+          ],
+          "DaysInPhase": [
+            2,
+            7,
+            7,
+            7,
+            5
+          ],
+          "RegrowDays": 3,
+          "HarvestItemId": "{{ModID}}_ancientwildfairyrose",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 3,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 6
+        }
+      }
+    },
+    // ANCIENT ELDERBERRY
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientelderberry": {
+          "Name": "{{ModID}}_ancientelderberry",
+          "DisplayName": "{{i18n: crop.ancientelderberry.name}}",
+          "Description": "{{i18n: crop.ancientelderberry.description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 110,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 37,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+        "{{ModID}}_ancientelderberry.seed": {
+          "Name": "{{ModID}}_ancientelderberry.seed",
+          "DisplayName": "{{i18n: crop.ancientelderberry.seed.name}}",
+          "Description": "{{i18n: crop.ancientelderberry.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 38
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientelderberry.seed": {
+          "Seasons": [
+            "spring",
+            "summer"
+          ],
+          "DaysInPhase": [
+            1,
+            1,
+            1,
+            3,
+            4
+          ],
+          "RegrowDays": 3,
+          "HarvestItemId": "{{ModID}}_ancientelderberry",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 3,
+          "ExtraHarvestChance": 0.03,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 8
+        }
+      }
+    },
+    // ANCIENT BOTTLE GOURD
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientbottlegourd": {
+          "Name": "{{ModID}}_ancientbottlegourd",
+          "DisplayName": "{{i18n: crop.ancientbottlegourd.name}}",
+          "Description": "{{i18n: crop.ancientbottlegourd.description}}",
+          "Type": "Vegetable",
+          "Category": -75,
+          "Price": 220,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 39,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientbottlegourd.seed": {
+          "Name": "{{ModID}}_ancientbottlegourd.seed",
+          "DisplayName": "{{i18n: crop.ancientbottlegourd.seed.name}}",
+          "Description": "{{i18n: crop.ancientbottlegourd.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 40
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientbottlegourd.seed": {
+          "Seasons": [
+            "fall"
+          ],
+          "DaysInPhase": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            2
+          ],
+          "HarvestItemId": "{{ModID}}_ancientbottlegourd",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 2,
+          "ExtraHarvestChance": 0.03,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 10
+        }
+      }
+    },
+    // ANCIENT GIANT APPLE BERRY
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientgiantappleberry": {
+          "Name": "{{ModID}}_ancientgiantappleberry",
+          "DisplayName": "{{i18n: crop.ancientgiantappleberry.name}}",
+          "Description": "{{i18n: crop.ancientgiantappleberry.description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 275,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 41,
+          "ContextTags": [
+            "color_cyan",
+            "category_fruits",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientgiantappleberry.seed": {
+          "Name": "{{ModID}}_ancientgiantappleberry.seed",
+          "DisplayName": "{{i18n: crop.ancientgiantappleberry.seed.name}}",
+          "Description": "{{i18n: crop.ancientgiantappleberry.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 42
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientgiantappleberry.seed": {
+          "Seasons": [
+            "spring",
+            "summer",
+            "fall"
+          ],
+          "DaysInPhase": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "HarvestItemId": "{{ModID}}_ancientgiantappleberry",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 2,
+          "ExtraHarvestChance": 0.03,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 12
+        }
+      }
+    },
+    // ANCIENT AZURE DETURA FLOWER
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientazuredetura": {
+          "Name": "{{ModID}}_ancientazuredetura",
+          "DisplayName": "{{i18n: crop.ancientazuredetura.name}}",
+          "Description": "{{i18n: crop.ancientazuredetura.description}}",
+          "Type": "Flower",
+          "Category": -80,
+          "Price": 160,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 43,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientazuredetura.seed": {
+          "Name": "{{ModID}}_ancientazuredetura.seed",
+          "DisplayName": "{{i18n: crop.ancientazuredetura.seed.name}}",
+          "Description": "{{i18n: crop.ancientazuredetura.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 44
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientazuredetura.seed": {
+          "Seasons": [
+            "fall",
+            "winter"
+          ],
+          "DaysInPhase": [
+            1,
+            2,
+            3,
+            2
+          ],
+          "HarvestItemId": "{{ModID}}_ancientazuredetura",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 2,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 14
+        }
+      }
+    },
+    // ANCIENT GLOWING HUCKLEBERRY VINE
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientglowinghuckleberry": {
+          "Name": "{{ModID}}_ancientglowinghuckleberry",
+          "DisplayName": "{{i18n: crop.ancientglowinghuckleberry.name}}",
+          "Description": "{{i18n: crop.ancientglowinghuckleberry.description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 410,
+          "Edibility": 50,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientglowinghuckleberry.seed": {
+          "Name": "{{ModID}}_ancientglowinghuckleberry.seed",
+          "DisplayName": "{{i18n: crop.ancientglowinghuckleberry.seed.name}}",
+          "Description": "{{i18n: crop.ancientglowinghuckleberry.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 12
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/fruitTrees",
+      "Entries": {
+        "{{ModID}}_ancientglowinghuckleberry.seed": {
+          "Seasons": [
+            "summer"
+          ],
+          "Fruit": [
+            {
+              "Id": "N/A",
+              "ItemId": "{{ModID}}_ancientglowinghuckleberry"
+            }
+          ],
+          "Texture": "Textures/DN.SnS/SnSTrees",
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    // ANCIENT SWEET TEA BUSH
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_ancientsweettealeaves": {
+          "Name": "{{ModID}}_ancientsweettealeaves",
+          "DisplayName": "{{i18n: crop.ancientsweettealeaves.name}}",
+          "Description": "{{i18n: crop.ancientsweettealeaves.description}}",
+          "Type": "Flower",
+          "Category": -80,
+          "Price": 350,
+          "Edibility": 50,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 83,
+          "ContextTags": [
+            "color_cyan",
+            "seedmaker_banned",
+            "sns_druidiccrop_item"
+          ]
+        },
+
+        "{{ModID}}_ancientsweettealeaves.seed": {
+          "Name": "{{ModID}}_ancientsweettealeaves.seed",
+          "DisplayName": "{{i18n: crop.ancientsweettealeaves.seed.name}}",
+          "Description": "{{i18n: crop.ancientsweettealeaves.seed.description}}",
+          "Type": "Seeds",
+          "Category": -74,
+          "Price": 2,
+          "IsDrink": false,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 85
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ancientsweettealeaves.seed": {
+          "Seasons": [
+            "summer",
+            "winter"
+            
+          ],
+          "DaysInPhase": [
+            1,
+            3,
+            3,
+            4,
+            2
+          ],
+          "RegrowDays": 4,
+          "HarvestItemId": "{{ModID}}_ancientsweettealeaves",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 3,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "CountForMonoculture": "{{CountForFarmingAchievements}}",
+          "CountForPolyculture": "{{CountForFarmingAchievements}}",
+          "Texture": "Textures/DN.SnS/SnSCrops",
+          "SpriteIndex": 16
+        }
+      }
+    },
+    // CRAFTING RECIPES 
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModID}}_ancientamaranth.seed": "{{ModID}}_druidicessence {{DruidicsCost4}}/what is this for?/{{ModID}}_ancientamaranth.seed 1/false/null/{{i18n:AncientSeed.Hector.Amaranth}}",
+        "{{ModID}}_ancientepiphyticfern.seed": "{{ModID}}_druidicessence {{DruidicsCost6}}/what is this for?/{{ModID}}_ancientepiphyticfern.seed 1/false/null/{{i18n:AncientSeed.Hector.Fern}}",
+        "{{ModID}}_ancientglowinghuckleberry.seed": "{{ModID}}_druidicessence {{DruidicsCost10}}/what is this for?/{{ModID}}_ancientglowinghuckleberry.seed 1/false/null/{{i18n:AncientSeed.Hector.Huckleberry}}",
+        "{{ModID}}_glowingpolyporemushrooms.seed": "{{ModID}}_druidicessence {{DruidicsCost6}}/what is this for?/{{ModID}}_glowingpolyporemushrooms.seed 1/false/null/{{i18n:AncientSeed.Hector.Mushroom}}",
+        "{{ModID}}_ancientwildfairyrose.seed": "{{ModID}}_druidicessence {{DruidicsCost6}}/what is this for?/{{ModID}}_ancientwildfairyrose.seed 1/false/null/{{i18n:AncientSeed.Hector.FairyRose}}",
+        "{{ModID}}_ancientelderberry.seed": "{{ModID}}_druidicessence {{DruidicsCost6}}/what is this for?/{{ModID}}_ancientelderberry.seed 1/false/null/{{i18n:AncientSeed.Hector.Elderberry}}",
+        "{{ModID}}_ancientbottlegourd.seed": "{{ModID}}_druidicessence {{DruidicsCost4}}/what is this for?/{{ModID}}_ancientbottlegourd.seed 1/false/null/{{i18n:AncientSeed.Hector.BottleGourd}}",
+        "{{ModID}}_ancientgiantappleberry.seed": "{{ModID}}_druidicessence {{DruidicsCost6}}/what is this for?/{{ModID}}_ancientgiantappleberry.seed 1/false/null/{{i18n:AncientSeed.Hector.AppleBerry}}",
+        "{{ModID}}_ancientazuredetura.seed": "{{ModID}}_druidicessence {{DruidicsCost4}}/what is this for?/{{ModID}}_ancientazuredetura.seed 1/false/null/{{i18n:AncientSeed.Hector.Detura}}",
+        "{{ModID}}_ancientsweettealeaves.seed": "{{ModID}}_druidicessence {{DruidicsCost10}}/what is this for?/{{ModID}}_ancientsweettealeaves.seed 1/false/e SnS.Ch3.Dandelion.3/{{i18n:AncientSeed.Hector.SweetTea}}"
+      }
+    },
+    // GIANT VARIATIONS 
+    {
+      "Action": "Load",
+      "Target": "Mods/DN.SnS/GiantCrops",
+      "FromFile": "Assets/Items & Crops/SnSGiantCrops.png"
+    },
+    {
+      "LogName": "Giant Crops for Hector",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "Entries": {
+        "DN.SnS_giant_glowingpolyporemushrooms": {
+          "FromItemId": "(O)DN.SnS_glowingpolyporemushrooms",
+          "Chance": 0.01,
+          "HarvestItems": [
+            {
+              "ItemId": "(O)DN.SnS_glowingpolyporemushrooms",
+              "MinStack": 15,
+              "MaxStack": 20
+            }
+          ],
+          "Texture": "Mods/DN.SnS/GiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    // CUSTOM DRUIDIC CATEGORY 
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "{{ModID}}_ancientamaranth": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientepiphyticfern": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_glowingpolyporemushrooms": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientwildfairyrose": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientglowinghuckleberry": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientamaranth.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientepiphyticfern.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_glowingpolyporemushrooms.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientwildfairyrose.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientglowinghuckleberry.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientelderberry": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientelderberry.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientbottlegourd": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientbottlegourd.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientgiantappleberry": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientgiantappleberry.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientazuredetura": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientazuredetura.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientsweettealeaves": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientsweettealeaves.seed": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        },
+        "{{ModID}}_ancientsweettea": {
+          "CategoryTextOverride": "{{i18n:category.druidic}}",
+          "CategoryColorOverride": {
+            "R": 48,
+            "G": 162,
+            "B": 218,
+            "A": 255
+          }
+        }
+      }
+    },
+    //WILD FLOWERS MOD STOP STEALING THINGS PLEASE,
+    {
+      "Action": "EditData",
+      "Target": "Mods/jpp.WildFlowersReimagined/IgnoreList",
+      "TargetField": [ "Flowers"],
+      "Entries": {
+        "{{ModID}}_ancientamaranth": "{{ModID}}_ancientamaranth",
+        "{{ModID}}_ancientepiphyticfern": "{{ModID}}_ancientepiphyticfern",
+        "{{ModID}}_ancientglowinghuckleberry": "{{ModID}}_ancientglowinghuckleberry",
+        "{{ModID}}_glowingpolyporemushrooms": "{{ModID}}_glowingpolyporemushrooms",
+        "{{ModID}}_ancientwildfairyrose": "{{ModID}}_ancientwildfairyrose",
+        "{{ModID}}_ancientbottlegourd": "{{ModID}}_ancientbottlegourd",
+        "{{ModID}}_ancientelderberry": "{{ModID}}_ancientelderberry",
+        "{{ModID}}_ancientgiantappleberry": "{{ModID}}_ancientgiantappleberry",
+        "{{ModID}}_ancientazuredetura": "{{ModID}}_ancientazuredetura",
+        "{{ModID}}_ancientsweettealeaves": "{{ModID}}_ancientsweettealeaves"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Mods/jpp.WildFlowersReimagined/IgnoreList",
+      "TargetField": [ "Seeds"],
+      "Entries": {
+        "{{ModID}}_ancientamaranth.seed": "{{ModID}}_ancientamaranth.seed",
+        "{{ModID}}_ancientepiphyticfern.seed": "{{ModID}}_ancientepiphyticfern.seed",
+        "{{ModID}}_ancientglowinghuckleberry.seed": "{{ModID}}_ancientglowinghuckleberry.seed",
+        "{{ModID}}_glowingpolyporemushrooms.seed": "{{ModID}}_glowingpolyporemushrooms.seed",
+        "{{ModID}}_ancientwildfairyrose.seed": "{{ModID}}_ancientwildfairyrose.seed",
+        "{{ModID}}_ancientbottlegourd.seed": "{{ModID}}_ancientbottlegourd.seed",
+        "{{ModID}}_ancientelderberry.seed": "{{ModID}}_ancientelderberry.seed",
+        "{{ModID}}_ancientgiantappleberry.seed": "{{ModID}}_ancientgiantappleberry.seed",
+        "{{ModID}}_ancientazuredetura.seed": "{{ModID}}_ancientazuredetura.seed",
+        "{{ModID}}_ancientsweettealeaves.seed": "{{ModID}}_ancientsweettealeaves.seed"
+      }
+      },
+  ]
+}

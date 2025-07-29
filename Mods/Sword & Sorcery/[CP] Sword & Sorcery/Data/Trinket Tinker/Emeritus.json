@@ -1,0 +1,260 @@
+{
+  "Changes": [
+  //Tinket data
+    {
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/TAS",
+      "Entries": {
+        "{{ModId}}_FireBall": {
+          "Id": "{{ModId}}_FireBall",
+          "Texture": "Characters/EmeritusFireball",
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+          },
+          "Frames": 16,
+          "Interval": 15,
+          "PositionOffset": "-9,-7"
+        },
+        "{{ModId}}_FireBallBig": {
+          "Id": "{{ModId}}_FireBallBig",
+          "Texture": "Tilesheets/Fireball",
+          "SourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 32
+          },
+          "Frames": 16,
+          "Interval": 15,
+          "PositionOffset": "-9,-7"
+        }
+      }
+    },
+    //Tinket buff
+   {
+      "LogName": "Dino Digs",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "{{ModId}}_DinoDigs": {
+          "DisplayName": "{{i18n: buff.emeritusbuff}}",
+          "Duration": 20000,
+          "MaxDuration": -1,
+          "IconTexture": "Textures/DN.SnS/SnSObjects",
+          "IconSpriteIndex": 130,
+          "Effects": {
+            "MiningLevel": 3.0,
+            "Defense": 3.0,
+            "MagneticRadius": 3.0
+          }
+        }
+        }
+      },
+    {
+      "LogName": "Emeritus",
+      "Action": "EditData",
+      "Target": "mushymato.TrinketTinker/Tinker",
+      "Entries": {
+        "{{ModId}}_EmeritusKeychain": {
+          "Variants": [
+            {
+              "Texture": "Characters/MateoEmeritus",
+              "Width": 32,
+              "Height": 32,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "FrameLength": 4,
+            "AnimClips": {
+              "Idle.1": {
+                  "FrameStart": 24,
+                  "FrameLength": 3,
+                  "Interval": 300
+              },
+              "Swim.1": {
+                "FrameStart": 32,
+                "FrameLength": 2,
+                "Interval": 300
+              },
+              "Swim.2": {
+                "FrameStart": 28,
+                "FrameLength": 2,
+                "Interval": 300
+              },
+              "Swim.3": {
+                "FrameStart": 34,
+                "FrameLength": 2,
+                "Interval": 300
+              },
+              "Swim.4": {
+                "FrameStart": 30,
+                "FrameLength": 2,
+                "Interval": 300
+              },
+              "Fireball": {
+                "FrameStart": 16,
+                "FrameLength": 7,
+                "Interval": 100,
+                "PauseMovement": true
+            }
+            },
+            "Args": {
+              "Min": 64,
+              "Rate": 500,
+              "MoveSync": true
+            }
+          },
+          "Abilities": [
+            [
+              {
+                "Proc": "Timer",
+                "ProcTimer": 2500,
+                "AbilityClass": "Projectile",
+                "ProcOneshotAnim": "Fireball",
+                "ProcSound": {
+                  "CueName": "fireball",
+                  "Pitch": [ 0 ]
+                },
+                "Args": {
+                  "StunTime": 150,
+                  "StunTAS": "{{ModId}}_FireBall",
+                  "Range": 2000,
+                  "Texture": "Characters/EmeritusFireball",
+                  "SpriteIndex": 0,
+                  "Acceleration": 2,
+                  "MinVelocity": 2,
+                  "MaxVelocity": 24,
+                  "SpriteWidth": 16,
+                  "SpriteHeight": 16,
+                  "IgnoreObjectCollisions": true,
+                  "Min": 30,
+                  "Max": 60,
+                  "Filters": [ "Shadow Guy", "Shadow Shaman", "Shadow Sniper", "Shadow Brute", "Stygium Crab", "Rock Crab", "Truffle Crab", "Lava Crab", "Iridium Crab", "Stygium False Mushroom" ]
+                }
+              },
+              {
+                "Proc": "Timer",
+                "ProcTimer": 15000,
+                "AbilityClass": "Projectile",
+                "ProcOneshotAnim": "Fireball",
+                "ProcSound": {
+                  "CueName": "fireball",
+                  "Pitch": [ 0 ]
+                },
+                "Args": {
+                  "StunTime": 500,
+                  "StunTAS": "{{ModId}}_FireBallBig",
+                  "Range": 2000,
+                  "Texture": "Tilesheets/Fireball",
+                  "SpriteIndex": 0,
+                  "Acceleration": 2,
+                  "MinVelocity": 2,
+                  "MaxVelocity": 24,
+                  "SpriteWidth": 32,
+                  "SpriteHeight": 32,
+                  "IgnoreObjectCollisions": true,
+                  "Min": 100,
+                  "Max": 250,
+                  "Filters": [ "Shadow Guy", "Shadow Shaman", "Shadow Sniper", "Shadow Brute" ]
+                }
+              },
+              {
+                "AbilityClass": "ItemDrop",
+                "Proc": "Footstep",
+                "ProcSound": {
+                  "CueName": "pickUpItem",
+                  "Pitch": [ 0 ]
+                },
+                "Condition": "SYNCED_RANDOM tick EmeritusDropsMine .02, LOCATION_IS_MINES Here",
+                "Args": {
+                  "ID": "MineDrops",
+                  "RandomItemId": [
+                    "(O)382", "(O)382", "(O)382", "(O)382", "(O)382", "(O)380", "(O)380", "(O)380", "(O)380", "(O)380", "(O)378", "(O)378", "(O)378", "(O)378", "(O)378", "(O)384", "(O)384", "(O)384", "(O)384", "(O)909", "(O)386", "(O)386", "(O)72", "(O)259", "(O)259", "(O)259", "(O)259", "(O)259", "(O)259" ]
+                }
+              },
+              {
+                "AbilityClass": "ItemDrop",
+                "Proc": "Footstep",
+                "ProcSound": {
+                  "CueName": "pickUpItem",
+                  "Pitch": [ 0 ]
+                },
+                "Condition": "SYNCED_RANDOM tick EmeritusDropsSkull .01, LOCATION_IS_SKULL_CAVE Here",
+                "Args": {
+                  "ID": "SkullDrops",
+                  "RandomItemId": [ "(O)386", "(O)386", "(O)259", "(O)259", "(O)259" ]
+                }
+              },
+              {
+                "AbilityClass": "ItemDrop",
+                "Proc": "Footstep",
+                "ProcSound": {
+                  "CueName": "pickUpItem",
+                  "Pitch": [ 0 ]
+                },
+                "Condition": "SYNCED_RANDOM tick EmeritusDropsDark .02, LOCATION_CONTEXT Here SnSDeepDarkDark",
+                "Args": {
+                  "ID": "DDDarkDrops",
+                  "RandomItemId": [ "(O){{ModID}}_taintedcrocus", "(O){{ModID}}_taintedgrasses", "(O){{ModID}}_taintedcorn", "(O){{ModID}}_taintedcrocus", "(O){{ModID}}_taintedgrasses", "(O){{ModID}}_taintedcorn", "(O){{ModID}}_taintedcrocus", "(O){{ModID}}_taintedgrasses", "(O){{ModID}}_taintedcorn",  "(O){{ModID}}_StygiumOre" ]
+                }
+              },
+              {
+                "AbilityClass": "ItemDrop",
+                "Proc": "Footstep",
+                "ProcSound": {
+                  "CueName": "pickUpItem",
+                  "Pitch": [ 0 ]
+                },
+                "Condition": "SYNCED_RANDOM tick EmeritusDropsMush .02, LOCATION_CONTEXT Here SnSDeepDarkMushrooms",
+                "Args": {
+                  "ID": "DDMushDrops",
+                  "RandomItemId": [ "(O){{ModID}}_mushroom1", "(O){{ModID}}_mushroom2", "(O){{ModID}}_mushroom3", "(O){{ModID}}_mushroom4", "(O){{ModID}}_mushroom1", "(O){{ModID}}_mushroom2", "(O){{ModID}}_mushroom3", "(O){{ModID}}_mushroom4", "(O){{ModID}}_mushroomtreeseed", "(O){{ModID}}_mushroomtreeseed", "(O){{ModID}}_StygiumOre" ]
+                }
+              },
+              {
+                "AbilityClass": "ItemDrop",
+                "Proc": "Footstep",
+                "ProcSound": {
+                  "CueName": "pickUpItem",
+                  "Pitch": [ 0 ]
+                },
+                "Condition": "SYNCED_RANDOM tick EmeritusDropsLakes .02, LOCATION_CONTEXT Here SnSDeepDarkLakes",
+                "Args": {
+                  "ID": "DDLakesDrops",
+                  "RandomItemId": [ "(O)372", "(O)394", "(O){{ModID}}_taintedcrocus", "(O){{ModID}}_mushroom3", "(O)372", "(O)394", "(O){{ModID}}_taintedcrocus", "(O){{ModID}}_mushroom3", "(O){{ModID}}_StygiumOre" ]
+                }
+              },
+              {
+                "AbilityClass": "Buff",
+                "Proc": "Timer",
+                "ProcTimer": 19000,
+                "Args": { "BuffId": "{{ModId}}_DinoDigs" }
+              },
+              {
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": { "BuffId": "{{ModId}}_DinoDigs" }
+              },
+              {
+                "AbilityClass": "HarvestForage",
+                "Proc": "Timer",
+                "ProcTimer": 250,
+                "ProcSound": {
+                  "CueName": "harvest",
+                  "Pitch": [ 0 ]
+                },
+                "Args": { "Range": 2 }
+              }
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

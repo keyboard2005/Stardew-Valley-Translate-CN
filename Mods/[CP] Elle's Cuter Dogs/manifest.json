@@ -1,0 +1,11 @@
+{
+   "Name": "Elle's Cuter Dogs",
+   "Author": "Elle/Junimods",
+   "Version": "1.0.1",
+   "Description": "Adds new skins/breeds for your dogs!",
+   "UniqueID": "Elle.CuterDogs",
+   "UpdateKeys": [ "Nexus:20040" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

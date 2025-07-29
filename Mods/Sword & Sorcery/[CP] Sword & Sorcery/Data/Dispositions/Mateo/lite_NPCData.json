@@ -1,0 +1,152 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Mateo": {
+                    "DisplayName": "{{i18n:Core.Mateo.Name}}",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 25,
+                    "HomeRegion": "Town",
+                    "CanBeRomanced": "{{MateoRelationshipStatus}}",
+                    "LoveInterest": "Aideen",
+                    "PerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "SocialTab": "UnknownUntilMet",
+                    "Calendar": "HiddenUntilMet",
+                    "IntroductionsQuest": false,
+                    "FlowerDanceCanDance": true,
+                    "WinterStarParticipant": false,
+                    "IsDarkSkinned": true,
+                    "ShakePortraits": [
+                        18,
+                        19,
+                        56,
+                        57
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "{{MateoSpouseRoomOnOff}}"
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "{{MateoSpousePatioOnOff}}"
+                    },
+                    "Home": [
+                        {
+                            "ID": "Mateo - Coastal Adventurer's Guild",
+                            "Location": "EastScarp_CoastalGuild",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12"
+                        },
+                        {
+                            "ID": "Mateo - Beach Tent",
+                            "Location": "EastScarp_MateoHome",
+                            "Tile": {
+                                "X": 5,
+                                "Y": 6
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.0"
+                        },
+                        {
+                            "ID": "Mateo - NPC Waiting Room",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 11,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "!PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.0"
+                        },
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "Spring Outfit 1",
+                            "Condition": "SEASON Spring",
+                            "Precedence": -10,
+                            "Weight": 1,
+                            "Portrait": "Portraits/Mateo_Seasonal_1",
+                            "Sprite": "Characters/Mateo_Seasonal_1"
+                        },
+                        {
+                            "ID": "Summer Outfit 1",
+                            "Condition": "SEASON Summer",
+                            "Precedence": -10,
+                            "Weight": 1,
+                            "Portrait": "Portraits/Mateo_Seasonal_4",
+                            "Sprite": "Characters/Mateo_Seasonal_4"
+                        },
+                        {
+                            "ID": "Fall Outfit 1",
+                            "Condition": "SEASON Fall",
+                            "Precedence": -10,
+                            "Weight": 1,
+                            "Portrait": "Portraits/Mateo_Seasonal_1",
+                            "Sprite": "Characters/Mateo_Seasonal_1"
+                        },
+                        {
+                            "ID": "Winter Outfit 1",
+                            "Condition": "SEASON Winter",
+                            "Precedence": -10,
+                            "Weight": 1,
+                            "Portrait": "Portraits/Mateo_Seasonal_8",
+                            "Sprite": "Characters/Mateo_Seasonal_8"
+                        },
+                        {
+                            "ID": "Flower Dance",
+                            "Condition": "EVENT_ID festival_spring24",
+                            "Portrait": "Portraits/FlowerDance_Mateo",
+                            "Sprite": "Characters/FlowerDance_Mateo",
+                            "Precedence": -20
+                        },
+                        {
+                            "ID": "Spirit's Eve",
+                            "Condition": "EVENT_ID festival_fall27",
+                            "Sprite": "Characters/SpiritsEve_Mateo",
+                            "Precedence": -20
+                        },
+                        {
+                            "ID": "Beach",
+                            "IsIslandAttire": true,
+                            "Portrait": "Portraits/Mateo_Beach",
+                            "Sprite": "Characters/Mateo_Beach",
+                            "Precedence": -20
+                        },
+                        {
+                            "ID": "Date Night",
+                            "Condition": "ANY \"EVENT_ID 57871054\"",
+                            "Portrait": "Portraits/DateNight_Mateo",
+                            "Sprite": "Characters/DateNight_Mateo",
+                            "Precedence": -20
+                        },
+                        {
+                            "ID": "Armor",
+                            "Condition": "Any \"LOCATION_NAME Target Mine\" \"EVENT_ID SnS.Ch1.Mateo.0\" \"EVENT_ID SnS.Ch1.Mateo.4\" \"EVENT_ID SnS.Ch1.Mateo.9\" \"EVENT_ID SnS.Ch1.Mateo.10\" \"EVENT_ID SnS.Ch1.Mateo.16\" \"EVENT_ID SnS.Ch1.Mateo.17\" \"EVENT_ID 57871051\" \"EVENT_ID MadDog.BearFam.16193001A\" \"EVENT_ID SnS.Ch4.Roslin.6\"",
+                            "Portrait": "Portraits/Armor_Mateo",
+                            "Sprite": "Characters/Armor_Mateo",
+                            "Precedence": -20
+                        },
+                        {
+                            "ID": "Shirtless",
+                            "Condition": "Any \"EVENT_ID SnS.Ch1.Mateo.19\"",
+                            "Portrait": "Portraits/Mateo_Beach",
+                            "Sprite": "Characters/Shirtless_Mateo",
+                            "Precedence": -20
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,531 @@
+{
+    "Changes": [
+        // 
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_LexiShop": {
+                    "Owners": [
+                        {
+                            "Name": "Leximonster",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Current 57872007",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.Lexishop_Default",
+                                    "Dialogue": "{{i18n:LexiShop.dialogue}}"
+                                }
+                            ],
+                            //"ClosedMessage": "{{i18n:LexiShop.closed}}"
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade1",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            //"AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade2",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            // "ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade3",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            //"ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade4",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_MelonTrade1",
+                            "Price": 0,
+                            "TradeItemId": "(O)254",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)543",
+                                "(O)560",
+                                "(O)577",
+                                "(O)275",
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_MelonTrade2",
+                            "Price": 0,
+                            "TradeItemId": "(O)254",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)543",
+                                "(O)560",
+                                "(O)577",
+                                "(O)275",
+                            ]
+                        }
+                    ]
+                },
+                "Lemurkat.EastScarp_InnShop": {
+                    "Owners": [
+                        {
+                            "Name": "None",
+                            "Id": "Closed",
+                            "Dialogues": null,
+                            "ClosedMessage": "{{i18n:InnShop.closed}}"
+                        },
+                        {
+                            "Name": "Rosa",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CoffeeShop",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                }
+                            ]
+                        },
+                        /*  {
+                            "Name": "Rosa",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                },
+                            ],
+                        },
+                        /* {
+                            "Name": "MichalIB",
+                           // "ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop_Michal",
+                                    "Dialogue": "{{i18n:InnShop.michal.dialogue}}"
+                                }
+                            ]
+                        },*/
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_bread",
+                            "AvailableStock": 1,
+                            "Price": 100,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)216",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Scarp_Warp_Totem",
+                            "AvailableStock": 1,
+                            "Price": 250,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)EastScarp_Scarp_Warp_Totem",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Scarp_Warp_Totem_recipe",
+                            "AvailableStock": 1,
+                            "Price": 1250,
+                            "AvailableStockLimit": "Player",
+                            "IsRecipe": true,
+                            "ItemId": "(O)EastScarp_Scarp_Warp_Totem",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_cofeeOrcookie",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)395",
+                                "(O)223"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_bakedgoods",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)651",
+                                "(O)731",
+                                "(O)611",
+                                "(O)222",
+                                "(O)234",
+                                "(O)604",
+                                "(O)221"
+                            ]
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_CoffeeShop": {
+                    "Owners": [
+                        {
+                            "Name": "Rosa",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CoffeeShop_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_bread",
+                            "AvailableStock": 1,
+                            "Price": 100,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)216",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_coffeeOrcookie",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)395",
+                                "(O)223"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_IceCream",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "(O)233"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_bakedgoods",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)651",
+                                "(O)731",
+                                "(O)611",
+                                "(O)222",
+                                "(O)234",
+                                "(O)604",
+                                "(O)221"
+                            ]
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_InnShop.spiritEve": {
+                    "Owners": [
+                        {
+                            "Name": "Rosa",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop.spiritEve_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.spiritEve.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_pumpkinPie",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)608",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_blackberrycobbler",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)611",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_cranberrycandy",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)612",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_maplebar",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)731",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_spirittorch",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)94",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_jackOlantern",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)746",
+                        },
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            },
+            "Entries": {
+                "Lemurkat.EastScarp_JessieSeedShop": {
+                    "Owners": [
+                        {
+                            "Name": "Jessie",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.SeedShop_Jessie",
+                                    "Dialogue": "{{i18n:SeedShop.jessie.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie1",
+                            "AvailableStock": 10,
+                            "Price": 60,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)453",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie2",
+                            "AvailableStock": 10,
+                            "Price": 60,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)478",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie3",
+                            "AvailableStock": 10,
+                            "Price": 40,
+                            "Condition": "YEAR 2",
+                            "ItemId": "(O)476"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie4",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "Condition": "YEAR 2",
+                            "ItemId": "(O)773"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie5",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "Condition": "SEASON fall",
+                            "ItemId": "(O)422"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie6",
+                            "AvailableStock": 1,
+                            "Price": 1200,
+                            "Condition": "PLAYER_COMBAT_LEVEL current 6",
+                            "ItemId": "(O)772"
+                        },
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                "EastScarp_JasperPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Jasper 14",
+                    "Id": "(F)EastScarp_JasperPortrait",
+                    "ItemId": "(F)EastScarp_JasperPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_AideenPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Aideen 14",
+                    "Id": "(F)EastScarp_AideenPortrait",
+                    "ItemId": "(F)EastScarp_AideenPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_JulietPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Juliet 14",
+                    "Id": "(F)EastScarp_JulietPortrait",
+                    "ItemId": "(F)EastScarp_JulietPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_MrGingerPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current MisterGinger 14",
+                    "Id": "(F)EastScarp_MrGingerPortrait",
+                    "ItemId": "(F)EastScarp_MrGingerPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_KatarynaPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current KatarynaLK 14",
+                    "Id": "(F)EastScarp_KatarynaPortrait",
+                    "ItemId": "(F)EastScarp_KatarynaPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_LemurPainting": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Jasper 8, PLAYER_HEARTS Current Juliet 8, PLAYER_HEARTS Current MisterGinger 8, RANDOM 0.5",
+                    "Id": "(F)EastScarp_LemurPainting",
+                    "ItemId": "(F)EastScarp_LemurPainting",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_DuckLovePortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current DuckNPC 10, PLAYER_HEARTS Current Duck2NPC 10",
+                    "Id": "(F)EastScarp_DuckLovePortrait",
+                    "ItemId": "(F)EastScarp_DuckLovePortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+            }
+        }
+    ]
+}

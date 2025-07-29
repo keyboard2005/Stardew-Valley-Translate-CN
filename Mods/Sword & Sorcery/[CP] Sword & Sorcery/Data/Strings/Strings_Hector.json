@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Map Strings",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        //HECTOR'S STRINGS 
+
+        "PassiveAggressiveDoor": "{{i18n:Strings.Hector.PassiveAggressiveDoor}}",
+        "WestworldScreenplay": "{{i18n:Strings.Hector.WestworldScreenplay}}",
+        "BookRest": "{{i18n:Strings.Hector.BookRest}}",
+        "MundaneKitchen": "{{i18n:Strings.Hector.MundaneKitchen}}",
+        "HomemadeTea": "{{i18n:Strings.Hector.HomemadeTea}}",
+        "OSHAViolation": "{{i18n:Strings.Hector.OSHAViolation}}",
+        "FashionTaste": "{{i18n:Strings.Hector.FashionTaste}}",
+        "LovedAltar": "{{i18n:Strings.Hector.LovedAltar.{{HectorRomance}}.{{Random:1++2++3++4++5++6++7++8++9|inputSeparator=++}}}}",
+        "WeirdPlants1": "{{i18n:Strings.Hector.WeirdPlants1}}",
+        "WeirdPlants2": "{{i18n:Strings.Hector.WeirdPlants2}}",
+        "WeirdPlants3": "{{i18n:Strings.Hector.WeirdPlants3}}",
+        "WeirdPlants4": "{{i18n:Strings.Hector.WeirdPlants4}}",
+        "AnarchyGarden": "{{i18n:Strings.Hector.AnarchyGarden}}",
+        "TimeToHeal": "{{i18n:Strings.Hector.TimeToHeal}}",
+        "YoureMyHuckleberry": "{{i18n:Strings.Hector.YoureMyHuckleberry}}",
+        "Annihilation": "{{i18n:Strings.Hector.Annihilation}}",
+        "HectorGlade": "{{i18n:Strings.Hector.HectorGlade}}"
+
+      }
+    }
+  ]
+ }

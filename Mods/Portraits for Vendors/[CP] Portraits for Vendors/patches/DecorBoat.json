@@ -1,0 +1,20 @@
+{
+	"Changes":[
+		{
+			"LogName": "Decoration Seller",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_DecorationBoat", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/DecorBoat_Default"},
+		},
+// Night Market Cat Boat Support
+		{
+			"LogName": "Night Market Cat",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_DecorationBoat", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/DecorBoat_{{DecorCat}}{{DecorPipe}}"},
+			"When": {"HasMod": "MouseyPounds.NightMarketCatBoat"}
+		},	
+	],
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "Add Berry Seasons to Calendar",
+  "Author": "Inmognito",
+  "Version": "1.1.0",
+  "Description": "Adds berry icons to the calendar for salmonberry and blackberry harvesting days, and shell icons for the summer",
+  "UniqueID": "Inmognito.BerryCalendar",
+  "UpdateKeys": [ "Nexus:10477" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

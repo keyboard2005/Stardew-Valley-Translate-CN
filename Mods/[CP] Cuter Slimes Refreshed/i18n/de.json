@@ -1,0 +1,14 @@
+{
+    "config.section.General.name": "Allgemeine Einstellungen",
+    "config.section.Appearance.name": "Aussehen Einstellungen",
+
+    "config.Enabled.name": "Niedliche Slimes aktivieren",
+    "config.Enabled.description": "Aktiviere diese Option, um alle deine Slimes niedlicher als je zuvor aussehen zu lassen.",
+    "config.Enabled.values.true": "Ja",
+    "config.Enabled.values.false": "Nein",
+
+    "config.Mode.name": "Slime-Stil",
+    "config.Mode.description": "Wähle aus, wie deine Slimes aussehen sollen. Gelee macht sie weicher und durchsichtiger, während Glänzend ihnen ein glänzendes, reflektierendes Aussehen verleiht.",
+    "config.Mode.values.jelly": "Gelee",
+    "config.Mode.values.glossy": "Glänzend"
+}

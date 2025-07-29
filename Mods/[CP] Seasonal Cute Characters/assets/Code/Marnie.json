@@ -1,0 +1,179 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+		{
+			"LogName": "Load Marnie's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Marnie_Spring, Portraits/Marnie_Summer, Portraits/Marnie_Fall, Portraits/Marnie_Winter_Outdoor, Portraits/Marnie_Winter_Indoor, Portraits/Marnie_FlowerDance, Portraits/Marnie_SpiritsEve, Portraits/Marnie_Aerobics, Characters/Marnie_Spring, Characters/Marnie_Summer, Characters/Marnie_Fall, Characters/Marnie_Winter_Outdoor, Characters/Marnie_Winter_Indoor, Characters/Marnie_FlowerDance, Characters/Marnie_SpiritsEve, Characters/Marnie_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Marnie/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Marnie's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie_Beach, Characters/Marnie_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Marnie/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Marnie Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Marnie", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MarnieSpring": {
+					"Id": "{{ModId}}.MarnieSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Marnie_Spring",
+					"Portrait": "Portraits/Marnie_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.MarnieSummer": {
+					"Id": "{{ModId}}.MarnieSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Marnie_Summer",
+					"Portrait": "Portraits/Marnie_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarnieFall": {
+					"Id": "{{ModId}}.MarnieFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Marnie_Fall",
+					"Portrait": "Portraits/Marnie_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarnieWinterIndoor": {
+					"Id": "{{ModId}}.MarnieWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Marnie_Winter_Indoor",
+					"Portrait": "Portraits/Marnie_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.MarnieWinterOutdoor": {
+					"Id": "{{ModId}}.MarnieWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Marnie_Winter_Outdoor",
+					"Portrait": "Portraits/Marnie_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.MarnieFlowerDance": {
+					"Id": "{{ModId}}.MarnieFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Marnie_FlowerDance",
+					"Portrait": "Portraits/Marnie_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.MarnieSpirit": {
+					"Id": "{{ModId}}.MarnieSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Marnie_SpiritsEve",
+					"Portrait": "Portraits/Marnie_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.MarnieBeach": {
+					"Id": "{{ModId}}.MarnieBeach",
+					"Sprite": "Characters/Marnie_Beach",
+					"Portrait": "Portraits/Marnie_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.MarnieAerobics": {
+					"Id": "{{ModId}}.MarnieAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Marnie_Aerobics",
+					"Sprite": "Characters/Marnie_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Marnie - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Marnie - Dancing",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 },
+			"ToArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Marnie - Secret Notes",
+            "Action": "EditImage",
+            "Target": "TileSheets/SecretNotesImages",
+            "FromFile": "assets/{{NoNose}}/Random/SecretNotesImages.png",
+            "FromArea": { "X": 147, "Y": 90, "Width": 17, "Height": 27 },
+            "ToArea": { "X": 147, "Y": 90, "Width": 17, "Height": 27 },
+            "When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+            "FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+		{
+			"LogName": "Marnie Winter Dance",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Marnie_Winter_Dance",
+            "FromFile": "assets/Characters/Marnie_WinterDance.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Marnie Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Marnie",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"Changes":[
+		{
+			"LogName": "Magic Peddler Day 1",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_MagicBoat_Day1", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MagicBoat_Default"},
+		},
+		{
+			"LogName": "Magic Peddler Day 2",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_MagicBoat_Day2", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MagicBoat_Default"},
+		},
+		{
+			"LogName": "Magic Peddler Day 3",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_NightMarket_MagicBoat_Day3", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MagicBoat_Default"},
+		},
+	],
+}

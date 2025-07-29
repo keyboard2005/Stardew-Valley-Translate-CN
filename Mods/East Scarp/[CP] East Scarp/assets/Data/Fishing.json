@@ -1,0 +1,444 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "EastScarp_Golden_Trout": "Golden Trout/80/smooth/6/12/600 1200/spring summer fall winter/both/689 .4 680 .1/3/.3/.1/0",
+                "EastScarp_Kokanee_Salmon": "Kokanee Salmon/75/dart/6/12/1100 2000/spring summer fall winter/both/689 .4 680 .1/3/.2/.1/0",
+                "EastScarp_King_Carp": "King Carp/90/dart/12/60/1000 1800/spring summer fall/both/689 .4 680 .1/4/.2/.1/8",
+                "EastScarp_Cerulean_Nudibranch": "Cerulean Nudibranch/70/dart/1/3/1000 1800/winter/both/683 .2 689 .4/4/.1/.25/0",
+                "EastScarp_Ornate_Nudibranch": "Ornate Nudibranch/80/floater/1/3/1000 1800/spring/both/683 .2 689 .4/4/.1/.25/0",
+                "EastScarp_Sea_Bunny_Nudibranch": "Sea Bunny Nudibranch/80/sinker/1/3/1000 1800/summer/both/683 .2 689 .4/4/.1/.25/0",
+                "EastScarp_Sunset_Nudibranch": "Sunset Nudibranch/85/mixed/1/3/1000 1800/fall/both/683 .2 689 .4/4/.1/.25/0",
+                "EastScarp_Red_Herring": "Red Herring/65/dart/8/20/600 2600/spring summer fall winter/both/685 .2/3/.33/.1/0",
+                "EastScarp_Fairy_Betta": "Fairy Betta/75/dart/1/3/600 2000/spring summer fall/both/689 .4 680 .1/3/.35/.1/0",
+                "EastScarp_Obsidian_Maw": "Obsidian Maw/80/mixed/12/80/1200 2400/spring summer fall winter/rainy/689 .4 680 .1/4/.4/.1/0",
+                "EastScarp_Slime_Barbel": "Slime Barbel/80/sinker/6/28/1600 2400/spring summer fall winter/sunny/689 .4 680 .1/4/.2/.1/0",
+            }
+        },
+        {
+            "LogName": "Aquarium Data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "EastScarp_Cerulean_Nudibranch": "0/crawl/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Ornate_Nudibranch": "1/float/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Sea_Bunny_Nudibranch": "2/crawl/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Sunset_Nudibranch": "3/crawl/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Red_Herring": "4/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Kokanee_Salmon": "6/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Golden_Trout": "7/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_King_Carp": "8/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Fairy_Betta": "9/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Obsidian_Maw": "10/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish",
+                "EastScarp_Slime_Barbel": "11/fish/////Mods\\Lemurkat.EastScarp\\esaquariumfish"
+            }
+        },
+        {
+            "LogName": "Aquarium Sprites",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/esaquariumfish",
+            "FromFile": "assets/Textures/AquariumSprites.png",
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "EastScarpe_Kokanee_Salmon": {
+                    "ID": "EastScarpe_Kokanee_Salmon",
+                    "RequiredTags": [
+                        "fish_kokanee_salmon"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.02,
+                            "ItemID": "(O)394",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": "(O)74",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 1.0,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "(O)338 3",
+                            "(O)340",
+                            "(O)393 3",
+                            "(O)723"
+                        ],
+                        "6": [
+                            "(O)422 2 3",
+                            "(O)60 2",
+                            "(O)749 2 3",
+                            "(O)116"
+                        ],
+                        "8": [
+                            "(O)342",
+                            "(O)336 3",
+                            "(O)344",
+                            "(O)386",
+                            "(O)72"
+                        ]
+                    }
+                },
+                "EastScarp_Golden_Trout": {
+                    "ID": "EastScarp_Golden_Trout",
+                    "RequiredTags": [
+                        "fish_golden_trout"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": "(O)124",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.01,
+                            "ItemID": "(O)336",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.4,
+                            "ItemID": "(O)384",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.8,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "384 3"
+                        ],
+                        "6": [
+                            "559 1"
+                        ],
+                        "8": [
+                            "336 3"
+                        ]
+                    }
+                },
+                "fish_nudibranch": {
+                    "ID": "fish_nudibranch",
+                    "RequiredTags": [
+                        "fish_nudibranch"
+                    ],
+                    "SpawnTime": -1,
+                    "Precedence": 100,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.001,
+                            "ItemID": "(O)72",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": "(O)80",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.6,
+                            "ItemID": "(O)766",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 1.0,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "(O)685 5"
+                        ],
+                        "6": [
+                            "(O)774 5"
+                        ],
+                        "8": [
+                            "(O)908 2"
+                        ]
+                    }
+                },
+                "EastScarp_Red_Herring": {
+                    "ID": "EastScarp_Red_Herring",
+                    "RequiredTags": [
+                        "fish_red_herring"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": 1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.1,
+                            "ItemID": "(O)64",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 1,
+                            "Chance": 0.9,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "(O)169 3"
+                        ],
+                        "6": [
+                            "(O)393"
+                        ]
+                    }
+                },
+                "EastScarp_Fairy_Betta": {
+                    "ID": "EastScarp_Fairy_Betta",
+                    "RequiredTags": [
+                        "fish_fairy_betta" // should match the tag defined above
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.02, // chance of this item being produced : this is a 2% chance
+                            "ItemID": "(O)577", //the item you want them to produce, in this case a fairy stone
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.01,
+                            "ItemID": "(O)425", //fairy seeds
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": "(O)745", //strawberry seeds
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)812", //812 is roe
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        //These measure what is required for your fish population to increase past that number. An item will be randomly selected from the below.
+                        "4": [
+                            "(O)400 5" // will request 5 strawberries
+                        ],
+                        "7": [
+                            "(O)595 3" // will request 3 fairy roses
+                        ]
+                    }
+                },
+                "EastScarp_Obsidian_Maw": {
+                    "ID": "EastScarp_Obsidian_Maw",
+                    "RequiredTags": [
+                        "fish_obsidian_maw" // should match the tag defined above
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.005,
+                            "ItemID": "(O)108",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": "(O)769",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": "(O)382",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)812", //812 is roe
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        //These measure what is required for your fish population to increase past that number. An item will be randomly selected from the below.
+                        "4": [
+                            "(O)749 3" // will request 3 omnigeodes 
+                        ],
+                        "7": [
+                            "(O)575 1" // will request Obsidian
+                        ]
+                    }
+                },
+                "EastScarp_King_Carp": {
+                    "ID": "EastScarp_King_Carp",
+                    "RequiredTags": [
+                        "fish_king_carp"
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.001,
+                            "ItemID": "(O)166",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.01,
+                            "ItemID": "(O)336",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.4,
+                            "ItemID": "(O)384",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.8,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5
+                        }
+                    ],
+                    "PopulationGates": {
+                        "4": [
+                            "(O)18 5"
+                        ],
+                        "6": [
+                            "(O)768 5"
+                        ],
+                        "8": [
+                            "(O)340 4"
+                        ]
+                    }
+                },
+                "EastScarp_Slime_Barbel": {
+                    "ID": "EastScarp_Slime_Barbel",
+                    "RequiredTags": [
+                        "fish_slime_barbel" // should match the tag defined above
+                    ],
+                    "Precedence": 0,
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.005,
+                            "ItemID": "(O)439",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.005,
+                            "ItemID": "(O)413",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.005,
+                            "ItemID": "(O)437",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 7,
+                            "Chance": 0.01,
+                            "ItemID": "(O)557",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1 //petrified slime
+                        },
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.01,
+                            "ItemID": "(O)680",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1 //green slime egg
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.01,
+                            "ItemID": "(O)766",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 5 //slime 
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": "(O)812", //812 is roe
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        //These measure what is required for your fish population to increase past that number. An item will be randomly selected from the below.
+                        "4": [
+                            "(O)769 5" // will request 5 void essence
+                        ],
+                        "7": [
+                            "(O)575 1" // will request Obsidian
+                        ]
+                    }
+                }
+            },
+        }
+    ]
+}

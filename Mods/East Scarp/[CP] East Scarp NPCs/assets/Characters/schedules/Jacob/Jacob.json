@@ -1,0 +1,15 @@
+{
+	"Tue": "610 EastScarp_VetHouse 34 14 3/a920 Town 101 95 3 \"Strings\\schedules\\Jacob:tuesday.000\"/930 EastScarp_Village 33 32 2/1140 EastScarp_VetAwayWarpRoom 5 5 0/1810 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"rain": "GOTO spring",
+	"winter_17": "610 EastScarp_VetHouse 34 14 3/a920 Town 101 95 3 \"Strings\\schedules\\Jacob:tuesday.001\"/1000 EastScarp_Village 19 15 0/1410 Town 101 95/1620 Beach 45 23 2 \"Strings\\schedules\\Jacob:winter_17.000\"/2100 EastScarp_VetHouse 22 5 2",
+	"Wed": "610 EastScarp_VetHouse 34 14 3/a920 Town 101 95 3 \"Strings\\schedules\\Jacob:tuesday.001\"/1000 EastScarp_Village 19 15 0/1620 EastScarp_Village 19 67 1/1800 EastScarp_VetHouse 23 15 0/2000 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"Fri": "610 EastScarp_VetHouse 31 13 2/a920 Town 101 95 3 \"Strings\\schedules\\Jacob:tuesday.001\"/1000 Forest 26 13 0 \"Strings\\schedules\\Jacob:friday.001/1300 AnimalShop 13 16 0 \"Strings\\schedules\\Jacob:friday.002\"/1500 Town 87 103 2/1650 EastScarp_Village 19 67 1/1800 EastScarp_VetHouse 23 15 0/2000 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"Sat": "700 EastScarp_VetHouse 34 14 3/900 EastScarp_Village 19 15 0/1100 EastScarp_Village 32 102 2 \"Strings\\schedules\\Jacob:saturday.001\"/1350 Town 55 72 0/1740 EastScarp_VetHouse 23 15 0/2100 EastScarp_VetHouse 22 5 2",
+	//"Thu": "700 EastScarp_VetHouse 34 14 3/800 EastScarp_House1 5 12 3/1000 EastScarp_Village 25 9 0/1200 EastScarp_Village 27 36 2/1300 EastScarp_Village 54 88 2/1800 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"Sun": "700 EastScarp_VetHouse 34 14 3/900 EastScarp_Village 19 15 0/1000 EastScarp_Village 25 9 0/1200 EastScarp_Village 27 36/1300 EastScarp_Village 54 88 2/1800 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"spring": "700 EastScarp_VetHouse 34 14 3/900 EastScarp_Village 19 15 0/1200 EastScarp_VetHouse 5 23 2/1400 EastScarp_VetHouse 8 23 0/1600 EastScarp_VetHouse 23 15 0/1700 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+	"fall_27_NoMadeen": "700 EastScarp_VetHouse 34 14 3/a1230 EastScarp_VillageInn 30 27 0/1330 EastScarp_VillageInn 20 27 1/1510 EastScarp_VillageInn 21 28 3/1910 EastScarp_VillageInn 42 21 1/2010 Town 16 51 2",
+	"fall_27": "MAIL RivalHearts_AideenMateo/GOTO fall_27_NoMadeen/700 EastScarp_VetHouse 34 14 3/a1230 EastScarp_VillageInn 30 27 0/1330 EastScarp_VillageInn 20 28 1/1510 EastScarp_VillageInn 21 28 3/1700 EastScarp_VillageInn 33 33 0/1910 EastScarp_VillageInn 42 21 1/2010 Town 16 51 2",
+    "GreenRain":"0 EastScarp_VillageInn 26 29 3"
+           
+}

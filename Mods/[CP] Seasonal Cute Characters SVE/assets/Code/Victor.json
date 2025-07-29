@@ -1,0 +1,140 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Victor's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Victor_Spring, Portraits/Victor_Summer, Portraits/Victor_Fall, Portraits/Victor_Winter_Outdoor, Portraits/Victor_Winter_Indoor, Portraits/Victor_FlowerDance, Portraits/Victor_SpiritsEve, Portraits/Victor_Beach, Characters/Victor_Spring, Characters/Victor_Summer, Characters/Victor_Fall, Characters/Victor_Winter_Outdoor, Characters/Victor_Winter_Indoor, Characters/Victor_FlowerDance, Characters/Victor_SpiritsEve, Characters/Victor_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Victor/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Victor - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Victor_Spring, Characters/Victor_Summer, Characters/Victor_Fall, Characters/Victor_Winter_Outdoor, Characters/Victor_Winter_Indoor, Characters/Victor_FlowerDance, Characters/Victor_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Victor/Victor_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Victor - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Victor_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Victor/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Victor Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Victor", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.VictorSpring": {
+					"Id": "{{ModId}}.VictorSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Victor_Spring",
+					"Portrait": "Portraits/Victor_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.VictorSummer": {
+					"Id": "{{ModId}}.VictorSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Victor_Summer",
+					"Portrait": "Portraits/Victor_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorFall": {
+					"Id": "{{ModId}}.VictorFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Victor_Fall",
+					"Portrait": "Portraits/Victor_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorWinterIndoor": {
+					"Id": "{{ModId}}.VictorWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Victor_Winter_Indoor",
+					"Portrait": "Portraits/Victor_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VictorWinterOutdoor": {
+					"Id": "{{ModId}}.VictorWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Victor_Winter_Outdoor",
+					"Portrait": "Portraits/Victor_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.VictorFlowerDance": {
+					"Id": "{{ModId}}.VictorFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Victor_FlowerDance",
+					"Portrait": "Portraits/Victor_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.VictorSpirit": {
+					"Id": "{{ModId}}.VictorSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Victor_SpiritsEve",
+					"Portrait": "Portraits/Victor_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.VictorBeach": {
+					"Id": "{{ModId}}.VictorBeach",
+					"Sprite": "Characters/Victor_Beach",
+					"Portrait": "Portraits/Victor_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+		//MISCELLANIOUS
+		{
+			"LogName": "Victor - Spouse Picture",
+			"Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "assets/Characters/SVE_Portraits.png",
+			"FromArea": {"X": 103, "Y": 7, "Width": 18, "Height": 18},
+			"ToArea": {"X": 103, "Y": 7, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Victor Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },			
+	]
+}

@@ -1,0 +1,114 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Dandelion": {
+                    "DisplayName": "丹德里恩",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 16,
+                    "HomeRegion": "Town",
+                    "CanBeRomanced": false,
+                    "CanGreetNearbyCharacters": false,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "IntroductionsQuest": false,
+                    "LoveInterest": "Roslin", 
+                    "SocialTab": "HiddenUntilMet",
+                    "Calendar": "HiddenUntilMet",
+                    "CanVisitIsland": false,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "ItemDeliveryQuests": false,
+                    "ShakePortraits": [5, 3],
+                    "Home": [
+                        {
+                            "ID": "Dandelion - NPC Waiting Room",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "Spring Outfit",
+                            "Condition": "SEASON Spring",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/spring_Dandelion",
+                            "Sprite": "Characters/spring_Dandelion"
+                        },
+                        {
+                            "ID": "Summer Outfit",
+                            "Condition": "SEASON Summer",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/summer_Dandelion",
+                            "Sprite": "Characters/summer_Dandelion"
+                        },
+                        {
+                            "ID": "Fall Outfit",
+                            "Condition": "SEASON Fall",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/fall_Dandelion",
+                            "Sprite": "Characters/fall_Dandelion"
+                        },
+                        {
+                            "ID": "Winter Outfit",
+                            "Condition": "SEASON Winter",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/winter_Dandelion",
+                            "Sprite": "Characters/winter_Dandelion"
+                        },
+                        {
+                            "ID": "Spring Outfit",
+                            "Condition": "SEASON Spring",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/spring_Dandelion",
+                            "Sprite": "Characters/spring_Dandelion"
+                        },
+                        {
+                            "ID": "Summer Outfit",
+                            "Condition": "SEASON Summer",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/summer_Dandelion",
+                            "Sprite": "Characters/summer_Dandelion"
+                        },
+                        {
+                            "ID": "Fall Outfit",
+                            "Condition": "SEASON Fall",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/fall_Dandelion",
+                            "Sprite": "Characters/fall_Dandelion"
+                        },
+                        {
+                            "ID": "Winter Outfit",
+                            "Condition": "SEASON Winter",
+                            "Precedence": -10, 
+                            "Weight": 1,
+                            "Portrait": "Portraits/winter_Dandelion",
+                            "Sprite": "Characters/winter_Dandelion"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+    

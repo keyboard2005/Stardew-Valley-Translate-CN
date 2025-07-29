@@ -1,0 +1,108 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Wizard's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Wizard_Spring, Portraits/Wizard_Summer, Portraits/Wizard_Fall, Portraits/Wizard_Winter, Characters/Wizard_Spring, Characters/Wizard_Summer, Characters/Wizard_Fall, Characters/Wizard_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Wizard/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, //Do not load these if SVE is installed.
+			},
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Wizard - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard_Spring, Characters/Wizard_Summer, Characters/Wizard_Fall, Characters/Wizard_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/Wizard/Wizard_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, //Do not load these if SVE is installed.
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Wizard Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Wizard", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.WizardSpring": {
+					"Id": "{{ModId}}.WizardSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Wizard_Spring",
+					"Portrait": "Portraits/Wizard_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.WizardSummer": {
+					"Id": "{{ModId}}.WizardSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Wizard_Summer",
+					"Portrait": "Portraits/Wizard_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.WizardFall": {
+					"Id": "{{ModId}}.WizardFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Wizard_Fall",
+					"Portrait": "Portraits/Wizard_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.WizardWinter": {
+					"Id": "{{ModId}}.WizardWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Wizard_Winter",
+					"Portrait": "Portraits/Wizard_Winter",
+					"Precedence": -120,
+				},
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false, //Do not load these if SVE is installed.
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Wizard - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Wizard - Krobus Raven",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+			"FromArea": {"X": 0, "Y": 64, "Width": 128, "Height": 39},
+			"ToArea": {"X": 0, "Y": 64, "Width": 128, "Height": 39},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Wizard Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },			
+	]
+}

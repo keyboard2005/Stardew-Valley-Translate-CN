@@ -1,0 +1,2549 @@
+{
+    "Format": "2.0",
+    "Changes": [
+        {
+            "LogName": "Animated Diamond",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Diamond": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Diamond": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/diamond.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Emerald",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Emerald": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Emerald": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Emerald.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Ruby",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Ruby": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Ruby": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Ruby.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Topaz",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Topaz": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Topaz": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Topaz.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Amethyst",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Amethyst": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Amethyst": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Amethyst.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Aquamarine",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Aquamarine": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Aquamarine": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Aquamarine.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated EarthCrystal",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "EarthCrystal": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated EarthCrystal": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/EarthCrystal.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated FrozenTear",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FrozenTear": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated FrozenTear": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/FrozenTear.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Jade",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Jade": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Jade": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Jade.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Tigerseye",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Tigerseye": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Tigerseye": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Tigerseye.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Quartz",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Quartz": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Quartz": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Quartz.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated FireQuartz",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FireQuartz": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated FireQuartz": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/FireQuartz.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Opal",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Opal": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Opal": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Opal.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated FireOpal",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FireOpal": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated FireOpal": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/FireOpal.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated PrismaticShard",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PrismaticShard": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated PrismaticShard": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/PrismaticShard.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Aerinite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Aerinite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Aerinite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Aerinite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Alamite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Alamite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Alamite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Alamite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Baryte",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Baryte": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Baryte": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Baryte.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Bixite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bixite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Bixite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Bixite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Calcite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Calcite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Calcite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Calcite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Dolomite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Dolomite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Dolomite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Dolomite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Esperite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Esperite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Esperite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Esperite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated FairyStone",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FairyStone": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated FairyStone": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 384,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/FairyStone.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Flourapatite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Flourapatite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Flourapatite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Flourapatite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Geminite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Geminite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Geminite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Geminite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GhostCrystal",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GhostCrystal": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GhostCrystal": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GhostCrystal.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Helvite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Helvite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Helvite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Helvite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Jagoite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Jagoite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Jagoite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Jagoite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Jamborite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Jamborite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Jamborite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Jamborite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Jasper",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Jasper": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Jasper": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Jasper.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Kyanite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Kyanite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Kyanite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Kyanite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated LemonStone",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LemonStone": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated LemonStone": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/LemonStone.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Malachite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Malachite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Malachite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Malachite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Nekoite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Nekoite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Nekoite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Nekoite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Neptunite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Neptunite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Neptunite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Neptunite.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Obsidian",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Obsidian": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Obsidian": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Obsidian.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated OceanStone",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "OceanStone": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated OceanStone": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/OceanStone.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Orpiment",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Orpiment": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Orpiment": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Orpiment.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated PetrifiedSlime",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PetrifiedSlime": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated PetrifiedSlime": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/PetrifiedSlime.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated StarShards",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "StarShards": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated StarShards": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 384,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/StarShards.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated ThunderEgg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ThunderEgg": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated ThunderEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 368,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ThunderEgg.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated CinderShard",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CinderShard": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated CinderShard": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/CinderShard.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Static CinderShard Forge Ui",
+            "Action": "EditImage",
+            "Target": "LooseSprites/ForgeMenu",
+            "FromFile": "assets/ForgeCinderShard.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 17,
+                "Height": 22
+            },
+            "ToArea": {
+                "X": 142,
+                "Y": 16,
+                "Width": 17,
+                "Height": 22
+            },
+            "When": {
+                "CinderShard": true,
+                "CinderForgeUiIcon": true
+            }
+        },
+        {
+            "LogName": "Animated Meteorite",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Meteorite": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Meteorite": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 400,
+                        "Width": 32,
+                        "Height": 32
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/MeteoriteSheet.png}}:0..9@5"
+                }
+            }
+        },
+        {
+            "LogName": "Static Sharp Marble",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Marble.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 240,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Marble": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Basalt",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Basalt.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 288,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Basalt": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Granite",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Granite.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 272,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Granite": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Hematite",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Hematite.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 336,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Hematite": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Limestone",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Limestone.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 304,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Limestone": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Lunarite",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Lunarite.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 368,
+                "Y": 352,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Lunarite": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Slate",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Slate.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 384,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Slate": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Soapstone",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Soapstone.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 320,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Soapstone": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Mudstone",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Mudstone.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 352,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Mudstone": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Pyrite",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Pyrite.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 112,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Pyrite": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Sandstone",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Sandstone.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 256,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Sandstone": true
+            }
+        },
+        {
+            "LogName": "Static Sharp CopperIngot",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/CopperIngot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 352,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "CopperIngot": true
+            }
+        },
+        {
+            "LogName": "Static Sharp IronIngot",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IronIngot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 368,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IronIngot": true
+            }
+        },
+        {
+            "LogName": "Static Sharp GoldIngot",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/GoldIngot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "GoldIngot": true
+            }
+        },
+        {
+            "LogName": "Static Sharp IridiumIngot",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IridiumIngot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IridiumIngot": true
+            }
+        },
+        {
+            "LogName": "Static Sharp RadioactiveIngot",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/RadioactiveIngot.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 352,
+                "Y": 592,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "RadioactiveIngot": true
+            }
+        },
+        {
+            "LogName": "Static Sharp QuartzBar",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/QuartzBar.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 32,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "QuartzBar": true
+            }
+        },
+        {
+            "LogName": "Static Sharp CopperNode",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/CopperNode.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 112,
+                "Y": 496,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "CopperNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp IronNode",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IronNode.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 32,
+                "Y": 192,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IronNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp GoldNode",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/GoldNode.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 320,
+                "Y": 496,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "GoldNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp GoldCrab",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/Lava Crab_dangerous",
+            "FromFile": "monster/Lava Crab_dangerous.png",
+            "When": {
+                "GoldNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp IridiumNode",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IridiumNode.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 336,
+                "Y": 496,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IridiumNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp MudNode",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/MudNode.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 32,
+                "Y": 544,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "MudNode": true
+            }
+        },
+        {
+            "LogName": "Animated RadioactiveNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RadioactiveNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated RadioactiveNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/RadioactiveNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Static Sharp IridiumCrab",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/Iridium Crab",
+            "FromFile": "monster/Iridium Crab.png",
+            "When": {
+                "IridiumNode": true
+            }
+        },
+        {
+            "LogName": "Static Sharp Celestine",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Celestine.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 224,
+                "Y": 368,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Celestine": true
+            }
+        },
+        {
+            "LogName": "Animated GemNode Amethyst",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeAmethyst": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Amethyst": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeAmethyst.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Ruby",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeRuby": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Ruby": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeRuby.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Topaz",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeTopaz": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Topaz": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeTopaz.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Diamond",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeDiamond": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Diamond": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeDiamond.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Aquamarine",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeAquamarine": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Aquamarine": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeAquamarine.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Jade",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeJade": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Jade": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeJade.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemNode Emerald",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemNodeEmerald": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemNode Emerald": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemNodeEmerald.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated Geode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Geode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated Geode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/Geode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated FrozenGeode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FrozenGeode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated FrozenGeode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/FrozenGeode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated MagmaGeode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagmaGeode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated MagmaGeode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 352,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/MagmaGeode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated OmniGeode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "OmniGeode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated OmniGeode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 496,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/OmniGeode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GemmedNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GemmedNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GemmedNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GemmedNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated MysticNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MysticNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated MysticNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/MysticNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated GeodeNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GeodeNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated GeodeNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/GeodeNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated IceGeodeNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "IceGeodeNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated IceGeodeNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/IceGeodeNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated MagmaGeodeNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MagmaGeodeNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated MagmaGeodeNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/MagmaGeodeNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated CinderShardNodes One",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CinderShardNodes": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated CinderShardNodes One": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/CinderShardNodeOne.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated CinderShardNodes Two",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CinderShardNodes": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated CinderShardNodes Two": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/CinderShardNodeTwo.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Animated OmnigeodeVolcanoNode",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "OmniGeodeVolcanoNode": true
+            },
+            "Entries": {
+                "Undare.AnimatedGemstones_Animated OmnigeodeVolcanoNode": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/OmniGeodeVolcanoNode.png}}:0..4@10"
+                }
+            }
+        },
+        {
+            "LogName": "Static Coal",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Coal.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 352,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Coal": true
+            }
+        },
+        {
+            "LogName": "Static Coal 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/Coal.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 368,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Coal": true
+            }
+        },
+        {
+            "LogName": "Static CopperOre",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/CopperOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 288,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "CopperOre": true
+            }
+        },
+        {
+            "LogName": "Static CopperOre 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/CopperOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 304,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "CopperOre": true
+            }
+        },
+        {
+            "LogName": "Static IronOre",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IronOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 320,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IronOre": true
+            }
+        },
+        {
+            "LogName": "Static IronOre 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IronOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 336,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IronOre": true
+            }
+        },
+        {
+            "LogName": "Static GoldOre",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/GoldOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "GoldOre": true
+            }
+        },
+        {
+            "LogName": "Static GoldOre 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/GoldOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "GoldOre": true
+            }
+        },
+        {
+            "LogName": "Static IridiumOre",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IridiumOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 32,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IridiumOre": true
+            }
+        },
+        {
+            "LogName": "Static RadioactiveOre",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/RadioactiveOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 336,
+                "Y": 592,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "RadioactiveOre": true
+            }
+        },
+        {
+            "LogName": "Static IridiumOre 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/IridiumOre.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 48,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "IridiumOre": true
+            }
+        },
+        {
+            "LogName": "Static Frozen Mine Crystal 1",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/FrozenCrystalOne.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 112,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "frozenminecrystals": true
+            }
+        },
+        {
+            "LogName": "Static Frozen Mine Crystal 2",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/FrozenCrystalTwo.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 128,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "frozenminecrystals": true
+            }
+        },
+        {
+            "LogName": "Static Frozen Mine Crystal 3",
+            "Action": "EditImage",
+            "Target": "Maps/springobjects",
+            "FromFile": "assets/FrozenCrystalThree.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 144,
+                "Y": 208,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "frozenminecrystals": true
+            }
+        }
+    ],
+    "ConfigSchema": {
+        "Diamond": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Emerald": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Ruby": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Aquamarine": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Topaz": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Amethyst": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "FrozenTear": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "EarthCrystal": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Jade": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Quartz": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "FireQuartz": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "FireOpal": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Tigerseye": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Opal": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "PrismaticShard": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Aerinite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Alamite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Baryte": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Bixite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Calcite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Dolomite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Esperite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "FairyStone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Flourapatite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Geminite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GhostCrystal": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Helvite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Jagoite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Jamborite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Jasper": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Kyanite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "LemonStone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Malachite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Nekoite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Neptunite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Obsidian": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "OceanStone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Orpiment": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "PetrifiedSlime": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "StarShards": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "ThunderEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Marble": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Basalt": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Mudstone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Granite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Hematite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Limestone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Lunarite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Pyrite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Sandstone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Slate": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Soapstone": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CinderShard": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CinderForgeUiIcon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Geode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "FrozenGeode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "MagmaGeode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "OmniGeode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeAmethyst": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeTopaz": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeDiamond": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeJade": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeRuby": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeAquamarine": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemNodeEmerald": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Coal": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CopperOre": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IronOre": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GoldOre": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IridiumOre": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "RadioactiveOre": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CopperIngot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IronIngot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GoldIngot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IridiumIngot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "RadioactiveIngot": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "QuartzBar": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CopperNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IronNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GoldNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IridiumNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "RadioactiveNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "MudNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "CinderShardNodes": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "OmniGeodeVolcanoNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GemmedNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "MysticNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "GeodeNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "IceGeodeNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "MagmaGeodeNode": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Celestine": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "Meteorite": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        },
+        "frozenminecrystals": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": "false"
+        }
+    }
+}

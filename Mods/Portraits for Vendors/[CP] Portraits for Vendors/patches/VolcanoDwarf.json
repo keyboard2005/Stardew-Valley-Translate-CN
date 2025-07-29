@@ -1,0 +1,11 @@
+{
+	"Changes":[
+		{
+			"LogName": "Volcano Dwarf",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "VolcanoShop", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/VolcanoDwarf_Default"},
+		},
+	],
+}

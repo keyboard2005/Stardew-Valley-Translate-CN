@@ -1,0 +1,1871 @@
+{
+    "Changes": [
+        {
+            "LogName": "Deep Dark Dungeon Maps",
+            "Action": "Load",
+            "Target": "Maps/DeepDark1, Maps/DeepDark2, Maps/DeepDark3, Maps/DeepDark4, Maps/DeepDark5, Maps/DeepDark6, Maps/DeepDark7, Maps/DeepDark8, Maps/DeepDark9, Maps/DeepDark10, Maps/DeepDark11, Maps/DeepDark12, Maps/DeepDark13, Maps/DeepDark14, Maps/DeepDark15, Maps/DeepDark16, Maps/DeepDark17, Maps/DeepDark18, Maps/DeepDark19, Maps/DeepDark20, Maps/DeepDark21, Maps/DeepDark22, Maps/DeepDark23, Maps/DeepDark24, Maps/DeepDark25, Maps/DeepDark26, Maps/DeepDark27, Maps/DeepDark28, Maps/DeepDark29, Maps/DeepDark30, Maps/DeepDarkMushroomEntrance, Maps/DeepDarkLakeEntrance",
+            "FromFile": "Assets/Maps/DeepDark/{{TargetWithoutPath}}.tmx"
+        },
+        {
+            "LogName": "Deep Dark Tilesheets",
+            "Action": "Load",
+            "Target": "maps/DeepDarkTiles_1, maps/DeepDarkTiles_2, maps/DeepDarkTiles_3, maps/custommush1_animation, maps/DeepDark-algaesheet, maps/DeepDark-bubbles, maps/DeepDark-cobwebs, maps/DeepDark-Fires, maps/DeepDark-fog, maps/DeepDark-fog_cyan, maps/DeepDark-rocks, maps/DeepDark-roots, maps/DeepDark-watercaustics, maps/DeepDark-watercaustics_fading, maps/DeepDark-waterfall",
+            "FromFile": "Assets/Tilesheets/DeepDark/{{TargetWithoutPath}}.png"
+          },
+          {
+            "LogName": "Deep Dark Monster Textures",
+            "Action": "Load",
+            "Target": "Monsters/DN.SnS/StygiumMiner, Monsters/DN.SnS/StygiumMiner_Mage, Monsters/DN.SnS/StygiumDroplet, Monsters/DN.SnS/StygiumLeviathan, Monsters/DN.SnS/StygiumBat, Monsters/DN.SnS/StygiumCrab, Monsters/DN.SnS/StygiumGolem_Blue, Monsters/DN.SnS/StygiumGolem_Purple, Monsters/DN.SnS/StygiumHead, Monsters/DN.SnS/StygiumMushroom, Monsters/DN.SnS/StygiumRex, Monsters/DN.SnS/StygiumSerpent, Monsters/DN.SnS/StygiumSkeleton, Monsters/DN.SnS/StygiumSkeleton_Rare, Monsters/DN.SnS/StygiumSkull, Monsters/DN.SnS/StygiumSquid, Textures/DN.SnS/SnSMonsterIcons",
+            "FromFile": "Assets/Monsters/{{TargetWithoutPath}}.png"
+          },
+        {
+            "LogName": "Deep Dark Location (Dungeon Placeholder)",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "EastScarp_DeepDarkDungeon": {
+                    "DisplayName": "{{i18n:miscellaneous.mapname.DeepDarkLv0}}",
+                    "ExcludeFromNpcPathfinding": true,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": [],
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Chest",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModID}}_DeepDarkChest": {
+                    "Name": "Deep Dark Chest",
+                    "DisplayName": "{{i18n: deep-dark-chest.name}}",
+                    "Description": "{{i18n: deep-dark-chest.description}}",
+                    "Price": 0,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "Textures/DN.SnS/DeepDark_Treasure",
+                    "SpriteIndex": 0,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Stones/Items",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_StygiumOreStone": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 30,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone1": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 24,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone2": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 25,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone3": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 26,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone4": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 27,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone5": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 28,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone6": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 29,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone8": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 31,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOreStone9": {
+                    "Name": "Stone",
+                    "DisplayName": "{{i18n:object.stygium-ore-stone.name}}",
+                    "Description": "{{i18n:object.stygium-ore-stone.description}}",
+                    "Type": "Litter",
+                    "Category": -999,
+                    "Price": 0,
+                    "Texture": "maps/DeepDark-rocks",
+                    "SpriteIndex": 32,
+                    "Edibility": -300
+                },
+                "{{ModID}}_StygiumOre": {
+                  "Name": "Stygium Ore",
+                  "DisplayName": "{{i18n: object.stygium-ore.name}}",
+                  "Description": "{{i18n: object.stygium-ore.description}}",
+                  "Type": "Basic",
+                  "Category": -15,
+                  "Price": 500,
+                  "Texture": "Textures/DN.SnS/SnSObjects",
+                  "SpriteIndex": 100,
+                  "ExcludeFromRandomSale": true,
+                  "ContextTags": [
+                    "color_blue",
+                    "ore_item",
+                    "use_reverse_name_for_sorting"
+                  ]
+                },
+                "{{ModID}}_StygiumBar": {
+                    "Name": "Stygium Bar",
+                    "DisplayName": "{{i18n: object.stygium-bar.name}}",
+                    "Description": "{{i18n: object.stygium-bar.description}}",
+                    "Type": "Basic",
+                    "Category": -15,
+                    "Price": 5000,
+                    "Texture": "Textures/DN.SnS/SnSObjects",
+                    "SpriteIndex": 99,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                      "color_blue",
+                      "furnace_item",
+                      "use_reverse_name_for_sorting"
+                    ]
+                },
+                "{{ModID}}_DuskspireHeart": {
+                    "Name": "Duskspire Heart",
+                    "DisplayName": "{{i18n: object.duskspire-heart.name}}",
+                    "Description": "{{i18n: object.duskspire-heart.description}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 2500,
+                    "Texture": "Textures/DN.SnS/SnSObjects",
+                    "SpriteIndex": 120,
+                    "ExcludeFromRandomSale": true
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Smelting",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)13", "OutputRules" ],
+            "Entries": {
+                "{{ModID}}_StygiumBar": {
+                  "Triggers": [
+                    {
+                      "RequiredItemId": "(O){{ModID}}_StygiumOre",
+                      "RequiredCount": 5
+                    }
+                  ],
+                  "OutputItem": [
+                    {
+                      "Id": "(O){{ModID}}_StygiumBar",
+                      "ItemId": "(O){{ModID}}_StygiumBar"
+                    }
+                  ],
+                  "MinutesUntilReady": 720
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Smelting (Heavy)",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)HeavyFurnace", "OutputRules" ],
+            "Entries": {
+                "{{ModID}}_StygiumBar": {
+                  "Triggers": [
+                    {
+                      "RequiredItemId": "(O){{ModID}}_StygiumOre",
+                      "RequiredCount": 25
+                    }
+                  ],
+                  "OutputItem": [
+                    {
+                      "Id": "(O){{ModID}}_StygiumBar",
+                      "ItemId": "(O){{ModID}}_StygiumBar",
+                      "MinStack": 5,
+                      "MaxStack": 6
+                    }
+                  ],
+                  "MinutesUntilReady": 720
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Monster Stats",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Entries": {
+                // "health/damage/_/_/_/_/drops/defense/_/_/speed/_/_/exp/name"
+                "Stygium Crab": "2750/20/0/0/false/0/{{ModID}}_StygiumOre .03 717 .3 732 .1 810 .01/5/0/1/4/.0/true/30/{{i18n:Strings.Monsters.StygiumCrab}}",
+                "Stygium Skeleton": "3250/20/1/3/false/0/769 .99 {{ModID}}_StygiumOre .03 {{ModID}}_taintedcorn .05 105 .01 881 .99 243 .01/3/0/5/3/.0/true/25/{{i18n:Strings.Monsters.StygiumSkeleton}}",
+                "Stygium Party Skeleton": "12500/35/1/3/false/0/769 .99 {{ModID}}_StygiumOre .99 {{ModID}}_taintedcorn .05 105 .01 881 .99 243 .01 279 .99 74 .01/10/0/5/3/.0/true/150/{{i18n:Strings.Monsters.StygiumPartySkeleton}}",
+                "Stygium Rex": "4250/25/0/0/false/1000/769 .99 {{ModID}}_StygiumOre .03 {{ModID}}_taintedgrasses .2 80 0/8/.01/3/3/.0/true/12/{{i18n:Strings.Monsters.StygiumRex}}",
+                "Stygium Golem": "2500/15/0/0/false/1000/769 .99 {{ModID}}_StygiumOre .03 749 .1 {{ModID}}_taintedgrasses .3 66 .05/3/.01/3/3/.00/true/10/{{i18n:Strings.Monsters.StygiumGolemPurple}}",
+                "Stygium Golem (Blue)": "2500/15/0/0/false/1000/769 .99 {{ModID}}_StygiumOre .03 749 .1 {{ModID}}_taintedgrasses .3 72 .01 84 .05/3/.01/3/3/.00/true/10/{{i18n:Strings.Monsters.StygiumGolemBlue}}",
+                "Stygium Bat": "3250/35/0/0/true/1000/769 .99 {{ModID}}_StygiumOre .03 767 .99 522 .01/3/.01/4/4/.00/true/30/{{i18n:Strings.Monsters.StygiumBat}}",
+                "Stygium Miner": "3500/30/1/3/false/0/769 .99 {{ModID}}_StygiumOre .05 {{ModID}}_taintedcorn .05 105 .01 881 .99 243 .01 286 .05 287 .03 288 .01/3/0/5/3/.0/true/25/{{i18n:Strings.Monsters.StygiumMiner}}",
+                "Stygium Head": "2500/25/0/0/false/2000/769 .99 {{ModID}}_StygiumOre .03 380 .10 335 .05 121 .01/20/.01/8/3/.0/true/15/{{i18n:Strings.Monsters.StygiumHead}}",
+                "Stygium Skull": "4000/40/0/0/true/1000/769 .99 {{ModID}}_StygiumOre .03 881 .99 581 .05/5/.01/4/5/.00/true/30/{{i18n:Strings.Monsters.StygiumSkull}}",
+                "Stygium False Mushroom": "3125/25/0/0/false/0/769 .99 {{ModID}}_StygiumOre .03 {{ModID}}_mushroom1 .25 {{ModID}}_mushroom2 .25 {{ModID}}_mushroom3 .25 {{ModID}}_mushroom4 .25/6/0/1/4/.0/true/20/{{i18n:Strings.Monsters.StygiumFalseMushroom}}",
+                "Stygium Miner Mage": "2500/10/0/2/false/2000/769 .99 {{ModID}}_StygiumOre .05 {{ModID}}_taintedcorn .05 105 .01 881 .99 243 .01 84 .05 80 0/2/.01/8/3/.0/true/15/{{i18n:Strings.Monsters.StygiumMinerMage}}",
+                "Stygium Serpent": "2250/33/0/2/true/1000/769 .99 {{ModID}}_StygiumOre .03 148 .1 225 .05/0/.01/13/3/.0/true/30/{{i18n:Strings.Monsters.StygiumSerpent}}",
+                "Stygium Leviathan": "4500/45/0/2/true/1000/769 .99 {{ModID}}_StygiumOre .99 {{ModID}}_StygiumOre .99 {{ModID}}_StygiumOre .99 166 .99 799 .1 242 .05 681 .1 560 .5 117 .2 74 .02/0/.01/13/3/.0/true/50/{{i18n:Strings.Monsters.StygiumLeviathan}}",
+                "Stygium Squid": "2250/20/0/0/true/0/769 .99 {{ModID}}_StygiumOre .03 798 .1 814 .2 921 .05 681 .01/5/0/6/3/.0/true/30/{{i18n:Strings.Monsters.StygiumSquid}}",
+                "Stygium Droplet": "2250/25/0/0/true/2000/769 .99 {{ModID}}_StygiumOre .03 561 .2 265 .1 895 .05 681 .01/8/.01/8/2/.0/true/30/{{i18n:Strings.Monsters.StygiumDroplet}}",
+                "Duskspire Behemoth": "10000/35/1/3/false/0//20/0/5/3/.0/true/250/{{i18n:Strings.Monsters.DuskspireBehemoth}}",
+                "Duskspire Remnant": "6500/25/1/3/false/0//10/0/5/3/.0/true/100/{{i18n:Strings.Monsters.DuskspireRemnant}}"
+            }
+        },
+        {
+            "LogName": "Deep Dark Spawnable Definitions",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "Entries": {
+                // Minables
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 3,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre1": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone1",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre2": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone2",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre3": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone3",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)80",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre4": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone4",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)80",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre5": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone5",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)80",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre6": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone6",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre8": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone8",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_StygiumOre9": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "{{ModID}}_StygiumOreStone9",
+                    "MineableHealth": 32,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 23
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_Stone1": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "845",
+                    "MineableHealth": 9,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 3
+                },
+                "{{ModID}}_SpawnDeepDark_Minable_Stone2": {
+                    "Type": "Minable",
+                    "MinableTool": "Pickaxe",
+                    "MinableObjectId": "847",
+                    "MineableHealth": 9,
+                    "MinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ]
+                    ],
+                    "MinableExperienceGranted": 3
+                },
+                // Large Minables
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 15,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 4,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 7,
+                                    "MaxStack": 25
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone1": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 30,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 0,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 5,
+                                    "MaxStack": 5
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 10,
+                                    "MaxStack": 30
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone2": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 15,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 2,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 3,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 7,
+                                    "MaxStack": 25
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone3": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 15,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 6,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 3,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 7,
+                                    "MaxStack": 25
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone4": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 15,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 8,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 1,
+                                    "MaxStack": 1
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 7,
+                                    "MaxStack": 25
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone5": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 15,
+                    "LargeMinableSizeX": 2,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 10,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 7,
+                                    "MaxStack": 25
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_LargeMinable_LongBoiNode": {
+                    "Type": "LargeMinable",
+                    "LargeMinableTool": "Pickaxe",
+                    "LargeMinableHealth": 20,
+                    "LargeMinableSizeX": 1,
+                    "LargeMinableSizeY": 2,
+                    "LargeMinableTexture": "maps/DeepDark-rocks",
+                    "LargeMinableSpriteIndex": 33,
+                    "LargeMinableDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O){{ModID}}_StygiumOre",
+                                    "MinStack": 3,
+                                    "MaxStack": 3
+                                }
+                            }
+                        ],
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": {
+                                    "ItemId": "(O)390",
+                                    "MinStack": 2,
+                                    "MaxStack": 5
+                                }
+                            }
+                        ]
+                    ],
+                    "LargeMinableExperienceGranted": 10
+                },
+                // Forage
+                "{{ModID}}_SpawnDeepDark_Forage_Mushrooms": {
+                    "Type": "Forageable",
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom1" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom2" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom3" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom4" }
+                        }
+                    ],
+                    "ForageableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_Forage_OtherTainted": {
+                    "Type": "Forageable",
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_taintedcorn" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_taintedgrasses" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_taintedcrocus" }
+                        }
+                    ],
+                    "ForageableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_Forage_LakesEntrance": {
+                    "Type": "Forageable",
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O)394" } //Rainbow Shell
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O)372" } //Clam
+                        },
+                        {
+                            "Weight": 0.001,
+                            "Value": { "ItemId": "(O)74" } //Prismatic Shard
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_taintedcrocus" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom1" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom2" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom3" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom4" }
+                        }
+                    ],
+                    "ForageableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_Forage_Lakes": {
+                    "Type": "Forageable",
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O)394" } //Rainbow Shell
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O)372" } //Clam
+                        },
+                        {
+                            "Weight": 0.001,
+                            "Value": { "ItemId": "(O)74" } //Prismatic Shard
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_taintedcrocus" }
+                        },
+                        {
+                            "Weight": 1.0,
+                            "Value": { "ItemId": "(O){{ModID}}_mushroom3" }
+                        }
+                    ],
+                    "ForageableExperienceGranted": 10
+                },
+                "{{ModID}}_SpawnDeepDark_Tree_Mushroom": {
+                    "Type": "WildTree",
+                    "WildTreeType": "{{ModID}}_stygiummushroomtree"
+                },
+                // Loots chests
+                "{{ModID}}_SpawnDeepDark_LootChest": {
+                    "Type": "LootChest",
+                    "LootChestBigCraftableId": "{{ModID}}_DeepDarkChest",
+                    "LootChestDrops": [
+                        [
+                            {
+                                "Weight": 1.0,
+                                "Value": { "ItemID": "(W){{ModID}}_StygiumBlade" }
+                            }
+                        ]
+                    ]
+                },
+                // Monsters
+                "{{ModID}}_SpawnDeepDark_Monster_RockCrab": {
+                    "Type": "Monster",
+                    "MonsterType": "RockCrab",
+                    "MonsterName": "Stygium Crab",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumCrab",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Skeleton": {
+                    "Type": "Monster",
+                    "MonsterType": "Skeleton",
+                    "MonsterName": "Stygium Skeleton",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumSkeleton",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Rare": {
+                    "Type": "Monster",
+                    "MonsterType": "Skeleton",
+                    "MonsterName": "Stygium Party Skeleton",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumSkeleton_Rare",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Dino": {
+                    "Type": "Monster",
+                    "MonsterType": "DinoMonster",
+                    "MonsterName": "Stygium Rex",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumRex",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Golem": {
+                    "Type": "Monster",
+                    "MonsterType": "RockGolem",
+                    "MonsterName": "Stygium Golem",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumGolem_Purple",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Golem_Blue": {
+                    "Type": "Monster",
+                    "MonsterType": "RockGolem",
+                    "MonsterName": "Stygium Golem (Blue)",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumGolem_Blue",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Bat": {
+                    "Type": "Monster",
+                    "MonsterType": "Bat",
+                    "MonsterName": "Stygium Bat",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumBat",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Miner": {
+                    "Type": "Monster",
+                    "MonsterType": "Skeleton",
+                    "MonsterName": "Stygium Miner",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumMiner",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_MetalHead": {
+                    "Type": "Monster",
+                    "MonsterType": "MetalHead",
+                    "MonsterName": "Stygium Head",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumHead",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Bat_HauntedSkull": {
+                    "Type": "Monster",
+                    "MonsterType": "Skull",
+                    "MonsterName": "Stygium Skull",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumSkull",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_RockCrab_Mushroom": {
+                    "Type": "Monster",
+                    "MonsterType": "RockCrab",
+                    "MonsterName": "Stygium False Mushroom",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumMushroom",
+                    "MonsterAdditionalData": {}
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Skeleton_MinerMage": {
+                    "Type": "Monster",
+                    "MonsterType": "Skeleton",
+                    "MonsterName": "Stygium Miner Mage",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumMiner_Mage",
+                    "MonsterAdditionalData": { "IsMage": true }
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Serpent": {
+                    "Type": "Monster",
+                    "MonsterType": "Serpent",
+                    "MonsterName": "Stygium Serpent",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumSerpent"
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Leviathan": {
+                    "Type": "Monster",
+                    "MonsterType": "Serpent",
+                    "MonsterName": "Stygium Leviathan",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumLeviathan",
+                    "MonsterAdditionalData": { "SegmentCount": 5 }
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Squid": {
+                    "Type": "Monster",
+                    "MonsterType": "BlueSquid",
+                    "MonsterName": "Stygium Squid",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumSquid"
+                },
+                "{{ModID}}_SpawnDeepDark_Monster_Droplet": {
+                    "Type": "Monster",
+                    "MonsterType": "MagmaSprite",
+                    "MonsterName": "Stygium Droplet",
+                    "MonsterTextureOverride": "Monsters/DN.SnS/StygiumDroplet"
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Spawning Groups",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawningGroups",
+            "Entries": {
+                "{{ModID}}_DeepDarkSpawns_Common": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_Stone2"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_Stone1"
+                                }
+                            ],
+                            "Minimum": 50,
+                            "Maximum": 75
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre1"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre2"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre3"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre4"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre5"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre6"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre8"
+                                },
+                                {
+                                    "Weight": 0.3,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Minable_StygiumOre9"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 10
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone"
+                                },
+                                {
+                                    "Weight": 0.05,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone1"
+                                },
+                                {
+                                    "Weight": 0.1,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone2"
+                                },
+                                {
+                                    "Weight": 0.1,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone3"
+                                },
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone4"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_BigStone5"
+                                },
+                                {
+                                    "Weight": 0.05,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LargeMinable_LongBoiNode"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 10
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_LootChest"
+                                }
+                            ],
+                            "Minimum": -100,
+                            "Maximum": 1
+                        }
+                    ]
+                },
+                "{{ModID}}_DeepDarkSpawns_Dark": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_RockCrab"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton"
+                                },
+                                {
+                                    "Weight": 0.03,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Rare"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Dino"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Bat"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Miner"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_MetalHead"
+                                }
+                            ],
+                            "Minimum": 15,
+                            "Maximum": 30
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Forage_OtherTainted"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 4
+                        }
+                    ]
+                },
+                "{{ModID}}_DeepDarkSpawns_Mushrooms": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton"
+                                },
+                                {
+                                    "Weight": 0.03,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Rare"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Dino"
+                                },
+                                {
+                                    "Weight": 1.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem_Blue"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Bat_HauntedSkull"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_RockCrab_Mushroom"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_MinerMage"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Serpent"
+                                }
+                            ],
+                            "Minimum": 20,
+                            "Maximum": 35
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Tree_Mushroom"
+                                }
+                            ],
+                            "Minimum": 2,
+                            "Maximum": 4
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Forage_Mushrooms"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 4
+                        }
+                    ]
+                },
+                "{{ModID}}_DeepDarkSpawns_MushroomEntrance": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_RockCrab_Mushroom"
+                                }
+                            ],
+                            "Minimum": 5,
+                            "Maximum": 5
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Tree_Mushroom"
+                                }
+                            ],
+                            "Minimum": 2,
+                            "Maximum": 4
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Forage_Mushrooms"
+                                }
+                            ],
+                            "Minimum": 2,
+                            "Maximum": 4
+                        }
+                    ]
+                },
+                "{{ModID}}_DeepDarkSpawns_Lakes": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton"
+                                },
+                                {
+                                    "Weight": 0.03,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Rare"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Dino"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem_Blue"
+                                },
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Droplet"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_RockCrab"
+                                },
+                                {
+                                    "Weight": 3.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Squid"
+                                },
+                                {
+                                    "Weight": 0.01,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Leviathan"
+                                }
+                            ],
+                            "Minimum": 20,
+                            "Maximum": 35
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Forage_Lakes"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 4
+                        }
+                    ]
+                },
+                "{{ModID}}_DeepDarkSpawns_LakesEntrance": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton"
+                                },
+                                {
+                                    "Weight": 0.03,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Skeleton_Rare"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_RockCrab_Mushroom"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Dino"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem"
+                                },
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Golem_Blue"
+                                },
+                                {
+                                    "Weight": 2.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Monster_Squid"
+                                }
+                            ],
+                            "Minimum": 20,
+                            "Maximum": 20
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Tree_Mushroom"
+                                }
+                            ],
+                            "Minimum": 2,
+                            "Maximum": 4
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnDeepDark_Forage_LakesEntrance"
+                                }
+                            ],
+                            "Minimum": 2,
+                            "Maximum": 4
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Spawning Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_SpawnDeepDarkStuff_Dark": {
+                    "Id": "{{ModID}}_SpawnDeepDarkStuff_Dark",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false, // Important to make sure this will happen every time you go to the level
+                    "HostOnly": true, // Important for multiplayer support
+                    "Actions": [
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Common Target",
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Dark Target"
+                    ]
+                },
+                "{{ModID}}_SpawnDeepDarkStuff_Mushrooms": {
+                    "Id": "{{ModID}}_SpawnDeepDarkStuff_Mushrooms",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false, // Important to make sure this will happen every time you go to the level
+                    "HostOnly": true, // Important for multiplayer support
+                    "Actions": [
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Common Target",
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Mushrooms Target"
+                    ]
+                },
+                "{{ModID}}_SpawnDeepDarkStuff_MushroomEntrance": {
+                    "Id": "{{ModID}}_SpawnDeepDarkStuff_MushroomEntrance",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false, // Important to make sure this will happen every time you go to the level
+                    "HostOnly": true, // Important for multiplayer support
+                    "Actions": [
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Common Target",
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_MushroomEntrance Target"
+                    ]
+                },
+                "{{ModID}}_SpawnDeepDarkStuff_Lakes": {
+                    "Id": "{{ModID}}_SpawnDeepDarkStuff_Lakes",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false, // Important to make sure this will happen every time you go to the level
+                    "HostOnly": true, // Important for multiplayer support
+                    "Actions": [
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Common Target",
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Lakes Target"
+                    ]
+                },
+                "{{ModID}}_SpawnDeepDarkStuff_LakesEntrance": {
+                    "Id": "{{ModID}}_SpawnDeepDarkStuff_LakesEntrance",
+                    "Trigger": "Manual",
+                    "MarkActionApplied": false, // Important to make sure this will happen every time you go to the level
+                    "HostOnly": true, // Important for multiplayer support
+                    "Actions": [
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_Common Target",
+                        "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_DeepDarkSpawns_LakesEntrance Target"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Deep Dark Dungeon Data",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/Dungeons",
+            "Entries": {
+                "{{ModID}}_DeepDark": {
+                    "Regions": {
+                        "Dark": {
+                            "LevelRange": { "Begin": 1, "End": 9 },
+                            "MapPool": [
+                                { "Weight": 1.0, "Value": "Maps/DeepDark1" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark2" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark3" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark4" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark6" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark7" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark8" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark9" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark10" }
+                            ],
+                            "TriggerActionsOnEntry": [
+                                "{{ModID}}_SpawnDeepDarkStuff_Dark"
+                            ],
+                            "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                        },
+                        "DarkMushroomTransition": {
+                            "LevelRange": { "Begin": 10, "End": 10 },
+                            "MapPool": [
+                                { "Weight": 1.0, "Value": "Maps/DeepDarkMushroomEntrance" }
+                            ],
+                            "TriggerActionsOnEntry": [
+                                "{{ModID}}_SpawnDeepDarkStuff_MushroomEntrance"
+                            ],
+                            "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                        },
+                        "Mushrooms": {
+                            "LevelRange": { "Begin": 11, "End": 19 },
+                            "MapPool": [
+                                { "Weight": 1.0, "Value": "Maps/DeepDark11" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark12" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark13" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark14" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark15" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark16" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark17" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark18" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark19" },
+                                { "Weight": 1.0, "Value": "Maps/DeepDark20" }
+                            ],
+                            "TriggerActionsOnEntry": [
+                                "{{ModID}}_SpawnDeepDarkStuff_Mushrooms"
+                            ],
+                            "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                        }
+                        /*"DuskspireLairEntrance": {
+                            "LevelRange": { "Begin": 21, "End": 21 },
+                            "MapPool": [
+                                { "Weight": 1.0, "Value": "Maps/DeepDark5" }
+                            ],
+                            "TriggerActionsOnEntry": [
+                            ],
+                            "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                        }*/
+                    },
+                    "LadderExitLocation": "EastScarp_DeepDarkEntrance",
+                    "LadderExitTile": "17, 8",
+                    "ElevatorExitLocation": "EastScarp_DeepDarkEntrance",
+                    "ElevatorExitTile": "16, 8",
+                    "FloorsWithElevator": [ 5, 10, 15, 20, 25, 30, 31 ],
+                    "SpawnLadders": false,
+                    "SpawnMineshafts": false,
+                    "ViewportFollowsPlayer": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/Dungeons",
+            "TargetField": [ "{{ModID}}_DeepDark", "Regions" ], 
+            "Entries": {
+                "MushroomLakeTransition": {
+                    "LevelRange": { "Begin": 20, "End": 20 },
+                    "MapPool": [
+                        { "Weight": 1.0, "Value": "Maps/DeepDarkLakeEntrance" }
+                    ],
+                    "TriggerActionsOnEntry": [
+                        "{{ModID}}_SpawnDeepDarkStuff_LakesEntrance"
+                    ],
+                    "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                },
+                "Lake": {
+                    "LevelRange": { "Begin": 21, "End": 30 },
+                    "MapPool": [
+                        { "Weight": 1.0, "Value": "Maps/DeepDark21" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark22" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark23" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark24" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark25" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark26" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark27" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark28" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark29" },
+                        { "Weight": 1.0, "Value": "Maps/DeepDark30" }
+                    ],
+                    "TriggerActionsOnEntry": [
+                        "{{ModID}}_SpawnDeepDarkStuff_Lakes"
+                    ],
+                    "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                },
+                "DuskspireLairEntrance": {
+                    "LevelRange": { "Begin": 31, "End": 31 },
+                    "MapPool": [
+                        { "Weight": 1.0, "Value": "Maps/DeepDark5" }
+                    ],
+                    "TriggerActionsOnEntry": [
+                    ],
+                    "LocationDataEntry": "EastScarp_DeepDarkDungeon"
+                }
+            }
+            //"When": { "HasFlag: |contains=DuskspireDefeated": true }
+        },
+        {
+            "LogName": "Stygium Poisoning",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/WearableData",
+            "Entries": {
+                "(O){{ModID}}_StygiumOre": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(O){{ModID}}_StygiumBar": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(T){{ModID}}_StygiumHoe": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(T){{ModID}}_StygiumPickaxe": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(T){{ModID}}_StygiumAxe": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(T){{ModID}}_StygiumWateringCan": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(W){{ModID}}_StygiumBlade": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(O){{ModID}}_StygiumArmor": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                },
+                "(W){{ModID}}_StygiumShield": {
+                    "BuffIdToApply": "{{ModID}}_StygiumPoisoning"
+                }
+            }
+        },
+        {
+            "LogName": "Stygium Poisoning Buff",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModID}}_StygiumPoisoning": {
+                    "DisplayName": "{{i18n:buff.stygium-poisoning}}",
+                    "IconTexture": "Textures/DN.SnS/SnSObjects",
+                    "IconSpriteIndex": 127,
+                    "isDebuff": true,
+                    "Effects": { "LuckLevel": -10.0, "Defense": -10.0 }                  
+                }
+            }
+        },
+        {
+            "LogName": "Stygium and Blessed Tools",
+            "Action": "EditData",
+            "Target": "Data/Tools",
+            "Entries": {
+                "{{ModID}}_StygiumHoe": {
+                    "ClassName": "Hoe",
+                    "Name": "Stygium Hoe",
+                    "SalePrice": 35000,
+                    "DisplayName": "{{i18n: tool.stygium-hoe.name}}",
+                    "Description": "{{i18n: tool.stygium-hoe.description}}",
+                    "Texture": "Textures/DN.SnS/StygiumTools",
+                    "SpriteIndex": 6,
+                    "MenuSpriteIndex": 17,
+                    "UpgradeLevel": 5,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T)IridiumHoe",
+                        "Price": 35000,
+                        "TradeItemId": "(O){{ModID}}_StygiumBar",
+                        "TradeItemAmount": 5
+                    }]
+                },
+                "{{ModID}}_StygiumPickaxe": {
+                    "ClassName": "Pickaxe",
+                    "Name": "Stygium Pickaxe",
+                    "SalePrice": 35000,
+                    "DisplayName": "{{i18n: tool.stygium-pickaxe.name}}",
+                    "Description": "{{i18n: tool.stygium-pickaxe.description}}",
+                    "Texture": "Textures/DN.SnS/StygiumTools",
+                    "SpriteIndex": 18,
+                    "MenuSpriteIndex": 29,
+                    "UpgradeLevel": 5,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T)IridiumPickaxe",
+                        "Price": 35000,
+                        "TradeItemId": "(O){{ModID}}_StygiumBar",
+                        "TradeItemAmount": 5
+                    }]
+                },
+                "{{ModID}}_StygiumAxe": {
+                    "ClassName": "Axe",
+                    "Name": "Stygium Axe",
+                    "SalePrice": 35000,
+                    "DisplayName": "{{i18n: tool.stygium-axe.name}}",
+                    "Description": "{{i18n: tool.stygium-axe.description}}",
+                    "Texture": "Textures/DN.SnS/StygiumTools",
+                    "SpriteIndex": 30,
+                    "MenuSpriteIndex": 41,
+                    "UpgradeLevel": 5,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T)IridiumAxe",
+                        "Price": 35000,
+                        "TradeItemId": "(O){{ModID}}_StygiumBar",
+                        "TradeItemAmount": 5
+                    }]
+                },
+                "{{ModID}}_StygiumWateringCan": {
+                    "ClassName": "WateringCan",
+                    "Name": "Stygium Watering Can",
+                    "SalePrice": 35000,
+                    "DisplayName": "{{i18n: tool.stygium-watering-can.name}}",
+                    "Description": "{{i18n: tool.stygium-watering-can.description}}",
+                    "Texture": "Textures/DN.SnS/StygiumTools",
+                    "SpriteIndex": 42,
+                    "MenuSpriteIndex": 50,
+                    "UpgradeLevel": 5,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T)IridiumWateringCan",
+                        "Price": 35000,
+                        "TradeItemId": "(O){{ModID}}_StygiumBar",
+                        "TradeItemAmount": 5
+                    }]
+                },
+                "{{ModID}}_BlessedHoe": {
+                    "ClassName": "Hoe",
+                    "Name": "Blessed Hoe",
+                    "SalePrice": 50000,
+                    "DisplayName": "{{i18n: tool.blessed-hoe.name}}",
+                    "Description": "{{i18n: tool.blessed-hoe.description}}",
+                    "Texture": "Textures/DN.SnS/BlessedTools",
+                    "SpriteIndex": 6,
+                    "MenuSpriteIndex": 17,
+                    "UpgradeLevel": 6,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T){{ModID}}_StygiumHoe",
+                        "Price": 50000,
+                        "TradeItemId": "(O){{ModID}}_DuskspireHeart",
+                        "TradeItemAmount": 1
+                    }]
+                },
+                "{{ModID}}_BlessedPickaxe": {
+                    "ClassName": "Pickaxe",
+                    "Name": "Blessed Pickaxe",
+                    "SalePrice": 50000,
+                    "DisplayName": "{{i18n: tool.blessed-pickaxe.name}}",
+                    "Description": "{{i18n: tool.blessed-pickaxe.description}}",
+                    "Texture": "Textures/DN.SnS/BlessedTools",
+                    "SpriteIndex": 18,
+                    "MenuSpriteIndex": 29,
+                    "UpgradeLevel": 6,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T){{ModID}}_StygiumPickaxe",
+                        "Price": 50000,
+                        "TradeItemId": "(O){{ModID}}_DuskspireHeart",
+                        "TradeItemAmount": 1
+                    }]
+                },
+                "{{ModID}}_BlessedAxe": {
+                    "ClassName": "Axe",
+                    "Name": "Blessed Axe",
+                    "SalePrice": 50000,
+                    "DisplayName": "{{i18n: tool.blessed-axe.name}}",
+                    "Description": "{{i18n: tool.blessed-axe.description}}",
+                    "Texture": "Textures/DN.SnS/BlessedTools",
+                    "SpriteIndex": 30,
+                    "MenuSpriteIndex": 41,
+                    "UpgradeLevel": 6,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T){{ModID}}_StygiumAxe",
+                        "Price": 50000,
+                        "TradeItemId": "(O){{ModID}}_DuskspireHeart",
+                        "TradeItemAmount": 1
+                    }]
+                },
+                "{{ModID}}_BlessedWateringCan": {
+                    "ClassName": "WateringCan",
+                    "Name": "Blessed Watering Can",
+                    "SalePrice": 50000,
+                    "DisplayName": "{{i18n: tool.blessed-watering-can.name}}",
+                    "Description": "{{i18n: tool.blessed-watering-can.description}}",
+                    "Texture": "Textures/DN.SnS/BlessedTools",
+                    "SpriteIndex": 42,
+                    "MenuSpriteIndex": 50,
+                    "UpgradeLevel": 6,
+                    "UpgradeFrom": [{
+                        "RequireToolId": "(T){{ModID}}_StygiumWateringCan",
+                        "Price": 50000,
+                        "TradeItemId": "(O){{ModID}}_DuskspireHeart",
+                        "TradeItemAmount": 1
+                    }]
+                }
+            }
+        },
+
+        //Custom Location Context data so it stops RAINING in the deep dark
+        {
+            "Action": "EditData",
+            "Target": "Data/LocationContexts",
+            "Entries": {
+
+                //Maps that don't spawn monsters
+                "SnSDeepDark": { 
+                    "PlayRandomAmbientSounds": false,
+                    "CopyWeatherFromLocation": "Desert",
+                    "DefaultMusic": "Volcano_Ambient",
+                    "AllowRainTotem": false,
+                    "MaxPassOutCost": 3500,
+                    "ReviveLocations": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Hospital",
+                            "Position": {
+                              "X": 20,
+                              "Y": 12
+                            }
+                        }
+                      ],
+                      "PassOutMail": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "Mail": "passedOut2",
+                          "MaxPassOutCost": 3500,
+                          "SkipRandomSelection": false
+                        }
+                      ],
+                    "CustomFields": {}
+                },
+
+                //Levels
+                "SnSDeepDarkDark": {
+                    "PlayRandomAmbientSounds": false,
+                    "CopyWeatherFromLocation": "Desert",
+                    "DefaultMusic": "SnS.DeepDarkDark",
+                    "AllowRainTotem": false,
+                    "MaxPassOutCost": 2500,
+                    "ReviveLocations": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Hospital",
+                            "Position": {
+                              "X": 20,
+                              "Y": 12
+                            }
+                        }
+                      ],
+                      "PassOutMail": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "Mail": "passedOut2",
+                          "MaxPassOutCost": 2500,
+                          "SkipRandomSelection": false
+                        }
+                      ],
+                    "CustomFields": {}
+                },
+                "SnSDeepDarkMushrooms": {
+                    "PlayRandomAmbientSounds": false,
+                    "CopyWeatherFromLocation": "Desert",
+                    "DefaultMusic": "SnS.DeepDarkMushrooms",
+                    "AllowRainTotem": false,
+                    "MaxPassOutCost": 2500,
+                    "ReviveLocations": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Hospital",
+                            "Position": {
+                              "X": 20,
+                              "Y": 12
+                            }
+                        }
+                      ],
+                      "PassOutMail": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "Mail": "passedOut2",
+                          "MaxPassOutCost": 2500,
+                          "SkipRandomSelection": false
+                        }
+                      ],
+                    "CustomFields": {}
+                },
+                "SnSDeepDarkLakes": {
+                    "PlayRandomAmbientSounds": false,
+                    "CopyWeatherFromLocation": "Desert",
+                    "DefaultMusic": "SnS.DeepDarkLakes",
+                    "AllowRainTotem": false,
+                    "MaxPassOutCost": 2500,
+                    "ReviveLocations": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Hospital",
+                            "Position": {
+                              "X": 20,
+                              "Y": 12
+                            }
+                        }
+                      ],
+                      "PassOutMail": [
+                        {
+                          "Id": "Default",
+                          "Condition": null,
+                          "Mail": "passedOut2",
+                          "MaxPassOutCost": 2500,
+                          "SkipRandomSelection": false
+                        }
+                      ],
+                    "CustomFields": {}
+                }
+            }
+        },
+
+        //Map Strings for Deep Darp...axell was here
+        {
+            "LogName": "Deep Dark Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                "DDLakeSign0": "{{i18n:Strings.DeepDark.DDLakeSign0}}",
+                "DDLakeSign1": "{{i18n:Strings.DeepDark.DDLakeSign1}}",
+                "DDLakeSign2": "{{i18n:Strings.DeepDark.DDLakeSign2}}",
+                "DDLakeSign3": "{{i18n:Strings.DeepDark.DDLakeSign3}}",
+                "DDLakeSign4": "{{i18n:Strings.DeepDark.DDLakeSign4}}",
+                "DDLakeSign5": "{{i18n:Strings.DeepDark.DDLakeSign5}}",
+                "DDLakeSign6": "{{i18n:Strings.DeepDark.DDLakeSign6}}",
+                "DDLakeSign7": "{{i18n:Strings.DeepDark.DDLakeSign7}}",
+                "DDLakeSign8": "{{i18n:Strings.DeepDark.DDLakeSign8}}",
+                "DDLakeSign9": "{{i18n:Strings.DeepDark.DDLakeSign9}}",
+                "DDLakeSign10": "{{i18n:Strings.DeepDark.DDLakeSign10}}",
+                "DDTipTable": "{{i18n:Strings.DeepDark.DDTipTable}}",
+                "DDSecretSign": "{{i18n:Strings.DeepDark.DDSecretSign}}",
+                "DDSecretChest": "{{i18n:Strings.DeepDark.DDSecretChest}}",
+                "DDOwlBoySeat": "{{i18n:Strings.DeepDark.DDOwlBoySeat}}",
+                "DDDeadGuy": "{{i18n:Strings.DeepDark.DDDeadGuy}}",
+                "DDBackpack": "{{i18n:Strings.DeepDark.DDBackpack}}"
+            }
+        },
+
+        //giving the droplets bubbles instead of the uhhhh, fire, cause I was too lazy to figure out how to get rid of the fire C# side, aka tedi was also here
+        {
+            "LogName": "Stygium Droplet Bubbles",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/Magma Sprite, Characters/Monsters/Magma Sparker",
+            "FromFile": "Assets/Monsters/DropletBubbles.png",
+            "ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 16 },
+            "When": {
+                "LocationName": "EastScarp_DeepDarkDungeon"
+            },
+            "Update": "OnLocationChange"
+        }
+    ]
+}

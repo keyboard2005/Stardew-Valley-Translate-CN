@@ -1,0 +1,125 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+		
+		{
+			"LogName": "Load Kent's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Kent_Spring, Portraits/Kent_Summer, Portraits/Kent_Fall, Portraits/Kent_Winter_Outdoor, Portraits/Kent_Winter_Indoor, Portraits/Kent_FlowerDance, Portraits/Kent_SpiritsEve, Characters/Kent_Spring, Characters/Kent_Summer, Characters/Kent_Fall, Characters/Kent_Winter_Outdoor, Characters/Kent_Winter_Indoor, Characters/Kent_FlowerDance, Characters/Kent_SpiritsEve, Portraits/Kent_Beach, Characters/Kent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Kent/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Kent - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Kent_Spring, Characters/Kent_Summer, Characters/Kent_Fall, Characters/Kent_Winter_Outdoor, Characters/Kent_Winter_Indoor, Characters/Kent_FlowerDance, Characters/Kent_SpiritsEve, Characters/Kent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Kent/Kent_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Kent Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Kent", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.KentSpring": {
+					"Id": "{{ModId}}.KentSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Kent_Spring",
+					"Portrait": "Portraits/Kent_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.KentSummer": {
+					"Id": "{{ModId}}.KentSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Kent_Summer",
+					"Portrait": "Portraits/Kent_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.KentFall": {
+					"Id": "{{ModId}}.KentFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Kent_Fall",
+					"Portrait": "Portraits/Kent_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.KentWinterIndoor": {
+					"Id": "{{ModId}}.KentWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Kent_Winter_Indoor",
+					"Portrait": "Portraits/Kent_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.KentWinterOutdoor": {
+					"Id": "{{ModId}}.KentWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Kent_Winter_Outdoor",
+					"Portrait": "Portraits/Kent_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.KentFlowerDance": {
+					"Id": "{{ModId}}.KentFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Kent_FlowerDance",
+					"Portrait": "Portraits/Kent_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.KentSpirit": {
+					"Id": "{{ModId}}.KentSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Kent_SpiritsEve",
+					"Portrait": "Portraits/Kent_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.KentBeach": {
+					"Id": "{{ModId}}.KentBeach",
+					"Sprite": "Characters/Kent_Beach",
+					"Portrait": "Portraits/Kent_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+
+				"{{ModId}}.KentIsland": {
+					"Id": "{{ModId}}.KentIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Kent_Beach",
+					"Portrait": "Portraits/Kent_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+		// MISCELLANEOUS
+		{
+            "LogName": "Abigail Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Abigail",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

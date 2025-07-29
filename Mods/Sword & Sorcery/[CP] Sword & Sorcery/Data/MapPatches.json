@@ -1,0 +1,773 @@
+{
+  "Changes": [
+    // MATEO'S TENT 
+    {
+      "LogName": "Beach Tent Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "assets/Maps/EastScarp_MateoTent1.tmx",
+      "ToArea": {
+        "X": 89,
+        "Y": 85,
+        "Width": 9,
+        "Height": 12
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 93,
+            "Y": 93
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 4 9 EastScarp_MateoHome"
+          }
+        },
+        {
+          "Position": {
+            "X": 94,
+            "Y": 93
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 4 9 EastScarp_MateoHome"
+          }
+        }
+      ],
+      "When": { "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": false }
+    },
+    // COASTAL GUILD STEP 1
+    {
+      "LogName": "Beach Guild Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/EastScarp_CoastalGuild1.tmx",
+      "ToArea": {
+        "X": 89,
+        "Y": 85,
+        "Width": 9,
+        "Height": 12
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 93,
+            "Y": 93
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 10 19 EastScarp_CoastalGuild 800 2200"
+          }
+        },
+        {
+          "Position": {
+            "X": 94,
+            "Y": 93
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 10 19 EastScarp_CoastalGuild 800 2200"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,
+        "HasSeenEvent |contains=SnS.Ch5.Mateo.1": false
+        
+      }
+    },
+    // COASTAL GUILD STEP 2
+    {
+      "LogName": "Upgraded Guild Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/EastScarp_GuildFull.tmx",
+      "ToArea": {
+        "X": 89,
+        "Y": 85,
+        "Width": 9,
+        "Height": 12
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 93,
+            "Y": 93
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 10 19 EastScarp_CoastalGuild 800 2200"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch5.Mateo.1": true }
+    },
+    // EAST SCARP SPECIAL ORDER BOARD
+    {
+      "LogName": "Guild Board",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/EastScarp_GuildBoard.tmx",
+      "ToArea": {
+        "X": 23,
+        "Y": 81,
+        "Width": 3,
+        "Height": 2
+      },
+      "When": { "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true }
+    },
+    // MATEO SPACECORE FIX 
+    {
+      "LogName": "Patches ES to Guild",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "Update": "OnLocationChange",
+      "When": {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "93 93 EastScarp_CoastalGuild 10 19",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "MapProperties",
+            "NPCWarp"
+          ],
+          "Value": "94 93 EastScarp_CoastalGuild 10 19",
+          "Delimiter": " "
+        }
+      ]
+    },
+    // PATCHES THE DRUID'S TOWER
+    {
+      "LogName": "Tower Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/HectorTowerPatch.tmx",
+      "ToArea": {
+        "X": 7,
+        "Y": 0,
+        "Width": 9,
+        "Height": 18
+      },
+      "MapProperties": {
+        "DayTiles": "Buildings 10 14 129 Buildings 11 14 130 AlwaysFront 12 13 122 AlwaysFront 12 12 113 AlwaysFront 13 9 87 AlwaysFront 13 8 78 AlwaysFront 12 9 86 AlwaysFront 12 8 77 AlwaysFront 11 10 94 AlwaysFront 11 9 85 AlwaysFront 10 10 93 AlwaysFront 10 9 84 AlwaysFront 10 6 57 AlwaysFront 10 5 48 AlwaysFront 9 6 56 AlwaysFront 9 5 47",
+        "NightTiles": "Buildings 10 14 169 Buildings 11 14 170 AlwaysFront 12 13 177 AlwaysFront 12 12 168 AlwaysFront 13 9 176 AlwaysFront 13 8 167 AlwaysFront 12 9 175 AlwaysFront 12 8 166 AlwaysFront 11 10 174 AlwaysFront 11 9 165 AlwaysFront 10 10 173 AlwaysFront 10 9 164 AlwaysFront 10 6 172 AlwaysFront 10 5 163 AlwaysFront 9 6 171 AlwaysFront 9 5 162",
+        "Light": "10 14 1 11 14 1 12 13 1 12 12 1 13 9 1 13 8 1 12 9 1 12 8 1 11 10 1 11 9 1 10 10 1 10 9 1 10 6 1 10 5 1 9 6 1 9 5 1"
+      }
+    },
+    // ADDS THE TOWER DOOR WARP
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 28 EastScarp_DruidTower"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.1": true }
+    },
+    // ADDS A LOCKED DOOR TO THE TOWER 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message PassiveAggressiveDoor"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.1": false }
+    },
+    // DUMPSTER WARP
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Railroad",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp EastScarp_DruidTower 6 17"
+          }
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true,
+        "DumpsterWarp": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Railroad",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp EastScarp_DruidTower 6 17"
+          }
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.1": true,
+        "DumpsterWarp": true
+      }
+    },
+    // PATCHES THE PIZZA VAN
+    {
+      "LogName": "Pizza Van",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/PizzaVanPatch.tmx",
+      "Priority": "Late",
+      "PatchMode": "Overlay",
+      "ToArea": {
+        "X": 88,
+        "Y": 77,
+        "Width": 11,
+        "Height": 6
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 90,
+            "Y": 81
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 2 4 EastScarp_VanInterior 1000 2000"
+          }
+        },
+        {
+          "Position": {
+            "X": 89,
+            "Y": 81
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 2 4 EastScarp_VanInterior 1000 2000"
+          }
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.13": false
+      }
+    },
+    // PATCHES THE BROKEN DOWN LION'S MANE 
+    {
+      "LogName": "Lion's Mane (Broken) Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/LionsManeBrokenPatch.tmx",
+      "ToArea": {
+        "X": 50,
+        "Y": 0,
+        "Width": 12,
+        "Height": 9
+      },
+      "When": { "HasSeenEvent |contains=SnS.Ch3.Cirrus.13": false }
+    },
+    // ADDS SHUDDERS TO THE BROKEN DOWN LION'S MANE
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 57,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message BoardedDoor"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch3.Cirrus.13": false }
+    },
+    // PATCHES THE REPAIRED LION'S MANE
+    {
+      "LogName": "Lion's Mane (Repaired) One Door Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/LionsManeRepairedPatch.tmx",
+      "ToArea": {
+        "X": 50,
+        "Y": 0,
+        "Width": 12,
+        "Height": 9
+      },
+      "MapTiles": [
+        {
+          "Position": { // RIGHT HAND DOOR
+            "X": 57,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 26 35 EastScarp_LionsMane 800 2400"
+          }
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.12": true,
+        "HasFlag |contains=Cirrus_SpecialOrders_LionsManeMail": true,
+        "HasConversationTopic |contains=CirrusConcert": false,
+        "LionsManeExtraDoorWarp:": false
+      }
+    },
+    {
+      "LogName": "Lion's Mane (Repaired) Two Door Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Village",
+      "FromFile": "Assets/Maps/LionsManeRepairedPatch.tmx",
+      "ToArea": {
+        "X": 50,
+        "Y": 0,
+        "Width": 12,
+        "Height": 9
+      },
+      "MapTiles": [
+        {
+          "Position": { // RIGHT HAND DOOR
+            "X": 57,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 26 35 EastScarp_LionsMane 800 2400"
+          }
+        },
+        {
+          "Position": { // LEFT HAND DOOR
+            "X": 55,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 8 34 EastScarp_LionsMane 800 2400"
+          }
+        },
+        {
+          "Position": { // LEFT HAND DOOR
+            "X": 54,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "LockedDoorWarp 8 34 EastScarp_LionsMane 800 2400"
+          }
+        }
+      ],
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.12": true,
+        "HasFlag |contains=Cirrus_SpecialOrders_LionsManeMail": true,
+        "HasConversationTopic |contains=CirrusConcert": false,
+        "LionsManeExtraDoorWarp:": true
+      }
+    },
+    // PATCHES THE LION'S MANE INTERIOR
+    {
+      "LogName": "Lion's Mane (No Dandelion) Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_LionsMane",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/LionsManeFinalPatch_NoDandelion.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 40
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Roslin.5": true,
+        "HasSeenEvent |contains=SnS.Ch4.Roslin.6": false
+      }
+    },
+    {
+      "LogName": "Lion's Mane (Dandelion + Solomon) Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_LionsMane",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/LionsManeFinalPatch_DandelionReturned.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 40
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Roslin.5": true,
+        "HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+      }
+    },
+    // ADDS A LOCKED DOOR TO THE UNDERFORGE
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_CoastalGuild",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message UnderScarpe"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch1.Mateo.18": false }
+    },
+    // ADDS THE UNDERFORGE WARP FROM GUILD
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_CoastalGuild",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 5 EastScarp_Underforge"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch1.Mateo.18": true }
+    },
+    // ADDS THE UNDERFORGE WARP TO GUILD
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_Underforge",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 20 14 EastScarp_CoastalGuild"
+          }
+        }
+      ]
+    },
+    // DEEP DARK WARPS
+    {
+      "LogName": "Deep Dark Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepDark",
+      "FromFile": "Assets/Maps/DeepDarkPatch.tmx",
+      "ToArea": {
+        "X": 4,
+        "Y": 8,
+        "Width": 7,
+        "Height": 5
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepDark",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Message DeepDarkNotReady"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch4.Dandelion.7": false }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepDark",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 9 18 EastScarp_DeepDarkEntrance"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch4.Dandelion.7": true }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepDarkEntrance",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 9 12 EastScarp_DeepDark"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DuskspireLair",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 17 7 EastScarp_DeepDarkEntrance"
+          }
+        }
+      ]
+    },
+    // PATCHES THE PENTACLE QUEST ALTARS  
+    {
+      "LogName": "Hector Quest Dropbox - Spring",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarSpringPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 14,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      },
+      "When": {
+        "HasFlag |contains=HectorSpringAltar": true,
+        "HasFlag |contains=Hector_SpecialOrders_Pentacle1": false
+      }
+    },
+    {
+      "LogName": "Hector Quest Dropbox - Summer",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarSummerPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 13,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      },
+      "When": {
+        "HasFlag |contains=HectorSummerAltar": true,
+        "HasFlag |contains=Hector_SpecialOrders_Pentacle2": false
+      }
+    },
+    {
+      "LogName": "Hector Quest Dropbox - Fall",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarFallPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 9,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      },
+      "When": {
+        "HasFlag |contains=HectorFallAltar": true,
+        "HasFlag |contains=Hector_SpecialOrders_Pentacle3": false
+      }
+    },
+    {
+      "LogName": "Hector Quest Dropbox - Winter",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarWinterPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 8,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      },
+      "When": {
+        "HasFlag |contains=HectorWinterAltar": true,
+        "HasFlag |contains=Hector_SpecialOrders_Pentacle4": false
+      }
+    },
+    {
+      "LogName": "Hector Final Dropbox pt.1",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarEssencesPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 14,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      }
+    },
+    /*
+    {
+      "LogName": "Hector Final Dropbox pt.2",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/DruidAltarEssencesPatch.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 14,
+        "Y": 15,
+        "Width": 1,
+        "Height": 2
+      },
+      "When": {
+        "HasFlag |contains=HectorEssenceAltar2": true,
+        "HasFlag |contains=Hector_SpecialOrders_River2": false
+      }
+    },
+    */
+    // ADDS THE GROVE WARPS
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DruidTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp EastScarp_DruidGrove 16 69"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.16": true }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DruidGrove",
+      "FromFile": "Assets/Maps/TrueGroveWarp.tmx",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 15,
+        "Y": 69,
+        "Width": 3,
+        "Height": 3
+      },
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.16": true }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DruidGrove",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 70
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp EastScarp_DruidTower 6 17"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.16": true }
+    },
+    {
+      "LogName": "Final Coastal Guild Patch",
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_CoastalGuild",
+      "PatchMode": "Replace",
+      "FromFile": "Assets/Maps/EastScarp_CoastalGuildFinal.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 36,
+        "Height": 21
+      },
+      "AddWarps": [
+        "10 20 EastScarp_Village 93 94"
+    ],
+      "When": {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,
+        "HasSeenEvent |contains=SnS.Ch5.Mateo": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "FromFile": "Assets/Maps/HectorGladeWarp.tmx",
+      "PatchMode": "Replace",
+      "Update": "OnLocationChange",
+      "ToArea": {
+        "X": 19,
+        "Y": 3,
+        "Width": 4,
+        "Height": 3
+      },
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.16": true }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DeepMountains",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 4
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "MagicWarp EastScarp_HectorForest 21 32"
+          }
+        }
+      ],
+      "When": { "HasSeenEvent |contains=SnS.Ch2.Hector.16": true }
+    }
+  ]
+}

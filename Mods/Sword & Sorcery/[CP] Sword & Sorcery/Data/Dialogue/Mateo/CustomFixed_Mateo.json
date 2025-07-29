@@ -1,0 +1,148 @@
+{
+    "Changes": [
+        //EDITS TO CSFILES.JSON
+        {
+            "LogName": "Mateo - Ambiguous Birth Fix pt 1",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "NPC.cs.4439": "{{i18n:CFD.Mateo.NPC.cs.4439}}",
+                "NPC.cs.4440": "{{i18n:CFD.Mateo.NPC.cs.4440}}",
+                "NPC.cs.4441": "{{i18n:CFD.Mateo.NPC.cs.4441}}",
+                "NPC.cs.4442": "{{i18n:CFD.Mateo.NPC.cs.4442}}",
+                "NPC.cs.4443": "{{i18n:CFD.Mateo.NPC.cs.4443}}",
+                "NPC.cs.4444": "{{i18n:CFD.Mateo.NPC.cs.4444}}",
+                "NPC.cs.4445": "{{i18n:CFD.Mateo.NPC.cs.4445}}",
+                "NPC.cs.4447": "{{i18n:CFD.Mateo.NPC.cs.4447}}",
+                "NPC.cs.4448": "{{i18n:CFD.Mateo.NPC.cs.4448}}",
+                "BirthMessage_Adoption": "{{i18n:CFD.Mateo.BirthMessage.Adoption}}",
+                "BirthMessage_PlayerMother": "{{i18n:CFD.Mateo.BirthMessage.PlayerMother}}",
+                "BirthMessage_SpouseMother": "{{i18n:CFD.Mateo.BirthMessage.SpouseMother}}",
+                "BirthMessage_SpouseNaming_Male": "{{i18n:CFD.Mateo.BirthMessage.SpouseNaming_Male}}",
+                "BirthMessage_SpouseNaming_Female": "{{i18n:CFD.Mateo.BirthMessage.SpouseNaming_Female}}",
+                "BabyNamingTitle_Male": "{{i18n:CFD.Mateo.BabyNamingTitle.Male}}",
+                "BabyNamingTitle_Female": "{{i18n:CFD.Mateo.BabyNamingTitle.Female}}",
+                "HaveBabyQuestion": "{{i18n:CFD.Mateo.HaveBabyQuestion}}",
+                "HaveBabyQuestion_Adoption": "{{i18n:CFD.Mateo.HaveBabyQuestion.Adoption}}",
+                "HaveBabyAnswer_Yes": "{{i18n:CFD.Mateo.BirthMessage_Adoption}}",
+                "HaveBabyAnswer_No": "{{i18n:CFD.Mateo.BirthMessage_PlayerMother}}",
+                "HavePlayerBabyQuestion": "{{i18n:CFD.Mateo.NPC.cs.4448}}",
+                "HavePlayerBabyQuestion_Adoption": "{{i18n:CFD.Mateo.NPC.cs.4448}}",
+            },
+            "When": {
+                "Relationship:Mateo": "Married",
+            }
+        },
+        {
+            "LogName": "Mateo - Custom Wedding Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5371": "{{i18n:CFD.Mateo.Utility.cs.5371}}",
+                "Utility.cs.5373": "{{i18n:CFD.Mateo.Utility.cs.5373}}",
+                "Utility.cs.5375": "{{i18n:CFD.Mateo.Utility.cs.5375}}",
+                "Utility.cs.5377": "{{i18n:CFD.Mateo.Utility.cs.5377}}",
+                "Utility.cs.5367": "{{i18n:CFD.Mateo.Utility.cs.5367}}",
+                "Utility.cs.5369": "{{i18n:CFD.Mateo.Utility.cs.5369{{PlayerPronouns}}}}",
+            },
+            "When": {
+                "Relationship:Mateo": "Engaged",
+            }
+        },
+        {
+            "LogName": "Mateo - Gender Neutral Social Page Fix",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "SocialPage_Relationship_Single_Female": "{{i18n:CFD.Mateo.SocialPage.cs.11635}}",
+                "SocialPage_Relationship_Single_Male": "{{i18n:CFD.Mateo.SocialPage.cs.11635}}",
+                "SocialPage_Relationship_Husband": "{{i18n:CFD.Mateo.SocialPage.cs.11636}}",
+                "SocialPage_Relationship_Wife": "{{i18n:CFD.Mateo.SocialPage.cs.11637}}",
+                "SocialPage_Relationship_Boyfriend": "{{i18n:CFD.Mateo.SocialPage.cs.11639}}",
+                "SocialPage_Relationship_Girlfriend": "{{i18n:CFD.Mateo.SocialPage.cs.11640}}",
+                "SocialPage_Relationship_ExHusband": "{{i18n:CFD.Mateo.SocialPage.cs.11642}}",
+                "SocialPage_Relationship_ExWife": "{{i18n:CFD.Mateo.SocialPage.cs.11643}}",
+            },
+            "When": {
+                "HasSeenEvent |contains=SnS.Ch1.Mateo.14": true,
+            }
+        },
+        {
+            "LogName": "Mateo - Misc Gender Neutral Edits",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Event.cs.1815": "{{i18n:CFD.Mateo.Event.cs.1815}}",
+                "Event.cs.1816": "{{i18n:CFD.Mateo.Event.cs.1816}}",
+                "Event.cs.1831": "{{i18n:CFD.Mateo.Event.cs.1831}}",
+                "Event.cs.1832": "{{i18n:CFD.Mateo.Event.cs.1832}}",
+                "Event.cs.1833": "{{i18n:CFD.Mateo.Event.cs.1833}}",
+                "Event.cs.1834": "{{i18n:CFD.Mateo.Event.cs.1834}}",
+                "Event.cs.1820": "{{i18n:CFD.Mateo.Event.cs.1820}}",
+                "Event.cs.1821": "{{i18n:CFD.Mateo.Event.cs.1821}}",
+                "Event.cs.1837": "{{i18n:CFD.Mateo.Event.cs.1837}}",
+                "Event.cs.1838": "{{i18n:CFD.Mateo.Event.cs.1838}}",
+            }
+        },
+        //EDITS TO EVENTS.JSON
+        {
+            "LogName": "Mateo - Ambiguous Birth Fix pt 2",
+            "Action": "EditData",
+            "Target": "strings/Events",
+            "Entries": {
+                "BirthMessage_Adoption": "{{i18n:CFD.Mateo.BirthMessage_Adoption}}",
+                "BirthMessage_PlayerMother": "{{i18n:CFD.Mateo.BirthMessage_PlayerMother}}",
+                "BirthMessage_SpouseMother": "{{i18n:CFD.Mateo.BirthMessage_SpouseMother}}",
+                "BirthMessage_SpouseNaming_Male": "{{i18n:CFD.Mateo.BirthMessage_SpouseNaming_Male}}",
+                "BirthMessage_SpouseNaming_Female": "{{i18n:CFD.Mateo.BirthMessage_SpouseNaming_Female}}",
+                "BabyNamingTitle_Male": "{{i18n:CFD.Mateo.BabyNamingTitle_Male}}",
+                "BabyNamingTitle_Female": "{{i18n:CFD.Mateo.BabyNamingTitle_Female}}",
+                "HaveBabyQuestion": "{{i18n:CFD.Mateo.HaveBabyQuestion}}",
+                "HaveBabyQuestion_Adoption": "{{i18n:CFD.Mateo.HaveBabyQuestion_Adoption}}",
+                "HaveBabyAnswer_Yes": "{{i18n:CFD.Mateo.HaveBabyAnswer_Yes}}",
+                "HaveBabyAnswer_No": "{{i18n:CFD.Mateo.HaveBabyAnswer_No}}",
+                "HavePlayerBabyQuestion": "{{i18n:CFD.Mateo.NPC.cs.4448}}",
+                "HavePlayerBabyQuestion_Adoption": "{{i18n:CFD.Mateo.HavePlayerBabyQuestion_Adoption}}",
+            },
+            "When": {
+                "Relationship:Mateo": "Married"
+            }
+        },
+        //EDITS TO EXTRADIALOGUE.JSON
+        {
+            "LogName": "Mateo - Custom Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Intro_Spouse": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Intro_Mateo}}", //greeting
+                "SummitEvent_Intro2_Spouse": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Intro2_Mateo}}",
+                "SummitEvent_Intro2_Spouse_Gruff": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Intro2_Mateo}}", //Only used if male, make same as SummitEvent_Intro2_Spouse
+                //spouse turn left
+                "SummitEvent_Dialogue1_Spouse": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Dialogue1_Mateo}}",
+                "SummitEvent_Dialogue1B_Spouse": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Dialogue2_Mateo}}",
+                "SummitEvent_Dialogue2_Spouse": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Dialogue3_Mateo}}",
+                //spouse turn up
+                "SummitEvent_Dialogue3_Mateo": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_Dialogue4_Mateo}}", //change to NPC internal name
+                //roll credits
+                "SummitEvent_closingmessage": "{{i18n:CFD.Mateo.ExtraDialogue_SummitEvent_closingmessage}}" // Qi speaking
+            },
+            "When": {
+                "Relationship:Mateo": "Married"
+            }
+        },
+        { // EDITS TO CHARACTERS.JSON
+            "Logname": "Mateo - Spouse Movie Invitation",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Mateo": "{{i18n:MovieInvite_Spouse_Mateo}}",
+                "MovieTheater_LoveConcession_Female": "{{i18n:CFD.Mateo.MovieTheater_LoveConcession_Female}}",
+                "MovieTheater_LikeConcession_Female": "{{i18n:CFD.Mateo.MovieTheater_LikeConcession_Female}}",
+                "MovieTheater_DislikeConcession_Female": "{{i18n:CFD.Mateo.MovieTheater_DislikeConcession_Female}}",
+                "MovieTheater_LoveConcession_Male": "{{i18n:CFD.Mateo.MovieTheater_LoveConcession_Male}}",
+                "MovieTheater_LikeConcession_Male": "{{i18n:CFD.Mateo.MovieTheater_LikeConcession_Male}}",
+                "MovieTheater_DislikeConcession_Male": "{{i18n:CFD.Mateo.MovieTheater_DislikeConcession_Male}}",
+            }
+        }
+    ]
+}

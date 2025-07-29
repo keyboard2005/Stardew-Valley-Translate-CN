@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "Entries": {
+        "EastScarp.Eloise": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "Eloise",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.eloise}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Aideen": {
+            "TriggerCondition": null,
+            "RingCondition": null,
+            "FromNpc": "Aideen",
+            "FromPortrait": null,
+            "FromDisplayName": null,
+            "Dialogue": "{{i18n:phonecall.eastscarp.aideen}}",
+            "IgnoreBaseChance": false,
+            "SimpleDialogueSplitBy": null,
+            "MaxCalls": 1,
+            "CustomFields": {}
+          },
+          "EastScarp.Kataryna": {
+            "TriggerCondition": "PLAYER_HAS_SEEN_EVENT Any 57872020",
+            "RingCondition": "PLAYER_HAS_SEEN_EVENT Current 57872020",
+            "FromNpc": "KatarynaLK",
+            "FromPortrait": null,
+            "FromDisplayName": null,
+            "Dialogue": "{{i18n:phonecall.eastscarp.kataryna}}",
+            "IgnoreBaseChance": false,
+            "SimpleDialogueSplitBy": null,
+            "MaxCalls": 1,
+            "CustomFields": {}
+          },
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "rain": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 EastScarp_VetHouse 20 13 0 \"Strings\\schedules\\Eloise:vethouse.001\"/1300 EastScarp_BirdHide 3 5 0 Eloise_kneel/1800 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "9": "NOT Friendship Sam 6 Penny 6/GOTO spring",
+    "23": "NOT Friendship Sam 6 Penny 6/GOTO spring",
+    "winter_17": "610 EastScarp_VetHouse 30 14 1/a920 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.001\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1600 Town 100 95 1/1620 Beach 44 23 2 \"Strings\\schedules\\Eloise:winter_17.000\"/1830 Beach 42 36 1 \"Strings\\schedules\\Eloise:winter_17.100\"/2030 EastScarp_VetHouse 33 23 2",
+    "summer_Mon": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 Beach 45 24 2 Eloise_write/1620 EastScarp_Village 19 68 1/1800 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "Mon": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 EastScarp_BirdHide 3 5 0 Eloise_kneel/1400 EastScarp_Village 19 31 square_5_5/1700 EastScarp_VetHouse 24 15 0/1900 EastScarp_VetHouse 29 23 2/2100 EastScarp_VetHouse 33 23 2",
+    "Tue": "610 EastScarp_VetHouse 30 14 1/a920 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.000\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1620 Town 15 91 1/1750 AnimalShop 6 5 0 Eloise_read",
+    "Wed": "610 EastScarp_VetHouse 30 14 1/a920 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.001\"/1000 ArchaeologyHouse 18 12 0 Eloise_kneel/1400 Town 88 103 2/1650 EastScarp_Village 19 68 1/1800 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "Thu": "GOTO Mon",
+    "Fri": "GOTO Wed",
+    "Sat": "700 EastScarp_VetHouse 30 14 1/800 Town 33 90 3/1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "summer_Sat": "700 EastScarp_VetHouse 30 14 1/800 Town 33 90 3/1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "winter_Sat": "700 EastScarp_VetHouse 30 14 1/800 Town 33 90 3/1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "fall_Sat": "700 EastScarp_VetHouse 30 14 1/800 Town 33 90 3/1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 EastScarp_VetHouse 24 15 0/2100 EastScarp_VetHouse 33 23 2",
+    "Sun": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1030 EastScarp_BirdHide 3 5 0 Eloise_kneel/1200 EastScarp_Village 26 36 1/1300 EastScarp_Village 55 89 2/1800 EastScarp_VetHouse 33 23 2",
+    // "spring": "610 EastScarp_VetHouse 30 14 1/700 EastScarp_Village 42 40 2/730 Town 100 95 1 \"Strings\\schedules\\Eloise:tuesday.004\"/930 Forest 37 10 1 \"Strings\\schedules\\Eloise:tuesday.000\"/1500 AnimalShop 16 14 2/1900 AnimalShop 6 5 0"
+    "spring": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1100 EastScarp_BirdHide 3 5 0 Eloise_kneel/1400 EastScarp_Village 19 31 square_5_5/1700 EastScarp_VetHouse 24 15 0/1900 EastScarp_VetHouse 29 23 2/2100 EastScarp_VetHouse 33 23 2",
+    "fall_27": "700 EastScarp_VetHouse 30 14 1/a1230 EastScarp_VillageInn 28 26 Eloise_write/1520 EastScarp_VillageInn 44 20 Eloise_kneel/2010 Town 16 52 0",
+    "GreenRain":"0 EastScarp_VillageInn 28 27 2/610 EastScarp_VillageInn 28 26 2 Eloise_read"
+}

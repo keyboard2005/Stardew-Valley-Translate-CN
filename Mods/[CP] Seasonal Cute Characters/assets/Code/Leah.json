@@ -1,0 +1,218 @@
+{
+	"Changes": [	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Leah's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Leah_Spring, Portraits/Leah_Summer, Portraits/Leah_Fall, Portraits/Leah_Winter_Outdoor, Portraits/Leah_Winter_Indoor, Portraits/Leah_FlowerDance, Portraits/Leah_SpiritsEve, Portraits/Leah_EggF, Portraits/Leah_Fair, Portraits/Leah_Jellies, Portraits/Leah_Luau, Portraits/Leah_Winter_IceF, Portraits/Leah_Winter_WinterStar, Characters/Leah_Spring, Characters/Leah_Summer, Characters/Leah_Fall, Characters/Leah_Winter_Outdoor, Characters/Leah_Winter_Indoor, Characters/Leah_FlowerDance, Characters/Leah_SpiritsEve, Characters/Leah_EggF, Characters/Leah_Fair, Characters/Leah_Jellies, Characters/Leah_Luau, Characters/Leah_Winter_IceF, Characters/Leah_Winter_WinterStar, Characters/Leah_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Leah/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Leah's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah_Beach, Characters/Leah_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Leah/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Leah - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Leah_Spring, Characters/Leah_Summer, Characters/Leah_Fall, Characters/Leah_Winter_Outdoor, Characters/Leah_Winter_Indoor, Characters/Leah_FlowerDance, Characters/Leah_SpiritsEve, Characters/Leah_EggF, Characters/Leah_Fair, Characters/Leah_Jellies, Characters/Leah_Luau, Characters/Leah_Winter_IceF, Characters/Leah_Winter_WinterStar, Characters/Leah_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Leah/Leah_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Leah - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Leah_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Leah/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Leah Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Leah", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.LeahSpring": {
+					"Id": "{{ModId}}.LeahSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Leah_Spring",
+					"Portrait": "Portraits/Leah_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.LeahSummer": {
+					"Id": "{{ModId}}.LeahSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Leah_Summer",
+					"Portrait": "Portraits/Leah_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LeahFall": {
+					"Id": "{{ModId}}.LeahFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Leah_Fall",
+					"Portrait": "Portraits/Leah_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LeahWinterIndoor": {
+					"Id": "{{ModId}}.LeahWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Leah_Winter_Indoor",
+					"Portrait": "Portraits/Leah_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LeahWinterOutdoor": {
+					"Id": "{{ModId}}.LeahWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Leah_Winter_Outdoor",
+					"Portrait": "Portraits/Leah_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.LeahEggFest": {
+					"Id": "{{ModId}}.LeahEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_EggF",
+					"Portrait": "Portraits/Leah_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LeahFlowerDance": {
+					"Id": "{{ModId}}.LeahFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_FlowerDance",
+					"Portrait": "Portraits/Leah_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.LeahLuau": {
+					"Id": "{{ModId}}.LeahLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_Luau",
+					"Portrait": "Portraits/Leah_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LeahJellies": {
+					"Id": "{{ModId}}.LeahJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_Jellies",
+					"Portrait": "Portraits/Leah_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.LeahFair": {
+					"Id": "{{ModId}}.LeahFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_Fair",
+					"Portrait": "Portraits/Leah_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LeahSpirit": {
+					"Id": "{{ModId}}.LeahSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Leah_SpiritsEve",
+					"Portrait": "Portraits/Leah_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.LeahIceFestival": {
+					"Id": "{{ModId}}.LeahIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_Winter_IceF",
+					"Portrait": "Portraits/Leah_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LeahWinterStar": {
+					"Id": "{{ModId}}.LeahWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Leah_Winter_WinterStar",
+					"Portrait": "Portraits/Leah_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.LeahBeach": {
+					"Id": "{{ModId}}.LeahBeach",
+					"Sprite": "Characters/Leah_Beach",
+					"Portrait": "Portraits/Leah_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Aerobics
+				
+				"{{ModId}}.LeahAerobics": {
+					"Id": "{{ModId}}.LeahAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Leah_{{Aerobics}}",
+					"Sprite": "Characters/Leah_Aerobics",
+					"Precedence": -10000,
+				},	
+			},
+		},
+		
+		
+		
+		// MISCELLANEOUS
+		{
+			"LogName": "Leah - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leah - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 55, "Y": 375, "Width": 18, "Height": 18},
+			"ToArea": {"X": 55, "Y": 375, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Leah Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Leah",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },			
+	]
+}

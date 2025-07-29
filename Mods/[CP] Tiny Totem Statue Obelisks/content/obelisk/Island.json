@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.data.island",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Island Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "IslandObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.load.island",
+      "Action": "Load",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_island_obelisk.png",
+      "When": {
+        "IslandObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.island",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/flowers/island_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.island",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late",
+      "Target": "Buildings/Island Obelisk",
+      "FromFile": "assets/moss/island_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

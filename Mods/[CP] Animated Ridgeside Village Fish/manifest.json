@@ -1,0 +1,25 @@
+{
+    "Name": "Animated Ridgeside Village Fish",
+    "Author": "Gervig91",
+    "Version": "1.4.1",
+    "Description": "Animates the fish from the Ridgeside Village mod",
+    "UniqueID": "Gervig91.AnimatedRSVFish",
+    "MinimumApiVersion": "4.0.1",
+    "UpdateKeys": [
+        "Nexus:7353"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.0.1"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "Rafseazz.RidgesideVillage",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "Required": true
+        }
+    ]
+}

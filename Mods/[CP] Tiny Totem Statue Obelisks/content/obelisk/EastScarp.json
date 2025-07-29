@@ -1,0 +1,73 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.load.eastscarp",
+      "Action": "Load",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_es_obelisk.png"
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.eastscarp",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Priority": "Late",
+      "Fields": {
+        "Scarp Obelisk": {
+          "Texture": "Buildings\\Replacement_Scarp_Obelisk",
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "EastScarpEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.eastscarp",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Update": "OnLocationChange",
+      "Priority": "Late",
+      "Fields": {
+        "RSV_Obelisk": {
+          "DrawShadow": "true",
+          "FadeWhenBehind": "true",
+          "Texture": "Buildings\\Scarp_Obelisk",
+          "Size": {
+            "X": 3,
+            "Y": 2
+          }
+        }
+      },
+      "When": {
+        "EastScarpEnabled": "false"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.eastscarp",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/flowers/es_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.eastscarp",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Replacement_Scarp_Obelisk",
+      "FromFile": "assets/moss/es_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

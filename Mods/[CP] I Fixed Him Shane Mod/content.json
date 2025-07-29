@@ -1,0 +1,141 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema":
+  {
+    "Clean Room":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "6心事件后打扫谢恩的房间及配偶房间。"
+    },
+    "Palette":
+    {
+      "AllowValues": "Vanilla, Starblue, VibrantPastoral",
+      "Default": "Vanilla",
+      "Description": "重新配色：如果您想清理谢恩的房间，请选择在使用的配色模组。"
+    },
+    "Events":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "改变谢恩在爱心事件中的表现。"
+    },
+    "Gift Tastes":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "6心事件之后改变谢恩的礼物喜好。"
+    },
+    "Daily Dialogue":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "6心事件之后改变谢恩的日常对话。"
+    },
+    "Festival Dialogue":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "6心事件之后改变谢恩的节日对话。"
+    },
+    "Marriage Dialogue":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "改变谢恩的婚后对话，使其与戒酒保持一致。"
+    },
+    "Additional Dialogue":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "调整部分谢恩的对话，让他*稍微*不那么恶心。"
+    },
+    "Missing Marriage Dialogue":
+    {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Description": "为谢恩添加婚后节日对话，使他与其他可结婚NPC一样有更多的台词。"
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "Clean Room",
+      "Action": "Include",
+      "FromFile": "assets/Maps/CleanRoom.json",
+      "When": {
+        "Clean Room": true,
+        "HasSeenEvent": "2118991"
+      }
+    },
+    {
+      "LogName": "Events",
+      "Action": "Include",
+      "FromFile": "assets/Events/EventChanges.json",
+      "When": {
+        "Events": true,
+        "HasSeenEvent": "2118991"
+      }
+    },
+    {
+      "LogName": "Gift Tastes",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/GiftTastes.json",
+      "When": {
+        "Gift Tastes": true,
+        "HasSeenEvent": "2118991"
+      }
+    },
+    {
+      "LogName": "Daily Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/DailyDialogue.json",
+      "When": {
+        "Daily Dialogue": true,
+        "HasSeenEvent": "2118991"
+      }
+    },
+    {
+      "LogName": "Festival Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/FestivalDialogue.json",
+      "When": {
+        "Festival Dialogue": true,
+        "HasSeenEvent": "2118991"
+      }
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/MarriageDialogue.json",
+      "When": {
+        "Marriage Dialogue": true
+      }
+    },
+    {
+      "LogName": "Additional Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/AdditionalDialogue.json",
+      "When": {
+        "Additional Dialogue": true
+      }
+    },
+    {
+      "LogName": "Missing Marriage Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Dialogue/MissingMarriageDialogue.json",
+      "When": {
+        "Missing Marriage Dialogue": true
+      }
+    },
+    // MISC UNIVERSAL CHANGES
+    // this should be universal regardless of his current sobriety just so the taste is consistent.
+    {
+      "LogName": "Stardrop Tea Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        "AcceptGift_(O)StardropTea": "啊……谢谢。味道像祖祖城的披萨。",
+      }
+    }
+  ]
+}

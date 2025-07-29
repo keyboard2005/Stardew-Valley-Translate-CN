@@ -1,0 +1,148 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		
+		{
+			"LogName": "Load Vincent's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Vincent_Spring, Portraits/Vincent_Summer, Portraits/Vincent_Fall, Portraits/Vincent_Winter_Outdoor, Portraits/Vincent_Winter_Indoor, Portraits/Vincent_FlowerDance, Portraits/Vincent_SpiritsEve, Characters/Vincent_Spring, Characters/Vincent_Summer, Characters/Vincent_Fall, Characters/Vincent_Winter_Outdoor, Characters/Vincent_Winter_Indoor, Characters/Vincent_FlowerDance, Characters/Vincent_SpiritsEve, Portraits/Vincent_Beach, Characters/Vincent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Vincent/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Vincent - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Vincent_Spring, Characters/Vincent_Summer, Characters/Vincent_Fall, Characters/Vincent_Winter_Outdoor, Characters/Vincent_Winter_Indoor, Characters/Vincent_FlowerDance, Characters/Vincent_SpiritsEve, Characters/Vincent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Vincent/Vincent_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Vincent Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Vincent", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.VincentSpring": {
+					"Id": "{{ModId}}.VincentSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Vincent_Spring",
+					"Portrait": "Portraits/Vincent_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.VincentSummer": {
+					"Id": "{{ModId}}.VincentSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Vincent_Summer",
+					"Portrait": "Portraits/Vincent_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VincentFall": {
+					"Id": "{{ModId}}.VincentFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Vincent_Fall",
+					"Portrait": "Portraits/Vincent_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VincentWinterIndoor": {
+					"Id": "{{ModId}}.VincentWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Vincent_Winter_Indoor",
+					"Portrait": "Portraits/Vincent_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.VincentWinterOutdoor": {
+					"Id": "{{ModId}}.VincentWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Vincent_Winter_Outdoor",
+					"Portrait": "Portraits/Vincent_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.VincentFlowerDance": {
+					"Id": "{{ModId}}.VincentFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Vincent_FlowerDance",
+					"Portrait": "Portraits/Vincent_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.VincentSpirit": {
+					"Id": "{{ModId}}.VincentSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Vincent_SpiritsEve",
+					"Portrait": "Portraits/Vincent_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.VincentBeach": {
+					"Id": "{{ModId}}.VincentBeach",
+					"Sprite": "Characters/Vincent_Beach",
+					"Portrait": "Portraits/Vincent_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+
+				"{{ModId}}.VincentIsland": {
+					"Id": "{{ModId}}.VincentIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Vincent_Beach",
+					"Portrait": "Portraits/Vincent_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Vincent - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 117, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 117, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Vincent - Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+            "FromFile": "assets/{{NoNose}}/Random/BundleSprites.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Vincent Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Vincent",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

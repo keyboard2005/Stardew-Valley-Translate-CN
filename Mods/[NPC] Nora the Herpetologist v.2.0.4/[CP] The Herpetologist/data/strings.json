@@ -1,0 +1,38 @@
+{
+    "Changes": [
+        {
+            "LogName": "Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                "NoraToriBookshelf1": "{{i18n:NoraToriBookshelf1}}",
+                "NoraToriBookshelf2": "{{i18n:NoraToriBookshelf2}}",
+                "NoraToriBookshelf3": "{{i18n:NoraToriBookshelf3}}",
+                "NoraToriBookshelf4": "{{i18n:NoraToriBookshelf4}}",
+                "NoraToriBookshelf5": "{{i18n:NoraToriBookshelf5}}",
+                "NoraToriBookshelf6": "{{i18n:NoraToriBookshelf6}}",
+                "NoraToriReadingCornerBooks": "{{i18n:NoraToriReadingCornerBooks}}",
+                "NoraToriOpenBook": "{{i18n:NoraToriOpenBook}}",
+                "NoraToriHandbag": "{{i18n:NoraToriHandbag}}",
+                "NoraToriClock": "{{i18n:NoraToriClock}}",
+                "NoraToriPhone": "{{i18n:NoraToriPhone}}",
+                "NoraToriCoffeeMachine": "{{i18n:NoraToriCoffeeMachine}}",
+                "NoraToriFridge": "{{i18n:NoraToriFridge}}",
+                "NoraToriTrash": "{{i18n:NoraToriTrash}}",
+                "NoraToriTV": "{{i18n:NoraToriTV}}",
+                "NoraTrash": "{{i18n:NoraTrash}}",
+                "NoraBookshelf1": "{{i18n:NoraBookshelf1}}",
+                "NoraBookshelf2": "{{i18n:NoraBookshelf2}}",
+                "NoraBookshelf3": "{{i18n:NoraBookshelf3}}",
+                "NoraBookshelf4": "{{i18n:NoraBookshelf4}}",
+                "NoraBookshelf5": "{{i18n:NoraBookshelf5}}",
+                "NoraBookPile1": "{{i18n:NoraBookPile1}}",
+                "NoraBookpile2": "{{i18n:NoraBookPile2}}",
+                "NoraDesk": "{{i18n:NoraDesk}}",
+                "NoraDresser": "{{i18n:NoraDresser}}",
+                "NoraToriStupid": "{{i18n:NoraToriStupid}}",
+                "NoraToriPinkyPie": "{{i18n:NoraToriPinkiePie}}"
+            }
+        }
+    ]
+}

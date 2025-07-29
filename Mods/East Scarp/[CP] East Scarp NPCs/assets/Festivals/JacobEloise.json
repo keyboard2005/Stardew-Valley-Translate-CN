@@ -1,0 +1,213 @@
+{
+	"Changes": [
+		//Moonlight Jellies
+
+		
+	
+		{
+			"LogName": "Jellyfish Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/summer28",
+			"Entries": {
+				"Eloise": "{{i18n:festivals.eloise.summer28}}",
+				"Jacob": "{{i18n:festivals.jacob.summer28}}"
+			}
+		},
+		{
+			"LogName": "Jellyfish Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/summer28",
+			"Entries": {
+				"Eloise": "{{i18n:festivals.eloise.summer28.juliet}}"
+			},
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC",
+				"HasMod |contains=Poltergeister.SeasonalCuteSpritesJojaClerks": false
+			}
+		},
+
+		{
+			"LogName": "Eloise Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Eloise, Portraits/Eloise",
+			"FromFile": "assets/{{Target}}/Eloise.png",
+			"When": {
+				"LocationName": "Temp",
+				"DayEvent": "luau, egg festival"
+			}
+		},
+		{
+			"LogName": "Festival Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Jacob, Portraits/Jacob",
+			"FromFile": "assets/{{Target}}/Jacob_magician.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "Temp, EastScarp_VillageInn_SpiritEve",
+				"DayEvent": "spirit's eve"
+			}
+		},
+		{
+			"LogName": "Festival Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Eloise, Portraits/Eloise",
+			"FromFile": "assets/{{Target}}/Eloise_bird.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "Temp, EastScarp_VillageInn_SpiritEve",
+				"DayEvent": "spirit's eve"
+			}
+		},
+		//Modded Festivals *************************************************
+		// Fireworks Festival
+		{
+			"LogName": "Add Jacob and Eloise",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Summer20",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Jacob 79 24 2/Eloise 80 24 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod": "violetlizabet.CP.FireworksFestival"
+			}
+		},
+		{
+			"LogName": "Add dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Summer20",
+			"Entries": {
+				"Jacob": "{{i18n:festivals.jacob.summer20}}",
+				"Eloise": "{{i18n:festivals.eloise.summer20}}"
+			},
+			"When": {
+				"HasMod": "violetlizabet.CP.FireworksFestival"
+			}
+		},
+		//Ridgeside Village
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+				"Eloise": "{{i18n:festivals.eloise.fall20}}",
+				"Jacob": "{{i18n:festivals.jacob.fall20}}",
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Eloise 113 44 1/Jacob 119 42 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+				"PepperPup": "{{i18n:festivals.pepperpup.fall20}}"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "PepperPup 109 41 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"set-up",
+						7
+					],
+					"Value": "speed PepperPup 4/advancedMove PepperPup true 2 0 0 2 -2 0 0 -2 3 100",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod": "Rafseazz.RSVCP",
+				"HasSeenEvent": "57870020"
+			}
+		},
+		// Ember of Resolutions
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": {
+				"Jacob": "{{i18n:festivals.jacob.winter28}}",
+				"Eloise": "{{i18n:festivals.eloise.winter28}}"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Jacob 36 26 2/Eloise 40 33 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Eloise 53 50 3/Jacob 54 50 3",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/Spring19",
+			"Entries": {
+				"Jacob": "{{i18n:festivals.jacob.spring19}}",
+				"Eloise": "{{i18n:festivals.eloise.spring19}}"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Jacob 19 17 0/Eloise 19 14 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "Jacob 24 17 1/Eloise 25 18 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod": "UNA.FF.CP"
+			}
+		},
+	]
+}

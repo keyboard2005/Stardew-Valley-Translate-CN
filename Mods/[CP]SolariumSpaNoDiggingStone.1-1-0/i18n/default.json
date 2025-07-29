@@ -1,0 +1,19 @@
+{
+	"BookShelf": "A shelf full of old gardening books.",
+	
+	//Unlock Event
+	"SolariumUnlock.1": "Hello, @.",
+	"SolariumUnlock.2": "I haven't been out this way since well before you arrived in town.#$b#The farm is looking wonderful!$2",
+	"SolariumUnlock.3": "I was having tea with Evelyn yesterday and she was telling me about how my sunroom reminded her of the old solarium she used to take care of.#$b#Apparently it's on the second floor of the spa house up by the train tracks.$1#$b#She used to tend a little garden up there where she grew the seedlings for the flowerbeds around town.#$b#She hasn't been able to take care of it since her knees can't manage the trip anymore.$2",
+	"SolariumUnlock.4": "Evelyn told me she'd recently found the key while sorting through some old boxes.#$b#It had been bothering her since, with it just sitting there, collecting dust.$2",
+	"SolariumUnlock.5": "So I suggested we give it to you!",
+	"SolariumUnlock.6": "You got the solarium key!",
+	"SolariumUnlock.7": "Evelyn has been so grateful for all your help around town and wanted to give you something as thanks.#$b#She thinks the world of you and is delighted to be able to pass something on to the next generation.",
+	"SolariumUnlock.8": "The ladder broke some time ago, but I've already asked Robin to fix it up for you.#$b#She told me she'll have it finished by tomorrow.",
+	"SolariumUnlock.9": "From tomorrow onwards, you can access the solarium!",
+	"SolariumUnlock.10": "Hopefully you'll get as much joy from it as Evelyn did.$1",
+	
+	//Linus's new shelter
+	"LinusNewShelter.1": "Hello, @.#$b#I ran into Robin earlier and she told me this place had been fixed up.",
+	"LinusNewShelter.2": "It's a great place to keep out of the cold, isn't it?$h",
+}

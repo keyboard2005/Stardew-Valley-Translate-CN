@@ -1,0 +1,44 @@
+{
+  "Changes": [
+    {
+      "LogName": "Missing SV Fair",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "Shane_spouse": "布置好展示之后，想去吃些汉堡吗？"
+      }
+    },
+    {
+      "LogName": "Missing Spirits Eve",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Shane_spouse": "能在蔓越莓苏打被拿完之前帮我拿点吗？我得忙着陪贾斯……"
+      }
+    },
+    {
+      "LogName": "Missing Egg Festival",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "Shane_spouse": "我只告诉你，墓地里有三个。$6"
+      }
+    },
+    {
+      "LogName": "Missing Luau",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Shane_spouse": "我带了个空盒来装汤，你觉得行吗？"
+      }
+    },
+    {
+      "LogName": "Missing Festival of Ice",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Shane_spouse": "我只是来给你加油的。否则我就在暖和的屋里待着了。"
+      }
+    }
+  ]
+}

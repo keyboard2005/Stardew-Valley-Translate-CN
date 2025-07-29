@@ -1,0 +1,18 @@
+{
+	"Changes":[
+		{
+			"LogName": "Bookseller",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_Default"},
+		},
+		{
+			"LogName": "Bookseller Trade",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BooksellerTrade", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Bookseller_Default"},
+		},
+	],
+}

@@ -1,0 +1,127 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.EggFestival.1}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.EggFestival.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.FlowerDance.2}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.FlowerDance.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.Luau.1}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.Luau.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.MoonlightJellies.1}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.MoonlightJellies.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.SDVFair.1}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.SDVFair.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/fall27",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.SpiritsEve.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.IceFestival}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.IceFestival.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.WinterStar}}",
+                "Nora_y2": "{{i18n:Festivals.Nora.WinterStar.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.RidgesideGathering}}"
+            },
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            } 
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.EmberOfResolutions}}"
+            },
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer5",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.SurfingFestivals}}"
+            },
+            "When": {
+                "HasMod": "spacechase0.SurfingFestival"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer20",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.FireworksFestival}}"
+            },
+            "When": {
+                "HasMod": "violetlizabet.FireworksFestival"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter13",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.LoveFestival}}"
+            },
+            "When": {
+                "HasMod": "AvalonMFX.LoveFestival"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall3",
+            "Entries": {
+                "Nora": "{{i18n:Festivals.Nora.Marketpalooza}}"
+            },
+            "When": {
+                "HasMod": "Fellowclown.SW"
+            }
+        }
+    ]
+}

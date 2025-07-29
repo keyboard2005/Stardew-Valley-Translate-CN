@@ -1,0 +1,11 @@
+{
+    "Changes": [
+       {
+          "Action": "EditData",
+          "Target": "Data/CustomNPCExclusions",
+          "Entries": {
+             "Hector": "WinterStar ItemDelivery Greet BeGreeted IslandVisit Socialize ItemDelivery Calendar ShopDialog"
+          }
+       }
+    ]
+ }

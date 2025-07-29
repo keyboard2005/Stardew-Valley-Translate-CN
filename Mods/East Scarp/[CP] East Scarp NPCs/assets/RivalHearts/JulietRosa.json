@@ -1,0 +1,374 @@
+{
+    "Changes": [
+        {
+            "LogName": "Juliet and Rosa JojaMart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/JojaMart",
+            "Entries": {
+                "57874005/k 191393/f Rosa 500/f Juliet 500/d Mon Tue Wed Fri Sat Sun": "Hospital_Ambient/-100 -100/Juliet 9 25 1 Rosa 11 20 0 Pam 9 21 3 {{JojaMartActors}}/skippable/changePortrait Juliet Joja/changeSprite Juliet Joja/animate Juliet false true 120 16 16 16 17 17 18 18 19 19 18 18 18 19 19 19 18 18 18 19 19 19 17 17 20 20 20 20 20 20 21 21 21 20 20 20 22 22 20 20 22 22 20 20 21 21 21 21/skippable/viewport 11 24/move Rosa 0 5 3/pause 1000/stopAnimation Juliet/jump Juliet 3/textAboveHead Juliet \"{{i18n:57874005.01}}\"/pause 2500/textAboveHead Rosa \"{{i18n:57874005.02}}\"/addObject 10 25 436 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/addObject 10 25 246 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/advancedMove Pam false 2 0 0 2/speak Juliet \"{{i18n:57874005.03}}\"/addObject 10 25 245 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/emote Rosa 60/pause 1000/speak Rosa \"{{i18n:57874005.04}}\"/pause 1500/animate Pam false false 240 28 29 28 29 28 29 28 29 28 29 28 29/textAboveHead Pam \"{{i18n:57874005.05}}\"/speak Pam \"{{i18n:57874005.06}}\"/pause 1000/jump Juliet 3/faceDirection Juliet 0/speak Juliet \"{{i18n:57874005.07}}\"/shake Pam 500/emote Pam 12/speak Pam \"{{i18n:57874005.08}}\"/pause 1000/faceDirection Juliet 1/pause 500/textAboveHead Juliet \"{{i18n:57874005.09}}\"/pause 1000/move farmer 0 6 3/faceDirection Pam 1/textAboveHead Pam \"{{i18n:57874005.10}}\"/pause 2500/emote farmer 40/faceDirection Juliet 1/pause 1000/speak Juliet \"{{i18n:57874005.11}}\"/playSound purchase/pause 1000/playSound newRecipe/textAboveHead Rosa \"{{i18n:57874005.12}}\"/pause 1000/move Rosa 0 2 1 true/move Pam 0 2 3 true/move farmer -2 0 3 true/pause 1000/textAboveHead Juliet \"{{i18n:57874005.13}}\"/pause 500/jump Rosa 3/faceDirection Rosa 0/speak Juliet \"{{i18n:57874005.14}}\"/pause 1000/faceDirection Rosa 2/textAboveHead Rosa \"{{i18n:57874005.15}}\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+             
+                "summer_Fri2": "{{i18n:Rosa_Juliet_summer_Tue.RivalHearts}}",
+                //"IslandSouth": ""
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasSeenEvent": "57874026"
+            },
+            "Entries": {
+                // "IslandSouth_Mon": "",
+                //  "IslandSouth_Tue": "",
+                //  "IslandSouth_Wed": "",
+                //  "IslandSouth_Thu": "",
+                //  "IslandSouth_Fri": "",
+                //  "IslandSouth_Sat": "",
+                //  "IslandSouth_Sun": "",
+                "IslandSouth": "It's so beautiful here. And romantic too.$5"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Juliet",
+            "When": {
+                "HasSeenEvent": "57874026"
+            },
+            "Entries": {
+                // "IslandSouth_Mon": "",
+                //  "IslandSouth_Tue": "",
+                //  "IslandSouth_Wed": "",
+                //  "IslandSouth_Thu": "",
+                //  "IslandSouth_Fri": "",
+                //  "IslandSouth_Sat": "",
+                //  "IslandSouth_Sun": "",
+                "IslandSouth_Mon": "{{i18n:Juliet_Mon_IslandSouth}}"
+            }
+        },
+        /*{ //This appears to be in two places so...
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasSeenEvent": "57874020"
+            },
+            "Entries": {
+                "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Do you want in on it?",
+                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4"
+            }
+        },*/
+        {
+            "LogName": "Juliet and Rosa movie date CC > theater",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "When": {
+                "HasSeenEvent": "502261"
+            },
+            "Entries": {
+                "57874006/z winter/n ccMovieTheater/z spring/z summer/t 2000 2400/w sunny": "nightTime/52 23/farmer 47 26 0 Rosa -100 -100 2 Juliet -100 -100 2 Abigail -100 -100 2/skippable/playSound doorOpen/pause 1000/warp Rosa 53 20/warp Juliet 52 20/pause 1000/move Rosa 0 2 3 true/move Juliet 0 2 1 true/textAboveHead Juliet \"{{i18n:57874006.01}}\"/pause 1500/textAboveHead Juliet \"{{i18n:57874006.02}}\"/pause 1000/playSound doorOpen/warp Abigail 52 20/move Abigail 0 1 3/move Abigail -4 0 2 true/move farmer 0 -4 1 true/shake Rosa 500/textAboveHead Rosa \"{{i18n:57874006.03}}\"/speak Juliet \"{{i18n:57874006.04}}\"/pause 500/emote Abigail 32/shake Rosa 500/move Abigail 0 1 3/move Rosa 0 1 2/textAboveHead Rosa \"{{i18n:57874006.05}}\"/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874006.06}}\"/pause 1000/move Juliet 0 1 1/textAboveHead Juliet \"{{i18n:57874006.07}}\"/pause 1000/speak Juliet \"{{i18n:57874006.08}}\"/pause 100/emote Rosa 40/pause 2000/speak Rosa \"{{i18n:57874006.09}}\"/pause 500/jump Juliet 3/emote Juliet 16/faceDirection Abigail 1 true/emote Abigail 8/speak Juliet \"{{i18n:57874006.10}}\"/speak Rosa \"{{i18n:57874006.11}}\"/pause 500/faceDirection Abigail 3/emote Rosa 40/speak Rosa \"{{i18n:57874006.12}}\"/emote Abigail 40/textAboveHead Juliet \"{{i18n:57874006.13}}\"/speak Rosa \"{{i18n:57874006.14}}\"/faceDirection Rosa 1/emote Juliet 28/pause 500/move Rosa 3 0 2/textAboveHead Juliet \"{{i18n:57874006.15}}\"/pause 100/jump Rosa 3/pause 100/faceDirection Rosa 3/speak Juliet \"{{i18n:57874006.16}}\"/move Rosa -3 0 3/speak Rosa \"{{i18n:57874006.17}}\"/faceDirection Rosa 2/pause 500/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874006.18}}\"/emote Juliet 60/pause 500/speak Juliet \"{{i18n:57874006.19}}\"/pause 500/faceDirection Rosa 3/pause 500/speak Juliet \"{{i18n:57874006.20}}\"/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874006.21}}\"/pause 1000/end",
+            }
+        },
+        {
+            "LogName": "Juliet and Rosa movie date - Joja > theater",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "When": {
+                "HasSeenEvent": "191393"
+            },
+            "Entries": {
+                "57874006/z winter/n ccMovieTheater/z spring/z summer/t 2000 2400/w sunny": "nightTime/96 53/farmer 89 58 0 Rosa -100 -100 2 Juliet -100 -100 2 Abigail -100 -100 2/skippable/playSound doorOpen/pause 1000/warp Rosa 96 51/warp Juliet 95 51/pause 1000/move Rosa 0 2 3 true/move Juliet 0 2 1 true/textAboveHead Juliet \"{{i18n:57874006.01}}\"/pause 1500/textAboveHead Juliet \"{{i18n:57874006.02}}\"/pause 1000/playSound doorOpen/warp Abigail 95 51/move Abigail 0 1 3/move Abigail -5 0 3 true/move farmer 0 -5 1 true/shake Rosa 500/textAboveHead Rosa \"{{i18n:57874006.03}}\"/speak Juliet \"{{i18n:57874006.04}}\"/pause 500/emote Abigail 32/shake Rosa 500/move Abigail 0 1 3/move Rosa 0 1 2/textAboveHead Rosa \"{{i18n:57874006.05}}\"/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874006.06}}\"/pause 1000/move Juliet 0 1 1/textAboveHead Juliet \"{{i18n:57874006.07}}\"/pause 1000/speak Juliet \"{{i18n:57874006.08}}\"/pause 100/emote Rosa 40/pause 2000/speak Rosa \"{{i18n:57874006.09}}\"/pause 500/jump Juliet 3/emote Juliet 16/faceDirection Abigail 1 true/emote Abigail 8/speak Juliet \"{{i18n:57874006.10}}\"/speak Rosa \"{{i18n:57874006.11}}\"/pause 500/faceDirection Abigail 3/emote Rosa 40/speak Rosa \"{{i18n:57874006.12}}\"/emote Abigail 40/textAboveHead Juliet \"{{i18n:57874006.13}}\"/speak Rosa \"{{i18n:57874006.14}}\"/faceDirection Rosa 1/emote Juliet 28/pause 500/move Rosa 3 0 2/textAboveHead Juliet \"{{i18n:57874006.15}}\"/pause 100/jump Rosa 3/pause 100/faceDirection Rosa 3/speak Juliet \"{{i18n:57874006.16}}\"/move Rosa -3 0 3/speak Rosa \"{{i18n:57874006.17}}\"/faceDirection Rosa 2/pause 500/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874006.18}}\"/emote Juliet 60/pause 500/speak Juliet \"{{i18n:57874006.19}}\"/pause 500/faceDirection Rosa 3/pause 500/speak Juliet \"{{i18n:57874006.20}}\"/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874006.21}}\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Rosa defends Juliet against gossip",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "57874020/e 86571110/f Rosa 750/t 1000 1600/w sunny": "{{season}}_day_ambient/43 59/Jodi 43 61 1 Caroline 44 61 3 farmer -100 -100 2 Juliet 39 59 1 Rosa 42 57 0/skippable/move Juliet 3 0 0/emote Jodi 40/textAboveHead Juliet \"{{i18n:57874020.01}}\"/faceDirection Rosa 2/pause 1500/textAboveHead Rosa \"{{i18n:57874020.02}}\"/faceDirection Jodi 0 true/faceDirection Caroline 0 true/pause 1500/advancedMove Juliet false 6 0 0 -5 2 0 2 5000/faceDirection Rosa 1/pause 1000/faceDirection Rosa 0/faceDirection Jodi 1 true/faceDirection Caroline 3 true/speak Caroline \"{{i18n:57874020.03}}\"/faceDirection Rosa 2/pause 500/emote Rosa 12/animate Rosa false true 240 22 23/pause 1000/playSound doorOpen/warp farmer 43 57/stopAnimation Rosa/faceDirection Rosa 1/faceDirection farmer 3/speak Jodi \"{{i18n:57874020.04.{{jojaORcc}}}}\"/faceDirection Rosa 2 true/faceDirection farmer 2 true/speak Caroline \"{{i18n:57874020.05}}\"/faceDirection Rosa 1/faceDirection farmer 3/emote Rosa 40/quickQuestion #{{i18n:57874020.06}}#{{i18n:57874020.07}}(break)emote Rosa 12\\pause 1000\\faceDirection Rosa 2\\textAboveHead Rosa \"{{i18n:57874020.08}}\"\\move Rosa 0 2 2\\faceDirection farmer 2(break)emote Rosa 32\\pause 1000\\faceDirection Rosa 2 true\\faceDirection farmer 2 true\\pause 1000\\move Rosa 0 2 2 true\\move farmer 0 2 2 true/stopMusic/playMusic musicboxsong/pause 1000/speak Rosa \"{{i18n:57874020.09}}\"/jump Jodi 3 true/jump Caroline 3 true/stopAdvancedMoves/faceDirection Jodi 0 true/faceDirection Caroline 0 true/emote Caroline 12/emote Jodi 60/advancedMove Juliet false -2 0 2 5000/speak Jodi \"{{i18n:57874020.10}}\"/speak Caroline \"{{i18n:57874020.11}}\"/textAboveHead Rosa \"{{i18n:57874020.12}}\"/speak Rosa \"{{i18n:57874020.13}}\"/emote Jodi 60/faceDirection Caroline 3/faceDirection Jodi 1/emote Caroline 40/pause 2000/faceDirection Caroline 0/faceDirection Jodi 0/Speak Rosa \"{{i18n:57874020.14}}\"/emote farmer 32/pause 1000/speak Jodi \"{{i18n:57874020.15}}\"/emote Rosa 60/emote Juliet 20/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Werewolves V Vampires",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VillageInn",
+            "Entries": {
+                "57874021/e 57874020/o Juliet/t 1000 1700/d Mon Tue Wed Thu": "SettlingIn/44 31/Rosa 45 31 3 Juliet 43 31 1 farmer -100 -100 0/skippable/addConversationTopic RosaReadsSmut 4/pause 1500/speak Juliet \"{{i18n:57874021.01}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874021.02}}\"/speak Rosa \"{{i18n:57874021.03}}\"/speak Juliet \"{{i18n:57874021.04}}\"/emote Rosa 40/speak Rosa \"{{i18n:57874021.05}}\"/textAboveHead Juliet \"{{i18n:57874021.06}}\"/speak Juliet \"{{i18n:57874021.07}}\"/speak Rosa \"{{i18n:57874021.08}}\"/emote Juliet 40/speak Juliet \"{{i18n:57874021.09}}\"/emote Rosa 40/pause 2500/textAboveHead Rosa \"{{i18n:57874021.10}}\"/pause 500/speak Juliet \"{{i18n:57874021.11}}\"/pause 500/speak Rosa \"{{i18n:57874021.12}}\"/pause 500/emote Rosa 28/pause 500/speak Rosa \"{{i18n:57874021.13}}\"/emote Juliet 8/playSound doorOpen/warp farmer 44 36/jump Juliet 3 true/jump Rosa 3 true/faceDirection Juliet 2 true/faceDirection Rosa 2 true/pause 500/textAboveHead Rosa \"{{i18n:57874021.14}}\"/move farmer 0 -3 0/pause 500/faceDirection farmer 1/pause 100/faceDirection farmer 3/pause 100/faceDirection farmer 0/emote farmer 8/question null \"{{i18n:57874021.15}}#{{i18n:57874021.16}}#{{i18n:57874021.17}}#\"/pause 500/faceDirection Juliet 1/speak Rosa \"{{i18n:57874021.18}}\"/textAboveHead Juliet \"{{i18n:57874021.19}}\"/faceDirection Juliet 2/speak Juliet \"{{i18n:57874021.20}}\"/faceDirection Rosa 3/pause 500/emote Rosa 12/pause 500/faceDirection Rosa 2/speak Juliet \"{{i18n:57874021.21}}\"/pause 500/emote farmer 36/pause 500/faceDirection Juliet 1/speak Juliet \"{{i18n:57874021.22}}\"/faceDirection Juliet 2/pause 500/speak Juliet \"{{i18n:57874021.23}}\"/pause 500/speak Rosa \"{{i18n:57874021.24}}\"/faceDirection Juliet 1/faceDirection Rosa 3/pause 500/speak Juliet \"{{i18n:57874021.25}}\"/pause 500/emote Rosa 60/speak Rosa \"{{i18n:57874021.26}}\"/emote Juliet 20/speak Rosa \"{{i18n:57874021.27}}\"/pause 500/speak Juliet \"{{i18n:57874021.28}}\"/pause 500/emote Juliet 32 true/emote Rosa 32 true/pause 500/faceDirection farmer 3/pause 100/faceDirection farmer 1/pause 100/faceDirection farmer 0/emote farmer 16/pause 1000/end",
+                "57874022/e 57874021/e 57875001/o Juliet/A RosaReadsSmut/t 1000 1700/d Mon Tue Wed Thu": "SettlingIn/44 31/Rosa 45 31 3 Juliet 43 31 1 farmer -100 -100 0/addConversationTopic RosaMailsLilith 10/skippable/pause 1500/speak Juliet \"{{i18n:57874022.01}}\"/emote Rosa 60/pause 500/textAboveHead Juliet \"{{i18n:57874022.02}}\"/pause 2000/textAboveHead Rosa \"{{i18n:57874022.03}}\"/speak Rosa \"{{i18n:57874022.04}}\"/emote Juliet 8/showFrame Rosa 25/speak Rosa \"{{i18n:57874022.05}}\"/pause 500/faceDirection Rosa 3/textAboveHead Juliet \"{{i18n:57874022.06}}\"/pause 500/speak Rosa \"{{i18n:57874022.07}}\"/move Rosa 0 -1 3/playSound ship/addObject 44 30 102 0/jump Juliet 3/speak Rosa \"{{i18n:57874022.08}}\"/move Juliet 0 -1 1/emote Juliet 16/speak Juliet \"{{i18n:57874022.09}}\"/emote Rosa 12/pause 1000/speak Rosa \"{{i18n:57874022.10}}\"/emote Juliet 16/speak Juliet \"{{i18n:57874022.11}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874022.12}}\"/speak Rosa \"{{i18n:57874022.13}}\"/playSound doorOpen/warp farmer 44 36/faceDirection Juliet 2/move Rosa 0 1 2/textAboveHead Rosa \"{{i18n:57874022.14}}\"/speak Juliet \"{{i18n:57874022.15}}\"/emote farmer 8/move farmer 0 -3 0/speak Juliet \"{{i18n:57874022.16}}\"/emote farmer 16/faceDirection Juliet 1/faceDirection Rosa 3/speak Juliet \"{{i18n:57874022.17}}\"/emote farmer 8 true/emote Rosa 8 true/faceDirection Juliet 2/pause 100/faceDirection Juliet 1/pause 500/jump Juliet 3/textAboveHead Juliet \"{{i18n:57874022.18}}\"/pause 500/jump Rosa 3/emote Rosa 40/speak Rosa \"{{i18n:57874022.19}}\"/speak Juliet \"{{i18n:57874022.20}}\"/pause 500/emote farmer 32/pause 1000/end",
+                "57874024/e 57874023/f VivienneLK 1500/t 1700 2100/d Sat Sun": "SettlingIn/-100 -100/Rosa 26 28 1 Juliet 27 28 3 farmer 44 36 0 VivienneLK 45 33 2/skippable/addObject 26 27 102/addObject 27 27 102/viewport 42 34 clamp true/move farmer 0 -1 0 true/move VivienneLK -1 0 2 true/speak VivienneLK \"{{i18n:57874024.01}}\"/pause 500/emote farmer 8/move VivienneLK 0 1 3/pause 500/speak VivienneLK \"{{i18n:57874024.02}}\"/faceDirection VivienneLK 2/pause 500/speak VivienneLK \"{{i18n:57874024.03}}\"/emote farmer 56/pause 1000/move farmer -3 0 3 true/move VivienneLK -3 0 3 true/pause 1500/fade/viewport -100 -100/warp VivienneLK 27 33/warp farmer 26 33/faceDirection VivienneLK 0/faceDirection farmer 0/viewport 26 28/pause 500/textAboveHead Rosa \"{{i18n:57874024.04}}\"/pause 500/speak Juliet \"{{i18n:57874024.05}}\"/move VivienneLK 0 -3 0 true/move farmer 0 -3 0 true/pause 500/emote VivienneLK 56/jump Juliet 5 true/jump Rosa 5 true/faceDirection Juliet 2 true/faceDirection Rosa 2 true/speak VivienneLK \"{{i18n:57874024.06}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874024.07}}\"/pause 500/speak Juliet \"{{i18n:57874024.08}}\"/move Juliet 0 1 2/speak Juliet \"{{i18n:57874024.09}}\"/jump VivienneLK 5/emote VivienneLK 16/pause 500/faceDirection farmer 1/emote farmer 8/shake VivienneLK 500/move Rosa 0 1 2/speak VivienneLK \"{{i18n:57874024.10}}\"/faceDirection Juliet 3/faceDirection Rosa 1/textAboveHead Juliet \"{{i18n:57874024.11}}\"/faceDirection Rosa 2 true/faceDirection Juliet 2 true/speak VivienneLK \"{{i18n:57874024.12}}\"/pause 500/faceDirection farmer 0/speak Rosa \"{{i18n:57874024.13}}\"/pause 500/speak VivienneLK \"{{i18n:57874024.14}}\"/faceDirection VivienneLK 3/pause 1000/faceDirection VivienneLK 0/speak VivienneLK \"{{i18n:57874024.15}}\"/pause 500/faceDirection VivienneLK 3/faceDirection farmer 1/pause 500/emote farmer 60/faceDirection Rosa 1 true/faceDirection Juliet 3 true/pause 500/emote Juliet 20/pause 500/faceDirection Juliet 2 true/faceDirection Rosa 2 true/faceDirection VivienneLK 0/pause 500/speak Juliet \"{{i18n:57874024.16}}\"/pause 500/speak VivienneLK \"{{i18n:57874024.17}}\"/pause 1000/end",
+            }
+        },
+        {
+            "LogName": "Juliet offers fanfiction to Vivienne",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57874023/e 57874022/f VivienneLK 1000/o Juliet/t 1000 1400/d Mon Tue Wed Thu Fri/w sunny": "continue/54 85/Juliet 50 86 1 Rosa 50 87 1 VivienneLK 55 84 2 farmer 52 89 2/showFrame VivienneLK 16/advancedMove Juliet false 2 0 2 1000/advancedMove Rosa false 2 0 4 1000/pause 1000/speak Rosa \"{{i18n:57874023.01}}\"/emote VivienneLK 8/emote Juliet 60/pause 500/faceDirection Juliet 1/textAboveHead Rosa \"{{i18n:57874023.02}}\"/advancedMove Juliet false 3 0 4 1000/faceDirection Rosa 1/pause 500/advancedMove Rosa false 1 0 0 2 3 1000/pause 1500/faceDirection farmer 1/textAboveHead Juliet \"{{i18n:57874023.03}}\"/speak VivienneLK \"{{i18n:57874023.04}}\"/speak Juliet \"{{i18n:57874023.05}}\"/speak VivienneLK \"{{i18n:57874023.06}}\"/jump Juliet 5/speak Juliet \"{{i18n:57874023.07}}\"/speak VivienneLK \"{{i18n:57874023.08}}\"/speak Juliet \"{{i18n:57874023.09}}\"/speak Juliet \"{{i18n:57874023.10}}\"/pause 500/speak VivienneLK \"{{i18n:57874023.11}}\"/textAboveHead Juliet \"{{i18n:57874023.12}}\"/faceDirection Rosa 0/faceDirection farmer 0/advancedMove Juliet false 0 -1 4 1000 -1 0 2 1000 1 1000/pause 500/playSound newRecipe/showFrame VivienneLK 18/pause 2000/emote VivienneLK 40/pause 500/emote Juliet 28/pause 1000/textAboveHead VivienneLK \"{{i18n:57874023.13}}\"/jump Juliet 3/move VivienneLK 0 1 3/pause 1000/speak VivienneLK \"{{i18n:57874023.14}}\"/pause 500/textAboveHead Juliet \"{{i18n:57874023.15}}\"/pause 500/speak VivienneLK \"{{i18n:57874023.16}}\"/speak Juliet \"{{i18n:57874023.17}}\"/speak VivienneLK \"{{i18n:57874023.18}}\"/pause 500/textAboveHead Juliet \"{{i18n:57874023.19}}\"/pause 500/speak VivienneLK \"{{i18n:57874023.20}}\"/pause 500/advancedMove VivienneLK false 0 3 5 0 0 2 4 0 0 5 3 0 0 -17/pause 1000/emote Juliet 8/pause 2000/advancedMove Juliet false 0 2 3 1000/advancedMove Rosa false 0 -2 1 1000/pause 1000/speak Juliet \"{{i18n:57874023.21}}\"/pause 500/emote Rosa 8/pause 3000/end"
+            }
+        },
+        {
+            "LogName": "Sprites",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "Entries": {
+                "Sat": "750 EastScarp_VillageInn 43 10 0 square_5_1_0/0930 EastScarp_Village 21 100 2/1650 Saloon 36 20 1/2400 EastScarp_VillageInn 66 8 1",
+            },
+            "When": {
+                "HasSeenEvent": "57874020"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.RosaJuliet_MermaidJournalScrap": {
+                    "ID": "mail.Lemurkat.RosaJuliet_MermaidJournalScrap",
+                    "Trigger": "DayEnding",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_HAS_SECRET_NOTE Current 1009",
+                    "Actions": [
+                        "AddMail Current RosaJuliet_MermaidJournalScrap received",
+                        
+                    ]
+                },
+            }
+        },
+        //PLAYER_HAS_SECRET_NOTE Current 1009 
+        { // Find the code for has "solved the mermaid puzzle": mermaidPuzzleFinished
+            "LogName": "Rosa and Juliet visit the Mermaid Cove",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "57874025/p Rosa/p Juliet/!D Juliet/n RosaJuliet_MermaidJournalScrap/o Juliet/e 57874020": "continue/21 30/Juliet 24 29 2 Rosa 24 30 0 farmer 22 33 0 Willy 20 33 0 Leah 21 27 1 Elliott 22 27 3 Haley 19 28 0 Jacob 17 31 1 Eloise 18 32 0/skippable/pause 1000/speak Willy \"{{i18n:57874025.01}}\"/pause 500/faceDirection Haley 2 true/faceDirection Elliott 2 true/faceDirection Leah 2 true/faceDirection Eloise 1/pause 500/faceDirection Rosa 3/faceDirection Juliet 3/speak Willy \"{{i18n:57874025.02}}\"/pause 500/textAboveHead Elliott \"{{i18n:57874025.03}}\"/pause 500/textAboveHead Haley \"{{i18n:57874025.04}}\"/pause 500/textAboveHead Eloise \"{{i18n:57874025.05}}\"/pause 500/textAboveHead Juliet \"{{i18n:57874025.06}}\"/pause 500/speak Willy \"{{i18n:57874025.07}}\"/pause 500/advancedMove Willy false 0 11 2 1000/pause 1000/faceDirection Elliott 3/faceDirection Leah 1/textAboveHead Elliott \"{{i18n:57874025.08}}\"/advancedMove Eloise false -5 0 0 1 2 1000/advancedMove Jacob false -3 0 0 -3 2 1000/pause 500/animate Haley false true 120 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 31 30 30 30 30 30 30 30 30 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33/pause 500/faceDirection Juliet 2/textAboveHead Juliet \"{{i18n:57874025.09}}\"/move Juliet 3 0 2 true/move Rosa 3 0 0 true/move farmer 0 -3 1 true/pause 150/emote Rosa 8/pause 1000/textAboveHead Juliet \"{{i18n:57874025.10}}\"/pause 500/emote farmer 8/pause 1000/message \"{{i18n:57874025.11}}\"/pause 500/speak Rosa \"{{i18n:57874025.12}}\"/pause 500/speak Juliet \"{{i18n:57874025.13}}\"/pause 500/speak Rosa \"{{i18n:57874025.14}}\"/move farmer 3 0 1 true/pause 1000/faceDirection Juliet 3/jump Juliet 5/faceDirection Rosa 3/emote Rosa 60/pause 500/speak Juliet \"{{i18n:57874025.15}}\"/pause 500/emote farmer 36/pause 500/speak Juliet \"{{i18n:57874025.16}}\"/pause 500/faceDirection Juliet 2/faceDirection Rosa 0/textAboveHead Juliet \"{{i18n:57874025.17}}\"/pause 500/advancedMove Juliet false 6 0 1 1000/advancedMove Rosa false 6 0 1 1000/pause 500/question fork1 \"{{i18n:57874025.18}}#{{i18n:57874025.19}}#{{i18n:57874025.20}}#\"/fork JulesRosa_Follow/pause 500/stopAdvancedMoves/faceDirection Juliet 3 true/faceDirection Rosa 3 true/pause 500/textAboveHead Juliet \"{{i18n:57874025.21}}\"/pause 500/speak Juliet \"{{i18n:57874025.22}}\"/pause 500/speak Rosa \"{{i18n:57874025.23}}\"/pause 500/emote farmer 60/advancedMove Juliet false 6 0/advancedMove Rosa false 6 0/advancedMove farmer false 6 0/pause 1000/fade/viewport -1000 -1000/stopAdvancedMoves/warp Willy -100 -100 true/warp Elliott -100 -100 true/warp Haley -100 -100 true/warp Leah -100 -100 true/warp Jacob -100 -100 true/warp Eloise -100 -100 true/changeLocation IslandSouthEast/warp Juliet 24 26/warp Rosa 23 26/warp farmer 20 26/advancedMove Juliet false 6 0 0 1 2 1000/advancedMove Rosa false 6 0 0 1 2 1000/advancedMove farmer false 7 0 2 1000/viewport 26 27 clamp true/pause 3000/emote Rosa 8/speak Juliet \"{{i18n:57874025.24}}\"/pause 500/faceDirection Rosa 0/pause 1000/faceDirection Rosa 3/facedirection Rosa 2/textAboveHead Rosa \"{{i18n:57874025.25}}\"/pause 1000/faceDirection Rosa 1/pause 500/speak Rosa \"{{i18n:57874025.26}}\"/pause 500/faceDirection Juliet 3/speak Juliet \"{{i18n:57874025.27}}\"/pause 500/speak Juliet \"{{i18n:57874025.28}}\"/pause 500/jump farmer 5/faceDirection Rosa 3/speak Rosa \"{{i18n:57874025.29}}\"/advancedMove farmer false 1 0 0 2 1 1000/pause 1000/quickQuestion #{{i18n:57874025.30}}#{{i18n:57874025.31}}(break)textAboveHead Juliet \"{{i18n:57874025.32}}\"\\speak Juliet \"{{i18n:57874025.33}}\"\\faceDirection Juliet 3\\speak Juliet \"{{i18n:57874025.34}}\"\\faceDirection Rosa 1\\pause 500\\speak Juliet \"{{i18n:57874025.35}}\"(break)textAboveHead Rosa \"{{i18n:57874025.36}}\"\\speak Juliet \"{{i18n:57874025.37}}\"\\faceDirection Juliet 3\\speak Juliet \"{{i18n:57874025.38}}\"\\faceDirection Rosa 1\\pause 500\\speak Juliet \"{{i18n:57874025.39}}\"/pause 500/emote Rosa 60/speak Rosa \"{{i18n:57874025.40}}\"/pause 1000/message \"{{i18n:57874025.41}}\"/pause 1000/end",
+                "JulesRosa_Follow": "pause 500/advancedMove Juliet false 6 0/advancedMove Rosa false 6 0/pause 500/advancedMove farmer false 6 0/pause 1000/fade/viewport -1000 -1000/stopAdvancedMoves/warp Willy -100 -100 true/warp Elliott -100 -100 true/warp Haley -100 -100 true/warp Leah -100 -100 true/warp Jacob -100 -100 true/warp Eloise -100 -100 true/changeLocation IslandSouthEast/warp Juliet 24 26/warp Rosa 23 26/warp farmer 7 28/advancedMove Juliet false 6 0 0 1 2 1000/advancedMove Rosa false 6 0 0 1 2 1000/advancedMove farmer false 7 0 1 1000/viewport 23 27 clamp true/pause 3000/emote Rosa 8/speak Juliet \"{{i18n:57874025.JulesRosa_Follow.01}}\"/pause 500/faceDirection Rosa 0/pause 1000/faceDirection Rosa 3/facedirection Rosa 2/textAboveHead Rosa \"{{i18n:57874025.JulesRosa_Follow.02}}\"/pause 1000/faceDirection Rosa 1/pause 500/speak Rosa \"{{i18n:57874025.JulesRosa_Follow.03}}\"/pause 500/faceDirection Juliet 3/speak Juliet \"{{i18n:57874025.JulesRosa_Follow.04}}\"/pause 500/emote Rosa 40/speak Rosa \"{{i18n:57874025.JulesRosa_Follow.05}}\"/pause 500/jump Juliet 5/emote Juliet 16/speak Juliet \"{{i18n:57874025.JulesRosa_Follow.06}}\"/faceDirection Juliet 3/speak Juliet \"{{i18n:57874025.JulesRosa_Follow.07}}\"/faceDirection Rosa 1/pause 500/speak Juliet \"{{i18n:57874025.JulesRosa_Follow.08}}\"/pause 500/emote Rosa 60/speak Rosa \"{{i18n:57874025.JulesRosa_Follow.09}}\"/pause 1000/message \"{{i18n:57874025.JulesRosa_Follow.10}}\"/pause 1000/end"
+                //changeLocation IslandSouthEast
+            }
+        },
+        { 
+            "LogName": "Loads Blank Island SouthEast",
+            "Action": "Load",
+		"Priority":"Low",
+            "Target": "Data/Events/IslandSouthEast",
+            "FromFile": "assets/blank.json"
+        },
+        { 
+            "LogName": "Rosa and Juliet visit the Mermaid Cove",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouthEast",
+            "Entries": {
+                "57874026/e 57874025/!D Juliet/o Juliet/w rainy/t 1000 1600": "rain/26 27/Juliet 27 27 2 Rosa 28 27 2 farmer 21 21 3/skippable/addConversationTopic RosaJuliet_official 5/pause 1500/textAboveHead Juliet \"{{i18n:57874026.01}}\"/pause 500/faceDirection Juliet 1/speak Juliet \"{{i18n:57874026.02}}\"/faceDirection Juliet 2/pause 500/speak Juliet \"{{i18n:57874026.03}}\"/pause 500/faceDirection Rosa 3/pause 500/speak Rosa \"{{i18n:57874026.04}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874026.05}}\"/pause 1500/faceDirection Juliet 1/pause 500/textAboveHead Juliet \"{{i18n:57874026.06}}\"/pause 500/speak Rosa \"{{i18n:57874026.07}}\"/pause 500/speak Juliet \"{{i18n:57874026.08}}\"/pause 500/faceDirection Rosa 2/speak Rosa \"{{i18n:57874026.09}}\"/pause 500/emote Rosa 28/pause 500/faceDirection Rosa 3/speak Rosa \"{{i18n:57874026.10}}\"/faceDirection farmer 2/emote farmer 8/speak Rosa \"{{i18n:57874026.11}}\"/pause 500/emote Juliet 28/shake Juliet 1000/speak Juliet \"{{i18n:57874026.12}}\"/speed Juliet 5/advancedMove Juliet false 0 -8 1 0/viewport move 0 -2 2000/pause 1000/move Rosa 0 -2 2/emote Rosa 28/faceDirection farmer 1/pause 500/emote farmer 40/quickQuestion #{{i18n:57874026.13}}#{{i18n:57874026.14}}#{{i18n:57874026.15}}(break)switchEvent 57874026_Juliet(break)switchEvent 57874026_Rosa(break)switchEvent 57874026_GoFish/pause 10000/end",
+                "57874026_Juliet": "pause 500/fade/viewport -100 -100/warp farmer 24 19/faceDirection Rosa 2/viewport 26 22/move farmer 3 0 1/emote farmer 56/pause 500/emote Juliet 40/faceDirection Juliet 3/speak Juliet \"{{i18n:57874026.57874026_Juliet.01}}\"/pause 500/emote farmer 12/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.02}}\"/pause 500/faceDirection Juliet 2/emote Juliet 40/pause 500/faceDirection Juliet 3/speak Juliet \"{{i18n:57874026.57874026_Juliet.03}}\"/pause 500/shake Juliet 1000/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.04}}\"/pause 500/quickQuestion #{{i18n:57874026.57874026_Juliet.05}}#{{i18n:57874026.57874026_Juliet.06}}#{{i18n:57874026.57874026_Juliet.07}}#{{i18n:57874026.57874026_Juliet.08}}(break)emote Juliet 20\\pause 500\\speak Juliet \"{{i18n:57874026.57874026_Juliet.09}}\"(break)emote Juliet 40\\pause 500\\speak Juliet \"{{i18n:57874026.57874026_Juliet.10}}\"(break)emote Juliet 28\\pause 500\\speak Juliet \"{{i18n:57874026.57874026_Juliet.11}}\"(break)emote Juliet 12\\pause 500\\speak Juliet \"{{i18n:57874026.57874026_Juliet.12}}\"/pause 500/faceDirection Juliet 2/pause 1000/speak Juliet \"{{i18n:57874026.57874026_Juliet.13}}\"/faceDirection Juliet 3/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.14}}\"/pause 500/emote farmer 56/speak Juliet \"{{i18n:57874026.57874026_Juliet.15}}\"/pause 500/move farmer 0 -1 2/speed Juliet 2/advancedMove Juliet false -2 0 0 3 2 1000/pause 500/textAboveHead Juliet \"{{i18n:57874026.57874026_Juliet.16}}\"/pause 500/playMusic mermaidSong/faceDirection Rosa 0/pause 500/emote Rosa 60/advancedMove Rosa false -1 0 0 -3 3 1000/pause 500/textAboveHead Rosa \"{{i18n:57874026.57874026_Juliet.17}}\"/pause 1000/faceDirection Juliet 1/pause 500/speak Rosa \"{{i18n:57874026.57874026_Juliet.18}}\"/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.19}}\"/pause 500/emote Rosa 16/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.20}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874026.57874026_Juliet.21}}\"/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.22}}\"/emote Rosa 60/pause 500/emote Juliet 32/pause 1500/faceDirection Juliet 0/pause 500/speak Juliet \"{{i18n:57874026.57874026_Juliet.23}}\"/jump farmer 5/emote farmer 28/pause 500/animate Rosa false true 200 20 21/pause 500/faceDirection Juliet 1/emote Juliet 20/pause 1000/end",
+                "57874026_Rosa": "pause 500/fade/viewport -100 -100/warp farmer 24 25/faceDirection Juliet 1/viewport 26 25/move farmer 3 0 1/emote farmer 56/pause 500/faceDirection Rosa 3/emote Rosa 60/speak Rosa \"{{i18n:57874026.57874026_Rosa.01}}\"/pause 500/emote farmer 60/pause 500/faceDirection Rosa 0/pause 500/speak Rosa \"{{i18n:57874026.57874026_Rosa.02}}\"/faceDirection Rosa 3/speak Rosa \"{{i18n:57874026.57874026_Rosa.03}}\"/pause 500/emote farmer 56/speak Rosa \"{{i18n:57874026.57874026_Rosa.04}}\"/faceDirection Rosa 0/speak Rosa \"{{i18n:57874026.57874026_Rosa.05}}\"/faceDirection Rosa 3/speak Rosa \"{{i18n:57874026.57874026_Rosa.06}}\"/faceDirection Juliet 2/pause 500/speak Rosa \"{{i18n:57874026.57874026_Rosa.07}}\"/quickQuestion #{{i18n:57874026.57874026_Rosa.08}}#{{i18n:57874026.57874026_Rosa.09}}#{{i18n:57874026.57874026_Rosa.10}}(break)emote Rosa 20\\pause 500\\speak Rosa \"{{i18n:57874026.57874026_Rosa.11}}\"(break)emote Rosa 12\\pause 500\\speak Rosa \"{{i18n:57874026.57874026_Rosa.12}}\"(break)emote Rosa 32\\pause 500\\speak Rosa \"{{i18n:57874026.57874026_Rosa.13}}\"/faceDirection Rosa 0/pause 1000/faceDirection Rosa 3/speak Rosa \"{{i18n:57874026.57874026_Rosa.14}}\"/pause 500/emote farmer 56/move farmer -1 0 1/pause 500/playMusic mermaidSong/advancedMove Rosa false -1 0 0 -2 0 -1 4 100/faceDirection farmer 0/viewport move 0 -2 1500 true/pause 1000/textAboveHead Rosa \"{{i18n:57874026.57874026_Rosa.15}}\"/speed Juliet 2/advancedMove Juliet false -2 0 0 1 0 2 1 1000/pause 3000/faceDirection Rosa 3/speak Rosa \"{{i18n:57874026.57874026_Rosa.16}}\"/pause 500/speak Juliet \"{{i18n:57874026.57874026_Rosa.17}}\"/pause 500/emote Rosa 16/pause 500/speak Juliet \"{{i18n:57874026.57874026_Rosa.18}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874026.57874026_Rosa.19}}\"/pause 500/speak Juliet \"{{i18n:57874026.57874026_Rosa.20}}\"/emote Rosa 60/pause 500/emote Juliet 32/pause 1500/faceDirection Juliet 2/pause 500/speak Juliet \"{{i18n:57874026.57874026_Rosa.21}}\"/jump farmer 5/emote farmer 28/pause 500/animate Rosa false true 200 20 21/pause 500/faceDirection Juliet 1/emote Juliet 20/pause 1000/end",
+                "57874026_GoFish": "pause 500/faceDirection farmer 3/playSound slosh/pause 5000/emote Juliet 28 true/emote Rosa 40 true/pause 500/faceDirection Juliet 2 true/faceDirection Rosa 0 true/playMusic mermaidSong/pause 2000/speed Juliet 2/advancedMove Rosa false -1 0 0 -2 0 -1 3 1000/advancedMove Juliet false -2 0 0 1 0 2 1 1000/pause 1000/textAboveHead Juliet \"{{i18n:57874026.57874026_GoFish.01}}\"/textAboveHead Rosa \"{{i18n:57874026.57874026_GoFish.02}}\"/pause 3000/speak Rosa \"{{i18n:57874026.57874026_GoFish.03}}\"/faceDirection farmer 1/pause 500/speak Juliet \"{{i18n:57874026.57874026_GoFish.04}}\"/pause 500/emote Rosa 16/pause 500/speak Juliet \"{{i18n:57874026.57874026_GoFish.05}}\"/pause 500/textAboveHead Rosa \"{{i18n:57874026.57874026_GoFish.06}}\"/pause 500/speak Juliet \"{{i18n:57874026.57874026_GoFish.07}}\"/emote Rosa 60/pause 500/emote Juliet 32/pause 1500/faceDirection Juliet 3/pause 500/speak Juliet \"{{i18n:57874026.57874026_GoFish.08}}\"/jump farmer 5/emote farmer 28/pause 500/animate Rosa false true 200 20 21/pause 500/faceDirection Juliet 1/emote Juliet 20/pause 1000/end",
+            }
+        },
+        //e 57874021/e 57874008
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874020": true
+            },
+            "Entries": {
+                "Sun": "750 EastScarp_VillageInn 43 10 0 square_5_1_0/0930 EastScarp_VillageInn 45 31 2/1800 EastScarp_Village 45 130 2/2000 EastScarp_Village 45 130 1/2100 EastScarp_Village 45 130 2/2130 EastScarp_Village 45 110 0/2200 EastScarp_Village 41 67 3/2400 EastScarp_VillageInn 66 8 1",
+            }
+        },
+        //Without SVE
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "When": {
+                "HasSeenEvent |contains=57874020": true,
+                "HasSeenEvent |contains=57874026": false,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Entries": {
+                "rain": "610 Custom_LK_LodgingHouse 21 21 3/a830 EastScarp_ClearingHouse 27 19 2/900 IslandSouth 24 33 2/1300 IslandSouth 5 14 3/1600 IslandSouth 24 33 2/1800 EastScarp_ClearingHouse 22 9 1/2200 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874020": true,
+                "HasSeenEvent |contains=57874026": false,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Entries": {
+                "rain": "a830 EastScarp_ClearingHouse 27 20 0/900 IslandSouth 25 33 2/1300 IslandSouth 4 14 1/1600 IslandSouth 25 33 2/1800 EastScarp_ClearingHouse 23 9 3/2200 EastScarp_VillageInn 66 8 1"
+            }
+        },
+        //With SVE
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "When": {
+                "HasSeenEvent |contains=57874020": true,
+                "HasSeenEvent |contains=57874026": false,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Entries": {
+                "rain": "a900 Town 88 101 1/930 IslandSouth 24 33 2/1300 IslandSouth 5 14 3/1600 IslandSouth 24 33 2/1800 Town 88 101 1/2200 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874020": true,
+                "HasSeenEvent |contains=57874026": false,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Entries": {
+                "rain": "a900 Town 89 101 3/930 IslandSouth 25 33 2/1300 IslandSouth 4 14 1/1600 IslandSouth 25 33 2/1800 Town 89 101 3/2200 EastScarp_VillageInn 66 8 1"
+            }
+        },
+        //Once dating - without SVE
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "When": {
+                "HasSeenEvent |contains=57874026": true,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "MunchieLocation": "bedroom" //This is just because it's already set as a random key not for any real significance
+            },
+            "Entries": {
+                "rain": "610 Custom_LK_LodgingHouse 21 21 3/a830 EastScarp_ClearingHouse 27 19 2/900 IslandSouth 24 33 2/1300 IslandSouth 5 14 3/1600 IslandSouth 24 33 2/1800 EastScarp_ClearingHouse 22 9 1/2200 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874026": true,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "MunchieLocation": "bedroom" //This is just because it's already set as a random key not for any real significance
+            },
+            "Entries": {
+                "rain": "a830 EastScarp_ClearingHouse 27 20 0/900 IslandSouth 25 33 2/1300 IslandSouth 4 14 1/1600 IslandSouth 25 33 2/1800 EastScarp_ClearingHouse 23 9 3/2200 Custom_LK_LodgingHouse 23 6 3"
+            }
+        },
+        //Once dating - with SVE
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "When": {
+                "HasSeenEvent |contains=57874026": true,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "MunchieLocation": "bedroom"
+            },
+            "Entries": {
+                "rain": "a900 Town 88 101 1/930 IslandSouth 24 33 2/1300 IslandSouth 5 14 3/1600 IslandSouth 24 33 2/1800 Custom_LK_ClearingHouse 26 11 1/2200 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are friends",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874026": true,
+                "Weather: island": "sun",
+                "HasFlag": "Island_Resort",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "MunchieLocation": "bedroom"
+            },
+            "Entries": {
+                "rain": "a900 Town 89 101 3/930 IslandSouth 25 33 2/1300 IslandSouth 4 14 1/1600 IslandSouth 25 33 2/1800 Custom_LK_ClearingHouse 27 11 3/2200 Custom_LK_LodgingHouse 23 6 3"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are dating",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "When": {
+                "HasSeenEvent |contains=57874026": true
+            },
+            "Entries": {
+                "Sat": "750 EastScarp_VillageInn 43 10 0 square_5_1_0/0930 EastScarp_Village 21 100 2/1650 Saloon 36 20 1/2400 Custom_LK_LodgingHouse 23 6 3",
+                "Sun": "0 Custom_LK_LodgingHouse 23 6 3/a930 EastScarp_VillageInn 45 31 2/1800 EastScarp_Village 45 130 2/2000 EastScarp_Village 45 130 1/2100 EastScarp_Village 45 130 2/2130 EastScarp_Village 45 110 0/2200 Custom_LK_LodgingHouse 23 6 3",
+                "Mon": "0 Custom_LK_LodgingHouse 20 22 0/700 EastScarp_VillageInn 45 31 2/1800 EastScarp_Village 46 130 2/2200 EastScarp_VillageInn 66 8 1"
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are dating",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "When": {
+                "HasSeenEvent |contains=57874026": true
+            },
+            "Entries": {
+                "Sun": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 SeedShop 38 22 0/1600 EastScarp_Village 46 130 2/2000 EastScarp_Village 46 130 3/2100 EastScarp_Village 46 130 2/2130 EastScarp_Village 46 110 0/2200 Custom_LK_LodgingHouse 22 6 2 juliet_sleep",
+            }
+        },
+        {
+            "LogName": "Schedule - if Rosa and Juliet are dating",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Gremlin",
+            "When": {
+                "HasSeenEvent |contains=57874026": true
+            },
+            "Entries": {
+                "Sun": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/900 EastScarp_ClearingHouse 30 11 1 square_3_3/1100 Town 42 59 0 square_5_5/1600 Town 42 57 2/1650 EastScarp_Village 45 127 square_1_5/2100 EastScarp_Village 47 130 3/2130 EastScarp_Village 47 111 3/2200 Custom_LK_LodgingHouse 25 7 2 Gremlin_sleep",
+            }
+        },
+        //Changes the love interest details
+        {
+            "LogName": "NPC Manifestation - Sets Juliet as Rosa's love interest'",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Fields": {
+                "Rosa": {
+                    "6": "Juliet",
+                    "9": "Juliet 'girlfriend'"
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=57874026": true
+            }
+        },
+        {
+            "LogName": "NPC Manifestation - Sets Rosa as Juliet's 'love interest'",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Fields": {
+                "Juliet": {
+                    "6": "Rosa",
+                    "9": "Rosa 'girlfriend' Gremlin 'puppy'"
+                }
+            },
+            "When": {
+                "HasSeenEvent |contains=57874026": true
+            }
+        } //57874099 Juliet and Rosa move in together
+    ]
+}

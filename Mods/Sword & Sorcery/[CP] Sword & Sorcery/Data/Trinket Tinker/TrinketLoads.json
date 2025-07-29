@@ -1,0 +1,73 @@
+{ 
+  "Changes": [
+    //Always loaded so the GB can access the tool tips
+    {
+      "LogName": "Book: Trinkets",
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "{{ModId}}_BookKeychain": {
+          "Id": "{{ModId}}_BookKeychain",
+          "DisplayName": "{{i18n: magicitem.BookKeychain.name}}",
+          "Description": "{{i18n: magicitem.BookKeychain.description}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SheetIndex": 131,
+          "DropsNaturally": false,
+          "CanBeReforged": false,
+          "CustomFields": { "Keychain_item": "true" }
+        }
+      }
+    },
+    {
+      "LogName": "Emeritus: Trinkets",
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "{{ModId}}_EmeritusKeychain": {
+          "Id": "{{ModId}}_EmeritusKeychain",
+          "DisplayName": "{{i18n: magicitem.EmeritusKeychain.name}}",
+          "Description": "{{i18n: magicitem.EmeritusKeychain.description}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SheetIndex": 130,
+          "DropsNaturally": false,
+          "CanBeReforged": false,
+          "CustomFields": { "Keychain_item": "true" }
+        }
+      }
+    },
+    {
+      "LogName": "Hector: Trinkets",
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "{{ModId}}_HectorWolfKeychain": {
+          "Id": "{{ModId}}_HectorWolfKeychain",
+          "DisplayName": "{{i18n: magicitem.HectorWolfKeychain.name |TrueName={{TrueName}}}}",
+          "Description": "{{i18n: magicitem.HectorWolfKeychain.description |TrueName={{TrueName}}}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SheetIndex": 132,
+          "DropsNaturally": false,
+          "CanBeReforged": false,
+          "CustomFields": { "Keychain_item": "true" }
+        }
+      }
+    },
+    {
+      "LogName": "Owl: Trinkets",
+      "Action": "EditData",
+      "Target": "Data/Trinkets",
+      "Entries": {
+        "{{ModId}}_OwlBoyKeychain": {
+          "Id": "{{ModId}}_OwlBoyKeychain",
+          "DisplayName": "{{i18n: magicitem.destykeychain.name}}",
+          "Description": "{{i18n: magicitem.destykeychain.description.Trinket}}",
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SheetIndex": 101,
+          "DropsNaturally": false,
+          "CanBeReforged": false,
+          "CustomFields": { "Keychain_item": "true" }
+        }
+      }
+    }
+  ]
+}

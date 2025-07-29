@@ -1,0 +1,18 @@
+{
+   "Name": "Seasonal Cute Characters ES",
+   "Author": "Poltergeister",
+   "Version": "1.0.3",
+   "Description": "Makes the characters of East Scarp slightly cuter and gives them seasonal outfits.",
+   "UniqueID": "Poltergeister.SeasonalCuteSpritesES",
+   "UpdateKeys": [ "Nexus:16045" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+      {
+        "UniqueID": "LemurKat.EastScarpe.CP",
+        "IsRequired": true
+      },
+      
+   ]
+}

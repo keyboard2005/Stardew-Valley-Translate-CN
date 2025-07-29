@@ -1,0 +1,13 @@
+{
+   "Name": "Redesigned Spouse Rooms",
+   "Author": "endermaryn",
+   "Version": "2.1.1",
+   "Description": "Redesigns all of the spouse rooms.",
+   "UniqueID": "endermaryn.SpouseRoomRedesign",
+   "MinimumApiVersion": "2.0",
+   "UpdateKeys": [ "Nexus:2169" ],
+   "ContentPackFor": {
+    	"UniqueID": "Pathoschild.ContentPatcher",
+    	"MinimumVersion": "1.3.0"
+	}
+}

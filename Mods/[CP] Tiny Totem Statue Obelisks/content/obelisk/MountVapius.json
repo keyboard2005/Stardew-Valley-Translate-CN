@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.load.mountvapius",
+      "Action": "Load",
+      "Target": "Buildings/Scarp_Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_es_obelisk.png",
+      "Priority": "Medium"
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.mountvapius",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 20",
+      "Target": "Buildings/Scarp_Obelisk",
+      "FromFile": "assets/flowers/es_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.mountvapius",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Scarp_Obelisk",
+      "FromFile": "assets/moss/es_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.mountvapius",
+      "Action": "EditData",
+      "Priority": "Late",
+      "Fields": {
+        "Lumisteria.MtVapius_Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      }
+    }
+  ]
+}

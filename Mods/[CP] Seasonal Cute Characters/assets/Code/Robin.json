@@ -1,0 +1,180 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Robin's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Robin_Spring, Portraits/Robin_Summer, Portraits/Robin_Fall, Portraits/Robin_Winter_Outdoor, Portraits/Robin_Winter_Indoor, Portraits/Robin_FlowerDance, Portraits/Robin_SpiritsEve, Portraits/Robin_Aerobics, Characters/Robin_Spring, Characters/Robin_Summer, Characters/Robin_Fall, Characters/Robin_Winter_Outdoor, Characters/Robin_Winter_Indoor, Characters/Robin_FlowerDance, Characters/Robin_SpiritsEve, Characters/Robin_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Robin's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin_Beach, Characters/Robin_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Robin - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Robin_Spring, Characters/Robin_Summer, Characters/Robin_Fall, Characters/Robin_Winter_Outdoor, Characters/Robin_Winter_Indoor, Characters/Robin_FlowerDance, Characters/Robin_SpiritsEve, Characters/Robin_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/Robin_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Robin - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Robin_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Robin Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Robin", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.RobinSpring": {
+					"Id": "{{ModId}}.RobinSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Robin_Spring",
+					"Portrait": "Portraits/Robin_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.RobinSummer": {
+					"Id": "{{ModId}}.RobinSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Robin_Summer",
+					"Portrait": "Portraits/Robin_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.RobinFall": {
+					"Id": "{{ModId}}.RobinFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Robin_Fall",
+					"Portrait": "Portraits/Robin_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.RobinWinterIndoor": {
+					"Id": "{{ModId}}.RobinWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Robin_Winter_Indoor",
+					"Portrait": "Portraits/Robin_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.RobinWinterOutdoor": {
+					"Id": "{{ModId}}.RobinWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Robin_Winter_Outdoor",
+					"Portrait": "Portraits/Robin_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.RobinFlowerDance": {
+					"Id": "{{ModId}}.RobinFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Robin_FlowerDance",
+					"Portrait": "Portraits/Robin_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.RobinSpirit": {
+					"Id": "{{ModId}}.RobinSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Robin_SpiritsEve",
+					"Portrait": "Portraits/Robin_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.RobinBeach": {
+					"Id": "{{ModId}}.RobinBeach",
+					"Sprite": "Characters/Robin_Beach",
+					"Portrait": "Portraits/Robin_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.RobinAerobics": {
+					"Id": "{{ModId}}.RobinAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Robin_Aerobics",
+					"Sprite": "Characters/Robin_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Robin - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 18, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 18, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Robin - Clothes Therapy 1",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"ToArea": {"X": 0, "Y": 128, "Width": 64, "Height": 32},
+			"FromArea": {"X": 0, "Y": 128, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Robin - Clothes Therapy 2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"ToArea": {"X": 16, "Y": 160, "Width": 16, "Height": 32},
+			"FromArea": {"X": 16, "Y": 160, "Width": 16, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Robin Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Robin",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

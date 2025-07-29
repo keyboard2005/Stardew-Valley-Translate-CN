@@ -1,0 +1,452 @@
+{
+	"Format": "1.11.0",
+	
+			"ConfigSchema": 
+		{
+			"BlueCowboyHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"CopperBreastplate":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"CowboyHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"CowgalHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"CowpokeHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"FlameShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"GarbageHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"GoldBreastplate":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"HighHeatShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"IridiumBreastplate":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"IridiumOreShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"IronBreastplate":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"MagicRockCandyShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"MushroomCap":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"NightSkyShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"OceanShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"OmniGeodeShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"PropellerHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"PumpkinMask":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 	
+			"RedCowboyHat":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"SugarShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"SunsetShirt":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 	
+		},
+
+	
+	
+	"Changes": [
+		{
+			"LogName": "Blue Cowboy Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "bluecowboyhat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 20, "Y": 240, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"BlueCowboyHat": "true"
+				},
+		},
+		{
+			"LogName": "Copper Breastplate",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "copperbreastplate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 40, "Y": 288, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"CopperBreastplate": "true"
+				},
+		},
+		{
+			"LogName": "Cowboy Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "cowboyhat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 13,
+			"When":
+				{
+				"CowboyHat": "true"
+				},
+		},
+		{
+			"LogName": "Cowgal Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "cowgalhat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 180, "Y": 160, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"CowgalHat": "true"
+				},
+		},
+		{
+			"LogName": "Cowpoke Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "cowpokehat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 200, "Y": 160, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"CowpokeHat": "true"
+				},
+		},
+		{
+			"LogName": "Flame Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "flameshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 448, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"FlameShirt": "true"
+				},
+		},
+		{
+			"LogName": "Garbage Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "garbagehat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 120, "Y": 400, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"GarbageHat": "true"
+				},
+		},	
+		{
+			"LogName": "Gold Breastplate",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "goldbreastplate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 288, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"GoldBreastplate": "true"
+				},
+		},
+		{
+			"LogName": "High Heat Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "highheatshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 8, "Y": 448, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"HighHeatShirt": "true"
+				},
+		},
+		{
+			"LogName": "Iridium Breastplate",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "iridiumbreastplate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 56, "Y": 288, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"IridiumBreastplate": "true"
+				},
+		},
+		{	
+			"LogName": "Iridium Ore Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "iridiumoreshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 24, "Y": 352, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 3,
+			"When":
+				{
+				"IridiumOreShirt": "true"
+				},
+		},
+		{
+			"LogName": "Iron Breastplate",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "IronBreastplate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 288, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"IronBreastplate": "true"
+				},
+		},
+		{
+			"LogName": "Magic Rock Candy Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "magicrockcandyshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 544, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 45,
+			"AnimationFrameCount": 12,
+			"When":
+				{
+				"MagicRockCandyShirt": "true"
+				},
+		},
+		{
+			"LogName": "Mushroom Cap",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "mushroomcap.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 120, "Y": 240, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"MushroomCap": "true"
+				},
+		},
+		{
+			"LogName": "Night Sky Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "nightskyshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 32, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"NightSkyShirt": "true"
+				},
+		},
+		{
+			"LogName": "Ocean Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "oceanshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 8, "Y": 384, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"OceanShirt": "true"
+				},
+		},
+		{
+			"LogName": "Omni Geode Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "omnigeodeshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 64, "Y": 512, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 12,
+			"When":
+				{
+				"OmniGeodeShirt": "true"
+				},
+		},
+		{
+			"LogName": "Propeller Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "propellerhat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 160, "Y": 400, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"PropellerHat": "true"
+				},
+		},
+		{
+			"LogName": "Pumpkin Mask",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "pumpkinmask.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 320, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"PumpkinMask": "true"
+				},
+		},
+		{
+			"LogName": "Red Cowboy Hat",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/hats",
+			"FromFile": "redcowboyhat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 20, "Height": 80 },
+			"ToArea": { "X": 40, "Y": 240, "Width": 20, "Height": 80 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"RedCowboyHat": "true"
+				},
+		},
+		{
+			"LogName": "Sugar Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "sugarshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 112, "Y": 480, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"SugarShirt": "true"
+				},
+		},
+		{
+			"LogName": "Sunset Shirt",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/shirts",
+			"FromFile": "sunsetshirt.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 416, "Width": 8, "Height": 32 },
+			"AnimationFrameTime": 25,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"SunsetShirt": "true"
+				},
+		}
+	]
+}

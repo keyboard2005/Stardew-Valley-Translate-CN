@@ -1,0 +1,11 @@
+{
+    "Name": "Lookup Anything",
+    "Author": "Pathoschild",
+    "Version": "1.51.1",
+    "MinimumApiVersion": "4.1.10",
+    "MinimumGameVersion": "1.6.15",
+    "Description": "View metadata about anything by pressing a button.",
+    "UniqueID": "Pathoschild.LookupAnything",
+    "EntryDll": "LookupAnything.dll",
+    "UpdateKeys": [ "Nexus:541" ]
+}

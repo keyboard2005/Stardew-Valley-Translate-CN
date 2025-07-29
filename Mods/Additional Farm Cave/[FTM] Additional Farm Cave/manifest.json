@@ -1,0 +1,13 @@
+{
+  "Name":"[FTM] Additional Farm Cave",
+  "Author":"Tikamin557",
+  "Version": "1.0",
+  "Description":"add [FTM] Additional Farm Cave.",
+  "UniqueID":"Tikamin557.FTM.AdditionalFarmCave",
+  "UpdateKeys": [ "Nexus:???" ],
+  "ContentPackFor":{ "UniqueID":"Esca.FarmTypeManager" },
+
+  "Dependencies":[
+      { "UniqueID":"Tikamin557.CP.AdditionalFarmCave" }
+  ]
+}

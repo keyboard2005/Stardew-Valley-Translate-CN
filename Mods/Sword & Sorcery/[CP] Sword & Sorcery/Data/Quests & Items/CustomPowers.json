@@ -1,0 +1,114 @@
+{
+	"Changes": [
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"StygiumPendantPower": {
+					"DisplayName": "{{i18n: power.stygium-pendant.name}}",
+					"Description": "{{i18n: power.stygium-pendant.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 112, "Y": 0 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current StygiumPendantPower"
+				}
+			},
+			"When": { "HasFlag": "StygiumPendantPower" }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"BrokenCircletPower": {
+					"DisplayName": "{{i18n: power.broken-circlet.name}}",
+					"Description": "{{i18n: power.broken-circlet.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 128, "Y": 0 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current BrokenCircletPower"
+				}
+			},
+			"When": { "HasFlag": "BrokenCircletPower" }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"DrakeScalePower": {
+					"DisplayName": "{{i18n: power.drake-scale.name}}",
+					"Description": "{{i18n: power.drake-scale.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 32, "Y": 80 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current DrakeScalePower"
+				}
+			},
+			"When": { "HasFlag": "DrakeScalePower" }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"ForgedD20Power": {
+					"DisplayName": "{{i18n: power.forgedd20.name}}",
+					"Description": "{{i18n: power.forgedd20.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 0, "Y": 80 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current ForgedD20Power"
+				}
+			},
+			"When": { "HasFlag": "ForgedD20Power" }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"DandelionShieldPower": {
+					"DisplayName": "{{i18n: power.mythiciridiumshield.name}}",
+					"Description": "{{i18n: power.mythiciridiumshield.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 96, "Y": 16 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current DandelionShieldPower"
+				}
+			},
+			"When": { "HasFlag": "DandelionShieldPower" }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"DandelionShieldPower": {
+					"DisplayName": "{{i18n: power.mythicorichalcumshield.name}}",
+					"Description": "{{i18n: power.mythicorichalcumshield.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 96, "Y": 16 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current DandelionShieldPower"
+				}
+			},
+			"When": {
+				"HasMod: |contains=Kitsutsune.Chocobovalley": true,
+				"ChocoboValleyMaterials": true,
+				"HasFlag": "DandelionShieldPower"
+			  }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Update": "OnLocationChange",
+			"Entries": {
+				"MagicalGrimoirePower": {
+					"DisplayName": "{{i18n: power.magicalgrimoire.name}}",
+					"Description": "{{i18n: power.magicalgrimoire.description}}",
+					"TexturePath": "Textures/DN.SnS/SnSObjects",
+					"TexturePosition": { "X": 128, "Y": 144 },
+					"UnlockedCondition": "PLAYER_HAS_MAIL Current MagicalGrimoirePower"
+				}
+			},
+			"When": { "HasFlag": "MagicalGrimoirePower" }
+		}
+	]
+}

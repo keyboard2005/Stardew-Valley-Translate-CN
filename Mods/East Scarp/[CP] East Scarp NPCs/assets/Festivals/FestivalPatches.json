@@ -1,0 +1,107 @@
+{
+    "Changes": [
+        // F E S T I V A L    P A T C H E S
+        //Festival Patches
+        {
+            "LogName": "Flower Dance Test",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
+            "FromFile": "assets/Maps/ES_FlowerFestival.tmx",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP":false
+			},
+            "ToArea": {
+                "X": 45,
+                "Y": 29,
+                "Width": 23,
+                "Height": 21
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Flower Dance Test",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
+            "FromFile": "assets/Maps/ES_FlowerFestival_SVE.tmx",
+            "When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+            "ToArea": {
+                "X": 45,
+                "Y": 29,
+                "Width": 23,
+                "Height": 21
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Luau Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau",
+            "FromFile": "assets/Maps/ES_Luau.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 31,
+                "Width": 22,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Luau Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau2",
+            "FromFile": "assets/Maps/ES_Luau2.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 31,
+                "Width": 22,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Moonlight Jellies Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Jellies",
+            "FromFile": "assets/Maps/ES_Jellies.tmx",
+            "ToArea": {
+                "X": 85,
+                "Y": 32,
+                "Width": 19,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Moonlight Jellies Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Jellies2",
+            "FromFile": "assets/Maps/ES_Jellies2.tmx",
+            "ToArea": {
+                "X": 85,
+                "Y": 32,
+                "Width": 19,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "IceFestival",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-IceFestival2",
+            "FromFile": "assets/Maps/ES_IceFestival2.tmx",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+            "ToArea": {
+                "X": 32,
+                "Y": 18,
+                "Width": 22,
+                "Height": 29
+            },
+            "PatchMode": "Replace"
+        },
+        
+    ]
+}

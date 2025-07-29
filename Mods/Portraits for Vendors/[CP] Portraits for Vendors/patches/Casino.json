@@ -1,0 +1,42 @@
+{
+	"Changes":[
+		{
+			"LogName": "Casino Vendor",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Casino", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/Casino_{{CasinoV}}",	
+				"Dialogues":  [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": null,
+						"RandomDialogue": [
+							"{{i18n:CasinoVendor1.{{CasinoV}}}}",
+							"{{i18n:CasinoVendor2.{{CasinoV}}}}",
+							"{{i18n:CasinoVendor3.{{CasinoV}}}}",
+							"{{i18n:CasinoVendor4.{{CasinoV}}}}",
+						],
+					}
+				],
+			},
+		},
+		{
+			"LogName": "Casino Shift",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/LooseSprites/Casino_{{CasinoV}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 48, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {"HasFile:{{FromFile}}": true}
+		},
+		{
+			"LogName": "Casino Bouncer SCC",
+			"Action": "EditImage",
+			"Target": "Portraits/Casino_Bouncer",
+			"FromFile": "assets/Portraits/SCC/{{TargetWithoutPath}}.png",
+			"When": {"HasMod": "Poltergeister.SeasonalCuteSpritesSVE",}
+		},
+	],
+}

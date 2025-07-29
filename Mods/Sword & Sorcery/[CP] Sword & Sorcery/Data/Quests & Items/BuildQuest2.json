@@ -1,0 +1,105 @@
+{
+	"Changes": [
+		{
+			"LogName": "Lion's Mane Special Order",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"CAGQuest.UntimedSpecialOrder.LionsMane": {
+
+					// BUILDING THE LION'S MANE
+
+					"Name": "[CAGQuest.UntimedSpecialOrder.LionsMane_Name]",
+					"Requester": "Cirrus",
+					"Repeatable": "false",
+					"RequiredTags": "event_12360010, !dropbox_LionsMane",
+					"OrderType": "SwordSorcery.Event",
+					"SpecialRule": "",
+					"Text": "[CAGQuest.UntimedSpecialOrder.LionsMane_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.LionsMane.Objective_0_Text]",
+							"RequiredCount": "900",
+							"Data": {
+								"DropBox": "LionsMane",
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "54 4",
+								"AcceptedContextTags": "item_wood"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.LionsMane.Objective_1_Text]",
+							"RequiredCount": "500",
+							"Data": {
+								"DropBox": "LionsMane",
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "54 4",
+								"AcceptedContextTags": "item_stone"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.LionsMane.Objective_2_Text]",
+							"RequiredCount": "200",
+							"Data": {
+								"DropBox": "LionsMane",
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "54 4",
+								"AcceptedContextTags": "item_hardwood"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[CAGQuest.UntimedSpecialOrder.LionsMane.Objective_3_Text]",
+							"RequiredCount": "25",
+							"Data": {
+								"DropBox": "LionsMane",
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "54 4",
+								"AcceptedContextTags": "item_iron_bar"
+							}
+						},
+					],
+					
+					"Rewards": [
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "5000"
+							}
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Cirrus_SpecialOrders_LionsManeMail",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+
+				// BUILDING THE LION'S MANE (TEXT)
+
+				"CAGQuest.UntimedSpecialOrder.LionsMane_Name":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Name}}",
+				"CAGQuest.UntimedSpecialOrder.LionsMane_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Text}}", 
+				"CAGQuest.UntimedSpecialOrder.LionsMane.Objective_0_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Objective.0.Text}}",
+				"CAGQuest.UntimedSpecialOrder.LionsMane.Objective_1_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Objective.1.Text}}",
+				"CAGQuest.UntimedSpecialOrder.LionsMane.Objective_2_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Objective.2.Text}}",
+				"CAGQuest.UntimedSpecialOrder.LionsMane.Objective_3_Text":"{{i18n:Quests.CAGQuest.UntimedSpecialOrder.LionsMane.Objective.3.Text}}",
+
+			}
+		}
+	]
+}

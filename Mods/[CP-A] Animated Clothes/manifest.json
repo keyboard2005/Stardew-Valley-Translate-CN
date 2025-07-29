@@ -1,0 +1,13 @@
+{
+  "Name": "Animated Clothes",
+  "Author": "Gervig91",
+  "Version": "1.2.0",
+  "Description": "Animates clothes",
+  "UniqueID": "Gervig91.AnimatedClothes",
+  "MinimumApiVersion": "2.10.0",
+  "UpdateKeys": [ "Nexus:6117" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.6.0"
+  }
+}

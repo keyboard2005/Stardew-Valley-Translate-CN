@@ -1,0 +1,346 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "BeardVariant": {
+            "AllowValues": "Half, None, Full",
+            "Default": "Half",
+            "AllowBlank": false
+        },
+        "TweakAppearance": {
+            "AllowValues": "New, Seasonal, Old",
+            "Default": "New",
+            "AllowBlank": false
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/Clint",
+            "FromFile": "assets/Portraits/Clint.png",
+            "When":{
+                "TweakAppearance": "Old"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Clint_Winter",
+            "FromFile": "assets/Portraits/Clint_Winter.png",
+            "When":{
+                "TweakAppearance": "Old"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Clint",
+            "FromFile": "assets/Characters/Clint.png",
+            "When":{
+                "TweakAppearance": " Old"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Clint_Winter",
+            "FromFile": "assets/Characters/Clint_Winter.png",
+            "When":{
+                "TweakAppearance": "Old"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/tweakedArt.json",
+			"When":{
+                "TweakAppearance": "New"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/seasonalArt.json",
+			"When":{
+                "TweakAppearance": "Seasonal"
+            }
+        },
+        {
+            "LogName": "Characters",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Clint": {
+                    "DisplayName": "[LocalizedText Strings\\NPCNames:Clint]",
+                    "BirthSeason": 3,
+                    "BirthDay": 26,
+                    "HomeRegion": "Town",
+                    "Language": 0,
+                    "Gender": 0,
+                    "Age": 0,
+                    "Manner": 2,
+                    "SocialAnxiety": 1,
+                    "Optimism": 1,
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": true,
+                    "LoveInterest": "Emily",
+                    "Calendar": 0,
+                    "SocialTab": 0,
+                    "CanSocialize": null,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": null,
+                    "CanVisitIsland": "DAY_OF_WEEK Friday",
+                    "IntroductionsQuest": null,
+                    "ItemDeliveryQuests": null,
+                    "PerfectionScore": true,
+                    "EndSlideShow": 1,
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": false,
+                    "SpouseGiftJealousyFriendshipChange": 0,
+                    "SpouseRoom":
+                        {
+                            "MapAsset": "Custom_ClintsSpouseRoom"
+                        },
+                    "SpousePatio":
+                        {
+                            "MapAsset": "Custom_ClintsSpousePatio"
+                        },
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": -25,
+                    "DumpsterDiveEmote": null,
+                    "FriendsAndFamily": {
+                            "Emily": ""
+                        },
+                    "FlowerDanceCanDance": null,
+                    "WinterStarGifts": [
+                        {
+                            "Condition": null,
+                            "Id": "IridiumBar",
+                            "ItemId": "(O)337",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": 0,
+                            "QualityModifiers": null,
+                            "QualityModifierMode": 0,
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "Condition": null,
+                            "Id": "GoldBars",
+                            "ItemId": "(O)336",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 5,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": 0,
+                            "QualityModifiers": null,
+                            "QualityModifierMode": 0,
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)535",
+                                "(O)536",
+                                "(O)537"
+                            ],
+                            "MaxItems": null,
+                            "MinStack": 5,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": 0,
+                            "QualityModifiers": null,
+                            "QualityModifierMode": 0,
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "Blacksmith",
+                            "Tile": {
+                                "X": 3,
+                                "Y": 13
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "TextureName": null,
+                    "Appearance": [
+                        {
+                            "Id": "Winter",
+                            "Condition": null,
+                            "Season": 3,
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Clint_Winter",
+                            "Sprite": "Characters/Clint_Winter",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 0
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 38,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Blacksmith.4": "{{i18n:MapStrings.Clint.Letter}}"
+            },
+            "When": {
+                "HasSeenEvent": "183450003"
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+                "7": "{{i18n:SecretNote.Clint.7}}"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/events.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/dialogue.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Custom_ClintsSpouseRoom",
+            "FromFile": "assets/Maps/SpouseRoom.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Custom_ClintsSpousePatio",
+            "FromFile": "assets/Maps/spousePatio.tmx"
+        },
+        {
+            "LogName": "Marriage Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "marriage_Mon": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:SPB_MonWork.000\"/1500 BusStop -1 23 3",
+                "marriage_Thu": "1000 Forest 88 97 2 \"Strings\\schedules\\Clint:SPB_JustThinking.000\"/1400 BusStop -1 23 3",
+                "marriage_Fri": "850 CommunityCenter 62 14 0/1700 Saloon 19 23 3 \"Strings\\schedules\\Clint:SPB_SaloonVisit.000\"/2400 BusStop -1 23 3",
+                "marriage_Sat": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:SPB_SatWork.000\"/1500 BusStop -1 23 3",
+                "marriage_Sun": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:SPB_SunWork.000\"/1500 BusStop -1 23 3",
+                "CommunityCenter_Replacement": "JojaMart 27 5 0"
+            }
+        },
+        {
+            "LogName": "Movie Tastes",
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "Clint": {
+                    "NPCName": "Clint",
+                    "Reactions": [
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MoviesReactions.Clint.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "guyEnters",
+                                    "Script": "/emote Clint 12/message \"{{i18n:MoviesReactions.Clint.2}}\"",
+                                    "Text": "{{i18n:MoviesReactions.Clint.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MoviesReactions.Clint.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "like",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MoviesReactions.Clint.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MoviesReactions.Clint.6}}\"",
+                                    "Text": "{{i18n:MoviesReactions.Clint.7}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MoviesReactions.Clint.6}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasSeenEvent": "183450003"
+            }
+        }
+    ]
+}

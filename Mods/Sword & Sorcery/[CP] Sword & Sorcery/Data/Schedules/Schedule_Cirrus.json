@@ -1,0 +1,129 @@
+{
+	"Changes": [
+		{
+			"LogName": "Cirrus's Schedule - Not Unlocked",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Prior to Cirrus being unlocked.
+				"spring": "0 EastScarp_TNPCWaitingWarpRoom 13 5 2/1200 EastScarp_TNPCWaitingWarpRoom 13 6 2/1800 EastScarp_TNPCWaitingWarpRoom 13 5 2"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Unlocked (Van)",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Prior to Cirrus moving out of the van.
+				"rain": "610 EastScarp_VanInterior 11 4 2 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}/1200 EastScarp_VanInterior 5 4 0/1400 EastScarp_VanInterior 11 4 2 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}/1900 EastScarp_VanInterior 5 4 0/2200 EastScarp_VanInterior 11 4 2 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}",
+				"spring": "610 EastScarp_VanInterior 11 4 2 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}/1000 EastScarp_VanInterior 5 4 0/1200 EastScarp_Village 82 79 Cirrus_sidesit/1400 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}/1600 EastScarp_Village 54 40 2 Cirrus_phonesit/1800 EastScarp_Village 97 80 1/2200 EastScarp_VanInterior 11 4 2 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle++Cirrus_phone|inputSeparator=++}}"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": false
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Unlocked (Lion's Mane)",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// After moving into the Lion's Mane.
+				"rain": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"spring": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				"spring_Sat": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_CoastalGuild {{Random:8 13 3++15 12 0++26 15 3|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				"spring_Sun": "GOTO spring_Sat",
+				"fall_Tue": "0 Mountain 65 14 2/610 65 14 2 Cirrus_keytar/1300 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"fall_Thu": "GOTO fall_Tue"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": true
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Night Market & Squid Festival",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Cirrus will attend the Night Market & Squid Festival.
+				"rain": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"spring": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				/*"winter_12": "MAIL beachBridgeFixed/GOTO spring/610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1300 Beach 66 25 2 Cirrus_wiggleidle/2200 EastScarp_LionsMane 18 5 1",
+				"winter_13": "GOTO winter_12",
+				"winter_15": "GOTO winter_12",
+				"winter_16": "GOTO winter_12",
+				"winter_17": "GOTO winter_12"*/
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": true
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Trout Derby",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Cirrus will attend the Trout Derby.
+				"rain": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"spring": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				"summer_20": "610 EastScarp_LionsMane 18 5 1/800 Forest 69 39 2 Cirrus_wiggleidle/2000 EastScarp_LionsMane 18 5 1",
+				"summer_21": "GOTO summer_20"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": true
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Desert Festival",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Cirrus will attend the Desert Festival.
+				"rain": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"spring": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				"DesertFestival": "610 EastScarp_LionsMane 18 5 1/630 Desert 4 54 2 Cirrus_wiggleidle/2000 EastScarp_LionsMane 18 5 1",
+				"DesertFestival_2": "GOTO DesertFestival",
+				"DesertFestival_3": "GOTO DesertFestival"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": true
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - SVE Community Day",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// Will attend Community Day if Stardew Valley Expanded is installed.
+				"spring": "610 EastScarp_LionsMane 18 5 1/1000 EastScarp_Lionsmane 21 16 0/1200 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1500 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1800 EastScarp_Village 26 61 {{Random:Cirrus_keyar++Cirrus_sing++Cirrus_wiggleidle|inputSeparator=++}}/2000 EastScarp_Village 54 6 3/2200 EastScarp_LionsMane 18 5 1",
+				"spring_22": "610 EastScarp_LionsMane 18 5 1/800 CommunityCenter 8 7 3/1700 EastScarp_LionsMane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/2200 EastScarp_LionsMane 18 5 1",
+				"summer_22": "GOTO spring_22",
+				"fall_22": "GOTO spring_22",
+				"winter_22": "GOTO spring_22"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.13": true
+			}
+		},
+		{
+			"LogName": "Cirrus's Schedule - Marriage",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Cirrus",
+			"Entries": {
+				// For when Cirrus is married.
+				"marriage_Mon": "800 EastScarp_Lionsmane {{Random:21 26 2 Cirrus_wiggleidle++32 24 2 Cirrus_sing++21 16 0++30 13 3++33 6 3 Cirrus_sidesit|inputSeparator=++}}/1700 bed",
+				"marriage_Wed": "GOTO marriage_Mon",
+				"marriage_Fri": "GOTO marriage_Mon"
+			}
+		}
+	]
+}
+//(0 = up, 1 = right, 2 = down, 3 = left)

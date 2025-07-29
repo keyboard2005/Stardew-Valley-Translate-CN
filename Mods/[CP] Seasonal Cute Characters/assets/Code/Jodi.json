@@ -1,0 +1,168 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Jodi's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Jodi_Spring, Portraits/Jodi_Summer, Portraits/Jodi_Fall, Portraits/Jodi_Winter_Outdoor, Portraits/Jodi_Winter_Indoor, Portraits/Jodi_FlowerDance, Portraits/Jodi_SpiritsEve, Portraits/Jodi_Aerobics, Characters/Jodi_Spring, Characters/Jodi_Summer, Characters/Jodi_Fall, Characters/Jodi_Winter_Outdoor, Characters/Jodi_Winter_Indoor, Characters/Jodi_FlowerDance, Characters/Jodi_SpiritsEve, Characters/Jodi_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Jodi's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi_Beach, Characters/Jodi_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Jodi - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi_Spring, Characters/Jodi_Summer, Characters/Jodi_Fall, Characters/Jodi_Winter_Outdoor, Characters/Jodi_Winter_Indoor, Characters/Jodi_FlowerDance, Characters/Jodi_SpiritsEve, Characters/Jodi_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/Jodi_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Jodi - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jodi Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jodi", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JodiSpring": {
+					"Id": "{{ModId}}.JodiSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jodi_Spring",
+					"Portrait": "Portraits/Jodi_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JodiSummer": {
+					"Id": "{{ModId}}.JodiSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jodi_Summer",
+					"Portrait": "Portraits/Jodi_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JodiFall": {
+					"Id": "{{ModId}}.JodiFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jodi_Fall",
+					"Portrait": "Portraits/Jodi_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JodiWinterIndoor": {
+					"Id": "{{ModId}}.JodiWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Jodi_Winter_Indoor",
+					"Portrait": "Portraits/Jodi_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JodiWinterOutdoor": {
+					"Id": "{{ModId}}.JodiWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Jodi_Winter_Outdoor",
+					"Portrait": "Portraits/Jodi_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.JodiFlowerDance": {
+					"Id": "{{ModId}}.JodiFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Jodi_FlowerDance",
+					"Portrait": "Portraits/Jodi_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.JodiSpirit": {
+					"Id": "{{ModId}}.JodiSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Jodi_SpiritsEve",
+					"Portrait": "Portraits/Jodi_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.JodiBeach": {
+					"Id": "{{ModId}}.JodiBeach",
+					"Sprite": "Characters/Jodi_Beach",
+					"Portrait": "Portraits/Jodi_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.JodiAerobics": {
+					"Id": "{{ModId}}.JodiAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Jodi_Aerobics",
+					"Sprite": "Characters/Jodi_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Jodi - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 45, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 45, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Jodi Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+            "FromFile": "assets/{{NoNose}}/Random/BundleSprites.png",
+			"FromArea": { "X": 192, "Y": 0, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Jodi Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Jodi",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

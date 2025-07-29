@@ -1,0 +1,70 @@
+{
+    "Changes": [
+        
+        // HECTOR'S SPOUSE ROOM
+        {
+            "Action": "Load",
+            "Target": "Maps/HectorSpouseRoom",
+            "FromFile": "Assets/Maps/HectorSpouseRoom.tmx",
+            "When": {
+                "HectorSpouseRoomConfig": true
+            }
+        },
+
+        // HECTOR'S SPOUSE PATIO 
+        {
+            "Action": "Load",
+            "Target": "Maps/HectorSpousePatio",
+            "FromFile": "assets/Maps/HectorSpousePatio.tmx",
+            "When": {
+                "HectorSpousePatioConfig": true
+            }
+        },
+
+        // MAKES HECTOR'S BED SLEEPABLE WHEN MARRIED
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DruidTower",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 26
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Sleep",
+                        "Bed": "T"
+                    }
+                }
+            ],
+            "When": {
+                "Relationship:Hector |contains=Dating, Engaged, Married": true
+            }
+        },
+
+        // HECTOR REACTS TO PLAYER'S "DEATH" 
+        {
+            "LogName": "Player Death - Mines",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Hector 18 10 1/pause 1500/showFrame 5/message \"{{i18n:Core.Hector.PlayerKilled.Mines.01}}\"/pause 1000/message \"{{i18n:Core.Hector.PlayerKilled.Mines.02}}\"/viewport 19 10 true/pause 1000/speak Hector \"{{i18n:Core.Hector.PlayerKilled.Mines.03}}\"/pause 1000/emote farmer 28/minedeath/end"
+            },
+            "When": {
+                "Relationship:Hector |contains=Dating, Engaged, Married": true
+            }
+        },
+        {
+            "LogName": "Player Death - Skull Cave",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Hector 22 8 2/pause 1500/showFrame 5/message \"{{i18n:Core.Hector.PlayerKilled.Skull.01}}\"/pause 1000/message \"{{i18n:Core.Hector.PlayerKilled.Skull.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:Core.Hector.PlayerKilled.Skull.03}}\"/speed Hector 5/move Hector 0 3 2/textAboveHead Hector \"!!!\"/move Hector -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Hector 0 1 3/speak Hector \"{{i18n:Core.Hector.PlayerKilled.Skull.04}}\"/emote farmer 60/pause 500/speak Hector \"{{i18n:Core.Hector.PlayerKilled.Skull.05}}\"/emote Hector 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:Core.Hector.PlayerKilled.Skull.06}}\"/pause 500/speak Harvey \"{{i18n:Core.Hector.PlayerKilled.Skull.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/faceDirection Hector 3/speak Hector \"{{i18n:Core.Hector.PlayerKilled.Skull.08}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end"
+            },
+            "When": {
+                "Relationship:Hector |contains=Dating, Engaged, Married": true
+            }
+        },
+    ]
+}

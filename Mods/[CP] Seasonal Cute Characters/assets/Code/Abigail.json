@@ -1,0 +1,210 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Abigail's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Abigail_Spring, Portraits/Abigail_Summer, Portraits/Abigail_Fall, Portraits/Abigail_Winter_Outdoor, Portraits/Abigail_Winter_Indoor, Portraits/Abigail_FlowerDance, Portraits/Abigail_SpiritsEve, Portraits/Abigail_EggF, Portraits/Abigail_Fair, Portraits/Abigail_Jellies, Portraits/Abigail_Luau, Portraits/Abigail_Winter_IceF, Portraits/Abigail_Winter_WinterStar, Characters/Abigail_Spring, Characters/Abigail_Summer, Characters/Abigail_Fall, Characters/Abigail_Winter_Outdoor, Characters/Abigail_Winter_Indoor, Characters/Abigail_FlowerDance, Characters/Abigail_SpiritsEve, Characters/Abigail_EggF, Characters/Abigail_Fair, Characters/Abigail_Jellies, Characters/Abigail_Luau, Characters/Abigail_Winter_IceF, Characters/Abigail_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Abigail/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Abigail's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail_Beach, Characters/Abigail_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Abigail/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Abigail - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Abigail_Spring, Characters/Abigail_Summer, Characters/Abigail_Fall, Characters/Abigail_Winter_Outdoor, Characters/Abigail_Winter_Indoor, Characters/Abigail_FlowerDance, Characters/Abigail_SpiritsEve, Characters/Abigail_EggF, Characters/Abigail_Fair, Characters/Abigail_Jellies, Characters/Abigail_Luau, Characters/Abigail_Winter_IceF, Characters/Abigail_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Abigail/Abigail_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Abigail - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Abigail_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Abigail/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Abigail Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Abigail", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.AbigailSpring": {
+					"Id": "{{ModId}}.AbigailSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Abigail_Spring",
+					"Portrait": "Portraits/Abigail_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.AbigailSummer": {
+					"Id": "{{ModId}}.AbigailSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Abigail_Summer",
+					"Portrait": "Portraits/Abigail_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AbigailFall": {
+					"Id": "{{ModId}}.AbigailFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Abigail_Fall",
+					"Portrait": "Portraits/Abigail_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AbigailWinterIndoor": {
+					"Id": "{{ModId}}.AbigailWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Abigail_Winter_Indoor",
+					"Portrait": "Portraits/Abigail_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AbigailWinterOutdoor": {
+					"Id": "{{ModId}}.AbigailWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Abigail_Winter_Outdoor",
+					"Portrait": "Portraits/Abigail_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.AbigailEggFest": {
+					"Id": "{{ModId}}.AbigailEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_EggF",
+					"Portrait": "Portraits/Abigail_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AbigailFlowerDance": {
+					"Id": "{{ModId}}.AbigailFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_FlowerDance",
+					"Portrait": "Portraits/Abigail_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AbigailLuau": {
+					"Id": "{{ModId}}.AbigailLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_Luau",
+					"Portrait": "Portraits/Abigail_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AbigailJellies": {
+					"Id": "{{ModId}}.AbigailJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_Jellies",
+					"Portrait": "Portraits/Abigail_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AbigailFair": {
+					"Id": "{{ModId}}.AbigailFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_Fair",
+					"Portrait": "Portraits/Abigail_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AbigailSpirit": {
+					"Id": "{{ModId}}.AbigailSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Abigail_SpiritsEve",
+					"Portrait": "Portraits/Abigail_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AbigailIceFestival": {
+					"Id": "{{ModId}}.AbigailIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_Winter_IceF",
+					"Portrait": "Portraits/Abigail_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AbigailWinterStar": {
+					"Id": "{{ModId}}.AbigailWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Abigail_Winter_WinterStar",
+					"Portrait": "Portraits/Abigail_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.AbigailBeach": {
+					"Id": "{{ModId}}.AbigailBeach",
+					"Sprite": "Characters/Abigail_Beach",
+					"Portrait": "Portraits/Abigail_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+		
+		// MISCELLANEOUS
+		{
+			"LogName": "Abigail - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 0, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 0, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+		{
+			"LogName": "Abigail - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 7, "Y": 279, "Width": 18, "Height": 18},
+			"ToArea": {"X": 7, "Y": 279, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Abigail Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Abigail",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+
+	]
+}

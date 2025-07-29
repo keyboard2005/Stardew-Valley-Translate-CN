@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="236">
+ <properties>
+  <property name="AmbientLight" value="90 90 35"/>
+  <property name="CanCaskHere" type="bool" value="true"/>
+  <property name="IsFarm" type="bool" value="true"/>
+  <property name="IsGreenhouse" type="bool" value="true"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+  <property name="Warp" value="8 12 Farm 34 6 24 21 FarmCave 19 51 19 53 FarmCave 24 24"/>
+ </properties>
+ <tileset firstgid="1" name="z_AdditionalFarmCave_KsPF" tilewidth="16" tileheight="16" tilecount="44" columns="11">
+  <image source="z_AdditionalFarmCave_KsPF.png" width="176" height="64"/>
+ </tileset>
+ <layer id="2" name="Buildings" width="3" height="5">
+  <data encoding="csv">
+5,6,7,
+1,2,3,
+15,16,17,
+26,27,28,
+37,38,39
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings" visible="0"/>
+</map>

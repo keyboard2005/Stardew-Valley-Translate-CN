@@ -135,7 +135,7 @@ def main():
     print("=" * 60)
     
     # 文件夹路径
-    translations_dir = "translations"
+    translations_dir = "Mods"
     output_file = "missing_translations.json"
     
     # 检查translations目录是否存在

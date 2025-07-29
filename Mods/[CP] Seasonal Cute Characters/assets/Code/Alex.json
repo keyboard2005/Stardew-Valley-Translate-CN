@@ -1,0 +1,208 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Alex's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Alex_Spring, Portraits/Alex_Summer, Portraits/Alex_Fall, Portraits/Alex_Winter_Outdoor, Portraits/Alex_Winter_Indoor, Portraits/Alex_FlowerDance, Portraits/Alex_SpiritsEve, Portraits/Alex_EggF, Portraits/Alex_Fair, Portraits/Alex_Jellies, Portraits/Alex_Luau, Portraits/Alex_Winter_IceF, Portraits/Alex_Winter_WinterStar, Characters/Alex_Spring, Characters/Alex_Summer, Characters/Alex_Fall, Characters/Alex_Winter_Outdoor, Characters/Alex_Winter_Indoor, Characters/Alex_FlowerDance, Characters/Alex_SpiritsEve, Characters/Alex_EggF, Characters/Alex_Fair, Characters/Alex_Jellies, Characters/Alex_Luau, Characters/Alex_Winter_IceF, Characters/Alex_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Alex/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Alex's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex_Beach, Characters/Alex_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Alex/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Alex - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Alex_Spring, Characters/Alex_Summer, Characters/Alex_Fall, Characters/Alex_Winter_Outdoor, Characters/Alex_Winter_Indoor, Characters/Alex_FlowerDance, Characters/Alex_SpiritsEve, Characters/Alex_EggF, Characters/Alex_Fair, Characters/Alex_Jellies, Characters/Alex_Luau, Characters/Alex_Winter_IceF, Characters/Alex_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Alex/Alex_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Alex - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Alex_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Alex/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Alex Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Alex", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.AlexSpring": {
+					"Id": "{{ModId}}.AlexSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Alex_Spring",
+					"Portrait": "Portraits/Alex_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.AlexSummer": {
+					"Id": "{{ModId}}.AlexSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Alex_Summer",
+					"Portrait": "Portraits/Alex_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AlexFall": {
+					"Id": "{{ModId}}.AlexFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Alex_Fall",
+					"Portrait": "Portraits/Alex_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AlexWinterIndoor": {
+					"Id": "{{ModId}}.AlexWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Alex_Winter_Indoor",
+					"Portrait": "Portraits/Alex_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.AlexWinterOutdoor": {
+					"Id": "{{ModId}}.AlexWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Alex_Winter_Outdoor",
+					"Portrait": "Portraits/Alex_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.AlexEggFest": {
+					"Id": "{{ModId}}.AlexEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_EggF",
+					"Portrait": "Portraits/Alex_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AlexFlowerDance": {
+					"Id": "{{ModId}}.AlexFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_FlowerDance",
+					"Portrait": "Portraits/Alex_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AlexLuau": {
+					"Id": "{{ModId}}.AlexLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_Luau",
+					"Portrait": "Portraits/Alex_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AlexJellies": {
+					"Id": "{{ModId}}.AlexJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_Jellies",
+					"Portrait": "Portraits/Alex_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AlexFair": {
+					"Id": "{{ModId}}.AlexFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_Fair",
+					"Portrait": "Portraits/Alex_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AlexSpirit": {
+					"Id": "{{ModId}}.AlexSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Alex_SpiritsEve",
+					"Portrait": "Portraits/Alex_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.AlexIceFestival": {
+					"Id": "{{ModId}}.AlexIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_Winter_IceF",
+					"Portrait": "Portraits/Alex_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.AlexWinterStar": {
+					"Id": "{{ModId}}.AlexWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Alex_Winter_WinterStar",
+					"Portrait": "Portraits/Alex_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.AlexBeach": {
+					"Id": "{{ModId}}.AlexBeach",
+					"Sprite": "Characters/Alex_Beach",
+					"Portrait": "Portraits/Alex_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Alex - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Alex - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 39, "Y": 311, "Width": 18, "Height": 18},
+			"ToArea": {"X": 39, "Y": 311, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},	
+		{
+            "LogName": "Alex Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Alex",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

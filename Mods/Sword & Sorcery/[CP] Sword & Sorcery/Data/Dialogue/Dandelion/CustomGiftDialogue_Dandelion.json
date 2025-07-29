@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dandelion",
+      "Entries": { // CUSTOM GIFT DIALOGUE
+        // STARDROP TEA 
+        "AcceptGift_(O)StardropTea": "{{i18n:Gifts.Dandelion.GiftReaction.StardropTea}}",
+        // ANCIENT SWEET TEA
+        "AcceptGift_(O){{ModID}}_ancientsweettea": "{{i18n:Gifts.Dandelion.GiftReaction.AncientSweetTea}}",
+        // FISH
+        "AcceptGift_category_fish": "{{i18n:Gifts.Dandelion.GiftReaction.CategoryFish}}",
+        // ARTISANAL GOODS
+        "AcceptGift_category_artisan_goods": "{{i18n:Gifts.Dandelion.GiftReaction.CategoryArtisanalGoods}}",
+        // TRASH
+        "AcceptGiftCategory_trash": "{{i18n:Gifts.Dandelion.GiftReaction.CategoryTrash}}",
+        // MINERALS & GEMS
+        "AcceptGiftCategory_minerals": "{{i18n:Gifts.Dandelion.GiftReaction.CategoryGemsMinerals}}",
+        // LOVES
+        "AcceptGift_(O)74": "{{i18n:Gifts.Dandelion.GiftReaction.PrismaticShard}}",
+        "AcceptGift_(O)22": "{{i18n:Gifts.Dandelion.GiftReaction.Dandelion}}",
+        "AcceptGift_(O)268": "{{i18n:Gifts.Dandelion.GiftReaction.Starfruit}}",
+        "AcceptGift_(O)614": "{{i18n:Gifts.Dandelion.GiftReaction.GreenTea}}",
+        "AcceptGift_(O){{ModID}}_verdantpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_scarletpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_heatherpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_zydratepotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_pistachiopotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_dahliapotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_slushiepotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_matrixpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_mcdougalpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        "AcceptGift_(O){{ModID}}_toirneachpotion": "{{i18n:Gifts.Dandelion.GiftReaction.Potions}}",
+        // LIKES
+        "AcceptGift_(O)348": "{{i18n:Gifts.Dandelion.GiftReaction.Wine}}",
+        "AcceptGift_(O)421": "{{i18n:Gifts.Dandelion.GiftReaction.Sunflower}}",
+        "AcceptGift_(O)426": "{{i18n:Gifts.Dandelion.GiftReaction.GoatCheese}}",
+        "AcceptGift_(O)430": "{{i18n:Gifts.Dandelion.GiftReaction.Truffle}}",
+        // HATES 
+        "RejectItem_(O)769": "{{i18n:Gifts.Dandelion.GiftReject.VoidEssence}}",
+        // ITEM REJECTIONS 
+        "RejectItem_(O)458": "{{i18n:Gifts.Dandelion.GiftReject.Bouquet}}",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dandelion",
+      "Entries": { // CUSTOM GIFT DIALOGUE - BIRTHDAY
+      "AcceptGift_(O)22": "{{i18n:Gifts.Dandelion.GiftReaction.Dandelion.Birthday}}",
+      "AcceptGift_(O)268": "{{i18n:Gifts.Dandelion.GiftReaction.Starfruit.Birthday}}",
+      "AcceptGift_(O)614": "{{i18n:Gifts.Dandelion.GiftReaction.GreenTea.Birthday}}",
+      },
+      "When": {
+        "Season": "summer",
+        "Day": "16"
+      }
+    },
+  ]
+}

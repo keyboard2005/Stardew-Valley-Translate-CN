@@ -1,0 +1,85 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Solomon": {
+                    "DisplayName": "{{i18n:Core.Solomon.Name}}",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "HomeRegion": "Other",
+                    "CanSocialize": false,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": false,
+                    "CanGreetNearbyCharacters": false,
+                    "ExcludeFromPerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "IntroductionsQuest": false,
+                    "SocialTab": "HiddenAlways",
+                    "Calendar": "HiddenAlways",
+                    "CanVisitIsland": false,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "ItemDeliveryQuests": false,
+                    "Home": [
+                        {
+                            "ID": "Solomon - Cavern",
+                            "Location": "EastScarp_SolomonCavern",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 12
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Roslin.6"
+                        },
+                        {
+                            "ID": "Solomon - NPC Waiting Room",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 16,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "!PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Roslin.6"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "Solomon - Appearance",
+                            "Portrait": "Portraits/Solomon",
+                            "Sprite": "Characters/Solomon"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Default Portraits & Sprites - Solomon",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Solomon",
+            "FromFile": "Assets/Characters/Solomon/Solomon.png"
+        },
+        {
+            "LogName": "Default Portraits & Sprites - Solomon",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Solomon",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/Solomon/Solomon.png"
+        },
+        {
+            "LogName": "Default Portraits & Sprites - Solomon",
+            "Action": "EditImage",
+            "Target": "Portraits/Solomon",
+            "FromFile": "Assets/Portraits/Nyapu/Solomon/Solomon.png",
+            "When": { "Nyapu Shadowfolk": "true" }
+        }
+    ]
+}
+    

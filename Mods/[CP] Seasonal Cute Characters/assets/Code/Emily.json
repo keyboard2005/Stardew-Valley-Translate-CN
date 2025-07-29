@@ -1,0 +1,242 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Emily's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Emily_Spring, Portraits/Emily_Summer, Portraits/Emily_Fall, Portraits/Emily_Winter_Outdoor, Portraits/Emily_Winter_Indoor, Portraits/Emily_FlowerDance, Portraits/Emily_SpiritsEve, Portraits/Emily_EggF, Portraits/Emily_Fair, Portraits/Emily_Jellies, Portraits/Emily_Luau, Portraits/Emily_Winter_IceF, Portraits/Emily_Winter_WinterStar, Portraits/Emily_Aerobics, Characters/Emily_Spring, Characters/Emily_Summer, Characters/Emily_Fall, Characters/Emily_Winter_Outdoor, Characters/Emily_Winter_Indoor, Characters/Emily_FlowerDance, Characters/Emily_SpiritsEve, Characters/Emily_EggF, Characters/Emily_Fair, Characters/Emily_Jellies, Characters/Emily_Luau, Characters/Emily_Winter_IceF, Characters/Emily_Winter_WinterStar, Characters/Emily_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Emily's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Beach, Characters/Emily_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Emily - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Spring, Characters/Emily_Summer, Characters/Emily_Fall, Characters/Emily_Winter_Outdoor, Characters/Emily_Winter_Indoor, Characters/Emily_FlowerDance, Characters/Emily_SpiritsEve, Characters/Emily_EggF, Characters/Emily_Fair, Characters/Emily_Jellies, Characters/Emily_Luau, Characters/Emily_Winter_IceF, Characters/Emily_Winter_WinterStar, Characters/Emily_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/Emily_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Emily - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Emily - Spirit's Eve Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_SpiritsEve",
+            "FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Emily Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Emily", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.EmilySpring": {
+					"Id": "{{ModId}}.EmilySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Emily_Spring",
+					"Portrait": "Portraits/Emily_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.EmilySummer": {
+					"Id": "{{ModId}}.EmilySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Emily_Summer",
+					"Portrait": "Portraits/Emily_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EmilyFall": {
+					"Id": "{{ModId}}.EmilyFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Emily_Fall",
+					"Portrait": "Portraits/Emily_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EmilyWinterIndoor": {
+					"Id": "{{ModId}}.EmilyWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Emily_Winter_Indoor",
+					"Portrait": "Portraits/Emily_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EmilyWinterOutdoor": {
+					"Id": "{{ModId}}.EmilyWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Emily_Winter_Outdoor",
+					"Portrait": "Portraits/Emily_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.EmilyEggFest": {
+					"Id": "{{ModId}}.EmilyEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_EggF",
+					"Portrait": "Portraits/Emily_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EmilyFlowerDance": {
+					"Id": "{{ModId}}.EmilyFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_FlowerDance",
+					"Portrait": "Portraits/Emily_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.EmilyLuau": {
+					"Id": "{{ModId}}.EmilyLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_Luau",
+					"Portrait": "Portraits/Emily_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EmilyJellies": {
+					"Id": "{{ModId}}.EmilyJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_Jellies",
+					"Portrait": "Portraits/Emily_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.EmilyFair": {
+					"Id": "{{ModId}}.EmilyFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_Fair",
+					"Portrait": "Portraits/Emily_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EmilySpirit": {
+					"Id": "{{ModId}}.EmilySpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Emily_SpiritsEve",
+					"Portrait": "Portraits/Emily_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.EmilyIceFestival": {
+					"Id": "{{ModId}}.EmilyIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_Winter_IceF",
+					"Portrait": "Portraits/Emily_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EmilyWinterStar": {
+					"Id": "{{ModId}}.EmilyWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Emily_Winter_WinterStar",
+					"Portrait": "Portraits/Emily_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.EmilyBeach": {
+					"Id": "{{ModId}}.EmilyBeach",
+					"Sprite": "Characters/Emily_Beach",
+					"Portrait": "Portraits/Emily_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Aerobics
+				
+				"{{ModId}}.EmilyAerobics": {
+					"Id": "{{ModId}}.EmilyAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Emily_Aerobics",
+					"Sprite": "Characters/Emily_Aerobics",
+					"Precedence": -10000,
+				},	
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Emily - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 71, "Y": 279, "Width": 18, "Height": 18},
+			"ToArea": {"X": 71, "Y": 279, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Emily Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Emily",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

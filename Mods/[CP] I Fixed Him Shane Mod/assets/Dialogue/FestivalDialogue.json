@@ -1,0 +1,20 @@
+{
+  "Changes": [
+    {
+      "LogName": "Sober Night Market",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Shane",
+      "Entries": {
+        "winter_15.000": "我想给贾斯和玛妮买冬日星盛宴礼物，但……#$e#一切都太贵了……$s"
+      }
+    },
+    {
+      "LogName": "Sober Spirits Eve",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Shane": "没有蔓越莓苏打水了……$s"
+      }
+    }
+  ]
+}

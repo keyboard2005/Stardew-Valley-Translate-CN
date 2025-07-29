@@ -1,0 +1,112 @@
+{
+	"Changes":[
+		{
+			"LogName": "Pierre at Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_DanceOfTheMoonlightJellies_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,	
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreJellyfish}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},
+		{
+			"LogName": "Pierre at Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_EggFestival_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreEgg}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},	
+		{
+			"LogName": "Pierre at Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_FeastOfTheWinterStar_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,	
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreFeast}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},	
+		{
+			"LogName": "Pierre at Flower Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_FlowerDance_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,	
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreFlower}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},	
+		{
+			"LogName": "Pierre at Luau",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_Luau_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreLuau |FarmName={{FarmName}}}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},
+		{
+			"LogName": "Pierre at Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_SpiritsEve_Pierre", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": null,
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:PierreSpirit}}",
+						"RandomDialogue": null
+					}
+				],
+				"Name": "Pierre"
+			},
+		},	
+	],
+}

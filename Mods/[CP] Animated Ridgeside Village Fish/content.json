@@ -1,0 +1,683 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "BladetailSturgeon": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "CapedTreeFrog": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "CardiaSeptalJellyfish": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "CrimsonSpikedClam": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "CutthroatTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "DeepRidgeAngler": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "FairytaleLionfish": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "FixerEel": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "GoldenRoseFin": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "HarvesterTrout": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "LullabyCarp": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "MountainRedbellyDace": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MountainWhitefish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PebbleBackCrab": {
+            "AllowValues": "new,old,disabled",
+            "Default": "new",
+            "AllowMultiple": false
+        },
+        "RidgeBluegill": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RidgesideBass": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SkulpinFish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SockeyeSalmon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "WaterfallSnakehead": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Bladetail Sturgeon Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BladetailSturgeon": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_BladetailSturgeonOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bladetail_sturgeon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bladetail Sturgeon New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BladetailSturgeon": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_BladetailSturgeonNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bladetail_sturgeon_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Caped Tree Frog Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CapedTreeFrog": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CapedTreeFrogOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/caped_tree_frog.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Caped Tree Frog New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CapedTreeFrog": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CapedTreeFrogNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/caped_tree_frog_new.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cardia Septal Jellyfish Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CardiaSeptalJellyfish": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CardiaSeptalJellyfishOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cardia_septal_jellyfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Cardia Septal Jellyfish New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CardiaSeptalJellyfish": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CardiaSeptalJellyfishNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cardia_septal_jellyfish_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crimson Spiked Clam Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrimsonSpikedClam": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CrimsonSpikedClamOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crimson_spiked_clam.png}}:0..13@15"
+                }
+            }
+        },
+        {
+            "LogName": "Crimson Spiked Clam New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CrimsonSpikedClam": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CrimsonSpikedClamNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crimson_spiked_clam_new.png}}:0..13@15"
+                }
+            }
+        },
+        {
+            "LogName": "Cutthroat Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CutthroatTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_CutthroatTrout": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cutthroat_trout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Deep Ridge Angler",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "DeepRidgeAngler": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_DeepRidgeAngler": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/deep_ridge_angler.png}}:0..5@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fairytale Lionfish Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FairytaleLionfish": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_FairytaleLionfishOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fairytale_lionfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fairytale Lionfish New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FairytaleLionfish": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_FairytaleLionfishNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fairytale_lionfish_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fixer Eel Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FixerEel": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_FixerEelOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fixer_eel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Fixer Eel New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "FixerEel": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_FixerEelNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fixer_eel_new.png}}:0..5@20"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Rose Fin Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoldenRoseFin": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_GoldenRoseFinOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/golden_rose_fin.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Rose Fin New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoldenRoseFin": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_GoldenRoseFinNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/golden_rose_fin_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Harvester Trout Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "HarvesterTrout": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_HarvesterTroutOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/harvester_trout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Harvester Trout New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "HarvesterTrout": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_HarvesterTroutNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/harvester_trout_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lullaby Carp Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LullabyCarp": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_LullabyCarpOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lullaby_carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lullaby Carp New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LullabyCarp": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_LullabyCarpNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lullaby_carp_new.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Mountain Redbelly Dace",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MountainRedbellyDace": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_MountainRedbellyDace": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/mountain_redbelly_dace.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Mountain Whitefish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MountainWhitefish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_MountainWhitefish": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/mountain_whitefish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pebble Back Crab Old",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PebbleBackCrab": "old"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_PebbleBackCrabOld": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pebble_back_crab.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pebble Back Crab New",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PebbleBackCrab": "new"
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_PebbleBackCrabNew": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pebble_back_crab_new.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ridge Bluegill",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RidgeBluegill": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_RidgeBluegill": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ridge_bluegill.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ridgeside Bass",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RidgesideBass": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_RidgesideBass": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 48,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ridgeside_bass.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Skulpin Fish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SkulpinFish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_SkulpinFish": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 64,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/skulpin_fish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sockeye Salmon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SockeyeSalmon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_SockeyeSalmon": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 64,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sockeye_salmon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Waterfall Snakehead",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WaterfallSnakehead": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedRSVFish_WaterfallSnakehead": {
+                    "TargetTexture": "Mods/Rafseazz.RSVCP/Objects/Objects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 64,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/waterfall_snakehead.png}}:0..11@30"
+                }
+            }
+        }
+    ]
+}

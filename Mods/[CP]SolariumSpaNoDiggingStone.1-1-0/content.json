@@ -1,0 +1,111 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+        "LUTI bathhouse": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Enables compatability with the Less Ugly Town Interiors bathhouse entry"
+        }
+	},
+
+	"CustomLocations": 
+	[
+// Add the in-game location
+		{
+            "Name": "Custom_SolariumSpa",
+            "FromMapFile": "assets/Custom_SolariumSpa.tmx"
+        }
+	],
+	
+	"Changes":
+	[
+// Warp point
+	    {
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_Entry",
+			"FromFile": "assets/BathHouse_ladder.tmx",
+			"PatchMode": "Overlay",
+				"ToArea": { "X": 1, "Y": 1, "Width": 1, "Height": 3 },
+			"When": {
+				"HasSeenEvent": "10548001"
+			}
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_Entry",
+			"FromFile": "assets/HSBathHouse_ladder.tmx",
+			"PatchMode": "ReplaceByLayer",
+				"ToArea": { "X": 1, "Y": 1, "Width": 1, "Height": 4 },
+			"When": {
+				"HasMod": "Sandman53.hotspring",
+				"HasSeenEvent": "10548001"
+			}
+		},
+		{
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_Entry",
+			"FromFile": "assets/LUTIBathHouse_ladder.tmx",
+			"PatchMode": "Overlay",
+				"ToArea": { "X": 1, "Y": 1, "Width": 1, "Height": 3 },
+			"When": {
+				"LUTI bathhouse": "true",
+				"HasSeenEvent": "10548001"
+			}
+        },
+
+// Greenhouse
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SolariumSpa",
+			"MapProperties": { 
+				"IsGreenhouse": "T" ,
+				"IsFarm" : "T" 
+			}
+		},
+			
+// Strings
+		{	
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": { 
+				"BookShelf": "{{i18n:BookShelf}}"	
+			}
+		},
+		
+// Solarium Unlocked Event
+		{   
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {	 
+				"10548001/f Evelyn 2000 Caroline 2000/w sunny": "continue/64 15/farmer 64 16 2 Caroline 64 18 0/skippable/pause 300/speak Caroline \"{{i18n:SolariumUnlock.1}}\"/pause 500/faceDirection Caroline 3/pause 500/faceDirection Caroline 2/speak Caroline \"{{i18n:SolariumUnlock.2}}\"/faceDirection Caroline 2/faceDirection Caroline 0/emote farmer 32/speak Caroline \"{{i18n:SolariumUnlock.3}}\"/emote Caroline 40/pause 300/speak Caroline \"{{i18n:SolariumUnlock.4}}\"/pause 300/speak Caroline \"{{i18n:SolariumUnlock.5}}\"/playSound reward/message \"{{i18n:SolariumUnlock.6}}\"/speak Caroline \"{{i18n:SolariumUnlock.7}}\"/speak Caroline \"{{i18n:SolariumUnlock.8}}\"/message \"{{i18n:SolariumUnlock.9}}\"/pause 500/speak Caroline \"{{i18n:SolariumUnlock.10}}\"/pause 1500/end",
+			}
+		},
+		
+// Slightly edit Linus's schedules after the event
+		{ 
+			"Action": "EditData",	 
+			"Target": "characters/schedules/Linus",
+			"Entries": {
+				"fall": "700 Mountain 25 5 1/740 Mountain 28 9 1/900 Custom_SolariumSpa 5 12 2/1400 Mountain 44 18 1/1800 Tent 2 2 2",
+				"winter": "1100 Mountain 28 9 1/1400 Custom_SolariumSpa 5 12 2 \"Strings\\schedules\\Linus:winter.000\"/1800 Tent 2 2 2"
+			},
+			"When": {
+				"HasSeenEvent": "10548001"
+			}
+		},
+		
+// Linus's new shelter Event
+		{
+            "Action": "Load",
+            "Target": "Data/Events/Custom_SolariumSpa",
+            "FromFile": "assets/Data/Custom_SolariumSpa_Events.json"
+        },
+		{   
+			"Action": "EditData",
+			"Target": "Data/Events/Custom_SolariumSpa",
+			"Entries": {	 
+				"10548002/p Linus/z spring summer/e 10548001": "continue/7 14/farmer 5 16 0 Linus 4 12 2/skippable/pause 500/emote Linus 16/speak Linus \"{{i18n:LinusNewShelter.1}}\"/pause 300/speak Linus \"{{i18n:LinusNewShelter.2}}\"/pause 500/emote farmer 32/pause 300/end",
+			}
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+    "Changes": [
+        {
+            "LogName": "Conversation Topics - Dandelion",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dandelion",
+            "Entries": // DANDELION'S REACTIONS
+            {
+                // CH4:
+                "DandelionReturns": "{{i18n:CT.Dandelion.DandelionReturns}}",
+                "DandelionSettling": "{{i18n:CT.Dandelion.DandelionReturns}}",
+                "DandelionShieldRepair": "{{i18n:CT.Dandelion.DandelionShieldRepair}}",
+                "DandelionShieldRestored": "{{i18n:CT.Dandelion.DandelionShieldRestored}}",
+                "FullmetalDandelion": "{{i18n:CT.Dandelion.FullmetalDandelion}}",
+                "DandelionPendant": "{{i18n:CT.Dandelion.DandelionPendant}}",
+                "SolomonGift": "{{i18n:CT.Dandelion.SolomonGift}}",
+                "IntoTheDeepDark": "{{i18n:CT.Dandelion.IntoTheDeepDark}}",
+                "DuskspireEncounter": "{{i18n:CT.Dandelion.DuskspireEncounter }}",
+
+                // CH5: 
+                "DandelionProposes": "{{i18n:CT.Dandelion.DandelionProposes}}",
+                "WyattReturns": "{{i18n:CT.Dandelion.WyattReturns}}",
+                "HectorPromotion": "{{i18n:CT.Dandelion.HectorPromotion}}",
+                "CirrusAndMom": "{{i18n:CT.Dandelion.CirrusAndMom}}",
+                "RosalionWedding": "{{i18n:CT.Dandelion.RosalionWedding}}",
+                "VioletMoonRennFaire": "{{i18n:CT.Dandelion.VioletMoonRennFaire}}",
+                "SwordAndSorcery": "{{i18n:CT.Dandelion.SwordAndSorcery}}",
+            }
+        },
+    ]
+}

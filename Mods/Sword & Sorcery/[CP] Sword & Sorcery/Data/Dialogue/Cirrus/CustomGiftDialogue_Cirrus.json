@@ -1,0 +1,118 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": { // CUSTOM GIFT DIALOGUE
+        // STARDROP TEA 
+        "AcceptGift_(O)StardropTea": "{{i18n:Gifts.Cirrus.GiftReaction.StardropTea}}",
+        // ANCIENT SWEET TEA
+        "AcceptGift_(O){{ModID}}_ancientsweettea": "{{i18n:Gifts.Cirrus.GiftReaction.AncientSweetTea}}",
+        // FISH
+        "AcceptGift_category_fish": "{{i18n:Gifts.Cirrus.GiftReaction.CategoryFish}}",
+        // ARTISANAL GOODS
+        "AcceptGift_category_artisan_goods": "{{i18n:Gifts.Cirrus.GiftReaction.CategoryArtisanalGoods}}",
+        // TRASH
+        "AcceptGiftCategory_trash": "{{i18n:Gifts.Cirrus.GiftReaction.CategoryTrash}}",
+        // MINERALS & GEMS
+        "AcceptGiftCategory_minerals": "{{i18n:Gifts.Cirrus.GiftReaction.CategoryGemsMinerals}}",
+        // LOVES
+        "AcceptGift_(O)74": "{{i18n:Gifts.Cirrus.GiftReaction.PrismaticShard}}",
+        "AcceptGift_(O)614": "{{i18n:Gifts.Cirrus.GiftReaction.GreenTea}}",
+        "AcceptGift_(O)206": "{{i18n:Gifts.Cirrus.GiftReaction.Pizza}}",
+        "AcceptGift_(O)213": "{{i18n:Gifts.Cirrus.GiftReaction.SalmonDinner}}",
+        "AcceptGift_(O)214": "{{i18n:Gifts.Cirrus.GiftReaction.FishTaco}}",
+        "AcceptGift_(O)215": "{{i18n:Gifts.Cirrus.GiftReaction.CrispyBass}}",
+        "AcceptGift_(O){{ModID}}_zuzustylebagelwithlox": "{{i18n:Gifts.Cirrus.GiftReaction.zuzustylebagelwithlox}}",
+        "AcceptGift_(O){{ModID}}_zuzustylepizza": "{{i18n:Gifts.Cirrus.GiftReaction.ZuzuStylePizza}}",
+        "AcceptGift_(O){{ModID}}_zuzustylecheesecake": "{{i18n:Gifts.Cirrus.GiftReaction.ZuzuStyleCheesecake}}",
+        "AcceptGift_(O){{ModID}}_portfiredrakesparkler": "{{i18n:Gifts.Cirrus.GiftReaction.PortfireDrakeSparkler}}",
+        "AcceptGift_(O){{ModID}}_zuzustyleclamchowder": "{{i18n:Gifts.Cirrus.GiftReaction.ZuzuStyleClamChowder}}",
+        "AcceptGift_(O){{ModID}}_orangegingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_blueberrygingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_pineapplegingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_rhubarbgingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_strawberrygingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_peachgingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_ancientelderberrygingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_ancientappleberrygingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_ancienthuckleberrygingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        "AcceptGift_(O){{ModID}}_ancientfruitgingerbeer": "{{i18n:Gifts.Cirrus.GiftReaction.GingerBeer}}",
+        // LIKES
+        "AcceptGift_(O)731": "{{i18n:Gifts.Cirrus.GiftReaction.MapleBar}}",
+        "AcceptGift_(O)225": "{{i18n:Gifts.Cirrus.GiftReaction.FriedEel}}",
+        "AcceptGift_(O)226": "{{i18n:Gifts.Cirrus.GiftReaction.SpicyEel}}",
+        "AcceptGift_(O)227": "{{i18n:Gifts.Cirrus.GiftReaction.Sashimi}}",
+        "AcceptGift_(O)228": "{{i18n:Gifts.Cirrus.GiftReaction.MakiRoll}}",
+        "AcceptGift_(O)219": "{{i18n:Gifts.Cirrus.GiftReaction.TroutSoup}}",
+        "AcceptGift_(O)167": "{{i18n:Gifts.Cirrus.GiftReaction.JojaCola}}",
+        // ALCOHOL 
+        "RejectItem_(O)346": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        "RejectItem_(O)303": "{{i18n:Gifts.Cirrus.GiftReaction.PaleAle}}",
+        "RejectItem_(O)348": "{{i18n:Gifts.Cirrus.GiftReaction.Wine}}",
+        "RejectItem_(O)304": "{{i18n:Gifts.Cirrus.GiftReaction.Hops}}",
+        "RejectItem_(O)459": "{{i18n:Gifts.Cirrus.GiftReaction.Mead}}",
+        "RejectItem_(O)DTZ.DowntownZuzuCP_Cider": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        "RejectItem_(O)DTZ.DowntownZuzuCP_ZuzuSignatureCocktail": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        "RejectItem_(O)DTZ.DowntownZuzuCP_JojaCocktail": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        "RejectItem_(O)DTZ.DowntownZuzuCP_StrawberryDaiquiri": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        "RejectItem_(O)DTZ.DowntownZuzuCP_ZuzuChampagne": "{{i18n:Gifts.Cirrus.GiftReaction.Beer}}",
+        // ANCIENT CROPS
+        "AcceptGift_(O){{ModID}}_ancientwildfairyroses": "{{i18n:Gifts.Cirrus.GiftReaction.AncientRose}}",
+        // ITEM REJECTIONS 
+        "RejectItem_(O)458": "{{i18n:Gifts.Cirrus.GiftReject.Bouquet}}",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": { // CUSTOM GIFT DIALOGUE - BIRTHDAY
+        "AcceptGift_(O)74": "{{i18n:Gifts.Cirrus.GiftReaction.PrismaticShard.Birthday}}",
+        "AcceptGift_(O)614": "{{i18n:Gifts.Cirrus.GiftReaction.GreenTea.Birthday}}",
+        "AcceptGift_(O)206": "{{i18n:Gifts.Cirrus.GiftReaction.Pizza.Birthday}}",
+        "AcceptGift_(O)213": "{{i18n:Gifts.Cirrus.GiftReaction.SalmonDinner.Birthday}}",
+        "AcceptGift_(O)214": "{{i18n:Gifts.Cirrus.GiftReaction.FishTaco.Birthday}}",
+        "AcceptGift_(O)215": "{{i18n:Gifts.Cirrus.GiftReaction.CrispyBass.Birthday}}",
+        "AcceptGift_(O){{ModID}}_zuzustylebagelwithlox": "{{i18n:Gifts.Cirrus.GiftReaction.zuzustylebagelwithlox.Birthday}}",
+        "AcceptGift_(O){{ModID}}_zuzustylepizza": "{{i18n:Gifts.Cirrus.GiftReaction.ZuzuStylePizza.Birthday}}",
+      },
+      "When": {
+        "Season": "winter",
+        "Day": "21"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": { // DATING COOLDOWN
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantCooldown}}",
+      },
+      "When": {
+        "HasConversationTopic |contains=CirrusMarriageCountdown": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": { // MARRIAGE PENDANT REACT
+        "RejectItem_(O)460": "{{i18n:miscellaneous.PendantResponse}}#$action spacechase0.SpaceCore_PlayEvent SnS.Ch3.Cirrus.15 false"
+      },
+      "When": {
+        "HasConversationTopic |contains=CirrusMarriageCountdown": false,
+        "Relationship:Cirrus |contains=Dating": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Cirrus",
+      "Entries": { // MARRIAGE PENDANT REACT NO FARMHOUSE UPGRADE
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantFarmhouse}}",
+      },
+      "When": {
+        "HasConversationTopic |contains=CirrusMarriageCountdown": false,
+        "Relationship:Cirrus |contains=Dating": true,
+        "FarmhouseUpgrade": "0"
+      }
+    }
+  ]
+}

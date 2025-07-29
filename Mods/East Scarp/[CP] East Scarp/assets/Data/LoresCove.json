@@ -1,0 +1,611 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/EastScarp_LoresCove",
+            "FromFile": "assets/Locations/LoresCove/CastlePoint.tmx"
+        },
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "EastScarp_LoresCove": {
+                    "DisplayName": "{{i18n:Name.LoreCove}}",
+                    "DefaultArrivalTile": {
+                        "X": 38,
+                        "Y": 17
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/EastScarp_LoresCove"
+                    },
+                    "MusicDefault": "junimoKart_whaleMusic",
+                    "FormerLocationNames": [
+                        "Custom_ESCastlePoint"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)110",
+                            "ItemId": "(O)110",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)583",
+                            "ItemId": "(O)583",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "LCFreshwater": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 64,
+                                "Height": 49
+                            },
+                            "CrabPotFishTypes": [],
+                            "CrabPotJunkChance": 0.2
+                        },
+                        "LCOcean": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 0,
+                                "Y": 50,
+                                "Width": 65,
+                                "Height": 31
+                            },
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)132",
+                            "ItemId": "(O)132",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)137",
+                            "ItemId": "(O)137",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Season": "summer",
+                            "Id": "(O)138",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Season": "fall",
+                            "Id": "(O)139",
+                            "ItemId": "(O)139"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)140",
+                            "ItemId": "(O)140",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Season": "winter",
+                            "Id": "(O)141",
+                            "ItemId": "(O)141"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)143",
+                            "ItemId": "(O)143",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)144",
+                            "ItemId": "(O)144",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)145",
+                            "ItemId": "(O)145",
+                            "Condition": "LOCATION_Season Here spring summer"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)153",
+                            "ItemId": "(O)153",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)699",
+                            "ItemId": "(O)699",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Season": "summer",
+                            "Id": "(O)704",
+                            "ItemId": "(O)704"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Id": "(O)706",
+                            "ItemId": "(O)706",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "FishAreaId": "LCFreshwater",
+                            "Season": "winter",
+                            "Id": "(O)707",
+                            "ItemId": "(O)707"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)153_LCOcean",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)152_LCOcean",
+                            "ItemId": "(O)152"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)129_LCOcean",
+                            "ItemId": "(O)129",
+                            "Condition": "LOCATION_SEASON Here spring fall",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)131_LCOcean",
+                            "ItemId": "(O)131",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)147_LCOcean",
+                            "ItemId": "(O)147",
+                            "Condition": "LOCATION_Season Here spring winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)148_LCOcean",
+                            "ItemId": "(O)148",
+                            "Condition": "LOCATION_SEASON Here spring fall",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)267_LCOcean",
+                            "ItemId": "(O)267",
+                            "Condition": "LOCATION_SEASON Here spring summer",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)708_LCOcean",
+                            "ItemId": "(O)708",
+                            "Condition": "LOCATION_Season Here spring summer winter"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)128_LCOcean",
+                            "ItemId": "(O)128"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)149_LCOcean",
+                            "ItemId": "(O)149"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)155_LCOcean",
+                            "ItemId": "(O)155"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)130_LCOcean",
+                            "ItemId": "(O)130",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)146_LCOcean",
+                            "ItemId": "(O)146",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)150",
+                            "ItemId": "(O)150",
+                            "Condition": "LOCATION_Season Here summer fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)705_LCOcean",
+                            "ItemId": "(O)705",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)701_LCOcean",
+                            "ItemId": "(O)701",
+                            "Condition": "LOCATION_Season Here summer fall"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)151_LCOcean",
+                            "ItemId": "(O)151"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "LCOcean",
+                            "Id": "(O)154_LCOcean",
+                            "ItemId": "(O)154"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.6,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "LogName": "Adds the Warp from LC to CH - non SVE",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_LoresCove",
+            "MapProperties": {
+                "Warp": "28 -1 EastScarp_ClearingHouse 28 39 29 -1 EastScarp_ClearingHouse 29 39"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "LogName": "Adds the Warp from LC to SB - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_LoresCove",
+            "MapProperties": {
+                "Warp": "28 -1 Custom_ShearwaterBridge 48 39 29 -1 Custom_ShearwaterBridge 48 39"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Adds Warp to East Scarp for farmer only (no NPCs)",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 102
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_LoresCove 59 16"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 101
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_LoresCove 59 16"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 100
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_LoresCove 59 16"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Adds patch to ClearingHouse if SVE not installed",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_ClearingHouse",
+            "FromFile": "assets/Locations/LoresCove/ClearingHouse_CastlePoint.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 23,
+                "Height": 20
+            },
+            "ToArea": {
+                "X": 9,
+                "Y": 20,
+                "Width": 23,
+                "Height": 20
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "28 40 EastScarp_LoresCove 28 0 29 40 EastScarp_LoresCove 28 0",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "LogName": "Adds patch to ShearwaterBridge if SVE installed",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ShearwaterBridge",
+            "FromFile": "assets/Locations/LoresCove/ShearwaterBridge_CastlePoint.tmx",
+            "ToArea": {
+                "X": 46,
+                "Y": 34,
+                "Width": 3,
+                "Height": 6
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "46 40 EastScarp_LoresCove 28 0 47 40 EastScarp_LoresCove 28 0 48 40 EastScarp_LoresCove 29 0",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Adds shortcut from LC to beach",
+            "Action": "EditMap",
+            "Target": "Maps/Beach, Maps/Beach-NightMarket",
+            "When": {
+                "HasMod |contains=aztecviper.fishofstardew": false 
+            },
+            "FromFile": "assets/Locations/LoresCove/CastlePoint_Beach.tmx",
+            "ToArea": {
+                "X": 90,
+                "Y": 0,
+                "Width": 14,
+                "Height": 10
+            }
+        },
+        {
+            "LogName": "Adds shortcut from LC to beach",
+            "Action": "EditMap",
+            "Target": "Maps/Beach, Maps/Beach-NightMarket",
+            "When": {
+                "HasMod": "aztecviper.fishofstardew"
+            },
+            "FromFile": "assets/Locations/LoresCove/CastlePoint_Beach_FishStardew.tmx",
+            "ToArea": {
+                "X": 90,
+                "Y": 0,
+                "Width": 14,
+                "Height": 6
+            }
+        },
+        {
+            "LogName": "Adds warp ES Beach to Lore's Cove Beach",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 136
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 3,
+                        "Y": 136
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 136
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_LoresCove 62 53"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 3,
+                        "Y": 136
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_LoresCove 62 53"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Removes barrier from East Scarp",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 0,
+                        "Y": 101
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 0,
+                        "Y": 102
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ]
+        },
+        {
+            "LogName": "Lore's Cove Events Blank",
+            "Action": "Load",
+            "Target": "Data/Events/EastScarp_LoresCove",
+            "FromFile": "assets/Data/Blank.json"
+        },
+        {
+            "LogName": "Lore's Cove Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                "CastleAncientTree": "{{i18n:CastleAncientTree}}",
+                "CastleDockView": "{{i18n:CastleDockView}}",
+                "CastleGrave1": "{{i18n:CastleGrave1}}",
+                "CastleGrave2": "{{i18n:CastleGrave2}}",
+                "CastleLilyBush": "{{i18n:CastleLilyBush}}",
+                "CastleStatue": "{{i18n:CastleStatue}}",
+                "ForLore": "{{i18n:ForLore}}",
+                "SWSign": "{{i18n:SWSign}}"
+            }
+        }
+    ]
+}

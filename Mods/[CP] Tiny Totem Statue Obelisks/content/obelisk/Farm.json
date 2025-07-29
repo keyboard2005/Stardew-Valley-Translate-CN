@@ -1,0 +1,38 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.load.gingerisland",
+      "Action": "Load",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_farm_obelisk.png",
+      "When": {
+        "FarmObeliskEnabled": "true",
+        "HasFile:assets/obelisk/{{season}}/{{season}}_farm_obelisk.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.gingerisland",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/flowers/farm_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true",
+        "HasFile:assets/flowers/farm_obelisk.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.gingerisland",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late",
+      "Target": "Maps/Farm Obelisk",
+      "FromFile": "assets/moss/farm_obelisk.png",
+      "When": {
+        "MossEnabled": "true",
+        "HasFile:assets/moss/farm_obelisk.png": true
+      }
+    }
+  ]
+}

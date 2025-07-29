@@ -1,0 +1,84 @@
+{
+	"Changes": [
+{
+    "LogName": "Load Furniture Image",
+    "Action": "Load",
+    "Priority": "Low",
+    "Target": "Mods/DN.SnS/SnSFurniture",
+    "FromFile": "Assets/Items & Crops/SnSFurniture.png"
+  },
+  {
+    "LogName": "Create Furniture",
+    "Action": "EditData",
+    "Target": "Data/Furniture",
+    "Entries": {
+      "{{ModID}}_MateoPortrait": "{{ModID}}_MateoPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Furniture.SpousePortrait.Mateo}}/{{MateoPortraitSpriteIndex}}/Mods\\DN.SnS\\SnSFurniture/true",
+      "{{ModID}}_HectorPortrait": "{{ModID}}_HectorPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Furniture.SpousePortrait.Hector}}/{{HectorPortraitSpriteIndex}}/Mods\\DN.SnS\\SnSFurniture/true",
+      "{{ModID}}_CirrusPortrait": "{{ModID}}_CirrusPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Furniture.SpousePortrait.Cirrus}}/4/Mods\\DN.SnS\\SnSFurniture/true",
+    }
+  },
+  {
+    "LogName": "Add Spouse Portraits to Traveling Cart",
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": [
+      "Traveler",
+      "Items"
+    ],
+    "Entries": {
+      "{{ModID}}_MateoPortrait": {
+        "Price": 30000,
+        "AvailableStock": 1,
+        "AvailableStockLimit": "Player",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": "PLAYER_HEARTS Current Mateo 14",
+        "Id": "(F){{ModID}}_MateoPortrait",
+        "ItemId": "(F){{ModID}}_MateoPortrait",
+        "IsRecipe": false,
+        "StackModifierMode": "Stack",
+        "QualityModifierMode": "Stack"
+      },
+      "{{ModID}}_HectorPortrait": {
+        "Price": 30000,
+        "AvailableStock": 1,
+        "AvailableStockLimit": "Player",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": "PLAYER_HEARTS Current Hector 14",
+        "Id": "(F){{ModID}}_HectorPortrait",
+        "ItemId": "(F){{ModID}}_HectorPortrait",
+        "IsRecipe": false,
+        "StackModifierMode": "Stack",
+        "QualityModifierMode": "Stack"
+      },
+      "{{ModID}}_CirrusPortrait": {
+        "Price": 30000,
+        "AvailableStock": 1,
+        "AvailableStockLimit": "Player",
+        "AvoidRepeat": false,
+        "UseObjectDataPrice": false,
+        "IgnoreShopPriceModifiers": false,
+        "PriceModifierMode": "Stack",
+        "AvailableStockModifiers": null,
+        "AvailableStockModifierMode": "Stack",
+        "Condition": "PLAYER_HEARTS Current Cirrus 14",
+        "Id": "(F){{ModID}}_CirrusPortrait",
+        "ItemId": "(F){{ModID}}_CirrusPortrait",
+        "IsRecipe": false,
+        "StackModifierMode": "Stack",
+        "QualityModifierMode": "Stack"
+      }
+  
+    }
+  },
+]
+}

@@ -1,0 +1,251 @@
+{
+
+// 1.6.0 update Lines for Hat Mouse and Friends. Everyone besides Wizard and Hamster speak in rather broken language. 
+  "HatMouse.Beanie": "ぼうし、ぜんぶのあたまにあうよ。オーケー、ちゅう？",
+//The Hamster is a reference to Bijou from Hamtaro. She is from France in the English version (and apparently from Russia in the French version)
+  "HatMouse.Hamster": "いらっしゃいませ！素敵な帽子を探しているんでちゅ—あ、ちゅう？",
+  "HatMouse.Bow": "リボンほしい？かみにつけるリボン？それともぼうしにつけるリボン？",
+  "HatMouse.Dipper": "なぞときをして、ぼうしをうって、これがオレのいちにち、ちゅう。",
+  "HatMouse.Flower": "いいぼうしでかわいくなるよ、ちゅう！",
+  "HatMouse.Goggles": "すべてのヒーローにはゴーグルがひつよう、ちゅう！",
+  "HatMouse.Headband": "ヘッドバンドほしい？へへ、うってないよ、ちゅう！", 
+  "HatMouse.Link": "（生き生きとしたジェスチャーをする）",
+//Mouse Marlon's line is a reference to the real Marlon's own shop line in the Adventurer's Guild
+  "HatMouse.Marlon": "新しいぼうしを 買いに きたのか、ちゅう？",
+  "HatMouse.Post": "きょうはゆうびんがないから、ぼうしをうる、ちゅう。",
+  "HatMouse.Red": "（黙ってあなたを見つめる）",
+  "HatMouse.Sailor": "きのうはほをあげ、きょうはぼうしをうり、あしたはたぶんさかなつり。",
+//Strawhat Mouse's line is a reference to Luffy from One Piece's catchphrase "I'm gonna be King of the Pirates"
+  "HatMouse.Strawhat": "ぼうしをかって、ちゅう！ ぼうし王に、オレはなる！",
+//This is a reference to the Wizard's introduction. The name is a Rasmodeus+Mouse wordplay
+  "HatMouse.Wizard": "我輩はネズモディアス…深奥なる真理の求道者。",
+  
+// Lines for the Casino Vendor, highly disapproving of the farmer being there
+  "CasinoVendor1.Default": "ああ、あなたですか。やっぱりただのウィンドウショッピングですか？",
+  "CasinoVendor2.Default": "あなたのゴールドはここでは価値がないことを理解していますよね？",
+  "CasinoVendor3.Default": "以前は会員カードを受け取る人をもっと厳選していました。",
+  "CasinoVendor4.Default": "全てのアイテムが販売されています…条件さえ満たせば。",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, short and blunt. The second line is a wordplay referring to his blue skin and blue = sad. If you can't find similar wordplay in the language you're translating, maybe you can change it to just "Why am I blue? I don't know what you're talking about."
+  "CasinoVendor1.Bouncer": "見覚えがある？勘違いだ。",
+  "CasinoVendor2.Bouncer": "なぜ青い？ 勘違いだ。実は経験豊富なんだ。",
+  "CasinoVendor3.Bouncer": "会員カードがあるなら、入れるよ。",
+  "CasinoVendor4.Bouncer": "すべてのアイテムはQiコインで購入できます。",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, friendly.
+  "CasinoVendor1.Green": "ようこそ、Qiの奇妙な奇品へ。名前はまだ試行錯誤中です。",
+  "CasinoVendor2.Green": "カジノでの時間を楽しんでいますか？",
+  "CasinoVendor3.Green": "ボスは新しいおもちゃ、いや、貴重なお客様が来てとても喜んでいます。",
+  "CasinoVendor4.Green": "ここでQiコインを交換してください。他にどこで使うんですか？",
+ 
+// Line for the Traveling Merchant during Festival of Ice
+  "TravelerIce": "ああ、私の珍しい発見にとって完璧な背景です！今日だけ、友達。",
+  
+// Lines for the Raccoon. "Bobo" is what she calls you.
+  "Raccoon1": "私たちは種を持っています、おひとよしさん。",
+  "Raccoon2": "種が欲しいですか、おひとよしさん？",
+  "Raccoon3": "おそらく、あなたはこれらの種を持っていないでしょう。",
+  
+// 1.7.0 update Lines for the Crow. Just crow sounds.
+  "Crow1": "カー、カー！",
+  "Crow2": "カァッ… カー！",
+  "Crow3": "カァー！",
+  "Crow4": "カー、カー、カー！",  
+  "Crow5": "カァァ…",
+  
+// 1.9.0 Lines for the Joja Cashier, friendly but canned. "Join us and thrive" calls to JojaMart's slogan "Join us. Thrive".
+  "JojaCashier1.Default": "Jojaマートへようこそ！今日はいかがお過ごしですか？",
+  "JojaCashier2.Default": "Jojaマートの会員になれば、さらにお得になりますよ！",
+  "JojaCashier3.Default": "わたしたちと せいちょうしよう！えらばれたしょうひんの とくべつセールを おみのがしなく！",
+  
+// 1.9.0 update special lines for Joja cashier rotations.
+  "JojaCashier1.Daena": "よっ！Jojaマートへようこそ！",
+  "JojaCashier2.Daena": "今日もいい日になってる？ さっさと済ませよっか！",
+  "JojaCashier3.Daena": "わたしたちと せいちょうしよう！…まあ、せめて手ぶらで帰らないでね！",
+  "JojaCashier_JojaDay.Daena": "今日はJojaデー！種が20%オフだよ！",   
+  "JojaCashier1.Naufal": "あ… あの… ようこそ、Jojaマートへ！えっと… 素敵な一日をお過ごしくださいね。",
+  "JojaCashier2.Naufal": "お会計の準備はできましたか？いえ、慌てなくても大丈夫ですよ。ごゆっくりどうぞ！",
+  "JojaCashier3.Naufal": "わたしたちと、えっと… せいちょうしよう？あ… とにかく、何かお困りでしたら、お気軽に声をかけてくださいね！",  
+
+// 1.9.0 update Special lines for various Cashier NPCs
+  "JojaCashier.Juliet": "必需品は揃ってるよ…でもC通路にはちょっと怪しい物もね。",
+  "JojaCashier_JojaDay.Juliet": "ラッキーね！今日はJojaデーで、全ての種が20％オフよ。",
+  "JojaCashier.Jessie": "会えて嬉しいわ。困ったことがあればいつでも言ってね。",
+  "JojaCashier.Shane": "何が欲しいんだ？",  
+  
+// Line for the Star Token Exchanger at the Stardew Valley Fair
+  "StarToken": "やあ！スターデューバレーまつりで最高の戦利品を手に入れるために、ここでスタートークンを交換しましょう！",
+  
+//1.6.0 update Lines for the Scholar who stands in for the Desert Trader
+  "DesertTrader4_male.Scholar": "ああ、ラクダがあなたを気に入っているようですね、友よ。実に賢い生き物です",
+  "DesertTrader4_female.Scholar": "ああ、ラクダがあなたを気に入っているようですね、友よ。実に賢い生き物です",
+  "DesertTrader3.Scholar": "私の故郷では、あなたの硬貨は風に舞う砂のようなものです。代わりにどんな宝物を提供できますか？",
+  "DesertTrader2.Scholar": "すべての遺物には物語があります、まるであなた自身のように。",
+  "DesertTrader1.Scholar": "ああ、知識と商品を求める仲間よ！取引しませんか？",
+  
+//1.6.0 update Lines for the Announcer who stands in for the Desert Trader
+  "DesertTrader4_male.RacerGuy": "ラクダがあなたを気に入ったみたいだ！これは素晴らしい兆しだよ！",
+  "DesertTrader4_female.RacerGuy": "ラクダがあなたを気に入ったみたいだ！これは素晴らしい兆しだよ！",
+  "DesertTrader3.RacerGuy": "ここではあなたの硬貨は使えないけど、何かエキサイティングなものを交換できるかい？",
+  "DesertTrader2.RacerGuy": "さあ、寄ってらっしゃい！驚きの品々をご覧あれ！",
+  "DesertTrader1.RacerGuy": "ようこそ、旅の人！取引の準備はできているかい？",
+  
+// Lines for Pierre at various festivals
+  "PierreJellyfish": "ゲッコウクラゲのように輝く珍しいアイテム！見逃さないで！",
+  "PierreEgg": "独占販売のアイテムがあります！日が暮れる前に手に入れて！",
+  "PierreFeast": "祝祭の品々であなたの休日を温かくしましょう！なくなる前に手に入れて！",
+  "PierreFlower": "最後のダンス前に、これらの美しい花でダンスパートナーを魅了しましょう！",
+  "PierreLuau": "{{FarmName}}農場を町の話題にするためのエキゾチックな装飾品！手に入れることができる間に！",
+  "PierreSpirit": "最も恐ろしい納屋を作るためのスプーキーな装飾品！消え去る前に手に入れて！",
+
+// 1.7.0 Update Lines for the clinic.
+  "MaruClinic": "これをひと口飲めば、すぐに元気いっぱいになりますよ。",
+  "HarveyClinic": "おや、いらっしゃい！健康をちゃんと気遣ってくれているようで、うれしいですね。",
+  
+// Alex  
+  "AlexIceCream": "暑い日に冷たいアイスクリームはどう？",
+  
+//1.9.0 Rotation Concession lines
+  "Concessions1.Daena": "お菓子？ドリンク？任せて！",
+  "Concessions2.Daena": "映画の途中でお腹空いて後悔するよ？マジで。",
+  "Concessions3.Daena": "あんたのゲスト、お腹すいてそうだよ？優しくしてあげなって！",
+  "Concession.Daena": "スナックスタンドへようこそ！ゲストに何か美味しいの買ってあげる？",
+  "ConcessionAlone.Daena": "一人で来たんだ？ゲスト連れてくればスナックも買ってあげられるよ！映画ナイトがもっと楽しくなるって！",
+  "ConcessionPurchased.Daena": "{0}ね？映画始まったら{1}の席に届けるよ！",
+  "ConcessionAfterMovie.Daena": "映画終わったね！面白かった？ダメだったとしても、スナックは美味しかったでしょ！",
+  "Concessions1.Naufal": "あの… のどが渇いていたら、ドリンクもありますよ！",
+  "Concessions2.Naufal": "おいしいスナックがあると、映画がもっと楽しくなりますよね。",
+  "Concessions3.Naufal": "お連れさま、おなか空いてるかもしれませんね… ちょっとしたおやつ、いかがですか？",  
+  "Concession.Naufal": "あっ… えっと… いらっしゃいませ！お連れさまにスナックはいかがですか？",
+  "ConcessionAlone.Naufal": "あっ、えっと… ちなみにですが、お連れさまと一緒なら、その方にスナックを注文できるんです。映画をもっと特別なものにする、いい方法ですよ！",
+  "ConcessionPurchased.Naufal": "えっと… {0} をご注文ですね？映画が始まったら、{1} さんにお渡ししますね！",
+  "ConcessionAfterMovie.Naufal": "映画、どうでしたか？えっと… 楽しめていたらいいんですけど…！",
+  
+// 1.9.0 Rotation Movie Ticket Lines
+  "BoxOffice.Default": "友達誘いたい？チケット渡せば、それでOK！映画ナイトの始まり！",
+  "BoxOffice.Naufal": "よかったら、お友達にチケットをあげて、一緒に映画を楽しんでくださいね！",  
+
+//1.9.0 Central Station cameo
+  "CentralStation.PartTimer": "アルバイト",
+  "CentralStation.Merchant": "行商人", 
+  "CentralStation.SailorCat": "ねこの船乗り",    
+  "CentralStation.Naufal.1": "あっ… えっと… こんにちは。すみません… 一瞬、シフトマネージャーかと思っちゃいました…。",
+  "CentralStation.Naufal.2": "いろんなバイトをしているので… 手伝えるのは嬉しいんですけど、えっと… どこに行くんだっけ？って、時々分からなくなります…。",
+  "CentralStation.Naufal.3": "よく「休んだほうがいいよ」って言われるんですけど… でも、忙しくしてる方が落ち着くんです。誰かの役に立てる気がして…。",
+  "CentralStation.Daena.1": "こんな場所で接客業したことある？バトルロワイヤルだよ、マジで。",
+  "CentralStation.Daena.2": "バイト？ っていうか生き残りゲームでしょ！ ポテト揚げてたと思ったら、次の瞬間には観光客を手なずけてるのよ。",
+  "CentralStation.Daena.3": "シフトめちゃくちゃだけど、いろんなヤバいもの見れるよ。",
+  "CentralStation.Daena.4": "例えば…あのフラミンゴ。何でフラミンゴいんの？？",	
+  "CentralStation.Mark.1": "また仕事、またシフト… はぁ、家で寝ていたい。",
+  "CentralStation.Mark.2": "朝から疲れてて、仕事しても疲れて、家に帰ってもさらに疲れる… そう、毎日そんな感じだよ。",  
+  "CentralStation.Merchant.1": "今日は売り物はないよ、旅の人。ただ次の旅までのひとときの休息だけさ。",
+  "CentralStation.Merchant.2": "不思議ですね。こんなに人がいるのに、誰も長くは留まらない… 私たちは皆、ただ通り過ぎていくだけ。",  
+  "CentralStation.SailorCat.1": "私はロープの束で昼寝するの。電車のベンチは巻きつけないから落ち着かないのよ、猫にはね。",
+  "CentralStation.SailorCat.2": "海の上では、すべてが揺れていて眠りを誘うの。ここじゃ音と足音ばかり。",  
+	
+// Descriptions for Generic Mod Config Menu
+  "config.Raccoon.name": "アライグマ",
+  "config.Raccoon.description": "シンダーサップの森で解除可能なアライグマのトレーダーのポートレートを有効にします。",
+  
+//1.7.0 update  
+  "config.Crow.name": "カラス",
+  "config.Crow.description": "秘密の森で失われたアイテムのカラスのトレーダーのポートレートを有効にします。",
+
+  "config.Traveler.name": "旅する商人",
+  "config.Traveler.description": "シンダーサップの森で金曜日と日曜日に現れる旅する商人のポートレートを有効にします。",
+
+  "config.Bookseller.name": "本屋",
+  "config.Bookseller.description": "季節に2回町を訪れる本屋のポートレートを有効にします。",
+
+  "config.StarToken.name": "スタートークン交換者",
+  "config.StarToken.description": "スターデューバレーまつりでスタートークン交換者のポートレートを有効にします。",
+
+  "config.MagicBoat.name": "魔法の行商人",
+  "config.MagicBoat.description": "夜の市で魔法の行商人のポートレートを有効にします。",
+
+  "config.EggShop.name": "カリコの卵の交換者",
+  "config.EggShop.description": "砂漠のフェスティバルでカリコの卵の交換者のポートレートを有効にする。",
+
+//1.4.0 update
+  "config.OldMariner.name": "年老いた水夫",
+  "config.OldMariner.description": "年老いた水夫のポートレートを有効にします。", 
+
+  "config.PierreFestival.name": "祭りでのピエール",
+  "config.PierreFestival.description": "全ての祭りでピエールのスタンドのポートレートを有効にします。",
+
+// 1.6.0 update
+  "config.section.Desert.name": "砂漠のトレーダー",
+  "config.DesertTrader.name": "ポートレートを有効にする",
+  "config.DesertShift.name": "シフトをランダムに変更する",
+  "config.DesertShift.description": "商人が毎日交代します。",
+
+// 1.6.0 update
+  "config.section.Club.name": "カジノのベンダー",
+  "config.section.Club.description": "隠された砂漠カジノでQiコインの交換者。",
+  "config.Casino.name": "ポートレートを有効にする",
+  "config.CasinoShift.name": "シフトをランダムに変更する",
+  "config.CasinoShift.description": "ベンダーが毎日交代します。",
+
+// 1.6.0 update
+  "config.section.Island.name": "島のトレーダー",
+  "config.section.Island.description": "ジンジャーアイランドの鳥の商人。",
+  "config.IslandTrader.name": "ポートレートを有効にする",
+  "config.BirdShift.name": "シフトをランダムに変更する",
+  "config.BirdShift.description": "商人が毎日交代します。",
+
+  "config.section.JojaMart.name": "JojaMartのレジ係",
+  
+  "config.JojaCashier.name": "ポートレートを有効にする",
+
+//1.6.0 update  
+  "config.JojaShift.name": "シフトを予定する",
+  "config.JojaShift.description": "キャッシャーが毎日交代します。",
+  
+  "config.section.Theater.name": "劇場スタッフ",
+  
+  "config.MovieTicket.name": "チケット売り場の係員",
+  "config.MovieTicket.description": "映画館のチケット売り場の係員のポートレートを有効にします。",
+  
+  "config.MovieConcession.name": "売店の係員",
+  "config.MovieConcession.description": "映画館の売店の係員のポートレートを有効にします。",
+
+//1.6.0 update  
+  "config.MovieShift.name": "シフトを予定する",
+  "config.MovieShift.description": "劇場スタッフのポジションが毎日交代します。SVEを使用している場合はチケット係員のみ。",
+
+//1.5.0 update
+  "config.section.HouseMouse.name": "はっとまうす",
+  "config.section.HouseMouse.description": "シンダーサップの森の遠い家ではっとまうす。",
+  "config.HatMouse.name": "ポートレートを有効にする",
+
+//1.5.0 update  
+  "config.WildflourMouse.name": "Wildflourのはっとまうす",
+  "config.WildflourMouse.description": "「Ferngill Fashion Festival」で見られるスタイルを使用します。インストールされている場合のみ動作します。",
+  
+//1.5.0 update
+  "config.section.Volcano.name": "火山のドワーフ",
+  "config.section.Volcano.description": "火山ダンジョンの5階で見つかるドワーフのトレーダー。",
+  "config.VolcanoDwarf.name": "ポートレートを有効にする",
+
+//1.5.0 update  
+  "config.LavenderSkellyDwarf.name": "LavenderSkellyのドワーフ",
+  "config.LavenderSkellyDwarf.description": "「Dwarf Portrait Replacement」で見られるスタイルを使用します。インストールされている場合のみ動作します。",
+
+//1.5.0 update
+  "config.section.NightMarketDecor.name": "装飾品の売り手",
+  "config.section.NightMarketDecor.description": "夜の市の青い船で装飾品の売り手。",
+  "config.DecorBoat.name": "ポートレートを有効にする",
+
+//1.5.0 update  
+  "config.CatPipe.name": "猫の煙管",
+  "config.CatPipe.description": "「Night Market Cat Boat」がインストールされている場合のみ動作します。猫に煙管を使わせます。",  
+  
+//1.9.0 update  
+  "config.section.Misc.name": "その他",
+  "config.Nyapu.name": "Nyapuのポートレート",
+  "config.Nyapu.description": "すべてのキャラのポートレートをNyapuさんのアートスタイルに変更します。",
+  "config.CentralStation.name": "セントラルステーションのカメオ出演",
+  "config.CentralStation.description": "「Central Station」がインストールされている場合、一部の販売員が登場するようになります。"  
+}
+
+

@@ -1,0 +1,336 @@
+{
+    "Changes": [
+
+        // EGG FESTIVAL
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 28 54 2",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 36 64 3",
+                    "Delimiter": "/"
+                },
+				{   // LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Mateo 28 54 2",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Mateo 36 64 3",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": "true",
+				"HasConversationTopic |contains=MateoPain": false,
+			  },	  
+        },
+	
+        // FLOWER DANCE
+
+        {   
+    
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {	// LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 53 31 1",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 53 31 1",
+                    "Delimiter": "/"
+                },
+				{	// LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters_y2" ],
+                    "Value": "Mateo 53 31 1",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Mateo 53 31 1",
+                    "Delimiter": "/"
+                },
+            ],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },  
+        },
+		{
+			"LogName": "Marriage Flower Dance Accept",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": {
+				"SpouseFlowerDanceAccept_Mateo": "{{i18n:Festivals.Mateo.FlowerDance.Accept}}",
+			}
+		},
+
+        // LUAU
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 15 5 2",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","MainEvent_additionalCharacters"],
+					"Value": "Mateo 15 5 2",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Mateo 17 5 2",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","MainEvent_additionalCharacters_y2"],
+					"Value": "Mateo 17 5 2",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+        // DANCE OF THE MOONLIGHT JELLIES
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Mateo 13 27 1",
+					"Delimiter": "/"
+				},
+				{   // LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "Mateo 13 27 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+        // STARDEW VALLEY FAIR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 33 81 0",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Mateo 20 78 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+        // SPIRIT'S EVE
+
+       {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Mateo 25 57 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					 "Operation": "Append",
+					 "Target": ["Entries",	"Set-Up_additionalCharacters_y2"],
+					 "Value": "Mateo 25 57 1",
+					 "Delimiter": "/"
+				 },
+				 ],
+				 "When": {
+					 "HasConversationTopic |contains=MateoPain": false,
+				   },
+		 },
+
+        // ICE FESTIVAL 
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 99 40 1",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters"],
+					"Value": "Mateo 99 40 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Mateo 45 16 1",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters_y2"],
+					"Value": "Mateo 45 16 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+        // WINTER STAR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "Mateo 22 58 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters_y2"	],
+					"Value": "Mateo 23 58 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+        },
+
+		// RSV GATHERING FESTIVAL 
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"TextOperations": [
+					{ // LOCATION: SET UP
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters"],
+					  "Value": "Mateo 100 49 2",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters"],
+					  "Value": "Mateo 77 50 0",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: SET UP Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					  "Value": "Mateo 100 49 2",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					  "Value": "Mateo 77 50 0",
+					  "Delimiter": "/"
+					 },
+				],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+
+		// RSV EMBER OF RESOLUTIONS 		
+
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"TextOperations": [
+				 { // LOCATION: SET UP 
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters"],
+				  "Value": "Mateo 53 43 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters"],
+				  "Value": "Mateo 49 42 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: SET UP Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				  "Value": "Mateo 53 43 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+				  "Value": "Mateo 49 42 3",
+				  "Delimiter": "/"
+				 },
+		 	],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch1.Mateo.3": true,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+    ]
+}

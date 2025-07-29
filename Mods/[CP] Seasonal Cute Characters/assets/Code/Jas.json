@@ -1,0 +1,149 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+		
+		{
+			"LogName": "Load Jas's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Jas_Spring, Portraits/Jas_Summer, Portraits/Jas_Fall, Portraits/Jas_Winter_Outdoor, Portraits/Jas_Winter_Indoor, Portraits/Jas_FlowerDance, Portraits/Jas_SpiritsEve, Characters/Jas_Spring, Characters/Jas_Summer, Characters/Jas_Fall, Characters/Jas_Winter_Outdoor, Characters/Jas_Winter_Indoor, Characters/Jas_FlowerDance, Characters/Jas_SpiritsEve, Portraits/Jas_Beach, Characters/Jas_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jas/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Jas - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jas_Spring, Characters/Jas_Summer, Characters/Jas_Fall, Characters/Jas_Winter_Outdoor, Characters/Jas_Winter_Indoor, Characters/Jas_FlowerDance, Characters/Jas_SpiritsEve, Characters/Jas_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jas/Jas_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jas Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Jas", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JasSpring": {
+					"Id": "{{ModId}}.JasSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jas_Spring",
+					"Portrait": "Portraits/Jas_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JasSummer": {
+					"Id": "{{ModId}}.JasSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jas_Summer",
+					"Portrait": "Portraits/Jas_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JasFall": {
+					"Id": "{{ModId}}.JasFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jas_Fall",
+					"Portrait": "Portraits/Jas_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JasWinterIndoor": {
+					"Id": "{{ModId}}.JasWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Jas_Winter_Indoor",
+					"Portrait": "Portraits/Jas_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JasWinterOutdoor": {
+					"Id": "{{ModId}}.JasWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Jas_Winter_Outdoor",
+					"Portrait": "Portraits/Jas_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.JasFlowerDance": {
+					"Id": "{{ModId}}.JasFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Jas_FlowerDance",
+					"Portrait": "Portraits/Jas_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.JasSpirit": {
+					"Id": "{{ModId}}.JasSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Jas_SpiritsEve",
+					"Portrait": "Portraits/Jas_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.JasBeach": {
+					"Id": "{{ModId}}.JasBeach",
+					"Sprite": "Characters/Jas_Beach",
+					"Portrait": "Portraits/Jas_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+
+				"{{ModId}}.JasIsland": {
+					"Id": "{{ModId}}.JasIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Jas_Beach",
+					"Portrait": "Portraits/Jas_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Jas - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 108, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 108, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Jas - Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+            "FromFile": "assets/{{NoNose}}/Random/BundleSprites.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Jas Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Jas",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+			
+	]
+}

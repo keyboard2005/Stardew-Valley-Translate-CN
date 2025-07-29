@@ -1,0 +1,85 @@
+{
+    "Changes": [
+        // MATEO
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Mateo_sit_stare": "22/22 22 22 21 21 21 22 22 22 23 23 23 22 22 22/22",
+                "Mateo_sit_bench": "24/24 24/24",
+                "Mateo_drink": "29/29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 30 31 32 33 33 33 33 33 33 33 32 31 30/29",
+                "Mateo_sword": "40/40 40/40",
+                "Mateo_book": "25 25 25/26 26 26 26/25 25 25",
+                "Mateo_violin": "44/44 44 44 44 44 44 45 45 45 45 45 45 45 45/44"
+            }
+        },
+        // HECTOR 
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Hector_kickysit": "29/29 30 30 31 31 32 32 33 33 34 34 33 33 32 32 31 31 30 30 29/29",
+                "Hector_drink": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 22 21/20",
+                "Hector_gurdy": "24/25 25 26 26 27 27 26 26 25 25/24",
+                "Hector_scritch": "0/17 17 18 18 17 17/0",
+                "Hector_staticsit": "35/35 35/35",
+                "Hector_hip": "16/16 16/16",
+                "Hector_loaf": "19/19 19/19",
+            }
+        },
+        // CIRRUS
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Cirrus_keytar": "16/16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16/16",
+                "Cirrus_sidesit": "30/30 30 31 31 31 32 32 32 31 31 31 30 30/30",
+                "Cirrus_phone": "35/35 35/35",
+                "Cirrus_phonesit": "53/53 53 53 53 53 53 53 53 53 54 54 54 55 55 55 53/53 53 53 53 53 53 53 53 53",
+                "Cirrus_sing": "39/39 40 40 41 41 42 42 43 43 42 42 41 41 40 40 39/39",
+                "Cirrus_wiggleidle": "0/45 45 46 46 47 47 48 48 47 47 46 46 45 45/0",
+                "Cirrus_sideidle": "4/49 49 50 50 51 51 52 52 51 51 50 50 49 49/4",
+            }
+        },
+        // ROSLIN 
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Roslin_frontmagic": "16/16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 25 25 26 26 27 27 28 28 29 29 30 30 31 31 32 32 31 31 30 30 29 29 28 28 27 27 26 26 25 25 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16/16",
+                "Roslin_sidemagic": "35/35 36 36 36 36 35/35",
+                "Roslin_fidget": "33/33 34 34 34 34 33/33",
+                "Roslin_fidget2": "38/38 39 39 39 39 38/38",
+            }
+        },
+        // DANDELION
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Dandelion_readleft": "16/16 16 16 16 16 16 17 17 17 17 17 17 17 17/16",
+                "Dandelion_readright": "18/18 18 18 18 18 18 19 19 19 19 19 19 19 19/18",
+                "Dandelion_readfront": "20/20 20 20 20 20 20 20 21 21 21 21 21 21 21/20",
+                "Dandelion_loaf": "22/22 22/22",
+                "Dandelion_stim": "23/23 24 24 25 25 26 26 27 27 28 28 29 29 30 30 31 31 23/23",
+                "Dandelion_workout": "40/40 41 41 42 42 43 43 44 44 40/40",
+            }
+        },
+        // SOLOMON
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "entries": {
+                "Solomon_read": "16/16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 25 25 26 26/16",
+                "Solomon_cross": "28/29 29 30 30 31 31 32 32 33 33 34 34 35 35 36 36 37 37 38 38 39 39 40 40/28",
+
+            }
+        },
+    ]
+}

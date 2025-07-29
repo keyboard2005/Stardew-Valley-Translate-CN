@@ -1,0 +1,217 @@
+{
+    "Changes": [ //Fixing Beatrice's pathing	and adding resort dialogue .................................
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "FromFile": null,
+            "Entries": {
+                "Beatrice": "{{i18n:gift.beatrice.love}}/84 192 199/{{i18n:gift.beatrice.like.{{GenderNeutral}} }}/207 117 24/{{i18n:gift.beatrice.dislike}}/152 202/{{i18n:gift.beatrice.hate}}/129 130 131 148/{{i18n:gift.beatrice.neutral}}/74/"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "Beatrice_sit": "0/16/0",
+                "Beatrice_read": "0/17/0",
+                "Beatrice_stool": "0/18/0",
+                "Beatrice_shop": "12/24/12",
+                "Beatrice_pjs": "0/26/13",
+                "Beatrice_chair": "12/25/12",
+                "Beatrice_telescope": "0/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22/0"
+            }
+        },
+       /* { // To activate, delete [TMX] Beatrice Festival Locations folder
+            "LogName": "BeatriceFestival",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Beatrice.json",
+            "When": {
+                "HasMod |contains=attonbomb.beatricelocations": false
+            }
+        },*/
+        {
+            "LogName": "Beatrice Portrait",
+            "Action": "Load",
+            "Target": "Characters/Beatrice",
+            "FromFile": "assets/Characters/Beatrice/Beatrice_spring.png",
+        },
+        {
+            "LogName": "Beatrice Portrait",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "FromFile": "assets/Characters/Beatrice/Beatrice_{{season}}.png",
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+  	    "Update": "OnLocationChange",
+            "Target": "Characters/Beatrice",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_EggFestival.png",
+            "When": {
+                "DayEvent": "egg festival",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_FlowerDance.png",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_Luau.png",
+            "When": {
+                "DayEvent": "luau",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_IceFestival.png",
+            "When": {
+                "DayEvent": "festival of ice",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_SVFair.png",
+            "When": {
+                "DayEvent": "stardew valley fair",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Characters/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Characters/Beatrice/Festivals/Beatrice_WinterStar.png",
+            "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Beatrice Portrait",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Beatrice",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_spring.png",
+        },
+        {
+            "LogName": "Beatrice Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_{{season}}.png",
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/portraits/Beatrice/Beatrice_EggFestival.png",
+            "When": {
+                "DayEvent": "egg festival",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_FlowerDance.png",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_Luau.png",
+            "When": {
+                "DayEvent": "luau",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_IceFestival.png",
+            "When": {
+                "DayEvent": "festival of ice",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_SVFair.png",
+            "When": {
+                "DayEvent": "stardew valley fair",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Beatrice",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/Portraits/Beatrice/Beatrice_WinterStar.png",
+            "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp",
+            }
+        },
+        {
+            "LogName": "Beatrice DIalogue",
+            "Action": "Load",
+            "Target": "Characters/schedules/Beatrice",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.json",
+        },
+        {
+            "LogName": "Beatrice Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Beatrice.json"
+        },
+        {
+            "LogName": "Beatrice Summer",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Beatrice",
+            "Entries": {
+                "Resort_Entering": "{{i18n:Beatrice.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Beatrice.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Beatrice.Resort_Shore}}",
+                "Resort_Umbrella": "{{i18n:Beatrice.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Beatrice.Resort_Wander}}",
+                "Resort_Bar": "{{i18n:Beatrice.Resort_Bar}}",
+                "Resort": "{{i18n:Beatrice.Resort}}"
+            },
+        }
+    ]
+}

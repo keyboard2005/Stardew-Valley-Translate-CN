@@ -1,0 +1,106 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Festival Maps",
+      "Action": "Load",
+      "Target": "Maps/DN.SnS_VioletMoon",
+      "FromFile": "Assets/Maps/VioletMoon.tmx"
+    },
+    {
+      "LogName": "Add Custom Locations Data",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "DN.SnS_VioletMoon": {
+          "DisplayName": "{{i18n:DN.SnS.Festival.Name}}",
+          "DefaultArrivalTile": null,
+          "ExcludeFromNpcPathfinding": false,
+          "CreateOnLoad": {
+            "MapPath": "Maps/DN.SnS_VioletMoon",
+            "Type": null,
+            "AlwaysActive": false
+          },
+          "FormerLocationNames": null,
+          "ArtifactSpots": [],
+          "FishAreas": {},
+          "Fish": [],
+          "Forage": []
+        }
+      }
+    },
+
+    {
+      "LogName": "Violet Moon Renaissance Faire",
+      "Action": "EditData",
+      "Target": "Data/Festivals/FestivalDates",
+      "Entries": {
+        "fall1": "{{i18n:DN.SnS.Festival.Name}}"
+      }
+    },
+    {
+      "LogName": "Festival Data",
+      "Action": "Load",
+      "Target": "Data/Festivals/Fall1",
+      "FromFile": "Data/Violet Moon Renaissance Faire/VM_CoreData.json"
+    },
+    {
+      "LogName": "Main Event Edit",
+      "Action": "EditData",
+      "Target": "Data/Festivals/Fall1",
+      "Entries": {
+        "mainEvent": "fade/viewport 58 62/loadActors MainEvent/warp farmer1 58 63/warp farmer2 59 63/warp farmer3 60 639/warp farmer4 61 63/faceDirection farmer1 0/faceDirection farmer2 0/faceDirection farmer3 0/faceDirection farmer4 0/pause 1000/speak Lewis \"{{i18n:DN.SnS.Festival.Dialogue.Lewis1}}\"/pause 500/speak Lewis \"{{i18n:DN.SnS.Festival.Dialogue.Lewis2}}\"/globalFade/viewport -1000 -1000/waitForOtherPlayers festivalEnd/pause 600/message \"{{i18n:DN.SnS.Festival.End1}}\"/waitForOtherPlayers festivalEnd/end"
+      }
+    },
+    {
+      "LogName": "Give Vanilla NPCs lines",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "Entries": {
+        "Abigail": "{{i18n:DN.SnS.Festival.Speak.Abigail}}",
+        "Robin": "{{i18n:DN.SnS.Festival.Speak.Robin}}",
+        "Demetrius": "{{i18n:DN.SnS.Festival.Speak.Demetrius}}",
+        "Maru": "{{i18n:DN.SnS.Festival.Speak.Maru}}",
+        "Sebastian": "{{i18n:DN.SnS.Festival.Speak.Sebastian}}",
+        "Pierre": "{{i18n:DN.SnS.Festival.Speak.Pierre}}",
+        "Caroline": "{{i18n:DN.SnS.Festival.Speak.Caroline}}",
+        "Linus": "{{i18n:DN.SnS.Festival.Speak.Linus}}",
+        "Alex": "{{i18n:DN.SnS.Festival.Speak.Alex}}",
+        "George": "{{i18n:DN.SnS.Festival.Speak.George}}",
+        "Evelyn": "{{i18n:DN.SnS.Festival.Speak.Evelyn}}",
+        "Lewis": "{{i18n:DN.SnS.Festival.Speak.Lewis}}",
+        "Clint": "{{i18n:DN.SnS.Festival.Speak.Clint}}",
+        "Emily": "{{i18n:DN.SnS.Festival.Speak.Emily}}",
+        "Penny": "{{i18n:DN.SnS.Festival.Speak.Penny.{{Relationship:Penny |contains=married}}}}",
+        "Pam": "{{i18n:DN.SnS.Festival.Speak.Pam}}",
+        "Haley": "{{i18n:DN.SnS.Festival.Speak.Haley}}",
+        "Jodi": "{{i18n:DN.SnS.Festival.Speak.Jodi}}",
+        "Kent": "{{i18n:DN.SnS.Festival.Speak.Kent}}",
+        "Sam": "{{i18n:DN.SnS.Festival.Speak.Sam}}",
+        "Leah": "{{i18n:DN.SnS.Festival.Speak.Leah}}",
+        "Shane": "{{i18n:DN.SnS.Festival.Speak.Shane}}",
+        "Marnie": "{{i18n:DN.SnS.Festival.Speak.Marnie}}",
+        "Elliott": "{{i18n:DN.SnS.Festival.Speak.Elliott}}",
+        "Gus": "{{i18n:DN.SnS.Festival.Speak.Gus}}",
+        "Dwarf": "{{i18n:DN.SnS.Festival.Speak.Dwarf}}",
+        "Wizard": "{{i18n:DN.SnS.Festival.Speak.Wizard}}",
+        "Harvey": "{{i18n:DN.SnS.Festival.Speak.Harvey}}",
+        "Sandy": "{{i18n:DN.SnS.Festival.Speak.Sandy}}",
+        "Jas": "{{i18n:DN.SnS.Festival.Speak.Jas}}}",
+        "Vincent": "{{i18n:DN.SnS.Festival.Speak.Vincent}}",
+        "Willy": "{{i18n:DN.SnS.Festival.Speak.Willy}}",
+        "Leo": "{{i18n:DN.SnS.Festival.Speak.Leo}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+        "Event.cs.1531": "$q -1 null#{{i18n:DN.SnS.Festival.Question}}#$r -1 0 yes#{{i18n:DN.SnS.Festival.YesAnswer}}#$r -1 0 no#{{i18n:DN.SnS.Festival.NoAnswer}}"
+      },
+      "When": {
+        "Season": "fall",
+        "Day": 1
+      }
+    }
+  ]
+}

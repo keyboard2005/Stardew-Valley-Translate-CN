@@ -1,0 +1,2329 @@
+{
+  "Changes": [
+    //albinoRabbit
+    { //albino rabbit temp actor
+    "LogName": "Albino Rabbit",
+    "Action": "Load",
+    "Priority":"Low",
+    "Target": "Characters/albinoRabbit",
+    "FromFile": "assets/Characters/Menagerie/albinoRabbit.png"
+},
+    {
+      "LogName": "albinoRabbit Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_albinoRabbit": {
+          "DisplayName": "albinoRabbit",
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "rabbit",
+          "BabySound": null,
+          "Texture": "Characters\\albinoRabbit",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "6398444",
+        "HasMod": "LemurKat.JulietHouse.NPC"
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_albinoRabbit": {
+          "AnimalId": "LemurKat.EastScarpe.CP_albinoRabbit",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "albinoRabbit",
+          "HomeTileX": 18,
+          "HomeTileY": 10,
+          "Condition": null
+        }
+      }
+    },
+    //alpaca
+    {
+      "LogName": "Alpaca Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Alpaca": {
+          "DisplayName": "Alpaca",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals\\Alpaca2",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorAlpaca1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 16,
+          "HomeTileY": 15,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_OutdoorAlpaca2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 18,
+          "HomeTileY": 16,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorAlpaca1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 4,
+          "HomeTileY": 4,
+          "Condition": "SEASON winter"
+        },
+        "LemurKat.EastScarpe.CP_IndoorAlpaca2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 10,
+          "HomeTileY": 5,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorAlpaca1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 4,
+          "HomeTileY": 4,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_IndoorAlpaca2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Alpaca",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Alpaca",
+          "PetMessage": [
+            "{{i18n:Alpaca.Inspection.1}}"
+          ],
+          "HomeTileX": 10,
+          "HomeTileY": 5,
+          "Condition": null
+        }
+      }
+    },
+    //babychick
+    {
+      "LogName": "BabyChick Sprites",
+      "Action": "Load",
+      "Target": "Animals/BabyChick",
+      "FromFile": "assets/Characters/Menagerie/BabyChick.png"
+    },
+    {
+      "LogName": "BabyChick Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_BabyChickBrown": {
+          "DisplayName": "BabyChick",
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "SpringBirds",
+          "BabySound": null,
+          "Texture": "Animals\\BabyBrown Chicken",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 16,
+          "HomeTileY": 13,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_OutdoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 22,
+          "HomeTileY": 16,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 9,
+          "HomeTileY": 12,
+          "Condition": "SEASON winter"
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 2,
+          "HomeTileY": 12,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 9,
+          "HomeTileY": 12,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickBrown",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 2,
+          "HomeTileY": 12,
+          "Condition": null
+        }
+      }
+    },
+    {
+      "LogName": "BabyChick Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_BabyChickWhite": {
+          "DisplayName": "BabyChick",
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "SpringBirds",
+          "BabySound": null,
+          "Texture": "Animals\\BabyWhite Chicken",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 16,
+          "HomeTileY": 14,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_OutdoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 22,
+          "HomeTileY": 17,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 9,
+          "HomeTileY": 13,
+          "Condition": "SEASON winter"
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 2,
+          "HomeTileY": 13,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorBabyChick1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 9,
+          "HomeTileY": 13,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_IndoorBabyChick2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BabyChickWhite",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BabyChick",
+          "PetMessage": null,
+          "HomeTileX": 2,
+          "HomeTileY": 13,
+          "Condition": null
+        }
+      }
+    },
+    //reginald
+    {
+      "LogName": "Reginald Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Reginald": {
+          "DisplayName": "Baron_Reginald",
+          "House": "Barn",
+          "Gender": "Male",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals\\Reginald",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorReginald": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Reginald",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Baron_Reginald",
+          "PetMessage": null,
+          "HomeTileX": 22,
+          "HomeTileY": 14,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorReginald": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Reginald",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Baron_Reginald",
+          "PetMessage": null,
+          "HomeTileX": 18,
+          "HomeTileY": 5,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorReginald": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Reginald",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "Baron_Reginald",
+          "PetMessage": null,
+          "HomeTileX": 18,
+          "HomeTileY": 5,
+          "Condition": null
+        }
+      }
+    },
+    //brownchicken
+    {
+      "LogName": "Brown Chicken Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_BrownChicken": {
+          "DisplayName": "BrownChicken",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "BabySound": null,
+          "Texture": "Animals\\Brown Chicken",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorBrownChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BrownChicken",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "BrownChicken",
+          "PetMessage": null,
+          "HomeTileX": 12,
+          "HomeTileY": 14,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorBrownChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BrownChicken",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BrownChicken",
+          "PetMessage": null,
+          "HomeTileX": 8,
+          "HomeTileY": 11,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorBrownChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_BrownChicken",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "BrownChicken",
+          "PetMessage": null,
+          "HomeTileX": 8,
+          "HomeTileY": 11,
+          "Condition": null
+        }
+      }
+    },
+    //emperor duckling
+    {
+      "LogName": "Emperor Duckling Sprites",
+      "Action": "Load",
+      "Target": "Animals/EmperorDuckling",
+      "FromFile": "assets/Characters/Menagerie/EmperorDuckling.png"
+    },
+    {
+      "LogName": "Emperor Duckling Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Emperor_Duckling": {
+          "DisplayName": "Emperor_Duckling",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Duck",
+          "BabySound": null,
+          "Texture": "Animals\\EmperorDuckling",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870011",
+        "Hearts:Duck2NPC": "10",
+        "FriendableAnimals |contains=EmpressDuck, EmperorDuck": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Outdoor_Emperor_Duckling": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Emperor_Duckling",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Emperor_Duckling",
+          "PetMessage": null,
+          "HomeTileX": 21,
+          "HomeTileY": 63,
+          "Condition": "SEASON spring"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870011",
+        "FriendableAnimals |contains=EmpressDuck, EmperorDuck": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Outdoor_Emperor_Duckling": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Emperor_Duckling",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Emperor_Duckling",
+          "PetMessage": null,
+          "HomeTileX": 21,
+          "HomeTileY": 63,
+          "Condition": "SEASON spring"
+        }
+      }
+    },
+    //emperor duckling swimming
+    {
+      "LogName": "Emperor Duckling Swim Sprites",
+      "Action": "Load",
+      "Target": "Animals/Emperor_Duckling_Swim",
+      "FromFile": "assets/Characters/Menagerie/Emperor_Duckling_Swim.png"
+    },
+    {
+      "LogName": "Emperor Duckling Swim Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Emperor_Duckling_Swim": {
+          "DisplayName": "Emperor_Duckling_Swim",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Duck",
+          "BabySound": null,
+          "Texture": "Animals\\Emperor_Duckling_Swim",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870011",
+        "Hearts:Duck2NPC": "10",
+        "FriendableAnimals |contains=EmpressDuck, EmperorDuck": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Outdoor_Emperor_Duckling_Swim": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Emperor_Duckling_Swim",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Emperor_Duckling",
+          "PetMessage": null,
+          "HomeTileX": 26,
+          "HomeTileY": 66,
+          "Condition": "SEASON spring"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870011",
+        "FriendableAnimals |contains=EmpressDuck, EmperorDuck": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Outdoor_Emperor_Duckling_Swim": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Emperor_Duckling_Swim",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Emperor_Duckling",
+          "PetMessage": null,
+          "HomeTileX": 22,
+          "HomeTileY": 66,
+          "Condition": "SEASON spring"
+        }
+      }
+    },
+    //Fairy Penguin
+    {
+      "LogName": "Fairy Penguin Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Fairy_Penguin": {
+          "DisplayName": "Fairy_Penguin",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals\\FairyPenguin",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57879902"
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorFairy_Penguin1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Fairy_Penguin",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Fairy_Penguin",
+          "PetMessage": [
+            "{{i18n:FairyPenguin.Inspection.1}}"
+          ],
+          "HomeTileX": 15,
+          "HomeTileY": 116,
+          "Condition": "TIME 1630 2600"
+        },
+        "LemurKat.EastScarpe.CP_OutdoorFairy_Penguin2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Fairy_Penguin",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Fairy_Penguin",
+          "PetMessage": [
+            "{{i18n:FairyPenguin.Inspection.1}}"
+          ],
+          "HomeTileX": 16,
+          "HomeTileY": 117,
+          "Condition": "TIME 1630 2600"
+        }
+      }
+    },
+    //Fairy Penguin Chick
+    {
+      "LogName": "Fairy Penguin Chick Sprites",
+      "Action": "Load",
+      "Target": "Animals/Fairy_Penguin_Chick",
+      "FromFile": "assets/Characters/Menagerie/Fairy_Penguin_Chick.png"
+    },
+    {
+      "LogName": "Fairy Penguin Chick Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Fairy_Penguin_Chick": {
+          "DisplayName": "Fairy_Penguin_Chick",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals\\Fairy_Penguin_Chick",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57879902"
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorFairy_PenguinChick": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Fairy_Penguin_Chick",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "Fairy_Penguin_Chick",
+          "PetMessage": [
+            "{{i18n:FairyPenguinChick.Inspection.1}}"
+          ],
+          "HomeTileX": 16,
+          "HomeTileY": 120,
+          "Condition": "SEASON spring"
+        }
+      }
+    },
+    //friend gull
+    {
+      "LogName": "FriendGull Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_FriendGull": {
+          "DisplayName": "FriendGull",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "seagulls",
+          "BabySound": null,
+          "Texture": "Characters\\LexiFriendGull",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57872011"
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Cave_FriendGull": {
+          "AnimalId": "LemurKat.EastScarpe.CP_FriendGull",
+          "LocationId": "EastScarp_SeaCave",
+          "DisplayName": "FriendGull",
+          "PetMessage": null,
+          "HomeTileX": 26,
+          "HomeTileY": 7,
+          "Condition": null
+        }
+      }
+    },
+    //happy slime
+    {
+      "LogName": "Happy Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_HappySlime": {
+          "DisplayName": "HappySlime",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "slime",
+          "BabySound": null,
+          "Texture": "Characters\\HappySlime",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Basement_HappySlime": {
+          "AnimalId": "LemurKat.EastScarpe.CP_HappySlime",
+          "LocationId": "EastScarp_ToriSlimeBasement",
+          "DisplayName": "HappySlime",
+          "PortraitTexture": "Portraits/HappySlime",
+          "PetMessage": [
+            "This is a pretty golden slime. He seems friendly."
+          ],
+          "HomeTileX": 5,
+          "HomeTileY": 16,
+          "Condition": null
+        }
+      }
+    },
+    //little gruff
+    {
+      "LogName": "Little Gruff Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_LittleGruff": {
+          "DisplayName": "LittleGruff",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "goat",
+          "BabySound": null,
+          "Texture": "Characters\\LittleGruff",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    /*{
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_LittleGruff": {
+          "AnimalId": "LemurKat.EastScarpe.CP_LittleGruff",
+          "LocationId": "",
+          "DisplayName": "LittleGruff",
+          "PortraitTexture": "Portraits/LittleGruff",
+          "PetMessage": [
+            "{{i18n:LittleGruff.Inspection.1}}"
+          ],
+          "HomeTileX": 5,
+          "HomeTileY": 16,
+          "Condition": null
+        }
+      }
+    }*/
+    //munch
+    {
+      "LogName": "Munchington Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Munchington_Portrait",
+      "FromFile": "assets/Characters/Menagerie/Munchington_Portrait.png"
+    },
+    {
+      "LogName": "Munchington Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Munchboi": {
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "House": "Barn",
+          "Gender": "Male",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cat",
+          "BabySound": null,
+          "Texture": "Characters\\Munchboi",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Update": "OnLocationChange",
+      "When": {
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_Munchboi_Outdoor": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Munchboi",
+          "LocationId": "{{Random:EastScarp_House1, EastScarp_House1, EastScarp_Village |key=MunchieOut}}",
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "PortraitTexture": "Portraits/Munchington_Portrait",
+          "PetMessage": [
+            "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
+          ],
+          "HomeTileX": "{{Random:4, 12, 19 |key=MunchieOut}}",
+          "HomeTileY": "{{Random:10, 19, 50 |key=MunchieOut}}",
+          "Condition": "!PLAYER_NPC_RELATIONSHIP Host Aideen Married"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Update": "OnLocationChange",
+      "When": {
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_Munchboi_Indoor": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Munchboi",
+          "LocationId": "{{Random:EastScarp_House1, EastScarp_House1 |key=MunchieAbout}}",
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "PortraitTexture": "Portraits/Munchington_Portrait",
+          "PetMessage": [
+            "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
+          ],
+          "HomeTileX": "{{Random:4, 12 |key=MunchieAbout}}",
+          "HomeTileY": "{{Random:10, 19 |key=MunchieAbout}}",
+          "Condition": "!PLAYER_NPC_RELATIONSHIP Host Aideen Married"
+        },
+        "LemurKat.EastScarpe.CP_Spawn_Munchboi_Indoor_Marriage": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Munchboi",
+          "LocationId": "FarmHouse",
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "PortraitTexture": "Portraits/Munchington_Portrait",
+          "PetMessage": [
+            "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
+          ],
+          "HomeTileX": "50",
+          "HomeTileY": "25",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Host Aideen Married"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Update": "OnLocationChange",
+      "When": {
+        "Weather: valley |contains=Sun, Wind": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_Munchboi_Outdoor_Marriage": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Munchboi",
+          "LocationId": "Farm",
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "PortraitTexture": "Portraits/Munchington_Portrait",
+          "PetMessage": [
+            "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
+          ],
+          "HomeTileX": "63",
+          "HomeTileY": "17",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Host Aideen Married",
+          //PLAYER_NPC_RELATIONSHIP Host Aideen Married, 
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Update": "OnLocationChange",
+      "When": {
+        "Weather: valley |contains=Sun, Wind": true,
+        "HasMod": "flashshifter.GrandpasFarm",
+        "FarmType": "Standard"
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_Munchboi_Outdoor_Marriage": {
+          "AnimalId": "LemurKat.EastScarpe.CP_Munchboi",
+          "LocationId": "Farm",
+          "DisplayName": "{{i18n:Name.Munchington}}",
+          "PortraitTexture": "Portraits/Munchington_Portrait",
+          "PetMessage": [
+            "{{i18n:Munchboi.{{Random:01,02,03,04,05}}}}"
+          ],
+          "HomeTileX": "100",
+          "HomeTileY": "51",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Host Aideen Married",
+          //PLAYER_NPC_RELATIONSHIP Host Aideen Married, 
+        }
+      }
+    },
+    //VoidBilly
+    {
+      "LogName": "VoidBilly Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_VoidBilly": {
+          "DisplayName": "VoidBilly",
+          "House": "Barn",
+          "Gender": "Male",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "goat",
+          "BabySound": null,
+          "Texture": "Animals\\VoidBilly",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Update": "OnTimeChange",
+      "When": {
+        "HasSeenEvent |contains=57877007": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_VoidBilly": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidBilly",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidBilly",
+          "PetMessage": [
+            "{{i18n:VoidBilly.Inspection.1}}"
+          ],
+          "HomeTileX": 40,
+          "HomeTileY": 38,
+          "Condition": "!PLAYER_HAS_SEEN_EVENT Host 57877007"
+        }
+      }
+    },
+    //VoidChick
+    {
+      "LogName": "VoidChick Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_VoidChick": {
+          "DisplayName": "VoidChick",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": null,
+          "BabySound": null,
+          "Texture": "Animals\\BabyVoid Chicken",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasConversationTopic": "AbyssRoosterGrow",
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_VoidChick": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidChick",
+          "LocationId": "EastScarp_VillageInn",
+          "DisplayName": "VoidChick",
+          "PetMessage": [
+            "{{i18n:VoidChick.{{Random:01,02,03,04,05}} }}"
+          ],
+          "HomeTileX": 14,
+          "HomeTileY": 11,
+          "Condition": null
+        }
+      }
+    },
+    //VoidNanny
+    {
+      "LogName": "VoidGoat Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_VoidNanny": {
+          "DisplayName": "VoidGoat",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "goat",
+          "BabySound": null,
+          "Texture": "Animals\\VoidNanny",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_VoidNanny1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidNanny",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidGoat",
+          "PetMessage": [
+            "{{i18n:VoidNanny.Inspection.1}}"
+          ],
+          "HomeTileX": 65,
+          "HomeTileY": 47,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_Spawn_VoidNanny2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidNanny",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidGoat",
+          "PetMessage": [
+            "{{i18n:VoidNanny.Inspection.1}}"
+          ],
+          "HomeTileX": 17,
+          "HomeTileY": 42,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_Spawn_VoidNanny3": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidNanny",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidGoat",
+          "PetMessage": [
+            "{{i18n:VoidNanny.Inspection.1}}"
+          ],
+          "HomeTileX": 37,
+          "HomeTileY": 33,
+          "Condition": null
+        }
+      }
+    },
+    //VoidKid
+    {
+      "LogName": "VoidKid Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_VoidKid": {
+          "DisplayName": "VoidKid",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "goat",
+          "BabySound": null,
+          "Texture": "Animals\\VoidKid",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_Spawn_VoidKid1": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidKid",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidGoat",
+          "PetMessage": [
+            "{{i18n:VoidKid.Inspection.1}}"
+          ],
+          "HomeTileX": 70,
+          "HomeTileY": 50,
+          "Condition": null
+        },
+        "LemurKat.EastScarpe.CP_Spawn_VoidKid2": {
+          "AnimalId": "LemurKat.EastScarpe.CP_VoidKid",
+          "LocationId": "EastScarp_DeepMountains",
+          "DisplayName": "VoidGoat",
+          "PetMessage": [
+            "{{i18n:VoidKid.Inspection.1}}"
+          ],
+          "HomeTileX": 19,
+          "HomeTileY": 42,
+          "Condition": null
+        }
+      }
+    },
+    //white chicken
+    {
+      "LogName": "White Chicken Entry",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "LemurKat.EastScarpe.CP_WhiteChicken": {
+          "DisplayName": "WhiteChicken",
+          "House": "Barn",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": -1,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 32,
+            "Y": 448,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": null,
+          "DaysToMature": 1,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": null,
+          "DeluxeProduceItemIds": null,
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200,
+          "DeluxeProduceLuckMultiplier": 0,
+          "ProfessionForHappinessBoost": -1,
+          "ProfessionForQualityBoost": -1,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "BabySound": null,
+          "Texture": "Animals\\White Chicken",
+          "HarvestedTexture": null,
+          "BabyTexture": null,
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 0,
+          "HappinessDrain": 0,
+          "UpDownPetHitboxTileSize": "1, 1.75",
+          "LeftRightPetHitboxTileSize": "1.75, 1.25",
+          "BabyUpDownPetHitboxTileSize": "1, 1.75",
+          "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": false
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_OutdoorWhiteChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_WhiteChicken",
+          "LocationId": "EastScarp_Village",
+          "DisplayName": "WhiteChicken",
+          "PetMessage": null,
+          "HomeTileX": 16,
+          "HomeTileY": 15,
+          "Condition": "SEASON spring summer fall"
+        },
+        "LemurKat.EastScarpe.CP_IndoorWhiteChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_WhiteChicken",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "WhiteChicken",
+          "PetMessage": null,
+          "HomeTileX": 4,
+          "HomeTileY": 12,
+          "Condition": "SEASON winter"
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "MEEP/FarmAnimals/SpawnData",
+      "When": {
+        "HasSeenEvent": "57870004",
+        "Weather: valley |contains=Snow, Storm, Rain, GreenRain": true
+      },
+      "Entries": {
+        "LemurKat.EastScarpe.CP_IndoorWhiteChicken": {
+          "AnimalId": "LemurKat.EastScarpe.CP_WhiteChicken",
+          "LocationId": "EastScarp_JacobBarn",
+          "DisplayName": "WhiteChicken",
+          "PetMessage": null,
+          "HomeTileX": 4,
+          "HomeTileY": 12,
+          "Condition": null
+        }
+      }
+    }
+  ]
+}

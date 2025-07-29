@@ -1,0 +1,58 @@
+{
+    "Changes": [
+
+        // PORTRAIT & SPRITE DEFAULT LOAD
+        {
+            "LogName": "Default Portraits & Sprites - Dandelion",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Dandelion",
+            "FromFile": "assets/{{TargetPathOnly}}/{{Portrait Style}}/Dandelion/spring_Dandelion.png"
+        },
+        {
+            "LogName": "Default Portraits & Sprites - Dandelion",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dandelion",
+            "FromFile": "assets/{{TargetPathOnly}}/Dandelion/spring_Dandelion.png"
+        },
+
+        // LOADS
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/spring_Dandelion, Portraits/summer_Dandelion, Portraits/fall_Dandelion, Portraits/winter_Dandelion, Portraits/Dandelion_beach, Portraits/Dandelion_armored",
+            "FromFile": "assets/{{TargetPathOnly}}/{{Portrait Style}}/Dandelion/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/spring_Dandelion, Characters/summer_Dandelion, Characters/fall_Dandelion, Characters/winter_Dandelion, Characters/Dandelion_beach, Characters/Dandelion_armored",
+            "FromFile": "assets/{{TargetPathOnly}}/Dandelion/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/DandelionMine",
+            "FromFile": "assets/{{TargetPathOnly}}/Dandelion/Dandelion_armored.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/DandelionMine",
+            "FromFile": "assets/{{TargetPathOnly}}/{{Portrait Style}}/Dandelion/Dandelion_armored.png"
+        },
+
+        //Overlay
+        {
+            "LogName": "Pendant Overlay",
+            "Action": "EditImage",
+            "Priority": "Early",
+            "Target": "Portraits/spring_Dandelion, Portraits/summer_Dandelion, Portraits/fall_Dandelion, Portraits/winter_Dandelion, Portraits/Dandelion_beach, Portraits/Dandelion_armored",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/Dandelion/{{TargetWithoutPath}}_pendant.png",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange",
+            "When": { "HasSeenEvent |contains=SnS.Ch5.Dandelion": true, "HasMod |contains=McJoan.Dandelion": false }
+        }
+    ]
+}

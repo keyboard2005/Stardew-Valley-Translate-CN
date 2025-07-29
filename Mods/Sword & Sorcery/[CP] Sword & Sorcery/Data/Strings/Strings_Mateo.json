@@ -1,0 +1,56 @@
+{
+  "Changes": [
+    {
+      "LogName": "Map Strings",
+      "Action": "EditData",
+      "Target": "strings/StringsFromMaps",
+      "Entries": {
+        //MATEO'S STRINGS 
+
+        "AcademicSpace": "{{i18n:Strings.Mateo.AcademicSpace}}",
+        "NotPapyrus": "{{i18n:Strings.Mateo.NotPapyrus}}",
+        "NotFlowey": "{{i18n:Strings.Mateo.NotFlowey}}",
+        "VoidCreatures": "{{i18n:Strings.Mateo.VoidCreatures}}",
+        "GhostRadio": "{{i18n:Strings.Mateo.GhostRadio.{{Random:1++2++3++4++5++6++7++8|inputSeparator=++}}}}",
+        "FeelingCrabby": "{{i18n:Strings.Mateo.FeelingCrabby}}",
+        "OverwhelmingBooks": "{{i18n:Strings.Mateo.OverwhelmingBooks}}",
+        "OverwhelmingBooks2": "{{i18n:Strings.Mateo.OverwhelmingBooks2}}",
+        "OverwhelmingBooks3": "{{i18n:Strings.Mateo.OverwhelmingBooks3}}",
+        "DungeonsDragons": "{{i18n:Strings.Mateo.DungeonsDragons}}",
+        "NotADigimon": "{{i18n:Strings.Mateo.NotADigimon}}",
+        "Chewtoy": "{{i18n:Strings.Mateo.Chewtoy}}",
+        "BabyEmeritus": "{{i18n:Strings.Mateo.BabyEmeritus}}",
+        "CrabStab": "{{i18n:Strings.Mateo.CrabStab}}",
+        "LittleForge": "{{i18n:Strings.Mateo.LittleForge}}",
+        "FairyRoses": "{{i18n:Strings.Mateo.FairyRoses}}",
+        "Destinium": "{{i18n:Strings.Mateo.Destinium}}",
+        "GameSupplements": "{{i18n:Strings.Mateo.GameSupplements}}",
+        "LongLiveTheKing": "{{i18n:Strings.Mateo.LongLiveTheKing}}",
+        "UnderScarpe": "{{i18n:Strings.Mateo.UnderScarpe}}",
+        "BlahajBlast": "{{i18n:Strings.Mateo.BlahajBlast}}",
+        "GooniesBoat": "{{i18n:Strings.Mateo.GooniesBoat}}",
+        "Underforge": "{{i18n:Strings.Mateo.Underforge}}",
+        "MasteryWall": "{{i18n:Strings.Mateo.MasteryWall}}",
+        "SmithSupplies": "{{i18n:Strings.Mateo.SmithSupplies}}",
+        "WornChainmail": "{{i18n:Strings.Mateo.WornChainmail}}",
+        "MysteryCaveExit": "{{i18n:Strings.Mateo.MysteryCaveExit}}",
+        "GuildEmblem": "{{i18n:Strings.Mateo.GuildEmblem}}",
+        "HawthornLetter": "{{i18n:Strings.Mateo.HawthornLetter}}",
+        "TentMessage": "{{i18n:Strings.Mateo.TentMessage}}",
+        "ExtraBooks1": "{{i18n:Strings.Mateo.ExtraBooks1}}",
+        "ExtraBooks2": "{{i18n:Strings.Mateo.ExtraBooks2}}",
+        "ExtraBooks3": "{{i18n:Strings.Mateo.ExtraBooks3}}",
+        "ExtraBooks4": "{{i18n:Strings.Mateo.ExtraBooks4}}",
+        "ExtraBooks5": "{{i18n:Strings.Mateo.ExtraBooks5}}",
+        "ExtraBooks6": "{{i18n:Strings.Mateo.ExtraBooks6}}",
+        "AdventurerDoor1": "{{i18n:Strings.Mateo.AdventurerDoor1}}",
+        "AdventurerDoor2": "{{i18n:Strings.Mateo.AdventurerDoor2}}",
+        "AdventurerDoor3": "{{i18n:Strings.Mateo.AdventurerDoor3}}",
+        "SpareSwords": "{{i18n:Strings.Mateo.SpareSwords}}",
+        "RequestBoard": "{{i18n:Strings.Mateo.RequestBoard}}",
+        "CirrusFood": "{{i18n:Strings.Mateo.CirrusFood}}",
+
+      }
+    }
+  ]
+ }

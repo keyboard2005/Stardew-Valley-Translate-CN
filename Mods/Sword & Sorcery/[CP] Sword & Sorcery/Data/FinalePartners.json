@@ -1,0 +1,34 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "DN.SnS/FinalePartners",
+      "Entries": {
+        "default": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.SoloFarmer",
+          "VictoryEventId": "SnS.Ch4.Victory.SoloFarmer"
+        },
+        "Mateo": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.Mateo",
+          "VictoryEventId": "SnS.Ch4.Victory.Mateo"
+        },
+        "Hector": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.Hector",
+          "VictoryEventId": "SnS.Ch4.Victory.Hector"
+        },
+        "Cirrus": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.Cirrus",
+          "VictoryEventId": "SnS.Ch4.Victory.Cirrus"
+        },
+        "MadDog.HashtagBearFam.Gunnar": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.Gunnar",
+          "VictoryEventId": "SnS.Ch4.Victory.Gunnar"
+        },
+        "SenS": {
+          "IntermissionEventId": "SnS.Ch4.Intermission.Sen",
+          "VictoryEventId": "SnS.Ch4.Victory.Sen"
+        }
+      }
+    }
+  ]
+}

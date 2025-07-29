@@ -1,0 +1,21 @@
+{
+	"Changes":[
+		{
+			"LogName": "Star Token Changer",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_StardewValleyFair_StarTokens", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/StarToken_Default",	
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:StarToken}}",
+						"RandomDialogue": null
+					}
+				],
+			},
+		},
+	],
+}

@@ -1,0 +1,137 @@
+{
+    "Changes": [
+        // CIRRUS' SPOUSE ROOM
+        {
+            "Action": "Load",
+            "Target": "Maps/CirrusSpouseRoom",
+            "FromFile": "Assets/Maps/CirrusSpouseRoom.tmx",
+            "When": {
+                "CirrusSpouseRoomConfig": true
+            }
+        },
+        // CIRRUS' SPOUSE PATIO 
+        {
+            "Action": "Load",
+            "Target": "Maps/CirrusSpousePatio",
+            "FromFile": "assets/Maps/CirrusSpousePatio.tmx",
+            "When": {
+                "CirrusSpousePatioConfig": true
+            }
+        },
+        // SPOUSE ROOM SNACK MACHINES 
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_GiveDailySnack": {
+                    "Id": "{{ModId}}_GiveDailySnack",
+                    "Trigger": "Manual",
+                    "Condition": "!PLAYER_HAS_MAIL Current {{ModId}}_GaveDailySnack",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GaveDailySnack",
+                        "AddItem {{ModID}}_freshpopcorn"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_ResetDailySnack": {
+                    "Id": "{{ModId}}_ResetDailySnack",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_GaveDailySnack",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_GaveDailySnack"
+                    ],
+                    "MarkActionApplied": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_GiveDailyDrink": {
+                    "Id": "{{ModId}}_GiveDailyDrink",
+                    "Trigger": "Manual",
+                    "Condition": "!PLAYER_HAS_MAIL Current {{ModId}}_GaveDailyDrink",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GaveDailyDrink",
+                        "AddItem {{ModID}}_fountainsoda"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_ResetDailyDrink": {
+                    "Id": "{{ModId}}_ResetDailyDrink",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_GaveDailyDrink",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_GaveDailyDrink"
+                    ],
+                    "MarkActionApplied": false
+                }
+            }
+        },
+        // MAKES CIRRUS' BED SLEEPABLE WHEN MARRIED
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_LionsMane",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 5
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Sleep",
+                        "Bed": "T"
+                    }
+                }
+            ],
+            "When": {
+                "Relationship:Cirrus |contains=Dating, Engaged, Married": true
+            }
+        },
+        // CIRRUS REACTS TO PLAYER'S "DEATH" 
+        {
+            "LogName": "Player Death - Mines",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Cirrus 18 10 1/pause 1500/showFrame 5/message \"{{i18n:Core.Cirrus.PlayerKilled.Mines.01}}\"/pause 1000/message \"{{i18n:Core.Cirrus.PlayerKilled.Mines.02}}\"/viewport 19 10 true/pause 1000/speak Cirrus \"{{i18n:Core.Cirrus.PlayerKilled.Mines.03}}\"/pause 1000/emote farmer 28/minedeath/end"
+            },
+            "When": {
+                "Relationship:Cirrus |contains=Dating, Engaged, Married": true
+            }
+        },
+        {
+            "LogName": "Player Death - Skull Cave",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Cirrus 22 8 2/pause 1500/showFrame 5/message \"{{i18n:Core.Cirrus.PlayerKilled.Skull.01}}\"/pause 1000/message \"{{i18n:Core.Cirrus.PlayerKilled.Skull.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:Core.Cirrus.PlayerKilled.Skull.03}}\"/speed Cirrus 5/move Cirrus 0 3 2/textAboveHead Cirrus \"!!!\"/move Cirrus -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Cirrus 0 1 3/speak Cirrus \"{{i18n:Core.Cirrus.PlayerKilled.Skull.04}}\"/emote farmer 60/pause 500/speak Cirrus \"{{i18n:Core.Cirrus.PlayerKilled.Skull.05}}\"/emote Cirrus 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:Core.Cirrus.PlayerKilled.Skull.06{{PlayerPronouns}}}}\"/pause 500/speak Harvey \"{{i18n:Core.Cirrus.PlayerKilled.Skull.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/faceDirection Cirrus 3/speak Cirrus \"{{i18n:Core.Cirrus.PlayerKilled.Skull.08}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end"
+            },
+            "When": {
+                "Relationship:Cirrus |contains=Dating, Engaged, Married": true
+            }
+        },
+        // CUSTOM CHILD - FREDDIE
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Toddler, Characters/Toddler_dark",
+            "FromFile": "assets/Characters/Cirrus/Kids/cirrus_freddie.png",
+            "When": {
+                "Relationship:Cirrus": "Married",
+                "CustomCirrusFreddie": "true"
+            }
+        },
+        // CUSTOM CHILD - BRITTANY
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+            "FromFile": "assets/Characters/Cirrus/Kids/cirrus_brittany.png",
+            "When": {
+                "Relationship:Cirrus": "Married",
+                "CustomCirrusBrittany": "true"
+            }
+        },
+    ]
+}

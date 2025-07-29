@@ -1,0 +1,58 @@
+Warp to Mateo: debug wtc mateo
+Reload the content pack: patch reload DestyNova.Mateo.CP 
+
+**ALL EVENTS ARE THREE DAYS APART UNLESS STATED OTHERWISE.**
+
+debug ebi SnS.Ch1.Mateo.0 - 0 Hearts pt 1 - "MateoCaution"
+Enter the library. 
+
+debug ebi SnS.Ch1.Mateo.1 - 0 Hearts pt 2 - "MateoRescue" 
+Enter the mines after seeing the prior event and getting the sword from Marlon. No timegate.  
+
+debug ebi SnS.Ch1.Mateo.2 - 2 Hearts - "MateoLibrary" 
+Walk into town on a clear night between 8pm and midnight after seeing the prior event.
+
+debug ebi SnS.Ch1.Mateo.3 - 4 Hearts - "MateoAdmission"
+Walk onto the beach on a clear night between 6pm and midnight after seeing the prior event.
+
+debug ebi SnS.Ch1.Mateo.4 - 5 Hearts pt 1 - "MateoConfrontation"
+Enter the mines between 6pm and midnight after seeing the prior event. 
+
+debug ebi SnS.Ch1.Mateo.5 - 5 Hearts pt 2 - "MateoWyatt" - MISSABLE 
+Enter the saloon while the "MateoConfrontation" conversation topic is active between noon and midnight.
+
+debug ebi SnS.Ch1.Mateo.6 - 5 Hearts pt 3 - "MateoAcceptance"
+Enter the Adventurer's Guild between 2pm and 10pm after seeing the prior event.
+
+debug ebi SnS.Ch1.Mateo.7 - 6 Hearts (No timegate, no conversation topic)
+Walk into town between on a clear day between 10am and 6pm day after seeing the prior event. No timegate.
+
+debug ebi SnS.Ch1.Mateo.8 - 6 Hearts pt 2 (No timegate, no conversation topic) 
+Walk into the forest on a rainy day between 6pm and midnight after seeing the prior event. No timegate. 
+ 
+debug ebi SnS.Ch1.Mateo.9 - 7 Hearts - "MateoPain" 
+Enter the Hospital between 9am and 3pm (not on Friday) after seeing the prior event and having met Krobus. 
+
+debug ebi SnS.Ch1.Mateo.10 - 7 Hearts pt 2 - "MateoRecovery" 
+Walk into the town on a clear night between 8pm and midnight (not on Friday) one week after seeing the prior event. 
+
+debug ebi SnS.Ch1.Mateo.11 - 8 Hearts pt 1 - "CGuildConstruction" 
+Enter East Scarp on a sunny day between 10am and 6pm two weeks after seeing the prior event. 
+
+debug ebi SnS.Ch1.Mateo.12 - 8 Hearts pt 2 - "CGuildComplete" 
+Enter East Scarp on a sunny day between 10am and 6pm after completing the quest issued by the prior event. 
+
+debug ebi SnS.Ch1.Mateo.13 - Bonus - Galaxy Sword - MISSABLE 
+Enter the Coastal Adventurer's Guild after the guild is complete. This event will only play if you've unlocked the bus, but have not yet gotten the Galaxy Sword. 
+
+debug ebi SnS.Ch1.Mateo.14 - 10 Hearts, Platonic Ending - "MateoIntegrity" 
+Walk into the railroad on a clear night between 8pm and midnight after seeing 8HP (not on Friday). During this event, you will have a PLATONIC and ROMANTIC option. In order for Mateo to be datable, you need to select the ROMANTIC option. 
+
+debug ebi SnS.Ch1.Mateo.15 - 10 Hearts pt 2, Romantic Fork - "MateoForest" 
+Walk into the ES Deep Mountains between 8pm and midnight after selecting the ROMANTIC dialogue option in the prior event. You will automatically be set to DATING status the day after this event plays. 
+
+debug ebi SnS.Ch1.Mateo.16 - 12 Hearts, Romantic Fork - "MateoDate" 
+Enter the mines anytime except Winter. 
+
+debug ebi SnS.Ch1.Mateo.17 - 14 Hearts, Romantic Fork - "MateoDeclaration"
+Enter East Scarp on a rainy day between 6am and 6pm after seeing the prior event. 

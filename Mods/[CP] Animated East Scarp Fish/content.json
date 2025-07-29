@@ -1,0 +1,283 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "Cerulean Nudibranch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Fairy Betta": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Golden Trout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "King Carp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Kokanee Salmon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Obsidian Maw": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Ornate Nudibranch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Red Herring": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sea Bunny Nudibranch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Slime Barbel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sunset Nudibranch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Cerulean Nudibranch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Cerulean Nudibranch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_CeruleanNudibranch": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cerulean_nudibranch.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Fairy Betta",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Fairy Betta": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_FairyBetta": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/fairy_betta.png}}:0..5@20"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Golden Trout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_GoldenTrout": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/golden_trout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "King Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "King Carp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_KingCarp": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/king_carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Kokanee Salmon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Kokanee Salmon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_KokaneeSalmon": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/kokanee_salmon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ornate Nudibranch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Ornate Nudibranch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_OrnateNudibranch": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ornate_nudibranch.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Obsidian Maw",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Obsidian Maw": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_ObsidianMaw": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/obsidian_maw.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Red Herring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Red Herring": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_RedHerring": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/red_herring.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sea Bunny Nudibranch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sea Bunny Nudibranch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_SeaBunnyNudibranch": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sea_bunny_nudibranch.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Slime Barbel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Slime Barbel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_SlimeBarbel": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/slime_barbel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sunset Nudibranch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sunset Nudibranch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedESFish_SunsetNudibranch": {
+                    "TargetTexture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 16,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sunset_nudibranch.png}}:0..3@30"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "Name": "AnimatedGemstones",
+    "Author": "Undare ~zBGEdit/CPA2SC",
+    "Version": "1.1.8",
+    "Description": "Make Gemstones sharp and shiny 41 in total and the rest of the minerals as static",
+    "UniqueID": "Undare.AnimatedGemstones",
+    "MinimumApiVersion": "2.10.0",
+    "UpdateKeys": [
+        "Nexus:4986"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "1.6.0"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "Required": true
+        }
+    ]
+}

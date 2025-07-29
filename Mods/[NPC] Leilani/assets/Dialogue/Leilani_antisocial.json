@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Leilani's Antisocial Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leilani",
+      "Entries": {
+        "summer_1": "{{i18n:antisocial.summer_1}}",
+        "summer_1_2": "{{i18n:antisocial.summer_1_2}}",
+        "summer_10": "{{i18n:antisocial.summer_10}}",
+        "summer_10_2": "{{i18n:antisocial.summer_10_2}}",
+        "summer_27": "{{i18n:antisocial.summer_27}}",
+        "summer_27_2": "{{i18n:antisocial.summer_27_2}}",
+        "Mon": "{{i18n:antisocial.Mon}}",
+        "Tue": "{{i18n:antisocial.Tue}}",
+        "Wed": "{{i18n:antisocial.Wed}}",
+        "Thu": "{{i18n:antisocial.Thu}}",
+        "Fri": "{{i18n:antisocial.Fri}}",
+        "Sat": "{{i18n:antisocial.Sat}}",
+        "Sun": "{{i18n:antisocial.Sun}}",
+        "SeedShop_28_20": "{{i18n:both.SeedShop_28_20}}",
+        "Custom_Ridgeside_RidgesideVillage_96_37": "{{i18n:both.Custom_Ridgeside_RidgesideVillage_96_37}}",
+        "Town_96_92": "{{i18n:both.Town_96_92}}",
+        "ArchaeologyHouse_12_9": "{{i18n:both.ArchaeologyHouse_12_9}}",
+        "ArchaeologyHouse_12_10": "{{i18n:both.ArchaeologyHouse_12_10}}",
+        "FishShop_4_6": "{{i18n:both.FishShop_4_6}}",
+        "keahi_prank": "{{i18n:both.keahi_prank}}"
+      }
+    }
+  ]
+}

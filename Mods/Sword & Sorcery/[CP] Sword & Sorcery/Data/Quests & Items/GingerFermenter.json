@@ -1,0 +1,483 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"DN.SnS_oldfashionedfermenter": {
+					"Name": "Old-Fashioned Fermenting Jar",
+					"DisplayName": "{{i18n:machine.oldfashionedfermenter.name}}",
+					"Description": "{{i18n:machine.oldfashionedfermenter.description}}",
+					"Price": 10,
+					"Fragility": 0,
+					"CanBePlacedOutdoors": true,
+					"CanBePlacedIndoors": true,
+					"IsLamp": false,
+					"Texture": "Textures/DN.SnS/SnSMachines",
+					"SpriteIndex": 0,
+					"CustomFields": {}
+				}
+			}
+		},
+		{
+			"LogName": "CraftingRecipes",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"DN.SnS_oldfashionedfermenter": "709 15 335 1 388 30/Home/DN.SnS_oldfashionedfermenter/true/null/{{i18n:machine.oldfashionedfermenter.name}}"
+			}
+		},
+		{
+			"LogName": "Fermenter Rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)DN.SnS_oldfashionedfermenter": {
+					"HasInput": false,
+					"HasOutput": false,
+					"OutputRules": [
+						{
+							"Id": "DN.SnS_orangegingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)635",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_orangegingerbeer",
+									"ItemId": "(O)DN.SnS_orangegingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_blueberrygingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)258",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_blueberrygingerbeer",
+									"ItemId": "(O)DN.SnS_blueberrygingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_pineapplegingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)832",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_pineapplegingerbeer",
+									"ItemId": "(O)DN.SnS_pineapplegingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_rhubarbgingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)252",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_rhubarbgingerbeer",
+									"ItemId": "(O)DN.SnS_rhubarbgingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_strawberrygingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)400",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_strawberrygingerbeer",
+									"ItemId": "(O)DN.SnS_strawberrygingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_peachgingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)636",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_peachgingerbeer",
+									"ItemId": "(O)DN.SnS_peachgingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_ancientfruitgingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)454",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_ancientfruitgingerbeer",
+									"ItemId": "(O)DN.SnS_ancientfruitgingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							//"InvalidCountMessage": null,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_ancienthuckleberrygingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)DN.SnS_ancientglowinghuckleberry",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_ancienthuckleberrygingerbeer",
+									"ItemId": "(O)DN.SnS_ancienthuckleberrygingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_ancientappleberrygingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)DN.SnS_ancientgiantappleberry",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_ancientappleberrygingerbeer",
+									"ItemId": "(O)DN.SnS_ancientappleberrygingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						},
+						{
+							"Id": "DN.SnS_ancientelderberrygingerbeer",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "(O)DN.SnS_ancientelderberry",
+									"RequiredCount": 1
+								}
+							],
+							"UseFirstValidOutput": false,
+							"OutputItem": [
+								{
+									"Id": "DN.SnS_ancientelderberrygingerbeer",
+									"ItemId": "(O)DN.SnS_ancientelderberrygingerbeer",
+									"CopyQuality": true
+								}
+							],
+							"MinutesUntilReady": 2250,
+							"DaysUntilReady": -1,
+							"RecalculateOnCollect": false
+						}
+					],
+					"AdditionalConsumedItems": [
+						{
+							"ItemID": "(O)829",
+							"RequiredCount": 1,
+						}
+					],
+					"InvalidCountMessage": "[LocalizedText Strings\\StringsFromCSFiles:Object.cs.12777]",
+					"LoadEffects": [
+						{
+							"Sound": "wateringCan",
+							"Interval": 100,
+							"ShakeDuration": -1
+						}
+					],
+					"AllowLoadWhenFull": false,
+					"WobbleWhileWorking": true,
+					"ShowNextIndexWhileWorking": true,
+					"ShowNextIndexWhenReady": true,
+					"IsIncubator": false
+				}
+			}
+		},
+		{
+			"LogName": "Age It Up",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+			  "(BC)163",
+			  "OutputRules"
+			],
+			"Entries": {
+			  "DN.SnS_orangegingerbeer": {
+				"Id": "DN.SnS_orangegingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_orangegingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_orangegingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_blueberrygingerbeer": {
+				"Id": "DN.SnS_blueberrygingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_blueberrygingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_blueberrygingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_pineapplegingerbeer": {
+				"Id": "DN.SnS_pineapplegingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_pineapplegingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_pineapplegingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_rhubarbgingerbeer": {
+				"Id": "DN.SnS_rhubarbgingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_rhubarbgingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_rhubarbgingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_strawberrygingerbeer": {
+				"Id": "DN.SnS_strawberrygingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_strawberrygingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_strawberrygingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_peachgingerbeer": {
+				"Id": "DN.SnS_peachgingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_peachgingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_peachgingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_ancientfruitgingerbeer": {
+				"Id": "DN.SnS_ancientfruitgingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_ancientfruitgingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_ancientfruitgingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_ancienthuckleberrygingerbeer": {
+				"Id": "DN.SnS_ancienthuckleberrygingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_ancienthuckleberrygingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_ancienthuckleberrygingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_ancientappleberrygingerbeer": {
+				"Id": "DN.SnS_ancientappleberrygingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_ancientappleberrygingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_ancientappleberrygingerbeer"
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  "DN.SnS_ancientelderberrygingerbeer": {
+				"Id": "DN.SnS_ancientelderberrygingerbeer",
+				"Triggers": [
+				  {
+					"RequiredItemId": "(O)DN.SnS_ancientelderberrygingerbeer",
+					"RequiredCount": 1
+				  }
+				],
+				"OutputItem": [
+				  {
+					"CustomData": {
+					  "AgingMultiplier": "4"
+					},
+					"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+					"ItemId": "(O)DN.SnS_ancientelderberrygingerbeer",
+				  }
+				],
+				"MinutesUntilReady": -1
+			  },
+			  
+	  
+			}
+		  },
+	]
+}

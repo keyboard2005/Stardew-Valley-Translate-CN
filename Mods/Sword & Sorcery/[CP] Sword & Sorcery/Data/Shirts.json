@@ -1,0 +1,77 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Shirt Sprites",
+      "Action": "Load",
+      "Target": "Mods/DN.SnS/Shirts",
+      "FromFile": "Assets/Items & Crops/SnSShirts.png"
+    },
+    {
+      "LogName": "Add Shirts",
+      "Action": "EditData",
+      "Target": "Data/Shirts",
+      "Entries": {
+        "DN.SnS_Mateo_Hoodie": {
+          "Name": "DN.SnS_Mateo_Hoodie",
+          "DisplayName": "{{i18n:DN.SnS_Mateo_Hoodie.Name}}",
+          "Description": "{{i18n:DN.SnS_Mateo_Hoodie.Description}}",
+          "Price": 2500,
+          "Texture": "Mods\\DN.SnS\\Shirts",
+          "SpriteIndex": 0,
+          "DefaultColor": null,
+          "CanBeDyed": false,
+          "IsPrismatic": false,
+          "HasSleeves": true,
+          "CanChooseDuringCharacterCustomization": false,
+          "CustomFields": {}
+        },
+
+        "DN.SnS_Hector_Hoodie": {
+          "Name": "DN.SnS_Hector_Hoodie",
+          "DisplayName": "{{i18n:DN.SnS_Hector_Hoodie.Name}}",
+          "Description": "{{i18n:DN.SnS_Hector_Hoodie.Description}}",
+          "Price": 2500,
+          "Texture": "Mods\\DN.SnS\\Shirts",
+          "SpriteIndex": 1,
+          "DefaultColor": null,
+          "CanBeDyed": false,
+          "IsPrismatic": false,
+          "HasSleeves": true,
+          "CanChooseDuringCharacterCustomization": false,
+          "CustomFields": {}
+        },
+
+        "DN.SnS_Cirrus_Hoodie": {
+          "Name": "DN.SnS_Cirrus_Hoodie",
+          "DisplayName": "{{i18n:DN.SnS_Cirrus_Hoodie.Name}}",
+          "Description": "{{i18n:DN.SnS_Cirrus_Hoodie.Description}}",
+          "Price": 2500,
+          "Texture": "Mods\\DN.SnS\\Shirts",
+          "SpriteIndex": 2,
+          "DefaultColor": null,
+          "CanBeDyed": false,
+          "IsPrismatic": false,
+          "HasSleeves": true,
+          "CanChooseDuringCharacterCustomization": false,
+          "CustomFields": {},
+
+        "DN.SnS_Hector_Hoodie_Unzipped": {
+          "Name": "DN.SnS_Hector_Hoodie_Unzipped",
+          "DisplayName": "{{i18n:DN.SnS_Hector_Hoodie.Name}}",
+          "Description": "{{i18n:DN.SnS_Hector_Hoodie.Description}}",
+          "Price": 2500,
+          "Texture": "Mods\\DN.SnS\\Shirts",
+          "SpriteIndex": 3,
+          "DefaultColor": "39 184 13",
+          "CanBeDyed": true,
+          "IsPrismatic": false,
+          "HasSleeves": true,
+          "CanChooseDuringCharacterCustomization": false,
+          "CustomFields": {}
+          }
+        }
+      }
+    }
+  ]
+}

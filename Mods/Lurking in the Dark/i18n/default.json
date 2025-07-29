@@ -1,0 +1,1800 @@
+{/*
+ ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝                                             
+*/
+//Configs//
+
+//Gameplay
+"Config.section.Gameplay.name": "Gameplay",
+"Config.Shadow Stat Changes.name": "Shadow Stat Changes",
+"Config.Shadow Stat Changes.description": "Allows for the changing of Shadow stats so Shadowfolk no longer harm the player after completing Sen's storyline.",
+"Config.Pacifist Mode.name": "Pacifist Mode",
+"Config.Pacifist Mode.description": "Shadows will be invincible to player attacks.\n\n(Shadow Stat Changes must be set to true for this to take effect.)",
+"Config.Construct Eradication Substitute.name": "构造体消灭替代",
+"Config.Construct Eradication Substitute.description": "将冒险者公会中的虚空精灵消灭目标更改为构造体。
+
+> 用虚空构造体替换矿井中的影子人。
+
+> 构造体怪物列表包括石头巨人、荒野巨人、铱巨人、虚空构造体、危险虚空构造体、虚空构造体法师、虚空构造体狙击手、
+金属头和矮人哨兵。
+
+> 重写“影子状态更改”行为。
+
+> 如果您与SVE中的影子人和解，则禁用。",
+"Config.Event Cooldown Length.name": "事件冷却时间",
+"Config.Event Cooldown Length.description": "调整您在Sen的事件之间需要等待的天数。
+
+（默认3天）",
+
+//NPC Behavior
+"Config.section.NPC Behavior.name": "NPC行为",
+"Config.Schedule Type.name": "日程类型",
+"Config.Schedule Type.description": "Sen是每天访问不同随机地点（动态）还是遵循固定日程（简化）。",
+"config.Schedule Type.values.Dynamic": "动态",
+"config.Schedule Type.values.Simplified": "简化",
+"Config.Romantic Nickname.name": "浪漫昵称",
+"Config.Romantic Nickname.description": "设置Sen对玩家的浪漫昵称。",
+
+//Graphics
+"Config.section.Graphics: General.name": "图形：常规",
+"Config.Portrait Style.name": "肖像风格",
+"Config.Portrait Style.description": "设置模组的肖像风格。节日期间请勿更改此选项。
+
+（推荐使用Nyapu，因为Nyapu太棒了。）",
+"Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
+"Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
+"Config.Spouse Room.name": "配偶房间",
+"Config.Spouse Room.description": "如果您想自己装饰，可以禁用Sen的自定义配偶房间。
+
+（需要重新启动游戏）",
+"Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
+"Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+"Config.Female Toddler Design.name": "女幼儿设计",
+"Config.Female Toddler Design.description": "如果设置为“拥有影子孩子”，则设置女幼儿的设计。
+
+> Nanu、Opal和Chirin的精灵由TheEspurrQueen制作。
+> Petra、Telas、Pisque、Auri和Disthen的精灵由Medys制作。
+> Yvette、Laurel、Willow和Elowen的精灵由Jules制作。
+弓的精灵素材由Medys制作。",
+"Config.Male Toddler Design.name": "男幼儿设计",
+"Config.Male Toddler Design.description": "如果设置为“拥有影子孩子”，则设置男幼儿的设计。
+
+> Nanu、Opal和Chirin的精灵由TheEspurrQueen制作。
+> Petra、Telas、Pisque、Auri和Disthen的精灵由Medys制作。
+> Yvette、Laurel、Willow和Elowen的精灵由Jules制作。
+弓的精灵素材由Medys制作。",
+"Config.Pendant Overlays.name": "吊坠覆盖",
+"Config.Pendant Overlays.description": "允许Sen在与您同住时佩戴美人鱼吊坠或虚空幽灵吊坠。",
+
+//Graphics - UCT
+"Config.section.Graphics: Children.name": "图形：儿童",
+"Config.UCT Portrait Compatibility.name": "独特儿童对话肖像",
+"Config.UCT Portrait Compatibility.description": "当安装了独特儿童对话时，使用自定义儿童肖像。
+
+（禁用需要重新启动游戏）
+
+Loki、Freya、Chirin、Nanu和Opal的肖像由TheEspurrQueen制作。
+Petra、Telas、Pisque、Disthen和Auri的肖像由Medys制作。
+Yvette、Laurel、Willow和Elowen的肖像由Jules制作。
+弓的肖像素材由Jules制作。",
+"Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu和Opal肖像",
+"Config.7thAxis Nanu and Opal Portraits.description": "当UCT肖像兼容性设置为true时，使用7thAxis的肖像作为Nanu和Opal的设计。",
+
+"Config.Toddler Bow Chance.name": "幼儿弓的机会",
+"Config.Toddler Bow Chance.description": "Sen的孩子在任何给定日子佩戴弓的几率。
+
+设置为1比X的机会。
+
+如果设置为1，孩子们将始终佩戴弓。",
+
+/*
+ ██████╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝
+██║     ██║   ██║██████╔╝█████╗  
+██║     ██║   ██║██╔══██╗██╔══╝  
+╚██████╗╚██████╔╝██║  ██║███████╗
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+*/
+
+//Music
+"Core.Music.Underscarp": "LitD: Underscarp (Tommy Cathodic)",
+
+//Mail
+"Core.SenS.Mail.ShadowVisitation.Title": "虚空的召唤",
+"Core.SenS.Mail.ShadowVisitation": "人类。^^我勉强留这张便条是为了通知你...^^我们将在下雨天和周末拜访Sen的洞穴。把这当作一根橄榄枝。^^如果你想和我们互动...我们就会在那儿。^^ -Skrell（嗨，Ebb也在这里！）",
+
+//Monsters
+"Core.Monsters.VoidConstruct": "虚空构造体",
+"Core.Monsters.VoidConstructMage": "虚空构造体法师",
+"Core.Monsters.VoidConstructSniper": "虚空构造体狙击手",
+
+//Names
+"Core.SenS.Friend": "friend",
+"Core.SenS.Name.Sen": "Sen",
+"Core.SenS.Name.Skrell": "Skrell",
+"Core.SenS.Name.Ebb": "Ebb",
+
+//Krobus Reference
+"Core.SenS.KrobusKnown": "克罗布斯",
+"Core.SenS.KrobusUnknown": "我在下水道的朋友",
+
+//Relationship term
+"Core.SenS.RelationshipTerm.True": "伴侣",
+"Core.SenS.RelationshipTerm.False": "好朋友",
+
+//Monster Eradication
+"Core.Monsters.GolemEradication": "Golems",
+
+// CUSTOM RANDOM SETS //
+//Articles and Pronouns
+"Rand.SenS.Book.AP.1": "A",
+"Rand.SenS.Book.AP.2": "The",
+"Rand.SenS.Book.AP.3": "Her",
+"Rand.SenS.Book.AP.4": "His",
+"Rand.SenS.Book.AP.5": "Their",
+"Rand.SenS.Book.AP.6": "Your",
+"Rand.SenS.Book.AP.7": "You're a",
+
+//Book Type
+"Rand.SenS.Book.Type.1": "A Guidebook to",
+"Rand.SenS.Book.Type.2": "The Encyclopedia of",
+"Rand.SenS.Book.Type.3": "The Lost Files of",
+"Rand.SenS.Book.Type.4": "A History of",
+
+//Subjects 1 (Plural)
+"Rand.SenS.Book.Subj.1": "Mermaids",
+"Rand.SenS.Book.Subj.2": "Horses",
+"Rand.SenS.Book.Subj.3": "Crochet",
+"Rand.SenS.Book.Subj.4": "Seaweed",
+"Rand.SenS.Book.Subj.5": "Fairies",
+"Rand.SenS.Book.Subj.6": "Dragons",
+"Rand.SenS.Book.Subj.7": "Pizza",
+"Rand.SenS.Book.Subj.8": "Goblins",
+"Rand.SenS.Book.Subj.9": "Rain",
+"Rand.SenS.Book.Subj.10": "Light Bulbs",
+"Rand.SenS.Book.Subj.11": "Llamas",
+"Rand.SenS.Book.Subj.12": "Computer Science",
+"Rand.SenS.Book.Subj.13": "Snails",
+"Rand.SenS.Book.Subj.14": "World Hunger",
+
+//Subjects 2 (Mostly Singular)
+"Rand.SenS.Book.Subj2.1": "City",
+"Rand.SenS.Book.Subj2.2": "Men",
+"Rand.SenS.Book.Subj2.3": "Mistress",
+"Rand.SenS.Book.Subj2.4": "Monster",
+"Rand.SenS.Book.Subj2.5": "Lone Wolf",
+"Rand.SenS.Book.Subj2.6": "Trashcan",
+"Rand.SenS.Book.Subj2.7": "Cactus",
+
+//Descriptor 1
+"Rand.SenS.Book.Obj.1": "for Fools",
+"Rand.SenS.Book.Obj.2": "for Geniuses",
+"Rand.SenS.Book.Obj.3": "for the Birthday Boy",
+"Rand.SenS.Book.Obj.4": "for the Morally Confused",
+"Rand.SenS.Book.Obj.5": "for the Spineless",
+"Rand.SenS.Book.Obj.6": "for the Careless",
+
+//Descriptor 2
+"Rand.SenS.Book.Obj2.1": "on the Island",
+"Rand.SenS.Book.Obj2.2": "on a Rollercoaster",
+"Rand.SenS.Book.Obj2.3": "on My House",
+"Rand.SenS.Book.Obj2.4": "on a Railroad",
+"Rand.SenS.Book.Obj2.5": "on Monday",
+"Rand.SenS.Book.Obj2.6": "on a Pumpkin",
+
+//Descriptor 3
+"Rand.SenS.Book.Obj3.1": "Red",
+"Rand.SenS.Book.Obj3.2": "Blue",
+"Rand.SenS.Book.Obj3.3": "Cold",
+"Rand.SenS.Book.Obj3.4": "Lost",
+"Rand.SenS.Book.Obj3.5": "Strange",
+"Rand.SenS.Book.Obj3.6": "Adventurous",
+
+//Descriptor 4
+"Rand.SenS.Book.Obj4.1": "Lost",
+"Rand.SenS.Book.Obj4.2": "Beloved",
+"Rand.SenS.Book.Obj4.3": "Strange",
+"Rand.SenS.Book.Obj4.4": "Fickle",
+"Rand.SenS.Book.Obj4.5": "Tsundere",
+"Rand.SenS.Book.Obj4.6": "I Love My",
+
+//Descriptor 5
+"Rand.SenS.Book.Obj5.1": "Secret Romance",
+"Rand.SenS.Book.Obj5.2": "Grand Adventure",
+"Rand.SenS.Book.Obj5.3": "Dwarf King",
+"Rand.SenS.Book.Obj5.4": "Untold Secret",
+"Rand.SenS.Book.Obj5.5": "Mystery of Life",
+
+//People
+"Rand.SenS.Book.People.1": "Sonic",
+"Rand.SenS.Book.People.2": "Shane",
+"Rand.SenS.Book.People.3": "Lewis",
+"Rand.SenS.Book.People.4": "Linus",
+"Rand.SenS.Book.People.5": "M. Jasper",
+"Rand.SenS.Book.People.6": "Sebastian",
+"Rand.SenS.Book.People.7": "M. Rasmodius",
+"Rand.SenS.Book.People.8": "Pam",
+"Rand.SenS.Book.People.9": "Dobson",
+
+//Authors
+"Rand.SenS.Book.Author.1": "那个Elliot家伙",
+"Rand.SenS.Book.Author.2": "M. Jasper",
+"Rand.SenS.Book.Author.3": "Clyric Tourmaline",
+"Rand.SenS.Book.Author.4": "M. Rasmodius",
+"Rand.SenS.Book.Author.5": "两次获奖的作者，Rodney O'Brien",
+"Rand.SenS.Book.Author.6": "Dusty the Dog",
+"Rand.SenS.Book.Author.7": "Dobson Buss",
+"Rand.SenS.Book.Author.8": "Joja公司",
+
+//Authors 2
+"Rand.SenS.Book.Author2.1": "Dest T.",
+"Rand.SenS.Book.Author2.2": "T. Nova",
+"Rand.SenS.Book.Author2.3": "L. Kat",
+"Rand.SenS.Book.Author2.4": "PS. Child",
+"Rand.SenS.Book.Author2.5": "F. Shifter",
+
+//Crochet 
+"Rand.SenS.CrocItem.1": "围巾",
+"Rand.SenS.CrocItem.2": "手套",
+"Rand.SenS.CrocItem.3": "毯子",
+"Rand.SenS.CrocItem.4": "袜子",
+"Rand.SenS.CrocItem.5": "熊毛衣",
+"Rand.SenS.CrocItem.6": "猫毛衣",
+"Rand.SenS.CrocItem.7": "暖和的帽子",
+
+//Colors
+"Rand.SenS.CrocColor.1": "红色",
+"Rand.SenS.CrocColor.2": "黑色",
+"Rand.SenS.CrocColor.3": "橙色",
+"Rand.SenS.CrocColor.4": "紫色",
+"Rand.SenS.CrocColor.5": "彩虹",
+
+//Images
+"Rand.SenS.Image.1": "一只熊",
+"Rand.SenS.Image.2": "一只猫",
+"Rand.SenS.Image.3": "一个 :3 表情符号",
+"Rand.SenS.Image.4": "一根烟斗",
+"Rand.SenS.Image.5": "Shane",
+"Rand.SenS.Image.6": "大脚怪",
+"Rand.SenS.Image.7": "一艘UFO",
+"Rand.SenS.Image.8": "一只恐龙",
+"Rand.SenS.Image.9": "老水手",
+
+//Animals
+"Rand.SenS.Animal.1": "岩蟹",
+"Rand.SenS.Animal.2": "熔岩蟹",
+"Rand.SenS.Animal.3": "鹈鹕",
+"Rand.SenS.Animal.4": "野猫",
+"Rand.SenS.Animal.5": "狐猴",
+
+//Flavor
+"Rand.SenS.Flavor.1": "照烧",
+"Rand.SenS.Flavor.2": "烧烤",
+"Rand.SenS.Flavor.3": "甜酸",
+"Rand.SenS.Flavor.4": "黄油味",
+"Rand.SenS.Flavor.5": "辛辣",
+
+//Food Style
+"Rand.SenS.FoodStyle.1": "面糊炸",
+"Rand.SenS.FoodStyle.2": "柠檬胡椒",
+"Rand.SenS.FoodStyle.3": "裹面包屑",
+"Rand.SenS.FoodStyle.4": "蜂蜜烤",
+
+//Food
+"Rand.SenS.Food.1": "虫子牛排",
+"Rand.SenS.Food.2": "史莱姆球",
+"Rand.SenS.Food.3": "幽灵鱼",
+"Rand.SenS.Food.4": "奇怪的馅饼",
+"Rand.SenS.Food.5": "蜗牛",
+"Rand.SenS.Food.6": "史莱姆奶酪",
+"Rand.SenS.Food.7": "榴莲",
+
+//Sen's spikes
+"Rand.SenS.Spikes.1": "角",
+"Rand.SenS.Spikes.2": "耳朵",
+"Rand.SenS.Spikes.3": "头发",
+"Rand.SenS.Spikes.4": "王冠",
+
+//Crocus
+"Rand.SenS.CrocusSymbolism.1": "新生",
+"Rand.SenS.CrocusSymbolism.2": "快乐",
+"Rand.SenS.CrocusSymbolism.3": "重生",
+"Rand.SenS.CrocusSymbolism.4": "愉快",
+
+//Found Objects
+"Rand.SenS.FoundObjects.1": "一根潮湿的韭菜",
+"Rand.SenS.FoundObjects.2": "一个空啤酒瓶",
+"Rand.SenS.FoundObjects.3": "一条紫色短裤",
+"Rand.SenS.FoundObjects.4": "一副破眼镜",
+"Rand.SenS.FoundObjects.5": "一颗钻石",
+"Rand.SenS.FoundObjects.6": "一个田野小吃",
+"Rand.SenS.FoundObjects.7": "一双写着\"Alex\"名字的运动鞋",
+
+//Found Objects2
+"Rand.SenS.FoundObjects2.1": "一些布料",
+"Rand.SenS.FoundObjects2.2": "一些被丢弃的食物",
+"Rand.SenS.FoundObjects2.3": "一本新书",
+"Rand.SenS.FoundObjects2.4": "一瓶我可以用作花瓶的瓶子",
+
+//People
+"Rand.SenS.People.1": "Emily",
+"Rand.SenS.People.2": "Harvey",
+"Rand.SenS.People.3": "Alex",
+"Rand.SenS.People.4": "Sebastian",
+"Rand.SenS.People.5": "Abigail",
+"Rand.SenS.People.6": "Eliott",
+"Rand.SenS.People.7": "Mayor Lewis",
+"Rand.SenS.People.8": "Pam",
+"Rand.SenS.People.9": "Gus",
+"Rand.SenS.People.10": "Jacob",
+"Rand.SenS.People.11": "Rosa",
+"Rand.SenS.People.12": "Aideen",
+
+//Spring Crop
+"Rand.SenS.SpringCrop.1": "草莓",
+"Rand.SenS.SpringCrop.2": "胡萝卜",
+"Rand.SenS.SpringCrop.3": "土豆",
+"Rand.SenS.SpringCrop.4": "郁金香",
+"Rand.SenS.SpringCrop.5": "花椰菜",
+
+//Expressions
+"Rand.SenS.Expression.1": "$s",
+"Rand.SenS.Expression.2": "$l",
+"Rand.SenS.Expression.3": "$u",
+"Rand.SenS.Expression.4": "$a",
+"Rand.SenS.Expression.5": "$h",
+
+// Relationship
+"Core.SenS.Divorced": "%Sen looks away from you. He seems depressed.",
+"Core.SenS.BreakUp": "...?$u#$b#Y-you want to break our partnership off...?$s#$b#I-I understand. I was foolish for thinking a relationship between a human and a Shadow could ever work.$10",
+
+//Sen
+"Core.SenS.EarlyHeart.1": "哦，您好@！$h#$b#今天天气不错，是吧？$l#$e#哦，请在冒险时小心点。",
+"Core.SenS.EarlyHeart.2": "哇啊！$9#$b#哦，抱歉，反应过度了，@。$8#$b#您吓到我了，我的脚趾头撞到了东西。$8#$e#（真尴尬...）$s",
+"Core.SenS.EarlyHeart.3": "啊！别靠近，我有爪子！！$9#$b#...$u#$b#哦，您好，@。抱歉刚才的举动。$8#$e#我刚才差点和老剑客撞上...我还在紧张中。",
+"Core.SenS.EarlyHeart.4": "嗯？哦，您好，@！$h#$b#我在考虑明天晚上去海滩的事。$h#$b#希望那些该死的螃蟹别来烦我。#$e#我以为我搬出矿山时就把那些家伙甩掉了。",
+"Core.SenS.EarlyHeart.5": "住在海边真是个梦... 在我来自的地方，海滩只是个传说。$l#$b#我们这里有小的地下湖泊，但那不是同样的感觉。$s#$e#而且它们里满是垃圾。$a#$e#请尽量不要乱扔垃圾，这通常会进入我们的水源。",
+"Core.SenS.EarlyHeart.6": "%Sen似乎在吃什么黏糊糊的东西。#$e# ...嗯？我在吃什么？#$b#这可是任何影子的饮食中健康的一部分！来，尝尝！$h#$e#[766]哎呀，为什么你用那种眼神看我，就像我长了两个头一样？$6",
+"Core.SenS.EarlyHeart.7": "$query DAY_OF_WEEK Sun#星期天... 我仍然不明白在你们的文化中这是一个星期的开始还是结束。$6#$b#$y '你知道这是哪个吗？_这是一个星期的开始。_你确定这不是周末的一部分吗？日历上是这么写的。$6_这是一个星期的结束。_我也是这么认为的。我读的人类书籍中说法相当矛盾。我很困惑。$8'|今天真是个美丽的日子，@？哦，我太高兴了，我简直要爆炸了！$h#$b#让我这么高兴的原因？嗯，我昨晚找到了一 {{Object}}！$7",
+"Core.SenS.EarlyHeart.8": "今天我尝试了一些人类食物。你们文化菜肴的味道真是太浓烈了。#$e#在矿井里，我们的食材选择不多。$s#$b#虫子、史莱姆、洞胡萝卜和 - 偶尔 - 幽灵鱼。#$e#嗯？我从哪里得到的食物？#$b#当然是从垃圾桶里捡的。",
+"Core.SenS.EarlyHeart.9": "天哪，时间在地面上过得真快。$u#$e#在矿井里根本无法知道今天是几号。#$b#时间在黑暗中模糊不清。#$e#不过这也没什么不好。我们有自己判断时间的方式。#$b#比如说，当虫子开始嗡嗡叫时，我们就知道该吃饭了！$7",
+"Core.SenS.EarlyHeart.10": "哦，您好，@。您吓到我了。您今天怎么样？$h#$e#$y '我感觉怎么样？_感觉很好！_我很高兴听到这个。我也是！我今天早上抓到了最好吃的虫子。_$h._我有过更好的日子。_哦，听到这个我很遗憾。希望您能找到一只美味的虫子，这会让您今天过得更好！我知道对我来说是这样的。$s_我还好。_那很好。希望您能找到一只美味的虫子，这会让您今天过得更好！$h'",
+"Core.SenS.EarlyHeart.11": "您知道吗，人类似乎在一周的结束时非常兴奋。我看到他们涌入酒馆。#$b#他们是在开派对吗？$h#$e#我真希望我能去。",
+"Core.SenS.EarlyHeart.12": "天哪，我真累...$s#$b#我昨晚似乎钩织得有点过头了。#$e#哦，我不是说我需要睡觉的意思。#$b#我们影族人不需要睡觉。我们的休息方式要被动得多。",
+"Core.SenS.EarlyHeart.13": "哦，您好@。 我有一个问题... $6#$b#$y '你认为偷东西错吗？_你永远不应该拿走不属于你的东西。_我明白了... 我从旅馆的窗台上偷了一块馅饼。 我听到面包师傅很生气。 我感到很糟糕...$s_这要看情况。_哦，所以在某些情况下这是可以的？那么我就不觉得从垃圾里捡东西有什么不妥了。$12_完全没问题，尽管来偷吧。_真的吗？人类似乎讨厌偷东西。 不过在影族中，这很常见。除非威胁到我们的生存，否则我们并不在意。$6'",
+"Core.SenS.EarlyHeart.14": "我刚才看到一只小白兔！$h#$b#它是我见过的最可爱的东西。$l#$e#那小小的鼻子和蓬松的尾巴... 太可爱了。$l#$e#不过我没有靠近，我不想吓跑它们。#$b#那样做太残忍了！$8",
+"Core.SenS.EarlyHeart.15": "我经常在凌晨2点后去拜访{{SenKrobusReference}}。$l#$b#他也是影族人，住在这个镇上。#$e#请不要告诉任何人关于我们俩的事。#$b#我可以相信你，对吧@？$s",
+"Core.SenS.EarlyHeart.16": "我昨晚在和{{SenKrobusReference}}翻垃圾时发现了一管薄荷味的牙膏！$12#$b#太好吃了！$7#$e#你说的不是让人吃的东西吧？那是什么？$6",
+"Core.SenS.EarlyHeart.17": "我想我永远也不会厌倦住在海边。$l#$b#当然，岩蟹有时候会有点烦人，但这没什么，煮熟它们就好了！$h#$e#你应该来我家吃晚饭。 我做的蟹饼非常好吃。",
+"Core.SenS.EarlyHeart.18": "当我晚上去矿井看望家人时，我会非常小心，不告诉他们我们之间的谈话。#$b#与人类交往在我的族人中是被严重看不起的。$s#$e#我知道这听起来很糟糕，但我理解他们的感受。$s#$b#他们害怕人类靠得太近，会对我们的族人造成伤害。",
+"Core.SenS.EarlyHeart.19": "哦，您好，@！快，选我一只手。$h#$b#$y '你会选哪只手？_左手_嘿嘿，我给你做了些蟹饼！抱歉我把它们在手里捏扁了。$8 [732]_右手_我在清理洞穴时找到的旧生锈的东西。我想知道博物馆里的那个家伙是否想要它。$h[111 110 112]_摸摸它的头._ ...！！！$11 [417 577 595]'",
+"Core.SenS.EarlyHeart.20": "哦，您好@！如果您在冒险中受伤了，就用这个！[773]$h#$e#这些药水可以治愈你们人类。$h#$b#它可能会让你脱离困境。$h#$e#有时候，我真的很担心你们跑去矿井里。",
+"Core.SenS.EarlyHeart.21": "呃...我真的需要更加小心。$s#$b#我刚才遇到了那个老剑客，差点就...$10#$e#不，没什么。$s#$b#您今天怎么样，@？$h",
+"Core.SenS.EarlyHeart.22": "也许我今晚会下矿井。#$b#我想在那里钓一些幽灵鱼。$h#$e#嗯.. 烤幽灵鱼，幽灵鱼寿司，面包幽灵鱼...",
+"Core.SenS.EarlyHeart.23": "我对Cindersap森林里的那座老塔很感兴趣。$6#$b#它有什么历史吗？谁建的？里面有有趣的书可以看吗？为什么里面有奇怪的味道？$6#$e#你能不能去里面探险一下，告诉我你的发现？#$b#我自己去的话，可能会被里面的某个家伙吓到。",
+"Core.SenS.EarlyHeart.24": "%revealtasteSenS767 我洞穴里现在有一只很大的蝙蝠。#$b#它不停地飞来飞去，弄乱我的东西。$a#$e#幸好我不喜欢吃蝙蝠翅膀。",
+"Core.SenS.EarlyHeart.25": "在外面独自坐在我的洞穴里时，我常常会想念其他影族人的陪伴。$s#$b#能和你聊聊天，我很高兴。$h#$e#这让孤独的日子轻松多了。",
+"Core.SenS.EarlyHeart.26": "%Sen似乎在看一本书。他没有注意到你。#$e#哦，您好，@！您让我从书中惊醒了。$u#$b#我真的应该更小心一点。如果你是其他人... 咕噜。",
+"Core.SenS.EarlyHeart.27": "哦，我真是太喜欢住在海边了。$l#$b#海滩在我来自的地方只是个传说。$l#$e#我们这里有小的地下湖泊，但那不是同样的感觉。$s#$b#而且它们里满是垃圾，都是人类的垃圾。",
+"Core.SenS.EarlyHeart.28": "%revealtasteSenS874 你试过虫子牛排吗，@？$h#$b#这是我们影族人中最受欢迎的美食之一。$7#$e#我们实在无法抗拒。$7#$b#这就是我们对一顿美餐的所有期待。",
+"Core.SenS.EarlyHeart.29": "%revealtasteSenS108 稀有的光盘是非常迷人的物品。它们散发着强大的虚空能量。$7#$b#我们影族人把它们当作护身符，据信可以增强我们的力量。$h#$e#显然，它们会让人类感到恐惧，但我保证它们并不危险。",
+"Core.SenS.EarlyHeart.30": "前几天我在潜伏时，听到一个紫发女孩在喋喋不休。$6#$b#她告诉她的朋友们，紫水晶是美味的。$6#$e#吃石头在你们中间是正常的吗？",
+"Core.SenS.EarlyHeart.31": "我花了很多时间思考，如果我们能够与地面世界互动，我族人的生活会好多少。$s#$b#我希望有一天我们的种族之间能够实现和平。$s#$e#那将是多么美好的友谊啊。",
+"Core.SenS.EarlyHeart.32": "我相信你现在已经注意到了，但大多数影族人头上是没有刺的。$6#$b#我和其他人有点不同。$h#$e#嗯？我为什么不同？$6#$b#嗯，我就不告诉你了。$8",
+"Core.SenS.EarlyHeart.33": "唉，我快没书可读了。$s#$b#看来我今晚得去图书馆抢劫一番了。$12#$e#别担心，我会把书还回来的。$8#$b#...可能吧。要看我有多喜欢它们。",
+"Core.SenS.EarlyHeart.34": "告诉我，@...$6#$b#$y '做梦是什么感觉？_太激动了！你可以做任何你想做的事！_任何事？甚至实现世界和平？吃掉全世界的虫子牛排？挖掘所有的垃圾？$7_超现实、令人困惑，还有点可怕..._天哪，我想我不想再尝试做梦了！幸好我们影族人不能睡觉。$u'",
+"Core.SenS.EarlyHeart.35": "我听到镇上的一些人谈论你的宠物，%pet。$h#$b#它们听起来很可爱！$7#$e#我想知道它们是否会喜欢我。$8#$b#我可以过去试着给它们拍拍吗？$h",
+"Core.SenS.EarlyHeart.36": "有时候，当我在雨天外面闲逛时，我看到人们进出你们农场附近的那家小商店。#$e#我想知道他们在那里卖什么东西？也许我应该伪装一下，去那里买东西。$h#$e#其实，仔细想想，那可能太危险了。",
+"Core.SenS.EarlyHeart.37": "前几天我经过一个封闭的小区域。里面有一只很大的狗。$u#$b#它对我咆哮，但当我摸了摸它的头时，它开始摇尾巴。$h#$e#我终于在这个山谷里交到了新朋友！$h",
+"Core.SenS.EarlyHeart.38": "当我第一次来到地面时，我非常害怕。$s#$b#我不知道该去哪里，太阳很刺眼，我立刻就迷路了。$s#$e#谢天谢地，那天晚上，{{SenKrobusReference}}在其他人之前找到了我。#$b#他帮我找到了一个安全的地方。我非常非常感激他。",
+"Core.SenS.EarlyHeart.39": "哦，哦！@，我必须告诉你我今天经历的最神奇的事情！$h#$b#我吃了一种叫做'冰淇淋'的东西，太好吃了。$l#$e#我感觉我快要在墙上弹跳了，嘿嘿...$7#$b#我把整个冰淇淋桶都吃掉了。$7#$e#这就是人类所说的'糖分过高'吗？$h",
+"Core.SenS.EarlyHeart.40": "%revealtasteSenS767 你想知道我在矿井中最不喜欢的零食是什么吗？#$b#蝙蝠翅膀。$a#$e#它们简直太恶心了，完全没有实质内容。",
+"Core.SenS.EarlyHeart.41": "我注意到矿井里住着一个矮人。$a#$b#我对他们的种族并不特别喜欢，但我不会告发我的族人。#$e#没有必要引发这样的暴力。$s#$b#元素战争早已结束。",
+"Core.SenS.EarlyHeart.42": "啊！抱歉，@。刚才差点被人发现，我还在有点紧张。$s#$e#如果有人发现我会发生什么，我真的很害怕。$s#$b#你不会把我说出去的，对吧，@？$s",
+"Core.SenS.EarlyHeart.43": "我今天从图书馆的垃圾桶里捡了一本书。$h#$b#书名是{{Subject}} {{Descriptor}}，作者是{{Author}}。#$e#{{ClosingEH44}}",
+"Core.SenS.EarlyHeart.44": "I picked a book out of the library trash today.$h#$b#It's called {{Subject}} {{Descriptor}}. It's by {{Author}}.#$e#{{ClosingEH44}}",
+    "Rand.SenS.EH.44.1": "我对这种写作风格有点纠结。$8",
+    "Rand.SenS.EH.44.2": "这是我读过的最好的东西！$7",
+    "Rand.SenS.EH.44.3": "我觉得你应该读一下这个。$6",
+"Core.SenS.EarlyHeart.45": "我尽量每天都钩织一些东西。$l#$b#昨天我用{{CrocColor}}的纱线钩织了{{CrocItem}}。$h#$e#我把它们当作礼物送给其他影族人，但我不太明白这其中的意义。$s#$b#我想我应该期待这个，我们毕竟不穿衣服。",
+"Core.SenS.EarlyHeart.46": "地面的动物和矿井里的动物截然不同。#$b#{{ClosingEH46}}",
+    "Rand.SenS.EH.46.1": "我昨晚看到了一只尾巴蓬松的动物。根据我所读的资料，我想那是只松鼠。$h",
+    "Rand.SenS.EH.46.2": "我昨晚看到了一只红喙的鸟。它在啄木头。$h#$b#我想知道那是什么鸟？$h",
+    "Rand.SenS.EH.46.3": "我昨晚在树林里看到了一只巨大的毛茸茸的怪物！它有着小眼睛，嘴里不停地喃喃自语着枫糖浆！$u",
+"Core.SenS.EarlyHeart.47": "啊，@！我有一个问题要问你。$h#$b#你知道这是什么吗？#$b#$y '%Sen给你看了一幅粗糙的{{Image}}图画。_告诉他这是什么。_哇，真的吗？太神奇了！我得多读读这个。$h_我不知道。_哦，真可惜！也许我可以在图书馆关门后溜进去找些资料。$s_骗他。_哇，真的吗？天哪，@，你对地面世界了解得真多。",
+"Core.SenS.EarlyHeart.48": "你好，@！我最近在读一本新书。$h#$b#书名是{{Subject}} {{Descriptor2}}，作者是{{Author}}。#$e#{{ClosingEH48}}",
+    "Rand.SenS.EH.48.1": "我不太喜欢这本书。$8",
+    "Rand.SenS.EH.48.2": "我很喜欢这本书。我不知道为什么会有人把它扔掉！$7",
+    "Rand.SenS.EH.48.3": "这本书的文笔有点奇怪。$6",
+"Core.SenS.EarlyHeart.49": "@，我需要告诉你一件非常重要的事情。#$b#永远不要喂野生动物！$u#$b#我刚才喂了一只{{Animal}}，差点被它咬掉手指！$u#$e#然后它在海滩上追着我跑！$u#$b#我真庆幸没有人看到那一幕。",
+"Core.SenS.EarlyHeart.50": "天哪，我饿坏了。$8#$b#我想今晚要吃{{Food}} {{Flavor}}。$7#$e#你也应该来吃点，@。$h",
+"Core.SenS.EarlyHeart.51": "我有个问题要问你，@。你知道这是什么吗？$6#$b#$y '%Sen给你看了一张模糊的{{Image}}照片。_告诉他这是什么。_听起来很神秘！我稍后会调查一下。$h_我不知道。_嗯。你想不想和我一起溜进图书馆？也许我们可以找到更多的信息！$7_骗他。_...也许？不过听起来不太对。我想它是别的东西。",
+"Core.SenS.EarlyHeart.52": "你好，@！我正专心看一本叫做{{AP}} {{Descriptor3}} {{Subject}}的新书。$h#$b#{{ClosingEH52}}",
+    "Rand.SenS.EH.52.1": "我肯定读过更好的作品。不过这个还不错。$8",
+    "Rand.SenS.EH.52.2": "这是一本非常棒的读物。你应该试试！$7",
+    "Rand.SenS.EH.52.3": "这没什么突破性的，但很有意思。$h",
+"Core.SenS.EarlyHeart.53": "哦你好，@。#$q 1077011/1077012 SenFriendshipFollowup# 我一直在思考一个问题。你认为我是朋友吗？#$r 1077011 10 SenFriend#当然！你是个很棒的朋友，Sen。#$r 1077011 0 SenAcquaintance#算是吧，但我想更了解你。#$r 1077012 -250 SenNotFriend#不。事实上，我一点都不喜欢你。",
+    "Core.SenS.SenFriend": "...#$b#R...really?!$7#$b#Oh, that makes me the happiest Shadow alive!$h#$e#Here's to becoming even better friends in the future!$h",
+    "Core.SenS.SenAcquaintance": "Oh! I completely understand that.$8#$b#I'd like to get to know you better too, @.$h#$e#We should have a chat about our interests sometime.$h",
+    "Core.SenS.SenNotFriend": "...#$b#H..huh?$s#$b#Have I been doing something wrong, @?$s#$e#I'm sorry, go on about your day. I'll leave you alone.$10",
+    "Core.SenS.SenFriendshipFollowup": "$p 1077012# I still don't know where I went wrong... Why did you say you didn't like me...?$s|Did you know that {{ClosingEH53}}",
+        "Rand.SenS.EH.53.1": "我最喜欢的花是藏红花？$7",
+        "Rand.SenS.EH.53.2": "我喜欢钩针编织和缝纫？$7",
+        "Rand.SenS.EH.53.3": "我不睡觉？$7",
+        "Rand.SenS.EH.53.4": "我真的喜欢虫子牛排？$7",
+"Core.SenS.EarlyHeart.54": "哦，@！让我们玩个小游戏。$h#$b#$y '快，选一张牌！_红牌_{{GameResult1}}_蓝牌_{{GameResult2}}",
+    "Rand.SenS.EH.54.1.1": "恭喜，@！你选对了牌。这是奖品。$h [64 82 540 547 563]",
+    "Rand.SenS.EH.54.1.2": "啊，真遗憾...抱歉，@！看起来你选错牌了。$s",
+    "Rand.SenS.EH.54.2.1": "恭喜，@！你选对了牌。这是奖品。$h [84 62 541 550 561]",
+    "Rand.SenS.EH.54.2.2": "啊，真遗憾...抱歉，@！看起来那不是正确的牌。$8'",
+"Core.SenS.EarlyHeart.55": "嗯...今晚我想吃什么呢？$6#$b#$y '哦，@！你能帮我选择吗？_{{Flavor}} {{Food}}._听起来很美味！我想今晚就做这个。谢谢，@。$h_{{FoodStyle}} {{Food}}._嗯...完美！谢谢你帮我决定，@！$h",
+"Core.SenS.EarlyHeart.56": "%Sen正在{{QuirkyAction}}。他没有注意到你。#$e#...！$11#$b#哦-哦！@，我没看到你在那里。$8#$e#（天哪，我太尴尬了...）$8",
+    "Rand.SenS.EH.56.1": "唱着小歌",
+    "Rand.SenS.EH.56.2": "跳着舞",
+    "Rand.SenS.EH.56.3": "安静地哼着歌",
+    "Rand.SenS.EH.56.4": "自己咯咯笑着",
+"Core.SenS.EarlyHeart.57": "嗯嗯嗯。我有点不知道该读什么了。你能给我一些建议吗？#$b#$y '你会推荐什么？_非小说类书籍：{{BookType}} {{Subject}}_嗯...听起来很有趣！我一直很想了解更多关于地表世界的知识。$h_言情小说：{{Descriptor4}} {{Subject2}}_你-你想让我读言情小说？浪漫爱情对我来说是一个相当陌生的概念，不过我会试试的。$l_同人小说：{{BookPeople}} 和 {{Descriptor5}}_...你想让我读什么？$6'",
+"Core.SenS.EarlyHeart.58": "嗯嗯嗯...我非常饿。吃什么好呢，吃什么好呢。$6#$b#也许来点{{Flavor}} {{Food}}？$h#$e#是的，听起来绝对美味。$l",
+"Core.SenS.EarlyHeart.59": "%revealtasteSenS418 我一直在洞穴里把番红花压在书本里保存。你想要一朵吗？$h[418]#$e#我在书上读到番红花象征着{{Symbolism}}。$h#$b#这是它成为我最喜欢的花的又一个原因！$l",
+"Core.SenS.EarlyHeart.60": "嗯？我头上的尖刺是什么？$6#$b#它们确实很特别。来吧，大胆猜一猜。$h#$e#如果你猜是{{Spikes}}，你可能是对的...$h#$b#...或者你猜错了？$12",
+
+"Core.SenS.LateHeart.1": "最近我的族人之间有些紧张...$s#$b#他们担心我在地表变得太过舒适了。$s#$e#不过这没什么好担心的。他们只是关心我的安全。$8",
+"Core.SenS.LateHeart.2": "我读到了你们文化中一种叫做\"酒精\"的常见饮品。$6#$b#它显然会让你表现得像个傻瓜并且损害你的肝脏！$u#$e#人类有点自我毁灭，不是吗？$8#$b#我希望你不要喝太多，@。$8",
+"Core.SenS.LateHeart.3": "我喜欢你农场的名字，@！$h#$b#%farm...$l#$b#听起来真不错！$h#$e#我绝对不会在深夜偷偷去那里探查。$12",
+"Core.SenS.LateHeart.4": "我相信你一直想知道我是如何精通你们的语言的。$6#$b#当我第一次来到地表时，{{SenKrobusReference}}教了我人类语言学的基础知识。$h#$e#我通过书籍和偷听人类说话学会了更高级的方言。$12",
+"Core.SenS.LateHeart.5": "我对地表的迷恋往往困扰着矿井中我的同胞暗影族。$8#$b#我有一个相当重要的职位，但我大部分时间都在这里度过。#$e#我希望暗影族能理解我所做的一切都是为了他们。$s#$b#我住在地表是为了促进和平。$s",
+"Core.SenS.LateHeart.6": "哦，@！我有东西要给你。拿着这瓶药水。$h[773] #$e#在外面要注意安全，好吗？$8#$b#想到你要和怪物战斗让我很担心。$s#$e#我知道当肾上腺素飙升时我们能打得多用力。$8",
+"Core.SenS.LateHeart.7": "传说很久以前，有一场大灾难让我的族人得以穿越到这个世界。$6#$e#如果这是真的，我相信这是矮人族的错。#$b#他们给我的族人带来了巨大的痛苦。$a",
+"Core.SenS.LateHeart.8": "人类和暗影族...@，你相信有一天我们能和平共处吗？$s#$b#$y '你会说什么？_总有一天我们会的，我确信！_是的！我们只需要继续前进。总有一天我们两个种族会和平共处的。$h_那只是一厢情愿。_你...可能是对的。不过这不会阻止我继续尝试。$s'",
+"Core.SenS.LateHeart.9": "你知道什么让我恐惧吗？$s#$b#车辆！$u#$b#它们太吵、太大、太闹了！$u#$e#仅仅看一眼就会触发我的战斗或逃跑本能！$u#$b#我很高兴山谷里没有太多这样的东西。$8",
+"Core.SenS.LateHeart.10": "嗯...我昨天发现了某人的钱包。$6#$b#我有点想留着它，但我知道我不应该这样做。$8#$e#我晚点会偷偷溜进市长家，把它放进失物招领箱。$h",
+"Core.SenS.LateHeart.11": "牛奶...那是从母牛乳房里挤出来的纯液体脂肪。$6#$b#听起来有点恶心，你们人类为什么要喝这种东西？$8#$e#我想我没有资格说这个。人类可能也会觉得喝虫子汁很恶心。$8",
+"Core.SenS.LateHeart.12": "你在矿井里发现的很多桶和箱子现在都属于我们暗影族。#$b#我们用它们来储存资源。$h#$e#这就是为什么我的族人倾向于守护它们，如果你靠得太近会发脾气。$8",
+"Core.SenS.LateHeart.13": "啊，天气...对你来说正常的东西对我来说是个奇迹。$h#$b#在矿井里，我们只能偶尔经历雾气。$8#$e#我相信我的族人会喜欢雨的。$h",
+"Core.SenS.LateHeart.14": "在酒馆工作的那个家伙，叫格斯对吧？他做的食物最美味了！$h#$e#人们扔掉了这么多东西，真浪费。$s#$b#算了！那样我就有更多了。$7",
+"Core.SenS.LateHeart.15": "浪漫爱情...这在人类社会中是如此重要的概念。$l#$b#我从未恋爱过，但这确实是我希望有一天能体验的东西。$h#$e#不过我现在更感兴趣的是交朋友。$h",
+"Core.SenS.LateHeart.16": "如果有一件事我学到了，那就是永远不要跑到结冰的湖面上！$u#$b#即使它看起来很结实，你也永远无法确定。$u#$e#我当时确信我要死了。$8",
+"Core.SenS.LateHeart.17": "我希望你能让你的农场动物待在室内，又好又暖和！$h#$b#我读了一本关于农场动物护理的指南，上面说不快乐的动物会产出低质量的产品。$8#$e#我想你应该像希望被对待的那样对待你的动物！$h",
+"Core.SenS.LateHeart.18": "哦，你好，@！我昨晚开始读一本新书。$h#$b#我一定要把它全部告诉你！$7#$e#基本上，这本书是关于%place的。$h#$b#那片土地显然非常%adj，以其%nouns而闻名。$7#$e#哦？你问我在哪里找到这本书的？#$b#...我想你现在应该知道了，嘿嘿。$12",
+"Core.SenS.LateHeart.19": "昨晚矿井下面两个暗影族之间发生了小冲突。#$b#他们竟然为了一个奇怪的面包而争斗。$8#$e#真的有必要叫我去处理这件事吗？$8",
+"Core.SenS.LateHeart.20": "告诉我，@...$8#$b#$y '我说话很多吗？_是的，你是个话匣子！_嘿嘿，{{SenKrobusReference}}昨晚也这么说。我希望这不会太困扰你。$8_不，请说更多！_嗯，你想让我说得更多？好吧，我很受宠若惊。你真是个奇怪的人，@。$8'",
+"Core.SenS.LateHeart.21": "%revealtasteSenS769 这可能看起来很奇怪，但我并不特别在意虚空精华。#$b#通常，大量的虚空精华表明有人死了。$s#$e#它有一种可怕的气味，散发着深深的悲伤...$s",
+"Core.SenS.LateHeart.22": "当我下到矿井拜访我的家人时，我必须非常小心不要提到你。$s#$b#我想告诉他们我遇到的了不起的人类朋友，但我知道他们会坚持认为你在愚弄我。#$e#我也可能会惹上大麻烦。$8",
+"Core.SenS.LateHeart.23": "@，我希望你在冒险中保持安全。拿着这些中的一个！[773]$h#$e#如果你出了什么事，我不知道我会怎么办，@。$s#$b#请在外面注意安全。$8",
+"Core.SenS.LateHeart.24": "尽管我们在生物学上有差异，但你会惊讶地发现人类和暗影族有多相似。#$b#我们都做饭、讲故事、建立友谊、关心我们所爱的人，还有更多...$l#$e#有一天，我希望我的族人能看到我们与人类并没有太大不同。$s",
+"Core.SenS.LateHeart.25": "%revealtasteSenS428 如果你弄到一些布料，你介意和我分享吗？$h#$b#我的服装材料快用完了。$8#$e#在垃圾中找材料很容易...$8#$b#...但它们往往有一种对人类来说不愉快的气味。$8",
+"Core.SenS.LateHeart.26": "哦，@！我想让你知道...$h#$b#谢谢你成为我如此好的朋友。$l#$e#如果没有你的指导，我不知道如何适应地表生活。$8#$b#为我们的友谊变得更加牢固干杯！$h",
+"Core.SenS.LateHeart.27": "鹈鹕镇，矿井...都是星露谷的一部分。$l#$b#我不再区分我的家和这个镇子。$l#$e#我希望有一天，我的族人也能把鹈鹕镇看作他们家的一部分。$h",
+"Core.SenS.LateHeart.28": "我有一种强烈的冲动想要向这个镇子的人们揭示我的身份...$l#$b#然而，我知道那将是灾难的开始。$s#$e#也许有一天我们之间的裂痕会缩小到我可以自由出入的时候。$8",
+"Core.SenS.LateHeart.29": "你知道我们暗影族有能力把手臂缩回身体里吗？$h#$b#这让我们在探索矿井时可以适应狭小的空间。$h#$e#我想很多人会认为{{SenKrobusReference}}是没有手臂的。$8#$b#如果你和他关系非常非常亲密，你就会看到他的手臂了。$12",
+"Core.SenS.LateHeart.30": "我想图书馆的馆主已经意识到有不少书籍不见了。#$b#有时候，我会因为受到惊吓而把书弄丢在城里。$8#$e#如果你找到了，能不能帮我把它们还回去？$8",
+"Core.SenS.LateHeart.31": "你知道海洋里住着一只海怪吗？$h#$b#有时候我在夜晚去海滩时会看到它们。$h#$e#我知道它们看起来很可怕，但我向你保证它们其实很友好。$h",
+"Core.SenS.LateHeart.32": "哦，你好，@！$h#$q 1077021/1077022 LanguageFollowup#我在想，我的语言说得好吗？ #$r 1077021 10 LanguageYes#你真会说话！ #$r 1077022 10 LanguageAbsolutely#当然，你说得比我还好！ #$r 1077021 10 LanguageNo#你还需要多练习。",
+"Core.SenS.LateHeart.33": "哦，你好，@！$h#$q 1077041/1077042 SenFavoriteFollowup# 你有最喜欢的东西吗？ #$r 1077042 0 SenFavoriteThing#是的，我最喜欢的东西是... #$r 1077041 0 SenNoFavoriteThing#不，我没有最喜欢的东西。",
+"Core.SenS.LateHeart.34": "有时候当我从村民的窗户往里看时，我看到他们在看里面有移动画面的奇怪盒子。#$b#这就是人类在空闲时间里做的事情吗？$6#$e#坐在那里看似乎有点无聊，我应该试着看一些移动画面盒子里的东西。$6#$b#也许这样我就能理解了。$h",
+"Core.SenS.LateHeart.35": "%Sen今天看起来很兴奋。#$e#天哪，我喜欢了解新地方。我开始读一本新书，我向自己保证我会在这个夏天读完它！$h#$e#这本书是关于%place的。我真的很想去看看。$h#$e#我听说那里很%adj，而且他们有最好的%nouns。$h#$e#哦？你问我在哪里找到这本书的？#$b# ...在垃圾箱里！$h",
+"Core.SenS.LateHeart.36": "每天清晨，我都会听到一只鸟的尖叫声。#$b#第一次听到时我吓得魂飞魄散。$u#$e#我现在知道那是一只公鸡了，虽然它们被用作农民起床的信号！人类真是奇怪。$6",
+"Core.SenS.LateHeart.37": "哦，你好@！我昨晚在你农场附近发现了这些。它们是你的吗？[170]$h#$e#嗯，它们不是？好吧，也许你会找到主人。$8",
+"Core.SenS.LateHeart.38": "我昨晚做了一件非常糟糕的事情。$s#$b#河边的拖车窗户开着...我忍不住，就爬了进去。$s#$e#我不小心打翻了一个玻璃杯，摔碎了！$u#$b#一个闻起来像啤酒的女人醒来了，所以我躲起来，把自己藏在了一个灯罩下面。$u#$e#我真不敢相信这招管用了。$8#$b#她一定是喝醉了。$s",
+"Core.SenS.LateHeart.39": "哦我的天哪哦我的天哪哦我的天哪！！你好，@！！$h#$b#你绝对想不到我今天吃了什么！#$e#是咖啡！嗯...太好喝了！$7#$b#我可能是从旅馆里偷来的，但它实在是太好喝了。$h#$e#不过它让我有点紧张。$8",
+"Core.SenS.LateHeart.40": "我最近在火车轨道附近闲逛时看到一个小绿人。$u#$b#你觉得他们可能是个小妖精吗？$6#$e#我听说过他们，但从未见过。",
+"Core.SenS.LateHeart.41": "%revealtasteSenS766 你去过森林里的那个奇怪果园吗？$6#$b#我喜欢有时去那里放松和阅读。$h#$e#那里也会出现很多史莱姆。它们的史莱姆球是很好的零食。$h",
+"Core.SenS.LateHeart.42": "哦，你好，@!$h#$q 1077021/1077022 LanguageFollowup#我在想，我的语言说得好吗？ #$r 1077021 10 LanguageYes#你真会说话！ #$r 1077022 10 LanguageAbsolutely#当然，你说得比我还好！ #$r 1077021 10 LanguageNo#你还需要多练习。",
+    "Core.SenS.LanguageYes": "Whew... I'm glad! I was really overthinking things.$h#$b#I was a bit nervous that I haven't been articulating myself well.$8",
+    "Core.SenS.LanguageAbsolutely": "...!$7#$b#That thrills me, @! I've practiced and studied so hard to get to this point.$h#$b#It means a lot to me that you think I speak well, my friend.$h",
+    "Core.SenS.LanguageNo": "...Oh dear.$s#$b#Well, I will have to practice harder! Maybe you could give me some lessons?$h",
+    "Core.SenS.LanguageFollowup": "$p 1077022# I've been considering writing my own book for a while. I wonder if anyone would read it if I used a pseudonym?$h|Want to join me at the library tonight for some late-night studies?$h",
+"Core.SenS.LateHeart.43": "哦，你好，@!$h#$q 1077041/1077042 SenFavoriteFollowup# 你有最喜欢的东西吗？ #$r 1077042 0 SenFavoriteThing#是的，我最喜欢的东西是... #$r 1077041 0 SenNoFavoriteThing#不，我没有最喜欢的东西。",
+    "Core.SenS.SenFavoriteThing": "Oh, %favorite huh? Good to know!$h#$b#I will be keeping that in mind.$12",
+    "Core.SenS.SenNoFavoriteThing": "Surely there's something you like a lot!#$b#You're a strange one, @.$8",
+    "Core.SenS.SenFavoriteFollowup": "$p 1077042# 我可能正在编织一件带有%favorite图案的{{CrocItem}}。我想知道这是谁的？$12|我想我会给你编织一件{{CrocItem}}。你想要吗？$h",
+"Core.SenS.LateHeart.44": "哦，@，你好！ #$q 1077031/1077032 SenKillFollowup# 老实告诉我，@... 你杀过我的族人吗？ #$r 1077031 10 SenNoKill#不，连一个都没有。 #$r 1077031 10 SenSelfDefense#是的，但只是出于自卫。 #$r 1077031 10 SenAccident#是的，但那是个意外。 #$r 1077032 -250 SenSilence#...",
+    "Core.SenS.SenNoKill": "You never cease to astound me, @.$7#$b#I truly believe that you are the guiding light my people needs.$l",
+    "Core.SenS.SenSelfDefense": "I completely understand that. My people can be incredibly hostile...$8#$b#When backed into a corner, it's kill or be killed.$s",
+    "Core.SenS.SenAccident": "Oh... I'm so sorry. You must have felt terrible.$s#$b#My people can be very reckless...$s",
+    "Core.SenS.SenSilence": "Your... lack of response disturbs me. Have you, or have you not?$a#$b#Please be honest with me. You trust me, right?$a",
+    "Core.SenS.SenKillFollowup": "$p 1077032# The fact that you never answered me about harming my people still bothers me. I'm sure you have your reasons, but...$s|Together, I believe that we're going to build a brighter future for both our kinds. Don't you think so too, @?$h",
+"Core.SenS.LateHeart.45": "哦，@！快点，现在几点了？$u#$b#$y '现在是%time。_告诉他时间。_我迟到了！我迟到了！要去一个非常重要的约会！$u_该给你买个手表了！_...其实，我应该修理一下我在垃圾里找到的那个手表。说真的，现在几点了？$8'",
+"Core.SenS.LateHeart.46": "我头上的尖刺，我头上的尖刺。~ 它们可能是什么呢？~$12#$b#来吧，猜猜看，@！$h#$e#如果你猜是{{Spikes}}，你可能是对的...$h#$b#...也许。$12",
+"Core.SenS.LateHeart.47": "我在废弃果园里发现了一本旧书。#$b#书名是{{Subject}} {{Descriptor}}。作者{{Author2}}对这个话题真是无所不知！$h",
+"Core.SenS.LateHeart.48": "有时候我在想...#$b#$p 1077012#你为什么曾经告诉我你不喜欢我？这让我困扰了很久。$6|两个不同物种的人是怎么成为好朋友的？$h",
+"Core.SenS.LateHeart.49": "我想我今晚会做一顿丰盛的晚餐...也许是{{FoodStyle}} {{Food}}？$h#$b#如果你在凌晨4点左右有空的话，欢迎来我这儿吃一口。$h#$e#不过我想你可能不会来。$8",
+"Core.SenS.LateHeart.50": "我昨晚在翻找人们的垃圾桶。$h#$b#我找到了一{{Object}}。$7#$e#有空你也应该和我一起去翻垃圾。这很有趣$12#$b#...如果你能忍受那股臭味的话。$12",
+"Core.SenS.LateHeart.51": "今晚我打算和{{SenKrobusReference}}一起去翻垃圾桶。$12#$b#希望我能找到{{Object2}}。$h#$e#你也应该加入我们，@。一定会很有趣的！$h#$e#...哎呀，你怎么能说你要睡觉呢？$s",
+"Core.SenS.LateHeart.52": "我得到了一本新书，书名是{{Subject}} {{Descriptor2}}。#$b#{{ClosingLH52}}",
+    "Rand.SenS.LH.52.1": "我很喜欢这份工作，不过我有一些批评意见。$8",
+    "Rand.SenS.LH.52.2": "这真是一本奇妙的书。我想你一定会喜欢的！$7",
+    "Rand.SenS.LH.52.3": "没想到...居然是本浪漫小说。$11",
+"Core.SenS.LateHeart.53": "我想是时候让我蜷缩在温暖的毛毯里了。$8#$b#也许我会用{{CrocColor}}的纱线编织一条新的毛毯？$6#$e#是的，听起来很舒服！$h",
+"Core.SenS.LateHeart.54": "嗯...吃什么好呢，吃什么好呢？$6#$b#$y '哦，@！帮我选晚餐。_{{Flavor}} {{Food}}._嗯，完美！我也会为你做一些，@！$7_{{FoodStyle}} {{Food}}._好久没吃这个了！谢谢你的帮助，@！$h'",
+"Core.SenS.LateHeart.55": "...两个词：%adj %noun。#$b#还需要我多说什么吗？{{Expression}}#$e#抱歉，我不想进一步解释。",
+"Core.SenS.LateHeart.56": "啊，@！我没有阅读材料了。你有什么书籍推荐吗？$h#$b#$y '你会推荐什么？_非小说类书籍：{{BookType}} {{Subject}}_嗯...听起来很有趣！知识越多，生活就越快乐！$h_言情小说：{{Descriptor4}} {{Subject2}}_ 你-你想让我读言情小说？浪漫爱情对我来说是一个相当新的概念，不过我会试试的。$11_同人小说：{{BookPeople}} 和 {{Descriptor5}}_...人类的兴趣真是独特。$8'",
+"Core.SenS.LateHeart.57": "我听说{{People}}对%nouns有秘密的迷恋。$6#$b#这不是很奇怪吗？$8#$e#也许我听错了...$8",
+"Core.SenS.LateHeart.58": "@，我今天真希望能见到你！我们来玩个小游戏吧。$h#$b#$y '快，抽一张牌！_紫色牌_{{GameResult1}}_橙色牌_{{GameResult2}}",
+"Core.SenS.LateHeart.59": "又是新的一天，又有新的东西可以编织！$l#$b#昨晚我用{{CrocColor}}的纱线做了{{CrocItem}}！$h#$e#我把它送给了{{SenKrobusReference}}作为礼物，他似乎很喜欢！$h#$b#送礼让我感到心里暖暖的。$l",
+"Core.SenS.LateHeart.60": "%revealtasteSenS418 我一直在洞穴里把番红花压在书本里保存。你想要一朵吗？$h[418]#$e#我在书上读到番红花象征着{{Symbolism}}。#$b#这不是很美吗？番红花真是太可爱了。$l",
+
+"Core.SenS.RelationshipOverride.1": "你的{{SenRelationshipTerm}}有时也需要一朵花，对吧？$h[22 18 597 591]#$e#我开始从地表给我的族人带花了。$h#$b#他们对花朵很着迷。看到这一幕真让人心暖。$l",
+"Core.SenS.RelationshipOverride.2": "你是个特别的人，@。$l#$b#精灵只会向那些与自然有亲和力的人显现。$h#$e#你那平和的天性正好说明了这一点。$l#$b#永远不要改变，@。$h",
+"Core.SenS.RelationshipOverride.3": "%revealtasteSenS418 嘿嘿... 你是我认识的最好的人，所以这是最好的花！$h[418]#$e#我的花卉指南说番红花象征着{{Symbolism}}。$h#$b#我在花瓶里放着它们，以此来提醒我。$l",
+"Core.SenS.RelationshipOverride.4": "这个镇上的每个人都喜欢你，@... 包括我。$l#$b#你真是个特别的人。当你感到沮丧时，永远不要忘记这一点。$h#$e#嘿嘿，对不起！我忍不住有点感性。$l",
+"Core.SenS.RelationshipOverride.5": "这些天，当我下到矿井去看望我的家人时，我总是给他们讲述你！$h#$b#我想让他们知道我的{{SenRelationshipTerm}}是多么的了不起！$7#$e#有时我觉得这让斯克雷尔有点疯狂，但他可以忍受。$12",
+"Core.SenS.RelationshipOverride.6": "哦，@！我想让你知道...$h#$b#谢谢你对我如此友好。$l#$e#如果没有你的指导，我不知道我会怎么适应地表生活。$8#$b#为我们的关系更加牢固干杯！$h",
+"Core.SenS.RelationshipOverride.7": "你的可爱的{{SenRelationshipTerm}}有时也需要一朵花，对吧？$h[22 18 597 591]#$e#我开始从地表给我的族人带花了。$h#$b#他们对花朵很着迷。看到这一幕真让人心暖。$l",
+"Core.SenS.RelationshipOverride.8": "我从未与其他人有过如此强烈的联系，甚至连一个暗影都没有。$l#$b#你是一个暗影所能拥有的最好的{{SenRelationshipTerm}}，@。我希望这永远不会改变。$l",
+"Core.SenS.RelationshipOverride.9": "每次我在矿井里提到你时，我都很难控制自己的情绪。我想告诉每个人关于你的一切。$s#$b#你是一个了不起的{{SenRelationshipTerm}}，也是我的灵感来源，@。$s#$e#我希望我的同胞们能给人类一个机会。$s#$b#不过，我想这个世界还没有准备好...$8",
+"Core.SenS.RelationshipOverride.10": "我们竟然能成为{{SenRelationshipTerm}}，真是太不可思议了。$l#$b#我一直梦想着能和人类亲近，但我从没想过这会成为现实。$h#$e#为我们的关系日益加深干杯！$7",
+
+//SEASONAL OVERRIDE POOLS
+"Core.SenS.Seasonal.spring.1": "哦，哦！你好，@！$h#$b#我找到了一朵漂亮的花，希望你喜欢。$h[22 18 597 591]#$e#天哪，我真喜欢送礼物。这让我感到无比温暖和幸福。$l",
+"Core.SenS.Seasonal.spring.2": "@！一只非常毛茸茸的蜜蜂刚刚落在我头上！$u#$b#我有点害怕，但过了一会儿蜜蜂就飞走了。$8#$e#我在想它们是不是迷路了？$s",
+"Core.SenS.Seasonal.spring.3": "哦，哦！你好，@！$7#$b#我有个礼物要送给你。$h[22 18 597 591]#$e#我希望你喜欢。当我采摘它时，我立刻就想到了你。$h",
+"Core.SenS.Seasonal.spring.4": "我读到蝴蝶的翅膀是非常脆弱的。#$b#你绝对不应该碰它们，因为你手上的油会损害它们。$s#$e#我不知道我的小爪子是否会伤害到蝴蝶，但最好还是不要碰它们。$h",
+"Core.SenS.Seasonal.spring.5": "嗯...所以这是{{SpringCrop}}的季节，是吗？$7#$b#你今年会在农场种植吗？$h#$e#如果你种了，我希望你能分我一个！$h",
+"Core.SenS.Seasonal.spring.6": "今天天气真好，不是吗，@？$h#$b#鸟儿在歌唱，花儿在盛开。$7#$b#在这样的日子里...#$b#像你这样的人应该在农场上忙碌起来了！$h",
+"Core.SenS.Seasonal.spring.7": "你在农场上种植郁金香吗，@？$h#$b#我在一本花卉指南上读到它们可以有五种不同的颜色！$7#$e#我想知道这种变异是怎么发生的...#$b#无论如何，每种颜色都很美丽！$h",
+"Core.SenS.Seasonal.spring.8": "天哪，春天的空气让人感觉如此清新！$h#$b#它是如此干净清新，并不像可恶的夏天那样闷热！$a#$e#唉，我不期待即将到来的夏天。$s",
+"Core.SenS.Seasonal.spring.9": "哦，今天天气太好了，我刚才在树下睡着了！$h#$b#你在大自然中有没有午睡过，@？$h#$e#...当你工作太累而晕倒时？！$u#$b#@，请照顾好自己！$s",
+"Core.SenS.Seasonal.spring.10": "AAaaaAAachhhooooo!!!$u#$b#Oh my goodness, I'm so sorry, @! The pollen seems to be getting to me.$8#$e#(Dear yoba, that was really embarrassing...)$8",
+
+//OH MY GOD SHUT UP ABOUT HOW MUCH YOU HATE THE SUMMER OH MY GOD
+"Core.SenS.Seasonal.summer.1": "唉，外面热得要命...$s#$b#除非天黑了或者我有伞，否则我不能离开阴凉处。$s#$e#不过也没关系，这样我就有更多时间看书和钩织了。$h",
+"Core.SenS.Seasonal.summer.2": "我喜欢夏天虫子嗡嗡叫的声音。$l#$b#这很放松，让我想起了家。$h#$e#我确实希望太阳不要这么亮。$8#$b#在直射阳光下走一步，我就会像虚空蛋一样被煎熟。#$b#真恶心。$a",
+"Core.SenS.Seasonal.summer.3": "如果说夏天有什么我真正喜欢的，那就是冰淇淋实在太多了！$7#$e#显然我之前在地上发现的冰淇淋是一个小孩掉的。$s#$b#我为他们感到难过，但至少我得到了零食。$8",
+"Core.SenS.Seasonal.summer.4": "呸，我讨厌这该死的热天！$a#$b#不过我还是出去了，这样我就能为你找到这些东西了$h[421 593 402 376]#$e#我真的希望你喜欢，@。$h#$b#送礼物让我的心感到温暖和模糊。$l",
+"Core.SenS.Seasonal.summer.5": "哦你好，@...我感觉我要融化了。$s#$b#为什么夏天一定要这么热？$s#$e#如果我对着流星许愿足够努力，你觉得夏天会停止存在吗？$8",
+"Core.SenS.Seasonal.summer.6": "哒哒！这是给你的礼物，@！$h#$b#外面可能很热，但这不会阻止我为你找礼物。$h[421 593 402 376]#$e#我真的希望你喜欢，@。$h#$b#我不知道为什么，但是花让我想起了你。$h",
+"Core.SenS.Seasonal.summer.7": "太阳，太阳，快走开。改天再来吧。~$12#$e#哦，抱歉@。你撞见我在唱关于我对夏日阳光极度厌恶的歌。$8",
+"Core.SenS.Seasonal.summer.8": "唉，这个季节让我疯狂地蜕皮。$a#$b#我希望这不会让你太恶心，@。$8#$e#我比大多数暗影更毛茸茸，所以我也会掉毛。$8#$b#要保持最佳状态需要一些努力，特别是在夏天。$8",
+"Core.SenS.Seasonal.summer.9": "一年中的这个时候有很多苍蝇。$h#$b#看起来人类觉得它们很烦人...但对我来说，这意味着我总是有零食！$7#$e#现在，如果不是这么热就好了...$a",
+"Core.SenS.Seasonal.summer.10": "唉，炙热的天气不是噩梦吗？$a#$b#我的族类通常喜欢热，但这对我来说也太过了。$8#$e#你会以为雨会改善情况，但往往会让事情变得更糟。$8#$b#如此潮湿！$8",
+
+"Core.SenS.Seasonal.fall.1": "嗯..人类似乎在秋天有雕刻南瓜的传统。$6#$e#多么有趣...我可能会自己试试。$h#$e#你知道，我真的很喜欢南瓜。它们是非常可爱的葫芦。$l",
+"Core.SenS.Seasonal.fall.2": "之前从客栈传来了最可爱的香味...$l#$b#有人刚烤了南瓜派！$l#$e#它现在可能在我肚子里，也可能不在。$8#$b#我忍不住，嘿嘿嘿...$l",
+"Core.SenS.Seasonal.fall.3": "我弄到了一种叫\"南瓜香料咖啡\"的新饮料。$h#$b#这是我生命中喝过的最好的东西之一。$7#$e#你喜欢咖啡吗，@？$h#$b#我喜欢，但它让我紧张兴奋。$8",
+"Core.SenS.Seasonal.fall.4": "我想今晚要雕刻一个南瓜。$h#$b#$y '你喜欢雕刻南瓜吗，@？_我每年秋天都做！_我打赌你雕刻的南瓜是山谷里最棒的，@。我打算让我的看起来像我的脸。$h_不，我绝对讨厌。_啊...那你有试过和别人一起做吗？那样可能会更有趣！$8_从没试过！_哦，我们应该一起雕刻南瓜。听起来不有趣吗？$h'",
+"Core.SenS.Seasonal.fall.5": "啊...秋天清爽的微风。$l#$b#也许我应该邀请矿井里的朋友来体验它的美丽。$h#$e#不...那将是个糟糕的想法。$s#$b#我不知道如果他们看到人类会如何反应。$s#$e#或者...如果人类看到他们。$s",
+"Core.SenS.Seasonal.fall.6": "尽管我喜欢秋天，但我发现跳进落叶堆是不明智的。$8#$b#上次我这样做时，被小虫子咬得满身都是。$8#$e#作为回应，我反咬了那些小家伙！$12#$b#我要让你知道它们很美味。$12",
+"Core.SenS.Seasonal.fall.7": "秋天清脆的叶子让我感到如此怀旧，但我不确定为什么。$l#$b#这不是我在矿井里经历过的任何事情...$6#$e#也许我应该开始写日记来处理这些奇怪的感觉。$6",
+"Core.SenS.Seasonal.fall.8": "现在一杯热可可加棉花糖听起来真不错。$h#$b#也许再来一片南瓜派...$l#$e#我今晚可能需要突袭客栈的厨房。$12",
+"Core.SenS.Seasonal.fall.9": "哦，@！你想稍后和我一起雕刻这个南瓜吗？$h [276]#$b#我觉得这会很有趣！$7#$e#嗯...？我从哪里得到的南瓜？$6#$b#我最好不要告诉你。$12",
+"Core.SenS.Seasonal.fall.10": "哦你好，@！$h#$b#我想我今天犯了个错误。$s#$b#我看到松鼠在啃从树上掉下来的东西。我决定自己试试。#$e#我最终咬了松果，这很不愉快。$8#$e#请不要咬松果，@。从我的错误中学习！$s",
+
+"Core.SenS.Seasonal.winter.1": "雪...$l#$b#尽管又亮又冷，但它很漂亮！$h#$b#除了矿井里一些寒冷的地板，下面没有什么能像冬天这样的。$l#$e#当然没有雪，这是肯定的。$s",
+"Core.SenS.Seasonal.winter.2": "可能很冷，但我的心不冷。$h#$b#我希望你喜欢这个！$h[418]#$e#番红花是我最喜欢的花。$l#$b#它让这寒冷变得可以忍受。$8",
+"Core.SenS.Seasonal.winter.3": "啊啊..#$b#啊啊....$h#$b#阿嚏！！$11#$e#哦天哪，很抱歉你必须目睹这个！$11#$b#春天的花粉让我的鼻子发痒。$8#$e#嗯？你说\"等等，你有鼻子？\"是什么意思？$8#$b#我当然有鼻子。你真傻，@。$h",
+"Core.SenS.Seasonal.winter.4": "你有没有偶尔在雪地里发现奇怪的冷山药？$6#$b#它们肯定不可能在这种天气下生长...$6#$e#不过，这个世界上还有比这更奇怪的事情。$8#$b#...包括我自己。$12",
+"Core.SenS.Seasonal.winter.5": "啊啊..#$b#啊啊....$h#$b#阿嚏！！$11#$e#哦我的天，抱歉！冷空气让我鼻子发痒。$8#$e#哦？别担心，我没生病。$8",
+"Core.SenS.Seasonal.winter.6": "哆...好冷...$s#$b#$y '你能做什么?_给他一个拥抱_哦？谢谢你，@。我感觉暖和多了。$l_叫他穿上外套_你说得对...我会试着钩织一件。我们暗影在穿人类的衣服时很难感到舒适。$8'",
+"Core.SenS.Seasonal.winter.7": "太冷了，我几乎希望是夏天。$a#$b#...我这么说，但如果真是夏天，我又会抱怨想要更冷的天气。$8#$e#为什么不能让秋天永远持续呢？$s#$b#或者春天。$8#$b#春天也行。$8",
+"Core.SenS.Seasonal.winter.8": "你会认为我会喜欢冬天，因为它凉爽潮湿，但你会大错特错。#$b#白天雪反射出的光线是如此刺眼。$a#$e#我不确定是雪反射的光线更能把我烤熟，还是夏天的太阳。$8#$b#至少冬天太阳下山得早一点。那样我就可以多点时间在洞外活动。$h",
+"Core.SenS.Seasonal.winter.9": "我对雪感到厌倦。$a#$b#我短短的腿总是卡住！$s#$e#我摔倒的次数不计其数。$s#$b#昨晚我脸颊上还撞上了一个讨厌的淤青。$s",
+"Core.SenS.Seasonal.winter.10": "我有点饿了...冬天真的很难找到虫子。$s#$b#我可能得晚点进矿里补充库存。#$e#或者我可以偷偷溜进那个渔夫的商店，抓点饵料来吃，想想也不错。$6",
+
+//SPECIFIC DAYS - SPRING
+"Core.SenS.Spring.Day.1": "啊...春天。矿井里没有什么能比得上春天的了。$h#$b#新鲜的空气，郁郁葱葱的草地...$l#$b#哦，还有大量的虫子！美味！$l#$b#要不要试试？$h#$e#[721] 嗯，怎么了？$6",
+"Core.SenS.Spring.Day.12": "我真的需要把我的蛋形服装修补好，以备明天使用。#$b#有几个地方快掉下来了。$8#$e#我想这就是我用垃圾做材料的结果。$8",
+"Core.SenS.Spring.Day.18": "河边的商店里传来的气氛真让人毛骨悚然。$6#$b#当我把头探进门时，里面看起来如此无菌和阴森。$s#$e#怎么会有人在这样的地方感到舒适呢？$s",
+"Core.SenS.Spring.Day.20": "我真的需要找些新的缝衣针。#$b#花舞节只有几天了，我的服装急需修理！$u#$e#谢天谢地，蓝发的女士似乎扔掉了不少。$h",
+"Core.SenS.Spring.Day.23": "哦，花舞节听起来真令人兴奋！我真的很想试试跳舞。$h#$b#我为此还特意做了套衣服。$l#$e#不幸的是，我太害怕在别人面前表演了。$8#$b#虽然我的脸会被兜帽遮住，但...$s",
+"Core.SenS.Spring.Day.28": "真恶心...我能感觉到空气开始变热。这一定是夏天快到了。$a#$b#太可怕了！我干脆在矿里待整个季节算了。$a#$e#呃，我是不会的，但这确实很诱人。$s",
+
+//SPECIFIC DAYS - SUMMER
+"Core.SenS.Summer.Day.1": "天哪，夏天真是太残酷了。$s#$b#当我在图书馆翻阅地图集时，读到了卡利科沙漠。显然那里更热。#$e#我第一反应是\"不，谢谢，我永远不想去那里！\"。$u",
+"Core.SenS.Summer.Day.10": "我明天的服装会不舒服的。$s#$b#其实只是一顶帽子，我会把身体埋在沙子里。$8#$e#拜托，别把我的帽子拿掉，也别引起注意。$s#$e#嗯，我为什么要把自己埋在沙子里？$6#$b#因为太阳出来了，傻瓜。$6#$e#我想我可以站在树下，但那样我就离大家远了。$s#$e#嗯？我为什么不做全身的服装？$6#$b#你知道，你问了很多问题，@。$a",
+"Core.SenS.Summer.Day.19": "哦你好，@!$h#$b#{{SDay19}}",
+    "Rand.SenS.SDay19.1": "我希望%farm那边一切顺利！根据我找到的报纸来看，似乎是这样。$h",
+    "Rand.SenS.SDay19.2": "我昨晚偷偷看了%farm那片土地，真是美极了！$l",
+    "Rand.SenS.SDay19.3": "我在考虑今晚潜入你们的农场。希望你不介意。$8#$b#你们农场的作物看起来真美味！$l#$e#如果早上有任何东西不见了，我先说声抱歉。$8",
+"Core.SenS.Summer.Day.27": "我为明天的月光果冻派对做了一个果冻的服装。#h#$b#我可能会很不舒服，因为我需要蜷缩成一团才能塞进去。$8#$e#我希望没有人会认为我是真的果冻，试图揭开我的伪装。$u",
+"Core.SenS.Summer.Day.28": "你注意到叶子开始变色了吗，@？秋天似乎就在眼前！$h#$b#哇...我等不及了！我打算收集所有我能找到的最漂亮的叶子。$7",
+
+//SPECIFIC DAYS - FALL
+"Core.SenS.Fall.Day.1": "秋天...这个季节是如此美丽。$l#$b#颜色鲜艳，和我以前见过的完全不同。$l#$e#阳光不那么刺眼，空气凉爽但不冰冷。$l#$b#我可能会更常出去！$h#$b#当然前提是我带着伞。$h",
+"Core.SenS.Fall.Day.15": "哦，我对明天的星露集市感到无比兴奋！$h#$b#我希望我能玩游戏，但人们可能会困惑，为什么会有一个随机家伙穿着南瓜服装到处走。$8#$e#我想我会像往常一样在这些活动的边缘徘徊...$s#$e#唉...你觉得人类和暗影真的能共存吗...$s",
+"Core.SenS.Fall.Day.26": "哇，太好了！精灵的复活节是我可以参加的一个活动，我不需要穿上南瓜服装。$h#$b#我只需要把一只旧夹克的拉链粘在背上，告诉每个人我穿的是怪物服装。#$e#天才，对吧？$h",
+"Core.SenS.Fall.Day.28": "我看到一个奇怪的胖乎乎的男人，他的领结真是太棒了。$6#$b#我有点想要一个领结，但我不确定该怎么戴。$8#$e#嗯..通常是夹在上面的，对吧？我可以把它夹在项链上！$h",
+
+//SPECIFIC DAYS - WINTER
+"Core.SenS.Winter.Day.1": "冬天让我感到复杂的情绪...$s#$b#这里很安静，树木光秃秃的，动物也很少...$s#$e#我感到平静，还是孤独？$6#$b#或许两者兼而有之？$6#$e#哦，抱歉让你听我发呆！$8#$b#我想我今天有点沉思。$8",
+"Core.SenS.Winter.Day.7": "我在垃圾堆里找到了一套节日服装。#$b#我稍微修补了一下，打算在冰雪节上穿。$h#$e#不幸的是，这套服装对我来说有点小。$8#$b#我想这是给一个人类小孩穿的。$8#$e#但嘿，我让它合身了。$h",
+"Core.SenS.Winter.Day.13": "哼哼哼~ 哼哼哼~#$b#哦你好，@！我只是在给自己哼小生日曲。$h#$e#这是一件我们暗影和人类共同拥有的事情，庆祝我们来到这个世界的日子。$h",
+"Core.SenS.Winter.Day.24": "哦，@！我明天要再穿一次冰雪节的服装。 $8#$e#我希望我不会再被误认为是迷路的孩子。$a#$b#我真的得挤一挤才能塞进那玩意里。$s",
+"Core.SenS.Winter.Day.28": "我有点想试试打雪仗。听起来很有趣！$7#$b#如果雪太硬的话，可能也会很痛！$u#$e#如果我们一起玩的话，你会手下留情吧，@？$8",
+
+//SPECIFIC DAY - DAY BEFORE MOD FESTIVALS
+"Core.SenS.Spring.Day.18.Event": "哦@！你明天要来时尚节吗？$h#$b#我当然要去！$7#$e#我期待着从所有精彩的设计中获得灵感。$h", //Fashion
+"Core.SenS.Summer.Day.4.Event": "所以你们骑着水波浪板玩耍？$6#$b#这听起来太危险了！$u#$e#不过...我想这也没什么比我明天去参加更危险的了。$8", //Surfing
+"Core.SenS.Summer.Day.19.Event": "你期待明天的烟火吗，@？$h#$b#我对大声的噪音很紧张，但我忍不住想看这样五彩缤纷的景象。$8", //Fireworks
+"Core.SenS.Fall.Day.2.Event": "明天就是集市狂欢节了！你兴奋吗？$h#$b#我得把斗篷准备好，以免错过任何好交易。$h", //Marketpalooza
+"Core.SenS.Fall.Day.19.Event": "明天在山脊上会有一个大型聚会。#$b#我很少去那里，但我打算去看看这是怎么回事。$h", //Gathering
+"Core.SenS.Winter.Day.12.Event": "明天是爱之节！你们人类表达爱意的方式真是丰富多彩。$h#$b#这很可爱，真的影响了我。$h", //Love
+"Core.SenS.Winter.Day.27.Event": "明天是篝火晚会。#$b#我得小心点，别靠得太近，不然我可能会当场被烧成灰烬！$u", //Ember
+
+//CONVERSATION TOPICS
+"Core.SenS.SenMet": "O-oh.. you're the person I met in the mines, aren't you?$u#$b#I-I promise that I come in peace!$u#$e#I hope that we will be able to get along... I came to the surface to learn more about your world.$8",
+"Core.SenS.DreamReveal": "Humans and Shadowfolk... Do you think we could someday co-exist?#$b#With time, care, and patience I think it's a future we can achieve.$h",
+"Core.SenS.ShadowPlay": "%Sen smells kinda funny.#$b#...What's that look for?$6#$b#Oh! Right, humans find the smell of garbage off putting, don't they?$8",
+"Core.SenS.GardenWaitTime": "I'm so excited for the garden, I'm about to bounce out of my own skin.$7#$b#I can't thank you enough for the help, @!$h",
+"Core.SenS.GardenCompleted": "...Sniffle...$10#$b#The garden came out so lovely, I...$10#$b#I'm at a loss for words. From the bottom of my heart... Thank you, @.$10",
+"Core.SenS.FamilyFlashback": "I appreciate you taking the time out of your day to listen to me ramble about my familial problems, @.$8#$b#If you ever need someone to talk to, I'm here to lend an ear.$h",
+"Core.SenS.MineFlashback": "I won't lie... I'm a bit nervous about introducing you to my family.$s#$b#Skrell has a history of jumping to hostility.$8#$b#I hope you'll give him a chance, even if he is a bit... rude.$8",
+"Core.SenS.TheConfrontation": "Goodness... that meet-up went better than I could have ever imagined!$h#$b#I honestly didn't expect Skrell to warm up to you so quickly.$7#$b#Well... warm up to you as much as a grumpy old man can, hehe.$12",
+"Core.SenS.SkrellEpilogue": "...Skrell visited you?$u#$b#I'd be lying if I said I wasn't curious to know what you two talked about.$6#$b#I won't pry of course. I'm simply thrilled that he's giving you a chance.$h",
+"Core.SenS.SensFlowers": "I hope something beautiful blooms from the seeds thrown into the ocean breeze.$l",
+"Core.SenS.SenPortrait": "你...买了我的照片吗？$6#$b#那个店主到底是从哪里弄到这个的？！呀！$u#$b#一堆问题先放一边...天哪，我确实很可爱，不是吗？$h#$b#要是你能看到我还是小Sen时的样子就好了。$l#$action AddMail Current DitR_M_SenPortrait received",
+"Core.SenS.SenBabyPhoto": "你...买了我小时候的照片？$6#$b#好吧，现在我真的吓坏了！$u#$b#怎么可能？！？店主是从哪里弄到那个的？！啊啊啊啊啊！！！！？？？？$9#$b#...#$b#不过我小时候确实很可爱，不是吗？$l",
+"Core.SenS.JojaBegin": "I've overheard that the rundown old building is being turned into a warehouse...$s#$b#I will miss it. I spent much time exploring in there...$s#$e#I wonder what will become of the poor little junimos...?$s",
+"Core.SenS.ccBegin": "I've overheard that you're going to try and repair that old rundown building!$h#$b#I'm a bit disappointed that I won't be able to explore there anymore, but that's okay.$8#$e#I'm excited that the junimos will get to finally return home.$h",
+"Core.SenS.ccBus": "So that old bus is working again, huh?#$b#When I first heard it start, it gave me quite the scare.$8#$e#I don't know why, but it reminds me of a giant wild animal.$8",
+"Core.SenS.ccBridge": "That old bridge has been fixed up, huh? Be careful while exploring!$8#$b#Incredibly obnoxious skulls lurk in a cavern near there.$a#$e#They're notorious among my people...$a#$b#Honestly, they're even more obnoxious than bats.$a",
+"Core.SenS.ccBoulder": "I saw the junimos removing the glittering boulder last night!$7#$b#As a result, there are now gorgeous gemstones in the river.$h#$e#If you go panning, I'm sure you'll find some!$7",
+"Core.SenS.ccBoulder.Joja": "I saw those uniformed folks removing the glittering boulder not too long ago.$7#$b#As a result, there are now gorgeous gemstones in the river.$h",
+"Core.SenS.ccGreenhouse": "Hm? A building was mysteriously repaired on your farm over night?$6#$b#That surely must have been a gift from the junimos.$h#$e#You're helping them rebuild the community center, aren't you?$h",
+"Core.SenS.ccGreenhouse.Joja": "Hm? You had the greenhouse on your farm repaired?$6#$b#That's great to hear, @!$h",
+"Core.SenS.ccMinecart": "That old minecart is up and running!$h#$b#I can't tell you how useful it is to get around town.$7#$e#I only use it at night, of course.$8#$b#I wonder if anyone has seen it moving and assumed it was haunted?$h",
+"Core.SenS.ccComplete": "So that old building is finally repaired, huh? You're truly something else, @.$h#$b#First the junimos reveal themselves to you, then you helped them return home...$l#$e#Your heart is so very pure, @. Be proud of your accomplishments.$l",
+"Core.SenS.MovieTheater": "There's a... movie theater in town now, huh?$6#$b#Based on what I've read, they're like one of those weird picture boxes humans stare at - but bigger.$6#$e#Humans have such odd ways of passing the time.$8",
+"Core.SenS.JasperGone2": "I...I've heard that a human has descended into the mines.$s#$b#I am incredibly worried for his safety.$s#$e#Perhaps I should go looking for him?$u#$b#If I find him before my people do, maybe I can convince him to return to the surface...!$u",
+"Core.SenS.JasperHomeA": "I... wasn't able to find that Jasper fellow before my people did.$s#$b#It breaks my heart to see these situations end in violence.$10#$e#Can humans and shadows ever truly coexist...?$10#$b#Times like this make me question my conviction...$10",
+"Core.SenS.KeahiStink": "%Sen appears to be sniffing you...#$b#Oh my, what is that powerful odor? Some kind of new perfume?$6#$e#Where can I get some? It smells quite lovely.$h",
+"Core.SenS.PumpkinSpice": "I heard that pumpkin spice is currently being sold at the saloon...$7#$b#I absolutely must get my hands on some!$12#$e#Would you mind going in and picking me up a jar or two?$8",
+"Core.SenS.LavrilUnlocked": "I see that Lavril is finally free from her slumber.#$b#Sigh, that poor girl...$s#$e#Hm? How do I know her?#$b#It's a long story. Perhaps I'll tell you later...$8",
+"Core.SenS.LucikielArrives": "H...have you see the new demon in town?$11#$b#He's certainly... something, isn't he?$11#$e#Perhaps he will be open to friendship with me...?$8#$b#We are rather similar beings, after all.$8",
+"Core.SenS.LucikielRepIncrease": "It makes me incredibly happy that Lucikiel is adjusting into your society.$h#$b#It gives me hope that perhaps one day, I can as well...$l",
+"Core.SenS.JulietGremlin": "I've noticed a new dog in town! She's so very fluffy and cute.$7#$b#I wonder if she'd let me give her head pats.$h#$e#Animals tend to be a bit apprehensive towards me at first...$8",
+"Core.SenS.SterlingTrash": "During my nightly routine of rummaging in the trash, I found a nasty surprise.$u#$b#I'd... rather not talk about it.$a#$e#It was bad enough that Krobus and I decided to stop trash-picking for the night.$8",
+"Core.SenS.EliWoods": "",
+"Core.SenS.MateoRescue": "",
+"Core.SenS.MateoCaution": "",
+"Core.SenS.MateoLibrary": "",
+"Core.SenS.MateoAdmission": "",
+"Core.SenS.MateoConfrontation": "",
+"Core.SenS.MateoWyatt": "",
+"Core.SenS.MateoAcceptance": "",
+"Core.SenS.MateoPain": "",
+"Core.SenS.MateoRecovery": "",
+"Core.SenS.CGuildConstruction": "",
+"Core.SenS.CGuildComplete": "",
+"Core.SenS.MateoIntegrity": "",
+"Core.SenS.MateoRomance": "",
+"Core.SenS.MateoForest": "",
+"Core.SenS.MateoMarriageCountdown": "",
+"Core.SenS.MateoDate": "",
+"Core.SenS.MateoDeclaration": "",
+"Core.SenS.MateoEngaged": "",
+"Core.SenS.RoslinNeedsHelp": "",
+"Core.SenS.DandelionReturns": "",
+"Core.SenS.IntoTheDeepDark": "",
+"Core.SenS.DuskspireEncounter": "",
+"Core.SenS.DuskspireDefeated": "",
+
+"Core.SenS.GreenRain": "今天的雨很奇怪，不是吗？似乎让整个镇子都陷入了一片混乱。$6#$b#不过我觉得他们反应过度了。我在地下见过更奇怪的东西。$8",
+"Core.SenS.GreenRain2": "我很好奇是什么引起了这种绿色现象...你有什么理论吗，@？$6#$b#我完全没有头绪！我只知道，树上的苔藓简直太美味了。$h#$b#要来一些吗？[Moss]$7",
+"Core.SenS.GreenRainFinished": "哦，看起来奇怪的雨停了。镇民们平静下来了吗？$h#$b#如果他们觉得那很奇怪，他们应该去矿井看看...$8#$b#为什么地下会有一座满是骷髅的城堡？$6",
+
+"Core.SenS.WelcomeToPride": "Today feels quite colorful, wouldn't you say?$h#$b#I feel like filling in a coloring book and using the brightest colors possible! Care to join me for a coloring session?$7#$b#Sorry if my markers are a tad dried up.$8",
+"Core.SenS.PrideSeasonStart": "Hmhmhm.~ Everyone seems so colorful and bustling today.$h#$b#I should sneak a paper and see what all the hub-bub is about.$h",
+"Core.SenS.PrideSeasonGift": "I found a colorful cookie in a mailbox earlier!$h#$b#I was sooo very tempted to take it, but I didn't want to ruin anyone's day.$8#$b#Now I really want a cookie.$s#$action AddMail Current DitR_M_SenPrideCookie received",
+"Core.SenS.HatMouseTheAlly": "I read that in some parts of the world, folks are mistreated for having identities outside of the social standard.$s#$b#What terrible, closed-minded behavior!$a#$b#All people should be respected for who they are, not packed into a tiny box.$s",
+
+//CFD
+"Core.SenS.Dumpster": "Hey! That was my trash can!$u",
+"Core.SenS.Slingshot.1": "@...! Please stop, it hurts!$10",
+"Core.SenS.Slingshot.2": "O-ow, @!$9#$b#P-Please stop, you're scaring me!$10",
+"Core.SenS.BouquetRejection.1": "Oh, that's a very pretty bunch of flowers, @!$h#$b#You should hang onto those, they wouldn't thrive well in my cave...$8",
+"Core.SenS.BouquetRejection.2": "That is so many flowers...!$u#$b#W-wait, are you offering those to me?$11",
+"Core.SenS.BouquetAccept.1": "Oh, that's a very pretty bunch of flowers, @!$h#$b#W-wait, are you offering those to me?$11#$b#I... I would love to give romance a try with you, @.$l",
+"Core.SenS.BouquetAccept.2": "That is so many flowers...!$u#$b#W-wait, are you offering those to me?$11#$b#I-I accept! I would adore being your partner, @.$l",
+"Core.SenS.PendantRejection.1": "Oh... that's such a pretty seashell!$u#$b#I couldn't possibly take such a treasure from you.$8",
+"Core.SenS.PendantRejection.2": "Hm? I read about these in my books...$6#$b#Aren't they used for marriage proposals among your kind?$11",
+"Core.SenS.PendantPester.1": "Er... you're being very aggressive about this, @.$8#$b#I assure you that I think you should keep that.$8",
+"Core.SenS.PendantPester.2": "U-um... I already said this but...$8#$b#No thank you, @.$8",
+"Core.SenS.EngagementAccept": "...!?$$11#$b#Oh... @! I-I accept...$11#$b#I never could have imagined that you'd want to spend your life with me...$l#$b#Oh!$u#$b#People are going to be so confused at the ceremony... I'll be sure to wear my cloak.$8",
+"Core.SenS.BirthdayGift.Positive.1": "The human custom of giving gifts on one's birthday warms my heart...$l#$b#Thank you, @. I'll always remember this.$h",
+"Core.SenS.BirthdayGift.Positive.2": "...!$u#$b#I don't know how you found out my birthday, but I love this, @.$7#$b#Thank you so much!$h",
+"Core.SenS.BirthdayGift.Dislike": "Oh, um... thank you for the birthday gift, @.$8",
+"Core.SenS.BirthdayGift.Negative": "Er... I appreciate the gesture, but you can keep that.$8",
+"Core.SenS.BirthdayGift.Neutral": "Oh, @! How did you know it was my birthday?$h#$b#Thank you, @. I'm sure I'll find a great use for this.$h",
+
+//Krobus
+"Core.SenS.KrobusCommentary.1": "%revealtasteSenS108 当我第一次来到地面时，Krobus给了我这个稀有的圆盘。从那以后我就一直戴着它。$h#$b#它散发着强大的虚空能量，所以我们族人通常会随身携带它们作为幸运符。$h",
+"Core.SenS.KrobusCommentary.2": "%revealtasteKrobus16 哦你好，@！你知道Krobus喜欢辣根吗？$h#$b#在春天，我喜欢为他收集一些。$h#$b#他吃得有点太快了。$8",
+"Core.SenS.KrobusCommentary.3": "%revealtasteKrobus265 你知道Krobus喜欢海泡布丁吗...？$8#$b#那东西有点恶心，但各有所好吧。$8",
+"Core.SenS.KrobusCommentary.4": "%revealtasteKrobus773 你知道生命药剂对我们暗影族没有治疗效果吗？#$b#我们的身体由不同的物质构成，所以它们实际上对我们有相反的效果。$8#$b#如果说有什么的话，它们就像毒药一样。$s",
+
+//Locations
+"Core.SenS.PotBenchRemark.true": "冬天下雨...这确实很奇怪，对吧？$6#$b#有种感觉告诉我这和你有关，不是吗？$12",
+"Core.SenS.PotBenchRemark.false": "嘿嘿...通常这里有个罐子，但今天似乎不见了！$h#$b#我要坐在这里，没人能阻止我！$12",
+
+//FAKE NPCS
+"Core.FakeNPC.Skrell.Dialogue.1": "是你...你在矿井里表现良好吗？#$b#记住我告诉你的话...否则后果自负。$1",
+"Core.FakeNPC.Skrell.Dialogue.2": "嗯？你质疑这些角。我明白了。#$b#Sen和我是暗影贵族。不只有萨满、野蛮人和狙击手...$1#$b#他们是我们的战士。",
+"Core.FakeNPC.Skrell.Dialogue.3": "Sen不停地谈论你...我不能说我理解。$1#$b#你有什么特别的？#$b#我想你确实带着和...算了，跟某人一样的变化能量。$1",
+"Core.FakeNPC.Skrell.Dialogue.4": "你让我想起了...某个人。$1#$b#这对你来说是幸运还是不幸，我还没有决定...#$b#小心行事。$1",
+"Core.FakeNPC.Skrell.Dialogue.5": "...我必须承认，我确实喜欢地面。$2#$b#这里有更多的植物可供我研究。#$b#什么？是的，植物学是我的'爱好'，正如你们人类所说的。$1",
+"Core.FakeNPC.Skrell.Dialogue.6": "我不是教过Sen如何保持空间整洁吗？$3#$b#我没有在史莱姆小屋里养大他。#$b#他还是像个该死的孩子...$1",
+"Core.FakeNPC.Skrell.Dialogue.7": "我对Sen种的花园印象深刻。$1#$b#你...帮助他了，对吧？#$b#谢谢...我想。$2",
+"Core.FakeNPC.Skrell.Dialogue.8": "我怎么会说人类语言？#$b#切。别太自负，你不是我遇到的第一个人类。$1",
+"Core.FakeNPC.Skrell.Dialogue.9": "蕨菜似乎是你们人类的美味。$3#$b#奇怪，我一直觉得它很...平淡。",
+"Core.FakeNPC.Skrell.Dialogue.10": "Sen特别喜欢南瓜，不是吗？#$b#他一直喜欢橙色...",
+"Core.FakeNPC.Skrell.Dialogue.11": "Ebb一直在使用一个奇怪的人类设备来记录周末和天气...#$b#我搞不懂那个该死的东西是怎么工作的。我想我宁愿砸了它。$1",
+"Core.FakeNPC.Skrell.Dialogue.12": "所以Sen和Krobus交朋友了...我一直想知道那家伙去哪了。$3#$b#有一天他就从矿井里消失得无影无踪。#$b#我们正在进入一个奇怪的时代，暗影族离开矿井。$1",
+"Core.FakeNPC.Skrell.Dialogue.13": "嗯？我喜欢地下的生活吗？$3#$b#...#$b#这不是糟糕的生活。那里需要我。$1",
+"Core.FakeNPC.Skrell.Dialogue.14": "Ebb是谁？#$b#他是我的支柱。字面意思和比喻意思都是。$3#$b#对他好点，否则我会确保你永远痛苦。$1",
+"Core.FakeNPC.Skrell.Dialogue.15": "你真的关心Sen，不是吗？#$b#穿过那个被遗弃的水晶迷宫来到这里...你一定很关心。$3",
+"Core.FakeNPC.Skrell.Dialogue.16": "我从元素战争的中期就存在了...#$b#尽管我参与其中，但我对它的了解比我希望的要少。$1#$b#那是我们历史上一个复杂的事件，跨越了许多世纪和土地。#$b#大部分的如何和为什么都已经失传了。$1",
+
+"Core.FakeNPC.Ebb.Dialogue.1": "skrell是...嗯。别介意他...他经历了很多。#$b#sen也是...但他真的不记得了。$2",
+"Core.FakeNPC.Ebb.Dialogue.2": "嗯？哦，抱歉，我不太爱说话...#$b#我嗯。我喜欢岩石和宝石。我可以告诉你一些事实。$3#$b#你知道琥珀是最软的宝石吗？钻石是最硬的...$1",
+"Core.FakeNPC.Ebb.Dialogue.3": "哦...你知道暗影族是'孵化'的吗？$3#$b#不是从蛋里，不...我们从注入虚空魔法的石头中孵化。$1#$b#sen是从星星碎片中诞生的。#$b#他的母亲是钻石，Skrell是火蛋白石。",
+"Core.FakeNPC.Ebb.Dialogue.4": "Sen...他呃，可能没有告诉你，对吧？#$b#他在很小的时候就失去了母亲。$2#$b#他不记得她，但他从未认识她这件事让他很痛苦...$2",
+"Core.FakeNPC.Ebb.Dialogue.5": "这个洞穴...和Diamond和...$2#$b#哦-哦算了，抱歉，自言自语。$2",
+"Core.FakeNPC.Ebb.Dialogue.6": "嗯？我是什么样的暗影人？#$b#我是萨满，只是不经常戴面具。$1#$b#它让我想起呃...糟糕的时光。$2",
+"Core.FakeNPC.Ebb.Dialogue.7": "Sen确实读了很多书。他到底从哪里弄到这些书的...？$3#$b#我问的时候他就变得很焦虑。$2",
+"Core.FakeNPC.Ebb.Dialogue.8": "我嗯...不是个好厨师。#$b#呃，别告诉Skrell，但他更糟糕。$1#$b#至少我能做出相当不错的奇怪面包。",
+"Core.FakeNPC.Ebb.Dialogue.9": "你...到底是谁？从Sen告诉我们的一切来看，你引起了很多很多变化。$3#$b#你就像...嗯...算了。$2",
+"Core.FakeNPC.Ebb.Dialogue.10": "Skrell是我在整个世界上最好的朋友...#$b#别被他刻薄的外表骗了，内心里他是只大泰迪熊。$1#$b#...$2#$b#一只带刀的泰迪熊，但仍然是泰迪熊。$1",
+"Core.FakeNPC.Ebb.Dialogue.11": "我很...难以表达我的想法。$2#$b#嗯。#$b#谢谢你对Sen这么好。$1#$b#Skrell不太信任你...但我信任。#$b#所以谢谢...sen笑的时候我很开心。$1",
+"Core.FakeNPC.Ebb.Dialogue.12": "哇...sen确实做了很多服装。$3#$b#它们看起来...糟糕。#$b#呃。哦天哪呃-$2#$b#我是说它们看起来糟糕得可爱！$1",
+"Core.FakeNPC.Ebb.Dialogue.13": "sen喜欢番红花...#$b#它很漂亮。我觉得很适合他。$1#$b#我有点想吃掉他那边的那朵，但我不会...$2",
+"Core.FakeNPC.Ebb.Dialogue.14": "我搞不懂怎么读Sen放在周围的书，但他有时会读给我听。#$b#你们人类有这么多知识。$3",
+"Core.FakeNPC.Ebb.Dialogue.15": "哈？我喜欢住在矿井里吗？$3#$b#...$1#$b#不，不太喜欢。Skrell也不喜欢，但他不会承认。$2",
+"Core.FakeNPC.Ebb.Dialogue.16": "我不推荐这样做，但如果你想让Skrell生气...#$b#叫他老头。他会很愤怒。$1",
+
+/*
+ ██████╗ ██╗███████╗████████╗███████╗
+██╔════╝ ██║██╔════╝╚══██╔══╝██╔════╝
+██║  ███╗██║█████╗     ██║   ███████╗
+██║   ██║██║██╔══╝     ██║   ╚════██║
+╚██████╔╝██║██║        ██║   ███████║
+ ╚═════╝ ╚═╝╚═╝        ╚═╝   ╚══════╝
+*/
+
+"Gifts.SenS.GiftReaction.Love": "Oh! Thank you, @. This is one of my most favorite things ever!",
+"Gifts.SenS.GiftReaction.Like": "Thank you very much, @! I'll make great use of this during my next project.",
+"Gifts.SenS.GiftReaction.Dislike": "Err... thank you very much?",
+"Gifts.SenS.GiftReaction.Hate": "Er... no offense, but I don't really want this.",
+"Gifts.SenS.GiftReaction.Neutral": "Ah! Thank you, @! I'm sure I'll find a great use for this.",
+
+"Gifts.SenS.Cat.Flowers": "Oh wow, thank you @!$h#$b#I simply love flowers... They brighten up even the gloomiest of days.$l",
+"Gifts.SenS.Cat.Gems": "Oh, how shiny!$7#$b#Thank you so much, @. I'm going to polish this up and put it on display.$h",
+"Gifts.SenS.Cat.Trash": "Oh this is a neat find, @!$h#$b#I often find these kinds of things while rummaging in the trash. $h",
+"Gifts.SenS.Tag.Book": "哦，给我的书？！非常非常非常非常感谢你，@！$7#$b#我要马上去读，这太贴心了。$h",
+"Gifts.SenS.Tag.SweetFood": "哦...看起来简直美味得要命！$7#$b#我绝对必须立即吃掉它！谢谢你，@！$h",
+"Gifts.SenS.Crocus": "Oh my goodness...!! The crocus is my favorite flower!$11#$b#It was the first kind I found when I came to the surface.$l#$b#A gorgeous bloom peeking through the snow, giving me hope for a brighter tomorrow...$l",
+"Gifts.SenS.StrangeBun": "Oh my, this is quite a delicacy among shadows!$7#$b#How did you get your hands on the recipe?$h",
+"Gifts.SenS.VoidMayo": "Mmm... I love this stuff!$h#$b#It makes a great topping for any cave fish sandwich!$h",
+"Gifts.SenS.RareDisc": "Ah, a rare disc! It means a lot that you would give this to me, @.$h#$b#I've read that humans feel a deep dread when they hold one...$s#$b#I assure you that despite the dark energy they radiate, they are harmless.$8",
+"Gifts.SenS.Obi": "Obsidian, a beautiful stone that must be handled with care...$l#$b#It is so beautiful, yet incredibly fragile.$s#$b#It represents our world in a way, don't you think?$8",
+"Gifts.SenS.FireOpal": "Oh, @! The fire opal is the birthstone of my father.$h#$b#Did you... know somehow?$6#$b#Regardless - Thank you. This is deeply special to me.$h",
+"Gifts.SenS.Diamond": "A diamond...?!$u#$b#%Sen goes quiet for a brief moment.#$b#...$s#$b#Thank you. This means the world to me.$s",
+"Gifts.SenS.Aerinite": "蓝铜矿！顶部的水晶让我想起了一个亲近的人。$7#$b#他是地质学专家！我想这实际上是他的诞生石。$h",
+"Gifts.SenS.Starshards": "啊！星星碎片！这和我小时候孵化出来的石头是一样的。$7#$b#我会永远珍惜这个。$h",
+"Gifts.SenS.GoldenMask": "Oh my, this is gorgeous, @! Is it made of pure gold?$7#$b#It reminds me of the masks our shamans wear, but much smaller.$h",
+"Gifts.SenS.DuckFeather": "What a pretty feather! I'll be sure to use this the next time I sit down to write.$7#$b#Thank you, @!$h",
+"Gifts.SenS.Cloth": "Cloth! This is just what I needed!$u#$b#I'll be using this to patch up my costumes. Thank you kindly, @!$7",
+"Gifts.SenS.BugSteak": "Mmm... Fresh, juicy, squishy...$l#$b#Thanks for bringing me dinner for tonight, @.$h",
+"Gifts.SenS.BugSteak.Relationship": "嗯...新鲜的，多汁的，软软的...$l#$b#谢谢零食，@！$h",
+"Gifts.SenS.SquidInk": "Oh, this is some incredibly high quality squid ink!$h#$b#It makes for beautiful lines when writing. Thank you so much, @.$h",
+"Gifts.SenS.Snail": "Mmmm... Snails might not be bugs, but they're delicious regardless. Thanks, @!$h",
+"Gifts.SenS.Slime": "Oh, yummy! Hand that slime over, @. I'm gonna gobble it right up!$h",
+"Gifts.SenS.Wool": "This is wonderful, thanks @! This'll finally give me an excuse to unjam my loom.$8",
+"Gifts.SenS.Pumpkin": "Ooooh, a pumpkin! Thank you, @!$7#$b#I'm gonna set this up in my house with a cute little face.$h",
+"Gifts.SenS.GoldenPumpkin": "Oh my gosh, this pumpkin... it's so shiny!$7#$b#Wait... it's made of pure gold?! Are you sure you want to give me this?$u",
+"Gifts.SenS.IridiumBar": "Oh my goodness, for me? This is a very rare material among my people!$h#$b#It is highly sought after for its usefulness in making quality tools.$h",
+"Gifts.SenS.VoidEssence": "...?$u#$b#I-I don't understand, @. Why would you give this to me...?$s#$b#I-I hope it was ethically sourced...$s",
+"Gifts.SenS.SolarEssence": "哇...！热，热热！$u#$b#拿回去！！$u[768]",
+"Gifts.SenS.CaveCarrot": "Ehm... this is certainly not my favorite underground snack.$8#$b#The wriggling tendrils always put me off...$8",
+"Gifts.SenS.Garlic": "...You're aware that garlic is often used as a material to ward off \"evil creatures\", right?$8",
+"Gifts.SenS.DwarfHelm": "...Is this some kind of dwarvish apparel? I will give this a pass...$a#$b#Oh... no, I shouldn't speak that way. My goal in this world is to bring peace.$s",
+"Gifts.SenS.DwarfScroll": "...Is this some kind of dwarvish literature? I will give this a pass...$a#$b#Oh... no, I shouldn't speak that way. My goal in this world is to bring peace.$s",
+"Gifts.SenS.DwarfGadget": "...Is this some kind of dwarvish device? I will give this a pass...$a#$b#Oh... no, I shouldn't speak that way. My goal in this world is to bring peace.$s",
+"Gifts.SenS.LemonStone": "...This is a dwarvish delicacy. I will give this a pass...$a#$b#Oh... no, I shouldn't speak that way. My goal in this world is to bring peace.$s",
+"Gifts.SenS.VoidEgg": "Sigh, this is what my Egg Festival costume is based on.$8#$b#To be honest, that costume is my least favorite that I've made.$8",
+"Gifts.SenS.BatWing": "Ewww... I appreciate the offer, but I'm not the biggest fan of bat wings.$8#$b#They're kind of rubbery and there's no substance to them at all.$8",
+"Gifts.SenS.PrismaticShard": "Oh my, this is an incredibly rare gemstone!$7#$b#You can feel the magical aura radiating off of it merely by holding it in your hands.$h",
+"Gifts.SenS.VoidPendant": "Oh, @...! I...$u#$b#...I-I'm afraid I'm going to have to turn down your offer for now.$8#$b#I'm quite comfortable living in my cave![808]$h",
+"Gifts.SenS.VoidPendant.Relationship": "哦@，你真是个傻瓜。$8#$b#我们已经住在一起了！[808]$h",
+"Gifts.SenS.MagicRockCandy": "Oh what's this - a sugary snack?$7#$b#Thanks @! This isn't going to last very long.$12",
+"Gifts.SenS.Salad": "天哪，谢谢@！我确实喜欢好的沙拉。$h#$b#我就是喜欢咬下去时绿叶蔬菜的嘎吱声。$l#$b#...嗯？那是什么表情？$8#$b#你期待不同的反应吗？$h",
+"Gifts.SenS.PumpkinSoup": "Oh yum! Is this a hot soup made of pumpkin?$7#$b#Thanks, @!$h",
+"Gifts.SenS.IceCream": "Ice cream! I can't get enough of this stuff.$7#$b#I just have to be careful not to eat it too fast or I will get 'brain freeze'.$8",
+"Gifts.SenS.Cake": "Oh this cake is beautiful!$7#$b#It's not going to last very long once I cut into it.$h",
+"Gifts.SenS.PumpkinPie": "Is this a pumpkin pie?$7#$b#Oh my goodness this will probably won't make it past one sitting.$h",
+"Gifts.SenS.CranberryCandy": "Sweet with a hint of bitter sourness...#$b#Delicious!$h#$b#Cranberries are an underrated fruit!$h",
+"Gifts.SenS.MinersTreat": "Oooh a swirling stick candy!$h#$b#I'll be snacking on this all day!$h",
+"Gifts.SenS.GlazedYams": "I'm not wild about raw foods, but the glaze on these yams makes them utterly delectable!$h",
+"Gifts.SenS.Pancakes": "Soft, fluffy, cakey...$l#$b#Yum yum yum!$h",
+"Gifts.SenS.Cookie": "Ooohh I love cookies!$h#$b#I have a habit of picking out the chips first. Is that weird?$8",
+"Gifts.SenS.RhubarbPie": "Aww did you bake this just for me, @?$h#$b#That makes me feel all warm and fuzzy inside.$h",
+"Gifts.SenS.BlueberryTart": "There's no way I can be blue with a gift like this!$h#$b#Thanks, @!$h",
+"Gifts.SenS.CranberrySauce": "I've read that many people don't like this stuff, but I don't get it. It's delicious!$7",
+"Gifts.SenS.PlumPudding": "Oooh is this made of fall's wild plums?$h#$b#That's both resourceful and delicious!$h",
+"Gifts.SenS.FruitSalad": "I can't even identify all the fruits in this!$h#$b#How exciting.$h",
+"Gifts.SenS.BlackberryCobbler": "Mmmm gooey wild blackberries with a lovely crust.$l#$b#This is going to be a wonderful snack for later.$h",
+"Gifts.SenS.PoppyseedMuffin": "Yay a muffin! I don't get to have these often.$h#$b#I love their texture!$7",
+"Gifts.SenS.MapleBar": "It's so sticky! How do I eat this without making a mess of my fur?$u#$b#Oh who cares, bottoms up!$7",
+"Gifts.SenS.BananaPudding": "Mmmm is this made with bananas?$7#$b#It has a lovely smell and I bet an even lovelier taste.$l",
+"Gifts.SenS.MangoStickyRice": "哦哦，一道芒果菜！我不常有机会尝试这样的东西。#$b#非常感谢你，@！$h",
+"Gifts.SenS.Sweetener": "Oh...! This is like liquid sugar incarnate!$h#$b#A simply divine taste gifted from nature. Thanks, @!$7",
+"Gifts.SenS.Coffee": "Oh yum, coffee! This will give me tons of energy for my next project.$h#$b#Maybe a little too much, hehe.$8",
+"Gifts.SenS.StardropTea": "Sniff...Sniff...$l#$b#Oh that smells absolutely delightful, @!$7#$b#I'll drink this along with a good book, thank you!$h",
+
+"Gifts.SenS.MonsterCompendium": "嗯，这是什么？一本关于怪物的书？$h#$b#哦！这里面有暗影族的内容。$6#$b#...#$b#那是{{SenKrobusReference}}吗？$6",
+"Gifts.SenS.TheAlleywayBuffet": "哈？这本书要教我如何在垃圾中找到更多宝藏？$6#$b#立刻报名！给我所有的垃圾！$7",
+"Gifts.SenS.BookOfStars": "哦，这本书的封面让我非常着迷！$7#$b#你确定要把这个给我吗？它看起来非常重要...$8#$b#好吧，不许反悔！$h",
+"Gifts.SenS.StardewValleyAlmanac": "这是一本关于农业的书？我必须说我很感兴趣，但我觉得这对你会更有用。$8#$b#话虽如此，我还是要读一读！$h",
+"Gifts.SenS.BaitAndBobber": "嗯...我从来没试过钓鱼。$6#$b#嗯，不是人类的钓鱼方式。我用过徒手抓鱼。$h#$b#该学学人类是怎么做的了！$7",
+"Gifts.SenS.WoodcuttersWeekly": "所以这能帮你学会砍树？$6#$b#看来这里面的艺术比我想象的要多，我很感兴趣。$h",
+"Gifts.SenS.MiningMonthly": "哦...这很受欢迎吗？我希望它不会鼓励更多人类来矿井。$s#$b#不管怎样，我很想了解更多人类挖矿与暗影族的差异。$h",
+"Gifts.SenS.CombatQuarterly": "你知道，学会战斗一直是我的梦想...$l#$b#冒险家的生活方式在召唤我！这似乎是个好的开始。$7",
+"Gifts.SenS.TheArtOCrabbing": "抓螃蟹...嘎，悬崖上的螃蟹已经够讨厌了！我不想吸引更多螃蟹。$a#$b#唉，知识就是知识，我不会拒绝的。$h",
+"Gifts.SenS.DwarvishSafetyManual": "矮人...咕噜...$a#$b#不。现在，现在Sen。$s#$b#他们可能曾经是敌人，但他们仍然很聪明。有很多可以向他们学习的地方。",
+"Gifts.SenS.JewelsOfTheSea": "一本关于...鱼卵的书...？$6#$b#奇怪的话题，但我还是会读的。谢谢你，@！$h",
+"Gifts.SenS.RaccoonJournal": "这是某种小动物的日记吗？我觉得你应该把它还回去...$8#$b#但我实在无法抗拒翻阅这些页面的冲动。#$b#我真糟糕。$12",
+"Gifts.SenS.WoodysSecret": "嗯...我觉得这本书不是关于'砍柴'的。$6#$b#你是想告诉我什么吗，@？人类真是奇怪的生物。$12",
+"Gifts.SenS.JBNJBT": "这本书到底是关于什么的？我从封面看不出来。$6#$b#这些是砖块还是木板？嗯。标题暗示是伐木工...$6#$b#好吧，唯一的办法就是读它！$h",
+"Gifts.SenS.Friendship101": "一本关于交朋友的书！哦，这肯定能帮我和山谷里的人们更亲近！$h#$b#...也许吧。如果我能鼓起勇气去接近的话。$s",
+"Gifts.SenS.WayOfTheWind1": "嗯！所以这教你移动得更快？那会让我在城镇里偷偷摸摸变得容易得多！$7#$b#谢谢你，我要认真学习这个！$h#$action AddMail Current DitR_M_GaveSenWotW1 received",
+"Gifts.SenS.WayOfTheWind2": "$query PLAYER_HAS_MAIL Current DitR_M_GaveSenWotW1 Any#啊！我一直希望能得到第二部分！第一部分简直令人愉快。$h#$b#我非常兴奋能让脚步变得更加敏捷！$7|哦！多么迷人！唉，我觉得在读完第一部分之前我无法读这个。$6#$b#不过我很感激你的想法！$h[Book_Speed2]",
+"Gifts.SenS.MappingCaveSystems": "啊...我真希望这不是试图绘制我们洞穴系统的地图。$s#$b#我祝愿那个爱捅人的老头子好运。$a#$b#矿井似乎会根据宇宙的奇想而弯曲和移动...这可能是最好的。$s",
+"Gifts.SenS.PriceCatalogue": "我...嗯。不确定如何使用这个。我不打算卖任何东西...$8#$b#不过我很感激任何给我的书！$h",
+"Gifts.SenS.QueenOfSauceCookbook": "哦！一本食谱书！我可以用你的炉子试着做点什么吗？$7#$b#我对人类烹饪绝对着迷。$h",
+"Gifts.SenS.TheDiamondHunter": "...一本关于...猎取钻石的书。$s#$b#%Sen低下头，变得安静。#$b#谢谢你，@。$s",
+"Gifts.SenS.BookOfMysteries": "嗯...这本书是关于什么的？$6#$b#正如标题所暗示的，这是一个谜谜谜谜题。$7#$b#我想我应该读一读找出答案，但我觉得这可能会给我留下更多问题而不是答案！$h",
+"Gifts.SenS.AnimalCatalogue": "哦，这是农场动物指南吗？我一直渴望了解更多地面世界的小动物！$7#$b#谢谢谢谢谢谢！$h",
+"Gifts.SenS.TreasureAppraisalGuide": "我觉得这更适合你...我不太确定我能用这个做什么。$8#$b#不过看看人类如何评价他们的发现会很有趣。$h",
+"Gifts.SenS.HorseTheBook": "一本关于马的书！多棒啊！$7#$b#我记得有一次我被说'马'这个词的冲动所压倒，我完全不知道为什么。$6#$b#你有过这种经历吗，@？$8",
+"Gifts.SenS.OLSlitherlegs": "我...不确定我对这个标题的感觉。$6#$b#它是关于什么的？在草地上行走？$6#$b#嗯...有趣的话题。好吧，我什么都会读一遍。$8",
+
+"Gifts.SenS.Book.Birthday": "给我的礼物？而且是一本书！$7#$b#哦@，你太了解我了！我要立刻读这个。$h",
+"Gifts.SenS.Crocus.Birthday": "...!!$11#$b#You... you remembered my birthday, and my favorite flower!$7#$b#@, you don't understand. This means the world to me. Thank you so much.$l",
+"Gifts.SenS.Cloth.Birthday": "@, this is amazing! Thank you for the cloth, I've been in dire need of some.$h#$b#Getting it from you on my birthday is even better!$h",
+"Gifts.SenS.GoldenPumpkin.Birthday": "This... this is made of pure gold! You want to give me something this valuable?!$u#$b#Thank you, @... I could cry!$l#$b#This has made my birthday something to remember.$l",
+"Gifts.SenS.Diamond.Birthday": "Ah, a birthday gift! For me?#h#$b#It's... oh...$s#$b#%Sen goes quiet for a moment.#$b#Thank you, @. This is one of the most meaningful things you could have given me.$s",
+"Gifts.SenS.RareDisc.Birthday": "Oh, this is a wonderful good luck charm! How did you know this is a popular gift to give among my people?$h#$b#Well either way, thank you for the birthday gift.$h",
+"Gifts.SenS.Garlic.Birthday": "Oh, hello @! Guess what, it's my birth...$h#$b#...#$b#Wait, d-do you want me to go away?$s#$b#O-oh, I'm sure you don't mean that...$s#$b#Sorry, I've read before that garlic is used to ward off supposed \"evil creatures\"...$s",
+"Gifts.SenS.VoidEssence.Birthday": "...??$u#$b#@, don't you know that void essence makes me uncomfortable...?$s#$b#Please don't try to give me this again, especially not on my birthday.$s",
+"Gifts.SenS.VoidPendant.Birthday": "Oh, @...! I...$u#$b#...I-I'm afraid I'm going to have to turn down your offer for now.$8#$b#It's not you-- I'm just not ready to live with another person.[808]$8",
+"Gifts.SenS.VoidPendant.Birthday.Relationship": "哦@，你真是个傻瓜...$l#$b#我想这意味着你绝对不想让我去任何地方，对吧？$12#$b#我想不出在我生日那天收到比这更快乐的情感了！$h",
+"Gifts.SenS.Cake.Birthday": "Oh! Did you bake this for my birthday?$h#$b#How thoughtful of you! Humans have such lovely customs.$h",
+"Gifts.SenS.PumpkinPie.Birthday": "Oh! Did you bake this for my birthday?$h#$b#I absolutely adore pumpkin pie... Thank you so much, @!$h",
+
+"Gifts.SenS.VoidCake": "Oh, this cake looks simply delightful!",
+"Gifts.SenS.PumpkinBread": "Sniff...sniff... Is that pumpkin flavored bread?$h#$b#Hand it right over, thank you very much!$7#$b#I mean, thank you, @.$8",
+"Gifts.SenS.PumpkinLatte": "...! Gimmie gimmie gimmie!!$7#$b#%Sen takes the latte and chugs it down in the blink of an eye.#$b#Thanks, @! That was delicious.$h",
+"Gifts.SenS.CrystalFloat": "Is this made with soda? Oooh, I don't have that too often.$h#$b#The cans in the trash are usually empty.$s#$b#As they say, bottoms up!$7",
+"Gifts.SenS.BlackCherryFlan": "Berry cherry, merry blackberry. Delicious all the way through!#$b#Thank you for the snack, @!$h",
+"Gifts.SenS.VoidCaviarToast": "Fish eggs on toast... That doesn't sound appealing, but not the grossest thing I've ever eaten either.$6#$b#I'll give it a try!$h",
+
+"Gifts.SenS.CaveGrubDumplings": "Oh, hello dinner for tonight!$h#$b#They're still even wiggling, even better!$7",
+"Gifts.SenS.RoastedBug": "Oooh, I love roasted bug! This was a staple around my family's dinner table.$h#$b#Or dinner rock, rather.$8",
+"Gifts.SenS.SlimeEggSouffle": "Oh, fork that slimy goodness over right now!$7#$b#If it's made of slime, it has to do its time. In my belly.$12",
+"Gifts.SenS.SlimeJellySandwich": "Slime Jelly SANDWICH! A perfect culinary innovation.$7#$b#Cuisine can't get any better than this.$l",
+"Gifts.SenS.SlimeTorte": "Slime... cake... the combination is too good to be true!$7#$b#Fork it over right now!$h#$b#I'm serious, I need a fork right now!!$u",
+"Gifts.SenS.Slimeade": "Nothing beats a nice fresh glass of slimeaid, wouldn't you say?$7#$b#It's extra goopy going down than other drinks, just how I like it!$h",
+
+"Gifts.SenS.FishDish": "Fishy dishes usually don't excite me too much, but I'll gobble this up since it came from you. Thanks, @!$h",
+"Gifts.SenS.ContainsGarlic": "Sniff...sniff...#$b#I can detect a hint of garlic in this. Blegh. I'll have to pass,sorry @.$8",
+"Gifts.SenS.ContainsBatWings": "%Sen inspects the dish with curiosity.#$b#%Upon seeing the bat wings poking out, his face contorts in disgust and he quietly slides the dish back into your hands.",
+"Gifts.SenS.ContainsVoidEssence": "Urgh... Is there um, void essence in this?$s#$b#That's um... I um... No thank you.$s",
+
+"Gifts.SenS.Button": "Oooh, what an adorable little button!$h#$b#It'll find a cozy home in one of my upcoming costumes for sure. Thank you, @!$l",
+"Gifts.SenS.SensCrocus": "Oh, that's...!$u#$b#That's one of the flower seeds I threw to the wind, isn't it?$7#$b#I can't believe it worked!$7",
+
+"Gifts.SenS.PridePop": "So. Many. Colors! It's otherworldly!$7#$b#Does it have magical properties? Will I become rainbow colored if I eat this?$h",
+"Gifts.SenS.GaylacticCookie": "$query PLAYER_HAS_MAIL Current DitR_M_SenPrideCookie Any, PLAYER_HEARTS Current SenS 8#...! Did you really remember I wanted one of these cookies, @?$7#$b#Thank you so much, you're the best. Have this shiny stone I found in the garbage.$h[74]#$action Current RemoveMail DitR_M_SenPrideCookie all|Oh!! I really wanted one of these, thank you so much @!$h#$b#%The cookie lasts about 2 seconds, then is gone...#$action Current RemoveMail DitR_M_SenPrideCookie all",
+
+//I'm working on this for a future update, just gotta hotfix something
+//S&S
+"Gifts.SenS.TaintedMushroom": "",
+"Gifts.SenS.TaintedCrocus": "",
+"Gifts.SenS.TaintedCorn": "",
+"Gifts.SenS.TaintedGrasses": "",
+"Gifts.SenS.FarAfieldSnack": "",
+"Gifts.SenS.ArtificerBook": "",
+"Gifts.SenS.DruidicsBook": "",
+"Gifts.SenS.BardicsBook": "",
+"Gifts.SenS.SorceryBook": "",
+"Gifts.SenS.PaladinBook": "",
+"Gifts.SenS.DruidicEssence": "",
+"Gifts.SenS.EarthEssence": "",
+"Gifts.SenS.AirEssence": "",
+"Gifts.SenS.WaterEssence": "",
+"Gifts.SenS.FireEssence": "",
+"Gifts.SenS.Stygium": "",
+"Gifts.SenS.DuskspireHeart": "",
+
+//WWWA
+"Gifts.SenS.RodneyAutograph": "Oh my gosh, it's an autograph from the two time award winning author Rodney O'Brien!!$7#$e#I found a copy of his book in the trash.$h",
+"Gifts.SenS.ArtifactOrCutlery": "",
+"Gifts.SenS.DeferenceArlington": "",
+"Gifts.SenS.GuideToSculptingWithGold": "",
+"Gifts.SenS.FishingForDumbDumbs": "",
+"Gifts.SenS.GettingChicksToLoveYou": "",
+"Gifts.SenS.Goblins": "",
+"Gifts.SenS.HerpetologyOfFerngill": "",
+"Gifts.SenS.LunarkinTrollTales": "",
+"Gifts.SenS.PepperRexes": "",
+"Gifts.SenS.TheBookOfYoba": "",
+"Gifts.SenS.TheJojaConspiracy": "",
+"Gifts.SenS.TheTarotRevealed": "",
+"Gifts.SenS.ArcanaCatcherPrunus": "",
+"Gifts.SenS.CrabsAndWhyIHateThem": "",
+"Gifts.SenS.MysteriesOfTheDwarves": "",
+"Gifts.SenS.TheGreatBookOfSlimes": "",
+"Gifts.SenS.TheGreatTomeOfMayo": "",
+"Gifts.SenS.WhyPepperRexesAreTheBest": "",
+
+//EnD
+"Gifts.SenS.ChaosTotem": "",
+"Gifts.SenS.SanguineHeart": "",
+"Gifts.SenS.BeholderFruit": "",
+
+//BearFam
+"Gifts.SenS.BarnesFamilyRecipes": "",
+"Gifts.SenS.BearFamilySecrets": "",
+"Gifts.SenS.GunnarsBrewingGuide": "",
+"Gifts.SenS.SondrasSeasonalRecipes": "",
+
+//VMV - These are old!
+"Gifts.SenS.BookOfFarming": "",
+"Gifts.SenS.BookOfMining": "",
+"Gifts.SenS.BookOfCombat": "",
+"Gifts.SenS.BookOfFishing": "",
+"Gifts.SenS.BookOfForaging": "",
+
+//Button
+"Gifts.SenS.BeginnersLuck": "",
+"Gifts.SenS.BookofAltruism": "",
+"Gifts.SenS.WinterForestry": "",
+"Gifts.SenS.ArtisansGuildManual": "",
+"Gifts.SenS.BigMelons": "",
+"Gifts.SenS.Friendship202": "",
+"Gifts.SenS.OptimizedSDV": "",
+"Gifts.SenS.BusDrivingForDummies": "",
+"Gifts.SenS.MrQisNotebook": "",
+"Gifts.SenS.PawsitiveReinforcement": "",
+"Gifts.SenS.SecretCodesDorArcadeMachines": "",
+"Gifts.SenS.JunimoScrapbook": "",
+"Gifts.SenS.BookOfCarols": "",
+"Gifts.SenS.TheStrongestBrew": "",
+"Gifts.SenS.ChildrensSketchbook": "",
+"Gifts.SenS.BEBPowerRemoval": "",
+
+//More Books
+"Gifts.SenS.ImmunityBoost": "",
+"Gifts.SenS.FortuneGuide": "",
+"Gifts.SenS.HasteGuide": "",
+"Gifts.SenS.FishermansGuide": "",
+"Gifts.SenS.MagneticMasteryManual": "",
+"Gifts.SenS.LuckyShortsMystery": "",
+"Gifts.SenS.CarpenterCatalogue": "",
+"Gifts.SenS.OreCatalogue": "",
+"Gifts.SenS.RiceCultivationExcellence": "",
+"Gifts.SenS.DaggerMasteryGuide": "",
+"Gifts.SenS.TheArtofTeaCultivation": "",
+"Gifts.SenS.TheAlleywayBuffet2": "",
+"Gifts.SenS.CombatCodex": "",
+"Gifts.SenS.DivineInsight": "",
+"Gifts.SenS.DairyMastery": "",
+"Gifts.SenS.BlastManual": "",
+
+//"Gifts.SenS.": "",
+
+
+/*
+███████╗███████╗███████╗████████╗██╗██╗   ██╗ █████╗ ██╗     ███████╗
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██║   ██║██╔══██╗██║     ██╔════╝
+█████╗  █████╗  ███████╗   ██║   ██║██║   ██║███████║██║     ███████╗
+██╔══╝  ██╔══╝  ╚════██║   ██║   ██║╚██╗ ██╔╝██╔══██║██║     ╚════██║
+██║     ███████╗███████║   ██║   ██║ ╚████╔╝ ██║  ██║███████╗███████║
+╚═╝     ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝╚══════╝
+*/
+
+
+//Sen festivals
+"Festivals.SenS.spring13.1": "....我是一个穿着鸡蛋套装的正常人。请继续。$13",
+"Festivals.SenS.spring13.2": "啊啊啊，这东西好痒...$13#$b#哦，呃。我只是一个穿鸡蛋套装的家伙。祝你有美好的一天。$13",
+"Festivals.SenS.spring13.3": "别说了...我已经知道我的服装很蛋-cellent了。$13",
+
+"Festivals.SenS.spring24.1": "空气中弥漫着花朵的甜香...$14#$b#...我想知道有人会介意我带几束花回家吗？$14",
+"Festivals.SenS.spring24.2": "跳舞...我很想参加，但不幸的是我有两只左脚。$14",
+"Festivals.SenS.spring24.3": "嗯？别担心，我在这里一个人很舒服。$14#$b#人群对我来说压力很大。$14",
+
+"Festivals.SenS.summer11.1.Nyapu": "这个'沙堡'似乎在呼吸...$15",
+"Festivals.SenS.summer11.2.Nyapu": "这个'沙堡'有些可疑...$15",
+"Festivals.SenS.summer11.3.Nyapu": "你去触摸'沙堡'，它对你嘶嘶叫...$15",
+"Festivals.SenS.summer11.1.Default": "%这个'沙堡'似乎在呼吸...",
+"Festivals.SenS.summer11.2.Default": "%这个'沙堡'有些可疑...",
+"Festivals.SenS.summer11.3.Default": "%你去触摸'沙堡'，它对你嘶嘶叫...",
+
+"Festivals.SenS.summer28.1": "嘎叽嘎叽...嘎叽嘎叽嘎叽？？？$16#$e#嘎叽！！！$16",
+"Festivals.SenS.summer28.2": "嘎叽...嘎叽！嘎叽嘎叽嘎叽！$16#$e#嘎呜呜呜叽！！$16",
+"Festivals.SenS.summer28.3": "嘎叽嘎叽嘎叽！嘎叽嘎！！！$16#$e#嘎叽....$16",
+
+"Festivals.SenS.fall16.1": "叹气...我希望我能参加活动。$17#$b#唉，我只是一个没有胳膊的南瓜。$17",
+"Festivals.SenS.fall16.2": "会说话的南瓜是这个活动的正常部分。$17#$b#是的确实。每个人都知道。$17",
+"Festivals.SenS.fall16.3": "我是来自遥远的%place的神奇会说话南瓜。$17#$b#这绝对是事实。$17",
+
+"Festivals.SenS.fall27.1": "嘿嘿...我玩得很开心！每个人都认为我的'服装'超级吓人。$h#$b#仔细想想，我实际上不确定我对此的感受...$8",
+"Festivals.SenS.fall27.2": "哦？宝藏？你可以拿走！$h#$b#我只是很高兴能参与。$h",
+"Festivals.SenS.fall27.3": "嘘！$h#$b#嘿嘿，我吓到你了吗？$12#$e#你说我不吓人是什么意思？$u",
+
+"Festivals.SenS.winter8.1": "我在这里试图避开那位老师女士...$18#$b#她一直误认为我是迷路的孩子，然后开始寻找我的父母...$18#$b#我应该做一个更大的服装...缩进这个服装里真是痛苦。$18",
+"Festivals.SenS.winter8.2": "一旦你钓上那些鱼，整个区域都会很臭。$18#$b#我等不及了！$18",
+"Festivals.SenS.winter8.3": "我想堆个雪人，但这套衣服对我来说太硬了。$18#$b#如果我移动，我会像企鹅一样摇摆...$18",
+
+"Festivals.SenS.winter25.1": "你能感受到每个人在这个节日期间对彼此的感情...$18#$b#这让我脸上露出笑容。$18#$e#我希望每天都像这样...$18",
+"Festivals.SenS.winter25.2": "呵呵呵...我是真正的圣诞老人！$18#$b#这是100%真实的事实，我发誓。$18",
+"Festivals.SenS.winter25.3": "我希望我能参加庆祝活动...$18#$b#我可以为人们制作许多可爱的礼物！$18#$e#也许我应该制作礼物并偷偷放进邮箱。$18",
+
+//Passive Festivals
+"Festivals.SenS.NightMarket.1": "The night market sells many rare goods that are very helpful for costume design.#$b#Thankfully the characters there are so colorful, I blend right in hehe.",
+"Festivals.SenS.NightMarket.2": "Are you going to purchase anything from the market, @?#$b#You might have to wait a whole year if you pass on something you want.",
+"Festivals.SenS.NightMarket.3": "This is the one time of year I risk going out and about.#$b#The market has too many useful goods for me to pass up on.",
+
+"Festivals.SenS.TroutDerby.1": "今天这里有不少人在钓鱼，不是吗？#$b#我无法抑制我的好奇心...",
+"Festivals.SenS.TroutDerby.2": "鳟鱼，鳟鱼鳟鱼...我对这种鱼了解很少！#$b#我应该在下次图书馆突袭时做一些研究。",
+
+"Festivals.SenS.DesertFestival.1": "我对蓝发女孩的商店很好奇...#$b#啊，必须抵制互动的冲动！我可能会被发现。",
+"Festivals.SenS.DesertFestival.2": "这里太热了...太热了。#$b#不，那不是问题。太干燥了。呸。#$b#我读过这个，为什么我认为来这里是个好主意？",
+
+"Festivals.SenS.SquidFestival.1": "乌贼...我唯一熟悉的乌贼是'乌贼小子'。#$b#我就是受不了那些家伙。总是向我射火球...",
+"Festivals.SenS.SquidFestival.2": "这类活动会影响你捕捉的鱼的当地种群吗？#$b#玩得开心，但要善待自然。",
+
+"Festivals.SenS.PrideFest": "人类的性别让我着迷。在我们这些同类中，按照人类标准我们都被认为是'非二元'的。$6#$b#学习人类语言很棘手，因为它向我介绍了性别认同这个陌生概念。$8#$b#在与{{SenKrobusReference}}讨论了很多之后，我发现我最认同男性代词，所以就这样了！$h",
+
+"Festivals.SenS.FestivalOfTheMundane.1": "Oh...! This isn't the safest of places right now.$u#$b#If the shadows here catch on they'll...$s#$b#Just be careful!$u",
+"Festivals.SenS.FestivalOfTheMundane.2": "Shadows engaging with human culture...#$b#I hope humans can engage with our culture in the future.$l#$e#This festival gives me hope for a brighter tomorrow.$h",
+"Festivals.SenS.FestivalOfTheMundane.3": "Do you think humans see this event as mockery?#$b#To a degree it kind of is.$8",
+
+//Fireworks Festival
+"Festivals.SenS.summer20.1": "向公众出售烟花真的是个好主意吗？#$b#这听起来像是森林火灾的配方。",
+"Festivals.SenS.summer20.2": "烟花的巨大爆炸声让我恐惧，但我无法移开视线。#$b#这些颜色真是一道风景。",
+"Festivals.SenS.summer20.3": "当你购买烟花时，我想你可以说你得到了'物有所值'。#$e#嘿嘿。明白吗？#$b#因为烟花会爆炸？",
+
+//Ridgeside Gathering
+"Festivals.SenS.fall20.1": "男孩，女孩...#$b#我的同类不会特别区分。#$e#看到我们的文化有多么不同真是迷人。",
+"Festivals.SenS.fall20.2": "音乐设备吸引了我的注意。#$b#也许我应该学个乐器...",
+"Festivals.SenS.fall20.3": "这里有很多人。#$b#对我来说，这既令人生畏又令人暖心。",
+
+//Ember of Resolution
+"Festivals.SenS.winter28.1": "你新年的决心是什么？#$b#我的是至少编织100样东西！#$e#嗯...我要把它们都存放在哪里？",
+"Festivals.SenS.winter28.2": "我很兴奋看到巨大的篝火。#$b#我想知道是谁想出这个传统的？",
+"Festivals.SenS.winter28.3": "我今年的决心是尝试新事物。#$b#我已经有几个爱好了，但我想更多地扩展！",
+
+//Surfing Festival
+"Festivals.SenS.summer5.1": "%有什么告诉你这不是冲浪板。",
+"Festivals.SenS.summer5.2": "%'冲浪板'紧盯着你。",
+"Festivals.SenS.summer5.3": "%这个冲浪板有些可疑。",
+
+//Fashion festival
+"Festivals.SenS.spring19.1": "人类非常有创意。这么多风格！$21#$b#如果我们有材料，我的族人会喜欢这种活动...$21",
+"Festivals.SenS.spring19.2": "你觉得这个活动怎么样？$21#$b#我为未来的服装项目获得了很多灵感！$21",
+"Festivals.SenS.spring19.3": "我想和其他参加者交谈，但我太紧张了...$21",
+
+//Love Festival
+"Festivals.SenS.winter13.1": "情书，嗯？多有趣的传统...$20#$e#什么，你为什么那样看着我？$20",
+"Festivals.SenS.winter13.2": "根茎类蔬菜对他们的伴侣说什么？$20#$b#你让我的心跳动。$20#$e#什么？你试着想出更好的！$20",
+"Festivals.SenS.winter13.3": "我觉得我的服装'可爱'地出来了。$20#$b#哈哈哈...明白吗？因为这是浪漫节？$20",
+
+//Marketpalooza
+"Festivals.SenS.fall3.1": "快Sen...表现自然！$17#$b#%小南瓜人发出难以理解的南瓜声音...",
+"Festivals.SenS.fall3.2": "嘘嘘嘘吓人我是会说话的南瓜！你在幻觉！$17",
+"Festivals.SenS.fall3.3": "我只是一个普通的南瓜。请转移你的目光。$17#$b#这里没什么可看的。$17",
+
+/*
+███╗   ███╗ ██████╗ ██╗   ██╗██╗███████╗███████╗
+████╗ ████║██╔═══██╗██║   ██║██║██╔════╝██╔════╝
+██╔████╔██║██║   ██║██║   ██║██║█████╗  ███████╗
+██║╚██╔╝██║██║   ██║╚██╗ ██╔╝██║██╔══╝  ╚════██║
+██║ ╚═╝ ██║╚██████╔╝ ╚████╔╝ ██║███████╗███████║
+╚═╝     ╚═╝ ╚═════╝   ╚═══╝  ╚═╝╚══════╝╚══════╝
+*/
+
+"Movies.SenS.MovieInviteFail": "Ah... I'm sorry, @!$8#$b#As much as I'd love to attend one of these picture box shows, I'm too nervous to sit in a public space...$s",
+"Movies.SenS.MovieInviteSuccess": "Oh, you want to take me to a picture box show?$h#$b#Sure! Let me get ready and I'll meet you there.$h",
+"Movies.SenS.RejectMovieTicket": "Ah... I'm sorry, @!$8#$b#As much as I'd love to attend one of these picture box shows, I'm too nervous to sit in a public space...$s",
+"Movies.SenS.RejectMovieTicket.AlreadyInvited": "Oh, I'm sorry @! I'm afraid I already have picture box plans.$8",
+"Movies.SenS.RejectMovieTicket.AlreadyWatched": "Hm... Sorry, @. I think I'm good on picture box shows for now!$h#$b#I appreciate the invite, though.$h",
+"Movies.SenS.RejectMovieTicket.NotInterested": "Hmm... Sorry, @. I think I'll pass on viewing the show.$8#$b#I appreciate the invite, though.$h",
+
+"Movies.SenS.BraveLittleSapling.1": "So this picture show is about a heroic little tree? Fascinating.",      
+"Movies.SenS.BraveLittleSapling.2": "Oh... I know exactly how that feels!",  
+"Movies.SenS.BraveLittleSapling.3": "That was quite the enjoyable series of moving images!#$b#I'm happy for the little tree.",
+
+"Movies.SenS.NaturalWonders.1": "This visual entertainment is an educational piece about our world?#$b#Count me in!",
+"Movies.SenS.NaturalWonders.2": "Amazing! This world is so beautiful...",
+"Movies.SenS.NaturalWonders.3": "Amazing, amazing...! The part about Prairie Islands and the racoons, so fascinating!#$b#Thank you for bringing me, @!",
+
+"Movies.SenS.PrairieKing.1": "Journey of the Prairie King, hm?#$b#I read a novel of the same name recently. It was quite fascinating!",
+"Movies.SenS.PrairieKing.2": "Oh no! What's this mustached menace up to?",
+"Movies.SenS.PrairieKing.3": "What an exciting series of images to have graced my eye sockets! Thanks for bringing me along, @.",
+
+"Movies.SenS.Wumbus.1": "Wumbus...?#$b#@, what exactly is a Wumbus?",
+"Movies.SenS.Wumbus.2": "The creature that stars in this image series is quite unnerving to look at...",
+"Movies.SenS.Wumbus.3": "Well that was... an interesting experience to say the least.",
+
+"Movies.SenS.Mysterium.1": "Mysterium...? I can't gather what this series of pictures is about from the poster...",
+"Movies.SenS.Mysterium.2": "Sen has a disgruntled look on his face.",
+"Movies.SenS.Mysterium.3": "The depiction of shadowfolk at the end was incredibly inaccurate. Hmph!",
+
+"Movies.SenS.ItHowlsInTheRain.1": "So this is what you call a \"horror\" movie'? Is it scary?",
+"Movies.SenS.ItHowlsInTheRain.2": "Hmm...#$b#Why does your species watch things that scare you for fun?",
+"Movies.SenS.ItHowlsInTheRain.3": "The story of that movie reminded me a little of myself.",
+
+"Movies.SenS.MiracleAtColdstarRanch.1": "Oh this is something festive, hm? I'm excited!",
+"Movies.SenS.MiracleAtColdstarRanch.2": "This poor family... What terrible circumstances!",
+"Movies.SenS.MiracleAtColdstarRanch.3": "What a heartwarming series of images!#$b#Thank you for letting me tag along!",
+
+"Movies.SenS.ZuzuExpress.1": "A romantic film, hm? This ought to be sappy!",
+"Movies.SenS.ZuzuExpress.2": "Follow your heart! He loves you!",
+"Movies.SenS.ZuzuExpress.3": "What?! That was the ending? That can't be the ending!#$b#I need to know if they got together in the end!",
+
+/*
+███╗   ███╗ █████╗ ██████╗     ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+████╗ ████║██╔══██╗██╔══██╗    ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+██╔████╔██║███████║██████╔╝    ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+██║╚██╔╝██║██╔══██║██╔═══╝     ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+██║ ╚═╝ ██║██║  ██║██║         ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝         ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+*/
+"Maps.SenS.SenDDGlobe": "This old globe has pins stuck in certain locations around the world.",
+"Maps.SenS.SenDDBasket": "You inspect the basket, expecting berries...#...but, what you find instead are some strange squishy red globs of goo.",
+"Maps.SenS.SenDDMap": "The map on the wall has a sight seeing spot in the mountain marked in red.",
+"Maps.SenS.SenDDSpiderWeb": "There's a very small spider living in this shelf.#The spider waves hello!",
+"Maps.SenS.SenDDBookStack1": "Numerous books are haphazardly stacked into a pile.#They appear to have library category stickers, but you doubt they've been checked out.",
+"Maps.SenS.SenDDBookStack2": "These books are piled very clumsily. They could tip at any moment.",
+"Maps.SenS.SenDDCandles": "These candles emit a gentle, relaxing glow.",
+"Maps.SenS.SenDDClutter": "Coffee cups, paper, pencils and scissors are littered about.#Seems like the result of a recent brainstorming session.",
+"Maps.SenS.SenDDWorkBench": "This workbench is well used. It looks like a costume was recently worked on here.",
+"Maps.SenS.SenDDLoom": "This loom appears to be jammed with some kind of fiber that definitely isn't wool...",
+"Maps.SenS.SenDDCloth": "A strong, but rather grungy piece of cloth. You decide it's best not to touch it.",
+"Maps.SenS.SenDDRedBook": "A battered journal. The writing within is sloppy and almost impossible to read.",
+"Maps.SenS.SenDDBlueBook": "This book was laid down open.#It seems like the reader couldn't find a bookmark.",
+"Maps.SenS.SenDDMushrooms": "This mushroom appears to be thriving in the darkness.",
+"Maps.SenS.SenDDBed": "This appears to be a very uncomfortable looking bed made out of wood planks.",
+"Maps.SenS.SenDDVines": "The vines growing out of a crack in the wall appear to have been meticulously pruned.",
+"Maps.SenS.SenDDBear": "This stuffed bear is tattered and smells like it was found in the garbage.#...It probably was.",
+"Maps.SenS.SenDDTrash": "A collection of rubbish has been carefully packed into this corner.",
+"Maps.SenS.SenDDBarrel": "You peek inside the barrel and find a number of handmade holiday costumes.",
+"Maps.SenS.SenDDCrocus": "A single crocus bloom sits in a vase. It gazes upon you with its judgement.",
+"Maps.SenS.SenDDFlowers": "The blooms in this vase are heavily wilted. They'll need to be replaced soon.",
+"Maps.SenS.SenDDGardenShrooms": "This bucket is overflowing with mushrooms.#Does Sen eat these?",
+"Maps.SenS.SenDDGardenWater": "This trough is full of crystal clear water.",
+"Maps.SenS.SenDDGardenPumpkin": "How are these pumpkins growing without sunlight?",
+"Maps.SenS.SenDDGardenBigPumpkin": "The massive pumpkin towers over you.#Clearly, it's Sen's pride and joy.",
+"Maps.SenS.SenDDGardenBerryBush": "The bushes are covered in bright red poisonous berries.",
+"Maps.SenS.SenDDGardenBerryBasket": "Judging by the color of these berries, it's probably best to resist the temptation to snack.",
+"Maps.SenS.SenDDGardenGrassRocks": "A thick layer of fiber is engulfing this rock.",
+"Maps.SenS.SenDDGardenSecretJunimo": "...Huh?#There's a junimo living inside this pumpkin!",
+"Maps.SenS.SenRoomCrocus": "It's a very healthy crocus!#He really loves this flower species.",
+"Maps.SenS.SenRoomBook": "It's one of Sen's many stolen library books.#He'll return it. Probably.",
+"Maps.SenS.SenRoomDeskFlowers": "These flowers are well cared for and healthy.#Sen's become quite the gardener!",
+"Maps.SenS.SenRoomCoffeeCup": "How did Sen even manage to get that coffee cup up there?",
+"Maps.SenS.SenRoomBookCase": "There are a plethora of books on the shelf.#Some of them have a strange musty odor.",
+"Maps.SenS.SenRoomLatch": "There's a strange hatch here...#You lift it, but it doesn't lead to anywhere.",
+"Maps.SenS.SenRoomCloth": "It's scrap of cloth from Sen's most recent costume design.",
+"Maps.SenS.SenRoomNotes": "You can't read the language on this paper.#You can tell the handwriting is bad, however.",
+"Maps.SenS.SenRoomBlueFlowers": "These are flowers from Sen's garden back in East Scarp.",
+"Maps.SenS.LitDMayorPot": "似乎Lewis把长凳上的植物搬到里面保护它免受天气影响。"
+,
+/*
+ ██████╗ ██╗   ██╗███████╗███████╗████████╗███████╗
+██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██║   ██║██║   ██║█████╗  ███████╗   ██║   ███████╗
+██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   ╚════██║
+╚██████╔╝╚██████╔╝███████╗███████║   ██║   ███████║
+ ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   ╚══════╝
+*/
+"Quests.SenS.AGardenForSen.Title": "A Garden for Sen",
+"Quests.SenS.AGardenForSen.Description": "Sen needs mixed seeds so he can start a garden!",
+"Quests.SenS.AGardenForSen.Task": "Bring 30 mixed seeds to Sen.",
+"Quests.SenS.AGardenForSen.FollowUp": "...!$7#$b#With both of our seed collecting efforts combined, we should have plenty now.$h#$b#Thank you so much, @. Come visit my home in a few days, alright?$h",
+/*
+███████╗██╗   ██╗███████╗███╗   ██╗████████╗███████╗
+██╔════╝██║   ██║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+█████╗  ██║   ██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ╚════██║
+███████╗ ╚████╔╝ ███████╗██║ ╚████║   ██║   ███████║
+╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+*/
+//EVENT 0h
+"Events.SenS.Event0.1": "Whew... I think that old guy is finally gone.",
+"Events.SenS.Event0.2": "W..wahh!! W-who...!?$9",
+"Events.SenS.Event0.3": "#Wait, come back!#Chase after him.",
+    "Events.SenS.Event0.SenFriendlyApproach.1": "Wh-what do you want, human?$u#$b#Don't you know it's dangerous down here?$a",
+    "Events.SenS.Event0.SenFriendlyApproach.2": "You should r-run away, before I tear you limb from limb!$a",
+    "Events.SenS.Event0.SenChoice2.1": "#Who are you?#Approach menacingly.",
+    "Events.SenS.Event0.SenChoice2.2": "W-wahh!!$u",
+    "Events.SenS.Event0.SenWhoAreYou.1": "Y..you're asking my name?$u",
+    "Events.SenS.Event0.SenWhoAreYou.2": "I'm... Sen. And yourself?#$b#...#$b#@, is it? Nice... nice to meet you, I suppose.",
+    "Events.SenS.Event0.SenWhoAreYou.3": "I was just visiting with my family down in the mines.",
+    "Events.SenS.Event0.SenWhoAreYou.4": "If you go deep down in there, you may see some of them.#$b#...But I can't promise they'll be very friendly with you.$s",
+    "Events.SenS.Event0.SenWhoAreYou.5": "Try not to hurt them, if you can avoid it.$s#$b#Most of us are terrified of humans and will attack on sight.$8",
+    "Events.SenS.Event0.SenWhoAreYou.6": "What will you say?#I won't hurt a fly!#I'll do my best.#No promises, buddy.",
+    "Events.SenS.Event0.SenWhoAreYou.7": "...!$u#$b#Wh-what did you say?$u#$b#Well, color me surprised... Please be very very careful, my people WILL attack you!$u#$b#Thank you for the sentiment, though. It means a lot to me.$8#$b#Stay safe while exploring, friend.$h",
+    "Events.SenS.Event0.SenWhoAreYou.8": "...!$u#$b#Th-Thank you.$u#$b#I understand you might get into altercations, and have no other choice, but...$s#$b#That means a lot to me.#$b#Please be safe while exploring.$h",
+    "Events.SenS.Event0.SenWhoAreYou.9": "... I see.#$b#Well, stay safe while exploring.",
+    "Events.SenS.Event0.SenWhoAreYou.10": "Well, I need to get going now. I have a friend waiting for me in town.$8#$b#Perhaps we'll meet again at some point?$h",
+    "Events.SenS.Event0.SenWhoAreYou.11": "Have a good day, @.$h",
+    "Events.SenS.Event0.End": "That must be one of the monsters Marlon was talking about.#I should keep my eye out for him...",
+
+//EVENT 2h
+"Events.SenS.Event2.1": "W-wahh..!!$9",
+"Events.SenS.Event2.2": "What will you say?#It's okay, I'm not going to hurt you.#You're rather jumpy for a monster.",
+"Events.SenS.Event2.3": "...Ah, my most sincere apologies for the overreaction.$8",
+"Events.SenS.Event2.4": "...A-And you're rather bold for a human, approaching a monster with no fear.$a",
+"Events.SenS.Event2.5": "I wasn't expecting anyone to approach me at this time of night...$8#$b#I must say, you are quite the strange one.",
+"Events.SenS.Event2.6": "Most humans would scream in terror if they saw someone like myself lurking in the dark.$s",
+"Events.SenS.Event2.7": "That being said...#$b#I'm sure you're wondering what a being like myself is doing so far outside of my element, hm?$8",
+"Events.SenS.Event2.8": "#Absolutely! Tell me about yourself.#Sorry, I don't have the time.",
+"Events.SenS.Event2.9": "...O-oh.$s#$b#Well, I suppose I won't bother you with the details, then.$s",
+"Events.SenS.Event2.10": "...I think I am going to take my leave now.#$b#Have a safe trip back to your abode.$s",
+    "Events.SenS.Event2.TellMeMore.1": "Oh, I wasn't expecting such an enthusiastic response!$h",
+    "Events.SenS.Event2.TellMeMore.2": "You see... my kind's knowledge of your world is sparse.#$b#Rarely, if ever, do we come to the surface.",
+    "Events.SenS.Event2.TellMeMore.3": "Most shadows are too afraid to venture their way up here.#$b#We've had innumerable run-ins with humans that have ended... poorly, to say the least.$s",
+    "Events.SenS.Event2.TellMeMore.4": "One day, I decided that I had been living in the dark long enough.#$b#I was going to come to the surface and learn about this world!$h#$b#Knowledge is a powerful tool, and with it, perhaps I could assist in bridging the gap between our two worlds.$7",
+    "Events.SenS.Event2.TellMeMore.5": "...Essentially, I have a dream that one day, both of our kinds can coexist peacefully.$h#$b#Even if I don't live to see it, I want to help put the world on a better path.$l",
+    "Events.SenS.Event2.TellMeMore.6": "What will you say?#That's a beautiful dream.#That's a foolish mindset.#",
+    "Events.SenS.Event2.TellMeMore.7": "Thank you, @... Hearing that gives me hope.$h#$b#Although, I imagine it must sound a little naive.$8",
+    "Events.SenS.Event2.TellMeMore.8": "...I know, it probably is.$s",
+    "Events.SenS.Event2.TellMeMore.9": "Even my own people are perplexed by my fascination with the surface.$8",
+    "Events.SenS.Event2.TellMeMore.10": "It's not something I can simply bottle up and ignore, though.#$b#This feels like my calling, and I will follow this road wherever it takes me.$h",
+    "Events.SenS.Event2.TellMeMore.11": "Ah... I've probably kept you long enough.$8#$b#You humans do need to sleep after all.$8",
+    "Events.SenS.Event2.TellMeMore.12": "I'm going to head back to do some reading.$h#$b#Safe travels home, @.$h",
+
+//EVENT 4h
+"Events.SenS.Event4.1": "Heehee...$12",
+"Events.SenS.Event4.2": "Boo!",
+"Events.SenS.Event4.3": "E-Eeek!$u",
+"Events.SenS.Event4.4": "Oh! It's just you, Sen.$h#$b#You got me good!$7",
+"Events.SenS.Event4.5": "Oh, I definitely haven't gotten you yet.$h",
+"Events.SenS.Event4.6": "Hm? What do you mean?$u",
+"Events.SenS.Event4.7": "Here I come!",
+"Events.SenS.Event4.8": "Now I've got you!",
+"Events.SenS.Event4.9": "Got you!$h",
+"Events.SenS.Event4.10": "Oh, Yoba darnit! Looks like you did.$h",
+"Events.SenS.Event4.11": "I'm getting better at this!$7",
+"Events.SenS.Event4.12": "Wanna go rummage in some garbage bins?$12",
+"Events.SenS.Event4.13": "Absolutely! Let's go see what treasures we can find tonight.$7",
+"Events.SenS.Event4.14": "W-wait for me!!",
+
+//EVENT 6h P1
+"Events.SenS.Event6.1": "...sigh...$s",
+"Events.SenS.Event6.2": "...Oh hello, @!$h#$b#Don't be shy. Come in, come in!$h",
+"Events.SenS.Event6.3": "It's always a pleasure when you come to visit me.$h#$b#I hope you didn't get harassed by any crabs or bats on your way here.$8",
+"Events.SenS.Event6.4": "What will you say?#Is everything alright?#This garden seems like a bit of a mess...#",
+"Events.SenS.Event6.5": "Heehee... You really can read me like a book, @.$8#$b#I've been trying to get into gardening.$s#$b#...As you can see, it hasn't been going too well.$8",
+"Events.SenS.Event6.6": "Yeah... as you can see, I've been trying my hand at gardening.$8#$b#I can't seem to get the hang of it, though.$s",
+"Events.SenS.Event6.7": "Essentially, I've been taking plants from above ground and planting them down here.#$b#I don't know why, but they always die off after a day or so.$s#$b#Only weeds and mushrooms seem to survive...$s",
+"Events.SenS.Event6.8": "You're a farmer, yes? Do you know what I might be doing wrong?$8",
+"Events.SenS.Event6.9": "What will you say?#You shocked the plants when you moved them.#You're not growing the right kinds of plants.#",
+"Events.SenS.Event6.10": "O-oh! That can happen?$u#$b#I guess I didn't read up enough before trying this...$8",
+"Events.SenS.Event6.11": "Hmm... perhaps you're right. I was sort of digging up plants at random.$6",
+"Events.SenS.Event6.12": "Oh! I just had a brilliant idea!$7",
+"Events.SenS.Event6.13": "If I plant a whole bunch of mixed seeds, something would surely sprout!$h#$b#Getting enough would probably take me quite a while, though...$s#$b#Would you be willing to help me collect some?$8",
+"Events.SenS.Event6.14": "What will you say?#Of course I'll help out!#Err... I'm busy, sorry.#",
+"Events.SenS.Event6.15": "...!$7#$b#Thank you so much, @!$h#$b#I think if we both collect thirty mixed seeds, it'll be plenty to get something growing.$h",
+"Events.SenS.Event6.16": "O...oh...$s#$b#Well, I'm sure I can gather them all on my own.$s#$b#If you change your mind later, though, I'd greatly appreciate the help.$8",
+"Events.SenS.Event6.17": "Ohh... I can see it now. This garden is going to be teeming with life!$l",
+"Events.SenS.Event6.18": "Golly... whenever we hang out, I get such a burst of inspiration.$7#$b#You're really something else, @.$h",
+"Events.SenS.Event6.19": "Ah! That being said, I simply MUST show you the costume I've been working on.$7",
+"Events.SenS.Event6.20": "Come see, come see!$h",
+    "Events.SenS.Event6.p2.1": "...Thank you, @.$s#$b#I won't ever forget this.$10",
+
+//EVENT 8h
+"Events.SenS.Event8.1": "Oh, @! Came to see the view as well, did you?$h",
+"Events.SenS.Event8.2": "The sky is beautiful from the lighthouse at night, isn't it?$l",
+"Events.SenS.Event8.3": "I've been meaning to tell you, @...#$b#I deeply appreciate the friendship you've shown me.#$b#The choice to leave the mines was hard for me.$s#$b#For some time I wondered if my family was right...$s#$b#...That my dreams were merely a naive figment of my imagination.$s",
+"Events.SenS.Event8.4": "What will you say?#Wait, they told you that?#They're probably afraid you're going to get hurt.",
+"Events.SenS.Event8.5": "Indeed. It hurt me quite deeply.$s#$b#I visit my family often, but our relationship hasn't been the same since I left.$s",
+"Events.SenS.Event8.6": "That they are...$s#$b#And to be honest, I know getting hurt is still a very real possibility.#$b#It's a risk I'm willing to take.",
+"Events.SenS.Event8.7": "...That said, you've shown me new horizons.$h#$b#Like the morning sun peeking over the edge of the vast sea, a new day full of possibilities always arrives.$h",
+"Events.SenS.Event8.8": "...That was a silly allegory, hehe. It's the middle of the night.$8",
+"Events.SenS.Event8.9": "...Do you mind if I open up to you, @?#$b#I'd like to tell you a bit about my past, if you're interested.$8",
+"Events.SenS.Event8.10": "What will you say?#Chatter away my friend!#Of course, that's what friends are for.",
+"Events.SenS.Event8.11": "Hehe... You really know how much I ramble, don't you?$8",
+"Events.SenS.Event8.12": "...Oh, @.$h#$b#You're going to bring on waterworks saying things like that!$h",
+"Events.SenS.Event8.13": "So um... if you have no objections...$8#$b#Let's get right into it!$h",
+"Events.SenS.Event8.14": "One day while I was exploring in the mines as a child...",
+"Events.SenS.Event8.15": "Sentrez! There you are!#$b#We've been searching everywhere for you.#$b#How many times have you been told not to wander off?!$1",
+"Events.SenS.Event8.16": "Eep!$3",
+"Events.SenS.Event8.17": "I'm sorry! I was with the others, then I was here. I dunno what happened.",
+"Events.SenS.Event8.18": "You need to improve your attentiveness, child.$1#$b#One of these days you're going to get hurt.#$b#Why can't you understand that?$1",
+"Events.SenS.Event8.19": "...$s",
+"Events.SenS.Event8.20": "...I'm sorry.$2",
+"Events.SenS.Event8.21": "Sen, you must understand.#$b#If something were to happen to you... I...$1#$b#I don't know what I would do.$1",
+"Events.SenS.Event8.22": "You're curious as to what this place is, aren't you?",
+"Events.SenS.Event8.23": "Mhmm mhmm. I found this place and found a neat shiny thingy.#$b#I don't know what it's used for, but it looks like it could hold something.$h#$b#Why does it have wheels? So it won't get stuck on all the rocks?$u#$b#Oh, I know! Maybe someone lost it her--",
+"Events.SenS.Event8.24": "Sen.$1",
+"Events.SenS.Event8.25": "Sorry...$s",
+"Events.SenS.Event8.26": "This is a place where humans infiltrated our cave system. One of many--",
+"Events.SenS.Event8.27": "Oh! Humans!$h#$b#You mean the lanky people that walk around with shovels and weird lights?$u#$b#Why do they need lights? Can't they see in the dark?$u",
+"Events.SenS.Event8.28": "Sen!$3",
+"Events.SenS.Event8.29": "This is one of many human infiltration points...#$b#The cart here is used for collecting resources, specifically coal.",
+"Events.SenS.Event8.30": "Oh, that's neat! Coal is nice for keeping warm and cooking food.$h#$b#Where are those humans now?$u",
+"Events.SenS.Event8.31": "We attacked.#$b#They are no longer here.$1",
+"Events.SenS.Event8.32": "Wh...Why?!$s#$b#Why would you do something so mean?$s",
+"Events.SenS.Event8.33": "Mean?$3#$b#No, Sen. We were simply defending our territory.$1#$b#Humans attack us on sight. It is a matter of survival.$1#$b#Attack first. Gain the upper hand. We live to see another day.$1",
+"Events.SenS.Event8.34": "B-but how do you know? They didn't do anything.$s#$b#They could have been friendly! We could share the coal and be friends instead.$s",
+"Events.SenS.Event8.35": "That is not how the world works, Sentrez!#$b#Why can you not listen to me for once in your life?$1",
+"Events.SenS.Event8.36": "...Sigh.$2#$b#I know it is hard to hear, Sentrez.#$b#One day, you will come to understand... Just as I once had.$1",
+"Events.SenS.Event8.37": "I... I'm sorry, @.$s#$b#Talking about this... Maybe I wasn't ready...?$s#$b#I didn't mean to unload on you.$10",
+"Events.SenS.Event8.38": "What will you say?#It's okay Sen, I'm here for you.#Everyone gets overwhelmed sometimes.",
+"Events.SenS.Event8.39": "Thank you, @...$10#$b#I really do need your warm presence right now.$10",
+"Events.SenS.Event8.40": "That is reassuring, @.$s#$b#I've been nervous about getting too emotional regarding my past.$s",
+"Events.SenS.Event8.41": "I did have a little more to say, but... I'm rather exhausted now.$s#$b#Would you... um, be willing to spend some time gardening with me back in my cave?$s#$b#I think it would help calm my nerves...$8",
+"Events.SenS.Event8.42": "Thank you, @... I appreciate it greatly.$h",
+
+//EVENT 10h
+"Events.SenS.Event10.1": "Oh @, Hello!$h#$b#I wasn't expecting you to drop by today.$h",
+"Events.SenS.Event10.2": "The plants are doing absolutely wonderful!$7#$b#You simply must come see the potted ones.$h",
+"Events.SenS.Event10.3": "Sen seems troubled. What will you say?#Is something on your mind?#Are you looking for something?",
+"Events.SenS.Event10.4": "Oh, hehe... Am I really that much of an open book?$8",
+"Events.SenS.Event10.5": "Oh! No, I'm not.$11#$b#I suppose I just have a lot on my mind...$8",
+"Events.SenS.Event10.6": "If you'll recall from our chat at the lighthouse, there was a little more I wanted to tell you...$s#$b#Do you mind if I elaborate? If it isn't a bother, of course.$8",
+"Events.SenS.Event10.7": "Thank you, @. Having a friend to talk to...$h#$b#Goodness, it makes the world feel less heavy.$4",
+"Events.SenS.Event10.8": "So... this is your choice.#$b#There is no convincing you against this fool's errand, is there?$1",
+"Events.SenS.Event10.9": "There isn't. I need to see the world for myself.#$b#I'm sorry.$s",
+"Events.SenS.Event10.10": "Bah.$1#$b#Even now, you still wander off and refuse to listen to me.",
+"Events.SenS.Event10.11": "One day, Sentrez, you will heed my warnings.#$b#The surface world is a vile and inhospitable place for us Shadows.$1",
+"Events.SenS.Event10.12": "And maybe you're right...#$b#Maybe I will come back crying and admit you were right all along.$s",
+"Events.SenS.Event10.13": "I need to know the truth for myself. There's a whole world out there that we know nothing about.$s#$b#To say there's no potential out there...",
+"Events.SenS.Event10.14": "...It feels closed minded.$s",
+"Events.SenS.Event10.15": "...$1#$b#Just visit home, will you? Let me know you're safe.#$b#I've lost enough in my life. I can't handle that again, Sentrez.$1",
+"Events.SenS.Event10.16": "I will! I'll come back with all kinds of information and stories about the surface world.$h#$b#I know how much you love plants, so I'll be sure to put in some extra research there!$7",
+"Events.SenS.Event10.17": "Get out of here already.#$b#Stop drawing this out with your chatter.$1",
+"Events.SenS.Event10.18": "...So, I was thinking...$s#$b#If we show Skrell the potential in the surface world, perhaps he will begin to understand my perspective.",
+"Events.SenS.Event10.19": "I know this is a sudden request, but would you be willing to meet my family?#$b#Just long enough to make a peace offering and show that you mean no harm.$8",
+"Events.SenS.Event10.20": "Oh, @...$h#$b#Thank you so, so very much. This means the absolute world to me.$h#$b#Meet me after dark on the Scarp beach in a few days time, alright?$h#$b#Oh, and I promise I won't let scary 'ol Skrell hurt ya.$12",
+"Events.SenS.Event10.21": "Well then! Let's get back to gardening, shall we?$h",
+    "Events.SenS.Event10.p2.1": "Though cautious, Skrell and Ebb's apprehension towards you seems to ease ever so slightly.#Perhaps this will open the door to change...?",
+
+//EVENT EPILOGUE
+"Events.SenS.Event10.p3.1": "...I've been waiting for you.",
+"Events.SenS.Event10.p3.2": "You look perplexed.#$b#Did you not expect me to be capable of speaking your language?$1",
+"Events.SenS.Event10.p3.3": "It is a long story, but that is not why I'm here.",
+"Events.SenS.Event10.p3.4": "I wanted to... acknowledge your offering of peace.",
+"Events.SenS.Event10.p3.5": "Don't let that go to your head. I do not trust humanity, nor do I trust you.$1#$b#However... I am willing to give you a chance, for the sake of Sentrez.",
+"Events.SenS.Event10.p3.6": "I will be making an appeal to my people to show forbearance towards you during your adventures.#$b#Do not take advantage of this act.$1#$b#If you do... I assure you that you will regret it deeply.$1",
+"Events.SenS.Event10.p3.7": "If I may make an inquiry, human...#$b#What exactly is your relationship with Sentrez?",
+"Events.SenS.Event10.p3.8": "#I love him with all my heart. [MARRIAGE UNLOCK]#He's a great friend! [ROOMMATE UNLOCK]",
+"Events.SenS.Event10.p3.9": "Heh. A friendship between shadow and a human...#$b#Can such a thing truly endure the test of time?$1",
+"Events.SenS.Event10.p3.10": "You will both have to put in extensive effort to prove such a thing could work long-term.#$b#I certainly have my doubts.$1",
+"Events.SenS.Event10.p3.11": "Have a good evening, human.",
+"Events.SenS.Event10.p3.12": "...?$3#$b#You...#$b#Hmm...#$b#Interesting.#$b#Take care with his heart. Break it and you shall regret ever crossing paths with me.$1",
+"Events.SenS.Event10.p3.13": "Starting tomorrow, Sen will be available as a roommate!#Bring him a Ghost Void Pendant if you're interested.",
+"Events.SenS.Event10.p3.14": "Starting tomorrow, Sen can be romanced!",
+
+//EVENT 14 HEART
+"Events.SenS.Event14.1": "Oh, hello @!$h",
+"Events.SenS.Event14.2": "I'm just out here watching the waves, lost in my thoughts.$h",
+"Events.SenS.Event14.3": "I really threw caution to the wind with you, huh?$8#$b#I don't regret that choice at all.$h",
+"Events.SenS.Event14.4": "I have a few crocus seeds...#$b#I'm going to let them free into the sea breeze.#$b#Maybe a bloom will sprout somewhere in the world!$h",
+"Events.SenS.Event14.5": "Here's to another new start, just like ours. $h",
+"Events.SenS.Event14.6": "Thank you for everything, @.#$b#Honestly and truly.$l",
+
+//Player Death Mine
+"Events.SenS.ReactToDeathMine.1": "...?!",
+"Events.SenS.ReactToDeathMine.2": "Wake up, please!!",
+"Events.SenS.ReactToDeathMine.3": "Oh my goodness thank Yoba you're okay!$u#$b#I was so worried. Please be careful while adventuring!$s#$b#If something were to happen to you I don't know what I would do...$s#$b#Please get home and rest up for the rest of the day, okay?$s",
+
+//Player Death Skill Cavern
+"Events.SenS.ReactToDeathSkullCavern.1": "...Hey...",
+"Events.SenS.ReactToDeathSkullCavern.2": "Easy, now... take it slow.",
+"Events.SenS.ReactToDeathSkullCavern.3": "You're awake! Thank goodness.#$b#This strange cloaked figure found you beaten up in Skull Cavern.",
+"Events.SenS.ReactToDeathSkullCavern.4": "...!#$b#@, you're okay! Oh thank goodness...",
+"Events.SenS.ReactToDeathSkullCavern.5": "Is @ going to be alright, doctor?",
+"Events.SenS.ReactToDeathSkullCavern.6": "@ will be okay after getting some rest.$2#$b#Make sure that happens, okay?$2",
+"Events.SenS.ReactToDeathSkullCavern.7": "I'll leave you two to talk; let me know if you need anything.$2",
+"Events.SenS.ReactToDeathSkullCavern.8": "Oh @, I was so terrifed you wouldn't make it.#$b#I could sense something was wrong, so I came running...#$b#Please be careful! I'm not the strongest Shadow and I don't know if I'll be able to rescue you next time...#$b#Get home and rest up, okay?",
+
+/*
+████████╗ ██████╗ ██╗    ██╗███╗   ██╗██╗███████╗
+╚══██╔══╝██╔═══██╗██║    ██║████╗  ██║██║██╔════╝
+   ██║   ██║   ██║██║ █╗ ██║██╔██╗ ██║██║█████╗  
+   ██║   ██║   ██║██║███╗██║██║╚██╗██║██║██╔══╝  
+   ██║   ╚██████╔╝╚███╔███╔╝██║ ╚████║██║███████╗
+   ╚═╝    ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═══╝╚═╝╚══════╝
+                                                 
+*/
+//Krobus
+"Krobus.SenS.Reveal.1": "Sen always has so much energy... I don't know where he gets it.#$b#Is it from this... \"coffee\" he's always talking about?$u",
+"Krobus.SenS.Reveal.2": "...*rumble*...$u#$b#...Sorry, that was embarassing.l#$b#Don't worry, I'm okay. Sen is going to bring me snacks, so I'm holding off on eating.$h",
+"Krobus.SenS.Reveal.3": "Sen talks about you a lot when he visits. It makes me happy that he's happy.$h",
+"Krobus.SenS.Reveal.4": "Sen's full name, Sentrez, means 'crowned dreamer' in our language.#$b#I feel like that's fitting for him, don't you?$h",
+
+"Krobus.SenS.SenMet": "Did you happen to come across my friend in the mines?#$b#Do not fear him, he is quite friendly.$h",
+"Krobus.SenS.DreamReveal": "Sen is very optimistic for a Shadow. It's... quite refreshing.$h",
+"Krobus.SenS.ShadowPlay": "Hmm... I found this while rummaging in the bins.#$b#Maybe you'd have a use for it?[351]$u",
+"Krobus.SenS.GardenWaitTime": "Sen told me that you've helped him collect seeds for a garden. That was very kind of you.$h",
+"Krobus.SenS.GardenCompleted": "I saw the garden you helped Sen grow. It's beautiful...$h#$e#You're quite different than other humans.$u",
+"Krobus.SenS.FamilyFlashback": "Sen has seemed a bit melancholy recently... I hope he's alright.$s",
+"Krobus.SenS.MineFlashback": "You're... going to meet with Skrell?$u#$b#Be careful. He has a strong hatred of humans.$s",
+"Krobus.SenS.TheConfrontation": "You've met with Skrell? Did he... attack you?$s#$b#...$u#$b#No? You must be a very special human.$h",
+"Krobus.SenS.SkrellEpilogue": "Skrell recently visited me to ask what my life on the surface is like.$u#$b#Sen's curiosity must have finally rubbed off on him.$7",
+"Krobus.SenS.SensFlowers": "Sweet little flowers are appearing all over the valley. Where'd they come from?$u",
+"Krobus.SenS.TriedToMarryButKrobus": "Unfortunately, you can't have a partner while living with a roommate.",
+
+//Dwarf
+"Dwarf.SenS.SenMet": "A shadow has been lurking around here... Be wary, they are hostile people.",
+"Dwarf.SenS.DreamReveal": "The shadow that lurks around here is docile compared to most. It's peculiar.",
+"Dwarf.SenS.ShadowPlay": "I've grown used to the lurking shadow's presence. I'm still cautious, however...",
+"Dwarf.SenS.GardenWaitTime": "The lurking shadow spends most of his time reading and fiddling with yarn. It is strange.",
+"Dwarf.SenS.GardenCompleted": "The lurking shadow seemed quite happy the last time he was in the area. I wonder what about?",
+"Dwarf.SenS.FamilyFlashback": "The lurking shadow now seems downcast. What happened, I wonder.",
+"Dwarf.SenS.MineFlashback": "The lurking shadow hasn't been around much recently. I can rest easy.",
+"Dwarf.SenS.TheConfrontation": "You know, you are just as peculiar as the lurking shadow.",
+"Dwarf.SenS.SkrellEpilogue": "I sense a difference in the atmosphere of the mines...",
+"Dwarf.SenS.SensFlowers": "The lurking shadow seldom comes to this place anymore.#$b#What became of him, I wonder?",
+
+//Wizard
+"Wizard.SenS.SenMet": "I've foreseen that you'd an unlikely ally in the mines. Treat him well.",
+"Wizard.SenS.DreamReveal": "The shadow you've befriended is quite peculiar, is he not?",
+"Wizard.SenS.ShadowPlay": "I am sure you know as well as I do that no bears were rummaging in the trash last night.",
+"Wizard.SenS.GardenWaitTime": "With the right magical attributes certain plants can grow in the darkness of the underworld.",
+"Wizard.SenS.GardenCompleted": "I sense you're getting quite close with a shadow person.#$b#Take care with that secret.",
+"Wizard.SenS.FamilyFlashback": "The strange shadow was lurking around my tower recently.#$b#He's become quite bold.",
+"Wizard.SenS.MineFlashback": "Shadowfolk are a unique, otherworldly people.#$b#I have been attempting to keep peace between them and the dwarves.",
+"Wizard.SenS.TheConfrontation": "A great change is on the horizon. I can forsee it.",
+"Wizard.SenS.SkrellEpilogue": "I sense a change in the shadowfolk of the mines.#$b#I presume you had something to do with it.",
+"Wizard.SenS.SensFlowers": "Hm... A peculiar bloom has begun sprouting in the valley.#$b#I will need to collect a few to study.",
+
+//Townies and the "bears"
+"Haley.SenS.ShadowPlay": "Uhg ew, there was something digging around in the trash...$u",
+"Alex.SenS.ShadowPlay": "Word on the street is that baby bears were digging in the garbage last night.#$b#Maybe we should get a lid lock...$s",
+"Elliott.SenS.ShadowPlay": "Be wary in the night my friend.#$b#I've heard bears are digging in the trash.$s",
+"Harvey.SenS.ShadowPlay": "I saw it! I saw the bears!$8#$b#Just barely, but I saw them!$8",
+"Sam.SenS.ShadowPlay": "Everyone's up in arms about these trash bears.#$b#I wonder if Lewis is gonna call animal control.$s",
+"Abigail.SenS.ShadowPlay": "Everyone is talking about the garbage bears...#$b#Was it really bears?$s",
+"Leah.SenS.ShadowPlay": "The bears didn't come to my trash.#$b#With all the commotion, I'm almost jealous.$h",
+"Maru.SenS.ShadowPlay": "If the bears come back I plan to build a humane trap to capture them.$u#$b#Then we can release them back into the forest.$u",
+"Penny.SenS.ShadowPlay": "My mother won't stop talking about the baby bears she saw.#$b#I wonder where their mother is.$u",
+"Caroline.SenS.ShadowPlay": "I had to clean up after the bears that came through... What a mess!$a",
+"Demetrius.SenS.ShadowPlay": "Two bears in town is a rare sight.#$b#I should use this as an opportunity to research their ecology in relation to urbanization.$h",
+"Clint.SenS.ShadowPlay": "A couple of lonely bears... They're a lot like me.$s",
+"Evelyn.SenS.ShadowPlay": "You whippersnappers and your bears.#$b#I've seen plenty come through in my time.$h",
+"George.SenS.ShadowPlay": "If I have to hear one more thing about those damn bears...$u",
+"Gus.SenS.ShadowPlay": "There's always something in my garbage...#$b#First Linus, now bears. What's next?$s",
+"Jas.SenS.ShadowPlay": "Did you know that most bears are omnivorous?$u#$b#They must be looking for food in the trash.$4",
+"Jodi.SenS.ShadowPlay": "My kids are obsessed with the bears...$s#$b#Until they're confirmed gone I should have them come in early.$s",
+"Kent.SenS.ShadowPlay": "What's so special about bears in the trash!$s",
+"Lewis.SenS.ShadowPlay": "Dagnabbit, I thought the holligans were bad enough.$u#$b#Now there's bears causing trouble with the trash!$a",
+"Linus.SenS.ShadowPlay": "Bears are following their natural instincts when they rummage in garbage bins.#$b#It'd be ashame to let good food go to waste.$h",
+"Marnie.SenS.ShadowPlay": "I wonder where those little bears went?#$b#Hopefully they're done bin hopping.$h",
+"Pam.SenS.ShadowPlay": "A couple of damn bears knocked over my trashcan! A huge mess, everywhere!$u",
+"Pierre.SenS.ShadowPlay": "We found our trash can with the lid off this morning.$u#$b#A lot of us did, apparently.$u",
+"Robin.SenS.ShadowPlay": "We see bears quite often up here in the mountains.#$b#It's rare they wander down into town.",
+"Vincent.SenS.ShadowPlay": "Woooahh I wish I got to see the bears everyone's talking about!$u",
+"Willy.SenS.ShadowPlay": "No bears ever come onto the beach. I guess I lucked out.$h",
+"Sebastian.SenS.ShadowPlay": "Digging in the trash... That's gross, even for a bear.$s",
+"Shane.SenS.ShadowPlay": "I could care less about this bear everyone's on about. It's just a bear.$s",
+"Emily.SenS.ShadowPlay": "Do you really think it was bears in the garbage, @?#$b#My intuition tells me it was something else.",
+"GuntherSilvian.SenS.ShadowPlay": "Everything we put out to the trash last night is gone...#$b#Why would bears want old magazines?",
+"MarlonFay.SenS.ShadowPlay": "Bears, huh? I reckon this might require an investigation...",
+"MorrisTod.SenS.ShadowPlay": "Bears! Bears in the garbage! I must contact the higher-ups at once.",
+
+/*
+██████╗ ███████╗██╗      █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗██╗  ██╗██╗██████╗ 
+██╔══██╗██╔════╝██║     ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝██║  ██║██║██╔══██╗
+██████╔╝█████╗  ██║     ███████║   ██║   ██║██║   ██║██╔██╗ ██║███████╗███████║██║██████╔╝
+██╔══██╗██╔══╝  ██║     ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║╚════██║██╔══██║██║██╔═══╝ 
+██║  ██║███████╗███████╗██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║███████║██║  ██║██║██║     
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝                   
+*/
+// Relationship
+"Relationship.SenS.DanceAccept": "O-oh! You'd like to dance, @?$14#$b#I'm a little nervous, but I think it'd be okay.$14",
+"Relationship.SenS.DanceAccept.Spouse": "Oh! I'd love to dance with you, {{RomanticNick}}.$14#$b#Hopefully no one questions who the weird guy in the cloak is...$14",
+"Relationship.SenS.DanceAccept.Roommate": "Oh! Out of everybody here you want to dance with me, @?$14#$b#Hopefully no one questions who the weird guy in the cloak is...$14",
+"Relationship.SenS.MemoryWiped": "哇！一个人类...！$9#$b#等等...谁-谁...$u#$b#你...如此...熟悉？$s#$b#我胸-胸口的这种感觉是什么...？$10",
+"Relationship.SenS.DanceRejection": "O-oh...?$14#$b#I appreciate the sentiment, but I am far too nervous to put myself out in the middle of a crowd...$14",
+"Relationship.SenS.Divorced": "%Sen避开看你。他似乎很沮丧。",
+"Relationship.SenS.BreakUp": "...？$u#$b#你-你想要终止我们的伙伴关系...？$s#$b#我-我理解。我愚蠢地认为人类和暗影之间的关系能够成功。$10",
+"Relationship.SenS.Rejection.Divorced": "...$s#$b#%Sen turns away from you. He wants to be left alone.",
+"Relationship.SenS.BouquetAccept.1": "Oh, that's a very pretty bunch of flowers, @!$h#$b#W-wait, are you offering those to me?$11#$b#I... I would love to give romance a try with you, @.$l",
+"Relationship.SenS.BouquetAccept.2": "That is so many flowers...!$u#$b#W-wait, are you offering those to me?$11#$b#I-I accept! I would adore being your partner, @.$l",
+"Relationship.SenS.PendantRejection.1": "Oh... that's such a pretty seashell!$u#$b#I couldn't possibly take such a treasure from you.$8",
+"Relationship.SenS.PendantRejection.2": "Hm? I read about these in my books...$6#$b#Aren't they used for marriage proposals among your kind?$11",
+"Relationship.SenS.PendantRejection.NeedHouseUpgrade": "...!?!$11#$b#Oh... @! As much as I want to...#$b#I think your house is a little too small for the both of us.$8",
+"Relationship.SenS.PendantRejection.NpcWithSomeoneElse": "...!?!$11#$b#Oh... @!#$b#...I'm afraid I'm already living with someone else and am quite comfortable.$8",
+"Relationship.SenS.PendantRejection.PlayerWithSomeoneElse": "..!?!$11#$b#Oh... @! As much as I want to...#$b#Would your current housemate be okay with that?$8",
+"Relationship.SenS.PendantPester.1": "Er... you're being very aggressive about this, @.$8#$b#I assure you that I think you should keep that.$8",
+"Relationship.SenS.PendantPester.2": "U-um... I'm not sure how to say this but...$8#$b#No thank you, @.$8",
+"Relationship.SenS.EngagementAccept": "...!?$$11#$b#哦...@！我-我接受...$11#$b#我从没想过你会想和我共度一生...$l#$b#哦！$u#$b#人们在仪式上会很困惑...我一定要穿我的斗篷。$8",
+
+"Relationship.SenS.Engaged.3DayWait.Romantic.1": "人类和暗影之间的婚姻...这以前发生过吗？$l#$b#我觉得我们要创造历史了，@。$7",
+"Relationship.SenS.Engaged.3DayWait.Romantic.2": "我的，并肩生活将是多大的变化。$l#$b#我会努力保持整洁。正如你所知道的，我以前从未住过房子。$8",
+"Relationship.SenS.Engaged.3DayWait.Platonic.1": "啊...我不敢相信我们很快就要一起生活了！$h#$b#我从未在建筑物里呆过几分钟以上，更别说住在房子里了。$6#$b#我一定会保持整洁！$h",
+"Relationship.SenS.Engaged.3DayWait.Platonic.2": "我对我们能一起生活感到非常兴奋，@。$h#$b#我喜欢我们的聊天，但现在我们可以整天聊天了！$l#$b#你不兴奋吗？因为我太兴奋了。$7",
+
+//Important Stuff
+"Relationship.SenS.Engaged.Platonic": "...?!$u#$b#我-我...@，你确定吗？和我一起生活对我们俩来说都会很复杂。$u#$b#我们必须向他人隐瞒很多东西。$s#$b#...#$b#你-你确定...？$7#$b#好吧，那就这样定了。我会收拾行李，三天内搬进来！$h",
+"Relationship.SenS.AfterWedding.Platonic": "Gooood morning, @!$h#$b#Oh, I'm just thrilled to be here! I'm so giddy, I could vibrate out of my skin!$h#$b#A Shadow and human living together... this is a dream come true!$7",
+"Relationship.SenS.StarDrop.Platonic": "I'd like you to have this, @. I've been holding onto it for a very long time.$h#$b#I've been waiting for someone truly special to come along before I gifted it away.$h#$b#That special someone is you, @. You are my best friend.$l",
+"Relationship.SenS.Engaged.Romantic": "哦，@...！$u#$b#你...你想要娶我？$u#$b#我在书中读过很多关于这个的内容，但我从没想过...$11#$b#哦，别让我胡言乱语了，我-我接受！$l#$b#我会在婚礼上穿我的伪装...希望没人，嗯，质疑它。$8",
+"Relationship.SenS.AfterWedding.Romantic": "Good morning, {{RomanticNick}}!$h#$b#I'm surprised the public wedding went as well as it did. The mayor seemed quite up in arms.$8#$b#That said, I say that it went quite swimmingly!$h#$e#Let's get cracking on some farmwork, shall we?$h",
+"Relationship.SenS.StarDrop.Romantic": "I'd like you to have this, @. I've been holding onto it for a very long time.$h#$b#I've been waiting for someone truly special to come along before I gifted it away.$h#$b#That special someone is you, @. You are my beloved partner.$l",
+
+//Patio
+"Relationship.SenS.Patio.Platonic.1": "Oh, hello @!$h#$b#It's such a lovely day out, isn't it?$l#$e#Hm?#$b#Don't worry, I won't stay out in the sun for too long.$h",
+"Relationship.SenS.Patio.Platonic.2": "I always appreciate the gentle breeze of the outdoors...$l#$b#I could practically fall asleep out here!$h#$e#Don't worry, I won't. Us Shadows don't sleep!$h",
+"Relationship.SenS.Patio.Platonic.3": "Oh, come to join me outside? There's plenty of room, take a seat!$h#$b#I'll only be out here for a little while though, just so you're aware!$8",
+"Relationship.SenS.Patio.Platonic.4": "I often like to come out here and look up at the sun.#$b#How can something so life-bringing and beautiful also so be dangerous to my kind...?$s#$e#Don't worry, I'll be going inside in just a moment.$8",
+"Relationship.SenS.Patio.Romantic.1": "Oh, hello {{RomanticNick}}!$h#$b#It's such a lovely day out, isn't it?$h#$b#Almost as lovely as yourself.$l#$e#Hehe sorry, that was corny. I'll head back inside in a few moments.$h",
+"Relationship.SenS.Patio.Romantic.2": "I always appreciate the gentle breeze of the outdoors...$l#$b#I could practically fall asleep out here!$h#$e#Don't worry, I won't. Us Shadows don't sleep!$h#$b#You'd carry me back inside if that somehow happened though, right?$12",
+"Relationship.SenS.Patio.Romantic.3": "Come to join me outside, darling? There's plenty of room by my side.$l#$e#Don't worry, I'll only stay out here for a little while.$h",
+"Relationship.SenS.Patio.Romantic.4": "I often like to come out here and look up at the sun.#$b#How can something so life-bringing and beautiful also so be dangerous to my kind...?$s#$e#Don't worry {{RomanticNick}}, I'll be going inside in just a moment.$8",
+
+//Spouse Room
+"Relationship.SenS.SpouseRoom.Platonic.1": "Ahh, there's nothing like a good book in the morning, is there?$l#$b#You're welcome to take a gander at anything on my shelf.$h#$e#I'm sure there must be something here you'd be interested in!$h",
+"Relationship.SenS.SpouseRoom.Platonic.2": "I think I'm going to start a new costume project today.$h#$b#I'll definitely need to restock on fabric scraps and threading soon... I've been speeding through my craft supplies.$8",
+"Relationship.SenS.SpouseRoom.Platonic.3": "Living in such a tidy space is... different after living underground for so long.#$b#I'm always taking great care to not make a huge mess.$8",
+"Relationship.SenS.SpouseRoom.Platonic.4": "%Sen seems to be distracted.#$e#Oh hello, @! Sorry, I was just thinking about what to do tonight.$h#$b#Perhaps I should visit Skrell and Ebb? Or perhaps hang out with {{SenKrobusReference}}?$6#$e#You're welcome to come too, of course.$h",
+"Relationship.SenS.SpouseRoom.Romantic.1": "Ahh, there's nothing like a good book in the morning, is there?$l#$b#Help yourself to anything on my shelf, {{RomanticNick}}.$h#$e#I'm sure there must be something here you'd be interested in.$h#$b#Perhaps one of the romance novels?$l",
+"Relationship.SenS.SpouseRoom.Romantic.2": "I think I'm going to start a new costume project today.$h#$b#Do you mind bringing me some fabric scraps and threading, {{RomanticNick}}? I've been speeding through my craft supplies.$8",
+"Relationship.SenS.SpouseRoom.Romantic.3": "Living in such a tidy space is... different after living underground for so long.#$b#I'm always taking great care to not make a huge mess$8",
+"Relationship.SenS.SpouseRoom.Romantic.4": "Oh hello, {{RomanticNick}}! Would you like to do something together today?$h#$b#Maybe we could take a walk, watch a \"television movie\" or cook a nice meal?$h#$e#I'm all ears for suggestions. Anything we do together would be just lovely.$l",
+
+//Fun Leave
+"Relationship.SenS.FunLeave.Platonic.1": "I'm going for a little walk. Care you join me?$h#$b#I always welcome the company.$l",
+"Relationship.SenS.FunLeave.Platonic.2": "It can be a tad tricky sneaking by folks in town.$2#$b#Perhaps I should start wearing my cloak more often...$8",
+"Relationship.SenS.FunLeave.Platonic.3": "Time for a little outdoors adventure!$h#$b#Don't worry, I'll try not to stay out too late.$l",
+"Relationship.SenS.FunLeave.Platonic.4": "Off I go, out into the great outdoors!$h#$b#I'll be sure not to snack on any crops I pass.$12",
+"Relationship.SenS.FunLeave.Romantic.1": "I'm going to go out for a little walk. Care you join me, darling?$h#$e#I always welcome your company.$l",
+"Relationship.SenS.FunLeave.Romantic.2": "Be careful working on the farm today, {{RomanticNick}}.$h#$b#I'm heading into the forest to stretch my legs.$h",
+"Relationship.SenS.FunLeave.Romantic.3": "Time for a little sight seeing adventure.$h#$b#...Though, I don't have to go far to do that.$l",
+"Relationship.SenS.FunLeave.Romantic.4": "Keep an eye out for seagulls if you go to the beach today, {{RomanticNick}}.#$b#Last time I was there, they stole my slimeball sandwich!$a",
+
+//Fun Return
+"Relationship.SenS.FunReturn.Platonic.1": "Hmhmhm~#$b#Oh @, how has your day been? I had a nice day out and about.$h",
+"Relationship.SenS.FunReturn.Platonic.2": "Watch your step while running around, @!$u#$b#Don't end up like me.$8#$b#I... may have tripped on a rock and fell flat on my face.$8",
+"Relationship.SenS.FunReturn.Platonic.3": "Sometimes I lose track of time gazing at nature while I'm out.$8#$b#There are so many sights to appreciate here in the valley.$l",
+"Relationship.SenS.FunReturn.Platonic.4": "I found something nice while poking around in the bins.$7#$b#Here, I'll share one of my findings with you!$h[72 167 176 207 216 270 287 308 336 403 535 557 564 565 809]",
+"Relationship.SenS.FunReturn.Romantic.1": "Hmhmhm~#$b#Oh! How has your day been, sweetheart? I had a nice day out and about.$h",
+"Relationship.SenS.FunReturn.Romantic.2": "Watch your step while running around, sweetheart!#$b#Don't end up like me.$8#$b#I... may have tripped on a rock and fell flat on my face.$8",
+"Relationship.SenS.FunReturn.Romantic.3": "Sometimes I lose track of time gazing at nature while I'm out.$8#$b#There are so many sights to appreciate here in the valley.$l#$e#One of those sights is you.$l",
+"Relationship.SenS.FunReturn.Romantic.4": "I found something you might like while I was out and about.$h#$b#Just... don't ask where I found it.$12[72 167 176 207 216 270 287 308 336 403 535 557 564 565 809]",
+
+//Rainy Day
+"Relationship.SenS.RainyDay.1": "Ah, weather... what is normal for you is a marvel for me.$h#$b#In the mines, Shadows don't experience more than the occasional fog.$8#$e#I believe my people would love the rain.$h",
+"Relationship.SenS.RainyDay.2": "The pitter-patter of raindrops on the roof is very soothing.$l#$b#There's no better time to sit by the window with a good book and a hot cup of coffee.$h",
+"Relationship.SenS.RainyDay.3": "I love pausing to watch the rain on days like this.$l#$b#It feels like all my worries are being washed away.$h",
+"Relationship.SenS.RainyDay.4": "Skrell has started visiting the surface on rainy days like this.$h#$b#To be honest with you, I never expected him to take interest in the surface world so quickly.#$e#I'm glad he's giving this a chance.$h#$b#It's all thanks to you!$l",
+"Relationship.SenS.RainyDay.5": "It amazes me that the wild plants of the surface rely on droplets of rain from the sky to survive.$6#$b#The few plants that exist underground rely on condensation and subterranean lakes for their moisture.$h",
+"Relationship.SenS.RainyDay.6.Platonic": "Would you like to sit down and watch a \"movie\", @?$h#$e#I used to think those moving picture boxes were silly, but then I realized they're actually telling stories!$u#$b#It's almost like a book, but visual.$h",
+"Relationship.SenS.RainyDay.6.Romantic": "Would you like to cuddle up and watch a \"movie\" together, {{RomanticNick}}?$h#$e#I used to think those moving picture boxes were silly, but then I realized they're actually telling stories!$u#$b#I especially enjoy the ones labled \"rom-coms\".$l",
+"Relationship.SenS.RainyDay.7.Platonic": "Don't worry if you track mud into the house later, @! I'll clean it up.$h#$b#It's the least I can do after you've given me such a lovely home to stay.$h",
+"Relationship.SenS.RainyDay.7.Romantic": "Care to snuggle up on the couch with a good book and listen to the rain with me?$l#$b#I'll let you choose the genre.$h",
+
+//Rainy Night
+"Relationship.SenS.RainyNight.1": "既然外面下着瓢泼大雨，我想我晚点可能会坐下来读一本我一直拖延的书。$h#$b#它叫做{{AP}} {{Descriptor3}} {{Subject}}。$h#$b#{{ClosingSR1}}",
+    "Relationship.SenS.RN.1.1": "我很兴奋看看它讲的是什么。$h",
+    "Relationship.SenS.RN.1.2": "我有点怀疑，但我觉得它可能很有趣。$h",
+    "Relationship.SenS.RN.1.3": "读完后，我真的应该偷偷把它还给图书馆。$8.",
+"Relationship.SenS.RainyNight.2": "今晚吃{{Flavor}} {{Food}}怎么样？$h#$b#还是这对你人类的味觉来说太令人反感了？$12", 
+
+"Relationship.SenS.RainyNight.3": "%Sen得意地看着你。#$b#嘿，@...{{RainJoke}}#$e#%Sen恶作剧地窃笑着。",
+    "Relationship.SenS.RN.3.1": "间谍在雨中做什么？$h#$b#...$h#$b#他们去'卧底'。$12",
+    "Relationship.SenS.RN.3.2": "雨不会落下。$h#$b#...$h#$b#雨滴。$12",
+    "Relationship.SenS.RN.3.3": "你怎么称呼危险的降水？$h#$b#...$h#$b#恐怖的雨。$12",
+"Relationship.SenS.RainyNight.4": "Theoretically speaking... if you were to use a rain totem every day, you could make it rain forever.#$b#That's a scary thought, the valley would eventually turn into a giant lake!$u#$e#Let's hope no rain totems fall into the wrong hands.$8",
+"Relationship.SenS.RainyNight.5": "If you listen carefully, you can sometimes hear strange noises through the rain.#$b#I wonder what those sounds are... other monsters, or perhaps just a wild animal?$6",
+"Relationship.SenS.RainyNight.6.Platonic": "%Sen seems a little under the weather.#$b#$y 'What do you do?_Give him a hug._%Sen returns the hug, comforted by the sentiment._Ask him how he's feeling._Oh... Some days are just... rather hard. Thank you for caring, @.$l",
+"Relationship.SenS.RainyNight.6.Romantic": "%Sen gently takes your hands and lays his head against your chest.#$b#$y 'What do you do?_Hold him close._%Sen remains silent, but he seems comforted by your touch._Ask him how he's feeling._Oh... Some days are just... rather hard. You being by my side makes them easier to bear.$l'",
+"Relationship.SenS.RainyNight.7.Platonic": "%Sen seems to be in deep thought about something.#$b#Hm?#$b#O-oh! Hello, @. Sorry, my mind was wandering...$8#$e#How was your day?$h",
+"Relationship.SenS.RainyNight.7.Romantic": "Sometimes the rain makes me overthink things...#$b#I will live forever, but one day you'll pass on.$s#$b#The thought... it scares me.$s#$e#You're my world, @. What am I going to do when you're gone...?$10#$b#...$s#$b#S-sorry, I didn't mean to spiral into existential dread.$8#$e#How was your day, {{RomanticNick}}?$h",
+
+//Indoor Day
+"Relationship.SenS.IndoorDay.1.1.Platonic": "I've gone ahead and done the dishes!$h#$b#There was some tough grime on one of them... I had to put in some real elbow grease to get it off.$8#$e#I'm still not entirely used to using human dishware. Us Shadowfolk tend to use stoneware, as it's easier to forge.#$b#Rocks are a dime a dozen in the mines, after all.$h",
+"Relationship.SenS.IndoorDay.1.2.Platonic": "I'm going for a little walk later. Care you join me?$h#$e#I always welcome the company.$l",
+"Relationship.SenS.IndoorDay.1.3.Platonic": "It can be a tad tricky sneaking by folks in town.$2#$b#Perhaps I should start wearing my cloak more often...$8",
+"Relationship.SenS.IndoorDay.1.4.Platonic": "I plan on heading out on a walk tonight.$h#$b#Don't worry, I'll try not to stay out too late.$l",
+"Relationship.SenS.IndoorDay.1.5.Platonic": "I'll be going out tonight!$h#$b#I'll be sure not to snack on any crops I pass.$12",
+"Relationship.SenS.IndoorDay.1.1.Romantic": "I've gone ahead and done the dishes!$h#$b#There was some tough grime on one of them... I had to put in some real elbow grease to get it off.$8#$e#I'm still not entirely used to using human dishware. Us Shadowfolk tend to use stoneware, as it's easier to forge.#$b#Rocks are a dime a dozen in the mines, after all.$h",
+"Relationship.SenS.IndoorDay.1.2.Romantic": "I'm going to go out for a little walk tonight. Care you join me, darling?$h#$e#I always welcome your company.$l",
+"Relationship.SenS.IndoorDay.1.3.Romantic": "Be careful working on the farm today, {{RomanticNick}}.$h",
+"Relationship.SenS.IndoorDay.1.4.Romantic": "I'll be going on a little sight seeing adventure tonight.$h#$b#...Though, I don't have to go far to do that.$l",
+"Relationship.SenS.IndoorDay.1.5.Romantic": "Keep an eye out for seagulls if you go to the beach today, {{RomanticNick}}.#$b#Last time I was there, they stole my slimeball sandwhich!$a",
+"Relationship.SenS.IndoorDay.2": "How'd you sleep last night, @?$h#$b#I stayed up reading a nice book while munching on snacks.$h#$e#By the way, remember not to eat dusty snacks while reading books.#$b#You'll get fingerprints all over the pages!$8",
+"Relationship.SenS.IndoorDay.3": "%Sen is snickering mischievously.#$b#Hey, @... {{IndoorJoke}}#$e#%Sen continues to snicker to himself.",
+    "Relationship.SenS.ID.3.1": "有动力的鸡蛋说什么？$h#$b#\"让我们开始行动吧！\"$12",
+    "Relationship.SenS.ID.3.2": "猪在受伤时放什么？$h#$b#\"猪油膏！\"$12",
+    "Relationship.SenS.ID.3.3": "没耐心的牛说什么？$h#$b#\"让我们哞动起来！\"$12",
+"Relationship.SenS.IndoorDay.4": "There were quite a few flies buzzing around the house earlier.#$b#Don't worry, they became a nice snack for yours truly!$h#$e#Sorry, I didn't save any for you.$12",
+"Relationship.SenS.IndoorDay.5": "When sunlight trickles in through the window, it makes it easier for me to experience the sun's rays safely.#$e#That's one of the many benefits of living in a house.$h",
+"Relationship.SenS.IndoorDay.6.Platonic": "%Sen gives you a hug.#$b#How's your day going, @?$h#$b#I hope it's going well!$h#$e#If anything comes up, I'm here to talk if you need to.$h",
+"Relationship.SenS.IndoorDay.6.Romantic": "%Sen gives you a kiss.#$b#Heehee... I hope your day is going well, {{RomanticNick}}.$l#$e#By the way, here's a little something something I whipped up for you. I hope it helps.$h[253 349 351 395 688 773]",
+"Relationship.SenS.IndoorDay.7.Platonic": "After you fell asleep last night, Skrell and Ebb stopped in to check on me.#$b#I'm so happy to have a close bond with them again.$h#$e#We haven't been this close as a family since I was a youngster.#$b#That had been weighing on me for a long time, honestly.$s",
+"Relationship.SenS.IndoorDay.7.Romantic": "After you fell asleep last night, Skrell and Ebb stopped in to check on us.#$b#They are both incredibly supportive of the life we've built together.$h#$e#Ahh, I'm grinning spike to spike!$l#$b#I hope the next time my family visits, you're still awake so we can have a nice chat together.$h",
+
+//Indoor Night
+"Relationship.SenS.IndoorNight.1.1.Platonic": "Good evening, @!$h#$b#I'll be hanging out with {{SenKrobusReference}} after you go to bed. We have a night full of mischief planned out.$h#$e#I think I'm a bad influence on him, hehehe...$12",
+"Relationship.SenS.IndoorNight.1.2.Platonic": "Hmhmhm~#$b#Oh @, how has your day been? I had a nice day.$h",
+"Relationship.SenS.IndoorNight.1.3.Platonic": "Watch your step while running around, @!$u#$b#Don't end up like me.$8#$b#I... may have tripped on a rock and fell flat on my face.$8",
+"Relationship.SenS.IndoorNight.1.4.Platonic": "Sometimes I lose track of time gazing at nature while I'm out.$8#$b#There are so many sights to appreciate here in the valley.$l",
+"Relationship.SenS.IndoorNight.1.5.Platonic": "I found something nice while poking around in the last night.$7#$b#Here, I'll share one of my findings with you!$h[72 167 176 207 216 270 287 308 336 403 535 557 564 565 809]",
+"Relationship.SenS.IndoorNight.1.1.Romantic": "Good evening, {{RomanticNick}}!$h#$b#I'll be hanging out with {{SenKrobusReference}} after you go to bed. We have a night full of mischief planned out.$h#$e#I think I'm a bad influence on him, hehehe...$12",
+"Relationship.SenS.IndoorNight.1.2.Romantic": "Hmhmhm~#$b#Oh! How has your day been, {{RomanticNick}}? I had a nice day.$h",
+"Relationship.SenS.IndoorNight.1.3.Romantic": "Watch your step while running around, {{RomanticNick}}!#$b#Don't end up like me.$8#$b#I... may have tripped on a rock and fell flat on my face.$8",
+"Relationship.SenS.IndoorNight.1.4.Romantic": "Sometimes I lose track of time gazing at nature while I'm out.$8#$b#There are so many sights to appreciate here in the valley.$l#$e#One of those sights is you.$l",
+"Relationship.SenS.IndoorNight.1.5.Romantic": "I found something you might like while I was out last night.$h#$b#Just... don't ask where I found it.$12[72 167 176 207 216 270 287 308 336 403 535 557 564 565 809]",
+"Relationship.SenS.IndoorNight.2": "I always feel the most alive when the moon comes out.#$b#Likely because I am...$8#$e#Curse that Yoba forsaken sun!$a",
+"Relationship.SenS.IndoorNight.3": "I swept the kitchen a little while ago.#$b#I found a good many 'dust bunnies' along the edges of the cabinets.$h#$e#Why are they called dust bunnies when the clumps look nothing like rabbits?$6",
+"Relationship.SenS.IndoorNight.4": "My kind doesn't need to sleep, but that doesn't mean we don't get tired.#$b#Instead of sleeping we go into a sort of relaxed low-energy mode.#$b#It's quite cozy!$h",
+"Relationship.SenS.IndoorNight.5": "Hmm hmm hmm...$6#$b#Oh, @!#$b#I can't seem to find my scissors. If you see them could you bring them to me?$8#$e#I have a plan for a new costume but I can't cut the fabric...$8",
+"Relationship.SenS.IndoorNight.6.Platonic": "Living in a house is quite different from living in a cave.#$b#I enjoy it but sometimes I have to spritz myself with a spray bottle to keep my skin hydrated.$8",
+"Relationship.SenS.IndoorNight.6.Romantic": "I'm glad I have my library card because I'm 'checking you out'.$12#$b#...Hehehe, sorry for the corniness. I read that in a book.$8#$b#I don't even have a library card!$12",
+"Relationship.SenS.IndoorNight.7.Platonic": "How are you this evening, @?$h#$b#I hope you rest well!$h",
+"Relationship.SenS.IndoorNight.7.Romantic": "How are you this fine evening, my {{RomanticNick}}?$l#$b#I'm sure you'll sleep well all cuddled up next to me.$l",
+
+//Outdoor
+"Relationship.SenS.Outdoor.1": "Good morning, @!$h#$b#I swept the front porch while you were asleep.#$e#Just so you know, I think there's a creature living under the boards.$u#$e#Something was reaching up and grabbing the bristles of my broom!$a",
+"Relationship.SenS.Outdoor.2": "Don't worry, I'm going to head inside in just a few moments.$h#$b#I'm just taking in the view of our property.$7#$e#We're lucky to live on such a gorgeous piece of land.$h",
+"Relationship.SenS.Outdoor.3": "This is a nice place to sit and bird watch.#$b#Care to join me?$h#$e#Based on my field guide, I just saw a ",
+    "Relationship.SenS.Outdoor.3.Bird.1": "bright red cardinal!$h#$b#It was up in the trees over there.$h",
+    "Relationship.SenS.Outdoor.3.Bird.2": "male blue jay.$h#$b#It was tweeting a lovely song.$l",
+    "Relationship.SenS.Outdoor.3.Bird.3": "peckish chicken... pecking at the ground.$12",
+    "Relationship.SenS.Outdoor.3.Bird.4": "huge pelican.$h#$b#It was far larger than the averages listed in the book!$7",
+"Relationship.SenS.Outdoor.4": "Ahh... there's nothing quite like the fresh valley air.$h#$b#When I visit the mines, it puts into perspective how stagnant the air is down there.$8",
+"Relationship.SenS.Outdoor.5.Platonic": "%Sen appears to be nose deep in a book.#$e#%Sen still appears to be nose deep in a book.#$e#%Yes, he's still nose deep in a book.#$e#%The previous statement still hasn't changed.#$e#%Sen looks up at you.#$b#Oh- Hello, @! How long were you standing there?$8",
+"Relationship.SenS.Outdoor.5.Romantic": "Are you taking care of yourself, {{RomanticNick}}?$h#$b#Here's a little snack to keep you going through the day.$l[226 236 240]#$e#Remember not to overwork yourself. Take lots of breaks and stay hydrated!$h",
+"Relationship.SenS.Outdoor.6.Platonic": "I'm going to head inside shortly, but... Isn't the sun beautiful, bringing light to this world?$h#$b#Some days I wish I could walk out and bask directly in it, but I know that's a terrible idea.$8",
+"Relationship.SenS.Outdoor.6.Romantic": "I'm going to head inside shortly, but... Isn't the sun beautiful, bringing light to this world?$h#$b#Some days I wish I could walk out and bask directly in it, but I know that's a terrible idea.$8#$e#Luckily I have you, my {{RomanticNick}}. A soft ray of light that shall never bring me harm.$l",
+
+//One Kid
+"Relationship.SenS.OneKid.1": "The pitterpatter of small feet around the house is so endearing.$h#$b#%kid1 seems to have a boundless amount of energy! Where does it come from?$h",
+"Relationship.SenS.OneKid.2": "Children are such a handful and destructive too!$u#$b#I caught %kid1 drawing on the walls!$u#$e#I got it all cleaned up though, so don't worry.$8",
+"Relationship.SenS.OneKid.3": "I do wonder how this living arrangement will impact %kid1 growing up...$6#$b#When will we inform the little one that this life must be kept a secret?$s#$e#How does one even begin to breach that subject with a child?$s#$b#There is still plently of time before that's necessary, but...$s#$e#%Sen shakes his head.#$b#I'm worrying about this too much. Things are going to work out in the end, I'm sure of it.$h",
+"Relationship.SenS.OneKid.4": "I tried to feed %kid1 earlier and nearly lost a finger!$u#$b#Children are truly something else.$8",
+"Relationship.SenS.OneKid.5": "%kid1 has far too much energy. It's hard to keep up with the destructive warpath of flying toys and crayons.$u#$b#Maybe I should make myself a suit of armor.$8",
+
+//Two Kid
+"Relationship.SenS.TwoKid.1": "Isn't it adorable watching the two children play?$h#$b#It makes me nostalgic for when I was a little one.$l#$e#I didn't have any siblings among my shadowkin while growing up, but I did have quite a few close friends.$h#$b#They were quite the troublemakers. Skrell always thought they were a terrible influence.$8",
+"Relationship.SenS.TwoKid.2": "Sigh, I caught %kid1 tugging on %kid2's hair earlier.$8#$b#I was quick to gently break up the altercation.#$e#Goodness, kids sure are troublesome sometimes, aren't they?",
+"Relationship.SenS.TwoKid.3": "I do wonder how this living arrangement will impact these kids growing up...$6#$b#When will we inform them that this life must be kept a secret?$s#$e#How does one even begin to breach that subject with children?$s#$b#There is still plently of time before that's necessary, but...$s#$e#%Sen shakes his head.#$b#I'm worrying about this too much. Things are going to work out in the end, I'm sure of it.$h",
+"Relationship.SenS.TwoKid.4": "Goodness, children can be such a handful.$8#$b#",
+    "Relationship.SenS.TwoKidAction.1": "%kid1 chucked a bouncy ball at %kid2... Then %kid2 fell down and started to cry.$s#$b#Thankfully %kid2 wasn't hurt.$8#$e#I talked to %kid1, who then went and said sorry to %kid2. %kid1 promised not to do it again.#$b#They both went back to playing without any trouble. I think I handled that pretty well.$h",
+    "Relationship.SenS.TwoKidAction.2": "%kid1 and %kid2 were singing songs at the top of their lungs while playing on the porch.#$b#It was so loud, it scared the birds out of the trees!$u",
+    "Relationship.SenS.TwoKidAction.3": "%kid2 told %kid1 that it was a good idea to drop a rock down the sink drain.$8#$b#Needless to say, I spent the last couple hours theory crafting how to get it out.$s#$b#Here are the fruits of my labor.$8[390]",
+    "Relationship.SenS.TwoKidAction.4": "%kid2 and %kid1 were painting today and I looked away for one single moment.#$b#When I looked back, paint was splattered on everything in the room!$u#$e#I cleaned it up before you saw the mess, but I figured I'd let you know it happened.$8",
+"Relationship.SenS.TwoKid.5.Platonic": "I'm so thrilled to be part of %kid1 and %kid2's lives.$h#$b#I hope I can help them grow into healthy, happy adults.$h#$e#If you ever feel overwhelmed while caring for them, I'm happy to help in any way you need.$h",
+"Relationship.SenS.TwoKid.5.Romantic": "I can't tell you how thrilling it is to be a parent for two lovely little ones.$h#$b#I'd never give up this experience for anything in the entire the world.$h#$e#Not to mention sharing this experience with you, @...$l#$b#It's...$l#$b#...It's wonderful. I've never been happier in my entire life.$l",
+
+//Positive Relationship
+"Relationship.SenS.Positive.1.Platonic": "Heeelllooo, @!$h#$b#Here's a little token of our friendship. I hope you like it!$h[220 223 418 421 578 577]",
+"Relationship.SenS.Positive.1.Romantic": "Heeelllooo, {{RomanticNick}}!$h#$b#Here's a little token of my love for you. I hope you like it!$l[64 72 221 223 421 595 797]",
+"Relationship.SenS.Positive.2.Platonic": "@... Have I told you today how lucky I am to have you in my life?$h#$b#You're amazing. Never change who you are.$h",
+"Relationship.SenS.Positive.2.Romantic": "Darling... Have I told you today how lucky I am to have you in my life?$h#$b#I love you dearly. Never change who you are.$l",
+"Relationship.SenS.Positive.3.Platonic": "You're a very kind soul, @.#$b#Every day I tell myself how lucky I am to have you as my best friend.$l",
+"Relationship.SenS.Positive.3.Romantic": "Sweetie, has anyone told you how sweet you are?$l#$b#'Cause you're as sweet as pumpkin pie!$l",
+"Relationship.SenS.Positive.4.Platonic": "When we're together I feel like there's nothing I can't do!$h#$b#You bring out a confident side of me that I didn't know existed.$h",
+"Relationship.SenS.Positive.4.Romantic": "Hello my {{RomanticNick}}.~$l#$b#I'm so happy in this cozy home we've built together.#$e#Even if we didn't have a home, I'd still be happy just being by your side.$h",
+"Relationship.SenS.Positive.5.Platonic": "Hello, @! How are you doing today?$h#$b#Give me a holler if there's anything you need help with.$h",
+"Relationship.SenS.Positive.5.Romantic": "Hello.~ How is my {{RomanticNick}} doing today?$l#$b#Tell me if there's anything I can do for you.$h",
+"Relationship.SenS.Positive.6.Platonic": "I'm thinking about making friendship bracelets for us.$h#$b#Would you be interested in doing that with me?$h#$e#I have all kinds of neat beads in my craft box.$h",
+"Relationship.SenS.Positive.6.Romantic": "I'm thinking about making us heart locket necklaces.$l#$b#Would you want to help me?$l#$e#I have all kinds of charms and beads in my craft box.$h",
+"Relationship.SenS.Positive.7.Platonic": "Hey, @, who's your author?$h#$b#'Cause I can read you like a book.$12#$b#...$12#$b#Hehe, sorry that was really corny.$8",
+"Relationship.SenS.Positive.7.Romantic": "Hey {{RomanticNick}}, who's your author?$h#$b#'Cause I can read you like a book.$12#$b#...$12#$b#Hehe, sorry that was really corny.$8",
+"Relationship.SenS.Positive.8.Platonic": "Do you know how much I cherish you as my best friend?$h#$b#More that the world itself!$h#$e#Never stop being you, @.$h",
+"Relationship.SenS.Positive.8.Romantic": "I call you my {{RomanticNick}} because you are the light that brightens my night sky...$l#$b#Never stop glowing, my love.$l",
+"Relationship.SenS.Positive.9.Platonic": "You want to know what makes you so amazing?$h#$b#You never give up, even in the face of adversity!$h#$e#I feel like that's a trait we both share.$h",
+"Relationship.SenS.Positive.9.Romantic": "My {{RomanticNick}}, my sweet {{RomanticNick}}. You are my world, my everything.$l#$b#I don't know what I would do without you.$l#$e#Let's not think about that last part!$8",
+"Relationship.SenS.Positive.10.Platonic": "Hello @! Would you like to hang out and do something today?$h#$b#I found a boardgame in the trash we can play.$h#$e#It's missing a few pieces but I think we can make it work.$8",
+"Relationship.SenS.Positive.10.Romantic": "Hello my {{RomanticNick}}.~ Would you like to spend some time together today?$l#$b#We can cuddle on the couch and watch romantic comedies on the 'TV'.$h#$b#While you were working on the farm I watched one about a bear in love with a bottle of maple syrup.$h",
+
+//Neutral Relationship
+"Relationship.SenS.Neutral.1": "Hello, @. I hope everything is going well for you today.$h#$b#If you need any help, just give me a yell.$h",
+"Relationship.SenS.Neutral.2": "Heeelllooo, @!$h#$b#Here's a little gift. I hope you like it!$h[220 223 418 421 578 577]",
+"Relationship.SenS.Neutral.3": "You're very kind, @.#$b#Every day I tell myself how lucky I am to have you in my life.$l",
+"Relationship.SenS.Neutral.4": "I'm going to be visiting Skrell and Ebb this evening after you go to sleep.$h#$b#They're wondering how I'm doing.$h",
+"Relationship.SenS.Neutral.5": "A human and a Shadow living together...#$b#Do you think this will work long term?#$b#I think it will.$h",
+"Relationship.SenS.Neutral.6": "Hmmm... I think I'll crochet today.#$b#What to make what to make...$6#$e#Do you have any suggestions, @?$h",
+"Relationship.SenS.Neutral.7": "I've been thinking a lot about %nouns lately.#$b#Is that strange?$6",
+"Relationship.SenS.Neutral.8": "An age old human question... Is the cup half full or half empty?#$b#I'm a half full kinda guy.$h",
+"Relationship.SenS.Neutral.9": "The farm is looking stunning, @!$h#$b#You've done a wonderful job with it. Be proud.$h",
+"Relationship.SenS.Neutral.10": "...#$b#...Hm?#$b#Oh, sorry! I was spacing out there.$8",
+
+//Bad Relationship
+"Relationship.SenS.Negative.1": "@, you've seemed distant lately... Did I do something wrong?$s",
+"Relationship.SenS.Negative.2": "...$s#$e#Sorry, @ I don't feel like talking right now.$s",
+"Relationship.SenS.Negative.3": "There's something different about you lately...$s#$b#Is everything alright?$s",
+"Relationship.SenS.Negative.4": "I feel like we're losing our connection, @...$s#$b#I hate the thought of that.$s",
+"Relationship.SenS.Negative.5": "@, do you want me to leave...?$s#$b#I feel like you don't want anything to do with me lately.$s",
+"Relationship.SenS.Negative.6": "Have we failed, @...?$s#$b#Maybe Skrell was right, this would never work out...$s",
+"Relationship.SenS.Negative.7": "We were once like peanut butter and jelly, but now I feel we've become like oil and water...$s#$b#What happened?$s",
+"Relationship.SenS.Negative.8": "I haven't visited my family in quite some time...$s#$b#I haven't felt well and I'm worried how they'll react.$s",
+"Relationship.SenS.Negative.9": "@, is it terrible that I feel better when you're not around?$s#$b#I don't know what's going on with me.$s",
+"Relationship.SenS.Negative.10": "I'm wondering if I ever should have come to the surface...$s#$b#You don't seem happy living with me.$s",
+
+//Spring Specific Day
+"Relationship.SenS.Spring": "Don't you just love the spring, @?$h#$b#The birds are chriping, the flowers are blooming...I can't get enough of it!$h",
+"Relationship.SenS.Spring.Day.12": "哦天哪，明天是鸡蛋节。#$b#我最好去熨平我的服装...$s#$e#天哪，我受不了穿那个东西！$8",
+"Relationship.SenS.Spring.Day.13": "我们今天要去鸡蛋节吗？#$b#在你说你准备好之前，我避免穿上那该死的服装。$8",
+"Relationship.SenS.Spring.Day.20": "我真的需要买一些新的缝纫针。#$b#花舞节就在几天后，我的服装急需修理！$u#$e#等等，我们家里碰巧有一些吗？$h",
+"Relationship.SenS.Spring.Day.23": "明天是花舞节...#$b#也许我明天真的会尝试跳舞？$8#$e#不，不。没可能！$u#$b#我有两只左脚。$8",
+"Relationship.SenS.Spring.Day.24.Platonic": "今天是花舞节，@。#$b#你想过和谁一起跳舞吗？$h#$e#我确信你问的任何人都会说是！$h#$b#你是个了不起的伙伴！$h",
+"Relationship.SenS.Spring.Day.24.Romantic": "今天是花舞节，@。#$b#如果你想和我跳舞，我已经准备好我的伪装了。$h#$e#不过要警告你，我有两只左脚。$8",
+
+//Summer Specific Day
+"Relationship.SenS.Summer": "Uhg, the broiling heat of summer...#$b#Can't the sun go away or something?#$e#That would probably spell doom for the planet, so I'll begrudgingly accept the sun's existence.$a",
+"Relationship.SenS.Summer.Day.10": "明天该拿出沙堡服装了。$12#$b#有趣的事实，里面还装着去年的沙子。$8",
+"Relationship.SenS.Summer.Day.11": "我在准备我的沙堡伪装...$h#$b#记住不要太引起人们对我的注意！$8#$e#我会被埋在沙子里，所以如果有人掀开布我就完全听任摆布了！$u",
+"Relationship.SenS.Summer.Day.27": "嘿@，你看见我的果冻服装了吗？$8#$b#如果明天晚上之前找不到，我就看不到月光水母了！$u",
+"Relationship.SenS.Summer.Day.28": "呼，我真高兴找到了我的服装。$h#$b#我以为今年肯定要错过看那些可爱的小水母了！$8",
+
+//Fall Specific Day
+"Relationship.SenS.Fall": "The weather is cooling down, the leaves are changing color, it's soothing to the soul...$l#$e#All the reasons why it's the best season.$h",
+"Relationship.SenS.Fall.Day.15.Platonic": "哦，明天集市要来了！你能偷偷带我进去玩一些游戏吗？$7#$e#我会穿南瓜套装，所以你可以说我是你人类的'侄子'之类的。$12",
+"Relationship.SenS.Fall.Day.15.Romantic": "哦，明天集市要来了！你会偷偷带我进去玩一些游戏吗？$7#$e#我会穿南瓜套装，所以你可以说我是你人类朋友之类的。$12",
+"Relationship.SenS.Fall.Day.16.Platonic": "记住，我们有协议！你今天偷偷带我进去玩一些游戏，我会...$h#$b#我会...$h#$b#嗯...$8#$b#我会把今晚活动后在垃圾中找到的最好宝藏给你！$12",
+"Relationship.SenS.Fall.Day.16.Romantic": "哦h我对今天的集市太兴奋了！$h#$b#别忘了偷偷带我进去，好吗？$12",
+"Relationship.SenS.Fall.Day.26": "所以，@...我们为明天的万灵节准备了足够的糖果吗？#$b#$y '有吗？_绝对有！_我不会这么确定。我可能在你醒来之前就把它们都吃了。$8_没有。_你注意到我昨晚偷吃了，对吧？$8'",
+"Relationship.SenS.Fall.Day.27": "我不会穿任何服装去万灵节，所以别揭穿我，好吗？$h#$b#就告诉大家我的服装很逼真。$12",
+
+//Winter Specific Day
+"Relationship.SenS.Winter": "Brrr it's so chilly. I swear all that snow appears overnight!#$b#I'm serious, did we somehow miss a blizzard?$u",
+"Relationship.SenS.Winter.Day.7": "明天是冰钓节！准备好你的鼻子迎接终极臭味盛宴。$12#$b#不是说气味困扰我。大多数人类觉得令人反感的气味，暗影族觉得很香。$h",
+"Relationship.SenS.Winter.Day.8": "准备好冰钓节了吗？我需要打扮一下，然后我要出发了。$h#$e#希望没人注意到圣诞老人从你的草坪上走开...$8",
+"Relationship.SenS.Winter.Day.24": "明天是冬星节，对吧？#$b#我不会参加公开庆祝活动，但我会从远处享受舒适的氛围。$h",
+"Relationship.SenS.Winter.Day.25.Platonic": "我为不能参加今天的庆祝活动感到有点沮丧，所以这里有一个小礼物给你。$l[268 454 417]#$e#那真的很难搞到。我希望你喜欢，@！$h",
+"Relationship.SenS.Winter.Day.25.Romantic": "这里有一个小礼物给你，我的{{RomanticNick}}。$l#$b#我希望你喜欢。$l[268 454 417]",
+"Relationship.SenS.Winter.Day.28.Platonic": "就这样，对吧？又一年的最后一天。#$b#感觉就像昨天我来到地面...$u#$e#事情变化得这么快，不是吗，@？$h#$b#为我们之间又一年的友谊干杯！$l",
+"Relationship.SenS.Winter.Day.28.Romantic": "就这样，对吧？又一年的最后一天。#$b#感觉就像昨天我来到地面...$u#$e#事情变化得这么快，不是吗，@？$h#$b#为我们之间又一年的爱情干杯！$l",
+
+//Misc
+"Relationship.SenS.KitchenBlocked.1": "Umm... It's a little hard to cook with the kitchen blocked, @.$8",
+"Relationship.SenS.KitchenBlocked.2": "Do you mind moving some things out of the kitchen?#$b#I'm a bit peckish and would like to cook.$8",
+"Relationship.SenS.MonstersInHouse.1": "It's starting to feel like my cave with all the monsters in here.$h",
+"Relationship.SenS.MonstersInHouse.2": "I'm glad we don't have neighbors close by.#$b#They'd probably wonder what all the monster noises were.$8",
+"Relationship.SenS.NewChild.1": "A new little one has entered our lives... isn't it beautiful, @?$h#$b#I'm so happy to be able to share this experience with you.$l",
+"Relationship.SenS.NewChild.2": "I can't say child care is a skill I'm well versed in, but I'm going to ensure our new little one has a great life.$h",
+"Relationship.SenS.NoBed.1": "Um, @... I know I don't need to sleep, but you do. You should really get a bed set up.$8",
+"Relationship.SenS.NoBed.2": "Err... Is everything alright, @? Where'd the bed go?$8",
+"Relationship.SenS.NoBed.3": "You should really place down a bed before you pass out from exhaustion, @!$u",
+"Relationship.SenS.NoBed.4": "I don't think the floor is a comfortable place to rest... you should really get a bed.$8",
+"Relationship.SenS.JealousyOveride": "Oh, @! What's that? You gave {{0}} a gift today?$h#$b#That's so kind of you! Did they like it?$h",
+"Relationship.SenS.NameChildFemale": "我们应该给她们起什么名字？[游戏：女性设计]",
+"Relationship.SenS.NameChildMale": "我们应该给他们起什么名字？[游戏：男性设计]",
+"Relationship.SenS.SenNameChildFemale": "Sen正在给婴儿起名。[游戏：女性设计]",
+"Relationship.SenS.SenNameChildMale": "Sen正在给婴儿起名。[游戏：男性设计]",
+"Relationship.SenS.AdoptionRemark": "Did you finish the adoption papers?$h#$b#I hope no one comes asking who your partner is...$8",
+"Relationship.SenS.AdoptionQuestion": "Should we adopt a child, @?",
+"Relationship.SenS.AdoptionMessage": "During the night, your new baby was dropped off.",
+"Relationship.SenS.BabyRemark": "I can't believe we're going to have a child soon, @!$u#$b#What are even the logistics of this happening?$l",
+"Relationship.SenS.BabyQuestion": "Wouldn't it be amazing if we somehow had a child, @...?",
+"Relationship.SenS.BabyMessage": "During the night, a miracle occurred...",
+"Relationship.SenS.ChildSleeping": "{0}凝视着你的灵魂...#不知何故，这很可爱。",
+"Relationship.SenS.StayInBed": "呃...我今天感觉不太好，@。$s#$b#我想我要蜷缩在这里。$s",
+"Relationship.SenS.MarriageEvent.1": "When @ first arrived in Pelican Town, no one knew if...#$b#...$s#$b#Does anyone know who this is?$u#$b#Anyone?$s#$b#...$u#$b#Despite a few... oddities, @ has become an integral part of this town.#$b#It is my great honor to unite @ and... this mysterious fellow in the bonds of marriage!$h",
+"Relationship.SenS.MarriageEvent.2": "@...#$b#...Strange cloaked man...$u#$b#...As the mayor of Pelican Town, I now immortalize your bond with a matrimonial seal!$h",
+"Relationship.SenS.SummitEvent.1": "Oh, hello @!$h",
+"Relationship.SenS.SummitEvent.2": "Isn't the view from up here stunning?$7",
+"Relationship.SenS.SummitEvent.3": "Goodness we've been through a lot together, huh?",
+"Relationship.SenS.SummitEvent.4": "I don't regret a single moment of it.$l",
+"Relationship.SenS.SummitEvent.5": "We've come so far...$l",
+"Relationship.SenS.SummitEvent.6": "我知道随着时间的推移，我们的关系将为更光明的未来铺平道路。$h#$b#谢谢你的一切。我太爱你了，@。$l",
+"Relationship.SenS.SummitEvent.7": "对你和Sen来说这是一条漫长的道路...",
+
+
+/*
+██╗████████╗███████╗███╗   ███╗███████╗
+██║╚══██╔══╝██╔════╝████╗ ████║██╔════╝
+██║   ██║   █████╗  ██╔████╔██║███████╗
+██║   ██║   ██╔══╝  ██║╚██╔╝██║╚════██║
+██║   ██║   ███████╗██║ ╚═╝ ██║███████║
+╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝*/
+"Items.SenS.SensCrocus.Title": "Sen's Crocus",
+"Items.SenS.SensCrocus.Description": "A flower born from the seeds Sen threw to the wind.",
+"Items.SensCrocus.EarlyDescription": "除非你看过Sen的14心事件，否则此物品没有功能。它只是为了模组兼容性而加载。",
+"Items.SenS.SensCrocusSeeds.Title": "Sen's Crocus Seeds",
+"Items.SenS.SensCrocusSeeds.Description": "Grows year round. Takes 4 days to produce a purple flower.",
+"Items.SenS.SenPortrait.Title": "Sen的肖像",             
+"Items.SenS.SenBabyPhoto.Title": "Sen的婴儿照片"                   
+}

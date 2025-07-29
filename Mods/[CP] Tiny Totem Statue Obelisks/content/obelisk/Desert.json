@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.data.desert",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Desert Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "DesertObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.load.desert",
+      "Action": "Load",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_desert_obelisk.png",
+      "When": {
+        "DesertObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.desert",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/flowers/desert_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.desert",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late",
+      "Target": "Buildings/Desert Obelisk",
+      "FromFile": "assets/moss/desert_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

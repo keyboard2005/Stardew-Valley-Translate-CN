@@ -1,0 +1,36 @@
+{
+    "config.Ts_AFC_EnableThisMod.name": "MODを有効にする",
+    "config.Ts_AFC_EnableThisMod.description": "このMOD自体のOn/Off設定です。",
+
+    "config.Ts_AFC_AvoidCertainBugs.name": "特定のバグを回避する",
+    "config.Ts_AFC_AvoidCertainBugs.description": "ほこらの前の収集アイテムにワープトーテムが表れて消えなくなってしまうバグがv1.3まででありました。もしこの状態になっている場合はこの項目をONにしてください。注意点があります！これをONにした場合見た目は同じですが別のMAPとして洞窟が生成されます。OFFにすることで以前のMAPに戻れますが、もし洞窟に貴重なアイテムなどを設置している場合はそれらを取り除いてから設定を変更してください。",
+
+    "config.Ts_AFC_OpenImmediately.name": "直ぐに使用可能にする",
+    "config.Ts_AFC_OpenImmediately.description": "開放条件を無くして直ぐに追加のエリアに入れるようにします。",
+
+
+    "config.section.Ts_AFC_S_FarmCavePack.name": "以下は Kisaa's Farm Cave Pack modを^使用している場合の設定です",
+    "config.section.Ts_AFC_S_FarmCavePack.description": "Kisaa's Farm Cave Pack modの設定と完全に同じ設定にしてください。 設定が完全に同じになっていないと予期せぬパッチ適用が起き、表示に不具合が生じる場合があります。(洞窟のタイプが Fantasy の場合、入り口は洞窟の右側に表示されます。)",
+
+    "config.Ts_AFC_CRFCP_CaveType.name": "Farm Cave Type",
+
+
+    "config.section.Ts_AFC_Cautions.name": "以下は Hippo's Farm Cave Variety modを^使用している場合の設定です",
+    "config.section.Ts_AFC_Cautions.description": "Hippo's Farm Cave Variety modの設定と完全に同じ設定にしてください。 設定が完全に同じになっていないと予期せぬパッチ適用が起き、表示に不具合が生じる場合があります。",
+
+    "config.Ts_AFC_HFCV_CaveType.name": "CaveType",
+    "config.Ts_AFC_HFCV_MatchFarm.name": "MatchFarm",
+    "config.Ts_AFC_HFCV_AlternateCombat.name": "AlternateCombat",
+    "config.Ts_AFC_HFCV_AlternateIsland.name": "AlternateIsland",
+
+
+    "AdFCms01":"小さなほこらの奥で何かがゴソゴソしている...？",
+    "AdFCms02":"不思議な苗木が生えている。^実はなりそうにないが緩やかに成長はしているようだ。",
+    "AdFCms03":"小さな穴から風が吹き込んできている。^どうやら外につながっているようだ。^小さな生物の通り道になっているのかな？",
+    "AdFCms04":"小さなほこらがある。^おや、住人の姿がある...？",
+    "AdFCms05":"配達人はこの子だったのか！",
+
+
+    "Mail Title 01": "農場の洞窟の奥への道を開けておいたよ",
+    "Mail Text 01": "@ へ^^前に農場の洞窟に奥へ行けそうな道があるけど板が打ち付けられているってディメトリウスから聞いてたんだ。^勝手だけど昨日の仕事の帰りにちょっと寄らせてもらって板を撤去しておいたよ！^なんだか不思議なものがあったけどあれは...^^まあ良いように使ってね！^^-ロビン より",
+}

@@ -1,0 +1,1638 @@
+{
+  "Changes": [
+    {
+      "LogName": "Violet Moon Foods",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "DN.SnS_ScotchEgg": {
+          "Name": "DN.SnS_ScotchEgg",
+          "DisplayName": "{{i18n:DN.SnS.ScotchEgg}}",
+          "Description": "{{i18n:DN.SnS.ScotchEgg.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\DN.SnS\\VioletMoonFood",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Steak_on_a_Stake": {
+          "Name": "DN.SnS_Steak_on_a_Stake",
+          "DisplayName": "{{i18n:DN.SnS.Steak_on_a_Stake}}",
+          "Description": "{{i18n:DN.SnS.Steak_on_a_Stake.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\DN.SnS\\VioletMoonFood",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Fruit_Hand_Pie": {
+          "Name": "DN.SnS_Fruit_Hand_Pie",
+          "DisplayName": "{{i18n:DN.SnS.Fruit_Hand_Pie}}",
+          "Description": "{{i18n:DN.SnS.Fruit_Hand_Pie.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\DN.SnS\\VioletMoonFood",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "allergen_gluten",
+            "allergen_egg"
+          ]
+        },
+        "DN.SnS_Smoked_TurkeyLeg": {
+          "Name": "DN.SnS_Smoked_TurkeyLeg",
+          "DisplayName": "{{i18n:DN.SnS.Smoked_TurkeyLeg}}",
+          "Description": "{{i18n:DN.SnS.Smoked_TurkeyLeg.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Mods\\DN.SnS\\VioletMoonFood",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "Name": "DN.SnS_Hand_Pressed_Apple_Cider",
+          "DisplayName": "{{i18n:DN.SnS.Hand_Pressed_Apple_Cider}}",
+          "Description": "{{i18n:DN.SnS.Hand_Pressed_Apple_Cider.Description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Mods\\DN.SnS\\VioletMoonFood",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "color_brown"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Faire Drinks with Colors",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod": "mistyspring.ItemExtensions"
+      },
+      "Fields": {
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#824925" } //brown
+        }
+      }
+    },
+    {
+      "LogName": "Make Added Faire things More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "DN.SnS_ScotchEgg": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Steak_on_a_Stake": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Smoked_TurkeyLeg": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Fruit_Hand_Pie": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon shops",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "DN.SnS_Mateo_VioletMoon": {
+          "Id": "DN.SnS_Mateo_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Mateo_VioletMoon_Dialogue",
+              "Portrait": "Mateo",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Mateo}}"
+                }
+              ]
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ],
+          "Items": [
+            {
+              "Id": "DN.SnS_Arrow",
+              "ItemID": "DN.SnS_Arrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 5
+            },
+            {
+              "Id": "DN.SnS_FirestormArrow",
+              "ItemID": "DN.SnS_FirestormArrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_IcicleArrow",
+              "ItemID": "DN.SnS_IcicleArrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_WindwakerArrow",
+              "ItemID": "DN.SnS_WindwakerArrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_RicochetArrow",
+              "ItemID": "DN.SnS_RicochetArrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_LightbringerArrow",
+              "ItemID": "DN.SnS_LightbringerArrow",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_Bullet",
+              "ItemID": "DN.SnS_Bullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 5
+            },
+            {
+              "Id": "DN.SnS_FirestormBullet",
+              "ItemID": "DN.SnS_FirestormBullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_IcicleBullet",
+              "ItemID": "DN.SnS_IcicleBullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_WindwakerBullet",
+              "ItemID": "DN.SnS_WindwakerBullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_RicochetBullet",
+              "ItemID": "DN.SnS_RicochetBullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_LightbringerBullet",
+              "ItemID": "DN.SnS_LightbringerBullet",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 10
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Copper",
+              "ItemID": "(O)378",
+              "Condition": "{{HasMod |contains=MadDog.HashagBearFam}}",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 150
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Iron",
+              "ItemID": "(O)380",
+              "Condition": "{{HasMod |contains=MadDog.HashagBearFam}}",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 250
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Gold",
+              "ItemID": "(O)384",
+              "Condition": "{{HasMod |contains=MadDog.HashagBearFam}}",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 750
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Coal",
+              "ItemID": "(O)382",
+              "Condition": "{{HasMod |contains=MadDog.HashagBearFam}}",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 250
+            },
+            {
+              "Id": "DN.SnS_PureCopperOre",
+              "ItemID": "DN.SnS_PureCopperOre",
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 5,
+              "Price": 50
+            },
+            {
+              "Id": "DN.SnS_PureIronOre",
+              "ItemID": "DN.SnS_PureIronOre",
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 3,
+              "Price": 75
+            },
+            {
+              "Id": "DN.SnS_PureGoldOre",
+              "ItemID": "DN.SnS_PureGoldOre",
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 1,
+              "Price": 125
+            },
+            {
+              "Id": "DN.SnS_PureIridiumOre",
+              "ItemID": "DN.SnS_PureIridiumOre",
+              "AvailableStock": 1,
+              "Price": 500
+            },
+            {
+              "Id": "DN.SnS_PureRadioactiveOre",
+              "ItemID": "DN.SnS_PureRadioactiveOre",
+              "IgnoreShopPriceModifiers": true,
+              "AvailableStock": 1,
+              "Price": 1500
+            },
+            {
+              "Id": "DN.SnS_Mateo_VioletMoon_Femur",
+              "ItemID": "(W)31",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_Mateo_VioletMoon_DwarfHammer",
+              "ItemID": "(W)56",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 650
+            }
+          ]
+        },
+        "DN.SnS_Hector_VioletMoon": {
+          "Id": "DN.SnS_Hector_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Hector_VioletMoon_Dialogue",
+              "Portrait": "Hector",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Hector}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "DN.SnS_ancientamaranth",
+              "ItemID": "DN.SnS_ancientamaranth",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 160
+            },
+            {
+              "Id": "DN.SnS_ancientepiphyticfern",
+              "ItemID": "DN.SnS_ancientepiphyticfern",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 300
+            },
+            {
+              "Id": "DN.SnS_glowingpolyporemushrooms",
+              "ItemID": "DN.SnS_glowingpolyporemushrooms",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 300
+            },
+            {
+              "Id": "DN.SnS_ancientwildfairyrose",
+              "ItemID": "DN.SnS_ancientwildfairyrose",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 345
+            },
+            {
+              "Id": "DN.SnS_ancientelderberry",
+              "ItemID": "DN.SnS_ancientelderberry",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 110
+            },
+            {
+              "Id": "DN.SnS_ancientbottlegourd",
+              "ItemID": "DN.SnS_ancientbottlegourd",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 220
+            },
+            {
+              "Id": "DN.SnS_ancientgiantappleberry",
+              "ItemID": "DN.SnS_ancientgiantappleberry",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 275
+            },
+            {
+              "Id": "DN.SnS_ancientazuredetura",
+              "ItemID": "DN.SnS_ancientazuredetura",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 160
+            },
+            {
+              "Id": "DN.SnS_ancientglowinghuckleberry",
+              "ItemID": "DN.SnS_ancientglowinghuckleberry",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 410
+            },
+            {
+              "Id": "DN.SnS_ancientsweettealeaves",
+              "ItemID": "DN.SnS_ancientsweettealeaves",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 350
+            },
+            {
+              "Id": "DN.SnS_ancientamaranth.seed",
+              "ItemID": "DN.SnS_ancientamaranth.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientepiphyticfern.seed",
+              "ItemID": "DN.SnS_ancientepiphyticfern.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_glowingpolyporemushrooms.seed",
+              "ItemID": "DN.SnS_glowingpolyporemushrooms.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientwildfairyrose.seed",
+              "ItemID": "DN.SnS_ancientwildfairyrose.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientelderberry.seed",
+              "ItemID": "DN.SnS_ancientelderberry.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientbottlegourd.seed",
+              "ItemID": "DN.SnS_ancientbottlegourd.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientgiantappleberry.seed",
+              "ItemID": "DN.SnS_ancientgiantappleberry.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientazuredetura.seed",
+              "ItemID": "DN.SnS_ancientazuredetura.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientglowinghuckleberry.seed",
+              "ItemID": "DN.SnS_ancientglowinghuckleberry.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            },
+            {
+              "Id": "DN.SnS_ancientsweettealeaves.seed",
+              "ItemID": "DN.SnS_ancientsweettealeaves.seed",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 2
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_Cirrus_VioletMoon": {
+          "Id": "DN.SnS_Cirrus_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Cirrus_VioletMoon_Dialogue",
+              "Portrait": "Cirrus",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Cirrus}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "DN.SnS_ScotchEgg",
+              "ItemID": "DN.SnS_ScotchEgg",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 550
+            },
+            {
+              "Id": "DN.SnS_Steak_on_a_Stake",
+              "ItemID": "DN.SnS_Steak_on_a_Stake",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 550
+            },
+            {
+              "Id": "DN.SnS_Hand_Pressed_Apple_Cider",
+              "ItemID": "DN.SnS_Hand_Pressed_Apple_Cider",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 500
+            },
+            {
+              "Id": "DN.SnS_Smoked_TurkeyLeg",
+              "ItemID": "DN.SnS_Smoked_TurkeyLeg",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 550
+            },
+            {
+              "Id": "DN.SnS_Fruit_Hand_Pie",
+              "ItemID": "DN.SnS_Fruit_Hand_Pie",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 500
+            },
+            {
+              "Id": "DN.SnS_salishbourbon",
+              "ItemID": "DN.SnS_salishbourbon",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_autumnalstew",
+              "ItemID": "DN.SnS_autumnalstew",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_dandeliongreens",
+              "ItemID": "DN.SnS_dandeliongreens",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_portfiredrakesparkler",
+              "ItemID": "DN.SnS_portfiredrakesparkler",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_zuzustylepizza",
+              "ItemID": "DN.SnS_zuzustylepizza",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_zuzustylebagelwithlox",
+              "ItemID": "DN.SnS_zuzustylebagelwithlox",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+
+            },
+            {
+              "Id": "DN.SnS_zuzustylecheesecake",
+              "ItemID": "DN.SnS_zuzustylecheesecake",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+            },
+            {
+              "Id": "DN.SnS_zuzustyleclamchowder",
+              "ItemID": "DN.SnS_zuzustyleclamchowder",
+              "IgnoreShopPriceModifiers": true,
+              "Price": 100
+
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_RnD_VioletMoon": {
+          "Id": "DN.SnS_RnD_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_RnD_VioletMoon_Dialogue",
+              "Portrait": "Roslin",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_RnD}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_VioletMoon1",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_verdantpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon2",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_scarletpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon3",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_heatherpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon4",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_zydratepotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon5",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_pistachiopotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon6",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_dahliapotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon7",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_slushiepotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon8",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_matrixpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon9",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_mcdougalpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_VioletMoon10",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_toirneachpotion",
+              "Price": 2500
+            }
+          ]
+        },
+        "DN.SnS_Krobus_VioletMoon": {
+          "Id": "DN.SnS_Krobus_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Krobus_VioletMoon_Dialogue",
+              "Portrait": "Krobus",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Krobus}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_KrobusVMShop_VoidEgg",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)305",
+              "Price": 5000
+            },
+            {
+              "Id": "{{ModId}}_KrobusVMShop_VoidEssence",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)769",
+              "Price": 100
+            },
+            {
+              "Id": "{{ModId}}_KrobusVMShop_SolarEssence",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)768",
+              "Price": 80
+            },
+            {
+              "Id": "{{ModId}}_KrobusVMShop_MonsterFireplace",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(F)1800",
+              "Price": 20000
+            },
+            {
+              "Id": "{{ModId}}_KrobusVMShop_SignOfTheVessel",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(BC)34",
+              "Price": 350
+            },
+            {
+              "Id": "{{ModId}}_KrobusVMShop_ButterflyPowder",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)ButterflyPowder",
+              "Price": 20000
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_HatMouse_VioletMoon": { //THIS IS NOT DONE YET!!!!!!!!!!!!!!!!!
+          "Id": "DN.SnS_HatMouse_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_HatMouse_VioletMoon_Dialogue",
+              "Portrait": "",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_HatMouse}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.6",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)6"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.8",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)8"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.9",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)9"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.17",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)17"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.23",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)23"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.24",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)24"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.26",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)26"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.44",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)44"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.46",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)46"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.50",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)50"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.51",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)51"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.52",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)52"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.60",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)60"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.62",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)62"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.63",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)63"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.64",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)64"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.65",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)65"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.70",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)70"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.72",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)72"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.76",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)76"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.85",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)85"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.90",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)90"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.93",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)93"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.TricornHat",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)TricornHat"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.LaurelWreathHat",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)LaurelWreathHat"
+            },
+            {
+              "Id": "{{ModId}}_HatMouseVMShop_Hat.JesterHat",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(H)JesterHat"
+            }
+
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_Dwarf_VioletMoon": {
+          "Id": "DN.SnS_Dwarf_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Dwarf_VioletMoon_Dialogue",
+              "Portrait": "Dwarf",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Dwarf}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_DwarfVMShop_DwarfBook",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)326",
+              "Price": 4000
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_LifeElixir",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)773",
+              "Price": 2000
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_OilofGarlic",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)772",
+              "Price": 3000
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_CherryBomb",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)286",
+              "Price": 450
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_Bomb",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)287",
+              "Price": 1000
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_MegaBomb",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)288",
+              "Price": 1600
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_MinerTreat",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)243",
+              "Price": 1000
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_RareCrowDwarf",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(BC)138",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_DwarfVMShop_StoneCairn",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(BC)32",
+              "Price": 200
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_Gus_VioletMoon": {
+          "Id": "DN.SnS_Gus_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Gus_VioletMoon_Dialogue",
+              "Portrait": "Gus",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Gus}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_GusVMShop_Beer",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)346",
+              "Price": 400
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_Coffee",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)395",
+              "Price": 300
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_Pizza",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)206",
+              "Price": 600
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_IceCream",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)233",
+              "Price": 240
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_PumpkinSoup",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)236",
+              "Price": 600
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_AutumnBounty",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)235",
+              "Price": 700
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_Cookies",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)223",
+              "Price": 280
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_CranberrySauce",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)238",
+              "Price": 240
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_RhubarbPie",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)222",
+              "Price": 800
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_StrangeBun",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)203",
+              "Price": 450
+            },
+            {
+              "Id": "{{ModId}}_GusVMShop_CranberryCandy",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)612",
+              "Price": 175
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        },
+        "DN.SnS_Harvey_VioletMoon": {
+          "Id": "DN.SnS_Harvey_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Harvey_VioletMoon_Dialogue",
+              "Portrait": "Harvey",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Harvey}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "DN.SnS_Harvey_VMMuscle",
+              "ItemID": "(O)349",
+              "Price": 1000
+            },
+            {
+              "Id": "DN.SnS_Harvey_VMEnergy",
+              "ItemID": "(O)351",
+              "Price": 1000
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon Where They Are",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          "Value": "Mateo 30 60 2/Hector 75 60 2/Cirrus 45 48 2/Roslin 56 39 2/Dandelion 56 41 2/Solomon 6 75 2",
+          "Delimiter": "/"
+        },
+        /*{
+          "Operation": "Append",
+          "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          "Value": "Mateo 30 60 2/Hector 75 60 2/Cirrus 45 48 2/Roslin 57 39 2/Dandelion 56 41 2",
+          "Delimiter": "/"
+        },*/
+        {
+          "Operation": "Append",
+          "Target": [ "Fields", "set-up", 5 ],
+          "Value": "/positionOffset Cirrus 0 45/animate Cirrus false true 400 56 56 56 56 56 56 56 57 57 57 58 58 58 58 58 58 58 58 58 58 59 59 59 59 56 56 56 56 56 56 56/animate Dandelion false true 400 40 41 41 42 42 43 43 44 44 40"
+        }
+      ]
+    },
+    {
+      "LogName": "Violet Moon Where is Clint Bears",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          "Value": "Clint 23 56 2",
+          "Delimiter": "/"
+        },
+        /*{
+          "Operation": "Append",
+          "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          "Value": "Clint 35 60 2",
+          "Delimiter": "/"
+        },*/
+        {
+          "Operation": "Append",
+          "Target": [ "Fields", "set-up", 5 ],
+          "Value": "/positionOffset Clint -5 0"
+        }
+      ]
+    },
+    {
+      "LogName": "Violet Moon Where is Clint No Bears",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": false
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          "Value": "Clint 35 60 2",
+          "Delimiter": "/"
+        },
+        /*{
+          "Operation": "Append",
+          "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          "Value": "Clint 35 60 2",
+          "Delimiter": "/"
+        },*/
+        {
+          "Operation": "Append",
+          "Target": [ "Fields", "set-up", 5 ],
+          "Value": "/positionOffset Clint 5 0"
+        }
+      ]
+    },
+    {
+      "LogName": "Clint's Shop if No Bears",
+      "Action": "EditMap",
+      "Target": "Maps/DN.SnS_VioletMoon",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": false
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 36,
+            "Y": 61
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop DN.SnS_Clint_VioletMoon"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Violet Moon shops",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "DN.SnS_Clint_VioletMoon": {
+          "Id": "DN.SnS_Clint_VioletMoon",
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Id": "DN.SnS_Clint_VioletMoon_Dialogue",
+              "Portrait": "Clint",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:DN.SnS_Violet_Moon_Shop_Clint}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "DN.SnS_VioletMoon_Clint_Copper",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)378",
+              "Price": 150
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Clint_Iron",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)380",
+              "Price": 250
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Clint_Gold",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)384",
+              "Price": 750
+            },
+            {
+              "Id": "DN.SnS_VioletMoon_Clint_Coal",
+              "IgnoreShopPriceModifiers": true,
+              "ItemID": "(O)382",
+              "Price": 250
+            }
+          ],
+          "VisualTheme": [
+            {
+              "Condition": null,
+              "WindowBorderTexture": "Textures/DN.SnS/SnSShopBG",
+              "WindowBorderSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 270,
+                "Height": 115
+              },
+              "PortraitBackgroundTexture": null,
+              "PortraitBackgroundSourceRect": null,
+              "DialogueBackgroundTexture": null,
+              "DialogueBackgroundSourceRect": null,
+              "DialogueColor": null,
+              "DialogueShadowColor": null,
+              "ItemRowBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemRowBackgroundSourceRect": {
+                "X": 18,
+                "Y": 115,
+                "Width": 15,
+                "Height": 15
+              },
+              "ItemRowBackgroundHoverColor": "Blue",
+              "ItemRowTextColor": "Violet",
+              "ItemIconBackgroundTexture": "Textures/DN.SnS/SnSShopBG",
+              "ItemIconBackgroundSourceRect": {
+                "X": 0,
+                "Y": 115,
+                "Width": 18,
+                "Height": 18
+              },
+              "ScrollUpTexture": null,
+              "ScrollUpSourceRect": null,
+              "ScrollDownTexture": null,
+              "ScrollDownSourceRect": null,
+              "ScrollBarFrontTexture": null,
+              "ScrollBarFrontSourceRect": null,
+              "ScrollBarBackTexture": null,
+              "ScrollBarBackSourceRect": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Violet Moon What They Say",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "Entries": {
+        "Mateo": "{{i18n:VioletMoon.Mateo.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Hector": "{{i18n:VioletMoon.Hector.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Cirrus": "{{i18n:VioletMoon.Cirrus.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Dandelion": "{{i18n:VioletMoon.Dandelion.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Roslin": "{{i18n:VioletMoon.Roslin.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Solomon": "{{i18n:VioletMoon.Solomon.{{Random:1++2++3|inputSeparator=++}}}}"
+      }
+    },
+    {
+      "LogName": "Violet Moon Where They Are ES Folks",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "When": {
+        "HasMod": "LemurKat.EastScarpe.CP"
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+          "Value": "Aideen 80 60 3/Beatrice 47 50 2/Eloise 66 48 3/Eyvinder 15 48 2/Jacob 62 63 3/ToriLK 68 34 0/Rosa 86 13 1/Juliet 87 13 3/Jessie 39 48 2/Jasper 87 32 0",
+          "Delimiter": "/"
+        },
+        /*{
+          "Operation": "Append",
+          "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+          "Value": "Aideen 80 60 3/Beatrice 47 50 2/Eloise 66 48 3/Eyvinder 15 48 2/Jacob 62 63 3/ToriLK 68 34 0/Rosa 86 13 1/Juliet 87 13 3/Jessie 39 48 2/Jasper 87 32 0",
+          "Delimiter": "/"
+        },*/
+        {
+          "Operation": "Append",
+          "Target": [ "Fields", "set-up", 5 ],
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "LogName": "Violet Moon What They Say - ES Folks",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall1",
+      "When": {
+        "HasMod": "LemurKat.EastScarpe.CP"
+      },
+      "Entries": {
+        "Aideen": "{{i18n:VioletMoon.Aideen.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Beatrice": "{{i18n:VioletMoon.Beatrice.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Eloise": "{{i18n:VioletMoon.Eloise.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Eyvinder": "{{i18n:VioletMoon.Eyvinder.{{Random:1++2++3|inputSeparator=++}}.{{HasSeenEvent |contains=57877001}}}}",
+        "Jacob": "{{i18n:VioletMoon.Jacob.{{Random:1++2++3|inputSeparator=++}}}}",
+        "ToriLK": "{{i18n:VioletMoon.ToriLK.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Rosa": "{{i18n:VioletMoon.Rosa.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Juliet": "{{i18n:VioletMoon.Juliet.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Jessie": "{{i18n:VioletMoon.Jessie.{{Random:1++2++3|inputSeparator=++}}}}",
+        "Jasper": "{{i18n:VioletMoon.Jasper.{{Random:1++2++3|inputSeparator=++}}}}"
+      }
+    }
+  ]
+
+}

@@ -1,0 +1,2546 @@
+{
+  "Format": "2.0.0",
+  // INCLUDES
+  "Changes": [
+    {
+      "LogName": "Sword & Sorcery - Mateo Includes",
+      "Action": "Include",
+      "FromFile": "Data/Appearances/AppearanceData_Mateo.json, Data/Dialogue/Mateo/Dialogue_Mateo.json, Data/Dialogue/Mateo/ConcessionTastes_Mateo.json, Data/Dialogue/Mateo/ConversationTopics_Mateo.json, Data/Dialogue/Mateo/ConversationTopics_Vanilla.json, Data/Dialogue/Mateo/CustomFixed_Mateo.json,Data/Dialogue/Mateo/CustomGiftDialogue_Mateo.json, Data/Dialogue/Mateo/MarriageDialogue_Mateo.json, Data/Festival Data/FestivalData_Mateo.json, Data/Schedules/Schedule_Mateo.json, Data/Strings/Strings_Mateo.json, Data/Spouse Extras/SpouseExtras_Mateo.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Hector Includes",
+      "Action": "Include",
+      "FromFile": "Data/Appearances/AppearanceData_Hector.json, Data/Dialogue/Hector/Dialogue_Hector.json, Data/Dialogue/Hector/ConcessionTastes_Hector.json, Data/Dialogue/Hector/ConversationTopics_Hector.json, Data/Dialogue/Hector/CustomFixed_Hector.json,Data/Dialogue/Hector/CustomGiftDialogue_Hector.json, Data/Dialogue/Hector/MarriageDialogue_Hector.json, Data/Festival Data/FestivalData_Hector.json, Data/Schedules/Schedule_Hector.json, Data/Strings/Strings_Hector.json, Data/Spouse Extras/SpouseExtras_Hector.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Cirrus Includes",
+      "Action": "Include",
+      "FromFile": "Data/Appearances/AppearanceData_Cirrus.json, Data/Dialogue/Cirrus/Dialogue_Cirrus.json, Data/Dialogue/Cirrus/ConcessionTastes_Cirrus.json, Data/Dialogue/Cirrus/ConversationTopics_Cirrus.json, Data/Dialogue/Cirrus/CustomFixed_Cirrus.json,Data/Dialogue/Cirrus/CustomGiftDialogue_Cirrus.json, Data/Dialogue/Cirrus/MarriageDialogue_Cirrus.json, Data/Festival Data/FestivalData_Cirrus.json, Data/Schedules/Schedule_Cirrus.json, Data/Strings/Strings_Cirrus.json, Data/Spouse Extras/SpouseExtras_Cirrus.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Roslin Includes",
+      "Action": "Include",
+      "FromFile": "Data/Appearances/AppearanceData_Roslin.json, Data/Dialogue/Roslin/Dialogue_Roslin.json, Data/Dialogue/Roslin/ConcessionTastes_Roslin.json, Data/Dialogue/Roslin/ConversationTopics_Roslin.json, Data/Dialogue/Roslin/CustomGiftDialogue_Roslin.json, Data/Festival Data/FestivalData_Roslin.json, Data/Schedules/Schedule_Roslin.json, Data/Strings/Strings_Roslin.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Dandelion Includes",
+      "Action": "Include",
+      "FromFile": "Data/Appearances/AppearanceData_Dandelion.json, Data/Dialogue/Dandelion/Dialogue_Dandelion.json, Data/Dialogue/Dandelion/ConcessionTastes_Dandelion.json, Data/Dialogue/Dandelion/ConversationTopics_Dandelion.json, Data/Dialogue/Dandelion/CustomGiftDialogue_Dandelion.json, Data/Festival Data/FestivalData_Dandelion.json, Data/Schedules/Schedule_Dandelion.json, Data/Strings/Strings_Dandelion.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - (Antisocial) Solomon Includes",
+      "Action": "Include",
+      "FromFile": "Data/Dialogue/Solomon/Dialogue_Solomon.json, Data/Schedules/Schedule_Solomon.json, Data/Dispositions/Solomon/AntisocialSolomon_NPCData.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Disposition Includes (Full)",
+      "Action": "Include",
+      "FromFile": "Data/Dispositions/Mateo/full_NPCData.json, Data/Dispositions/Hector/full_NPCData.json, Data/Dispositions/Cirrus/full_NPCData.json, Data/Dispositions/Roslin/full_NPCData.json, Data/Dispositions/Dandelion/full_NPCData.json"
+    },
+    /*{
+      "LogName": "Sword & Sorcery - Disposition Includes (Vanilla)",
+      "Action": "Include",
+      "FromFile": "Data/Dispositions/Mateo/vanilla_NPCData.json, Data/Dispositions/Hector/vanilla_NPCData.json, Data/Dispositions/Cirrus/vanilla_NPCData.json, Data/Dispositions/Roslin/vanilla_NPCData.json, Data/Dispositions/Dandelion/vanilla_NPCData.json",
+      "When": {
+        "SeasonalOutfits": "vanilla"
+      }
+    },
+    {
+      "LogName": "Sword & Sorcery - Disposition Includes (Lite)",
+      "Action": "Include",
+      "FromFile": "Data/Dispositions/Mateo/lite_NPCData.json, Data/Dispositions/Hector/lite_NPCData.json, Data/Dispositions/Cirrus/lite_NPCData.json, Data/Dispositions/Roslin/lite_NPCData.json, Data/Dispositions/Dandelion/lite_NPCData.json",
+      "When": {
+        "SeasonalOutfits": "lite"
+      }
+    },*/
+    {
+      "LogName": "Sword & Sorcery - Quest Includes",
+      "Action": "Include",
+      "FromFile": "Data/Quests & Items/BuildQuest.json, Data/Quests & Items/BuildQuest2.json, Data/Quests & Items/CGSpecialOrders.json, Data/Quests & Items/RiverQuest.json" //Data/Quests & Items/PentacleQuest.json
+    },
+    {
+      "LogName": "Sword & Sorcery - Data Includes",
+      "Action": "Include",
+      "FromFile": "Data/FinalePartners.json, Data/AlchemyRecipes.json, Data/MEEP/Book.json, Data/MEEP/Emeritus.json, Data/Spouse Extras/Weddings.json, Data/MapData.json, Data/WorldMaps.json, Data/ShopData.json,Data/Mail.json, Data/NPCExclusions.json, Data/BlankLoads.json, Data/MapPatches.json, Data/TemporaryActors.json, Data/ScheduleAnimations.json, Data/S&SMiscellaneous.json, Data/NPCGiftTastes.json, Data/Music.json, Data/SoundEffects.json, Data/Shirts.json, Data/Quests & Items/DruidicCrops.json, Data/Quests & Items/MagicItems.json, Data/Quests & Items/Arsenal.json, Data/Quests & Items/Witchcraft.json, Data/Quests & Items/CustomFood.json, Data/Quests & Items/CustomForage.json, Data/Quests & Items/LegendaryWeapons.json, Data/Quests & Items/CustomPowers.json, Data/Quests & Items/Books.json, Data/Quests & Items/GingerFermenter.json, Data/Quests & Items/Fish.json, Data/Quests & Items/Furniture.json, Data/Festival Data/FestivalData_Dialogue.json, Data/Events/EventsData_Ch1.json, Data/Events/EventsData_Ch2.json, Data/Events/EventsData_Ch3.json, Data/Events/EventsData_Ch4.json, Data/Events/EventsData_Ch5.json, Data/WitchcraftResearch.json, Data/Dungeon.json, Data/PlayersHandbook.json, Data/Quests & Items/VioletMoon_FoodOnly.json, Data/Trinket Tinker/TrinketLoads.json"
+    },
+    {
+      "LogName": "Sword & Sorcery - Shield Quest Include",
+      "Action": "Include",
+      "FromFile": "Data/Quests & Items/ShieldQuest.json",
+      "When": {
+        "Query: {{ChocoboValleyMaterials}} AND {{HasMod |contains=Kitsutsune.Chocobovalley}}": false
+      }
+    },
+    {
+      "LogName": "Sword & Sorcery - Shield Quest Include (w/ Chocobo Valley)",
+      "Action": "Include",
+      "FromFile": "Data/Quests & Items/ShieldQuest_ChocoboValley.json",
+      "When": {
+        "Query: {{ChocoboValleyMaterials}} AND {{HasMod |contains=Kitsutsune.Chocobovalley}}": true
+      }
+    },
+    {
+      "LogName": "Sword & Sorcery - Essence Quest Include",
+      "Action": "Include",
+      "FromFile": "Data/Quests & Items/EssenceQuest.json",
+      "When": {
+        "Query: {{RSVMaterials}} AND {{HasMod |contains=Rafseazz.RSVCP}}": false
+      }
+    },
+    {
+      "LogName": "Sword & Sorcery - Essence Quest Include (w/ Ridgeside Village)",
+      "Action": "Include",
+      "FromFile": "Data/Quests & Items/EssenceQuest_RSV.json",
+      "When": {
+        "Query: {{RSVMaterials}} AND {{HasMod |contains=Rafseazz.RSVCP}}": true
+      }
+    },
+    {
+      "LogName": "Trinket Tinker Compat",
+      "Action": "Include",
+      "FromFile": "Data/Trinket Tinker/OwlBoy.json, Data/Trinket Tinker/Emeritus.json, Data/Trinket Tinker/HectorWolf.json, Data/Trinket Tinker/Book.json",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+    // TRIGGER ACTIONS
+    {
+      "LogName": "Overrides Seen Today Flag Removal",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "SnS.TriggerActions.OverrideSeenTodayRemoval": {
+          "Id": "SnS.TriggerActions.OverrideSeenTodayRemoval",
+          "Trigger": "DayStarted",
+          "MarkActionApplied": false,
+          "Condition": "Any \"PLAYER_HAS_MAIL Current SnS_M_Mateo_OverrideSeenToday Any\" \"PLAYER_HAS_MAIL Current SnS_M_Hector_OverrideSeenToday Any\" \"PLAYER_HAS_MAIL Current SnS_M_Cirrus_OverrideSeenToday Any\" \"PLAYER_HAS_MAIL Current SnS_M_Roslin_OverrideSeenToday Any\" \"PLAYER_HAS_MAIL Current SnS_M_Dandelion_OverrideSeenToday Any\" \"PLAYER_HAS_MAIL Current SnS_M_Solomon_OverrideSeenToday Any\"",
+          "Actions": [
+            "RemoveMail Current SnS_M_Mateo_OverrideSeenToday",
+            "RemoveMail Current SnS_M_Hector_OverrideSeenToday",
+            "RemoveMail Current SnS_M_Cirrus_OverrideSeenToday",
+            "RemoveMail Current SnS_M_Roslin_OverrideSeenToday",
+            "RemoveMail Current SnS_M_Dandelion_OverrideSeenToday",
+            "RemoveMail Current SnS_M_Solomon_OverrideSeenToday"
+          ]
+        },
+        "SnS.TriggerActions.MateoTrollHeritage.True": {
+          "Id": "SnS.TriggerActions.MateoTrollHeritage.True",
+          "Trigger": "DayStarted",
+          "Condition": "{{MateoTrollHeritage}}",
+          "Actions": [
+            "AddMail Current SnS.Flag.MateoTrollHeritage received",
+            "MarkActionApplied Current SnS.TriggerActions.MateoTrollHeritage.False false"
+          ]
+        },
+        "SnS.TriggerActions.MateoTrollHeritage.False": {
+          "Id": "SnS.TriggerActions.MateoTrollHeritage.False",
+          "Trigger": "DayStarted",
+          "Condition": "!{{MateoTrollHeritage}}",
+          "Actions": [
+            "RemoveMail Current SnS.Flag.MateoTrollHeritage all",
+            "MarkActionApplied Current SnS.TriggerActions.MateoTrollHeritage.True false"
+          ]
+        },
+        /*"{{ModId}}_MigrateIds": {
+          "Id": "{{ModId}}_MigrateIds",
+          "Trigger": "DayStarted",
+          "Actions": [
+            "Pathoschild.ContentPatcher_MigrateIds Items (O)swordandsorcery.ancientamaranth (O){{ModId}}_ancientamaranth (O)swordandsorcery.ancientamaranth.seed (O){{ModId}}_ancientamaranth.seed (O)swordandsorcery.ancientepiphyticfern (O){{ModId}}_ancientepiphyticfern (O)swordandsorcery.ancientepiphyticfern.seed (O){{ModId}}_ancientepiphyticfern.seed (O)swordandsorcery.glowingpolyporemushrooms (O){{ModId}}_glowingpolyporemushrooms (O)swordandsorcery.glowingpolyporemushrooms.seed (O){{ModId}}_glowingpolyporemushrooms.seed (O)swordandsorcery.ancientwildfairyrose (O){{ModId}}_ancientwildfairyrose (O)swordandsorcery.ancientwildfairyrose.seed (O){{ModId}}_ancientwildfairyrose.seed (O)swordandsorcery.ancientelderberry (O){{ModId}}_ancientelderberry (O)swordandsorcery.ancientelderberry.seed (O){{ModId}}_ancientelderberry.seed (O)swordandsorcery.ancientbottlegourd (O){{ModId}}_ancientbottlegourd (O)swordandsorcery.ancientbottlegourd.seed (O){{ModId}}_ancientbottlegourd.seed (O)swordandsorcery.ancientgiantappleberry (O){{ModId}}_ancientgiantappleberry (O)swordandsorcery.ancientgiantappleberry.seed (O){{ModId}}_ancientgiantappleberry.seed (O)swordandsorcery.ancientazuredetura (O){{ModId}}_ancientazuredetura (O)swordandsorcery.ancientazuredetura.seed (O){{ModId}}_ancientazuredetura.seed (O)swordandsorcery.ancientglowinghuckleberry (O){{ModId}}_ancientglowinghuckleberry (O)swordandsorcery.ancientglowinghuckleberry.seed (O){{ModId}}_ancientglowinghuckleberry.seed (O)swordandsorcery.druidicessence (O){{ModId}}_druidicessence (O)swordandsorcery.adventureguildbadge (O){{ModId}}_adventureguildbadge (O)swordandsorcery.brokenshield (O)swordandsorcery.repairedshield (O){{ModId}}_repairedshield (O)swordandsorcery.argentisshield (O){{ModId}}_argentisshield (O)swordandsorcery.druidictotemfetish (O){{ModId}}_druidictotemfetish (O)swordandsorcery.stygiumstatuette (O){{ModId}}_stygiumstatuette (O)swordandsorcery.druidiceldermask (O){{ModId}}_druidiceldermask (O)swordandsorcery.salishburbon (O){{ModId}}_salishbourbon (O)swordandsorcery.autumnalstew (O){{ModId}}_autumnalstew (O)swordandsorcery.dandeliongreens (O){{ModId}}_dandeliongreens (O)swordandsorcery.portfiredrakesparkler (O){{ModId}}_portfiredrakesparkler (O)swordandsorcery.mushroomsredsauce (O){{ModId}}_mushroomsredsauce (O)swordandsorcery.ferngreensandpineapple (O){{ModId}}_ferngreensandpineapple (O)swordandsorcery.ancienthuckleberryicecream (O){{ModId}}_ancienthuckleberryicecream (O)swordandsorcery.lavaeelandstirfriedancientbottlegourd (O){{ModId}}_lavaeelandstirfriedancientbottlegourd (O)swordandsorcery.zuzustylepizza (O){{ModId}}_zuzustylepizza (O)swordandsorcery.zuzustylebagelwithlox (O){{ModId}}_zuzustylebagelwithlox (O)swordandsorcery.zuzustylecheesecake (O){{ModId}}_zuzustylecheesecake (O)swordandsorcery.zuzustyleclamchowder (O){{ModId}}_zuzustyleclamchowder (O)swordandsorcery.fountainsoda (O){{ModId}}_fountainsoda (O)swordandsorcery.freshpopcorn (O){{ModId}}_freshpopcorn",
+            "Pathoschild.ContentPatcher_MigrateIds Items (W)swordandsorcery.keytoscarp (W){{ModId}}_keytoscarp (W)swordandsorcery.twobecomeone (W){{ModId}}_twobecomeone (W)swordandsorcery.savethequeen (W){{ModId}}_savethequeen (W)swordandsorcery.oathkeeper (W){{ModId}}_oathkeeper (W)swordandsorcery.savetheking (W){{ModId}}_savetheking (W)swordandsorcery.waytothedawn (W){{ModId}}_waytothedawn (W)swordandsorcery.eldadagordagger (W){{ModId}}_eldadagordagger (W)swordandsorcery.glaewndilsword (W){{ModId}}_glaewndilsword (W)swordandsorcery.thondrondhammer (W){{ModId}}_thondrondhammer (W)swordandsorcery.longlivetheking (W){{ModId}}_longlivetheking",
+            "Pathoschild.ContentPatcher_MigrateIds CraftingRecipes swordandsorcery.ExquisiteEmerald {{ModId}}_ExquisiteEmerald swordandsorcery.ExquisiteRuby {{ModId}}_ExquisiteRuby swordandsorcery.ExquisiteTopaz {{ModId}}_ExquisiteTopaz swordandsorcery.ExquisiteAquamarine {{ModId}}_ExquisiteAquamarine swordandsorcery.ExquisiteAmethyst {{ModId}}_ExquisiteAmethyst swordandsorcery.ExquisiteJade {{ModId}}_ExquisiteJade swordandsorcery.ExquisiteDiamond {{ModId}}_ExquisiteDiamond swordandsorcery.ArcanePrimer {{ModId}}_ArcanePrimer",
+            "Pathoschild.ContentPatcher_MigrateIds CookingRecipes swordandsorcery.salishburbon {{ModId}}_salishbourbon swordandsorcery.autumnalstew {{ModId}}_autumnalstew swordandsorcery.dandeliongreens {{ModId}}_dandeliongreens swordandsorcery.portfiredrakesparkler {{ModId}}_portfiredrakesparkler swordandsorcery.mushroomsredsauce {{ModId}}_mushroomsredsauce swordandsorcery.ferngreensandpineapple {{ModId}}_ferngreensandpineapple swordandsorcery.ancienthuckleberryicecream {{ModId}}_ancienthuckleberryicecream swordandsorcery.lavaeelandstirfriedancientbottlegourd {{ModId}}_lavaeelandstirfriedancientbottlegourd swordandsorcery.zuzustylepizza {{ModId}}_zuzustylepizza swordandsorcery.zuzustylebagelwithlox {{ModId}}_zuzustylebagelwithlox swordandsorcery.zuzustylecheesecake {{ModId}}_zuzustylecheesecake swordandsorcery.zuzustyleclamchowder {{ModId}}_zuzustyleclamchowder"
+          ],
+          "HostOnly": true
+        },*/
+        "SnS.TriggerActions.RemoveMateoRomanticFlagIfNotDating": {
+          "Id": "SnS.TriggerActions.RemoveMateoRomanticFlagIfNotDating",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Current MateoRomanticFlag, !PLAYER_NPC_RELATIONSHIP Current Mateo Dating Engaged Married, PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.15",
+          "Actions": [
+            "RemoveMail Current MateoRomanticFlag all" //Technically C# component does this already, but doesn't account for divorce
+          ],
+          "MarkActionApplied": "false"
+        },
+        "SnS.TriggerActions.RemoveHectorRomanticFlagIfNotDating": {
+          "Id": "SnS.TriggerActions.RemoveHectorRomanticFlagIfNotDating",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Current HectorRomanticFlag, !PLAYER_NPC_RELATIONSHIP Current Hector Dating Engaged Married",
+          "Actions": [
+            "RemoveMail Current HectorRomanticFlag all"
+          ],
+          "MarkActionApplied": "false"
+        },
+        "SnS.TriggerActions.RemoveCirrusRomanticFlagIfNotDating": {
+          "Id": "SnS.TriggerActions.RemoveCirrusRomanticFlagIfNotDating",
+          "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Current CirrusRomanticFlag, !PLAYER_NPC_RELATIONSHIP Current Cirrus Dating Engaged Married",
+          "Actions": [
+            "RemoveMail Current CirrusRomanticFlag all"
+          ],
+          "MarkActionApplied": "false"
+        }
+      }
+    }
+  ],
+  // CONFIG OPTIONS
+  "ConfigSchema": {
+    "Player Pronouns 1": {
+      "Default": "They",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "设置玩家期望使用的代词。",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 2": {
+      "Default": "Them",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "设置玩家想要的代词.",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 3": {
+      "Default": "Theirs",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "设置玩家想要的代词.",
+      "Section": "Pronouns"
+    },
+    "Player Pronouns 4": {
+      "Default": "Themselves",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "设置玩家想要的代词.",
+      "Section": "Pronouns"
+    },
+    "Player Pronoun Identifier": {
+      "Default": "are",
+      "AllowBlank": false,
+      "AllowMultiple": true,
+      "Description": "通常会是 \"is\" 或 \"are\"，具体取决于上下文。示例：她太酷了！VS.他们太酷了！",
+      "Section": "Pronouns"
+    },
+    "CustomMateoSoren": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "打开看起来像马特奥的男性幼儿精灵。",
+      "Section": "Custom Kids"
+    },
+    "CustomMateoDinah": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "打开看起来像马特奥的女性幼儿精灵。",
+      "Section": "Custom Kids"
+    },
+    "CustomCirrusFreddie": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "打开像克罗斯的男性幼儿精灵。",
+      "Section": "Custom Kids"
+    },
+    "CustomCirrusBrittany": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "打开像克罗斯的女性幼儿精灵。",
+      "Section": "Custom Kids"
+    },
+    "MermaidPendantEarring": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时为马特奥添加美人鱼吊坠耳环。",
+      "Section": "Mermaid Pendant Overlays"
+    },
+    "MermaidPendantHairclip": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时为赫克托添加美人鱼吊坠发夹。",
+      "Section": "Mermaid Pendant Overlays"
+    },
+    "MermaidPendantChoker": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时为西鲁斯添加美人鱼吊坠项圈。",
+      "Section": "Mermaid Pendant Overlays"
+    },
+    "MateoSpouseRoomConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时增加配偶房.",
+      "Section": "Spouse Rooms"
+    },
+    "MateoSpousePatioConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+        "Description": "结婚时增加配偶露台.",
+      "Section": "Spouse Patios"
+    },
+    "HectorSpouseRoomConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时增加配偶房.",
+      "Section": "Spouse Rooms"
+    },
+    "HectorSpousePatioConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+        "Description": "结婚时增加配偶露台.",
+      "Section": "Spouse Patios"
+    },
+    "CirrusSpouseRoomConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "结婚时增加配偶房.",
+      "Section": "Spouse Rooms"
+    },
+    "CirrusSpousePatioConfig": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+        "Description": "结婚时增加配偶露台.",
+      "Section": "Spouse Patios"
+    },
+    "EquipmentMenuConfig": {
+      "AllowValues": "true,false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "重新着色由 Spacecore 添加的装备菜单，使其与 Bog 的森林界面、DaisyNiko 的土色界面、Enteis 的自然深木界面、Nom0ri 的复古界面 V2（适用于 1.6 版）、Shinchan 的紫色界面、SQBR 的星蓝界面或 TheFrenchDodo 的樱花界面重制版相匹配。.",
+      "Section": "Miscellaneous"
+    },
+    "TimegateConfig": {
+      "AllowValues": "OneDay, ThreeDays, OneWeek",
+      "Default": "ThreeDays",
+      "AllowBlank": false,
+      "Description": "通过配置每个事件之间的间隔时间来控制事件的节奏。",
+      "Section": "Miscellaneous"
+    },
+    "MateoThemeConfig": {
+      "AllowValues": "Old, New",
+      "Default": "New",
+      "AllowBlank": false,
+      "Description": "在马特奥主题的新变体（TheFrenchDodo）和原始变体（HarvzBack）之间切换。",
+      "Section": "Miscellaneous"
+    },
+    "HectorThemeConfig": {
+      "AllowValues": "Old, New",
+      "Default": "New",
+      "AllowBlank": false,
+      "Description": "在赫克托耳主题的新变体（TheFrenchDodo）和原始变体（HarvzBack）之间切换。",
+      "Section": "Miscellaneous"
+    },
+    /*"SkipIntroQuest_Setting": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "删除了赫克托的介绍任务的任务要求，以防出现bug，参与Joja路线或其他问题。",
+      "Section": "Miscellaneous"
+    },*/
+    /*"SeasonalOutfits": {
+      "AllowValues": "full, lite, vanilla",
+      "Default": "full",
+      "AllowBlank": false,
+      "Description": "选择S&S npc在游戏中穿多少套衣服。全套意味着他们每个赛季将有多种服装，以及独特的节日服装（如果有的话！）。生活意味着他们每个季节穿不同的衣服，加上精灵之夜和花舞。香草意味着他们在春夏秋冬穿同样的衣服，冬天穿不同的衣服，精灵之夜和花舞穿独特的衣服。默认为full。",
+      "Section": "Miscellaneous"
+    },*/
+    "DumpsterWarp": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "可能会导致一些路径问题，但提供了通往德鲁伊特塔的捷径。",
+      "Section": "Miscellaneous"
+    },
+    "LionsManeExtraDoorWarp": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "可能会导致一些路径问题，但提供了另一扇通往狮子鬃毛的门。",
+      "Section": "Miscellaneous"
+    },
+    "DatingLength": { //maddogchange   
+      "AllowValues": "7, 14, 21, 28",
+      "Default": "14",
+      "AllowBlank": false,
+      "Description": "玩家必须在马特奥,赫克托或克罗斯接受美人鱼吊坠并触发下一个浪漫事件之前与他们约会。",
+      "Section": "Miscellaneous"
+    },
+    "AncientSweetTeaDifficulty": {
+      "AllowValues": "3, 7, 14, 21,",
+      "Default": "7",
+      "AllowBlank": false,
+      "Description": "设定需要多少片古代甜茶叶才能制作出广受欢迎的古代甜茶配方。",
+      "Section": "Miscellaneous"
+    },
+    "ChocoboValleyMaterials": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "在特殊订单中切换巧克力谷的材料的使用。",
+      "Section": "Miscellaneous"
+    },
+    "RSVMaterials": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "在罗斯林的特殊命令中切换里奇赛德村的材料的使用。",
+      "Section": "Miscellaneous"
+    },
+    "Eli&DylanExtras": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "为伊莱和迪伦添加额外的内容，如果他们被安装。",
+      "Section": "Miscellaneous"
+    },
+    "Juliet&JessieExtras": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "为朱丽叶和杰西添加额外的内容，如果他们被安装。",
+      "Section": "Miscellaneous"
+    },
+    "ProfanityFilter": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "当切换为“true”时，这个mod中的亵渎会温和得多，但不是不存在。",
+      "Section": "Miscellaneous"
+    },
+    "ExcludeFromPerfection": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "从完美跟踪中排除S&S项目。",
+      "Section": "Miscellaneous"
+    },
+    "CasterType": {
+      "AllowValues": "Witch, Wizard, Sorcerer, Sorceress, Magician, Warlock, Magus, Occultist, Spellbinder, Thaumaturgist, Druid, Alchemist, Alchahestrist, Bard",
+      "Default": "Sorcerer",
+      "AllowBlank": false,
+      "Description": "改变了农民被称为的施法者的类型。",
+      "Section": "Miscellaneous"
+    },
+    "BookTextures": {
+      "AllowValues": "Lumina, Daine",
+      "Default": "Lumina",
+      "AllowBlank": false,
+      "Description": "改变了S&S技能书的纹理。",
+      "Section": "Miscellaneous"
+    },
+    "HandbookColorScheme": {
+      "AllowValues": "Oak, Walnut, Birch, Mahogany",
+      "Default": "Oak",
+      "AllowBlank": false,
+      "Description": "改变“玩家手册”家具项目的配色方案。",
+      "Section": "Miscellaneous"
+    },
+    "HectorHeterochromatic": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "赋予赫克托蓝色/绿色异色眼睛。",
+      "Section": "Overlays"
+    },
+    "MateoTrollHeritage": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "根据其血统赋予马特奥角和独特的眼睛颜色。",
+      "Section": "Overlays"
+    },
+    "MateoTail": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "给马特奥一条尾巴。必须将\n\n\"马特奥巨魔血统\" 设置为“是”，此效果才会生效。",
+      "Section": "Overlays"
+    },
+    "CirrusRainbowHair": {
+      "AllowValues": "RealisticRandom, DailyRandom, Brown, Red, Orange, Yellow, Blue",
+      "Default": "Blue",
+      "AllowBlank": false,
+      "AllowMultiple": false,
+      "Description": "给克罗斯各种染色的头发颜色，或选择性地选择一个静态的颜色。\nRealisticRandom 头发颜色变化之间的延迟",
+      "Section": "Overlays"
+    },
+    "CirrusRainbowEyes": {
+      "AllowValues": "DailyRandom, Purple, Blue, Brown, Gray, Green",
+      "Default": "Purple",
+      "AllowBlank": false,
+      "AllowMultiple": false,
+      "Description": "为西瑞斯提供多种颜色的隐形眼镜，或者选择一种固定的颜色。",
+      "Section": "Overlays"
+    },
+    "CirrusSmokeyEye": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "当她化妆时，总是给她涂上烟熏眼影。",
+      "Section": "Overlays"
+    }
+  },
+  // DYNAMIC TOKENS
+  "DynamicTokens": [
+    {
+      "Name": "PlayerPronouns",
+      "Value": "|CPPN1={{Random: {{Player Pronouns 1}} |key=PlayerPronouns}} |CPPN2={{Random: {{Player Pronouns 2}} |key=PlayerPronouns}} |CPPN3={{Random: {{Player Pronouns 3}} |key=PlayerPronouns}} |CPPN4={{Random: {{Player Pronouns 4}} |key=PlayerPronouns}} |CPPNI={{Random: {{Player Pronoun Identifier}} |key=PlayerPronouns}} |LPPN1={{Random: {{Lowercase: {{Player Pronouns 1}}}} |key=PlayerPronouns}} |LPPN2={{Random: {{Lowercase: {{Player Pronouns 2}}}} |key=PlayerPronouns}} |LPPN3={{Random: {{Lowercase: {{Player Pronouns 3}}}} |key=PlayerPronouns}} |LPPN4={{Random: {{Lowercase: {{Player Pronouns 4}}}} |key=PlayerPronouns}} |LPPNI={{Random: {{Lowercase: {{Player Pronoun Identifier}}}} |key=PlayerPronouns}}"
+    },
+    {
+      "Name": "WeekDayList",
+      "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+    },
+    {
+      "Name": "WeekDay",
+      "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+    },
+    {
+      "Name": "MateoRomance",
+      "Value": "Romantic",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": true
+      }
+    },
+    {
+      "Name": "MateoRomance",
+      "Value": "Platonic",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "MateoArmor",
+      "Value": "Armor_Mateo.png",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.9": false
+      }
+    },
+    {
+      "Name": "MateoArmor",
+      "Value": "Armor_ScarredMateo.png",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.9": true
+      }
+    },
+    {
+      "Name": "MateoBeach",
+      "Value": "Beach_Mateo.png"
+    },
+    {
+      "Name": "MateoBeach",
+      "Value": "Beach_ScarredMateo.png",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.9": true
+      }
+    },
+    {
+      "Name": "Horns",
+      "Value": "Horns1" //Original Horns
+    },
+    {
+      "Name": "Horns",
+      "Value": "Horns2", //Broken Horns
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.9": true
+      }
+    },
+    {
+      "Name": "Horns",
+      "Value": "Horns3", //Stage 1 Regrown Horns
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.14": true
+      }
+    },
+    {
+      "Name": "Horns",
+      "Value": "Horns4", //Stage 2 Regrown Horns
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "Horns",
+      "Value": "Horns5", //Stage 3 Regorwn Horns
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.14": true
+      }
+    },
+    {
+      "Name": "MateoHorns",
+      "Value": ""
+    },
+    {
+      "Name": "MateoHorns",
+      "Value": "_Horns",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "TenHeartRivalHeartsToggle",
+      "Value": "stopMusic/question fork0 \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.1}}#{{i18n:Events.S&S.Ch1.RHToggle.Question.Romantic}}#{{i18n:Events.S&S.Ch1.RHToggle.Question.Platonic}}\"/fork MateoRomantic"
+    },
+    {
+      "Name": "TenHeartRivalHeartsToggle",
+      "Value": "stopMusic/quickQuestion \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.1}}\"#{{i18n:Events.S&S.Ch1.RHToggle.Farmer.1}}#{{i18n:Events.S&S.Ch1.RHToggle.Farmer.2}}(break)speak Mateo \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.2}}\"(break)speak Mateo \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.3}}\"",
+      "When": {
+        "Query: {{HasFlag |contains=CirrusRomanticFlag}} OR {{HasFlag |contains=HectorRomanticFlag}} OR {{HasFlag |contains=RivalHearts_AideenMateo}}": "true"
+      }
+    },
+    {
+      "Name": "TenHeartRivalHeartsToggle",
+      "Value": "stopMusic/quickQuestion \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.1}}\"#{{i18n:Events.S&S.Ch1.RHToggle.Farmer.1}}#{{i18n:Events.S&S.Ch1.RHToggle.Farmer.2}}(break)speak Mateo \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.2}}\"(break)speak Mateo \"{{i18n:Events.S&S.Ch1.RHToggle.Mateo.3}}\"",
+      "When": {
+        "HasMod |contains=EnderTedi.Polyamory": true,
+        "EnderTedi.Polyamory/HasMonogamousPartner": true
+      }
+    },
+    {
+      "Name": "MateoSpawn",
+      "Value": "EastScarp_MateoHome 5 6"
+    },
+    {
+      "Name": "MateoSpawn",
+      "Value": "EastScarp_CoastalGuild 8 5",
+      "When": {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true
+      }
+    },
+    {
+      "Name": "MateoAnimation",
+      "Value": "{{Random: Mateo_violin, Mateo_book, Mateo_drink|key=Mateo-Animation}}"
+    },
+    {
+      "Name": "MateoRelationshipStatus",
+      "Value": "false"
+    },
+    {
+      "Name": "MateoRelationshipStatus",
+      "Value": "false",
+      "When": {
+        "Query: {{HasFlag |contains=RivalHearts_AideenMateo}} OR NOT {{HasFlag |contains=MateoRomanticFlag}}": true
+      }
+    },
+    {
+      "Name": "MateoRelationshipStatus",
+      "Value": "true",
+      "When": { "HasFlag": "MateoRomanticFlag" }
+    },
+    {
+      "Name": "MateoHospitalScene_Setup",
+      "Value": "farmer 10 19 0 Mateo 21 11 2 Harvey 20 11 1"
+    },
+    {
+      "Name": "MateoHospitalScene_Setup",
+      "Value": "{{MateoHospitalScene_Setup}} Nova.Eli -100 -100 2",
+      "When": {
+        "HasMod: |contains=TenebrousNova.EliDylan.CP": true,
+        "Eli&DylanExtras": true
+      }
+    },
+    {
+      "Name": "MateoHospitalScene",
+      "Value": "message \"{{i18n:Events.S&S.Ch1.7H1.Message.1}}\"/changeLocation Town/warp farmer 36 57/faceDirection farmer 2/addTemporaryActor MateoKrobus 16 32 39 62 1 true Character/changeName MateoKrobus Krobus/pause 500/playSound doorClose/globalFadeToClear/viewport 35 59/playsound leafrustle/advancedMove MateoKrobus false -3 0 0 -3 4 10/emote farmer 40/pause 100/jump farmer 5 true/emote farmer 16/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.1}}\"/pause 250/emote farmer 32/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.2}}\"/pause 250/emote farmer 36/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.3}}\"/fade/viewport -1000 -1000/mail MateoHospital/end invisible Mateo"
+    },
+    {
+      "Name": "MateoHospitalScene",
+      "Value": "speak Harvey \"{{i18n:Events.S&S.Ch1.7H1.Harvey.6}}\"/pause 1000/warp Harvey -100 -100/warp farmer -100 -100/warp Mateo 20 11/showFrame Mateo 50/changeLocation EastScarp_LavaMine/bgColor 0 0 0/ambientLight 0 0 0/viewport 17 12/playMusic Upper_Ambient/pause 1000/showFrame Mateo 51/shake Mateo 1000/pause 500/showFrame Mateo 50/playSound stairsdown/pause 300/warp Nova.Eli 6 10/advancedMove Nova.Eli false 0 1 2 10/pause 500/showFrame Nova.Eli 56/pause 750/showFrame Nova.Eli 57/pause 500/emote Nova.Eli 16 true/showFrame Nova.Eli 87/pause 750/showFrame Nova.Eli 0/faceDirection Nova.Eli 1/speed Nova.Eli 5/advancedMove Nova.Eli false 13 0 1 10/textAboveHead Nova.Eli \"{{i18n:Events.S&S.Ch1.7H1.NovaEli.1}}\"/pause 1000/textAboveHead Mateo \"{{i18n:Events.S&S.Ch1.7H1.Mateo.9}}\"/pause 3000/showFrame Nova.Eli 20/speak Nova.Eli \"{{i18n:Events.S&S.Ch1.7H1.NovaEli.2}}\"/showFrame Mateo 0/pause 1000/shake Mateo 1000/pause 1000/showFrame Mateo 51/shake Mateo 1000/pause 1000/showFrame Mateo 50/emote Nova.Eli 28/showFrame Nova.Eli 21/speak Nova.Eli \"{{i18n:Events.S&S.Ch1.7H1.NovaEli.3}}\"/globalFade/viewport -1000 -1000/pause 1000/speak Nova.Eli \"{{i18n:Events.S&S.Ch1.7H1.NovaEli.4}}\"/pause 100/playSound throw/stopMusic/changeLocation Town/warp farmer 36 57/faceDirection Nova.Eli 2/showFrame Nova.Eli 0/warp Nova.Eli 33 57/showFrame Nova.Eli 67/faceDirection farmer 2/addTemporaryActor MateoKrobus 16 32 39 62 1 true Character/changeName MateoKrobus Krobus/pause 500/playSound doorClose/globalFadeToClear/viewport 35 59/playsound leafrustle/advancedMove MateoKrobus false -3 0 0 -3 4 10/emote farmer 40/pause 100/jump farmer 5 true/emote farmer 16/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.1.2}}\"/speed Nova.Eli 2/advancedMove Nova.Eli false 0 2 2 0 4 10/pause 750/speak Nova.Eli \"{{i18n:Events.S&S.Ch1.7H1.NovaEli.5}}\"/pause 250/emote farmer 32/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.2}}\"/faceDirection Nova.Eli 1/emote Nova.Eli 28/faceDirection Nova.Eli 0/pause 250/emote farmer 36/speak MateoKrobus \"{{i18n:Events.S&S.Ch1.7H1.Krobus.3}}\"/fade/viewport -1000 -1000/message \"{{i18n:Events.S&S.Ch1.7H1.Message.1}}\"/mail MateoHospital/end invisible Mateo",
+      "When": {
+        "HasMod: |contains=TenebrousNova.EliDylan.CP": true,
+        "Eli&DylanExtras": true
+      }
+    },
+    /*
+    {
+      "Name": "HectorIntroRequirement",
+      "Value": "SnS.Ch2.Hector.1/e SnS.Ch1.Mateo.14/t 0800 2200/n Hector_SpecialOrders_Pentacle1/n Hector_SpecialOrders_Pentacle2/n Hector_SpecialOrders_Pentacle3/n Hector_SpecialOrders_Pentacle4/F",
+      "When": {
+        "SkipIntroQuest_Setting": false
+      }
+    },
+    {
+      "Name": "HectorIntroRequirement",
+      "Value": "SnS.Ch2.Hector.1/e SnS.Ch1.Mateo.14/t 0800 2200/F",
+      "When": {
+        "SkipIntroQuest_Setting": true
+      }
+    },
+    */
+    {
+      "Name": "HectorRomance",
+      "Value": "Romantic",
+      "When": {
+        "Relationship:Hector |contains=Dating, Engaged, Married": true
+      }
+    },
+    {
+      "Name": "HectorRomance",
+      "Value": "Platonic",
+      "When": {
+        "Relationship:Hector |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "HectorRelationshipStatus",
+      "Value": "false"
+    },
+    {
+      "Name": "HectorRelationshipStatus",
+      "Value": "true",
+      "When": {
+        "HasFlag |contains=HectorRomanticFlag": true
+      }
+    },
+    {
+      "Name": "CirrusRelationshipStatus",
+      "Value": "false",
+      "When": {
+        "HasFlag |contains=CirrusRomanticFlag": false
+      }
+    },
+    {
+      "Name": "CirrusRelationshipStatus",
+      "Value": "true",
+      "When": {
+        "HasFlag |contains=CirrusRomanticFlag": true
+      }
+    },
+    {
+      "Name": "CirrusRomance",
+      "Value": "Romantic",
+      "When": {
+        "Relationship:Cirrus |contains=Dating": true
+      }
+    },
+    {
+      "Name": "CirrusRomance",
+      "Value": "Platonic",
+      "When": {
+        "Relationship:Cirrus |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "TrueName",
+      "Value": "{{i18n:Core.Hector.Name}}"
+    },
+    {
+      "Name": "TrueName",
+      "Value": "{{i18n:Core.Biróg.Name}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "TrueShape",
+      "Value": "{{Random: male, female|key=hector-gender}}"
+    },
+    {
+      "Name": "TrueShape",
+      "Value": "{{Random: male, female, trueshape|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "MateoNickname",
+      "Value": "@",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "MateoNickname",
+      "Value": "Sunshine",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": true
+      }
+    },
+    {
+      "Name": "CirrusIntro_EnD_Setup",
+      "Value": "farmer 23 18 2 Hector 24 19 3 Mateo 22 19 1 Cirrus 33 18 2 Sam 33 20 0 Abigail 34 19 0 Sebastian 32 19 0 Gus 13 18 2 Emily 17 17 0 Willy 17 22 2 Clint 19 23 3 Pierre 11 20 0 Shane 21 17 2 Pam 7 18 1 Leah 2 20 1 Elliott 4 19 2 Harvey 18 20 0 Marnie 8 22 3 Lewis 9 22 1"
+    },
+    {
+      "Name": "CirrusIntro_EnD_Setup",
+      "Value": "{{CirrusIntro_EnD_Setup}} Nova.Eli -999 -999 0 Nova.Dylan -999 -999 0",
+      "When": {
+        "HasMod: |contains=TenebrousNova.EliDylan.CP": true,
+        "Eli&DylanExtras": true
+      }
+    },
+    {
+      "Name": "CirrusIntro_EnD",
+      "Value": "pause 200/emote Cirrus 40/pause 200/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.Default.Cirrus.01}}\"/globalFade/viewport -999 -999/speak Hector \"{{i18n:Events.Events.ED.SnS.Ch3.Default.Hector.02}}\"/speak Mateo \"{{i18n:Events.Events.ED.SnS.Ch3.Default.Mateo.03}}\"/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.Default.Cirrus.04}}\"/message \"{{i18n:Events.Events.ED.SnS.Ch3.Default.Message.05}}\"/end"
+    },
+    {
+      "Name": "CirrusIntro_EnD",
+      "Value": "pause 200/playSound doorClose/warp Nova.Eli 14 23/speed Nova.Eli 5/advancedMove Nova.Eli false 0 -2 12 0 0 -2 5 0 0 -1 1 10/pause 1000/textAboveHead Nova.Eli \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Eli.01}}\" true/faceDirection Clint 0/emote Clint 16 true/playSound doorClose/faceDirection Harvey 1/warp Nova.Dylan 14 23/speed Nova.Dylan 4/advancedMove Nova.Dylan false 0 -2 12 0 0 -2 5 0 1 10/faceDirection Cirrus 3/emote Cirrus 16 true/pause 250/textAboveHead Nova.Dylan \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Dylan.02}}\" true/faceDirection Mateo 3/emote Mateo 8/faceDirection Harvey 0/advancedMove Mateo false 0 1 4 10/faceDirection Clint 3/pause 2000/shake Nova.Eli 1000/pause 1000/speak Nova.Eli \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Eli.03}}\"/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Cirrus.04}}\"/pause 500/playSound throw true/positionOffset Nova.Eli 110 0/showFrame Nova.Eli 28/showFrame Cirrus 28/emote Nova.Eli 20 true/pause 500/emote Nova.Dylan 32/shake Nova.Eli 1000 true/shake Cirrus 1000/pause 1000/speak Nova.Eli \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Eli.05}}\"/showFrame Nova.Eli 4 true/playSound dwop/shake Nova.Eli 200/warp Nova.Eli 32 18/pause 500/speak Mateo \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Mateo.06}}\"/faceDirection Cirrus 2 true/faceDirection Nova.Eli 2/emote Cirrus 60/speak Nova.Eli \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Eli.07}}\"/emote Nova.Dylan 16 true/jump Nova.Dylan/speak Nova.Dylan \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Dylan.08}}\"/textAboveHead Hector \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Hector.09}}\"/advancedMove Cirrus false 0 1 -1 0 3 10/faceDirection farmer 3/pause 1500/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Cirrus.10}}\"/speak Nova.Dylan \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Dylan.11}}\"/pause 250/positionOffset Cirrus -40 0/showFrame Nova.Dylan 28/showFrame Cirrus 28/shake Nova.Dylan 1000 true/shake Cirrus 1000 true/emote Nova.Eli 32 true/pause 250/emote farmer 32/showFrame Nova.Dylan 4 true/playSound dwop/shake Cirrus 200/warp Cirrus 32 19/250/speak Hector \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Hector.12}}\"/faceDirection Cirrus 1/faceDirection farmer 0/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Cirrus.13}}\"/speak Nova.Dylan \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Dylan.14}}\"/jump Nova.Eli/speak Nova.Eli \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Nova.Eli.15}}\"/emote Hector 32 true/speak Mateo \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Mateo.16}}\"/jump Hector/speak Hector \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Hector.17}}\"/speak Mateo \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Mateo.18}}\"/speak Cirrus \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Cirrus.19}}\"/globalFade/viewport -999 -999/playSound doorClose/pause 1000/speak Sam \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Sam.20}}\"/speak Abigail \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Abigail.21}}\"/speak Sebastian \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Sebastian.22}}\"/message \"{{i18n:Events.Events.ED.SnS.Ch3.EnD.Message.23}}\"/end",
+      "When": {
+        "HasMod: |contains=TenebrousNova.EliDylan.CP": true,
+        "Eli&DylanExtras": true
+      }
+    },
+    {
+      "Name": "CirrusSong1",
+      "Value": "null"
+    },
+    {
+      "Name": "CirrusSong1",
+      "Value": "{{i18n:Events.CirrusSong.1}}",
+      "When": {
+        "HasFlag |contains=CirrusSong1A": true
+      }
+    },
+    {
+      "Name": "CirrusSong1",
+      "Value": "{{i18n:Events.CirrusSong.2}}",
+      "When": {
+        "HasFlag |contains=CirrusSong1B": true
+      }
+    },
+    {
+      "Name": "CirrusSong2",
+      "Value": "null"
+    },
+    {
+      "Name": "CirrusSong2",
+      "Value": "{{i18n:Events.CirrusSong.3}}",
+      "When": {
+        "HasFlag |contains=CirrusSong2A": true
+      }
+    },
+    {
+      "Name": "CirrusSong2",
+      "Value": "{{i18n:Events.CirrusSong.4}}",
+      "When": {
+        "HasFlag |contains=CirrusSong2B": true
+      }
+    },
+    {
+      "Name": "CirrusSong3",
+      "Value": "null"
+    },
+    {
+      "Name": "CirrusSong3",
+      "Value": "{{i18n:Events.CirrusSong.5}}",
+      "When": {
+        "HasFlag |contains=CirrusSong3A": true
+      }
+    },
+    {
+      "Name": "CirrusSong3",
+      "Value": "{{i18n:Events.CirrusSong.6}}",
+      "When": {
+        "HasFlag |contains=CirrusSong3B": true
+      }
+    },
+    //TRUESHAPE: FALSE
+    {
+      "Name": "HectorPN1", // He | She
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.1}}, {{i18n:Core.HectorPN.F.1}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": false
+      }
+    },
+    {
+      "Name": "HectorPN2", // Him | Her
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.2}}, {{i18n:Core.HectorPN.F.2}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": false
+      }
+    },
+    {
+      "Name": "HectorPN3", // His | Hers
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.3}}, {{i18n:Core.HectorPN.F.3}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": false
+      }
+    },
+    {
+      "Name": "HectorPN4", // Himself | Herself
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.4}}, {{i18n:Core.HectorPN.F.4}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": false
+      }
+    },
+    //TRUESHAPE: TRUE
+    {
+      "Name": "HectorPN1", // He | She
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.1}}, {{i18n:Core.HectorPN.F.1}}, {{i18n:Core.HectorPN.F.1}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "HectorPN2", // Him | Her
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.2}}, {{i18n:Core.HectorPN.F.2}}, {{i18n:Core.HectorPN.F.2}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "HectorPN3", // His | Hers
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.3}}, {{i18n:Core.HectorPN.F.3}}, {{i18n:Core.HectorPN.F.3}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "HectorPN4", // Himself | Herself
+      "Value": "{{Random: {{i18n:Core.HectorPN.M.4}}, {{i18n:Core.HectorPN.F.4}}, {{i18n:Core.HectorPN.F.4}}|key=hector-gender}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.16": true
+      }
+    },
+    {
+      "Name": "HectorPronouns",
+      "Value": "|HPN1={{Lowercase:{{HectorPN1}}}} |HPN2={{Lowercase:{{HectorPN2}}}} |HPN3={{Lowercase:{{HectorPN3}}}} |HPN4={{Lowercase:{{HectorPN4}}}} |CHPN1={{HectorPN1}} |CHPN2={{HectorPN2}} |CHPN3={{HectorPN3}} |CHPN4={{HectorPN4}}"
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "null"
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "null"
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "null"
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.1}}",
+      "When": {
+        "HasFlag |contains=DnDWizard": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.2}}",
+      "When": {
+        "HasFlag |contains=DnDWizard": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.3}}",
+      "When": {
+        "HasFlag |contains=DnDWizard": true
+      }
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.4}}",
+      "When": {
+        "HasFlag |contains=DnDRanger": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.5}}",
+      "When": {
+        "HasFlag |contains=DnDRanger": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.6}}",
+      "When": {
+        "HasFlag |contains=DnDRanger": true
+      }
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.7}}",
+      "When": {
+        "HasFlag |contains=DnDPaladin": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.8}}",
+      "When": {
+        "HasFlag |contains=DnDPaladin": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.9}}",
+      "When": {
+        "HasFlag |contains=DnDPaladin": true
+      }
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.10}}",
+      "When": {
+        "HasFlag |contains=DnDBard": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.11}}",
+      "When": {
+        "HasFlag |contains=DnDBard": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.12}}",
+      "When": {
+        "HasFlag |contains=DnDBard": true
+      }
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.13}}",
+      "When": {
+        "HasFlag |contains=DnDCleric": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.14}}",
+      "When": {
+        "HasFlag |contains=DnDCleric": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.15}}",
+      "When": {
+        "HasFlag |contains=DnDCleric": true
+      }
+    },
+    {
+      "Name": "DynamicDnDClass",
+      "Value": "{{i18n:DynamicD&D.16}}",
+      "When": {
+        "HasFlag |contains=DnDRogue": true
+      }
+    },
+    {
+      "Name": "DnDClassQQ",
+      "Value": "{{i18n:DynamicD&D.17}}",
+      "When": {
+        "HasFlag |contains=DnDRogue": true
+      }
+    },
+    {
+      "Name": "DnDClassResponse",
+      "Value": "{{i18n:DynamicD&D.18}}",
+      "When": {
+        "HasFlag |contains=DnDRogue": true
+      }
+    },
+    {
+      "Name": "CirrusFlirt1",
+      "Value": "{{i18n:CirrusFlirt.1}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": false
+      }
+    },
+    {
+      "Name": "CirrusFlirt1",
+      "Value": "{{i18n:CirrusFlirt.2}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": true
+      }
+    },
+    {
+      "Name": "CirrusFlirt2",
+      "Value": "{{i18n:CirrusFlirt.3}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": false
+      }
+    },
+    {
+      "Name": "CirrusFlirt2",
+      "Value": "{{i18n:CirrusFlirt.4}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": true
+      }
+    },
+    {
+      "Name": "CirrusFlirt3",
+      "Value": "{{i18n:CirrusFlirt.5}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": false
+      }
+    },
+    {
+      "Name": "CirrusFlirt3",
+      "Value": "{{i18n:CirrusFlirt.6}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": true
+      }
+    },
+    {
+      "Name": "CirrusFlirt4",
+      "Value": "fade/viewport -1000 -1000/message \"{{i18n:CirrusFlirt.7}}\"",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": false
+      }
+    },
+    {
+      "Name": "CirrusFlirt4",
+      "Value": "{{i18n:CirrusFlirt.8}}",
+      "When": {
+        "HasFlag |contains=CirrusFlirt": true
+      }
+    },
+    {
+      "Name": "Cirrus10HEnding",
+      "Value": "speak Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Cirrus.01}}\"/end",
+      "When": {
+        "Relationship:Cirrus |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "Cirrus10HEnding",
+      "Value": "message \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Message.01}}\"/warp Mateo -100 -100 true/warp Hector -100 -100 true/warp Cirrus 26 30 true/showFrame Cirrus 0 true/faceDirection Cirrus 2 true/warp farmer 26 31 true/faceDirection farmer 2 true/stopAnimation Cirrus/viewport 26 27/advancedMove farmer false 0 2 2 10/textAboveHead Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Cirrus.02}}\"/emote farmer 8/waitForAllStationary/advancedMove farmer false 0 -2 4 10/pause 500/speak Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Cirrus.03}}\"/pause 500/positionOffset farmer 0 -4/pause 5/positionOffset farmer 0 -4/pause 5/positionOffset farmer 0 -4/showFrame farmer 15/specificTemporarySprite heart 26 28/showFrame Cirrus 39/pause 2000/fade/viewport -1000 -1000/speak Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Cirrus.04}}\"/quickQuestion {{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.QuickQuestion.05}}#{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.QuickQuestion.06}}#{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.QuickQuestion.07}}(break)\\warp farmer 18 5 true\\faceDirection farmer 1 true\\warp Cirrus 20 5 true\\faceDirection Cirrus 3 true\\positionOffset farmer 40 0 true\\positionOffset farmer 0 20 true\\positionOffset Cirrus -40 0 true\\changePortrait Cirrus beach\\changeSprite Cirrus beach\\globalFadeToClear\\viewport 27 14\\speak Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Cirrus.08}}\"\\animate Cirrus false true 100 28 28\\animate farmer false true 100 101 101\\specificTemporarySprite heart 19 3\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\pause 100\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\pause 2500\\fade\\viewport -1000 -1000\\end newDay(break)speak Cirrus \"{{i18n:Events.SnS.Ch3.Cirrus.10h.End.Platonic.Romantic.Cirrus.09}}\"\\end",
+      "When": {
+        "Relationship:Cirrus |contains=Dating, Engaged, Married": true
+      }
+    },
+    /*"CirrusRainbowHair": {
+      "AllowValues": "Random, Red, Orange, Yellow, Blue",
+      "Default": "Blue",
+      "AllowBlank": false,
+      "AllowMultiple": false,
+      "Description": "Gives Cirrus a variety of dyed hair colors, or optionally choose a static one.",
+      "Section": "Overlays"
+    }*/
+    {
+      "Name": "CirrusContacts",
+      "Value": "{{CirrusRainbowEyes}}"
+    },
+    {
+      "Name": "CirrusContacts",
+      "Value": "{{Random: Purple, Brown, Gray, Blue, Green |key=CirrusContacts}}",
+      "When": {
+        "CirrusRainbowEyes": "DailyRandom"
+      }
+    },
+    {
+      "Name": "CirrusHairColor",
+      "Value": "{{CirrusRainbowHair}}"
+    },
+    {
+      "Name": "CirrusHairColor",
+      "Value": "{{Random: Brown, Red, Orange, Yellow, Blue |key=CirrusHair}}",
+      "When": {
+        "CirrusRainbowHair": "DailyRandom"
+      }
+    },
+    {
+      "Name": "CirrusHairColor",
+      "Value": "{{KCC.SnS/CirrusHair}}",
+      "When": {
+        "CirrusRainbowHair |contains=RealisticRandom": true
+      }
+    },
+    {
+      "Name": "CirrusMakeup",
+      "Value": "{{CirrusHairColor}}"
+    },
+    {
+      "Name": "CirrusMakeup",
+      "Value": "Red",
+      "When": {
+        "CirrusSmokeyEye": true
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue1",
+      "Value": "{{i18n:Events.S&S.Ch1.0H2.Mateo.3}}",
+      "When": {
+        "MateoTrollHeritage": false
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue1",
+      "Value": "{{i18n:Events.S&S.Ch1.0H2.Mateo.3.TrollHeritage}}",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue2",
+      "Value": "{{i18n:Events.S&S.Ch1.7H1.Mateo.3}}",
+      "When": {
+        "MateoTrollHeritage": false
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue2",
+      "Value": "{{i18n:Events.S&S.Ch1.7H1.Mateo.3.TrollHeritage}}",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "MateoFlirt1",
+      "Value": "{{i18n:Events.S&S.Ch1.8H1.Mateo.7}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": false
+      }
+    },
+    {
+      "Name": "MateoFlirt1",
+      "Value": "{{i18n:Events.S&S.Ch1.8H1.Mateo.7.Flirty{{PlayerPronouns}}}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": true
+      }
+    },
+    {
+      "Name": "MateoFlirt2",
+      "Value": "{{i18n:Events.S&S.Ch1.8H2.Mateo.13}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": false
+      }
+    },
+    {
+      "Name": "MateoFlirt2",
+      "Value": "{{i18n:Events.S&S.Ch1.8H2.Mateo.13.Flirty}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": true
+      }
+    },
+    {
+      "Name": "MateoFlirt3",
+      "Value": "{{i18n:Events.S&S.Ch1.B1.Mateo.4}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": false
+      }
+    },
+    {
+      "Name": "MateoFlirt3",
+      "Value": "{{i18n:Events.S&S.Ch1.B1.Mateo.4.Flirty}}",
+      "When": {
+        "HasFlag |contains=MateoFlirt": true
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue3",
+      "Value": "{{i18n:Events.S&S.Ch1.12H.Mateo.8}}",
+      "When": {
+        "MateoTrollHeritage": false
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue3",
+      "Value": "{{i18n:Events.S&S.Ch1.12H.Mateo.8.TrollHeritage}}",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue4",
+      "Value": "{{i18n:Events.S&S.Ch1.10H.Mateo.3}}",
+      "When": {
+        "MateoTrollHeritage": false
+      }
+    },
+    {
+      "Name": "TrollHeritageDialogue4",
+      "Value": "{{i18n:Events.S&S.Ch1.10H.Mateo.3.TrollHeritage}}",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "10HSVEBushRemovalServices",
+      "Value": "pause 1",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Name": "10HSVEBushRemovalServices",
+      "Value": "removeTile 43 26 AlwaysFront/removeTile 44 26 AlwaysFront/removeTile 45 26 AlwaysFront/removeTile 43 27 Front/removeTile 44 27 Front/removeTile 45 27 Front/removeTile 43 28 Buildings/removeTile 44 28 Buildings/removeTile 45 28 Buildings"
+    },
+    {
+      "Name": "SVEReroutingServices",
+      "Value": "advancedMove farmer false 0 4 7 0 0 -6 1 10/advancedMove Krobus false 0 4 7 0 0 -5 1 10"
+    },
+    {
+      "Name": "SVEReroutingServices",
+      "Value": "advancedMove farmer false 0 5 7 0 0 -6 1 10/advancedMove Krobus false 0 5 7 0 0 -5 1 10",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Name": "HectorFlirt1",
+      "Value": "{{i18n:Events.S&S.Ch2.9H.Hector.14}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": false
+      }
+    },
+    {
+      "Name": "HectorFlirt1",
+      "Value": "{{i18n:Events.S&S.Ch2.9H.Hector.14.Flirty}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": true
+      }
+    },
+    {
+      "Name": "HectorFlirt2",
+      "Value": "{{i18n:Events.S&S.Ch2.10H1.Hector.9}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": false
+      }
+    },
+    {
+      "Name": "HectorFlirt2",
+      "Value": "{{i18n:Events.S&S.Ch2.10H1.Hector.9.Flirty}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": true
+      }
+    },
+    {
+      "Name": "HectorFlirt3",
+      "Value": "{{i18n:Events.S&S.Ch2.10H2.Hector.6}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": false
+      }
+    },
+    {
+      "Name": "HectorFlirt3",
+      "Value": "{{i18n:Events.S&S.Ch2.10H2.Hector.6.Flirty}}",
+      "When": {
+        "HasFlag |contains=HectorFlirt": true
+      }
+    },
+    {
+      "Name": "SVEMarlon",
+      "Value": "MarlonFey",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Name": "SVEMarlon",
+      "Value": "Marlon"
+    },
+    {
+      "Name": "SVEGunther",
+      "Value": "GuntherSilvian",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Name": "SVEGunther",
+      "Value": "Gunther"
+    },
+    {
+      "Name": "MateoFlirt4",
+      "Value": "{{i18n:MateoFlirt.4.1}}",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": true
+      }
+    },
+    {
+      "Name": "MateoFlirt4",
+      "Value": "{{i18n:MateoFlirt.4.2}}",
+      "When": {
+        "Relationship:Mateo |contains=Dating, Engaged, Married": false
+      }
+    },
+    {
+      "Name": "CirrusSpousePatioOnOff",
+      "Value": "CirrusSpousePatio",
+      "When": {
+        "CirrusSpousePatioConfig": true
+      }
+    },
+    {
+      "Name": "CirrusSpousePatioOnOff",
+      "Value": "SpousePatioEmpty",
+      "When": {
+        "CirrusSpousePatioConfig": false
+      }
+    },
+    {
+      "Name": "MateoSpousePatioOnOff",
+      "Value": "MateoSpousePatio",
+      "When": {
+        "MateoSpousePatioConfig": true
+      }
+    },
+    {
+      "Name": "MateoSpousePatioOnOff",
+      "Value": "SpousePatioEmpty",
+      "When": {
+        "MateoSpousePatioConfig": false
+      }
+    },
+    {
+      "Name": "HectorSpousePatioOnOff",
+      "Value": "HectorSpousePatio",
+      "When": {
+        "HectorSpousePatioConfig": true
+      }
+    },
+    {
+      "Name": "HectorSpousePatioOnOff",
+      "Value": "SpousePatioEmpty",
+      "When": {
+        "HectorSpousePatioConfig": false
+      }
+    },
+    {
+      "Name": "CirrusSpouseRoomOnOff",
+      "Value": "CirrusSpouseRoom",
+      "When": {
+        "CirrusSpouseRoomConfig": true
+      }
+    },
+    {
+      "Name": "CirrusSpouseRoomOnOff",
+      "Value": "SpouseRoomEmpty",
+      "When": {
+        "CirrusSpouseRoomConfig": false
+      }
+    },
+    {
+      "Name": "MateoSpouseRoomOnOff",
+      "Value": "MateoSpouseRoom",
+      "When": {
+        "MateoSpouseRoomConfig": true
+      }
+    },
+    {
+      "Name": "MateoSpouseRoomOnOff",
+      "Value": "SpouseRoomEmpty",
+      "When": {
+        "MateoSpouseRoomConfig": false
+      }
+    },
+    {
+      "Name": "HectorSpouseRoomOnOff",
+      "Value": "HectorSpouseRoom",
+      "When": {
+        "HectorSpouseRoomConfig": true
+      }
+    },
+    {
+      "Name": "HectorSpouseRoomOnOff",
+      "Value": "SpouseRoomEmpty",
+      "When": {
+        "HectorSpouseRoomConfig": false
+      }
+    },
+    {
+      "Name": "RoslinStygiumComment",
+      "Value": "{{i18n:RoslinStygiumComment.1}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.17": true
+      }
+    },
+    {
+      "Name": "RoslinStygiumComment",
+      "Value": "{{i18n:RoslinStygiumComment.2}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch1.Mateo.17": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage1",
+      "Value": "{{i18n:Events.S&S.Ch1.7H1.Mateo.5}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage1",
+      "Value": "{{i18n:Events.S&S.Ch1.7H1.Mateo.5.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage2",
+      "Value": "{{i18n:CT.Marlon.MateoPain}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage2",
+      "Value": "{{i18n:CT.Marlon.MateoPain.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage3",
+      "Value": "{{i18n:Core.Mateo.WinterEnd}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage3",
+      "Value": "{{i18n:Core.Mateo.WinterEnd.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage4",
+      "Value": "{{i18n:Core.Mateo.Winter.LateHeart.16}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage4",
+      "Value": "{{i18n:Core.Mateo.Winter.LateHeart.16.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage5",
+      "Value": "{{i18n:Marriage.Mateo.Indoor.Night.4}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage5",
+      "Value": "{{i18n:Marriage.Mateo.Indoor.Night.4.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage6",
+      "Value": "{{i18n:Festivals.Mateo.spring13.True.1}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage6",
+      "Value": "{{i18n:Festivals.Mateo.spring13.True.1.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage7",
+      "Value": "{{i18n:Festivals.Mateo.spring13.True.1}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage7",
+      "Value": "{{i18n:Festivals.Mateo.spring13.True.1.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage8",
+      "Value": "{{i18n:Events.S&S.Ch1.7H2.Mateo.2}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage8",
+      "Value": "{{i18n:Events.S&S.Ch1.7H2.Mateo.2.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage9",
+      "Value": "{{i18n:Core.Hector.GiveFlowersA}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage9",
+      "Value": "{{i18n:Core.Hector.GiveFlowersA.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage10",
+      "Value": "{{i18n:Core.Hector.GiveFlowersB}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage10",
+      "Value": "{{i18n:Core.Hector.GiveFlowersB.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage11",
+      "Value": "{{i18n:Core.Hector.StardropGiftA}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage11",
+      "Value": "{{i18n:Core.Hector.StardropGiftA.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage12",
+      "Value": "{{i18n:Core.Hector.StardropGiftB}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage12",
+      "Value": "{{i18n:Core.Hector.StardropGiftB.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage13",
+      "Value": "{{i18n:Core.Hector.ResortBar}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage13",
+      "Value": "{{i18n:Core.Hector.ResortBar.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage14",
+      "Value": "{{i18n:Core.Hector.Generic.LateHeart.8}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage14",
+      "Value": "{{i18n:Core.Hector.Generic.LateHeart.8.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage15",
+      "Value": "{{i18n:Marriage.Hector.Winter8}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage15",
+      "Value": "{{i18n:Marriage.Hector.Winter8.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage16",
+      "Value": "{{i18n:Gifts.Hector.GiftReaction.CategoryArtisanalGoods}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage16",
+      "Value": "{{i18n:Gifts.Hector.GiftReaction.CategoryArtisanalGoods.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage17",
+      "Value": "{{i18n:Movies.Hector.MiracleAtColdstarRanch.1}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage17",
+      "Value": "{{i18n:Movies.Hector.MiracleAtColdstarRanch.1.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage18",
+      "Value": "{{i18n:Festivals.Hector.summer28.True.1}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage18",
+      "Value": "{{i18n:Festivals.Hector.summer28.True.1.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage19",
+      "Value": "{{i18n:Events.S&S.Ch2.0H.Hector.4}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage19",
+      "Value": "{{i18n:Events.S&S.Ch2.0H.Hector.4.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage20",
+      "Value": "{{i18n:CT.Hector.HectorEngaged}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage20",
+      "Value": "{{i18n:CT.Hector.HectorEngaged.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage21",
+      "Value": "{{i18n:CT.Hector.JunaBeachBallet}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage21",
+      "Value": "{{i18n:CT.Hector.JunaBeachBallet.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage22",
+      "Value": "{{i18n:CT.Hector.MeetTheCats}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage22",
+      "Value": "{{i18n:CT.Hector.MeetTheCats.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage23",
+      "Value": "{{i18n:Core.Cirrus.PlayerKilled.Skull.04}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage23",
+      "Value": "{{i18n:Core.Cirrus.PlayerKilled.Skull.04.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "FilteredLanguage24",
+      "Value": "{{i18n:Events.SnS.Ch2.Roslin.3}}",
+      "When": {
+        "ProfanityFilter": false
+      }
+    },
+    {
+      "Name": "FilteredLanguage24",
+      "Value": "{{i18n:Events.SnS.Ch2.Roslin.3.Filtered}}",
+      "When": {
+        "ProfanityFilter": true
+      }
+    },
+    {
+      "Name": "HectorIsland",
+      "Value": "false"
+    },
+    {
+      "Name": "HectorIsland",
+      "Value": "true",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch2.Hector.6": true
+      }
+    },
+    {
+      "Name": "CirrusIsland",
+      "Value": "false",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": false
+      }
+    },
+    {
+      "Name": "CirrusIsland",
+      "Value": "true",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true
+      }
+    },
+    {
+      "Name": "VariableTimegate",
+      "Value": "0",
+      "When": {
+        "TimegateConfig": "OneDay"
+      }
+    },
+    {
+      "Name": "VariableTimegate",
+      "Value": "2",
+      "When": {
+        "TimegateConfig": "ThreeDays"
+      }
+    },
+    {
+      "Name": "VariableTimegate",
+      "Value": "6",
+      "When": {
+        "TimegateConfig": "OneWeek"
+      }
+    },
+    {
+      "Name": "MateoTheme",
+      "Value": "MateoTheme.ogg",
+      "When": {
+        "MateoThemeConfig": "New"
+      }
+    },
+    {
+      "Name": "MateoTheme",
+      "Value": "MateoTheme_Old.ogg",
+      "When": {
+        "MateoThemeConfig": "Old"
+      }
+    },
+    {
+      "Name": "HectorTheme",
+      "Value": "HectorTheme.ogg",
+      "When": {
+        "HectorThemeConfig": "New"
+      }
+    },
+    {
+      "Name": "HectorTheme",
+      "Value": "HectorTheme_Old.ogg",
+      "When": {
+        "HectorThemeConfig": "Old"
+      }
+    },
+    {
+      "Name": "CirrusNickname",
+      "Value": "|Nickname = {{i18n: Strings.Cirrus.Nickname{{Random:1,2}}}}"
+    },
+    {
+      "Name": "CountForFarmingAchievements",
+      "Value": "true"
+    },
+    {
+      "Name": "CountForFarmingAchievements",
+      "Value": "false",
+      "When": {
+        "ExcludeFromPerfection": true
+      }
+    },
+    {
+      "Name": "MechanicalLimbs",
+      "Value": "{{Random: Arm, Leg|key=dandelion-limb}}"
+    },
+    {
+      "Name": "HectorAlreadyDating",
+      "Value": "speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.14}}\"/pause 250/stopMusic/quickQuestion #{{i18n:Events.S&S.Ch2.10H2.Q1.Answer.1}}#{{i18n:Events.S&S.Ch2.10H2.Q1.Answer.2}}(break)addMailReceived HectorRomanticFlag\\setDating Hector\\addConversationTopic HectorMarriageCountdown {{DatingLength}}\\playMusic starshoot\\speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Q1.Response.1}}\"\\animate farmer true true 200 102 103\\pause 250\\speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Response.2}}\"\\stopAnimation farmer\\faceDirection farmer 3 true\\faceDirection Hector 1\\speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.15}}\"\\animate Hector false true 28 28\\animate farmer true true 100 101 101\\positionOffset Hector 2 0\\pause 100\\specificTemporarySprite heart 11 9\\positionOffset Hector 2 0\\positionOffset farmer -2 0\\pause 100\\positionOffset Hector 2 0\\positionOffset farmer -2 0\\pause 100\\positionOffset Hector 2 0\\positionOffset farmer -2 0(break)playMusic starshoot\\speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.16}}\""
+    },
+    {
+      "Name": "HectorAlreadyDating",
+      "Value": "speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.14.NoRomance}}\"/pause 250/stopMusic/playMusic starshoot/speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.16}}\"",
+      "When": {
+        "Query: {{HasFlag |contains=MateoRomanticFlag}} OR {{HasFlag |contains=CirrusRomanticFlag}} OR {{HasMod |contains=ApryllForever.CPPolyamorySweet}} OR {{HasMod |contains=aedenthorn.FreeLove}}": "true"
+      }
+    },
+    {
+      "Name": "HectorAlreadyDating",
+      "Value": "speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.14.NoRomance}}\"/pause 250/stopMusic/playMusic starshoot/speak Hector \"{{i18n:Events.S&S.Ch2.10H2.Hector.16}}\"",
+      "When": {
+        "HasMod |contains=EnderTedi.Polyamory": true,
+        "EnderTedi.Polyamory/IsDatingAnyone": true
+      }
+    },
+    {
+      "Name": "CirrusAlreadyDating",
+      "Value": "quickQuestion {{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.QuickQuestion.01}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.QuickQuestion.02}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.QuickQuestion.03}}(break)speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.Cirrus.04}}\"(break)addMailReceived CirrusRomanticFlag\\setDating Cirrus\\addConversationTopic CirrusMarriageCountdown {{DatingLength}}\\warp Sam -100 100\\warp Sebastian -100 -100\\warp Abigail -100 -100\\warp farmer 18 5 true\\faceDirection farmer 1 true\\warp Cirrus 20 5 true\\faceDirection Cirrus 3 true\\positionOffset farmer 40 0 true\\positionOffset farmer 0 20 true\\positionOffset Cirrus -40 0 true\\changePortrait Cirrus beach\\changeSprite Cirrus beach\\globalFadeToClear\\viewport 27 14\\speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.Cirrus.05}}\"\\animate Cirrus false true 100 28 28\\animate farmer false true 100 101 101\\specificTemporarySprite heart 19 3\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\pause 100\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\positionOffset Cirrus -2 0\\positionOffset farmer 2 0\\pause 2500\\fade\\viewport -1000 -1000\\speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.Cirrus.06}}\"/message \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.Default.Message.07}}\""
+    },
+    {
+      "Name": "CirrusAlreadyDating",
+      "Value": "quickQuestion {{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticHectorMateo.QuickQuestion.01}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticHectorMateo.QuickQuestion.02}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticHectorMateo.QuickQuestion.03}}(break)speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticHectorMateo.Cirrus.04}}\"(break)speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticHectorMateo.Cirrus.05}}\"",
+      "When": {
+        "Query: {{HasFlag |contains=MateoRomanticFlag}} OR {{HasFlag |contains=HectorRomanticFlag}}": "true"
+      }
+    },
+    {
+      "Name": "CirrusAlreadyDating",
+      "Value": "quickQuestion {{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticPolyMono.QuickQuestion.01}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticPolyMono.QuickQuestion.02}}#{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticPolyMono.QuickQuestion.03}}(break)speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticPolyMono.Cirrus.04}}\"(break)speak Cirrus \"{{i18n:Events.Events.SnS.Ch3.CirrusAlreadyDating.RomanticPolyMono.Cirrus.05}}\"",
+      "When": {
+        "HasMod |contains=EnderTedi.Polyamory": true,
+        "EnderTedi.Polyamory/HasMonogamousPartner": true
+      }
+    },
+    {
+      "Name": "MateoWyattActor",
+      "Value": "MateoWyatt.png",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Mateo.1": false
+      }
+    },
+    {
+      "Name": "MateoWyattActor",
+      "Value": "MateoWyatt_Old.png",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch3.Mateo.1": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Dandelion.7.GunnarExtra.1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Dandelion.7.GunnarExtra.1",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.1}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Finale.GunnarExtra.1", //after Roslin & Dandelion
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Finale.GunnarExtra.1",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.5}}\"/addMailReceived GunnarHelpedToo",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Finale.GunnarExtra.2", //After Cirrus's don't panic
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Finale.GunnarExtra.2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.6}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.1",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.7}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.2", //for the farmer/pair off forward
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.8}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.3", //Enable the choice for Gunnar in SoloFarmer intermission
+      "Value": ""
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.3",
+      "Value": "#{{i18n:GunnarFinaleDialogue.9}}",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.1", //Enable the choice for Sen in SoloFarmer intermission
+      "Value": ""
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.1",
+      "Value": "#{{i18n:Events.SnS.Ch4.Intermission.Sen.12}}",
+      "When": {
+        "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true,
+        "HasFlag |contains=LitD_M_SenS_Romantic, DitR_M_SenS_Romantic": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.2", //Enable the choice for Sen in SoloFarmer intermission pt.2
+      "Value": ""
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.2",
+      "Value": "(break)setDating SenS\\addMailReceived SenFoughtDuskspire\\speak SenS \"{{i18n:Events.SnS.Ch4.Intermission.Sen.06}}\"\\speak Mateo \"{{i18n:Events.SnS.Ch4.Intermission.Hector.Mateo.25}}\"\\speak Hector \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Hector.15}}\"\\speak Cirrus \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Cirrus.16}}\"\\speak Roslin \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Roslin.17}}\"\\speak Dandelion \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Dandelion.18}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.11}}\"\\speak Solomon \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Solomon.19}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Mateo 2\\faceDirection farmer 2\\warp Hector -100 -100\\warp Cirrus -100 -100\\warp Mateo -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote SenS 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Message.20}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.SnS.Ch4.Intermission.Mateo.Message.21}}\"\\pause 250\\speak SenS \"{{i18n:Events.SnS.Ch4.Intermission.Sen.09}}\"\\emote SenS 56\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote SenS 16 true\\faceDirection SenS 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 50 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak SenS \"{{i18n:Events.SnS.Ch4.Intermission.Sen.10}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end",
+      "When": {
+        "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true,
+        "HasFlag |contains=LitD_M_SenS_Romantic, DitR_M_SenS_Romantic": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.3",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.3",
+      "Value": "addMailReceived SenHelpedToo",
+      "When": { "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.4",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.4",
+      "Value": "changeSprite SenS SenbrellaSnS",
+      "When": { "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.5",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.5",
+      "Value": "emote SenS 32 true/pause 200/emote farmer 32 true",
+      "When": {
+        "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true,
+        "HasFlag |contains=LitD_M_SenS_Romantic, DitR_M_SenS_Romantic": false
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.5",
+      "Value": "animate SenS? true true 28 28/animate farmer false true 100 101 101/positionOffset SenS? -2 0/pause 100/specificTemporarySprite heart 15 12/positionOffset SenS? -2 0/positionOffset farmer 2 0/pause 100/positionOffset SenS? -2 0/positionOffset farmer 2 0/pause 100/positionOffset SenS? -2 0/positionOffset farmer 2 0",
+      "When": {
+        "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true,
+        "HasFlag |contains=LitD_M_SenS_Romantic, DitR_M_SenS_Romantic": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.6",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.6",
+      "Value": "changeSprite SenS Default/changePortrait SenS Default",
+      "When": { "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true }
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.7",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.SenExtra.7",
+      "Value": "playsound shadowpeep",
+      "When": { "HasMod |contains=7thAxis.LitD.CP, 7thAxis.DitR": true }
+    },
+    {
+      "Name": "LivingWithSen", 
+      "Value": "{{Query: '{{spouse}}' = 'SenS' OR '{{roommate}}' = 'SenS'}}"
+    }, 
+    
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.4", //Enable the choice for Gunnar in SoloFarmer intermission pt.2
+      "Value": ""
+    },
+    {
+      "Name": "SnS.Ch4.Intermissions.GunnarExtra.4",
+      "Value": "(break)setDating MadDog.HashtagBearFam.Gunnar\\addMailReceived GunnarHelpedToo\\speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Events.SnS.Ch4.Intermission.Gunnar.MadDog.HashtagBearFam.Gunnar.16}}\"\\speak Mateo \"{{i18n:Events.SnS.Ch4.Intermission.Gunnar.Mateo.17}}\"\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.42}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Roslin.43}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Dandelion.44}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Solomon.45}}\"\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection MadDog.HashtagBearFam.Gunnar 2\\faceDirection farmer 2\\warp SenS? -100 -100\\warp Mateo -100 -100\\warp Hector -100 -100\\warp Dandelion -100 -100\\warp Cirrus -100 -100\\warp MadDog.HashtagBearFam.Gunnar 14 12\\faceDirection MadDog.HashtagBearFam.Gunnar 2\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote MadDog.HashtagBearFam.Gunnar 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.46}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.47}}\"\\pause 250\\speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Events.SnS.Ch4.Intermission.Gunnar.MadDog.HashtagBearFam.Gunnar.24}}\"\\emote MadDog.HashtagBearFam.Gunnar 40\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote MadDog.HashtagBearFam.Gunnar 16 true\\faceDirection MadDog.HashtagBearFam.Gunnar 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak MadDog.HashtagBearFam.Gunnar \"{{i18n:Events.SnS.Ch4.Intermission.Gunnar.MadDog.HashtagBearFam.Gunnar.25}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end",
+      "When": { "HasMod |contains=MadDog.HashtagBearFam": true }
+    },
+    {
+      "Name": "SnS.Ch4.Intermission.SoloFarmer.QQ",
+      "Value": "/quickQuestion #{{i18n:Events.Finale.SoloFarmer.Default.QuickQuestion.01}}#{{i18n:Events.Finale.SoloFarmer.Default.QuickQuestion.02}}(break)addMailReceived SoloFarmerBattle\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.Default.Mateo.03}}\"\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\speak Mateo \"@!!!$19\\warp Mateo -100 -100\\warp Hector -100 -100\\warp Cirrus -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\warp SenS? -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.Default.Message.04}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.Default.Message.05}}\"\\playMusic SnS.DuskspireLaugh\\emote farmer 16\\faceDirection farmer 2\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\faceDirection farmer 0\\playMusic SnS.SMFSR\\pause 1000\\message \"{{i18n:Events.Finale.SoloFarmer.Default.Message.06}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end(break)addMailReceived FarmerGuildmasterBattle\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.Default.Mateo.07}}\"\\emote farmer 32\\pause 250\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.Default.Hector.08}}\"\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.Default.Cirrus.09}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.Default.Roslin.10}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.Default.Dandelion.11}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.Default.Solomon.12}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Mateo 2\\faceDirection farmer 2\\warp Hector -100 -100\\warp Cirrus -100 -100\\warp SenS? -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote Mateo 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.Default.Message.13}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.Default.Message.14}}\"\\pause 250\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.Default.Mateo.15}}\"\\emote Mateo 56\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote Mateo 16 true\\faceDirection Mateo 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.Default.Mateo.16}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end"
+    },
+    {
+      "Name": "SnS.Ch4.Intermission.SoloFarmer.QQ",
+      "Value": "/quickQuestion #{{i18n:Events.Finale.SoloFarmer.RomanticChoice.QuickQuestion.01}}#{{i18n:Events.Finale.SoloFarmer.RomanticChoice.QuickQuestion.02}}#{{i18n:Events.Finale.SoloFarmer.RomanticChoice.QuickQuestion.03}}#{{i18n:Events.Finale.SoloFarmer.RomanticChoice.QuickQuestion.04}}#{{i18n:Events.Finale.SoloFarmer.RomanticChoice.QuickQuestion.05}}{{SnS.Ch4.Intermissions.GunnarExtra.3}}{{SnS.Ch4.Intermissions.SenExtra.1}}(break)addMailReceived SoloFarmerBattle\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.06}}\"\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\speak Mateo \"@!!!$19\\warp Mateo -100 -100\\warp Hector -100 -100\\warp SenS? -100 -100\\warp Cirrus -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.07}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.08}}\"\\playMusic SnS.DuskspireLaugh\\emote farmer 16\\faceDirection farmer 2\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\faceDirection farmer 0\\playMusic SnS.SMFSR\\pause 1000\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.09}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end(break)addMailReceived FarmerGuildmasterBattle\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.10}}\"\\emote farmer 32\\pause 250\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.11}}\"\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.12}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Roslin.13}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Dandelion.14}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Solomon.15}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Mateo 2\\faceDirection farmer 2\\warp Hector -100 -100\\warp Cirrus -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp SenS? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote Mateo 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.16}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.17}}\"\\pause 250\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.18}}\"\\emote Mateo 56\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote Mateo 16 true\\faceDirection Mateo 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.19}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end(break)setDating Mateo\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.20}}\"\\speak Hector \"{{i18n:Events.F
+inale.SoloFarmer.RomanticChoice.Hector.21}}\"\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.22}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Roslin.23}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Dandelion.24}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Solomon.25}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Mateo 2\\faceDirection farmer 2\\warp Hector -100 -100\\warp Cirrus -100 -100\\warp SenS? -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote Mateo 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.26}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.27}}\"\\pause 250\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.28}}\"\\emote Mateo 56\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote Mateo 16 true\\faceDirection Mateo 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.29}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end(break)setDating Hector\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.30}}\"\\speak Mateo \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Mateo.31}}\"\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.32}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Roslin.33}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Dandelion.34}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Solomon.35}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Hector 2\\faceDirection farmer 2\\warp Mateo -100 -100\\warp Cirrus -100 -100\\warp SenS? -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote Mateo 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.36}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.37}}\"\\pause 250\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.38}}\"\\emote Hector 40\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote Hector 16 true\\faceDirection Hector 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.39}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end(break)setDating Cirrus\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.40}}\"\\speak Mateo \"{{i18n:Events.F
+inale.SoloFarmer.RomanticChoice.Mateo.41}}\"\\speak Hector \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Hector.42}}\"\\speak Roslin \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Roslin.43}}\"\\speak Dandelion \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Dandelion.44}}\"\\speak SenS? \"{{i18n: Events.SnS.Ch4.Intermission.Sen.03}}\"\\speak Solomon \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Solomon.45}}\"\\{{SnS.Ch4.Intermissions.GunnarExtra.2}}\\startJittering\\animate farmer true false 100 30 30 31 31 32 32 33 33 34 34 35 35\\pause 500\\screenFlash 5\\playSound wand\\pause 500\\fade\\viewport -1000 -1000\\stopJittering\\faceDirection Cirrus 2\\faceDirection farmer 2\\warp Mateo -100 -100\\warp Hector -100 -100\\warp SenS? -100 -100\\warp MadDog.HashtagBearFam.Gunnar? -100 -100\\warp Dandelion -100 -100\\warp Roslin -100 -100\\addTemporaryActor DandelionShield 16 16 15 15 2 false Character\\hideShadow DandelionShield true\\pause 1000\\fade\\viewport 15 12\\emote farmer 40 true\\emote Cirrus 8\\pause 250\\advancedMove farmer false 0 2 2 10\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.46}}\"\\warp DandelionShield 15 12\\showFrame farmer 57\\playSound discoverMineral\\pause 1000\\warp DandelionShield -100 -100\\showFrame farmer 0\\message \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Message.47}}\"\\pause 250\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.48}}\"\\emote Cirrus 40\\playMusic SnS.DuskspireLaugh\\emote farmer 16 true\\faceDirection farmer 0 true\\emote Cirrus 16 true\\faceDirection Cirrus 0 true\\screenFlash 5\\playSound wand\\warp Duskspire 14 9\\animate Duskspire false true 100 16 16 17 17 18 18 19 19 20 20 21 21 22 22 23 23 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17\\speak Cirrus \"{{i18n:Events.Finale.SoloFarmer.RomanticChoice.Cirrus.49}}\"\\pause 1000\\globalFade\\viewport -1000 -1000\\sns_finale_phase2\\end{{SnS.Ch4.Intermissions.GunnarExtra.4}}{{SnS.Ch4.Intermissions.SenExtra.2}}",
+      "When": {
+        "Relationship: Mateo |contains= Dating, Married, Enganged": false,
+        "Relationship: Hector |contains= Dating, Married, Enganged": false,
+        "Relationship: Cirrus |contains= Dating, Married, Enganged": false,
+        "Relationship: MadDog.HashtagBearFam.Gunnar |contains= Dating, Married, Enganged": false,
+        "Relationship: SenS |contains= Dating, Married, Enganged": false
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.1",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.1",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.10}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.2", //after Cirrus's promise to cook
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.11}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Dandelion.7.GunnarExtra.Krobus.2",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Dandelion.7.GunnarExtra.Krobus.2",
+      "Value": "speak MadDog.HashtagBearFam.Gunnar \"{{i18n:GunnarFinaleDialogue.12}}\"",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "CombatWarps",
+      "Value": "warp Mateo 12 10/warp farmer 12 12/warp Dandelion 12 14/warp Hector 12 16/warp Cirrus 10 12/warp Roslin 10 14/warp SenS? 10 16"
+    },
+    {
+      "Name": "CombatWarps",
+      "Value": "warp Mateo 12 10/warp farmer 12 12/warp Dandelion 12 14/warp Hector 12 16/warp Cirrus 10 10/warp Roslin 10 12/warp MadDog.HashtagBearFam.Gunnar 10 14/warp SenS? 10 16",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.NotHectorVictory",
+      "Value": "warp Hector 45 90/faceDirection Hector 3"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.NotHectorVictory",
+      "Value": "warp Hector 46 90/faceDirection Hector 3/warp MadDog.HashtagBearFam.Gunnar 45 91/faceDirection MadDog.HashtagBearFam.Gunnar 0",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.HectorVictory",
+      "Value": "warp Mateo 45 90/faceDirection Mateo 3"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.HectorVictory",
+      "Value": "warp Mateo 46 90/faceDirection Mateo 3/warp MadDog.HashtagBearFam.Gunnar 45 91/faceDirection MadDog.HashtagBearFam.Gunnar 0",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.MateoVictory.Offset",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.MateoVictory.Offset",
+      "Value": "positionOffset farmer 20 0/positionOffset Mateo 20 0",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.HectorVictory.Offset",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.HectorVictory.Offset",
+      "Value": "positionOffset farmer 20 0/positionOffset Hector 20 0",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.CirrusVictory.Offset",
+      "Value": "pause 1"
+    },
+    {
+      "Name": "SnS.Ch4.Victories.GunnarExtra.Warps.CirrusVictory.Offset",
+      "Value": "positionOffset farmer 20 0/positionOffset Cirrus 20 0",
+      "When": {
+        "HasMod |contains=MadDog.HashtagBearFam": true
+      }
+    },
+    /*
+    {
+      "Name": "SkipIntroQuest",
+      "Value": "{{SkipIntroQuest_Setting}}"
+    },
+    {
+      "Name": "SkipIntroQuest",
+      "Value": "true",
+      "When": {
+        "HasFlag": "JojaMember"
+      }
+    },
+    */
+    {
+      "Name": "MateoPortraitSpriteIndex",
+      "Value": "0"
+    },
+    {
+      "Name": "MateoPortraitSpriteIndex",
+      "Value": "12",
+      "When": {
+        "MateoTrollHeritage": true
+      }
+    },
+    {
+      "Name": "HectorPortraitSpriteIndex",
+      "Value": "2"
+    },
+    {
+      "Name": "HectorPortraitSpriteIndex",
+      "Value": "14",
+      "When": {
+        "HectorHeterochromatic": true
+      }
+    },
+    {
+      "Name": "ArtificerBookSpriteIndex",
+      "Value": "0",
+      "When": {
+        "BookTextures": "Lumina"
+      }
+    },
+    {
+      "Name": "ArtificerBookSpriteIndex",
+      "Value": "5",
+      "When": {
+        "BookTextures": "Daine"
+      }
+    },
+    {
+      "Name": "DruidBookSpriteIndex",
+      "Value": "1",
+      "When": {
+        "BookTextures": "Lumina"
+      }
+    },
+    {
+      "Name": "DruidBookSpriteIndex",
+      "Value": "6",
+      "When": {
+        "BookTextures": "Daine"
+      }
+    },
+    {
+      "Name": "BardBookSpriteIndex",
+      "Value": "2",
+      "When": {
+        "BookTextures": "Lumina"
+      }
+    },
+    {
+      "Name": "BardBookSpriteIndex",
+      "Value": "7",
+      "When": {
+        "BookTextures": "Daine"
+      }
+    },
+    {
+      "Name": "SorcererBookSpriteIndex",
+      "Value": "3",
+      "When": {
+        "BookTextures": "Lumina"
+      }
+    },
+    {
+      "Name": "SorcererBookSpriteIndex",
+      "Value": "8",
+      "When": {
+        "BookTextures": "Daine"
+      }
+    },
+    {
+      "Name": "PaladinBookSpriteIndex",
+      "Value": "4",
+      "When": {
+        "BookTextures": "Lumina"
+      }
+    },
+    {
+      "Name": "PaladinBookSpriteIndex",
+      "Value": "9",
+      "When": {
+        "BookTextures": "Daine"
+      }
+    },
+    {
+      "Name": "HectorWeddingQQ",
+      "Value": "textAboveHead BookDryad \"{{i18n:HectorWedding.1}}\""
+    },
+    {
+      "Name": "HectorWeddingQQ",
+      "Value": "quickQuestion #{{i18n:HectorWedding.1}}.#{{i18n:HectorWedding.2}}.(break)textAboveHead BookDryad \"{{i18n:HectorWedding.1}}\"(break)speak Hector \"{{i18n:HectorWedding.3}}\"",
+      "When": {
+        "Spouse |contains=Hector": true
+      }
+    },
+    {
+      "Name": "MateoFatherComment",
+      "Value": "{{i18n:Events.SnS.Ch4.Eyvinder.Mateo.09.False}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch5.Mateo": false
+      }
+    },
+    {
+      "Name": "MateoFatherComment",
+      "Value": "{{i18n:Events.SnS.Ch4.Eyvinder.Mateo.09.True}}",
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch5.Mateo": true
+      }
+    },
+    {
+      "Name": "DruidicsCost4",
+      "Value": "4"
+    },
+    {
+      "Name": "DruidicsCost4",
+      "Value": "3",
+      "When": {
+        "HasProfession": "-197421760" // Ancient Agronomist (Druidics level 5 profession)
+      }
+    },
+    {
+      "Name": "DruidicsCost6",
+      "Value": "6"
+    },
+    {
+      "Name": "DruidicsCost6",
+      "Value": "5",
+      "When": {
+        "HasProfession": "-197421760" // Ancient Agronomist (Druidics level 5 profession)
+      }
+    },
+    {
+      "Name": "DruidicsCost10",
+      "Value": "10"
+    },
+    {
+      "Name": "DruidicsCost10",
+      "Value": "9",
+      "When": {
+        "HasProfession": "-197421760" // Ancient Agronomist (Druidics level 5 profession)
+      }
+    },
+    {
+      "Name": "ConfigMenuLinks",
+      "Value": ""
+    },
+    {
+      "Name": "ConfigMenuLinks",
+      "Value": "{{i18n: guidebook.chapter.Title.TitlePage.ConfigLinks}}",
+      "When": { "HasMod": "spacechase0.GenericModConfigMenu" }
+    },
+    {
+      "Name": "SMAPIConfigLink",
+      "Value": "{{i18n: guidebook.chapter.Mechanics.SMAPIConfigLink.Off}}"
+    },
+    {
+      "Name": "SMAPIConfigLink",
+      "Value": "{{i18n: guidebook.chapter.Mechanics.SMAPIConfigLink.On}}",
+      "When": { "HasMod": "spacechase0.GenericModConfigMenu" }
+    },
+    {
+      "Name": "PocketDimensionUpgrade",
+      "Value": "1"
+    },
+    {
+      "Name": "PocketDimensionUpgrade",
+      "Value": "{{KCC.SnS/PocketDimensionUpgrade}}",
+      "When": {
+        "HasValue: {{KCC.SnS/PocketDimensionUpgrade}}": true
+      }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "Bos.UIInterface_equipmentmenu",
+      "When": { "HasMod": "Bos.UIInterface", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "daisyniko.earthyinterface_equipmentmenu",
+      "When": { "HasMod": "daisyniko.earthyinterface", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "enteis.woodeninterfeis_equipmentmenu",
+      "When": { "HasMod": "enteis.woodeninterfeis", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "nom0ri.vintageuifix_equipmentmenu",
+      "When": { "HasMod |contains= ManaKirel.VintageInterface2, nom0ri.vintageuifix": true, "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "shinchan.cppurpleinterface_equipmentmenu",
+      "When": { "HasMod": "shinchan.cppurpleinterface", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "Sqbr.StarryBlueUI_equipmentmenu",
+      "When": { "HasMod": "Sqbr.StarryBlueUI", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "thefrenchdodo.sakurainterfaceredux_equipmentmenu",
+      "When": { "HasMod": "thefrenchdodo.sakurainterfaceredux", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "VinillaBean.LavenderDreams_equipmentmenu",
+      "When": { "HasMod": "VinillaBean.LavenderDreams", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "SpaceCoreRecolors",
+      "Value": "silvermoonchan.PurpleGalaxyUI_equipmentmenu",
+      "When": { "HasMod": "silvermoonchan.PurpleGalaxyUI", "EquipmentMenuConfig": true }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "Tabs"
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "Bos.UIInterface_tabs",
+      "When": { "HasMod": "Bos.UIInterface" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "daisyniko.earthyinterface_tabs",
+      "When": { "HasMod": "daisyniko.earthyinterface" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "enteis.woodeninterfeis_tabs",
+      "When": { "HasMod": "enteis.woodeninterfeis" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "nom0ri.vintageuifix_tabs",
+      "When": { "HasMod |contains= ManaKirel.VintageInterface2, nom0ri.vintageuifix": true }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "shinchan.cppurpleinterface_tabs",
+      "When": { "HasMod": "shinchan.cppurpleinterface" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "Sqbr.StarryBlueUI_tabs",
+      "When": { "HasMod": "Sqbr.StarryBlueUI" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "thefrenchdodo.sakurainterfaceredux_tabs",
+      "When": { "HasMod": "thefrenchdodo.sakurainterfaceredux" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "VinillaBean.LavenderDreams_tabs",
+      "When": { "HasMod": "VinillaBean.LavenderDreams" }
+    },
+    {
+      "Name": "GuidebookRecolors",
+      "Value": "silvermoonchan.PurpleGalaxyUI_tabs",
+      "When": { "HasMod": "silvermoonchan.PurpleGalaxyUI" }
+    },
+    {
+      "Name": "BookFormDT",
+      "Value": "|BookForm=HectorBook |BookOffset=90 |BookSize=32"
+    },
+    {
+      "Name": "BookFormDT",
+      "Value": "|BookForm=BookDryad |BookOffset=118 |BookSize=16",
+      "When": {
+        "Weather": "Sun",
+        "HasSeenEvent |contains=SnS.Ch3.Cirrus.11": true
+      }
+    },
+    {
+      "Name": "TrollHeritageEvents",
+      "Value": "|TrollEvent1={{i18n: guidebook.chapter.MateoTrollHeritage.1.{{MateoTrollHeritage}}}} |TrollEvent2={{i18n: guidebook.chapter.MateoTrollHeritage.2.{{MateoTrollHeritage}}}} |TrollEvent3={{i18n: guidebook.chapter.MateoTrollHeritage.3.{{MateoTrollHeritage}}}}"
+    },
+    { "Name": "CirrusExtras", "Value": false },
+    {
+      "Name": "CirrusExtras",
+      "Value": true,
+      "When": { "Query: '{{PlayerGender}}' = 'Female' OR {{HasMod|contains=Hana.GenderNeutralityMod}}": true }
+    },
+    { "Name": "GalaxySwordExtras", "Value": false },
+    {
+      "Name": "GalaxySwordExtras",
+      "Value": true,
+      "When": { "HasFlag |contains=galaxySword": false, "HasFlag |contains=ccVault": true }
+    },
+    { "Name": "KeyChainType", "Value": "addItem (O){{ModID}}_destykeychain 1" },
+    {
+      "Name": "KeyChainType",
+      "Value": "addItem (TR){{ModId}}_OwlBoyKeychain 1/addMailReceived ReceivedTTOwlBoy",
+      "When": { "HasMod": "mushymato.TrinketTinker" }
+    },
+    { "Name": "StygiumArmorIngredient", "Value": "{{ModID}}_IridiumArmor" },
+    {
+      "Name": "StygiumArmorIngredient",
+      "Value": "{{ModID}}_RadioactiveArmor",
+      "When": { "HasFlag": "reachedBottomOfHardMines" }
+    },
+    { "Name": "StygiumShieldIngredient", "Value": "(W){{ModID}}_IridiumShield" },
+    {
+      "Name": "StygiumShieldIngredient",
+      "Value": "(W){{ModID}}_RadioactiveShield",
+      "When": { "HasFlag": "reachedBottomOfHardMines" }
+    }
+  ]
+}

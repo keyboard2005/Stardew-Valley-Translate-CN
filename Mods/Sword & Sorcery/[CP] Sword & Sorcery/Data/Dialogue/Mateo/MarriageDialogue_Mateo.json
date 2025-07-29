@@ -1,0 +1,144 @@
+{
+
+"Changes": [
+
+{ "LogName": "Mateo's Marriage Dialogue",
+"Action": "editData",
+"Target": "Characters/Dialogue/MarriageDialogueMateo",
+"Entries":
+
+// GENERIC MARRIAGE DIALOGUE 
+{
+
+    // OTHER   
+    "patio_Mateo":"{{i18n:Marriage.Mateo.Patio.{{Random:1++2++3++4++5++6|inputSeparator=++}}}}",
+    "spouseRoom_Mateo":"{{i18n:Marriage.Mateo.SpouseRoom.{{Random:1++2++3++4++5|inputSeparator=++}}}}",
+    "funLeave_Mateo":"{{i18n:Marriage.Mateo.funLeave.{{Random:1++2++3|inputSeparator=++}}}}",
+    "funReturn_Mateo":"{{i18n:Marriage.Mateo.funReturn.{{Random:1++2++3|inputSeparator=++}}}}",
+
+    // SPECIAL DATES - SPRING
+    "spring_Mateo":"{{i18n:Marriage.Mateo.Spring}}",
+    "spring_1":"{{i18n:Marriage.Mateo.Spring1}}",
+	"spring_13":"{{i18n:Marriage.Mateo.Spring13}}",
+    "spring_23":"{{i18n:Marriage.Mateo.Spring23}}",
+    "spring_24":"{{i18n:Marriage.Mateo.Spring24}}",   
+    "spring_28":"{{i18n:Marriage.Mateo.Spring28}}",
+
+    // SPECIAL DATES - SUMMER
+    "summer_Mateo":"{{i18n:Marriage.Mateo.Summer}}",
+    "summer_1":"{{i18n:Marriage.Mateo.Summer1}}",
+	"summer_11":"{{i18n:Marriage.Mateo.Summer11}}",
+	"summer_28":"{{i18n:Marriage.Mateo.Summer28}}",
+
+    // SPECIAL DATES - FALL
+    "fall_Mateo":"{{i18n:Marriage.Mateo.Fall}}",
+    "fall_1":"{{i18n:Marriage.Mateo.Fall1}}",
+	"fall_15":"{{i18n:Marriage.Mateo.Fall15}}",
+    "fall_16":"{{i18n:Marriage.Mateo.Fall16}}",
+    "fall_25":"{{i18n:Marriage.Mateo.Fall25}}",
+	"fall_26":"{{i18n:Marriage.Mateo.Fall26}}",
+    "fall_27":"{{i18n:Marriage.Mateo.Fall27}}",
+
+    // SPECIAL DATES - WINTER 
+    "winter_Mateo":"{{i18n:Marriage.Mateo.Winter}}",
+    "winter_1":"{{i18n:Marriage.Mateo.Winter1}}",
+	"winter_8":"{{i18n:Marriage.Mateo.Winter8}}",
+    "winter_12":"{{i18n:Marriage.Mateo.Winter12}}",
+    "winter_14":"{{i18n:Marriage.Mateo.Winter14}}",
+    "winter_19":"{{i18n:Marriage.Mateo.Winter19}}",
+  	"winter_24":"{{i18n:Marriage.Mateo.Winter24}}",
+    "winter_25":"{{i18n:Marriage.Mateo.Winter25}}",
+	"winter_28":"{{i18n:Marriage.Mateo.Winter28}}",
+    
+    // GENERIC DIALOGUE - RAINY
+    "Rainy_Day_0":"{{i18n:Marriage.Mateo.Rainy.Day.0}}",
+    "Rainy_Day_1":"{{i18n:Marriage.Mateo.Rainy.Day.1}}",
+    "Rainy_Day_2":"{{i18n:Marriage.Mateo.Rainy.Day.2}}",
+    "Rainy_Day_3":"{{i18n:Marriage.Mateo.Rainy.Day.3}}", 
+    "Rainy_Day_4":"{{i18n:Marriage.Mateo.Rainy.Day.4}}",
+    "Rainy_Day_5":"{{i18n:Marriage.Mateo.Rainy.Day.5}}",
+    "Rainy_Day_6":"{{i18n:Marriage.Mateo.Rainy.Day.6}}",
+    "Rainy_Night_0":"{{i18n:Marriage.Mateo.Rainy.Night.0}}",
+    "Rainy_Night_1":"{{i18n:Marriage.Mateo.Rainy.Night.1}}",
+    "Rainy_Night_2":"{{i18n:Marriage.Mateo.Rainy.Night.2}}",
+    "Rainy_Night_3":"{{i18n:Marriage.Mateo.Rainy.Night.3}}",
+    "Rainy_Night_4":"{{i18n:Marriage.Mateo.Rainy.Night.4}}",
+    "Rainy_Night_5":"{{i18n:Marriage.Mateo.Rainy.Night.5}}",
+    "Rainy_Night_6":"{{i18n:Marriage.Mateo.Rainy.Night.6}}",
+    "Rainy_Night_Mateo":"{{i18n:Marriage.Mateo.Rainy.Night.Mateo}}",
+
+    // GENERIC DIALOGUE - INDOOR & OUTDOOR
+    "Indoor_Day_0":"{{i18n:Core.Mateo.{{season}}.Relationship.Romantic.{{Random:{{Range: 1, 7}}}}}}",
+    "Indoor_Day_1":"{{i18n:Marriage.Mateo.Indoor.Day.1}}",
+    "Indoor_Day_2":"{{i18n:Marriage.Mateo.Indoor.Day.2}}",
+    "Indoor_Day_3":"{{i18n:Marriage.Mateo.Indoor.Day.3}}",
+    "Indoor_Day_4":"{{i18n:Marriage.Mateo.Indoor.Day.4}}",
+    "Indoor_Day_5":"{{i18n:Marriage.Mateo.Indoor.Day.5}}",
+    "Indoor_Night_0":"{{i18n:Marriage.Mateo.Indoor.Night.0}}",
+    "Indoor_Night_1":"{{i18n:Marriage.Mateo.Indoor.Night.1}}",
+    "Indoor_Night_2":"{{i18n:Marriage.Mateo.Indoor.Night.2}}",
+    "Indoor_Night_3":"{{i18n:Marriage.Mateo.Indoor.Night.3}}",
+    "Indoor_Night_4":"{{i18n:Marriage.Mateo.Indoor.Night.4}}",
+    "Indoor_Night_5":"{{i18n:Marriage.Mateo.Indoor.Night.5}}",
+    "Indoor_Night_6":"{{i18n:Marriage.Mateo.Indoor.Night.6}}",
+    "Outdoor_0":"{{i18n:Marriage.Mateo.Outdoor.0}}",
+    "Outdoor_2":"{{i18n:Marriage.Mateo.Outdoor.1}}",
+    "Outdoor_3":"{{i18n:Marriage.Mateo.Outdoor.2}}",
+    "Outdoor_4":"{{i18n:Marriage.Mateo.Outdoor.3}}",
+    "Outdoor_Mateo":"{{i18n:Marriage.Mateo.Outdoor}}",
+
+    // GENERIC DIALOGUE - KIDS 
+    "OneKid_0":"{{i18n:Marriage.Mateo.OneKid.0}}",
+    "OneKid_1":"{{i18n:Marriage.Mateo.OneKid.1}}",
+    "OneKid_2":"{{i18n:Marriage.Mateo.OneKid.2}}",
+    "OneKid_3":"{{i18n:Marriage.Mateo.OneKid.3}}",
+    "TwoKids_0":"{{i18n:Marriage.Mateo.TwoKids.0}}",
+    "TwoKids_1":"{{i18n:Marriage.Mateo.TwoKids.1}}",
+    "TwoKids_2":"{{i18n:Marriage.Mateo.TwoKids.2}}",
+    "TwoKids_3":"{{i18n:Marriage.Mateo.TwoKids.3}}",
+    "TwoKids_4":"{{i18n:Marriage.Mateo.TwoKids.4}}",
+
+    // AFFECTION DIALOGUE
+    "Good_0":"{{i18n:Core.Mateo.{{season}}.Relationship.Romantic.{{Random:{{Range: 1, 7}}}}}}",
+    "Good_1":"{{i18n:Marriage.Mateo.Good.1}}",
+    "Good_2":"{{i18n:Marriage.Mateo.Good.2}}",
+    "Good_3":"{{i18n:Marriage.Mateo.Good.3}}",
+    "Good_4":"{{i18n:Marriage.Mateo.Good.4}}",
+    "Good_5":"{{i18n:Marriage.Mateo.Good.5}}",
+    "Good_6":"{{i18n:Marriage.Mateo.Good.6}}",
+    "Good_8":"{{i18n:Marriage.Mateo.Good.7}}",
+    "Good_9":"{{i18n:Marriage.Mateo.Good.8}}",
+    "Neutral_0":"{{i18n:Marriage.Mateo.Neutral.0}}",
+    "Neutral_1":"{{i18n:Marriage.Mateo.Neutral.1}}",
+    "Neutral_2":"{{i18n:Marriage.Mateo.Neutral.2}}",
+    "Neutral_3":"{{i18n:Marriage.Mateo.Neutral.3}}",
+    "Neutral_4":"{{i18n:Marriage.Mateo.Neutral.4}}",
+    "Neutral_5":"{{i18n:Marriage.Mateo.Neutral.5}}",
+    "Neutral_6":"{{i18n:Marriage.Mateo.Neutral.6}}",
+    "Neutral_7":"{{i18n:Marriage.Mateo.Neutral.7}}",
+    "Bad_0":"{{i18n:Marriage.Mateo.Bad.0}}",
+    "Bad_1":"{{i18n:Marriage.Mateo.Bad.1}}",
+    "Bad_2":"{{i18n:Marriage.Mateo.Bad.2}}",
+    "Bad_3":"{{i18n:Marriage.Mateo.Bad.3}}",
+    "Bad_4":"{{i18n:Marriage.Mateo.Bad.4}}",
+    "Bad_5":"{{i18n:Marriage.Mateo.Bad.5}}",
+    "Bad_6":"{{i18n:Marriage.Mateo.Bad.6}}",
+    "Bad_7":"{{i18n:Marriage.Mateo.Bad.7}}",
+    "Bad_8":"{{i18n:Marriage.Mateo.Bad.8}}",
+}
+},
+
+// ENGAGEMENT DIALOGUE
+{
+    "LogName": "Engagement Dialogue",
+    "Action": "EditData",
+    "Target": "Data/EngagementDialogue",
+    "Entries": {
+                    
+    "Mateo0":"{{i18n:Marriage.Mateo.Engagement.Mateo0}}",
+    "Mateo1":"{{i18n:Marriage.Mateo.Engagement.Mateo1}}",
+    "Mateo2":"{{i18n:Marriage.Mateo.Engagement.Mateo2}}"                       
+}
+},
+]
+}

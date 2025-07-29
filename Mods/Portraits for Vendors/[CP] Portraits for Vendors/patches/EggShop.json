@@ -1,0 +1,11 @@
+{
+	"Changes":[
+		{
+			"LogName": "Egg Peddler",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "DesertFestival_EggShop", "Owners", "Vendor" ],
+			"Entries": {"Portrait": "Portraits/EggShop_Default"},	
+		},
+	],
+}

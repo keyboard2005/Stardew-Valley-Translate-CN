@@ -1,0 +1,61 @@
+Warp to Hector: debug wtc Hector
+Reload the content pack: patch reload DestyNova.Hector.CP 
+
+**MOST EVENTS ARE 1-3 DAYS APART.**
+
+debug ebi SnS.Ch2.Hector.1 - 0 Hearts pt 1 - "HectorIntro"
+After seeing Mateo's 10H event and completing Hector's seasonal quests (unless it's configured off), enter the Railroad at any time. 
+
+debug ebi SnS.Ch2.Hector.2 - 1 Heart - "HectorBookIntro" 
+Enter the tower 3 days after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.3 - 2 Hearts - "HectorShapeshift" 
+Enter the tower 3 days after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.4 - 3 Hearts pt 1- "HectorBookQuest1"
+Enter the tower 3 days after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.5 - 3 Hearts pt 2 - "HectorVet"
+Enter the tower after seeing the previous event. 
+
+debug ebi SnS.Ch2.Hector.6 - 4 Hearts - "HectorVet2"
+Enter East Scarp after seeing the previous event between 9 - 6
+
+debug ebi SnS.Ch2.Hector.7 - 5 Hearts pt 1 - "HectorGender"
+Enter East Scarp 3 days after seeing the previous event between 9 - 6
+
+debug ebi SnS.Ch2.Hector.8 - 5 Hearts pt 2 - "HectorVet3"
+Enter the vet after 3pm, after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.9 - 5 Hearts pt 3 - "HectorDND"
+Enter the Coastal Adventurer's Guild after 5pm after seeing the previous event. 
+ 
+debug ebi SnS.Ch2.Hector.10 - 6 Hearts - "HectorRiver1"
+Enter the tower 3 days after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.11 - 7 Hearts - "HectorDinner"
+Enter East Scarp 3 days after seeing the previous event. 
+
+debug ebi SnS.Ch2.Hector.12 - 7 Hearts pt 1 - "HectorRiver2" 
+Enter the tower after completing the previously issued quest and seeing the previous event. 
+
+debug ebi SnS.Ch2.Hector.13 - 8 Hearts - "HectorRiver3"
+Enter the tower after completing the previously issued quest. 
+
+debug ebi SnS.Ch2.Hector.14 - 9 Hearts - "HectorHeal1"
+Enter the Coastal Adventurer's Guild after seeing the previous event.
+
+debug ebi SnS.Ch2.Hector.15 - 10 Hearts pt 1 - "HectorHeal2"
+Enter the vet 3 days after seeing the previous event after 4pm. 
+
+debug ebi SnS.Ch2.Hector.16 - 10 Hearts pt 2, Platonic/Romantic Fork - "HectorTrueGrove" - THIS EVENT ENDS THE DAY.
+Enter the Deep Mountains. This event will trigger a (PLATONIC) and (ROMANTIC) dialogue option. If you choose the (ROMANTIC) option, you will automatically be set to 'Dating' Hector.
+
+debug ebi SnS.Ch2.Hector.17 - Pendant Response - "HectorEngaged" 
+Give Hector the Mermaid's Pendant at least a month into dating him to trigger a special event.
+
+debug ebi SnS.Ch2.Hector.18 - 12 Hearts, Romantic Fork
+Enter the Vet after 4pm when married.
+
+debug ebi SnS.Ch2.Hector.18 - 14 Hearts, Romantic Fork
+Enter the tower after seeing the previous event.

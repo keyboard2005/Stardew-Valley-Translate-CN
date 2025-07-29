@@ -1,0 +1,52 @@
+{
+    "Name": "East Scarp NPCs",
+    "Author": "Lemurkat",
+    "Description": "Adds Dr Jacob, Eloise, Aideen, Rosa and more!",
+    "Version": "2.4.22",
+    "UniqueID": "Lemurkat.EastScarpNPCs.CP",
+    "UpdateKeys": [
+        "Nexus:???"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "DH.MEEP": "2.0.0",
+    "DH.MEEP.FarmAnimalSpawns": "",
+    "Dependencies": [
+        {
+            "UniqueID": "LemurKat.EastScarpe.CP"
+        },
+        {
+            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "spacechase0.JsonAssets",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "LemurKat.EastScarpeCompanions",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "DN.SnS",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "DN.SnS.CP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "LemurKat.JulietHouse.NPC",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Himetarts.ARV.CP",
+            "IsRequired": false
+        },
+    ]
+}

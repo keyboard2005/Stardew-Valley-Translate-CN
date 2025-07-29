@@ -1,0 +1,82 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "FallInEastScarp": {
+                    "ID": "FallInEastScarp",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/Fall in East Scarp.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "SummerInTheScarp": {
+                    "ID": "SummerInTheScarp",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/Summer in the Scarp.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "WinterInEastScarp": {
+                    "ID": "WinterInEastScarp",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/Winter in East Scarp.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "EastScarpSpringTheme": {
+                    "ID": "EastScarpSpringTheme",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/East Scarp Spring Theme.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "When": {
+                 "Query: {{Year}} % 2 = 0": false
+            },
+            "Entries": {
+                "EastScarp.SpiritEve": {
+                    "ID": "EastScarp.SpiritEve",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/Cavern_Echoes.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "When": {
+                 "Query: {{Year}} % 2 = 0": true
+            },
+            "Entries": {
+                "EastScarp.SpiritEve": {
+                    "ID": "EastScarp.SpiritEve",
+                    "Category": "Music",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Music/Spooky Scary Skeletons.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+    ]
+}

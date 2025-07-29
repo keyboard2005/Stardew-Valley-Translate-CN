@@ -1,0 +1,109 @@
+{
+    "Changes": [
+        // LETTERS
+        {
+            "LogName": "S&S Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MateoHospital":"{{i18n:Mail.Mateo.Letter1}}",
+                "MineDateInvite":"{{i18n:Mail.Mateo.Letter2}}",
+                "MateoAutumnalStew":"{{i18n:Mail.Mateo.Letter3}}",
+                "MateoSalishBourbon":"{{i18n:Mail.Mateo.Letter4}}",
+                "HectorIntroLetter":"{{i18n:Mail.Hector.Letter0}}",
+                "AetherQuest":"{{i18n:Mail.Hector.Letter1}}",
+                "AetherQuest2":"{{i18n:Mail.Hector.Letter2}}",
+                "DandelionGreensThanks":"{{i18n:Mail.Dandelion.Letter1}}",
+                "MateoHoodie":"{{i18n:Mail.Mateo.Letter5}}",
+                "HectorHoodie":"{{i18n:Mail.Hector.Letter3}}",
+                "CirrusHoodie":"{{i18n:Mail.Cirrus.Letter0}}",
+				"HectorKeychain": "{{i18n:Mail.HectorKeychain}}",
+				"BookKeychain": "{{i18n:Mail.BookKeychain}}",
+				"EmeritusKeychain": "{{i18n:Mail.EmeritusKeychain}}",
+			    "OwlBoyKeychain": "{{i18n:Mail.OwlBoyKeychain}}"
+            }
+        },
+        // TRIGGER ACTIONS
+        {
+            "LogName": "S&S Mail Triggers",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModID}}_AutumnalStew": {
+					"Id": "{{ModID}}_AutumnalStew",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.4",
+					"Actions": [
+						"AddMail Current MateoAutumnalStew tomorrow"
+					]
+				},
+                "{{ModID}}_SalishBourbon": {
+					"Id": "{{ModID}}_SalishBourbon",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.11",
+					"Actions": [
+						"AddMail Current MateoSalishBourbon tomorrow"
+					]
+				},
+                "{{ModID}}_DandelionGreens": {
+					"Id": "{{ModID}}_DandelionGreens",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch4.Roslin.6",
+					"Actions": [
+						"AddMail Current DandelionGreensThanks tomorrow"
+					]
+				},
+                "{{ModID}}_Mateo_Hoodie": {
+					"Id": "{{ModID}}_Mateo_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.19",
+					"Actions": [
+						"AddMail Current MateoHoodie tomorrow"
+					]
+				},
+                "{{ModID}}_Hector_Hoodie": {
+					"Id": "{{ModID}}_Hector_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.17",
+					"Actions": [
+						"AddMail Current HectorHoodie tomorrow"
+					]
+				},
+                "{{ModID}}_Cirrus_Hoodie": {
+					"Id": "{{ModID}}_Cirrus_Hoodie",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.15",
+					"Actions": [
+						"AddMail Current CirrusHoodie tomorrow"
+					]
+				},
+				"{{ModID}}_EmeritusKeychain": {
+					"Id": "{{ModID}}_EmeritusKeychain",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch1.Mateo.14, PLAYER_HAS_MAIL Current DN.SnS_ObtainedLLTK, RANDOM 0.1, {{HasMod |Contains=mushymato.TrinketTinker}}",
+					"Actions": [ "AddMail Current EmeritusKeychain tomorrow" ]
+				},
+				"{{ModID}}_HectorKeychain": {
+					"Id": "{{ModID}}_HectorKeychain",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch2.Hector.16, PLAYER_HAS_MAIL Current DN.SnS_ObtainedLLTK, RANDOM 0.1, {{HasMod |Contains=mushymato.TrinketTinker}}",
+					"Actions": [ "AddMail Current HectorKeychain tomorrow" ]
+				},
+				"{{ModID}}_BookKeychain": {
+					"Id": "{{ModID}}_BookKeychain",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch3.Cirrus.14, PLAYER_HAS_MAIL Current DN.SnS_ObtainedLLTK, RANDOM 0.1, {{HasMod |Contains=mushymato.TrinketTinker}}",
+					"Actions": [ "AddMail Current BookKeychain tomorrow" ]
+				},
+				"{{ModID}}_OwlBoyKeychain": {
+					"Id": "{{ModID}}_OwlBoyKeychain",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.End, !PLAYER_HAS_MAIL Current ReceivedTTOwlBoy Any, {{HasMod |Contains=mushymato.TrinketTinker}}",
+					"Actions": [ "AddMail Current OwlBoyKeychain tomorrow" ]
+				}
+			}
+		}        
+    ]
+}
+
+//PLAYER_HAS_SEEN_EVENT Current SnS.Ch5.End, !PLAYER_HAS_MAIL Current ReceivedTTOwlBoy Any, !PLAYER_HAS_ITEM Current (TR)DN.SnS_OwlBoyKeychain 1

@@ -1,0 +1,74 @@
+{
+  // Blackwood
+  "config.section.General.name": "Allgemeine Einstellungen",
+  "config.section.Appearance.name": "Einstellungen zum Erscheinungsbild",
+  
+  "config.Enabled.name": "Mod aktivieren",
+  "config.Enabled.description": "Ersetze den alten Seemann durch eine saisonale Meerjungfrau.",
+  "config.Enabled.value.true": "Ja",
+  "config.Enabled.value.false": "Nein",
+  
+  "config.UseCustomNames.name": "Benutzerdefinierte Namen verwenden",
+  "config.UseCustomNames.description": "Benutze eigene Namen für jede saisonale Meerjungfrau.",
+  "config.UseCustomNames.value.true": "Ja",
+  "config.UseCustomNames.value.false": "Nein",
+  
+  "config.CustomSpringName.name": "Name der Frühlings-Meerjungfrau",
+  "config.CustomSpringName.description": "Benutzerdefinierter Name für die Frühlings-Meerjungfrau.",
+  
+  "config.CustomSummerName.name": "Name der Sommer-Meerjungfrau",
+  "config.CustomSummerName.description": "Benutzerdefinierter Name für die Sommer-Meerjungfrau.",
+  
+  "config.CustomFallName.name": "Name der Herbst-Meerjungfrau",
+  "config.CustomFallName.description": "Benutzerdefinierter Name für die Herbst-Meerjungfrau.",
+  
+  "config.CustomWinterName.name": "Name der Winter-Meerjungfrau",
+  "config.CustomWinterName.description": "Benutzerdefinierter Name für die Winter-Meerjungfrau.",
+
+  "MermaidBuyNo": "Jetzt nicht...",
+  "MermaidBuyPrompt": "Anhänger der Meerjungfrau kaufen?",
+  "MermaidBuyYes": "Kaufen (5000g)",
+  "MermaidLine": "Suchst du nach meinem Anhänger?",
+  
+  "spring.Rain.MermaidBuyNoAnswer": "Nur keine Eile. Liebe braucht Zeit.",
+  "spring.Rain.MermaidBuyYesAnswer": "Nimm es und lass deine Liebe aufblühen.",
+  "spring.Rain.buyItemQuestion": "Suchst du nach meinem Anhänger?",
+  "spring.Rain.hasItem": "Dieser Anhänger ist ein Zeichen des Neubeginns. Teile ihn mit einem besonderen Menschen.",
+  "spring.Rain.married": "Es ist schön zu sehen, dass du immer noch bis über die Flossen verliebt bist.",
+  "spring.Rain.noRelationship": "Wie der Fluss das Meer findet wirst auch du deinen Seelenverwandten finden.",
+  "spring.Rain.notUpgradedHouse": "Erweitere dein Haus, bevor du die Liebe einlädst, sich zu entfalten.",
+  
+  "summer.GreenRain.MermaidBuyNoAnswer": "Du wirst es wissen, wenn die Zeit reif ist.",
+  "summer.GreenRain.MermaidBuyYesAnswer": "Deine Liebe durchdringt jeden Sturm.",
+  "summer.GreenRain.buyItemQuestion": "Suchst du meinen Anhänger in diesen seltsamen Zeiten?",
+  "summer.GreenRain.hasItem": "Kein Sturm wird dich davon abhalten, diesen Anhänger mit dem zu teilen, den du liebst.",
+  "summer.GreenRain.married": "Seltsames Wetter für diese Jahreszeit, nicht wahr? Bleib in der Nähe derer, die du liebst.",
+  "summer.GreenRain.noRelationship": "Die Liebe ist so unberechenbar wie das Wetter. Bleib dir treu und du wirst deinen Seelenverwandten schon finden.",
+  "summer.GreenRain.notUpgradedHouse": "Bei solchem Wetter solltest du sicherstellen, dass dein Haus dafür ausgestattet ist, bevor du dein Herz öffnest.",
+  
+  "summer.Rain.MermaidBuyNoAnswer": "Du wirst es wissen, wenn die Zeit reif ist.",
+  "summer.Rain.MermaidBuyYesAnswer": "Die Legende besagt, dass du die Stimme deiner wahren Liebe hören kannst, wenn du dem Anhänger zuhörst... Hörst du sie?",
+  "summer.Rain.buyItemQuestion": "Soll ich dich mit meinem Anhänger segnen?",
+  "summer.Rain.hasItem": "Lass diesen Anhänger den Weg zu dem finden, was deinem Herzen entspricht.",
+  "summer.Rain.married": "Deine Liebe ist ein Leuchtturm. Möge sie dich immer nach Hause führen.",
+  "summer.Rain.noRelationship": "Die Liebe versteckt sich vor dir, wie die Sonne hinter den Wolken.",
+  "summer.Rain.notUpgradedHouse": "Schaffe zuerst Platz in deinem Haus, dann in deinem Herzen.",
+  
+  "fall.Rain.MermaidBuyNoAnswer": "Keine Eile, Liebe braucht ihre Zeit.",
+  "fall.Rain.MermaidBuyYesAnswer": "Ja, nimm es! Geh und kuschel dich mit deinem Liebsten an einen gemütlichen Ort ein.",
+  "fall.Rain.buyItemQuestion": "Suchst du meinen Anhänger?",
+  "fall.Rain.hasItem": "Dieser Anhänger steht für Treue. Teile ihn mit jemand Besonderem.",
+  "fall.Rain.married": "Herzlichen Glückwunsch zu eurer glücklichen Verbindung.",
+  "fall.Rain.noRelationship": "Waldwege sind einsam; mit Geduld wird dein Blatt den Boden finden.",
+  "fall.Rain.notUpgradedHouse": "Ein größeres Haus ist die Grundlage für eine tiefere Beziehung.",
+  
+  "winter.Rain.MermaidBuyNoAnswer": "Ich wusste gar nicht, dass es im Winter regnen kann...",
+  "winter.Rain.MermaidBuyYesAnswer": "Kalte Hände, warmes Herz. Mögen eure beiden Herzen zu einem werden.",
+  "winter.Rain.buyItemQuestion": "Soll ich dich mit diesem Anhänger segnen?",
+  "winter.Rain.hasItem": "Möge dieser Anhänger das Band stärken, das du zu ehren beschließt.",
+  "winter.Rain.married": "Möge die Freude, die ihr heute teilt, ein Leben lang anhalten.",
+  "winter.Rain.noRelationship": "Dein Herz ist einsam, ich habe nichts für dich.",
+  "winter.Rain.notUpgradedHouse": "Bereite dein Haus gegen die Kälte vor, bevor du die Liebe suchst.",
+
+  "MarriageSecretBook": "Heiratsknigge für Bauern\nBevor du um jemandes Hand anhältst, solltest du erst eine Weile mit der Person ausgegangen sein (bitte dazu jemanden mit einem Bouquet von Pierres um eine Verabredung).\nWenn du bereit bist, die Frage aller Fragen zu stellen, gib der Person ein \"Meerjungfrauen-Amulett\". Jeder weiß, was es bedeutet, eines davon zu erhalten.\nEs wird gemunkelt, dass an stürmischen Tagen der Geist eines alten Seemannes im Sternentautal erscheint,\nin dessen Besitz sich ein solches Amulett befindet.\nNach der Hochzeit zieht dein Partner bei dir ein. Vergiss nicht, dich gut um deine bessere Hälfte zu kümmern! Dein Partner mag Geschenke auch noch nach der Hochzeit!\n\n(Bezahlt von Pierre)"
+}

@@ -1,0 +1,39 @@
+{
+	"Changes":[
+		{
+			"LogName": "Traveling Merchant",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/Traveler_Default"},
+		},
+		{
+			"LogName": "Traveling Merchant at Desert Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Traveler", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/TravelerDesert_Default"},
+			"When": {
+				"Season": "Spring, Fall",
+				"Day": "8, 9, 10, 15, 16, 17"
+			}
+		},
+		{
+			"LogName": "Traveling Merchant at Ice Festival",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Festival_FestivalOfIce_TravelingMerchant", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/TravelerIce_Default",
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:TravelerIce}}",
+						"RandomDialogue": null
+					}
+				],
+			},
+		},
+	],
+}

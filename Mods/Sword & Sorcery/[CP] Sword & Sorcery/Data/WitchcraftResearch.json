@@ -1,0 +1,595 @@
+{
+    "Changes": [
+      {
+        "LogName": "Witchcraft Research Data",
+        "Action": "EditData",
+        "Target": "KCC.SnS/WitchcraftResearch",
+        "Entries":
+        {
+            /*
+            "{{ModId}}_Recipe_SmokeBomb":
+            {
+                "Type": "CraftingRecipe",
+                "Value": "{{ModId}}_SmokeBomb",
+                "Name": "{{i18n: witchcraft.smoke-bomb.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.smoke-bomb.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            "{{ModId}}_Recipe_PortableHole":
+            {
+                "Type": "CraftingRecipe",
+                "Value": "{{ModId}}_PortableHole",
+                "Name": "{{i18n: witchcraft.portable-hole.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.portable-hole.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            "{{ModId}}_Recipe_SpectralLantern":
+            {
+                "Type": "CraftingRecipe",
+                "Value": "{{ModId}}_SpectralLantern",
+                "Name": "{{i18n: witchcraft.spectral-lantern.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.spectral-lantern.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },*/
+            "{{ModId}}_Recipe_TeleportationCircle":
+            {
+                "Type": "CraftingRecipe",
+                "Value": "{{ModID}}_TeleportCircle",
+                "Name": "{{i18n: witchcraft.research.teleportation-circle.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.teleportation-circle.description.0}}",
+                    },
+                    {
+                        "Image": "Textures/DN.SnS/TeleportationCircle1",
+                    },
+                    {
+                        "Description": "{{i18n: witchcraft.research.teleportation-circle.description.2}}",
+                    },
+                    {
+                        "Image": "Textures/DN.SnS/TeleportationCircle2",
+                    },
+                    {
+                        "Description": "{{i18n: witchcraft.research.teleportation-circle.description.4}}",
+                    },
+                    {
+                        "Image": "Textures/DN.SnS/TeleportationCircle3",
+                    },
+                    {
+                        "Image": "Textures/DN.SnS/TeleportationCircle4",
+                        "Description": "{{i18n: witchcraft.research.teleportation-circle.description.6}}",
+                    }
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 50,
+                    "(O){{ModID}}_AirEssence": 50,
+                    "(O){{ModID}}_FireEssence": 50,
+                    "(O){{ModID}}_WaterEssence": 50,
+                }
+            },
+            "{{ModId}}_Recipe_VerdantPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_verdantpotion",
+                "Name": "{{i18n: food.verdantpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.verdantpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 5,
+                    "(O){{ModID}}_AirEssence": 5
+                }
+            },
+            "{{ModId}}_Recipe_ScarletPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_scarletpotion",
+                "Name": "{{i18n: food.scarletpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.scarletpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 5,
+                    "(O){{ModID}}_FireEssence": 5,
+                }
+            },
+            "{{ModId}}_Recipe_HeatherPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_heatherpotion",
+                "Name": "{{i18n: food.heatherpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.heatherpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 5,
+                    "(O){{ModID}}_WaterEssence": 5,
+                }
+            },
+            "{{ModId}}_Recipe_ZydratePotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_zydratepotion",
+                "Name": "{{i18n: food.zydratepotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.zydratepotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Recipe_PistachioPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_pistachiopotion",
+                "Name": "{{i18n: food.pistachiopotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.pistachiopotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 5,
+                    "(O){{ModID}}_WaterEssence": 5,
+                }
+            },
+            "{{ModId}}_Recipe_DahliaPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_dahliapotion",
+                "Name": "{{i18n: food.dahliapotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.dahliapotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Recipe_SlushiePotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_slushiepotion",
+                "Name": "{{i18n: food.slushiepotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.slushiepotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 5,
+                    "(O){{ModID}}_AirEssence": 5,
+                    "(O){{ModID}}_FireEssence": 5,
+                    "(O){{ModID}}_WaterEssence": 5,
+                }
+            },
+            "{{ModId}}_Recipe_MatrixPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_matrixpotion",
+                "Name": "{{i18n: food.matrixpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.matrixpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Recipe_McDougalPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_mcdougalpotion",
+                "Name": "{{i18n: food.mcdougalpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.mcdougalpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 20,
+                }
+            },
+            "{{ModId}}_Recipe_ToirneachPotion":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_toirneachpotion",
+                "Name": "{{i18n: food.toirneachpotion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: food.toirneachpotion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 20,
+                }
+            },
+            "{{ModId}}_Recipe_ReturnPotion1":
+            {
+                "Type": "AlchemyRecipe",
+                "Value": "{{ModId}}_ReturnPotion",
+                "Name": "{{i18n: witchcraft.return-potion.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.return-potion.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15
+                }
+            },
+            "{{ModId}}_Spell_Haste":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.haste.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.haste.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 7,
+                    "(O){{ModID}}_AirEssence": 7,
+                    "(O){{ModID}}_FireEssence": 7,
+                    "(O){{ModID}}_WaterEssence": 7,
+                }
+            },
+            /*
+            "{{ModId}}_Spell_Message":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.message.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.message.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            "{{ModId}}_Spell_ConjureRefreshments":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.conjure-refreshments.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.conjure-refreshments.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            */
+            "{{ModId}}_Spell_Polymorph":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.polymorph.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.polymorph.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 7,
+                    "(O){{ModID}}_AirEssence": 7,
+                    "(O){{ModID}}_FireEssence": 7,
+                    "(O){{ModID}}_WaterEssence": 7,
+                }
+            },
+            "{{ModId}}_Spell_Stasis":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.stasis.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.stasis.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Spell_MageArmor":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.mage-armor.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.mage-armor.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 7,
+                    "(O){{ModID}}_WaterEssence": 7,
+                }
+            },
+            /*
+            "{{ModId}}_Spell_WallOfForce":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.wall-of-force.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.wall-of-force.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            */
+            "{{ModId}}_Spell_Banishment":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.banishment.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.banishment.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 7,
+                    "(O){{ModID}}_AirEssence": 7,
+                    "(O){{ModID}}_FireEssence": 7,
+                    "(O){{ModID}}_WaterEssence": 7,
+                }
+            },
+            "{{ModId}}_Spell_LightningBolt":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.lightning-bolt.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.lightning-bolt.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Spell_Fireball":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.fireball.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.fireball.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_FireEssence": 30,
+                }
+            },
+            "{{ModId}}_Spell_MagicMissle":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.magic-missle.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.magic-missle.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                }
+            },
+            "{{ModId}}_Spell_Icebolt":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.icebolt.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.icebolt.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_WaterEssence": 30
+                }
+            },
+            /*
+            // We're not implementing this
+            "{{ModId}}_Spell_RaiseSpirit":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.raise-spirit.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.raise-spirit.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 10,
+                    "(O){{ModID}}_AirEssence": 10,
+                    "(O){{ModID}}_FireEssence": 10,
+                    "(O){{ModID}}_WaterEssence": 10,
+                }
+            },
+            */
+            "{{ModId}}_Spell_RevivePlant":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.revive-plant.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.revive-plant.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 20,
+                }
+            },
+            "{{ModId}}_Spell_MirrorImage":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.mirror-image.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.mirror-image.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 7,
+                    "(O){{ModID}}_AirEssence": 7,
+                    "(O){{ModID}}_FireEssence": 7,
+                    "(O){{ModID}}_WaterEssence": 7,
+                }
+            },
+            "{{ModId}}_Spell_FindFamiliar":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.find-familiar.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.find-familiar.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            "{{ModId}}_Spell_GhostlyProjection":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.ghostly-projection.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.ghostly-projection.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+           /* "{{ModId}}_Spell_MistyStep":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.misty-step.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.misty-step.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },*/
+            "{{ModId}}_Spell_PocketChest":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.pocket-chest.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.pocket-chest.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 20,
+                }
+            },
+            "{{ModId}}_Spell_PocketDimension":
+            {
+                "Type": "Spell",
+                "Name": "{{i18n: witchcraft.research.pocket-dimension.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.pocket-dimension.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 25,
+                    "(O){{ModID}}_AirEssence": 25,
+                    "(O){{ModID}}_FireEssence": 25,
+                    "(O){{ModID}}_WaterEssence": 25,
+                }
+            },
+            /*
+            "{{ModId}}_Other_PhilosophersStone":
+            {
+                "Type": "Other",
+                "Name": "{{i18n: witchcraft.research.philosophers-stone.name}}",
+                "DocPages": [
+                    {
+                        "Description": "{{i18n: witchcraft.research.philosophers-stone.description}}",
+                    },
+                ],
+                "ResearchCosts": {
+                    "(O){{ModID}}_EarthEssence": 15,
+                    "(O){{ModID}}_AirEssence": 15,
+                    "(O){{ModID}}_FireEssence": 15,
+                    "(O){{ModID}}_WaterEssence": 15,
+                }
+            },
+            */
+        }
+      }
+    ]
+}

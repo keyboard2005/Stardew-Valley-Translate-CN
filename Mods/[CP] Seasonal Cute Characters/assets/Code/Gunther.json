@@ -1,0 +1,107 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Gunther's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Gunther_Spring, Portraits/Gunther_Summer, Portraits/Gunther_Fall, Portraits/Gunther_Winter, Portraits/Gunther_FlowerDance, Portraits/Gunther_SpiritsEve, Characters/Gunther_Spring, Characters/Gunther_Summer, Characters/Gunther_Fall, Characters/Gunther_Winter, Characters/Gunther_FlowerDance, Characters/Gunther_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Gunther/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Gunther Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Gunther", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.GuntherSpring": {
+					"Id": "{{ModId}}.GuntherSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Gunther_Spring",
+					"Portrait": "Portraits/Gunther_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.GuntherSummer": {
+					"Id": "{{ModId}}.GuntherSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Gunther_Summer",
+					"Portrait": "Portraits/Gunther_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GuntherFall": {
+					"Id": "{{ModId}}.GuntherFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Gunther_Fall",
+					"Portrait": "Portraits/Gunther_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GuntherWinter": {
+					"Id": "{{ModId}}.GuntherWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Gunther_Winter",
+					"Portrait": "Portraits/Gunther_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.GuntherFlowerDance": {
+					"Id": "{{ModId}}.GuntherFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Gunther_FlowerDance",
+					"Portrait": "Portraits/Gunther_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.GuntherSpirit": {
+					"Id": "{{ModId}}.GuntherSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Gunther_SpiritsEve",
+					"Portrait": "Portraits/Gunther_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Gunther - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Gunther - Movie Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+		},
+		{   
+			"LogName": "Gunther - Joja Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+		},
+	]
+}

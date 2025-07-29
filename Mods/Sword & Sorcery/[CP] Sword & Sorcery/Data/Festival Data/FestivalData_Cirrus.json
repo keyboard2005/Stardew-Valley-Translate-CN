@@ -1,0 +1,323 @@
+{
+    "Changes": [
+		
+        // EGG FESTIVAL
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "Cirrus 8 70 1",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "Cirrus 8 70 1",
+                    "Delimiter": "/"
+                },
+				{   // LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Cirrus 8 70 1",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Cirrus 8 70 1",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },	  
+        },
+	
+
+        // FLOWER DANCE
+
+        {   
+    
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {	// LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "Cirrus 55 37 0",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "Cirrus 55 37 0",
+                    "Delimiter": "/"
+                },
+				{	// LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters_y2" ],
+                    "Value": "Cirrus 55 37 0",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Cirrus 55 37 0",
+                    "Delimiter": "/"
+                },
+            ],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },  
+        },
+
+
+		{
+			"LogName": "Marriage Flower Dance Accept",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": {
+				"SpouseFlowerDanceAccept_Cirrus":"{{i18n:Festivals.Cirrus.FlowerDance.Accept}}",
+			}
+		},
+
+        // LUAU
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Cirrus 24 25 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Cirrus 24 25 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },
+		},
+
+
+        // DANCE OF THE MOONLIGHT JELLIES
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // LOCATION: SET UP & MAIN EVENT
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Cirrus 13 26 1",
+					"Delimiter": "/"
+				},
+				{   // LOCATION: SET UP & MAIN EVENT Y2
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "Cirrus 13 26 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+
+			  },
+		},
+
+        // STARDEW VALLEY FAIR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Cirrus 46 74 0",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Cirrus 41 95 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },
+		},
+
+        // SPIRIT'S EVE
+
+       {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Cirrus 25 59 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters_y2"],
+					"Value": "Cirrus 25 59 1",
+					"Delimiter": "/"
+				},
+				],
+				"When": {
+					"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				  },
+		},
+
+        // ICE FESTIVAL 
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Cirrus 68 12 3",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters"],
+					"Value": "Cirrus 68 12 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Cirrus 68 12 3",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters_y2"],
+					"Value": "Cirrus 68 12 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },
+		},
+
+        // WINTER STAR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "Cirrus 23 58 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters_y2"	],
+					"Value": "Cirrus 24 58 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+			  },
+        },
+
+		// RSV GATHERING FESTIVAL 
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"TextOperations": [
+					{ // LOCATION: SET UP
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters"],
+					  "Value": "Cirrus 62 47 1",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters"],
+					  "Value": "Cirrus 75 50 0",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: SET UP Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					  "Value": "Cirrus 62 43 3",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					  "Value": "Cirrus 75 50 0",
+					  "Delimiter": "/"
+					 },
+				],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				  },
+		},
+
+		// RSV EMBER OF RESOLUTIONS 		
+
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"TextOperations": [
+				 { // LOCATION: SET UP 
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters"],
+				  "Value": "Cirrus 53 44 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters"],
+				  "Value": "Cirrus 53 44 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: SET UP Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				  "Value": "Cirrus 53 44 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+				  "Value": "Cirrus 53 44 3",
+				  "Delimiter": "/"
+				 },
+		 	],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch3.Cirrus.1": true,
+				  },
+		},
+
+
+    ]
+}
