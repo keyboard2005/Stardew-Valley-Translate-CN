@@ -16,3 +16,9 @@
 /home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/FlashShifter.StardewValleyExpandedCP/default.json
 /home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/FlashShifter.SVECode/default.json
 /home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/FlashShifter.SVECode/zh.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/atravita.NovaNPCTest/default.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/atravita.NovaNPCTest/zh.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/Esca.FarmTypeManager/zh.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/FlashShifter.StardewValleyExpandedCP/zh.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/TenebrousNova.EliDylan.CP/default.json
+/home/keyboard/Documents/Stardew-Valley-Translate-All/bin/Debug/net6.0/translations/TenebrousNova.EliDylan.CP/zh.json

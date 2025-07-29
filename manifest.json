@@ -2,7 +2,7 @@
     "Name": "TranslateAll",
     "Author": "keyboard",
     "Version": "1.0.0",
-    "Description": "通用汉化模组，支持所有模组的中文化。使用 SMAPI 资产加载器提供翻译服务。",
+    "Description": "通用汉化模组，支持所有模组的中文化。",
     "UniqueID": "keyboard.TranslateAll",
     "EntryDll": "TranslateAll.dll",
     "MinimumApiVersion": "3.14.0",

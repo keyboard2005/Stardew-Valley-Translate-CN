@@ -1,0 +1,203 @@
+# Stardew Valley Translate All
+
+星露谷翻译整合工具 - 一个用于管理和部署星露谷物语模组翻译的自动化工具
+
+## 项目简介
+
+这是一个用于星露谷物语模组翻译管理的工具集，可以自动收集、整合和部署中文翻译到各个模组中。该项目包含一个C#的SMAPI模组和多个Python工具脚本。
+
+## 功能特性
+
+### 🔧 SMAPI模组功能
+- **自动收集翻译**: 扫描所有已安装模组的`default.json`文件
+- **智能部署**: 将翻译文件自动部署到对应模组的`zh.json`中
+- **递归扫描**: 支持嵌套模组文件夹结构
+- **安全覆盖**: 直接覆盖模式，确保翻译正确应用
+
+### 🐍 Python工具集
+- **翻译整合器**: 收集所有翻译数据并应用到模组
+- **缺失检测器**: 检测未翻译或翻译缺失的内容
+- **智能过滤**: 自动跳过英文内容，只处理中文翻译
+
+## 项目结构
+
+```
+Stardew-Valley-Translate-All/
+├── ModEntry.cs                 # SMAPI模组入口文件
+├── TranslateAll.csproj        # C#项目配置文件
+├── manifest.json              # SMAPI模组清单
+├── translation_merger.py      # 翻译整合工具
+├── translation_detector.py    # 翻译缺失检测工具
+├── translations/              # 翻译文件目录
+│   ├── CJBok.CheatsMenu/
+│   ├── Esca.FarmTypeManager/
+│   └── FlashShifter.StardewValleyExpandedCP/
+├── 翻译数据/                   # 原始翻译数据
+└── tmp/                       # 临时文件目录
+    └── all.json              # 合并后的翻译文件
+```
+
+## 安装指南
+
+### 前置要求
+- **Stardew Valley** 游戏本体
+- **SMAPI** (Stardew Modding API)
+- **Python 3.6+** (用于运行工具脚本)
+- **.NET 6.0** (用于编译C#模组)
+
+### SMAPI模组安装
+
+1. 克隆或下载本项目
+```bash
+git clone https://github.com/keyboard2005/Stardew-Valley-Translate-All.git
+```
+
+2. 编译模组
+```bash
+cd Stardew-Valley-Translate-All
+dotnet build
+```
+
+3. 将编译好的模组复制到SMAPI的Mods文件夹
+```bash
+cp -r bin/Debug/net6.0/ "~/.local/share/StardewValley/Mods/TranslateAll/"
+```
+
+## 使用说明
+
+### 🚀 快速开始
+
+#### 方法一：使用Python工具（推荐）
+
+1. **收集和应用翻译**
+```bash
+python3 translation_merger.py
+```
+这个工具会：
+- 扫描`翻译数据/`文件夹中的所有`zh.json`文件
+- 将翻译内容合并到`tmp/all.json`
+- 自动应用翻译到`translations/`文件夹中的所有模组
+
+2. **检测翻译缺失**
+```bash
+python3 translation_detector.py
+```
+这个工具会：
+- 对比各模组的`default.json`和`zh.json`
+- 找出缺失或未翻译的内容
+- 导出到`missing_translations.json`供后续翻译
+
+#### 方法二：使用SMAPI模组
+
+1. 启动游戏，模组会在游戏启动时自动运行
+2. 模组会自动收集所有模组的`default.json`文件
+3. 将现有翻译部署到对应的`zh.json`文件中
+
+### 📁 文件夹说明
+
+- **`翻译数据/`**: 存放原始翻译文件，按模组分类
+- **`translations/`**: 模组翻译工作目录，每个子文件夹对应一个模组
+- **`tmp/`**: 临时文件，存放合并后的翻译数据
+
+### 🔍 工具详解
+
+#### translation_merger.py - 翻译整合器
+**第一步：收集翻译数据**
+- 递归扫描`翻译数据/`文件夹
+- 解析带注释的JSON文件
+- 合并所有`zh.json`文件到`tmp/all.json`
+
+**第二步：应用翻译**
+- 扫描`translations/`文件夹中的模组
+- 为每个`default.json`创建或更新对应的`zh.json`
+- 智能跳过英文内容，只应用中文翻译
+
+#### translation_detector.py - 缺失检测器
+- 对比`default.json`和`zh.json`的差异
+- 识别未翻译的英文内容
+- 生成待翻译内容清单
+
+## 配置选项
+
+### SMAPI模组配置
+模组支持以下配置选项（在`config.json`中）：
+- 翻译文件路径自定义
+- 扫描模式设置
+- 日志级别控制
+
+### Python工具配置
+可以修改脚本开头的路径变量：
+```python
+translation_dir = "翻译数据"     # 翻译数据文件夹
+translations_dir = "translations" # 模组翻译文件夹
+```
+
+## 贡献指南
+
+### 添加新翻译
+
+1. 在`翻译数据/`文件夹中创建对应模组的文件夹
+2. 添加`zh.json`翻译文件
+3. 运行`translation_merger.py`应用翻译
+
+### 修复翻译缺失
+
+1. 运行`translation_detector.py`检测缺失
+2. 根据`missing_translations.json`补充翻译
+3. 重新运行整合工具
+
+### 代码贡献
+
+1. Fork本项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启Pull Request
+
+## 常见问题
+
+### Q: 为什么有些翻译没有应用？
+A: 工具会自动跳过英文内容。如果`all.json`中的翻译被识别为英文，将不会应用到`zh.json`中。
+
+### Q: 如何处理带注释的JSON文件？
+A: 所有工具都支持处理带有`//`和`/* */`注释的JSON文件，会自动清理后解析。
+
+### Q: 模组更新后翻译丢失怎么办？
+A: 重新运行`translation_merger.py`即可恢复翻译。建议在模组更新后定期运行。
+
+### Q: 如何添加新模组的翻译？
+A: 在`翻译数据/`文件夹中创建新的模组文件夹，添加对应的`zh.json`文件即可。
+
+## 技术细节
+
+### 依赖项
+- **C#**: SMAPI框架, Newtonsoft.Json
+- **Python**: 标准库（json, re, pathlib, os）
+
+### 支持的文件格式
+- 标准JSON格式
+- 带注释的JSON格式（支持`//`和`/* */`）
+
+### 编码支持
+- UTF-8编码
+- 中文字符完全支持
+- 自动检测英文内容
+
+## 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+## 致谢
+
+- 感谢星露谷物语模组社区的支持
+- 感谢SMAPI框架的开发者们
+- 感谢所有贡献翻译的志愿者们
+
+## 联系方式
+
+- GitHub Issues: [项目问题追踪](https://github.com/keyboard2005/Stardew-Valley-Translate-All/issues)
+- 讨论区: [项目讨论](https://github.com/keyboard2005/Stardew-Valley-Translate-All/discussions)
+
+---
+
+**星露谷翻译整合工具** - 让中文玩家享受更好的模组体验 ❤️
