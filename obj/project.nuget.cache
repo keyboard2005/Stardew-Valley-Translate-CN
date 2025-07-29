@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9D5l2p6fUlXvD0JG8KzWB+PAQbziXYkXek7Xg2rZk822jvMgLYNrT8/+94rkvQysnNyElSxOiPysHSBUA5wVZw==",
+  "success": true,
+  "projectFilePath": "/home/keyboard/Documents/Stardew-Valley-Translate-All/TranslateAll.csproj",
+  "expectedPackageFiles": [
+    "/home/keyboard/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/keyboard/.nuget/packages/pathoschild.stardew.modbuildconfig/4.1.1/pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

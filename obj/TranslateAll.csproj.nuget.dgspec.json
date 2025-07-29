@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/keyboard/Documents/Stardew-Valley-Translate-All/TranslateAll.csproj": {}
+  },
+  "projects": {
+    "/home/keyboard/Documents/Stardew-Valley-Translate-All/TranslateAll.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/keyboard/Documents/Stardew-Valley-Translate-All/TranslateAll.csproj",
+        "projectName": "TranslateAll",
+        "projectPath": "/home/keyboard/Documents/Stardew-Valley-Translate-All/TranslateAll.csproj",
+        "packagesPath": "/home/keyboard/.nuget/packages/",
+        "outputPath": "/home/keyboard/Documents/Stardew-Valley-Translate-All/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/keyboard/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pathoschild.Stardew.ModBuildConfig": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/keyboard/dotnet-sdk-6.0.428-linux-x64/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

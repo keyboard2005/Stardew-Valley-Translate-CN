@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GamePath>/home/keyboard/.local/share/Steam/steamapps/common/Stardew Valley</GamePath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  
+  <!-- 将assets文件夹复制到输出目录 -->
+  <ItemGroup>
+    <Content Include="translations\**\*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
