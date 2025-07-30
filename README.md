@@ -142,7 +142,7 @@ python name_replace.py --file zh.json --mapping npc_name.json
 ## 📞 联系我们
 
 - 🐛 **Bug 报告**：[GitHub Issues](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/issues)
-<!-- - 💬 **讨论交流**：[GitHub Discussions](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/discussions) -->
+- 💬 **讨论交流**：[GitHub Discussions](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/discussions)
 - 📧 **邮件联系**：[samuraizd@outlook.com]
 
 ## 📄 开源协议
