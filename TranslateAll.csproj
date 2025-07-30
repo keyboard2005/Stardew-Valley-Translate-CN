@@ -10,7 +10,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   
-  <!-- 将assets文件夹复制到输出目录 -->
   <ItemGroup>
     <Content Include="translations\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
