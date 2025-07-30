@@ -24,7 +24,7 @@ def remove_json_comments(json_string: str) -> str:
     json_string = re.sub(r'/\*.*?\*/', '', json_string, flags=re.DOTALL)
     return json_string
 
-async def translate_text_ai(text: str, model: str = "aws/claude-opus-4-20250514") -> str:
+async def translate_text_ai(text: str, model: str = "claude-sonnet-4-20250514") -> str:
     """使用AI翻译文本到中文"""
     if not text.strip():
         return text
@@ -75,46 +75,83 @@ def translate_json_values(data: Dict[str, Any]) -> Dict[str, Any]:
     
     return translated
 
-async def translate_json_values_async(data: Dict[str, Any], output_path: str, model: str = "gpt-4o") -> Dict[str, Any]:
-    """异步递归翻译JSON中的所有字符串值，实时写入"""
+async def translate_json_values_async(data: Dict[str, Any], output_path: str, model: str = "gpt-4o", max_concurrent: int = 5) -> Dict[str, Any]:
+    """异步递归翻译JSON中的所有字符串值，真正实时写入，支持并发"""
     translated = {}
     
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
+    # 创建信号量限制并发数
+    semaphore = asyncio.Semaphore(max_concurrent)
+    # 创建文件写入锁
+    write_lock = asyncio.Lock()
+    
+    async def translate_and_save(text: str, key: str) -> str:
+        """翻译并实时保存单个条目"""
+        async with semaphore:
+            result = await translate_text_ai(text, model)
+            
+            # 实时写入文件
+            async with write_lock:
+                translated[key] = result
+                with open(output_path, 'w', encoding='utf-8') as file:
+                    json.dump(translated, file, ensure_ascii=False, indent=2)
+                print(f"已保存进度: {key}")
+            
+            return result
+    
+    # 处理所有数据项
+    tasks = []
     for key, value in data.items():
         if isinstance(value, str):
-            # 异步翻译字符串值
-            translated[key] = await translate_text_ai(value, model)
-            # 实时写入当前翻译结果
-            with open(output_path, 'w', encoding='utf-8') as file:
-                json.dump(translated, file, ensure_ascii=False, indent=2)
-            print(f"已保存进度: {key}")
+            # 创建翻译任务
+            task = asyncio.create_task(translate_and_save(value, key))
+            tasks.append((key, task))
         elif isinstance(value, dict):
             # 递归处理嵌套字典
-            translated[key] = await translate_json_values_async(value, output_path, model)
+            translated[key] = await translate_json_values_async(value, output_path, model, max_concurrent)
         elif isinstance(value, list):
             # 处理列表
-            translated_list = []
+            list_tasks = []
+            translated_list = value.copy()  # 先复制原列表
+            
             for i, item in enumerate(value):
                 if isinstance(item, str):
-                    translated_item = await translate_text_ai(item, model)
-                    translated_list.append(translated_item)
-                    # 更新列表进度并写入
-                    translated[key] = translated_list + value[i+1:]  # 包含未翻译的项目
-                    with open(output_path, 'w', encoding='utf-8') as file:
-                        json.dump(translated, file, ensure_ascii=False, indent=2)
-                    print(f"已保存列表进度: {key}[{i}]")
-                else:
-                    translated_list.append(item)
+                    async def translate_list_item(text, index, list_key):
+                        async with semaphore:
+                            result = await translate_text_ai(text, model)
+                            
+                            # 实时更新列表并写入文件
+                            async with write_lock:
+                                translated_list[index] = result
+                                translated[list_key] = translated_list.copy()
+                                with open(output_path, 'w', encoding='utf-8') as file:
+                                    json.dump(translated, file, ensure_ascii=False, indent=2)
+                                print(f"已保存列表进度: {list_key}[{index}]")
+                            
+                            return result
+                    
+                    task = asyncio.create_task(translate_list_item(item, i, key))
+                    list_tasks.append(task)
+            
+            # 等待所有列表项翻译完成
+            if list_tasks:
+                await asyncio.gather(*list_tasks)
+            
             translated[key] = translated_list
         else:
             # 保持其他类型不变
             translated[key] = value
     
+    # 等待所有主要任务完成
+    if tasks:
+        for key, task in tasks:
+            await task
+    
     return translated
 
-async def process_json_file_async(input_path: str, output_path: str, model: str = "gpt-4o"):
+async def process_json_file_async(input_path: str, output_path: str, model: str = "gpt-4o", max_concurrent: int = 5):
     """异步处理JSON文件：读取、翻译、写入"""
     try:
         # 读取文件
@@ -127,8 +164,10 @@ async def process_json_file_async(input_path: str, output_path: str, model: str 
         # 解析JSON
         data = json.loads(clean_content)
         
-        # 异步翻译所有值（实时写入）
-        translated_data = await translate_json_values_async(data, output_path, model)
+        print(f"开始翻译，最大并发数: {max_concurrent}")
+        
+        # 异步翻译所有值（实时写入，并发执行）
+        translated_data = await translate_json_values_async(data, output_path, model, max_concurrent)
         
         # 最终写入完整结果
         with open(output_path, 'w', encoding='utf-8') as file:
@@ -143,14 +182,14 @@ async def process_json_file_async(input_path: str, output_path: str, model: str 
     except Exception as e:
         print(f"错误: {e}")
 
-def translate_json_file(input_path: str, output_path: str, model: str = "gpt-4o"):
+def translate_json_file(input_path: str, output_path: str, model: str = "gpt-4o", max_concurrent: int = 5):
     """处理JSON文件：读取、翻译、写入"""
-    asyncio.run(process_json_file_async(input_path, output_path, model))
+    asyncio.run(process_json_file_async(input_path, output_path, model, max_concurrent))
 
 if __name__ == "__main__":
     # 示例使用
     input_file = "translations/TenebrousNova.EliDylan.CP/default.json"
     output_file = "translations/TenebrousNova.EliDylan.CP/zh.json"
     
-    # 使用 gpt-4o 模型
-    translate_json_file(input_file, output_file, model="gpt-4o")
+    # 使用并发翻译，可以调整max_concurrent参数控制并发数
+    translate_json_file(input_file, output_file, model="gpt-4o", max_concurrent=10)
