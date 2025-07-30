@@ -17,10 +17,9 @@ namespace TranslateAll
 
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
-            this.Monitor.Log("开始更新和部署翻译文件...", LogLevel.Info);
+            this.Monitor.Log("开始部署中文翻译文件...", LogLevel.Info);
             
             string modsDir = Path.GetDirectoryName(Helper.DirectoryPath);
-            int collectedCount = 0;
             int deployedCount = 0;
             int scannedCount = 0;
             
@@ -30,21 +29,13 @@ namespace TranslateAll
                 return;
             }
             
-            // 第一步：递归收集所有模组的 default.json 文件
-            this.Monitor.Log("正在收集模组的默认翻译文件...", LogLevel.Info);
-            ScanModsRecursively(modsDir, ref collectedCount, ref scannedCount, true);
+            // 递归部署翻译文件
+            ScanModsRecursively(modsDir, ref deployedCount, ref scannedCount);
             
-            this.Monitor.Log($"收集完成！从 {collectedCount} 个模组收集了默认翻译文件", LogLevel.Info);
-            
-            // 第二步：递归部署翻译文件
-            this.Monitor.Log("正在部署中文翻译文件...", LogLevel.Info);
-            deployedCount = 0; // 重置计数器
-            ScanModsRecursively(modsDir, ref deployedCount, ref scannedCount, false);
-            
-            this.Monitor.Log($"部署完成！扫描了 {scannedCount} 个模组，收集了 {collectedCount} 个默认文件，部署了 {deployedCount} 个翻译文件", LogLevel.Info);
+            this.Monitor.Log($"部署完成！扫描了 {scannedCount} 个模组，成功部署了 {deployedCount} 个中文翻译文件", LogLevel.Info);
         }
 
-        private void ScanModsRecursively(string directory, ref int actionCount, ref int scannedCount, bool isCollecting)
+        private void ScanModsRecursively(string directory, ref int deployedCount, ref int scannedCount)
         {
             try
             {
@@ -65,25 +56,15 @@ namespace TranslateAll
                         
                         if (!string.IsNullOrEmpty(modId))
                         {
-                            bool success = false;
-                            if (isCollecting)
+                            if (DeployTranslationToMod(modId, subDir))
                             {
-                                success = CollectDefaultTranslation(modId, subDir);
-                            }
-                            else
-                            {
-                                success = DeployTranslationToMod(modId, subDir);
-                            }
-                            
-                            if (success)
-                            {
-                                actionCount++;
+                                deployedCount++;
                             }
                         }
                     }
                     
                     // 递归搜索子文件夹
-                    ScanModsRecursively(subDir, ref actionCount, ref scannedCount, isCollecting);
+                    ScanModsRecursively(subDir, ref deployedCount, ref scannedCount);
                 }
             }
             catch (System.Exception ex)
@@ -119,47 +100,6 @@ namespace TranslateAll
             {
                 this.Monitor.Log($"读取模组 {Path.GetFileName(modFolderPath)} 的manifest.json失败: {ex.Message}", LogLevel.Debug);
                 return null;
-            }
-        }
-
-        private bool CollectDefaultTranslation(string modId, string modPath)
-        {
-            try
-            {
-                string modI18nPath = Path.Combine(modPath, "i18n");
-                
-                if (!Directory.Exists(modI18nPath))
-                {
-                    this.Monitor.Log($"模组 {modId} 没有i18n文件夹", LogLevel.Debug);
-                    return false;
-                }
-                
-                string defaultFile = Path.Combine(modI18nPath, "default.json");
-                if (!File.Exists(defaultFile))
-                {
-                    this.Monitor.Log($"模组 {modId} 没有default.json文件", LogLevel.Debug);
-                    return false;
-                }
-                
-                // 确保我们的translations文件夹存在
-                string myTranslationsPath = Path.Combine(Helper.DirectoryPath, "translations", modId);
-                if (!Directory.Exists(myTranslationsPath))
-                {
-                    Directory.CreateDirectory(myTranslationsPath);
-                    this.Monitor.Log($"为模组 {modId} 创建翻译文件夹", LogLevel.Debug);
-                }
-                
-                // 复制 default.json
-                string targetDefault = Path.Combine(myTranslationsPath, "default.json");
-                File.Copy(defaultFile, targetDefault, true);
-                
-                this.Monitor.Log($"更新模组 {modId} 的default.json", LogLevel.Debug);
-                return true;
-            }
-            catch (System.Exception ex)
-            {
-                this.Monitor.Log($"收集模组 {modId} 默认翻译失败: {ex.Message}", LogLevel.Error);
-                return false;
             }
         }
 
