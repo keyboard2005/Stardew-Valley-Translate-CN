@@ -1,7 +1,7 @@
 {
     "Name": "TranslateAll",
     "Author": "keyboard",
-    "Version": "1.0.0",
+    "Version": "0.0.2",
     "Description": "通用汉化模组，支持所有模组的中文化。",
     "UniqueID": "keyboard.TranslateAll",
     "EntryDll": "TranslateAll.dll",
