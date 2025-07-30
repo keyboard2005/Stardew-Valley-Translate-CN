@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        // F E S T I V A L S
+        //Aideen does not attend: Ice Festival, Egg Festival (that might change), Spirit's Eve
+        //Currently only Winter Star, Luau and Flower Festival are programmed in.
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Mateo 27 4 1/Aideen 28 4 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer20.madeen}}",
+                "Mateo": "{{i18n:festivals.mateo.summer20.madeen}}"
+            },
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "Spouse |contains=Mateo": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter28}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 52 43 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 49 41 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 41 38 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 46 19 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "UNA.FF.CP"
+            }
+        },
+    ]
+}

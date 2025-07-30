@@ -1,0 +1,205 @@
+{
+  "Format": "2.5.3",
+  "ConfigSchema": {
+    "Enabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "Enable to replace the Old Mariner with a seasonal mermaid visitor.",
+      "Section": "General"
+    },
+    "UseCustomNames": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "AllowBlank": false,
+      "Description": "Use custom names for each seasonal mermaid.",
+      "Section": "Appearance"
+    },
+    "CustomSpringName": {
+      "Default": "Sprynglynn",
+      "AllowBlank": false,
+      "Description": "Custom name for the Spring mermaid.",
+      "Section": "Appearance",
+      "When": {
+        "UseCustomNames": "true"
+      }
+    },
+    "CustomSummerName": {
+      "Default": "Sunneigh",
+      "AllowBlank": false,
+      "Description": "Custom name for the Summer mermaid.",
+      "Section": "Appearance",
+      "When": {
+        "UseCustomNames": "true"
+      }
+    },
+    "CustomFallName": {
+      "Default": "Pumpkyn",
+      "AllowBlank": false,
+      "Description": "Custom name for the Fall mermaid.",
+      "Section": "Appearance",
+      "When": {
+        "UseCustomNames": "true"
+      }
+    },
+    "CustomWinterName": {
+      "Default": "Glaciaire",
+      "AllowBlank": false,
+      "Description": "Custom name for the Winter mermaid.",
+      "Section": "Appearance",
+      "When": {
+        "UseCustomNames": "true"
+      }
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "Pendant",
+      "Value": "Default"
+    },
+    {
+      "Name": "CurrentMermaidName",
+      "Value": "{{Season}}Mermaid",
+      "When": {
+        "UseCustomNames": "false"
+      }
+    },
+    {
+      "Name": "CurrentMermaidName",
+      "Value": "{{CustomSpringName}}",
+      "When": {
+        "UseCustomNames": "true",
+        "Season": "spring"
+      }
+    },
+    {
+      "Name": "CurrentMermaidName",
+      "Value": "{{CustomSummerName}}",
+      "When": {
+        "UseCustomNames": "true",
+        "Season": "summer"
+      }
+    },
+    {
+      "Name": "CurrentMermaidName",
+      "Value": "{{CustomFallName}}",
+      "When": {
+        "UseCustomNames": "true",
+        "Season": "fall"
+      }
+    },
+    {
+      "Name": "CurrentMermaidName",
+      "Value": "{{CustomWinterName}}",
+      "When": {
+        "UseCustomNames": "true",
+        "Season": "winter"
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.rain",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "FromFile": "assets/{{Season}}_Rain.png",
+      "When": {
+        "Enabled": "true",
+        "HasFile:assets/{{Season}}_Rain.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.storm",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "FromFile": "assets/{{Season}}_Rain.png",
+      "Priority": "Default + 1",
+      "When": {
+        "Enabled": "true",
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false,
+        "HasFile:assets/{{Season}}_Rain.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.load.mariner.greenrain",
+      "Action": "EditImage",
+      "Target": "Characters/Mariner",
+      "Priority": "Default + 1",
+      "FromFile": "assets/{{Season}}_GreenRain.png",
+      "When": {
+        "Enabled": "true",
+        "Weather": "GreenRain",
+        "HasFile:assets/{{Season}}_GreenRain.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.rain",
+      "Action": "EditData",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.noRelationship}}"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.storm",
+      "Action": "EditData",
+      "Priority": "Default + 1",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{CurrentMermaidName}}: {{i18n:{{Season}}.Rain.noRelationship}}"
+      },
+      "When": {
+        "Enabled": "true",
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.seasonal.greenrain",
+      "Action": "EditData",
+      "Priority": "Default + 1",
+      "Target": "Strings/Locations",
+      "Entries": {
+        "Beach_Mariner_PlayerMarried": "{{CurrentMermaidName}}: {{i18n:{{Season}}.GreenRain.married}}",
+        "Beach_Mariner_PlayerHasItem": "{{CurrentMermaidName}}: {{i18n:{{Season}}.GreenRain.hasItem}}",
+        "Beach_Mariner_PlayerNotUpgradedHouse": "{{CurrentMermaidName}}: {{i18n:{{Season}}.GreenRain.notUpgradedHouse}}",
+        "Beach_Mariner_PlayerBuyItem_Question": "{{CurrentMermaidName}}: {{i18n:{{Season}}.GreenRain.buyItemQuestion}}",
+        "Beach_Mariner_PlayerNoRelationship": "{{CurrentMermaidName}}: {{i18n:{{Season}}.GreenRain.noRelationship}}"
+      },
+      "When": {
+        "Enabled": "true",
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.marriagesecretbook",
+      "Action": "EditData",
+      "Target": "Strings/Notes",
+      "Entries": {
+        "13": "{{i18n: MarriageSecretBook}}"
+      },
+      "When": {
+        "Enabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.includes.portraits",
+      "Action": "Include",
+      "FromFile": "assets/portrait/include.json",
+      "When": {
+        "HasMod": "DolphINaF.VendorPortraits",
+        "Enabled": "true",
+        "HasFile:assets/portrait/include.json": true
+      }
+    }
+  ]
+}

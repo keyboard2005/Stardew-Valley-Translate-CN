@@ -1,0 +1,10 @@
+﻿{
+	// 菜单
+	"Menu.GingerIslandFarm.DisplayName": "姜岛农场",
+	"Menu.CarpenterMenu.ChooseLocation": "你想在哪里管理建筑？",
+	"Menu.PurchaseAnimalsMenu.ChooseLocation": "你想在哪里管理动物？",
+
+	// GMCM
+	"GMCM.AllowBuildingInSlimeArea.Title": "允许在史莱姆区域建造",
+	"GMCM.AllowBuildingInSlimeArea.Tooltip": "定义是否允许在史莱姆区域内建造。"
+}

@@ -1,0 +1,13 @@
+{
+   "Name": "Cuter Slimes",
+   "Author": "Amaryn & JennaJuffuffles",
+   "Version": "1.0.4",
+   "MinimumApiVersion": "4.0.8",
+   "Description": "A reskin of the slimes, refreshed for SDV 1.6.",
+   "UniqueID": "jennajuffuffles.cuterslimesrefreshed",
+   "UpdateKeys": ["Nexus:21889"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.5.3"
+    }
+  }

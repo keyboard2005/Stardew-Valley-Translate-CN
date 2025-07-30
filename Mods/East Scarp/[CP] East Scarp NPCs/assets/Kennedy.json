@@ -1,0 +1,30 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "KennedyLK": "{{i18n: gift.kennedy.love}}/167 149 197 203/{{i18n: gift.kennedy.like}}/306 308 -8/{{i18n: gift.kennedy.dislike}}/280 /{{i18n: gift.kennedy.hate}}//{{i18n: gift.kennedy.neutral}}//"
+            }
+        },
+        {
+            "LogName": "NPC Sprite",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/KennedyLK, Portraits/KennedyLK",
+            "FromFile": "assets/{{target}}/Kennedy.png"
+        },
+        {
+            "LogName": "Load kennedy schedule File",
+            "Action": "Load",
+            "Target": "Characters/schedules/KennedyLK",
+            "FromFile": "assets/{{Target}}/KennedyLK.json",
+        },
+        {
+            "LogName": "Kennedy Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/KennedyLK.json",
+        }
+    ]
+}

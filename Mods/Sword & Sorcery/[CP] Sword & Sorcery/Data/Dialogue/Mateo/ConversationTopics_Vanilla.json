@@ -1,0 +1,175 @@
+{
+    "Changes": [
+
+        // MARLON 
+        {
+            "LogName": "Conversation Topics - Marlon Vanilla",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{SVEMarlon}}",
+            "Entries": {
+                "MateoCaution": "{{i18n:CT.Marlon.MateoCaution}}",
+                "MateoLibrary": "{{i18n:CT.Marlon.MateoLibrary}}",
+                "MateoAdmission": "{{i18n:CT.Marlon.MateoAdmission}}",
+                "MateoConfrontation": "{{i18n:CT.Marlon.MateoConfrontation}}",
+                "MateoWyatt": "{{i18n:CT.Marlon.MateoWyatt}}",
+                "MateoAcceptance": "{{i18n:CT.Marlon.MateoAcceptance}}",
+                "MateoPain": "{{i18n:CT.Marlon.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Marlon.MateoRecovery}}",
+                "CGuildConstruction": "{{i18n:CT.Marlon.CGuildConstruction}}",
+                "CGuildComplete": "{{i18n:CT.Marlon.CGuildComplete}}",
+                "MateoDate": "{{i18n:CT.Marlon.MateoDate}}",
+                "MateoIntegrity": "{{i18n:CT.Marlon.MateoIntegrity}}",
+                "MateoDeclaration": "{{i18n:CT.Marlon.MateoDeclaration}}"
+            },
+        },
+        // GUNTHER
+        {
+            "LogName": "Conversation Topics - Gunther",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{SVEGunther}}",
+            "Entries": {
+                "MateoCaution": "{{i18n:CT.Gunther.MateoCaution}}",
+                "MateoLibrary": "{{i18n:CT.Gunther.MateoLibrary}}",
+                "MateoAdmission": "{{i18n:CT.Gunther.MateoAdmission}}",
+                "MateoConfrontation": "{{i18n:CT.Gunther.MateoConfrontation}}",
+                "MateoAcceptance": "{{i18n:CT.Gunther.MateoAcceptance}}",
+                "MateoPain": "{{i18n:CT.Gunther.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Gunther.MateoRecovery}}",
+                "CGuildConstruction": "{{i18n:CT.Gunther.CGuildConstruction}}",
+                "CGuildComplete": "{{i18n:CT.Gunther.CGuildComplete}}",
+                "MateoDate": "{{i18n:CT.Gunther.MateoDate}}",
+                "MateoIntegrity": "{{i18n:CT.Gunther.MateoIntegrity}}",
+                "MateoDeclaration": "{{i18n:CT.Gunther.MateoDeclaration}}"
+            },
+        },
+        {
+            "LogName": "Conversation Topics - Krobus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Krobus",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Krobus.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Krobus.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Krobus.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Krobus.MateoRecovery}}",
+                "MateoIntegrity": "{{i18n:CT.Krobus.MateoIntegrity}}",
+                "MateoDeclaration": "{{i18n:CT.Krobus.MateoDeclaration}}"
+            }
+        },
+        // PIERRE
+        {
+            "LogName": "Conversation Topics - Pierre",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Pierre.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Pierre.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Pierre.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Pierre.MateoRecovery}}"
+            }
+        },
+        //CAROLINE
+        {
+            "LogName": "Conversation Topics - Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Caroline.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Caroline.MateoConfrontation}}",
+                "MateoRecovery": "{{i18n:CT.Caroline.MateoRecovery}}"
+            }
+        },
+        //GUS
+        {
+            "LogName": "Conversation Topics - Gus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Gus.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Gus.MateoConfrontation}}",
+                "MateoAcceptance": "{{i18n:CT.Gus.MateoAcceptance}}",
+                "MateoPain": "{{i18n:CT.Gus.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Gus.MateoRecovery}}"
+            }
+        },
+        //HALEY
+        {
+            "LogName": "Conversation Topics - Haley",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Haley.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Haley.MateoConfrontation}}"
+            }
+        },
+        //HARVEY
+        {
+            "LogName": "Conversation Topics - Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Harvey.MateoLibrary}}",
+                "MateoAdmission": "{{i18n:CT.Harvey.MateoAdmission}}",
+                "MateoConfrontation": "{{i18n:CT.Harvey.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Harvey.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Harvey.MateoRecovery}}"
+            }
+        },
+        // ROBIN
+        {
+            "LogName": "Conversation Topics - Robin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries": {
+                "MateoAdmission": "{{i18n:CT.Robin.MateoAdmission}}",
+                "MateoAcceptance": "{{i18n:CT.Robin.MateoAcceptance}}",
+                "CGuildConstruction": "{{i18n:CT.Robin.CGuildConstruction}}",
+                "CGuildComplete": "{{i18n:CT.Robin.CGuildComplete}}"
+            }
+        },
+        // WILLY 
+        {
+            "LogName": "Conversation Topics - Willy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Willy",
+            "Entries": {
+                "MateoAdmission": "{{i18n:CT.Willy.MateoAdmission}}",
+                "MateoConfrontation": "{{i18n:CT.Willy.MateoConfrontation}}"
+            }
+        },
+        // LEWIS
+        {
+            "LogName": "Conversation Topics - Lewis",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "MateoLibrary": "{{i18n:CT.Lewis.MateoLibrary}}",
+                "MateoConfrontation": "{{i18n:CT.Lewis.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Lewis.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Lewis.MateoRecovery}}",
+                "CGuildConstruction": "{{i18n:CT.Lewis.CGuildConstruction}}",
+                "CGuildComplete": "{{i18n:CT.Lewis.CGuildComplete}}",
+            }
+        },
+        // ABIGAIL 
+        {
+            "LogName": "Conversation Topics - Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "MateoAdmission": "{{i18n:CT.Abigail.MateoAdmission}}",
+                "MateoConfrontation": "{{i18n:CT.Abigail.MateoConfrontation}}",
+            }
+        },
+        // MARNIE
+        {
+            "LogName": "Conversation Topics - Marnie",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "MateoConfrontation": "{{i18n:CT.Marnie.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Marnie.MateoPain}}",
+                "MateoRecovery": "{{i18n:CT.Marnie.MateoRecovery}}"
+            }
+        },
+    ]
+}

@@ -1,0 +1,603 @@
+{
+	"Format":"2.3.0",
+
+	"DynamicTokens":[
+		{
+			"Name": "Trader",
+			"Value": "Default"
+		},
+		{
+			"Name": "Trader",
+			"Value": "{{Random:Default, Scholar, Default, RacerGuy}}",
+			"When": {"DesertShift": true,}	
+		},
+		{
+			"Name": "Trader",
+			"Value": "Default",
+			"When": {
+				"Season": "Spring",
+				"Day": "15, 16, 17"
+			}	
+		},
+		{
+			"Name": "Trader",
+			"Value": "Default",
+			"When": {
+				"HasMod |contains=agentlyoko.desertfest2": true,
+				"Season": "Fall",
+				"Day": "8, 9, 10"
+			}	
+		},
+		{
+			"Name": "Trader",
+			"Value": "Hippie",
+			"When": {"HasMod": "CP.Hippie.Trailer.Trader"}
+		},		
+		{
+			"Name": "CasinoV",
+			"Value": "Default"
+		},
+		{
+			"Name": "CasinoV",
+			"Value": "{{Random:Default, Green, Bouncer, Default, Green}}",
+			"When": {"CasinoShift": true,}	
+		},
+		{
+			"Name": "Ticket",
+			"Value": "Default"
+		},
+		{
+			"Name": "Ticket",
+			"Value": "Shift",
+			"When": {
+				"DayOfWeek": "Monday, Saturday",
+			    "MovieShift": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,		
+			}	
+		},		
+		{
+			"Name": "Ticket",
+			"Value": "Shift",
+			"When": {
+				"DayOfWeek": "Monday, Saturday",
+			    "MovieShift": true,
+				"HasFlag": "ccMovieTheaterJoja"				
+			}	
+		},	
+		{
+			"Name": "Ticket",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Tuesday, Thursday",
+			    "MovieShift": true,
+			}	
+		},		
+		{
+			"Name": "Ticket",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Saturday",
+			    "MovieShift": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,	
+				"HasFlag |contains=ccMovieTheaterJoja": false,					
+			}	
+		},				
+		{
+			"Name": "Concession",
+			"Value": "Default"
+		},
+		{
+			"Name": "Concession",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Monday, Wednesday",
+			    "MovieShift": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false,				
+			}	
+		},
+		{
+			"Name": "Concession",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Monday, Wednesday",
+			    "MovieShift": true,
+				"HasFlag": "ccMovieTheaterJoja"					
+			}	
+		},		
+		{
+			"Name": "Concession",
+			"Value": "Daena",
+			"When": {
+				"DayOfWeek": "Thursday, Saturday",
+			    "MovieShift": true,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": false,				
+			}	
+		},
+		{
+			"Name": "Concession",
+			"Value": "Daena",
+			"When": {
+				"DayOfWeek": "Thursday, Saturday",
+			    "MovieShift": true,
+				"HasFlag": "ccMovieTheaterJoja"				
+			}	
+		},		
+		{
+			"Name": "Clerk",
+			"Value": "Default"
+		},
+		{
+			"Name": "Clerk",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Saturday, Sunday",
+				"JojaShift": true
+			}	
+		},
+		{
+			"Name": "Clerk",
+			"Value": "Daena",
+			"When": {
+				"DayOfWeek": "Monday, Tuesday",
+				"JojaShift": true,
+			}	
+		},
+		{
+			"Name": "Clerk",
+			"Value": "Naufal",
+			"When": {
+				"DayOfWeek": "Monday, Tuesday",
+				"JojaShift": true,
+                "MovieShift": false,
+				"MovieTicket": true,
+				"HasFlag": "ccMovieTheaterJoja",
+			}
+		},
+		{
+			"Name": "MouseFriends",
+			"Value": "Default",
+			"When": {"HasMod |contains=ichortower.HatMouseLacey": false}
+		},
+		{
+			"Name": "MouseFriends",
+			"Value": "{{Random:Beanie, Hamster, Bow, Dipper, Flower, Goggles, Headband, Link, Marlon, Default, Post, Red, Sailor, Strawhat, Wizard |key=MouseFriends}}",
+			"When": {
+				"HasMod |contains=ichortower.HatMouseLacey": false,
+				"HasMod |contains=Dora.HatMouseAndFriends": true,
+			}
+		},
+		{
+			"Name": "MouseFriends",
+			"Value": "{{Random:Beanie, Hamster, Bow, Dipper, Flower, Goggles, Headband, Link, Marlon, Post, Red, Sailor, Strawhat, Wizard |key=MouseFriends}}",
+			"When": {
+				"HasMod |contains=ichortower.HatMouseLacey": true,
+				"HasMod |contains=Dora.HatMouseAndFriends": true,
+			}
+		},
+		{
+			"Name": "Bird",
+			"Value": "Default"
+		},
+		{
+			"Name": "Bird",
+			"Value": "{{Random:Default, Red, Green}}",
+			"When": {"BirdShift": true}	
+		},
+		{
+			"Name": "CMCTCatHat",
+			"Value": "{{Spiderbuttons.CMCT/Config: MouseyPounds.NightMarketCatBoat,SailorHat}}",
+			"When": {
+				"HasMod |contains=MouseyPounds.NightMarketCatBoat": true,
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+			}
+		},		
+		{
+			"Name": "DecorCat",
+			"Value": "Cat"
+		},
+		{
+			"Name": "DecorCat",
+			"Value": "CatNoHat",
+			"When": {"CMCTCatHat": false}
+		},
+		{
+			"Name": "DecorPipe",
+			"Value": ""
+		},
+		{
+			"Name": "DecorPipe",
+			"Value": "WithPipe",
+			"When": {"CatPipe": true}	
+		},
+		{
+			"Name": "CMCTMarinerGhost",
+			"Value": "{{Spiderbuttons.CMCT/Config: SchrodingersKit.GhostlyMariner,Color}}",
+			"When": {
+				"HasMod |contains=SchrodingersKit.GhostlyMariner": true,
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+			}
+		},		
+		{
+			"Name": "MarinerGhost",
+			"Value": "GhostBlue"
+		},
+		{
+			"Name": "MarinerGhost",
+			"Value": "GhostGrey",
+			"When": {"CMCTMarinerGhost": "gray"}
+		},		
+	],
+
+	"ConfigSchema":
+		{
+			"Raccoon":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"Traveler":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"Bookseller":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"Crow":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"StarToken":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"MagicBoat":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"EggShop":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"OldMariner":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"PierreFestival":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+				},
+			"JojaCashier":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "JojaMart"
+				},
+			"JojaShift":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "JojaMart"
+				},	        
+			"MovieTicket":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Theater"
+				},
+			"MovieConcession":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Theater"
+				},
+			"MovieShift":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Theater"
+				},	
+			"HatMouse": 
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "HouseMouse"
+				},
+			"WildflourMouse": 
+				{
+					"AllowValues": "true, false",
+					"Default": false,
+					"Section": "HouseMouse"
+				},
+			"DesertTrader":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Desert"
+				},
+			"DesertShift":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Desert"
+				},
+			"Casino":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Club"
+				},
+			"CasinoShift":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Club"
+				},
+			"VolcanoDwarf": 
+				{
+					"AllowValues": "true, false",
+					"Default": false,
+					"Section": "Volcano"
+				},
+			"LavenderSkellyDwarf": 
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Volcano"
+				},
+			"IslandTrader":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Island"
+				},
+			"BirdShift":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Island"
+				},
+			"DecorBoat":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "NightMarketDecor"
+				},	
+			"CatPipe":
+				{
+					"AllowValues": "true, false",
+					"Default": false,
+					"Section": "NightMarketDecor"
+				},	
+			"Nyapu":
+				{
+					"AllowValues": "true, false",
+					"Default": false,
+					"Section": "Misc"
+				},					
+			"CentralStation":
+				{
+					"AllowValues": "true, false",
+					"Default": true,
+					"Section": "Misc"
+				},				
+		},
+
+	"Changes":[
+// DEFAULT VENDOR SETUP
+		{
+			"Action": "Load",
+			"Target": "Portraits/Bookseller_Default, Portraits/Casino_Default, Portraits/Casino_Bouncer, Portraits/Casino_Green, Portraits/Crow_Default, Portraits/DecorBoat_Default, Portraits/DecorBoat_Cat, Portraits/DecorBoat_CatNoHat, Portraits/DecorBoat_CatWithPipe, Portraits/DecorBoat_CatNoHatWithPipe, Portraits/DesertTrader_Default, Portraits/DesertTrader_Hippie, Portraits/DesertTrader_RacerGuy, Portraits/DesertTrader_Scholar, Portraits/EggShop_Default, Portraits/HatMouse_Default, Portraits/HatMouse_Beanie, Portraits/HatMouse_Bow, Portraits/HatMouse_Dipper, Portraits/HatMouse_Flower, Portraits/HatMouse_Goggles, Portraits/HatMouse_Hamster, Portraits/HatMouse_Headband, Portraits/HatMouse_Link, Portraits/HatMouse_Marlon, Portraits/HatMouse_Post, Portraits/HatMouse_Red, Portraits/HatMouse_Sailor, Portraits/HatMouse_Strawhat, Portraits/HatMouse_Wizard, Portraits/IslandTrader_Default, Portraits/IslandTrader_Red, Portraits/IslandTrader_Green, Portraits/JojaCashier_Default, Portraits/JojaCashier_Daena, Portraits/JojaCashier_Jessie, Portraits/JojaCashier_Naufal, Portraits/MagicBoat_Default, Portraits/MovieConcessionCC_Default, Portraits/MovieConcessionCC_Daena, Portraits/MovieConcessionCC_Juliet, Portraits/MovieConcessionCC_Kevin, Portraits/MovieConcessionCC_Naufal, Portraits/MovieConcessionJoja_Default, Portraits/MovieConcessionJoja_Daena, Portraits/MovieConcessionJoja_Naufal, Portraits/MovieTicketCC_Default, Portraits/MovieTicketCC_Naufal, Portraits/MovieTicketCC_Shift, Portraits/MovieTicketJoja_Default, Portraits/MovieTicketJoja_Naufal, Portraits/MovieTicketJoja_Shift, Portraits/Raccoon_Default, Portraits/StarToken_Default, Portraits/Traveler_Default, Portraits/TravelerDesert_Default, Portraits/TravelerIce_Default, Portraits/VolcanoDwarf_Default",
+			"FromFile": "assets/{{Target}}.png",
+			"Priority": "Low",
+		},
+		{
+			"Action": "Load",
+			"Target": "Portraits/Mariner",
+			"FromFile": "assets/Portraits/OldMariner_Default.png",
+			"Priority": "Low"
+		},
+		{
+			"Action": "Load",
+			"Target": "DolphINaF.VendorPortraits/CrowFrame",
+			"FromFile": "assets/LooseSprites/CrowFrame.png",
+			"Priority": "Low"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/IslandTrader.json",
+			"When": {"IslandTrader": "true" }
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/EggShop.json",
+			"When": {"EggShop": true}		
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/MagicBoat.json",
+			"When": {"MagicBoat": true}		
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/DecorBoat.json",
+			"When": {"DecorBoat": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/HatMouse.json",
+			"When": {"HatMouse": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Crow.json",
+			"When": {"Crow": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Raccoon.json",
+			"When": {"Raccoon": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Traveler.json",
+			"When": {"Traveler": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Bookseller.json",
+			"When": {"Bookseller": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/DesertTrader.json",
+			"When": {"DesertTrader": true}
+		},		
+		{
+			"Action": "Include",
+			"FromFile": "patches/JojaCashier.json",
+			"When": {"JojaCashier": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/MovieConcessionCC.json",
+			"When": {
+				"MovieConcession": true,
+				"HasFlag |contains=ccMovieTheaterJoja": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/MovieTicketCC.json",
+			"When": {
+				"MovieTicket": true,
+				"HasFlag |contains=ccMovieTheaterJoja": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/MovieConcessionJoja.json",
+			"When": {
+				"MovieConcession": true,
+				"HasFlag": "ccMovieTheaterJoja"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/MovieTicketJoja.json",
+			"When": {
+				"MovieTicket": true,
+				"HasFlag": "ccMovieTheaterJoja"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/VolcanoDwarf.json",
+			"When": {"VolcanoDwarf": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Casino.json",
+			"When": {"Casino": true}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/StarToken.json",
+			"When": {"StarToken": true}
+		},
+		{
+			"LogName": "Old Mariner",
+			"Action": "Include",
+			"FromFile": "patches/OldMariner.json",
+			"When": {"OldMariner": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/PierreFestival.json",
+			"When": {"PierreFestival": true}
+		},		
+		
+// VARIOUS VANILLA CHARACTERS
+		{
+			"LogName": "Clinic",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Hospital" ],
+			"Entries": {
+                "Owners": [
+                    {
+                        "Name": "Harvey",
+                        "Dialogues": [
+                            {
+                                "Id": "Default",
+                                "Dialogue": "{{i18n:HarveyClinic}}",
+                            },
+                        ]
+                    },
+                    {
+                        "Name": "Maru",
+                        "Dialogues": [
+                            {
+                                "Id": "Default",
+                                "Dialogue": "{{i18n:MaruClinic}}",
+                            },
+                        ]
+                    },
+                ],
+			},
+		},
+		{
+			"LogName": "Alex's Ice Cream Stand",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "IceCreamStand", "Owners", "Default" ],
+			"Entries": {
+				"Name": "Alex",
+			    "Dialogues": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": "{{i18n:AlexIceCream}}",
+						"RandomDialogue": null
+					}
+				],
+			},
+		},
+		
+// Dwarf Portrait Replacement Support
+		{
+			"LogName": "Dwarf Portrait Replacement",
+			"Action": "EditImage",
+			"Target": "Portraits/VolcanoDwarf_Default",
+			"FromFile": "assets/Portraits/LavenderSkelly/{{TargetWithoutPath}}.png",
+			"When": {
+				"HasMod": "LavenderSkelly.DwarfPortraitReplacement",
+				"LavenderSkellyDwarf": true,
+			}
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Bookseller_Default, Portraits/Casino_Default, Portraits/Casino_Bouncer, Portraits/Casino_Green, Portraits/Crow_Default, Portraits/DecorBoat_Default, Portraits/DecorBoat_Cat, Portraits/DecorBoat_CatNoHat, Portraits/DecorBoat_CatWithPipe, Portraits/DecorBoat_CatNoHatWithPipe, Portraits/DesertTrader_Default, Portraits/DesertTrader_Hippie, Portraits/DesertTrader_RacerGuy, Portraits/DesertTrader_Scholar, Portraits/EggShop_Default, Portraits/HatMouse_Default, Portraits/HatMouse_Beanie, Portraits/HatMouse_Bow, Portraits/HatMouse_Dipper, Portraits/HatMouse_Flower, Portraits/HatMouse_Goggles, Portraits/HatMouse_Hamster, Portraits/HatMouse_Headband, Portraits/HatMouse_Link, Portraits/HatMouse_Marlon, Portraits/HatMouse_Post, Portraits/HatMouse_Red, Portraits/HatMouse_Sailor, Portraits/HatMouse_Strawhat, Portraits/HatMouse_Wizard, Portraits/IslandTrader_Default, Portraits/IslandTrader_Red, Portraits/IslandTrader_Green, Portraits/JojaCashier_Default, Portraits/JojaCashier_Daena, Portraits/JojaCashier_Jessie, Portraits/JojaCashier_Naufal, Portraits/MagicBoat_Default, Portraits/MovieConcessionCC_Default, Portraits/MovieConcessionCC_Daena, Portraits/MovieConcessionCC_Juliet, Portraits/MovieConcessionCC_Kevin, Portraits/MovieConcessionCC_Naufal, Portraits/MovieConcessionJoja_Default, Portraits/MovieConcessionJoja_Daena, Portraits/MovieConcessionJoja_Naufal, Portraits/MovieTicketCC_Default, Portraits/MovieTicketCC_Naufal, Portraits/MovieTicketCC_Shift, Portraits/MovieTicketJoja_Default, Portraits/MovieTicketJoja_Naufal, Portraits/MovieTicketJoja_Shift, Portraits/Raccoon_Default, Portraits/StarToken_Default, Portraits/Traveler_Default, Portraits/TravelerDesert_Default, Portraits/TravelerIce_Default, Portraits/VolcanoDwarf_Default",
+			"FromFile": "assets/Portraits/Nyapu/{{TargetWithoutPath}}.png",
+			"When": {"Nyapu": true}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/CentralStation.json",
+			"When": {
+				"HasMod |contains=Pathoschild.CentralStation.Content": true,
+				"CentralStation": true
+				}
+		},			
+	],
+}

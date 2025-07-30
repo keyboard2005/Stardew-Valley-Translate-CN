@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="9">
+ <properties>
+  <property name="AmbientLight" value="90 90 35"/>
+  <property name="IsGreenhouse" value="T"/>
+  <property name="Warp" value="9 15 FarmCave 6 2"/>
+ </properties>
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+  <tile id="165">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="241">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="242">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="257">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="258">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="272">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="273">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="274">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="325" name="z_AdditionalFarmCave" tilewidth="16" tileheight="16" tilecount="260" columns="20">
+  <image source="z_AdditionalFarmCave.png" width="320" height="208"/>
+  <tile id="120">
+   <animation>
+    <frame tileid="120" duration="100"/>
+    <frame tileid="121" duration="100"/>
+    <frame tileid="122" duration="100"/>
+    <frame tileid="123" duration="100"/>
+    <frame tileid="124" duration="100"/>
+    <frame tileid="125" duration="100"/>
+    <frame tileid="126" duration="100"/>
+    <frame tileid="127" duration="100"/>
+    <frame tileid="127" duration="100"/>
+    <frame tileid="120" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="1">
+  <data encoding="csv">
+236,2,36
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="1">
+  <data encoding="csv">
+389,445,391
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="3" name="TileData" x="16" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;AdFCms05&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;AdFCms04&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="32" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;AdFCms04&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,15 @@
+{
+    "Changes": [
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "NoraResearch": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 21 21 20 20 21 21 20 20 20 20 20 21 20 20 21 21 20 20 21 21 21 21 20 21 20 21 20 21/20",
+                "NoraSitFront": "17/17/17",
+                "NoraSitLeft": "19/19/19",
+                "NoraSitRight": "18/18/18"
+            }
+        }
+    ]
+}

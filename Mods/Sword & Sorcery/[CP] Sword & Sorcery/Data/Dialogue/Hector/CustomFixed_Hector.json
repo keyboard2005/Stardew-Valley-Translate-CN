@@ -1,0 +1,69 @@
+{
+    "Changes": [
+        //EDITS TO CSFILES.JSON
+        {
+            "LogName": "Hector - Custom Wedding Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5371": "{{i18n:CFD.Hector.Utility.cs.5371}}",
+                "Utility.cs.5373": "{{i18n:CFD.Hector.Utility.cs.5373}}",
+                "Utility.cs.5375": "{{i18n:CFD.Hector.Utility.cs.5375}}",
+                "Utility.cs.5377": "{{i18n:CFD.Hector.Utility.cs.5377}}",
+                "Utility.cs.5367": "{{i18n:CFD.Hector.Utility.cs.5367}}",
+                "Utility.cs.5369": "{{i18n:CFD.Hector.Utility.cs.5369{{PlayerPronouns}}}}",
+            },
+            "When": {
+                "Relationship:Hector": "Engaged",
+            }
+        },
+        {
+            "LogName": "Hector - Gender Neutral Social Page Fix",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "SocialPage_Relationship_Single_Female": "{{i18n:CFD.Hector.SocialPage.cs.11635}}",
+                "SocialPage_Relationship_Single_Male": "{{i18n:CFD.Hector.SocialPage.cs.11635}}",
+                "SocialPage_Relationship_Husband": "{{i18n:CFD.Hector.SocialPage.cs.11636}}",
+                "SocialPage_Relationship_Wife": "{{i18n:CFD.Hector.SocialPage.cs.11637}}",
+                "SocialPage_Relationship_Boyfriend": "{{i18n:CFD.Hector.SocialPage.cs.11639}}",
+                "SocialPage_Relationship_Girlfriend": "{{i18n:CFD.Hector.SocialPage.cs.11640}}",
+                "SocialPage_Relationship_ExHusband": "{{i18n:CFD.Hector.SocialPage.cs.11642}}",
+                "SocialPage_Relationship_ExWife": "{{i18n:CFD.Hector.SocialPage.cs.11643}}",
+            },
+            "When": {
+                "HasSeenEvent |contains=SnS.Ch2.Hector.16": true,
+            }
+        },
+        //EDITS TO EXTRADIALOGUE.JSON
+        {
+            "LogName": "Hector - Custom Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Intro_Spouse": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Intro_Hector}}", //greeting
+                "SummitEvent_Intro2_Spouse": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Intro2_Hector}}",
+                "SummitEvent_Intro2_Spouse_Gruff": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Intro2_Hector}}", //Only used if male, make same as SummitEvent_Intro2_Spouse
+                //spouse turn left
+                "SummitEvent_Dialogue1_Spouse": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Dialogue1_Hector}}",
+                "SummitEvent_Dialogue1B_Spouse": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Dialogue2_Hector}}",
+                "SummitEvent_Dialogue2_Spouse": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Dialogue3_Hector}}",
+                //spouse turn up
+                "SummitEvent_Dialogue3_Hector": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_Dialogue4_Hector}}", //change to NPC internal name
+                //roll credits
+                "SummitEvent_closingmessage": "{{i18n:CFD.Hector.ExtraDialogue_SummitEvent_closingmessage}}" // Qi speaking
+            },
+            "When": {
+                "Relationship:Hector": "Married"
+            }
+        },
+        { // EDITS TO CHARACTERS.JSON
+            "Logname": "Hector - Spouse Movie Invitation",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Hector": "{{i18n:MovieInvite_Spouse_Hector}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ConcessionTastes",
+            "Entries": {
+                "Hector": {
+                    "Name": "Hector",
+                    "LovedTags": [
+                        "Jawbreaker",
+                        "Cotton Candy",
+                        "Sour Slimes"
+                    ],
+                    "LikedTags": [
+                        "Sweet",
+                    ],
+                    "DislikedTags": [
+                        "JojaCorn",
+                        "Joja Cola",
+                        "Healthy"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "Hector": {
+                    "NPCName": "Hector",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.BraveLittleSapling.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.BraveLittleSapling.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.BraveLittleSapling.3}}",
+                                }
+                            },
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.NaturalWonders.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.NaturalWonders.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.NaturalWonders.3}}",
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.PrairieKing.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.PrairieKing.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.PrairieKing.3}}",
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Wumbus.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Wumbus.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Wumbus.3}}",
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "fall_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Mysterium.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Mysterium.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.Mysterium.3}}",
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ItHowlsInTheRain.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ItHowlsInTheRain.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ItHowlsInTheRain.3}}",
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "winter_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.MiracleAtColdstarRanch.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.MiracleAtColdstarRanch.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.MiracleAtColdstarRanch.3}}",
+                                }
+                            },
+                            "ID": "reaction_6"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ZuzuCityExpress.1}}",
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ZuzuCityExpress.2}}",
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Hector.ZuzuCityExpress.3}}",
+                                }
+                            },
+                            "ID": "reaction_7"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

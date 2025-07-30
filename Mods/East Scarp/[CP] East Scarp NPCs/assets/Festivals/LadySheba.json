@@ -1,0 +1,30 @@
+{
+    "Changes": [
+        
+   {
+            "LogName": "eggfest Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.spring13.{{cattalk}}}}"
+            }
+        },
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.fall16.{{cattalk}}}}"
+            }
+        },
+        
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.winter25.{{cattalk}}}}"
+            }
+        }
+    ]
+}

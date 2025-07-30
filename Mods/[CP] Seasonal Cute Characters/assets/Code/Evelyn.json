@@ -1,0 +1,137 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Evelyn's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Evelyn_Spring, Portraits/Evelyn_Summer, Portraits/Evelyn_Fall, Portraits/Evelyn_Winter_Outdoor, Portraits/Evelyn_Winter_Indoor, Portraits/Evelyn_FlowerDance, Portraits/Evelyn_SpiritsEve, Characters/Evelyn_Spring, Characters/Evelyn_Summer, Characters/Evelyn_Fall, Characters/Evelyn_Winter_Outdoor, Characters/Evelyn_Winter_Indoor, Characters/Evelyn_FlowerDance, Characters/Evelyn_SpiritsEve, Portraits/Evelyn_Beach, Characters/Evelyn_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Evelyn/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Evelyn - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Evelyn_Spring, Characters/Evelyn_Summer, Characters/Evelyn_Fall, Characters/Evelyn_Winter_Outdoor, Characters/Evelyn_Winter_Indoor, Characters/Evelyn_FlowerDance, Characters/Evelyn_SpiritsEve, Characters/Evelyn_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Evelyn/Evelyn_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Evelyn Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Evelyn", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.EvelynSpring": {
+					"Id": "{{ModId}}.EvelynSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Evelyn_Spring",
+					"Portrait": "Portraits/Evelyn_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.EvelynSummer": {
+					"Id": "{{ModId}}.EvelynSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Evelyn_Summer",
+					"Portrait": "Portraits/Evelyn_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EvelynFall": {
+					"Id": "{{ModId}}.EvelynFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Evelyn_Fall",
+					"Portrait": "Portraits/Evelyn_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EvelynWinterIndoor": {
+					"Id": "{{ModId}}.EvelynWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Evelyn_Winter_Indoor",
+					"Portrait": "Portraits/Evelyn_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EvelynWinterOutdoor": {
+					"Id": "{{ModId}}.EvelynWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Evelyn_Winter_Outdoor",
+					"Portrait": "Portraits/Evelyn_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.EvelynFlowerDance": {
+					"Id": "{{ModId}}.EvelynFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Evelyn_FlowerDance",
+					"Portrait": "Portraits/Evelyn_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EvelynSpirit": {
+					"Id": "{{ModId}}.EvelynSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Evelyn_SpiritsEve",
+					"Portrait": "Portraits/Evelyn_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.EvelynBeach": {
+					"Id": "{{ModId}}.EvelynBeach",
+					"Sprite": "Characters/Evelyn_Beach",
+					"Portrait": "Portraits/Evelyn_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+
+				"{{ModId}}.EvelynIsland": {
+					"Id": "{{ModId}}.EvelynIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Evelyn_Beach",
+					"Portrait": "Portraits/Evelyn_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Evelyn - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 117, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 117, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Evelyn Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Evelyn",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

@@ -1,0 +1,14 @@
+{
+    "config.section.General.name": "Ustawienia Ogólne",
+    "config.section.Appearance.name": "Ustawienia Wyglądu",
+
+    "config.Enabled.name": "Włącz Słodkie Szlamy",
+    "config.Enabled.description": "Włącz to, aby wszystkie twoje szlamy wyglądały słodziej niż kiedykolwiek.",
+    "config.Enabled.values.true": "Tak",
+    "config.Enabled.values.false": "Nie",
+
+    "config.Mode.name": "Styl Szlamu",
+    "config.Mode.description": "Wybierz, jak mają wyglądać twoje szlamy. Galaretka sprawia, że są bardziej miękkie i przezroczyste, podczas gdy Błyszczący nadaje im lśniący, odbijający wygląd.",
+    "config.Mode.values.jelly": "Galaretka",
+    "config.Mode.values.glossy": "Błyszczący"
+}

@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "LogName": "Nora's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Nora",
+            "Entries": {
+                "AcceptGift_(O)395": "{{i18n:Gifts.Nora.Coffee}}",
+                "AcceptGift_(O)234": "{{i18n:Gifts.Nora.BlueberryTart}}",
+                "AcceptGift_(O)220": "{{i18n:Gifts.Nora.ChocolateCake}}",
+                "AcceptGift_(O)825": "{{i18n:Gifts.Nora.SnakeSkull}}",
+                "AcceptGift_(O)608": "{{i18n:Gifts.Nora.PumpkinPie}}",
+                "AcceptGift_(O)60": "{{i18n:Gifts.Nora.Emerald}}",
+                "AcceptGift_(O)258": "{{i18n:Gifts.Nora.Blueberry}}",
+                "AcceptGift_(O)253": "{{i18n:Gifts.Nora.TripleShotEspresso}}",
+                "AcceptGift_(O)400": "{{i18n:Gifts.Nora.Strawberry}}",
+                "AcceptGift_(O)591": "{{i18n:Gifts.Nora.Tulip}}",
+                "AcceptGift_(O)224": "{{i18n:Gifts.Nora.Spaghetti}}",
+                "AcceptGift_(O)563": "{{i18n:Gift.Nora.Jasper}}",
+                "AcceptGift_(O)587": "{{i18n:Gift.Nora.AmphibianFossil}}",
+                "AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n:Gift.Nora.AnAutographedPhoto}}",
+                "AcceptGift_(O)107": "{{i18n:Gift.Nora.DinosaurEgg}}",
+                "AcceptGift_(O)StardropTea": "{{i18n:Gift.Nora.StardropTea}}",
+
+                "RejectGift_(O)348": "{{i18n:Gifts.Nora.Wine}}",
+                "RejectGift_(O)349": "{{i18n:Gifts.Nora.EnergyTonic}}",
+                "RejectGift_(O)342": "{{i18n:Gifts.Nora.Pickles}}",
+                "RejectGift_(O)766": "{{i18n:Gifts.Nora.Slime}}",
+                "RejectGift_(O)797": "{{i18n:Gifts.Nora.Pearl}}",
+                "RejectGift_(O)346": "{{i18n:Gifts.Nora.Beer}}",
+                "RejectGift_(O)614": "{{i18n:Gifts.Nora.GreenTea}}",
+                "RejectGift_(O)167": "{{i18n:Gifts.Nora.JojaCola}}",
+                "RejectGift_(O)172": "{{i18n:Gifts.Nora.SoggyNewspaper}}",
+                "RejectGift_(O)169": "{{i18n:Gift.Nora.Driftwood}}",
+
+                "RejectGift_(O)460": "{{i18n:Gift.Nora.GiftReaction.RejectPendant}}",
+                "RejectMermaidPendant": "{{i18n:Gift.Nora.GiftReaction.RejectPendant}}",
+
+                "AcceptGift_category_fish": "{{i18n:Gift.Nora.Fish}}",
+                "AcceptGift_category_gem": "{{i18n:Gift.Nora.Gems}}",
+                "AcceptGift_category_flowers": "{{i18n:Gift.Nora.Flowers}}",
+
+                // Birthday Gifts
+                "AcceptBirthdayGift_Loved": "{{i18n:Gift.Nora.GiftReaction.Birthday.Love}}",
+                "AcceptBirthdayGift_Liked": "{{i18n:Gift.Nora.GiftReaction.Birthday.Like}}",
+                "AcceptBirthdayGift_Neutral": "{{i18n:Gift.Nora.GiftReaction.Birthday.Neutral}}",
+                "AcceptBirthdayGift_Disliked": "{{i18n:Gift.Nora.GiftReaction.Birthday.Dislike}}",
+                "AcceptBirthdayGift_Hated": "{{i18n:Gift.Nora.GiftReaction.Birthday.Hate}}",
+
+                /// CUSTOM ITEMS
+
+                // RODNEY'S BOOKS
+                "AcceptGift_(O)WWWA.Book.ArcanaCatcherPrunus": "{{i18n:Gift.Nora.ArcanaPrunus}}",
+                "AcceptGift_(O)WWWA.Book.ArtifactOrCutlery": "{{i18n:Gift.Nora.ArtifactOrCutlery}}",
+                "AcceptGift_(O)WWWA.Book.CrabsAndWhyIHateThem": "{{i18n:Gift.Nora.CrabsAndWhyIHateThem}}",
+                "AcceptGift_(O)WWWA.Book.DeferenceArlington": "{{i18n:Gift.Nora.DeferenceArlington}}",
+                "AcceptGift_(O)WWWA.Book.FishingForDumbDumbs": "{{i18n:Gift.Nora.FishingForDumbDumbs}}",
+                "AcceptGift_(O)WWWA.Book.GettingChicksToLoveYou": "{{i18n:Gift.Nora.GettingChicksToLoveYou}}",
+                "AcceptGift_(O)WWWA.Book.Goblins": "{{i18n:Gift.Nora.Goblins}}",
+                "AcceptGift_(O)WWWA.Book.GuideToSculptingWithGold": "{{i18n:Gift.Nora.GuideToSculptingWithGold}}",
+                "AcceptGift_(O)WWWA.Book.HerpetologyOfFerngill": "{{i18n:Gift.Nora.HerpetologyOfFerngill}}",
+                "AcceptGift_(O)WWWA.Book.LunarkinTrollTales": "{{i18n:Gift.Nora.LunarkinTrollTales}}",
+                "AcceptGift_(O)WWWA.Book.MysteriesOfTheDwarves": "{{i18n:Gift.Nora.MysteriesOfTheDwarves}}",
+                "AcceptGift_(O)WWWA.Book.PepperRexes": "{{i18n:Gift.Nora.PepperRexes}}",
+                "AcceptGift_(O)WWWA.Book.TheBookOfYoba": "{{i18n:Gift.Nora.TheBookOfYoba}}",
+                "AcceptGift_(O)WWWA.Book.TheGreatBookOfSlimes": "{{i18n:Gift.Nora.TheGreatBookOfSlimes}}",
+                "AcceptGift_(O)WWWA.Book.TheGreatTomeOfMayo": "{{i18n:Gift.Nora.TheGreatTomeOfMayo}}",
+                "AcceptGift_(O)WWWA.Book.TheJojaConspiracy": "{{i18n:Gift.Nora.TheJojaConspiracy}}",
+                "AcceptGift_(O)WWWA.Book.TheTarotRevealed": "{{i18n:Gift.Nora.TheTarotRevealed}}",
+                "AcceptGift_(O)WWWA.Book.WhyPepperRexesAreTheBest": "{{i18n:Gift.Nora.WhyPepperRexesAreTheBest}}",
+
+                // PRIDE IN THE VALLEY
+                "AcceptGift_(O)sapphicsaph_pitv.BiBerryMuffin": "{{i18n:Gift.Nora.BiBerryMuffin}}",
+
+                // BEARFAM
+                "AcceptGift_(O)MadDog.HashtagBearfam.SigurdPerfectRamen": "{{i18n:Gift.Nora.SigurdPerfectRamen}}",
+                "AcceptGift_(O)MadDog.HashtagBearfam.HoneyCakes": "{{i18n:Gift.Nora.HoneyCakes}}",
+                "AcceptGift_(O)MadDog.HashtagBearfam.TTBrownies": "{{i18n:Gift.Nora.TTBrownies}}",
+                "RejectGift_(O)MadDog.HashtagBearfam.PeachJoja": "{{i18n:Gift.Nora.PeachJoja}}",
+                "RejectGift_(O)MadDog.HashtagBearfam.PumpkinJoja": "{{i18n:Gift.Nora.PumpkinJoja}}",
+
+                // CLOWN'S MODS
+
+                "AcceptGift_(O)Fellowclown.PC_SunshineHoney": "{{i18n:Gift.Nora.SunshineHoney}}",
+                "AcceptGift_(O)Fellowclown.PC_HotChoco": "{{i18n:Gift.Nora.HotChoco}}",
+                "AcceptGift_(O)Fellowclown.PC_MilkCoffee": "{{i18n:Gift.Nora.MilkCoffee}}",
+                "AcceptGift_(O)Fellowclown.AND_TastyPastry": "{{i18n:Gift.Nora.TastyPastry}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Magnus's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Magnus_Spring, Portraits/Magnus_Summer, Portraits/Magnus_Fall, Portraits/Magnus_Winter, Portraits/Magnus_FlowerDance, Characters/Magnus_Spring, Characters/Magnus_Summer, Characters/Magnus_Fall, Characters/Magnus_Winter, Characters/Magnus_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Magnus/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Magnus - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Magnus_Spring, Characters/Magnus_Summer, Characters/Magnus_Fall, Characters/Magnus_Winter, Characters/Magnus_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Magnus/Magnus_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA - HIGHER PRECEDENCE THAN SCA
+		{
+			"LogName": "Magnus Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Wizard", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MagnusSpring": {
+					"Id": "{{ModId}}.MagnusSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Magnus_Spring",
+					"Portrait": "Portraits/Magnus_Spring",
+					"Precedence": -150,
+				},
+
+				"{{ModId}}.MagnusSummer": {
+					"Id": "{{ModId}}.MagnusSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Magnus_Summer",
+					"Portrait": "Portraits/Magnus_Summer",
+					"Precedence": -150,
+				},
+				
+				"{{ModId}}.MagnusFall": {
+					"Id": "{{ModId}}.MagnusFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Magnus_Fall",
+					"Portrait": "Portraits/Magnus_Fall",
+					"Precedence": -150,
+				},
+				
+				"{{ModId}}.MagnusWinter": {
+					"Id": "{{ModId}}.MagnusWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Magnus_Winter",
+					"Portrait": "Portraits/Magnus_Winter",
+					"Outdoors": false,
+					"Precedence": -150,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.MagnusFlowerDance": {
+					"Id": "{{ModId}}.MagnusFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Magnus_FlowerDance",
+					"Portrait": "Portraits/Magnus_FlowerDance",
+					"Precedence": -10000,
+				},	
+			},
+		},
+		//MISCELLANIOUS
+		{
+			"LogName": "Magnus - Spouse Picture",
+			"Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "assets/Characters/SVE_Portraits.png",
+			"FromArea": {"X": 135, "Y": 7, "Width": 18, "Height": 18},
+			"ToArea": {"X": 135, "Y": 7, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Magnus Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Magnus",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },		
+	]
+}

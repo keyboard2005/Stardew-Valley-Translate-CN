@@ -1,0 +1,24 @@
+{
+	"Changes":[
+		{
+			"LogName": "Box Office in CC Theater",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/MovieTicketCC_{{Ticket}}"},
+		},
+// VENDOR ROTATION	
+		{
+			"LogName": "Box Office in CC Theater Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "BoxOffice", "Owners", "AnyOrNone", "Dialogues", "Default" ],
+			"Entries": {
+				"Dialogue": "{{i18n:BoxOffice.{{Ticket}}}}",
+			},
+			"When": {
+				"Ticket| contains=Shift": false,
+			}
+		},			
+	],
+}

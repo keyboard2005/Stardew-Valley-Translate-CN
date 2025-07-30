@@ -1,0 +1,67 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.edit.miniobelisk.signpost",
+      "Action": "EditImage",
+      "PatchMode": "Replace",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_mini_obelisk.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.miniobelisk.signpost",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/flowers/mini_obelisk.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.miniobelisk.signpost",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/moss/mini_obelisk.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 928,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="11" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="240">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="DayTiles" value="AlwaysFront 13 87 907 AlwaysFront 18 57 907 AlwaysFront 33 57 907 AlwaysFront 39 43 907 AlwaysFront 45 37 907 AlwaysFront 66 85 907 AlwaysFront 42 77 907 AlwaysFront 22 84 907 AlwaysFront 39 53 907 AlwaysFront 23 51 907 AlwaysFront 14 66 907 AlwaysFront 66 68 907 AlwaysFront 76 74 907 Buildings 68 13 510"/>
+  <property name="Light" value="72 107 4 73 107 4 13 87 4 13 87 4 18 57 4 33 57 4 39 43 4 45 37 4 66 85 4 47 77 4 23 84 4 22 83 4 39 53 4 23 51 4 14 66 4 66 68 4 76 74 4 68 13 4"/>
+  <property name="NPCWarp" value="78 109 EastScarp_SeaCave 28 19 32 32 EastScarp__VetAwayWarpRoom 2 8 3 96 EastScarp__CatWarpRoom 2 5 35 39 EastScarp_DeepDark 21 16 74 -1 EastScarp_DeepMountains 60 60"/>
+  <property name="NightTiles" value="AlwaysFront 13 87 908 AlwaysFront 18 57 908 AlwaysFront 33 57 908 AlwaysFront 39 43 908 AlwaysFront 45 37 908 AlwaysFront 66 85 908 AlwaysFront 47 77 908 AlwaysFront 22 84 908 AlwaysFront 39 53 908 AlwaysFront 23 51 908 AlwaysFront 14 66 908 AlwaysFront 66 68 908 AlwaysFront 76 74 908 Buildings 68 13 507"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="100 47 EastScarp_Orchard 1 18 100 48 EastScarp_Orchard 1 18 100 49 EastScarp_Orchard 1 19 100 20 EastScarp_MineEntrance 0 22"/>
+ </properties>
+ <tileset firstgid="1" name="spring_PizzaVan" tilewidth="16" tileheight="16" tilecount="45" columns="9">
+  <image source="spring_PizzaVan.png" width="144" height="80"/>
+ </tileset>
+ <layer id="1" name="Back" width="11" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="14" name="Back2" width="11" height="6">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="15" name="Back2"/>
+ <layer id="16" name="Back3" width="11" height="6">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="17" name="Back3"/>
+ <layer id="3" name="Buildings" width="11" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+28,29,30,31,0,0,34,0,0,0,44,
+37,38,39,40,41,42,43,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="238" name="TileData" x="48" y="64" width="32" height="16">
+   <properties>
+    <property name="Action" value="Message IncrediWoman"/>
+   </properties>
+  </object>
+  <object id="239" name="TileData" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message CirrusStars"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Paths" width="11" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="Front" width="11" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+19,20,21,0,0,0,25,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="11" name="AlwaysFront" width="11" height="6">
+  <data encoding="csv">
+1,2,3,0,0,0,0,0,0,0,0,
+10,11,12,13,14,15,16,0,0,0,0,
+0,0,0,0,23,24,0,0,0,0,35,
+0,0,0,0,32,33,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="AlwaysFront"/>
+ <layer id="25" name="AlwaysFront2" width="11" height="6">
+  <data encoding="csv">
+0,0,3,4,5,6,7,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,22,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

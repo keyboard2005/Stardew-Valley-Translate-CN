@@ -1,0 +1,104 @@
+{
+"Format": "1.19.0",
+"Changes": [
+// 	Adds new sprites
+	{
+    "Action": "EditImage",
+    "Target": "Characters/Lewis",
+	"LogName": "Marnie Deserves Better",
+    "FromFile": "assets/lewis hand.png",
+	"ToArea": {"X": 16, "Y": 224, "Width":16, "Height":32},
+ 	},
+	{
+    "Action": "EditImage",
+    "Target": "Characters/Marnie",
+	"LogName": "Marnie Deserves Better",
+    "FromFile": "assets/marnie hand.png",
+	"ToArea": {"X": 0, "Y": 288, "Width":16, "Height":32},
+ 	},
+	{
+    "Action": "EditImage",
+    "Target": "Characters/Marnie",
+	"LogName": "Marnie Deserves Better",
+    "FromFile": "assets/marnie sad.png",
+	"ToArea": {"X": 16, "Y": 288, "Width":16, "Height":32},
+ 	},
+	{
+    "Action": "EditImage",
+    "Target": "Characters/Marnie",
+	"LogName": "Marnie Deserves Better",
+    "FromFile": "assets/marnie normal.png",
+	"ToArea": {"X": 32, "Y": 288, "Width":16, "Height":32},
+ 	},
+		{
+    "Action": "EditImage",
+    "Target": "Characters/Marnie",
+	"LogName": "Marnie Deserves Better",
+    "FromFile": "assets/marnie normal side.png",
+	"ToArea": {"X": 48, "Y": 288, "Width":16, "Height":32},
+ 	},
+// 	Edits 6-heart event in town	
+	{
+	"Action": "EditData",
+	"Target": "Data/Events/Town",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"639373/f Lewis 1500/f Marnie 1500/t 1900 2300/w sunny": "nightTime/68 84/farmer 65 79 1 Lewis 69 83 1 Marnie 69 84 0/skippable/pause 500/faceDirection Lewis 2/pause 200/emote Lewis 28/speak Lewis \"Marnie... we can't. If word got out, it could undermine my position of authority in the town!$s\"/pause 300/faceDirection Marnie 1 true/showFrame Marnie 39/emote Marnie 12/speak Lewis \"You understand... don't you?$s\"/pause 1000/speak Marnie \"You care too much about your job, Lewis. There are other things to life, you know.$u\"/faceDirection Marnie 2 true/showFrame Marnie 38/pause 500/speak Marnie \"...but yes, I understand. I guess we'll have to keep... us... a secret.$s\"/pause 600/playSound leafrustle/faceDirection Marnie 3 true/faceDirection Lewis 3 true/showFrame Lewis 24/showFrame Marnie 16/jump Lewis/jump Marnie/shake Lewis 2000/shake Marnie 2000/move farmer 4 0 2/showFrame Lewis 12/showFrame Marnie 12/faceDirection Lewis 0 true/faceDirection Marnie 0/emote Lewis 16/speak Marnie \"Gahh!$4\"/pause 800/speak Lewis \"$q 200 null#@... You overheard everything, didn't you?$s#$r 200 50 event_secret1#Yes... but I'll keep it a secret.#$r 201 -100 event_secret2#Yes... and I'm going to tell everyone!#$r 202 20 event_secret3#Yes... and the villagers would be happy for you if you just told them!\"/fork 200 secret/fork 201 exposed/faceDirection Lewis 2/faceDirection Marnie 0/speak Lewis \"Maybe you're right, @.\"/pause 1500/speak Marnie \"I think we have a lot to talk about...\"/pause 800/faceDirection farmer 2/faceDirection Lewis 1/faceDirection Lewis 0 true/move Marnie 0 1 2/speak Marnie \"Why were you hiding there, anyway?$u\"/faceDirection farmer 2/pause 300/jump farmer/pause 1000/speed farmer 4/move farmer 0 -6 3/playSound leafrustle/pause 600/faceDirection Lewis 1/faceDirection Marnie 3/pause 300/emote Lewis 8 true/emote Marnie 8 true/pause 1000/end",
+       	"secret": "faceDirection Lewis 1/faceDirection Lewis 2/showFrame Lewis 27/speak Lewis \"Thank you, @. That's a huge relief.$h\"/pause 800/showFrame Lewis 0/faceDirection Marnie 1/faceDirection Marnie 2 true/showFrame Marnie 38/showFrame Marnie 37/pause 2200/faceDirection Marnie 1/faceDirection Marnie 0/pause 1500/speak Marnie \"I think we have a lot to talk about...\"/pause 800/faceDirection farmer 2/faceDirection Lewis 1/faceDirection Lewis 0 true/move Marnie 0 1 2/speak Marnie \"Why were you hiding there, anyway?$u\"/faceDirection farmer 2/pause 300/jump farmer/pause 1000/speed farmer 4/move farmer 0 -6 3/playSound leafrustle/pause 600/faceDirection Lewis 1/faceDirection Marnie 3/pause 300/emote Lewis 8 true/emote Marnie 8 true/pause 1000/end",
+		"exposed": "shake Lewis 600/pause 1000/speak Lewis \"You can't! What would the villagers think?$s\"/pause 500/faceDirection Lewis 1/faceDirection Lewis 2/pause 1500/speak Marnie \"I think we have a lot to talk about...\"/pause 800/faceDirection farmer 2/faceDirection Lewis 1/faceDirection Lewis 0 true/move Marnie 0 1 2/speak Marnie \"Why were you hiding there, anyway?$u\"/faceDirection farmer 2/pause 300/jump farmer/pause 1000/speed farmer 4/move farmer 0 -6 3/playSound leafrustle/pause 600/faceDirection Lewis 1/faceDirection Marnie 3/pause 300/emote Lewis 8 true/emote Marnie 8 true/pause 1000/end",
+		},
+	},
+	{
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"event_secret1": "Ah!$h",
+		"event_secret2": "No!$4",
+		"event_secret3": "Hmm...",
+		},
+    },	
+//	Adds new events: Lewis and Marnie talk to the farmer, then hold a town meeting
+	{
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"48450001/e 639373/t 600 1130": "echos/64 15/farmer 64 16 2 Lewis 63 18 0 Marnie 63 18 0/skippable/move Marnie 1 0 0/pause 2000/speak Lewis \"... Hi, @. Good morning.#$b#I think we'd ought to talk.$5\"/pause 200/faceDirection Marnie 3/faceDirection Lewis 1/pause 1800/faceDirection Lewis 2/pause 500/showFrame Lewis 27/pause 800/showFrame Lewis 18/pause 1200/speak Lewis \"I've been an old fool.$s\"/pause 1500/faceDirection Lewis 1/faceDirection Lewis 0/faceDirection Marnie 0/speak Marnie \"@, we stayed up all night talking about the conversation you overheard last night.#$b#We think...$3\"/pause 300/speak Lewis \"We're going to tell the town about us.#$b#We'll let the villagers decide whether they'd still like me to be their mayor.#$b#But I'm tired of hiding our happiness!$h\"/pause 1000/showFrame Lewis 29/showFrame Marnie 36/pause 1500/globalFade/viewport -1000 -1000/end"
+        },
+    },
+	{
+	"Action": "EditData",
+	"Target": "Data/Events/Town",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"48450002/e 48450001/t 900 1600": "musicboxsong/27 60/farmer 25 62 0 Lewis 27 60 2 Marnie 28 60 2 Elliott 26 62 0 Leah 27 62 0 Shane 28 62 0 Evelyn 29 62 0 George 30 62 0 Gus 26 63 0 Pam 27 63 0 Robin 28 63 0 Demetrius 29 63 0 Emily 30 63 0 Harvey 31 63 0 Maru 32 63 0 Sebastian 25 64 0 Abigail 26 64 0 Sam 27 64 0 Penny 28 64 0 Vincent 29 64 0 Jas 30 64 0 Pierre 28 65 0 Caroline 29 65 0 Haley 30 65 0 Alex 31 65 0 Linus 29 66 0 Clint 30 66 0/skippable/pause 2000/speak Lewis \"Hi, everyone. Thanks for coming!\"/pause 200/faceDirection Lewis 1/faceDirection Marnie 3/pause 500/speak Lewis \"We have some news we'd like to share...$h\"/pause 1500/globalFade/viewport -1000 -1000/end"
+        },
+    },
+
+// 	Adds new dialogue for after town meeting; removes Marnie mentioning Lewis being alone in his house	
+	{
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Lewis",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"Town6": "Thank you, @, for encouraging us to tell the town about our love.#$b#I've never been so happy!$h"
+			},
+	"When": {
+			"HasSeenEvent": "48450002"
+			}
+    },
+	{
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Marnie",
+	"LogName": "Marnie Deserves Better",
+	"Entries": {
+		"Fri6": null,
+		"Town6": "I'm so glad we finally told the town about our relationship.#$b#Everyone has been so lovely!$h#$b#And it's all thanks to you."
+			},
+	"When": {
+			"HasSeenEvent": "48450002"
+			}
+    },
+  ],
+}

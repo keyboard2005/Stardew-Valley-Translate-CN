@@ -1,0 +1,224 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Morris's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/MorrisTod_Spring, Portraits/MorrisTod_Summer, Portraits/MorrisTod_Fall, Portraits/MorrisTod_Winter_Outdoor, Portraits/MorrisTod_Winter_Indoor, Characters/MorrisTod_Spring, Characters/MorrisTod_Summer, Characters/MorrisTod_Fall, Characters/MorrisTod_Winter_Outdoor, Characters/MorrisTod_Winter_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/MorrisTod/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Morris - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MorrisTod_Spring, Characters/MorrisTod_Summer, Characters/MorrisTod_Fall, Characters/MorrisTod_Winter_Outdoor, Characters/MorrisTod_Winter_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/MorrisTod/MorrisTod_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Morris Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["MorrisTod", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorrisTodSpring": {
+					"Id": "{{ModId}}.MorrisTodSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MorrisTod_Spring",
+					"Portrait": "Portraits/MorrisTod_Spring",
+					"Precedence": -130,
+				},
+
+				"{{ModId}}.MorrisTodSummer": {
+					"Id": "{{ModId}}.MorrisTodSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MorrisTod_Summer",
+					"Portrait": "Portraits/MorrisTod_Summer",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodFall": {
+					"Id": "{{ModId}}.MorrisTodFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MorrisTod_Fall",
+					"Portrait": "Portraits/MorrisTod_Fall",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterIndoor": {
+					"Id": "{{ModId}}.MorrisTodWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Indoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterOutdoor": {
+					"Id": "{{ModId}}.MorrisTodWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Outdoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -130,
+				},	
+			},
+		},
+			//Backup Appearance (Regular Morris)
+		{
+			"LogName": "Morris Appearance Data - Vanilla Morris",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Morris", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.MorrisTodSpring": {
+					"Id": "{{ModId}}.MorrisTodSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MorrisTod_Spring",
+					"Portrait": "Portraits/MorrisTod_Spring",
+					"Precedence": -130,
+				},
+
+				"{{ModId}}.MorrisTodSummer": {
+					"Id": "{{ModId}}.MorrisTodSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MorrisTod_Summer",
+					"Portrait": "Portraits/MorrisTod_Summer",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodFall": {
+					"Id": "{{ModId}}.MorrisTodFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MorrisTod_Fall",
+					"Portrait": "Portraits/MorrisTod_Fall",
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterIndoor": {
+					"Id": "{{ModId}}.MorrisTodWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Indoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -130,
+				},
+				
+				"{{ModId}}.MorrisTodWinterOutdoor": {
+					"Id": "{{ModId}}.MorrisTodWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MorrisTod_Winter_Outdoor",
+					"Portrait": "Portraits/MorrisTod_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -130,
+				},	
+			},
+		},
+		
+		// MISCELLANIOUS
+        {
+            "LogName": "Morris - Emoji",
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/maps/emojis.png",
+            "FromArea": {
+                "X": 99,
+                "Y": 117,
+                "Width": 9,
+                "Height": 9
+            },
+            "ToArea": {
+                "X": 99,
+                "Y": 117,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+        {
+            "LogName": "Morris - Joja Employees Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/{{NoNose}}/maps/Cursors_{{Season}}.png",
+            "FromArea": {
+                "X": 50,
+                "Y": 1387,
+                "Width": 14,
+                "Height": 30
+            },
+            "ToArea": {
+                "X": 50,
+                "Y": 1387,
+                "Width": 14,
+                "Height": 30
+            },
+            "When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+        {
+            "LogName": "Morris - Surprised Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/{{NoNose}}/maps/Cursors_{{Season}}.png",
+            "FromArea": {
+                "X": 105,
+                "Y": 1318,
+                "Width": 13,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 105,
+                "Y": 1318,
+                "Width": 13,
+                "Height": 31
+            },
+            "When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+        {
+            "LogName": "Morris - Building Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/{{NoNose}}/maps/Cursors_{{Season}}.png",
+            "FromArea": {
+                "X": 390,
+                "Y": 1405,
+                "Width": 36,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 390,
+                "Y": 1405,
+                "Width": 36,
+                "Height": 31
+            },
+            "When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+		{
+            "LogName": "MorrisTod Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/MorrisTod",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },			
+	]
+}

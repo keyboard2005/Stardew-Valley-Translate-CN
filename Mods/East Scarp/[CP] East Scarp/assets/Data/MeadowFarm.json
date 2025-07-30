@@ -1,0 +1,401 @@
+{
+    "Changes": [
+        { //External Map
+            "Action": "Load",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "FromFile": "assets/Locations/Outdoors/MeadowPath.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/EastScarp_MeadowShed_Ruins",
+            "FromFile": "assets/Locations/Interiors/MeadowFarmShed_ruins.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "EastScarp_MeadowFarm": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MeadowFarm}}",
+                    "CanPlantHere": "true",
+                    "CreateOnLoad": {
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\EastScarp_MeadowFarm"
+                    },
+                    "DefaultArrivalTile": {
+                        "X": 30,
+                        "Y": 38
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMeadowFarm"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)110",
+                            "ItemId": "(O)110",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)583",
+                            "ItemId": "(O)583",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "Fish": [
+                        {
+                            "Id": "(O)132",
+                            "ItemId": "(O)132",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)137",
+                            "ItemId": "(O)137",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)138",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Season": "fall",
+                            "Id": "(O)139",
+                            "ItemId": "(O)139"
+                        },
+                        {
+                            "Id": "(O)140",
+                            "ItemId": "(O)140",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)141",
+                            "ItemId": "(O)141"
+                        },
+                        {
+                            "Id": "(O)143",
+                            "ItemId": "(O)143",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "Id": "(O)144",
+                            "ItemId": "(O)144",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Id": "(O)145",
+                            "ItemId": "(O)145",
+                            "Condition": "LOCATION_Season Here spring summer"
+                        },
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)699",
+                            "ItemId": "(O)699",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)704",
+                            "ItemId": "(O)704"
+                        },
+                        {
+                            "Id": "(O)706",
+                            "ItemId": "(O)706",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)707",
+                            "ItemId": "(O)707"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.6,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_MeadowShed": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MeadowShed}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 18
+                    },
+                    "CreateOnLoad": {
+                        "Type": "StardewValley.Locations.DecoratableLocation",
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\EastScarp_MeadowShed"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMeadowShed"
+                    ],
+                    "CanPlantHere": true,
+                    "CustomFields": {}
+                },
+                "EastScarp_MeadowShed_Ruins": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MeadowShed}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 18
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_MeadowShed_Ruins"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMeadowShed_Ruins"
+                    ],
+                    "CustomFields": {}
+                },
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DeepMountains",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 59,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 15 0"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 60,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 15 0"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 61,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 15 0"
+                    }
+                }
+            ],
+        },
+        {
+            "LogName": "Adds warp to Meadow Farm",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 73,
+                        "Y": 0
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 30 39"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 74,
+                        "Y": 0
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 30 39"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 75,
+                        "Y": 0
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_MeadowFarm 30 39"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "FromFile": "assets/Patches/MeadowFarm_Paths.tmx",
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "HasSeenEvent": "57879002"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasSeenEvent |contains=57877005": false,
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"MeadowFarm.01\""
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasSeenEvent": "57877005"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 9 18 EastScarp_MeadowShed_Ruins"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/EastScarp_MeadowShed",
+            "FromFile": "assets/Locations/Interiors/MeadowFarmShed.tmx"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasSeenEvent": "57877006"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 9 18 EastScarp_MeadowShed"
+                    }
+                }
+            ]
+        },
+    ]
+}

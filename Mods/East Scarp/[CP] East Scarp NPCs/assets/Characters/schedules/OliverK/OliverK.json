@@ -1,0 +1,72 @@
+{
+    "Changes": [
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "winter_1": "0 BusStop 22 16 0/610 BusStop 24 16 3/800 SeedShop 12 27 3/1030 Town 46 57 2/1120 EastScarp_VillageInn 15 9 0/1600 EastScarp_VillageInn 13 11 1 oliverk_computer/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+                "rain": "0 EastScarp_VillageInn 19 11/900 EastScarp_VillageInn 15 9 0/1000 EastScarp_VillageInn 45 10 0/1100 EastScarp_VillageInn 45 12 3/1300 EastScarp_VillageInn 26 12 2 square_5_1_2/1800 EastScarp_VillageInn 13 11 1 oliverk_computer/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+                "spring": "0 EastScarp_VillageInn 19 11/800 EastScarp_VillageInn 15 9 0/1000 EastScarp_Village 47 70 3/1500 EastScarp_Village 14 123 2/1800 EastScarp_VillageInn 33 28 0/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+                "Tue": "MAIL JacobOliverWork/GOTO spring/0 EastScarp_VillageInn 19 11/800 EastScarp_VillageInn 15 9 0/1000 EastScarp_Village 28 32 3/1140 EastScarp_VetAwayWarpRoom 6 5 2/1800 EastScarp_VillageInn 13 11 1 oliverk_computer/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+                "Sat": "0 EastScarp_VillageInn 19 11/900 EastScarp_VillageInn 15 9 0/1000 EastScarp_Village 31 63 3/1300 EastScarp_Village 10 109 2/1600 EastScarp_VillageInn 29 13 3/1900 EastScarp_VillageInn 13 11 1 oliverk_computer",
+                "Sun": "0 EastScarp_VillageInn 19 11/1100 EastScarp_VillageInn 48 19 3/1300 EastScarp_Village 31 63 3/1500 EastScarp_Village 14 123 2/1800 EastScarp_VillageInn 33 28 0/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+            },
+            "When": {
+                "HasSeenEvent": "57873000"
+            }
+        },
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "Sun": "0 EastScarp_VillageInn 19 11/0700 EastScarp_VillageInn 45 10 0 \"Strings\\schedules\\OliverK:Lexi.1\"/1100 EastScarp_SeaCave 30 24 0 \"Strings\\schedules\\OliverK:Lexi.2\"/1700 EastScarp_VillageInn 33 29 0/2200 EastScarp_VillageInn 19 11 3 oliverk_sleep",
+            },
+            "When": {
+                "HasSeenEvent": "57872012"
+            }
+        },
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "winter_1": "GOTO spring"
+            },
+            "When": {
+                "HasSeenEvent": "57873000",
+                "HasConversationTopic |contains=Josephine_Arrives": false
+            }
+        },
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "Sun": "0700 EastScarp_VetHouse 31 16 0 \"Strings\\schedules\\OliverK:Lexi.1\"/1000 EastScarp_SeaCave 30 24 0 \"Strings\\schedules\\OliverK:Lexi.2\"/1700 EastScarp_VetHouse 24 15 0/2200 EastScarp_VetHouse 18 21 3 oliverk_sleep",
+                "rain": "700 EastScarp_VetHouse 23 22 0/900 EastScarp_VetHouse 31 16 0/1100 EastScarp_JacobBarn 14 6 3/1300 EastScarp_VillageInn 25 12 2 square_5_1_2/1800 EastScarp_VetHouse 22 25 1 oliverk_computer/2200 EastScarp_VetHouse 18 21 3 oliverk_sleep",
+                "spring": "800 EastScarp_VetHouse 23 22 0/1000 EastScarp_Village 47 70 3/1500 EastScarp_Village 14 123 2/1800 EastScarp_VetHouse 24 15 0/2200 EastScarp_VetHouse 18 21 3 oliverk_sleep",
+                "Tue": "MAIL JacobOliverWork/GOTO spring/800 EastScarp_VetHouse 23 22 0/1000 EastScarp_Village 28 32 3/1140 EastScarp_VetAwayWarpRoom 6 5 2/1800 EastScarp_VetHouse 22 25 1 oliverk_computer/2200 EastScarp_VetHouse 18 21 3 oliverk_sleep",
+                "Sat": "900 EastScarp_VetHouse 23 22 0/1000 EastScarp_Village 31 63 3/1300 EastScarp_Village 10 109 2/1600 EastScarp_VillageInn 28 13 3/1900 EastScarp_VetHouse 22 25 1 oliverk_computer",
+                "summer_6": "730 EastScarp_VetHouse 31 16 0/830 EastScarp_VetHouse 12 23 1/930 Town 87 93 0/1200 Town 80 87 2/1400 Saloon 9 5 3 oliverk_sit/1800 EastScarp_Village 32 35 1/2140 EastScarp_VetHouse 22 25 1 oliverk_computer"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "Sat": "900 EastScarp_VetHouse 23 22 0/1000 EastScarp_Village 31 63 3/1300 EastScarp_Village 25 83 0 \"Strings\\schedules\\OliverK:CGuild.1\"/1600 EastScarp_VillageInn 28 13 3/1900 EastScarp_VetHouse 22 25 1 oliverk_computer",
+            
+            },
+            "When": {
+                "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,
+                "HasSeenEvent": "57873005"
+            }
+        },
+    ]
+}

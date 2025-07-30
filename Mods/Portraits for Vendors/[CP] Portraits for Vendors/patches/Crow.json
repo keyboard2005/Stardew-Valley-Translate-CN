@@ -1,0 +1,51 @@
+{
+	"Changes":[
+		{
+			"LogName": "Crow",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "LostItems", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/Crow_Default",	
+				"Dialogues":  [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": null,
+						"RandomDialogue": [
+							"{{i18n:Crow1}}",
+							"{{i18n:Crow2}}",
+							"{{i18n:Crow3}}",
+							"{{i18n:Crow4}}",
+							"{{i18n:Crow5}}",
+						],
+					}
+				],
+			},
+		},
+		{
+			"LogName": "Crow Frame",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "LostItems", "VisualTheme", "#0"],
+			"Entries": {
+				"PortraitBackgroundTexture": "DolphINaF.VendorPortraits/CrowFrame",
+				"PortraitBackgroundSourceRect": {
+					"X": 0,
+					"Y": 0,
+					"Width": 74,
+					"Height": 74
+				},
+				"DialogueBackgroundTexture": "DolphINaF.VendorPortraits/CrowFrame",
+				"DialogueBackgroundSourceRect": {
+					"X": 75,
+					"Y": 0,
+					"Width": 60,
+					"Height": 60
+				},
+				"DialogueColor": "196 6 111",
+				"DialogueShadowColor": "#302826",
+			},
+		},
+	],
+}

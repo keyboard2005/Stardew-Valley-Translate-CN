@@ -1,0 +1,13 @@
+{
+    "Name": "[CP] Clint Reforged",
+    "Author": "SoftPandaBoi",
+    "Version": "1.2.1",
+    "Description": "Uses scraps from Improved Clint mixed with a lot of new things to make a vanilla styled romanceable Clint.",
+    "UniqueID": "SoftPandaBoi.ClintReforged",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": ["Nexus:18345"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.0.0"
+    }
+}

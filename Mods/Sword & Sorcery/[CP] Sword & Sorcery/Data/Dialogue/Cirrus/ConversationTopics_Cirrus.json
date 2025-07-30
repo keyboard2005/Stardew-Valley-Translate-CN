@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            "LogName": "Conversation Topics - Cirrus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Cirrus",
+            "Entries": // CIRRUS' REACTIONS
+            {
+                // CH3: 
+                "CirrusArrives":"{{i18n:CT.Cirrus.CirrusArrives}}",
+                "CirrusWoods":"{{i18n:CT.Cirrus.CirrusWoods}}",
+                "CirrusGuild":"{{i18n:CT.Cirrus.CirrusGuild}}",
+                "CirrusMom":"{{i18n:CT.Cirrus.CirrusMom}}",
+                "CirrusJJ1":"{{i18n:CT.Cirrus.CirrusJJ1}}",
+                "CirrusRain":"{{i18n:CT.Cirrus.CirrusRain}}",
+                "CirrusWoods2":"{{i18n:CT.Cirrus.CirrusWoods2}}",
+                "CirrusJJ2":"{{i18n:CT.Cirrus.CirrusJJ2}}",
+                "CirrusDnD":"{{i18n:CT.Cirrus.CirrusDnD}}",
+                "CirrusLionsMane":"{{i18n:CT.Cirrus.CirrusLionsMane}}",
+                "CirrusConcert":"{{i18n:CT.Cirrus.CirrusConcert}}",
+                "CirrusLionsMane2":"{{i18n:CT.Cirrus.CirrusLionsMane2}}",
+                "CirrusLionsMane3":"{{i18n:CT.Cirrus.CirrusLionsMane3}}",
+                "CirrusEngaged":"{{i18n:CT.Cirrus.CirrusEngaged}}",
+                "CirrusOvercomingFear":"{{i18n:CT.Cirrus.CirrusOvercomingFear}}",
+                "CirrusPlanetarium":"{{i18n:CT.Cirrus.CirrusPlanetarium}}",
+                "CirrusMakeup": "{{i18n:CT.Cirrus.CirrusMakeup}}",
+
+                // CH4:
+                "RoslinNeedsHelp": "{{i18n:CT.Cirrus.RoslinNeedsHelp}}",
+                "RoslinAndMateo": "{{i18n:CT.Cirrus.RoslinAndMateo}}",
+                "RoslinAndHector": "{{i18n:CT.Cirrus.RoslinAndHector}}",
+                "RoslinAndCirrus": "{{i18n:CT.Cirrus.RoslinAndCirrus}}",
+                "RoslinAndLewis": "{{i18n:CT.Cirrus.RoslinAndLewis}}",
+                "DandelionReturns": "{{i18n:CT.Cirrus.DandelionReturns}}",
+                "CirrusGingerBeer": "{{i18n:CT.Cirrus.CirrusGingerBeer}}",
+                "DandelionSettling": "{{i18n:CT.Cirrus.DandelionReturns}}",
+                "DandelionShieldRepair": "{{i18n:CT.Cirrus.DandelionShieldRepair}}",
+                "DandelionShieldRestored": "{{i18n:CT.Cirrus.DandelionShieldRestored}}",
+                "FullmetalDandelion": "{{i18n:CT.Cirrus.FullmetalDandelion}}",
+                "DandelionPendant": "{{i18n:CT.Cirrus.DandelionPendant}}",
+                "SolomonGift": "{{i18n:CT.Cirrus.SolomonGift}}",
+                "IntoTheDeepDark": "{{i18n:CT.Cirrus.IntoTheDeepDark}}",
+                "DuskspireEncounter": "{{i18n:CT.Cirrus.DuskspireEncounter }}",
+
+                // CH5: 
+                "DandelionProposes": "{{i18n:CT.Cirrus.DandelionProposes}}",
+                "WyattReturns": "{{i18n:CT.Cirrus.WyattReturns}}",
+                "HectorPromotion": "{{i18n:CT.Cirrus.HectorPromotion}}",
+                "CirrusAndMom": "{{i18n:CT.Cirrus.CirrusAndMom}}",
+                "RosalionWedding": "{{i18n:CT.Cirrus.RosalionWedding}}",
+                "VioletMoonRennFaire": "{{i18n:CT.Cirrus.VioletMoonRennFaire}}",
+                "SwordAndSorcery": "{{i18n:CT.Cirrus.SwordAndSorcery}}",
+            }
+        },
+    ]
+}

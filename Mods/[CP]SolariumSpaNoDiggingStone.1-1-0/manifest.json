@@ -1,0 +1,11 @@
+{
+  "Name": "Solarium Spa - Continued",
+  "Author": "BBR&ferngull",
+  "Version": "1.1.0",
+  "Description": "Adds a solarium to the bathhouse rooftop that can be used as a greenhouse.",
+  "UniqueID": "ferngull.SolariumSpa",
+  "UpdateKeys": [ "Nexus:22997" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+  }
+}

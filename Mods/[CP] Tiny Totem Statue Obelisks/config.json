@@ -1,0 +1,17 @@
+{
+  "EarthObeliskEnabled": "true",
+  "DesertObeliskEnabled": "true",
+  "WaterObeliskEnabled": "true",
+  "IslandObeliskEnabled": "true",
+  "FarmObeliskEnabled": "true",
+  "FlowersEnabled": "true",
+  "MossEnabled": "true",
+  "MiniObeliskEnabled": "true",
+  "MiniObeliskStyle": "signpost",
+  "RemoteObeliskEnabled": "true",
+  "RemoteWarpLocation": "default",
+  "CustomFarmX": "48",
+  "CustomFarmY": "7",
+  "EastScarpEnabled": "true",
+  "RidgesideVillageEnabled": "true"
+}

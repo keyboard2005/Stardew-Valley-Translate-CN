@@ -1,0 +1,70 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Mods/CJBok.CheatsMenu/WarpSections",
+            "Entries": {
+                "{{ModId}}_EastScarp": {
+                    "Id": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.EastScarp}}"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/CJBok.CheatsMenu/Warps",
+            "Entries": {
+                "{{ModId}}_Village_VetHouse": {
+                    "Id": "{{ModId}}_Village_VetHouse",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.Vet}}",
+                    "Location": "EastScarp_Village",
+                    "Tile": "14, 26"
+                },
+                "{{ModId}}_Village_CarpPond": {
+                    "Id": "{{ModId}}_Village_CarpPond",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.Inn}}",
+                    "Location": "EastScarp_Village",
+                    "Tile": "42, 66"
+                },
+                "{{ModId}}_Village_Beach": {
+                    "Id": "{{ModId}}_Village_Beach",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.Tidepools}}",
+                    "Location": "EastScarp_Village",
+                    "Tile": "46, 91"
+                },
+                "{{ModId}}_EastScarp_ClearingHouse": {
+                    "Id": "{{ModId}}_EastScarp_ClearingHouse",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.ScarpPath}}",
+                    "Location": "EastScarp_ClearingHouse",
+                    "Tile": "25, 23"
+                },
+                "{{ModId}}_Orchard": {
+                    "Id": "{{ModId}}_Orchard",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: EastScarp.Locations.Orchard}}",
+                    "Location": "EastScarp_Orchard",
+                    "Tile": "3, 17"
+                },
+                "{{ModId}}_DeepMountains_DeepLake": {
+                    "Id": "{{ModId}}_DeepMountains_DeepLake",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: CJB.EastScarp_DeepMountains_DeepLake}}",
+                    "Location": "EastScarp_DeepMountains",
+                    "Tile": "98, 42"
+                },
+                "{{ModId}}_DeepMountains_Pond": {
+                    "Id": "{{ModId}}_DeepMountains_Pond",
+                    "SectionId": "{{ModId}}_EastScarp",
+                    "DisplayName": "{{i18n: CJB.EastScarp_DeepMountains_Pond}}",
+                    "Location": "EastScarp_DeepMountains",
+                    "Tile": "49, 44"
+                },
+                
+            }
+        }
+    ]
+}

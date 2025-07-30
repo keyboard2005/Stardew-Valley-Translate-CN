@@ -1,0 +1,16 @@
+{
+  "GoatSkin": "revised",
+  "TownMap": "default",
+  "Forest": "true",
+  "EnableMeadowFarm": "true",
+  "Skin": "NewEastScarpe",
+  "WalkTidePools": "false",
+  "ObeliskOptions": "vanilla",
+  "FlowersSpring": "false",
+  "FlowersSummer": "false",
+  "FlowersFall": "false",
+  "farmcave_trapdoorx": "2",
+  "farmcave_trapdoory": "5",
+  "farmcave_exitx": "2",
+  "farmcave_exity": "6"
+}

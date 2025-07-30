@@ -1,0 +1,318 @@
+{
+    //Config
+    "Config.BeardVariant.Name": "Facial Hair",
+    "Config.BeardVariant.Description": "Lets you choose what facial hair you want Clint to have. (Only works with Revised Art.)",
+    "Config.BeardVariant.values.None": "No Facial Hair",
+    "Config.BeardVariant.values.Half": "Goatee",
+    "Config.BeardVariant.values.Full": "Beard", //New in 1.1.0
+    "Config.TweakAppearance.Name": "Original or Revised Art",
+    "Config.TweakAppearance.Description": "Lets you choose between Clint's Vanilla portraits/sprites or a revised set.",
+    "Config.TweakAppearance.values.New": "Revised Art",
+    "Config.TweakAppearance.values.Seasonal": "Revised Art (Seasonal)", //New in 1.1.0
+    "Config.TweakAppearance.values.Old": "Vanilla Art",
+
+    //Map Strings
+    "MapStrings.Clint.Letter": "Dear Farmer,^You're probably one of my best friends.^But truthfully, I've started to think of you as more. I think I'm starting to fall for you.^I know it's silly and I know I'm too much of a coward to actually send this letter.^Sorry.",
+    
+    //Conversation Topics
+    "ConversationTopic.Clint.SPB4H": "U-Uh, sorry about that... I really am fine.$2",
+    "ConversationTopic.Clint.SPB6H": "I'm so excited for my date with Emily!$1#$e#Thanks for the help!#1",
+    "ConversationTopic.Clint.SPB10H": "That was really nice... Thanks.$1",
+    "ConversationTopic.Clint.SPB14H": "Thanks for always being there for me, I love you.$8",
+    
+    //Schedule Dialogue
+    "ScheduleDialogue.Clint.JustThinking": "Hey Love, I'm fine, just thinking about stuff.",
+    "ScheduleDialogue.Clint.MonWork": "Need an upgrade or just visited?#$b#Either way, I'm glad you're here!$1",
+    "ScheduleDialogue.Clint.SatWork": "Oh! @! Hey! Wanna hang out for a bit?",
+    "ScheduleDialogue.Clint.SunWork": "Hey @, thanks for visiting! You always make the day better.$8",
+    "ScheduleDialogue.Clint.SaloonVisit": "Being here now a days feels a lot less lonely than before...$1",
+    
+    //Event Dialogue
+    "2hearts0.01": "Oh, uh. Hey @. It's... Nice seeing you again.",
+    "2hearts0.02": "I uh... Should warn you that I'm not good around people. It's not personal or anything...$2",
+    "2hearts0.03": "I  just get... Nervous and awkward aroud people, no matter what I do.$11",
+    "2hearts0.04": "I'm sorry. I uh... Hope you still come visit, even it's just to upgrade your tools.",
+    "2hearts.01": "Okay guys, do you remember your lines?$u", //Vanilla Dialogue from Shane's Seven Heart II Event
+    "2hearts.02": "Yes!", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.03": "Ready? Action!$u", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.04": "I thought we had something special... I guess I was wrong.$s", //Vanilla Dialogue from Shane's Seven Heart II Event
+    "2hearts.05": "I... I... Uh...", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.06": "Cut!", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.07": "I'm sorry!$s", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.08": "I'm just... Camera shy! I've never done this before...$11",
+    "2hearts.09": "Oh, hey.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.10": "Check out my new camera...#$b#Joja Co. is having a video advertisement competition. The prize is 10,000g.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.11": "Hey! I want you to be in this shot... okay?#$b#Just walk by Clint and Emily in the background while they're talking... It'll give the scene a little more authenticity.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.12": "Okay... Ready?#$b#Action!$u", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.13": "I thought we had something special... You said you wouldn't leave me for anything. I guess that was a lie.$s", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.14": "No! It's not like that... This is just something I have to do. It's very important to me.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.15": "I've just got to try new 'Joja Bluu' cola.$a#$b#It's got three times the sorbitol for a thick, sweet blast. And it's cheaper than water!$a", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.16": "But... But... Isn't soda unhealthy? You promised me...$s", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.17": "Have no fear, my dear. The world-class science team at Joja Headquarters have determined that 'Joja Bluu' does not cause a significant erosion of the stomach lining. So you can drink it whenever you like, as much as you like.$a#$b#The real question is... 'When will YOU turn bluu?'... *glug* *glug*... Ahh...$a", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.18": "Cut!", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.19": "That was perfect.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.20": "Thanks for the help. $h", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.21": "...Clint?$s", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "2hearts.22": "What a productive day... I got some great footage.", //Vanilla Dialogue from Shane's Seven Hearts II Event
+    "4hearts.01": "@? W-What are you doing here?$10",
+    "4hearts.02": "Wait... Did you think I was going to...?$2",
+    "4hearts.03": "D-Don't worry, I'm not going to.$2",
+    "4hearts.04": "I just come here to think sometimes.$2",
+    "4hearts.05": "Sometimes I just need to get away from everything and be alone...$11",
+    "4hearts.06": "Uhm, please don't tell anybody about this...$2",
+    "6hearts.01": "@!$4#$b#...You caught me.$s", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.02": "I was planning to ask Emily on a date. I was at her doorstep and everything... but then I heard her coming and I dove into this bush.$s#$b#Now I'm waiting until she's done talking with Caroline so I can sneak back into my house.$s", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.03": "What did you just say? You'll never upgrade your tools again if I don't ask her out?$s", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.04": "You're a villain, @.#$b#*sigh* ...alright, I'll do it.$s", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.05": "I gotta remember that advice @ gave me in the saloon.", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.06": "Um... Emily?", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.07": "Sorry, Caroline. Could you excuse me for a minute?", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.08": "Yes, Clint?", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.09": "I was wondering if you'd go w... with... tomorrow, me... *gulp*$4", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.10": "I've got two tickets for the Grampleton Carnival tomorrow. W... Would you go with me? $4", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.11": "Sure, Clint! That sounds fun!$h", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.12": "Really? Okay! I'll pick you up at five.$h", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.13": "Okay! See you tomorrow!", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.14": "Did you see that?! I've got a date tomorrow night!$h", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.15": "Oh man...I'm so nervous.$s", //Vanilla Dialogue from Clint's Six Heart Event
+    "6hearts.16": "Thanks for forcing me to do that, earlier. I'm scared, but also very pleased.$h", //Vanilla Dialogue from Clint's Six Heart Event
+    "7hearts.01": "Clint. Listen to me, it's okay to get help...$2",
+    "7hearts.02": "I'm okay! I don't need therapy!$3", //New in 1.1.0
+    "7hearts.03": "@? What are you doing here?", //New in 1.1.0
+    "7hearts.04": "I'm not sure... But I know they agree with me.", //New in 1.1.0
+    "7hearts.05": "...How would you know?$3", //New in 1.1.0
+    "7hearts.06": "Clint, it's obvious that you're struggling through something...$2", //New in 1.1.0
+    "7hearts.07": "We're worried about you.", //New in 1.1.0
+    "7hearts.08": "...Fine! I'll go to one appointment. But if I don't like it, I'm not going back!$3", //New in 1.1.0
+    "7hearts.09": "Well... It's better than nothing.", //New in 1.1.0
+    "8hearts.01": "@! Hey!$1",
+    "8hearts.02": "I knew you were going to visit!$1",
+    "8hearts.03": "Huh? How'd I know?",
+    "8hearts.04": "Well! I like to think that I know you pretty well!$1",
+    "8hearts.05": "And uh, you visit a lot...",
+    "8hearts.06": "It's really nice.$1",
+    "8hearts.07": "I've actually been meaning to talk to you...",
+    "8hearts.08": "You're... One of the nicest people I've ever met.",
+    "8hearts.09": "And... Sometimes it's weird. Most people just sort of ignore me...$11",
+    "8hearts.10": "Wow... That's pretty sad...$2",
+    "8hearts.11": "B-But then you showed up! And you've shown me so much kindness...$1",
+    "8hearts.12": "I don't really know how to say this...$2",
+    "8hearts.13": "Thank you, for everything.$1",
+    "8hearts.14": "You're... Really special to me.$8",
+    "8hearts.15": "I-I mean!$4",
+    "8hearts.16": "I'm just really glad we're friends.",
+    "10hearts.01": "*sigh*$2",
+    "10hearts.02": "U-Uh hey @! I was on my way to come visit you...",
+    "10hearts.03": "...I'm getting some major déjà vu.$2",
+    "10hearts.04": "...But this time I'm going to be brave and be clear!$1",
+    "10hearts.05": "Would you like to...$4",
+    "10hearts.06": "Do you want to go on a date?",
+    "10hearts.07": "Yes",
+    "10hearts.08": "No",
+    "10hearts.09": "O-Oh...$11",
+    "10hearts.10": "I-I understand...$2",
+    "10hearts.SPB_ClintDate.01": "T-That's great...!$8",
+    "10hearts.SPB_ClintDate.02": "I-I'll see you at the salloon after 6 PM, okay?$8",
+    "14hearts.01": "Hey Love.$1",
+    "14hearts.02": "Oh! Yeah, I'm fine. Don't worry.",
+    "14hearts.03": "I was just thinking...",
+    "14hearts.04": "... *sigh*$11",
+    "14hearts.05": "Before you arrived, I was just... Spiraling...$2",
+    "14hearts.06": "I was always felt alone...$2",
+    "14hearts.07": "Thanks to you I actually got the help I needed. Even if you did basically have to force me to do it...$11",
+    "14hearts.08": "You've saved me in more ways than one.$11",
+    "14hearts.09": "Thank you, for everything...$8",
+    "event-2123243.01": "Welcome to clothing therapy!",
+    "event-2123243.02": "You're probably wondering... what is clothing therapy?#$b#I'll try to explain.", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.03": "So many of us are struggling with personal issues... things holding us back from living how we want.$u#$b#It's important to me that everyone has a free and happy life... so I came up with a new kind of therapy to help people achieve that.$u", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.04": "It's based on the amazing power of self-expression. Self-expression is a wonderful healing tool, did you know that?",  //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.05": "Behind this curtain, you'll find racks and racks of clothes. There's endless options to choose from.", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.06": "Your job is simple: find the outfit that truly speaks to you, and put it on.#$b#Feel confident in yourself and your choice. You all have a unique style to share with the world!#$b#Shane, you're up first!$h", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.07": "Okay", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.08": "Ah, @. You're just in time. Just observe and keep an open mind... okay?", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.09": "Wow...", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.10": "Cool", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.11": "Shane, it's a new side of you we've never known about. That's great!#$b#Now, go outside with confidence and show the world!",  //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.12": "Sure", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.13": "Okay, everyone gets a turn!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.14": "Oh no...", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.15": "Heehee", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.16": "Oh my!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.17": "Beautiful!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.18": "Let's see what Demetrius thinks...", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.19": "Why not...", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.20": "Hehe... not bad!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.21": "Lookin' sharp!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.22": "Me next!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.23": "Very nice!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.24": "It's sweaty in here...", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.25": "Clint? You're up!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.26": "M...Me?", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.27": "*gulp*... Okay, Emily. I'll do it.$4", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.28": "Awww, cute!", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.29": "U-Uh... Thanks Emily...!$9",
+    "event-2123243.30": "Well, that went very well!#$b#I just hope this experience helps everyone break out of their shells a bit.", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.31": "@... um...$4", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.32": "I couldn't do it! I don't wanna break out of my shell!$6", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.33": "...Oh. I... I guess I'm interrupting something here, aren't I?$7", //Vanilla Dialogue from Emily's Eight Heart Event
+    "event-2123243.34": "S-Sorry! I'll leave you two alone to talk!$7",
+    "event-183450000.01": "Oh @! Perfect timing... I actually wanted to talk to you.",
+    "event-183450000.02": "Well... I went on a date with Emily.",
+    "event-183450000.03": "It was everything I thought I wanted...",
+    "event-183450000.04": "But...$2",
+    "event-183450000.05": "I just wasn't happy on the date. I didn't feel comfortable and it just didn't feel right...",
+    "event-183450000.06": "Am I crazy? As much as I like her... I don't think that things would work out romantically between us.$2",
+    "event-183450000.07": "*sigh*$2",
+    "event-183450000.08": "Uhm... Thank you. For listening to me and all that stuff...",
+    "event-183450006.01": "@! You came!$1",
+    "event-183450006.02": "Thanks for actually coming. I know it's silly but I was a bit worried...$8",
+    "event-183450006.03": "I already ordered for us!",
+    "event-183450006.04": "Here's what you ordered!",
+    "event-183450006.05": "Thanks Emily!$1",
+    "event-183450006.06": "I heard you two are on a date, that's great!$1",
+    "event-183450006.07": "Y-Yeah, we are! Thanks!$8",
+    "event-183450006.08": "Of course! Have fun you two.",
+    "event-183450006.09": "Heh... That went better than it did last time I was in this seat.$1",
+    "event-183450006.10": "So, I hope that you don't mind sharing...!",
+    "event-183450008.01": "@! Y-You have really good timing...", //New in 1.1.0
+    "event-183450008.02": "I really hope Harvey's right about all this...", //New in 1.1.0
+    "event-183450008.03": "Well uhm. I don't want to waste too much of your time, I'll be going. Thanks for being here for me.", //New in 1.1.0
+    
+    //Extra Dialogue
+    "ExtraDialogue.Clint.NoInvSpa": "Hey. Your tool is ready but you don't have any room in your inventory. I'd bring it home but I'm just so tired when I'm done with work...",
+    
+    //Special Dialogue
+    "SpecialDialogue.Clint.Engagment0": "Uhm, I never thought anyone would want me... Well, for me.$11#$b#Thank you.$8",
+    "SpecialDialogue.Clint.Engagment1": "Thank you, for making me happier than I have ever been.$8",
+    
+    //Clint's Dialogue
+    "Dialogue.Clint.DanceRejection": "You want to... Uh, s-sorry...$2",
+    "Dialogue.Clint.Divorced": "...Leave me alone.$3",
+    "Dialogue.Clint.BreakUp": "O-Oh, you want to...?$11#$b#I understand...$2",
+    "Dialogue.Clint.ResortLeaving": "Well, that didn't turn out like I imagined, but it was still fun.",
+    "Dialogue.Clint.ResortShore": "H-Heh... The sand is so hot... I should've brought sandles!",
+    "Dialogue.Clint.ResortA": "I don't really know what to do here... But it's always nice to just take a break.",
+    "Dialogue.Clint.ResortB": "@! It's nice to see you here! Wanna hang out?",
+    "Dialogue.Clint.RejectBouquetDivorced": "I... Don't think that's a good idea.$2", //New to 1.2.0
+    "Dialogue.Clint.RejectBouquetNpcAlreadyMarried": "What are you doing?$3", //New to 1.2.0
+    "Dialogue.Clint.RejectBouquetVeryLowHearts": "Yeah. Sure. Real Funny.", //New to 1.2.0
+    "Dialogue.Clint.RejectBouquetLowHearts": "I'm... Not sure I-I uhhh... Sorry.$2", //New to 1.2.0
+    "Dialogue.Clint.AcceptBouquet": "You want to...?$4#$b#YES- I-I mean... Sure...!$8", //New to 1.2.0
+    "Dialogue.Clint.FlowerDanceAccept": "Oh...! S-Sure, sounds fun...!$8", //New to 1.2.0
+    "Dialogue.Clint.FlowerDanceAcceptSpouse": "Of course Love, I'm surprised you had to ask.$8", //New to 1.2.0
+    "Dialogue.Clint.WipedMemory": "Hi. I'm Clint, I'm the town blacksmith-#$e#Why do I feel like I've said this before...$3", //New to 1.2.0
+    "Dialogue.Clint.SpouseStardrop": "I wanted find a way to show you how much I appreaciate you... And I thought this might be a pretty good one!$8", //New to 1.2.0
+    "Dialogue.Clint.DatingEmily": "Hey, I heard that you and Emily are together. Congratulations!$1", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendant": "I... No.", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantDivorced": "...Didn't we already learn this lesson the hard way?$2", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantNeedHouseUpgrade": "...I don't think either of us are ready for something like this.$2", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantNpcWithSomeoneElse": "I'm already very happy with {0}.$3", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantPlayerWithSomeoneElse": "What are you? You're married to {0}. Is this some sort of joke?$3", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantUnder8Hearts": "We're not even together. I can't marry you.", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantUnder10Hearts": "I'm sorry.... I'm just not ready yet.$2", //New to 1.2.0
+    "Dialogue.Clint.RejectMermaidPendantAskedAgain": "I'm still not ready... Sorry...$2", //New to 1.2.0
+    "Dialogue.Clint.SpouseFarmhouseClutter": "Hey uh, can you help me clean up here? It's getting a bit hard to even get to the kitchen...!$11", //New to 1.2.0
+    "Dialogue.Clint.HitBySlingshot": "@! Was that you!$3", //New to 1.2.0
+
+
+    "Dialogue.Clint.Mon2H": "I'm not sure being a blacksmith was a good idea. It's not much money.$2",
+    "Dialogue.Clint.Mon6H": "I'm not sure what I would do it I wasn't a blacksmith...#$e#I guess I never really even thought about it.$11",
+    "Dialogue.Clint.Tue2H": "Uh, having luck finding ore?",
+    "Dialogue.Clint.Tue6H": "Sorry my prices are so high.$2#$e#But I've gotta eat too!",
+    "Dialogue.Clint.Tue8H": "Thanks for always coming to visit. I know I'm sort of out of the way.",
+    "Dialogue.Clint.Wed4H": "Hey @. Do you need something?",
+    "Dialogue.Clint.Wed8H": "Bleh, I'm a mess. All the heat here has me sweating real bad.",
+    "Dialogue.Clint.Thu4H": "I know I close the shop pretty early but I just get so exhausted...$2",
+    "Dialogue.Clint.Thu8H": "Business has been slow lately.#$e#At least you always come visit$1",
+    "Dialogue.Clint.Fri4H": "The weather doesn't really matter to me. I typically stay near my shop year-round.#$e#Good news for you, huh?",
+    "Dialogue.Clint.Fri8H": "I typically stay near my shop year-round.#$e#That means you can always come visit!$1",
+    "Dialogue.Clint.Fri10H": "I wonder what I'd be if I wasn't a blacksmith...#$e#Maybe I could be a farmer! Heh.$1",
+    "Dialogue.Clint.Sat4H": "...I wonder where I'd live if it wasn't here.",
+    "Dialogue.Clint.Sat8H": "Sometimes I complain about where I'm at...#$e#But it could be worse.$1",
+    "Dialogue.Clint.Sun4H": "So... Uhm, how's your work treating you?",
+    "Dialogue.Clint.Sun6H": "Do you need to upgrade anything?#$b#You know I'm the guy for that!$1",
+    "Dialogue.Clint.Sun8H": "Being a blacksmith is... Exhausting and doesn't pay enough. But I don't really have the skills to do anything else.$2#$b#It could be worst I guess.$11",
+    "Dialogue.Clint.Sun10H": "@! hey, do you maybe want to hang out a bit?",
+
+    "Dialogue.Clint.SumThu6H": "The heat from outside is mixing with the heat from the forge. It's horrible.$2",
+
+    "Dialogue.Clint.WinWed6H": "I missed the winter. It's the best, mostly because the heat from the forge doesn't get so bad.",
+    
+    "Dialogue.Clint.Spr12DA": "I'm not really sure why I always go the Egg Festival... I guess the food's pretty good!$1",
+    "Dialogue.Clint.Spr12DB": "I'm not really sure why I always go the Egg Festival... It's not that really that fun as an adult.$2#$e# But, I can't wait for Alec's deviled eggs!$1",
+    "Dialogue.Clint.Spr23DA": "The flower dance is tomorrow... It always makes me feel so lonely...$2",
+    "Dialogue.Clint.Spr23DB": "I can't wait for the dance!$1",
+    "Dialogue.Clint.Sum10D": "It's finally the Luau... The food is so good. It might be the only festival I actually enjoy!$1",
+    "Dialogue.Clint.Fal15D": "Hah, can't wait to show off all the weapons I've made at the Fair!$1",
+    "Dialogue.Clint.Fal26D": "After going to the mines... Nothing at Spirits Eve is really scary. But, it is kinda fun.",
+    "Dialogue.Clint.Win7D": "It's the cold season... You know what that means, it's time for the Festival of Ice.",
+    "Dialogue.Clint.Win15D": "I have an appointment with Harvey tomorrow. I am not excited.$11",
+    "Dialogue.Clint.Win24D": "Tomorrows the Feast of the Winter Star... I wish I could sleep through the whole thing.$11",
+    "Dialogue.Clint.Sum27D": "The Moonlight Jellies are beautiful... But they reminds me about how unimportant I am...$2",
+    
+    //Clint's Festival Dialogue
+    "FestivaDialogue.Clint.FlowerDanceA": "Hey @. I'm probably just gonna watch the dance.",
+    "FestivaDialogue.Clint.FlowerDanceB": "Hey @! D-Do you want to dance?$8",
+    "FestivaDialogue.Clint.MoonlightJellies": "Oh! You noticed my nice shoes? Thanks Love.$8",
+    "FestivaDialogue.Clint.SnowFestival": "Emily came to help, isn't that nice?$1",
+    "FestivaDialogue.Clint.FeastOfTheWinterStar": "Heh... It used to make me so lonely to be here... Thank you.$8",
+
+    //Clint's Marriage Dialogue
+    "MarriageDialogue.Clint.Pregnancy": "I still can't believe it... I'm going to be a father! I never thought this would happen$1#$e#B-But, how are you? Do you need anything?",
+    "MarriageDialogue.Clint.Adoption": "H-Heh... I'm so excited for our new baby!$1#$e#And terrified...$11#$e#But Mostly excited!",
+    "MarriageDialogue.Clint.Patio": "It's really not so bad to work on the anvil when I know it's not the only option I have.#$e#The company helps too.$1",
+    "MarriageDialogue.Clint.Room": "Heh, it's so cozy here! And not in the cramped, tiny house way...$1#$b#H-Heh, sorry. I just really love it here... With you...$8",
+    "MarriageDialogue.Clint.RD0": "Today really is the perfect day to stay at home...#$b#Maybe even cuddle...$8",
+    "MarriageDialogue.Clint.RD1": "I'm so tired... I'm gonna need some coffee today. Do you want some? [253, 395]",
+    "MarriageDialogue.Clint.RD": "The sound of rain relaxes me... Even if it can be a bit dangerous.#$b# Be safe today, okay?$2",
+    "MarriageDialogue.Clint.RN0": "I thought that today was a good day for soup. So... I made some!$1 [199 218 219 236 456]",
+    "MarriageDialogue.Clint.RN": "The rain used to always made me feel so lonely...$2#$b#But not anymore$1",
+    "MarriageDialogue.Clint.ID0": "What do you have in plan for today?",
+    "MarriageDialogue.Clint.ID1": "Are you going mining? If so, you better be safe!$3",
+    "MarriageDialogue.Clint.ID": "I tried to cook something for you... I don't think it's any good, but... [194 196 210]",
+    "MarriageDialogue.Clint.IN0": "Hey @! How was your day? Did you get anything done?",
+    "MarriageDialogue.Clint.IN1": "Did you get done with everything you wanted to do today?",
+    "MarriageDialogue.Clint.IN2": "I cooked dinner!$1#$e#It... Might not be good... H-heh... [202 212 213 224]",
+    "MarriageDialogue.Clint.IN": "Love! You're back!$1#$b# How was your day?",
+    "MarriageDialogue.Clint.O": "Oh, hey @. I just wanted some fresh air.#$b#This farm is so nice, you do such a good job with it!$1",
+    "MarriageDialogue.Clint.FL": "I'm going to work, have fun today!",
+    "MarriageDialogue.Clint.FR": "I'm home! I brought you something!$1[378 380 384 386 535 536 537 749]#$b#Don't tell anyone, alright?",
+    "MarriageDialogue.Clint.JL": "I'm going to work, have fun today!",
+    "MarriageDialogue.Clint.OK0": "I still can't believe I'm a father. It's amazing!$1",
+    "MarriageDialogue.Clint.OK1": "%He's panting softly.#$b#I-I can't keep up with %kid1...",
+    "MarriageDialogue.Clint.OK2": "Earlier, %kid1 was playing with %pet. It was just too cute!$1",
+    "MarriageDialogue.Clint.TK0": "They're just so cute, aren't they?$1",
+    "MarriageDialogue.Clint.TK1": "I hope %kid1 and %kid2 are getting along...",
+    "MarriageDialogue.Clint.G0": "I've been finding a lot of good ore recently! Even gold!$1",
+    "MarriageDialogue.Clint.G1": "Have I told you how much you mean to me?$8",
+    "MarriageDialogue.Clint.G2": "Sometimes I worry that I screwed up with... Well, everything.$2#$b#But knowing I have you helps me relax.$1",
+    "MarriageDialogue.Clint.G3": "%Clint pulls you into a hug, letting you rest your head on his chest.#$b#Love you~$8",
+    "MarriageDialogue.Clint.N0": "I've been working on upgrading some tools... It's exhausting.",
+    "MarriageDialogue.Clint.N1": "I'm so tired... Coffee isn't even working anymore.",
+    "MarriageDialogue.Clint.B0": "I've been having to work at the smith more than usual... Ugh.$2",
+    "MarriageDialogue.Clint.B1": "I've been having realy bad luck finding ore recently... Even copper is hard to find.$2",
+    "MarriageDialogue.Clint.B2": "I haven't been feeling too well lately...$2",
+    "MarriageDialogue.Clint.B3": "... *sigh*$12",
+
+    //Movie Reactions
+    "MoviesReactions.Clint.1": "This movie's supposed to be a romance, right?", //New in 1.1.0
+    "MoviesReactions.Clint.2": "Clint looks frustrated.", //New in 1.1.0
+    "MoviesReactions.Clint.3": "Why would she like THAT guy? Totally unrealistic if you ask me...$3", //New in 1.1.0
+    "MoviesReactions.Clint.4": "That movie was depressing...$s", //New in 1.1.0
+    "MoviesReactions.Clint.5": "Oh... A... Are we on a date, then?$8", //New in 1.1.0
+    "MoviesReactions.Clint.6": "Clint is taking sips from an unmarked flask.", //New in 1.1.0
+    "MoviesReactions.Clint.7": "*whispers*...If you're, um... tired... you can put your head on my... my shoulder. Heh... or not!$4", //New in 1.1.0
+    "MoviesReactions.Clint.8": "Hey... that was kind of fun... right?$h", //New in 1.1.0
+    
+    //Secret Notes
+    "SecretNote.Clint.7": "It's a page from someone's diary...^^...There are only a few 'older' bachelors in town, and none of them are perfect! Harvey is really anxious and weak, but I know he would make a loyal and devoted husband. He likes coffee and pickles.^^Elliott is a bit foppish and melodramatic, but he does have a nice chin. He likes crab cakes and pomegranates.^^Shane is messy and anti-social. But I think his gruff exterior is a defense mechanism, insulating his softness from the world. He likes Beer, Pizza, and Pepper Poppers.^^Clint can be creepy sometimes but if you actually give him a chance, he's probably pretty sweet. He is stuck on Emily though. He likes Artichoke Dip and Fiddlehead Risotto.%revealtasteHarvey395%revealtasteHarvey342%revealtasteElliott732%revealtasteElliott637%revealtasteShane346%revealtasteShane206%revealtasteShane215%revealtasteClint605%revealtasteClint649",
+
+    //Emily Dialogue
+    "Dialogue.Emily.FalThu8H": "Clint's been acting differently recently. Happier! You have something to do with it, don't you?$1",
+
+    //Gus Dialogue
+    "Dialogue.Gus.Thu6H": "Clint comes into the saloon almost every night and sits at the same table by himself.#$e#He used to sometimes glances over at Emily with a nervous look. Hmmm.#$e#I guess he got over her. Oh well, he still visits just as much.",
+    
+    //Marnie Dialogue
+    "Dialogue.Marnie.SalSat": "I always see Clint here, he used to seem really nervous but not anymore."
+}

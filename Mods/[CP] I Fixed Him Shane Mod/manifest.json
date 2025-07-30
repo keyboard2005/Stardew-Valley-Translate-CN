@@ -1,0 +1,12 @@
+{
+  "Name": "(CP) I Fixed Him - Shane Dialogue Consistency",
+  "Author": "joiinks",
+  "Version": "1.4.0",
+  "Description": "Makes Shane's post-6-heart dialogue and gift tastes consistent with his character arc.",
+  "UniqueID": "joiinks.IFixedHim",
+  "UpdateKeys": [ "Nexus:21660" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
+

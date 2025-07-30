@@ -1,0 +1,61 @@
+{
+  "Format": "2.5.3",
+  "ConfigSchema": {
+    "Enabled": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "AllowBlank": false,
+      "Description": "Turn this on to make all your slimes look cuter than ever.",
+      "Section": "General"
+    },
+    "Mode": {
+      "AllowValues": "jelly, glossy",
+      "Default": "jelly",
+      "AllowBlank": false,
+      "Description": "Choose how you want your slimes to look. Jelly makes them look more squishy and translucent, while Glossy gives them a shiny, reflective appearance.",
+      "Section": "Appearance"
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.slime.load.green",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime",
+      "FromFile": "assets/{{Mode}}/Green Slime.png",
+      "When": { 
+        "Enabled": "true",
+        "HasFile:assets/{{Mode}}/Green Slime.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.slime.load.big",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "assets/{{Mode}}/Big Slime.png",
+      "When": { 
+        "Enabled": "true",
+        "HasFile:assets/{{Mode}}/Big Slime.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.slime.load.tiger",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Tiger Slime",
+      "FromFile": "assets/{{Mode}}/Tiger Slime.png",
+      "When": { 
+        "Enabled": "true",
+        "HasFile:assets/{{Mode}}/Tiger Slime.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.slime.load.green.dangerous",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Green Slime_dangerous",
+      "FromFile": "assets/{{Mode}}/Green Slime_dangerous.png",
+      "When": { 
+        "Enabled": "true",
+        "HasFile:assets/{{Mode}}/Green Slime_dangerous.png": true
+      }
+    }
+  ]
+}

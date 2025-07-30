@@ -1,0 +1,75 @@
+// Originally updated for format 2.0 by JennaJuffuffles. Thank you!
+{
+ "Format": "2.0.0",
+ 
+  "ConfigSchema": 
+	{
+	"Craftables": 
+		{
+		"AllowValues": "disabled, brown, dark, metal",
+		"Default": "brown",
+		"Description": "Adjust the look of the Slime Incubator and Egg-Press to match the slime hutch.",
+		},
+	"WaterBowlColour": 
+		{
+		"AllowValues": "default, brown, dark, metal",
+		"Default": "metal",
+		"Description": "Change the material used for the slime's waterbowl.",
+		},
+	"WaterBowlStyle": 
+		{
+		"AllowValues": "bucket, trough",
+		"Default": "trough",
+		"Description": "Change the shape used for the slime's waterbowl.",
+		},
+	"MapVersion": 
+		{
+		"AllowValues": "1, 2",
+		"Default": "1",
+		"Description": "Version 1 allows the flooring to be changed, but the windows no longer cast light on the floor. Version 2 has static flooring, but the windows will properly cast light.",
+		},
+ 	},
+ 
+ "Changes": [
+		{
+			"LogName": "Slime Hutch Map Edit - Version 1",
+			"Action": "Load",
+			"Target": "Maps/SlimeHutch",
+			"FromFile": "assets/SlimeHutchUpdated1dot6.tbin",
+			"When": {
+				"MapVersion": "1"
+					},
+		},
+		{
+			"LogName": "Slime Hutch Map Edit - Version 2",
+			"Action": "Load",
+			"Target": "Maps/SlimeHutch",
+			"FromFile": "assets/SlimeHutchEdited.tbin",
+			"When": {
+				"MapVersion": "2"
+					},
+		},
+		{
+			"LogName": "Craftables",
+			"Action": "EditImage",
+			"Target": "TileSheets/craftables",
+			"FromFile": "assets/items/craftables_{{Craftables}}.png",
+			"ToArea": { "X": 64, "Y": 608, "Width": 48, "Height": 32 },
+			"When": {
+				"Craftables": "brown, dark, metal"
+					},
+			"PatchMode": "Replace"
+		},
+		{
+			"LogName": "Water Bowls",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/items/waterbowl_{{WaterBowlStyle}}_{{WaterBowlColour}}.png",
+			"ToArea": { "X": 352, "Y": 1056, "Width": 32, "Height": 16 },
+			"When": {
+				"WaterBowlColour": "brown, dark, metal",
+					},
+			"PatchMode": "Replace"
+		},
+    ] 
+}

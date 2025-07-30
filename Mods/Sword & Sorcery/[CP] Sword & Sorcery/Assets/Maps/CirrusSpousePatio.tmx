@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="12">
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="3087" name="spring_PizzaVan" tilewidth="16" tileheight="16" tilecount="45" columns="9">
+  <image source="spring_PizzaVan.png" width="144" height="80"/>
+ </tileset>
+ <tileset firstgid="3132" name="DN.SnS_Logophile_Rugs" tilewidth="16" tileheight="16" tilecount="684" columns="18">
+  <image source="DN.SnS_Logophile_Rugs.png" width="288" height="610"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Back2" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,3642,3643,3644,
+0,3660,3661,3662
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+3103,3104,0,3130,
+3112,3113,0,0
+</data>
+ </layer>
+ <layer id="13" name="Buildings2" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="Buildings">
+  <object id="11" name="TileData" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message CirrusStars"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="4" height="4" visible="0">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,8,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,3121,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+3094,3095,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,180 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Demetrius's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Demetrius_Spring, Portraits/Demetrius_Summer, Portraits/Demetrius_Fall, Portraits/Demetrius_Winter_Outdoor, Portraits/Demetrius_Winter_Indoor, Portraits/Demetrius_FlowerDance, Portraits/Demetrius_SpiritsEve, Characters/Demetrius_Spring, Characters/Demetrius_Summer, Characters/Demetrius_Fall, Characters/Demetrius_Winter_Outdoor, Characters/Demetrius_Winter_Indoor, Characters/Demetrius_FlowerDance, Characters/Demetrius_SpiritsEve, Portraits/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Demetrius's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Demetrius - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Spring, Characters/Demetrius_Summer, Characters/Demetrius_Fall, Characters/Demetrius_Winter_Outdoor, Characters/Demetrius_Winter_Indoor, Characters/Demetrius_FlowerDance, Characters/Demetrius_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/Demetrius_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Demetrius - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Demetrius - Spirit's Eve Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_SpiritsEve",
+            "FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Demetrius Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Demetrius", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.DemetriusSpring": {
+					"Id": "{{ModId}}.DemetriusSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Demetrius_Spring",
+					"Portrait": "Portraits/Demetrius_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.DemetriusSummer": {
+					"Id": "{{ModId}}.DemetriusSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Demetrius_Summer",
+					"Portrait": "Portraits/Demetrius_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.DemetriusFall": {
+					"Id": "{{ModId}}.DemetriusFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Demetrius_Fall",
+					"Portrait": "Portraits/Demetrius_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.DemetriusWinterIndoor": {
+					"Id": "{{ModId}}.DemetriusWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Demetrius_Winter_Indoor",
+					"Portrait": "Portraits/Demetrius_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.DemetriusWinterOutdoor": {
+					"Id": "{{ModId}}.DemetriusWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Demetrius_Winter_Outdoor",
+					"Portrait": "Portraits/Demetrius_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.DemetriusFlowerDance": {
+					"Id": "{{ModId}}.DemetriusFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Demetrius_FlowerDance",
+					"Portrait": "Portraits/Demetrius_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.DemetriusSpirit": {
+					"Id": "{{ModId}}.DemetriusSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Demetrius_SpiritsEve",
+					"Portrait": "Portraits/Demetrius_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.DemetriusBeach": {
+					"Id": "{{ModId}}.DemetriusBeach",
+					"Sprite": "Characters/Demetrius_Beach",
+					"Portrait": "Portraits/Demetrius_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+
+				"{{ModId}}.DemetriusIsland": {
+					"Id": "{{ModId}}.DemetriusIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Demetrius_Beach",
+					"Portrait": "Portraits/Demetrius_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Demetrius - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Demetrius Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Demetrius",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

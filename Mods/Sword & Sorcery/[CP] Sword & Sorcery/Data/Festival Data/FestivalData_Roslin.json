@@ -1,0 +1,347 @@
+{
+    "Changes": [
+		
+        // EGG FESTIVAL
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "Roslin 16 72 3",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "Roslin 16 72 3",
+                    "Delimiter": "/"
+                },
+				{   // LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Roslin 16 72 3",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Roslin 16 72 3",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },	  
+        },
+	
+
+        // FLOWER DANCE
+
+        {   
+    
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {	// LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "Roslin 62 45 0",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "Roslin 62 45 0",
+                    "Delimiter": "/"
+                },
+				{	// LOCATION: SET UP Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters_y2" ],
+                    "Value": "Roslin 62 45 0",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT Y2 (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters_y2"  ],
+                    "Value": "Roslin 62 45 0",
+                    "Delimiter": "/"
+                },
+            ],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },  
+        },
+
+
+		{
+			"LogName": "Marriage Flower Dance Accept",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": {
+				"SpouseFlowerDanceAccept_Roslin":"{{i18n:Festivals.Roslin.FlowerDance.Accept}}",
+			}
+		},
+
+        // LUAU
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Roslin 5 5 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Roslin 5 5 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },
+		},
+
+
+        // DANCE OF THE MOONLIGHT JELLIES
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // LOCATION: SET UP & MAIN EVENT
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Roslin 96 46 2",
+					"Delimiter": "/"
+				},
+				{   // LOCATION: SET UP & MAIN EVENT Y2
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "Roslin 96 46 2",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+
+			  },
+		},
+
+        // STARDEW VALLEY FAIR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Roslin 46 32 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Roslin 53 82 0",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },
+		},
+
+        // SPIRIT'S EVE (ROSLIN)
+
+       {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Roslin 25 60 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters_y2"],
+					"Value": "Roslin 25 60 1",
+					"Delimiter": "/"
+				},
+				],
+				"When": {
+					"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+				  },
+		},
+
+        // SPIRIT'S EVE (SOLOMON)
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Solomon 25 61 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP & MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters_y2"],
+					"Value": "Solomon 25 61 1",
+					"Delimiter": "/"
+				},
+				],
+				"When": {
+					"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+				  },
+		},
+
+        // ICE FESTIVAL 
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Roslin 35 8 0",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters"],
+					"Value": "Roslin 35 8 0",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters_y2"],
+					"Value": "Roslin 35 8 0",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters_y2"],
+					"Value": "Roslin 35 8 0",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },
+		},
+
+        // WINTER STAR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "Roslin 7 65 3",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP Y2 (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters_y2"	],
+					"Value": "Roslin 7 65 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+			  },
+        },
+
+		// RSV GATHERING FESTIVAL 
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"TextOperations": [
+					{ // LOCATION: SET UP
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters"],
+					  "Value": "Roslin 124 48 0",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters"],
+					  "Value": "Roslin 124 48 0",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: SET UP Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					  "Value": "Roslin 124 48 0",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT Y2
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					  "Value": "Roslin 124 48 0",
+					  "Delimiter": "/"
+					 },
+				],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+				  },
+		},
+
+		// RSV EMBER OF RESOLUTIONS 		
+
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"TextOperations": [
+				 { // LOCATION: SET UP 
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters"],
+				  "Value": "Roslin 28 52 0",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters"],
+				  "Value": "Roslin 28 52 0",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: SET UP Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+				  "Value": "Roslin 28 52 0",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT Y2
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+				  "Value": "Roslin 28 52 0",
+				  "Delimiter": "/"
+				 },
+		 	],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true,
+				  },
+		},
+
+
+    ]
+}

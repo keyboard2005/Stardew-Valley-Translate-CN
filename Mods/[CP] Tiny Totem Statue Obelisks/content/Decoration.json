@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.farm",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Maps/{{season}}_outdoorsTileSheet",
+      "FromFile": "assets/flowers/remote_obelisk.png",
+      "ToArea": {
+        "X": 159,
+        "Y": 512,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "FlowersEnabled": "true",
+        "HasFile:assets/flowers/remote_obelisk.png": true
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.farm",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Maps/{{season}}_outdoorsTileSheet",
+      "FromFile": "assets/moss/remote_obelisk.png",
+      "ToArea": {
+        "X": 159,
+        "Y": 512,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MossEnabled": "true",
+        "HasFile:assets/moss/remote_obelisk.png": true
+      }
+    }
+  ]
+}

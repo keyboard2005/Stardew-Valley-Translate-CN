@@ -1,0 +1,98 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Blacksmith",
+            "FromFile": "assets/empty.json",
+            "When": {
+                "HasMod |contains=foggy.LfL": false,
+                "HasMod |contains=ClintMarriageMod": false,
+                "HasMod |contains=Arknir.Lucikiel": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Lemurkat.NPCJasper": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Blacksmith",
+            "Entries": {
+                //Clint 6 Heart Event Pt.2
+                "183450000/A SPB_6Heart/e 101": "none/7 14/farmer 5 19 0 Clint 3 13 2/skippable/addMailReceived SPB_ClintsOverEmily/pause 800/speak Clint \"{{i18n:event-183450000.01}}\"/pause 250/move Clint 0 -1 0/pause 175/move Clint 2 0 2/pause 175/move farmer 0 -5 0/speak Clint \"{{i18n:event-183450000.02}}\"/pause 500/speak Clint \"{{i18n:event-183450000.03}}\"/pause 250/speak Clint \"{{i18n:event-183450000.04}}\"/pause 250/speak Clint \"{{i18n:event-183450000.05}}\"/pause 250/speak Clint \"{{i18n:event-183450000.06}}\"/pause 500/faceDirection Clint 3/pause 250/speak Clint \"{{i18n:event-183450000.07}}\"/pause 250/faceDirection Clint 2/pause 250/speak Clint \"{{i18n:event-183450000.08}}\"/pause 175/speak Clint \"I'm... Lucky to have you as a friend.$8\"pause 500/end",
+                //Clint 2 Heart Event
+                "183450001/f Clint 500": "none/7 14/farmer 5 19 0 Clint 3 13 2/skippable/pause 850/showFrame Clint 51/emote Clint 12/pause 250/showFrame Clint 0/move farmer 0 -2 0/move farmer -2 0 3/move farmer 0 -2 0/speak Clint \"{{i18n:2hearts0.01}}\"/pause 250/showFrame Clint 12/speak Clint \"{{i18n:2hearts0.02}}\"/pause 250/showFrame Clint 0/speak Clint \"{{i18n:2hearts0.03}}\"/pause 250/speak Clint \"{{i18n:2hearts0.04}}\"/end",
+                //Clint 8 Heart Event
+                "183450002/f Clint 2000": "none/7 14/farmer 5 19 0 Clint 3 13 2/skippable/addMailReceived SPB_ClintsOverEmily/pause 850/speak Clint \"{{i18n:8hearts.01}}\"/move farmer 0 -2 0/move farmer -2 0 3/move farmer 0 -2 0 true/speak Clint \"{{i18n:8hearts.02}}\"/emote farmer 8/pause 250/speak Clint \"{{i18n:8hearts.03}}\"/speak Clint \"{{i18n:8hearts.04}}\"/pause 250/emote Clint 40/pause 250/speak Clint \"{{i18n:8hearts.05}}\"/speak Clint \"{{i18n:8hearts.06}}\"/speak Clint \"{{i18n:8hearts.07}}\"/move Clint 0 -1 1 true/move farmer 3 0 0 true/move farmer 0 -3 3/move Clint 1 0 1/speak Clint \"{{i18n:8hearts.08}}\"/speak Clint \"{{i18n:8hearts.09}}\"/speak Clint \"{{i18n:8hearts.10}}\"/speak Clint \"{{i18n:8hearts.11}}\"/pause 250/showFrame Clint 51/pause 250/emote Clint 40/pause 500/ShowFrame Clint 4/speak Clint \"{{i18n:8hearts.12}}\"/speak Clint \"{{i18n:8hearts.13}}\"/speak Clint \"{{i18n:8hearts.14}}\"/speak Clint \"{{i18n:8hearts.15}}\"/speak Clint \"{{i18n:8hearts.16}}\"/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                //Clint 10 Heart Event Pt.1
+                "183450003/e 183450000/f Clint 2500": "none/26 23/farmer 12 23 1 Clint 23 23 3/skippable/move Clint -3 0 3/pause 250/emote Clint 16/speed Clint 5/pause 250/move Clint 2 0 1/emote farmer 8/shake Clint 1000/speak Clint \"{{i18n:10hearts.01}}\"/pause 250/faceDirection Clint 3/speak Clint \"{{i18n:10hearts.02}}\"/pause 250/speak Clint \"{{i18n:10hearts.03}}\"/pause 250/move Clint -8 0 3/speak Clint \"{{i18n:10hearts.04}}\"/pause 250/speak Clint \"{{i18n:10hearts.05}}\"/pause 250/question fork0 \"{{i18n:10hearts.06}}#{{i18n:10hearts.07}}#{{i18n:10hearts.08}}#\"/fork SPB_ClintDate/speak Clint \"{{i18n:10hearts.09}}\"/friendship Clint -250/showFrame Clint 51/pause 250/speak Clint \"{{i18n:10hearts.10}}\"/pause 250/end",
+                "SPB_ClintDate": "addMailReceived SPB_GoingOnADate/speak Clint \"{{i18n:10hearts.SPB_ClintDate.01}}\"/speak Clint \"{{i18n:10hearts.SPB_ClintDate.02}}\"/end",
+                //Clint 7 Heart Event Pt. 2
+                "183450008/e 183450007/d Mon Tue Thu Fri Sat Sun/t 1600 1800": "none/24 12/farmer 22 20 0 Clint 22 12 0/skippable/addConversationTopic SPB__AfterTherapy/pause 500/move farmer 0 -2 0/faceDirection Clint 2/emote Clint 16/speak Clint \"{{i18n:event-183450008.01}}\"/pause 150/move farmer 0 -5 0/pause 150/speak Clint \"I-I have my appointment today... I know I have to do this... But I'm scared.$11\"/pause 250/speak Clint \"{{i18n:event-183450008.02}}\"/pause 150/faceDirection Clint 1/pause 500/faceDirection Clint 3/pause 500/faceDirection Clint 2/speak Clint \"{{i18n:event-183450008.03}}\"/pause 150/move Clint 0 -3 0/end invisible Clint/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                //Clint 4 Heart Event
+                "100480004/f Clint 1000/t 1800 2600": "none/88 96/farmer 91 90 2 Clint 88 94 2/skippable/addConversationTopic SPB_Clint4Heart/move Clint 0 3 2/pause 150/showFrame Clint 51/emote Clint 12/speed farmer 5/pause 150/move farmer 0 4 2/pause 150/move farmer -3 0 2/pause 150/emote farmer 16/pause 150/showFrame Clint 8/speak Clint \"{{i18n:4hearts.01}}\"/pause 150/emote farmer 40/pause 150/speak Clint \"{{i18n:4hearts.02}}\"/pause 150/showFrame Clint 51/pause 150/emote Clint 28/speak Clint \"{{i18n:4hearts.03}}\"/pause 150/speak Clint \"{{i18n:4hearts.04}}\"/pause 150/speak Clint \"{{i18n:4hearts.05}}\"/pause 150/showFrame Clint 8/speak Clint \"{{i18n:4hearts.06}}\"/end",
+                //Clint 14 Heart Event
+                "183450005/e 183450008/f Clint 3500/p Clint": "none/88 96/farmer 91 90 2 Clint 88 94 2/skippable/addConversationTopic SPB_Clint14Heart/move Clint 0 3 2/pause 150/move farmer 0 4 2/pause 150/move farmer -2 0 2/move farmer 0 3 2/pause 500/faceDirection farmer 3 true/showFrame Clint 28/pause 300/faceDirection Clint 1/pause 150/speak Clint \"{{i18n:14hearts.01}}\"/emote farmer 8/pause 150/speak Clint \"{{i18n:14hearts.02}}\"/speak Clint \"{{i18n:14hearts.03}}\"/speak Clint \"{{i18n:14hearts.04}}\"/showFrame Clint 51/speak Clint \"{{i18n:14hearts.05}}\"/speak Clint \"{{i18n:14hearts.06}}\"/speak Clint \"{{i18n:14hearts.07}}\"/speak Clint \"{{i18n:14hearts.08}}\"/faceDirection Clint 1/showFrame Clint 28/speak Clint \"{{i18n:14hearts.09}}\"/end",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ManorHouse",
+            "Entries": {
+                //Emily 8 Heart Event Tweak
+                "2123243/e 2111194": "EmilyTheme/-1000 -1000/farmer -2000 -2000 0 Emily 7 6 2 Lewis 3 7 1 Clint 11 9 3 Shane 8 8 0 Abigail 7 8 0 Robin 2 9 1/skippable/specificTemporarySprite ClothingTherapy/viewport 5 7 true/pause 2000/speak Emily \"{{i18n:event-2123243.01}}\"/faceDirection Abigail 1/emote Robin 8 true/faceDirection Shane 3/pause 500/faceDirection Shane 0/faceDirection Abigail 0/pause 500/speak Emily \"{{i18n:event-2123243.02}}\"/move Emily 0 1 2/speak Emily \"{{i18n:event-2123243.03}}\"/move Emily 0 -1 2/pause 500/speak Emily \"{{i18n:event-2123243.04}}\"/faceDirection Emily 3/pause 1000/speak Emily \"{{i18n:event-2123243.05}}\"/faceDirection Emily 2/speak Emily \"{{i18n:event-2123243.06}}\"/specificTemporarySprite curtainOpen/pause 1500/showFrame Shane 18/jump Shane/pause 1400/showFrame Shane 0/pause 1000/textAboveHead Shane \"{{i18n:event-2123243.07}}\"/move Shane 0 -1 0/move Shane -3 0 0/move Shane 0 -2 2/pause 1000/specificTemporarySprite curtainClose/pause 1000/playSound doorClose/warp farmer 4 11/move farmer 0 -1 0/speak Emily \"{{i18n:event-2123243.08}}\"/pause 1000/move farmer -1 0 0/warp Shane -1000 -1000/addTemporaryActor ClothesTherapyCharacters 16 32 5 5 2 true character/pause 3000/specificTemporarySprite curtainOpen/pause 1000/faceDirection Emily 3/move ClothesTherapyCharacters 0 2 2/textAboveHead Robin \"{{i18n:event-2123243.09}}\"/pause 1000/move ClothesTherapyCharacters 0 2 2/faceDirection Abigail 3/textAboveHead Abigail \"{{i18n:event-2123243.10}}\"/pause 1000/faceDirection Emily 2/speak Emily \"{{i18n:event-2123243.11}}\"/pause 1000/emote ClothesTherapyCharacters 40/pause 500/textAboveHead ClothesTherapyCharacters \"{{i18n:event-2123243.12}}\"/move ClothesTherapyCharacters 0 2 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/speak Emily \"{{i18n:event-2123243.13}}\"/faceDirection Abigail 0 true/move Robin 3 0 0/faceDirection Clint 2 true/textAboveHead Clint \"{{i18n:event-2123243.14}}\"/move Robin 0 -4 2/pause 1000/specificTemporarySprite curtainClose/pause 3000/warp Robin -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 128/textAboveHead ClothesTherapyCharacters \"{{i18n:event-2123243.15}}\"/pause 1000/specificTemporarySprite curtainOpen/pause 1000/textAboveHead Lewis \"{{i18n:event-2123243.16}}\"/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"{{i18n:event-2123243.17}}\"/pause 1000/showFrame ClothesTherapyCharacters 5/specificTemporarySprite heart 5 8/pause 2000/textAboveHead ClothesTherapyCharacters \"{{i18n:event-2123243.18}}\"/pause 1000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 2000/textAboveHead Lewis \"{{i18n:event-2123243.19}}\"/move Lewis 2 0 0/move Lewis 0 -2 2/pause 1000/specificTemporarySprite curtainClose/faceDirection Emily 3/pause 2000/warp Lewis -1000 -1000/playSound shwip/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 64/pause 1000/textAboveHead ClothesTherapyCharacters \"{{i18n:event-2123243.20}}\"/pause 2000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"{{i18n:event-2123243.21}}\"/faceDirection Emily 2/pause 3000/move ClothesTherapyCharacters 0 3 2/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/textAboveHead Abigail \"{{i18n:event-2123243.22}}\"/move Abigail -2 0 0/move Abigail 0 -3 2/pause 2000/specificTemporarySprite curtainClose/pause 2000/warp Abigail -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 32/pause 3000/specificTemporarySprite curtainOpen/pause 1000/move ClothesTherapyCharacters 0 3 2/textAboveHead Emily \"{{i18n:event-2123243.23}}\"/pause 2000/showFrame ClothesTherapyCharacters 16/playSound clank/pause 1000/textAboveHead ClothesTherapyCharacters \"{{i18n:event-2123243.24}}\"/pause 3000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/pause 1000/faceDirection Emily 3/pause 500/faceDirection Emily 2/pause 1000/speak Emily \"{{i18n:event-2123243.25}}\"/pause 500/jump Clint/shake Clint 4000/pause 1000/textAboveHead Clint \"{{i18n:event-2123243.26}}\"/pause 2000/speak Clint \"{{i18n:event-2123243.27}}\"/pause 1000/move Clint -6 0 0/move Clint 0 -4 2/pause 1000/faceDirection Emily 3/specificTemporarySprite curtainClose/pause 4000/warp Clint -1000 -1000/warp ClothesTherapyCharacters 5 5/changeYSourceRectOffset ClothesTherapyCharacters 96/pause 1000/specificTemporarySprite curtainOpen/pause 2000/move ClothesTherapyCharacters 0 3 2/faceDirection Emily 2/textAboveHead Emily \"{{i18n:event-2123243.28}}\"/pause 1600/speak Clint \"{{i18n:event-2123243.29}}\"/pause 2000/move ClothesTherapyCharacters 0 3 2/warp ClothesTherapyCharacters -1000 -1000/playSound doorClose/move Emily 0 3 3/move farmer 0 -1 1/move farmer 1 0 1/speak Emily \"{{i18n:event-2123243.30}}\"/move Emily -2 0 3 true/pause 200/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 300/positionOffset Emily 0 4/pause 2500/speak Emily \"{{i18n:event-2123243.31}}\"/showFrame ClothesTherapyCharacters 11/playSound doorClose/warp ClothesTherapyCharacters 5 11/speak Clint \"{{i18n:event-2123243.32}}\"/faceDirection Emily 2 true/jump Emily/showFrame Emily 26/faceDirection farmer 2 true/pause 1600/showFrame Emily 0/speak Clint \"{{i18n:event-2123243.33}}\"/pause 1000/showFrame ClothesTherapyCharacters 0/pause 1500/showFrame ClothesTherapyCharacters 10/pause 1700/speak Clint \"{{i18n:event-2123243.34}}\"/pause 1000/playSound doorClose/warp ClothesTherapyCharacters -1000 -1000/pause 1000/faceDirection Emily 3/emote Emily 8/pause 2000/end",
+            },
+            "When": {
+				"HasFlag": "SPB_ClintsOverEmily"
+			},
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                //Clint 10 Heart Event Pt.2
+                "183450006/n SPB_GoingOnADate/t 1800 2400": "none/4 18/farmer 14 24 0 Clint 4 19 2 Emily 10 11 0 Gus 15 18 1/skippable/addConversationTopic SPB_Clint10Heart/move farmer 0 -3 3/speak Clint \"{{i18n:event-183450006.01}}\"/faceDirection Clint 1/move farmer -3 0 0/move farmer 0 -1 3/move farmer -3 0 3/move farmer -3 0 3/faceDirection Clint 2/speak Clint \"{{i18n:event-183450006.02}}\"/speak Clint \"{{i18n:event-183450006.03}}\"/speed Emily 4/move Emily -6 0 2/speed Emily 2/move Emily 0 4 2/doAction 4 16/playSound openBox/move Emily 0 3 1/move Emily 1 0 2/move Emily 0 1 3/faceDirection Clint 1 true/faceDirection farmer 0/speak Emily \"{{i18n:event-183450006.04}}\"/addObject 4 19 649 2/speak Clint \"{{i18n:event-183450006.05}}\"/speak Emily \"{{i18n:event-183450006.06}}\"/speak Clint \"{{i18n:event-183450006.07}}\"/speak Emily \"{{i18n:event-183450006.08}}\"/faceDirection Clint 0 true/move Emily 0 -1 0/move Emily -1 0 1/move Emily 0 -3 0/speed Emily 2/move Emily 0 -4 0 true/faceDirection Clint 2/faceDirection farmer 3/speak Clint \"{{i18n:event-183450006.09}}\"/speak Clint \"{{i18n:event-183450006.10}}\"/end",
+            }
+        },
+        {
+            "LogName": "Hospital Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                //Clint 7 Heart Event Pt. 1
+                "183450007/f Clint 1750/f Harvey 500/e 100480004": "Hospital_Ambient/15 9/farmer 10 12 0 Harvey 14 6 1 Clint 16 6 1/skippable/pause 150/move farmer 0 -5 1/pause 250/speak Harvey \"{{i18n:7hearts.01}}\"/pause 150/emote Clint 12/speak Clint \"{{i18n:7hearts.02}}\"/pause 150/move farmer 5 0 0/pause 150/faceDirection Harvey 2/faceDirection Clint 2/speak Clint \"{{i18n:7hearts.03}}\"/pause 150/faceDirection Harvey 1/speak Harvey \"{{i18n:7hearts.04}}\"/faceDirection Clint 3/pause 150/speak Clint \"{{i18n:7hearts.05}}\"/pause 150/speak Harvey \"{{i18n:7hearts.06}}\"/pause 150/speak Harvey \"{{i18n:7hearts.07}}\"/pause 150/faceDirection Clint 1/emote Clint 28/speak Clint \"{{i18n:7hearts.08}}\"/pause 150/speak Harvey \"{{i18n:7hearts.09}}\"/end"
+                }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                //Clint 6 Heart Event Pt.1 Tweak
+                "101/f Clint 1500/e 97/k 2123243/k 2123343/k 183450002/o Emily/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/addConversationTopic SPB_Clint6Heart 1/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"{{i18n:6hearts.01}}\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"{{i18n:6hearts.02}}\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"{{i18n:6hearts.03}}\"/faceDirection Clint 1/pause 1500/speak Clint \"{{i18n:6hearts.04}}\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"{{i18n:6hearts.05}}\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"{{i18n:6hearts.06}}\"/pause 800/faceDirection Emily 3/pause 800/faceDirection Emily 1/speak Emily \"{{i18n:6hearts.07}}\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"{{i18n:6hearts.08}}\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"{{i18n:6hearts.09}}\"/pause 200/faceDirection Clint 3/pause 300/emote Emily 8/pause 300/faceDirection Clint 1/pause 500/jump Clint/pause 800/speak Clint \"{{i18n:6hearts.10}}\"/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"{{i18n:6hearts.11}}\"/pause 800/speak Clint \"{{i18n:6hearts.12}}\"/speak Emily \"{{i18n:6hearts.13}}\"/move Emily 7 0 1/faceDirection Caroline 3/speed Clint 4/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"{{i18n:6hearts.14}}\"/pause 500/jump farmer/pause 1000/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"{{i18n:6hearts.15}}\"/end dialogue Clint \"{{i18n:6hearts.16}}\"",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                //Shane 7 Heart Event Pt.2 Tweak
+                "831125/f Shane 1750/f Clint 500/f Emily 500/t 1000 1600/w sunny": "spring_day_ambient/-100 -100/farmer 30 87 0 Shane 30 81 1 Clint 34 81 1 Emily 35 81 3/skippable/showFrame Shane 16/move farmer 0 -5 1 true/viewport 34 82 true/pause 800/speak Shane \"{{i18n:2hearts.01}}\"/faceDirection Clint 3/pause 300/speak Emily \"{{i18n:2hearts.02}}\"/emote Clint 28/faceDirection Clint 1/pause 500/speak Shane \"{{i18n:2hearts.03}}\"/pause 1500/speak Emily \"{{i18n:2hearts.04}}\"/pause 500/speak Clint \"{{i18n:2hearts.05}}\"/emote Shane 12/playMusic playful/speak Shane \"{{i18n:2hearts.06}}\"/speak Clint \"{{i18n:2hearts.07}}\"/faceDirection Clint 3/speak Clint \"{{i18n:2hearts.08}}\"/pause 500/showFrame Shane 17/pause 500/jump Shane/pause 800/speak Shane \"{{i18n:2hearts.09}}\"/faceDirection farmer 0/speak Shane \"{{i18n:2hearts.10}}\"/showFrame Shane 16/pause 500/emote Shane 16/showFrame Shane 17/pause 500/speak Shane \"{{i18n:2hearts.11}}\"/jump farmer/pause 800/move farmer 0 2 1 false/showFrame Shane 16/move farmer 8 0 0/faceDirection Clint 1/speak Shane \"{{i18n:2hearts.12}}\"/playMusic sadpiano/speak Emily \"{{i18n:2hearts.13}}\"/move farmer 0 -8 2 true/pause 500/speak Clint \"{{i18n:2hearts.14}}\"/playMusic none/faceDirection Clint 2/pause 1000/playMusic ragtime/faceDirection Clint 1/speak Clint \"{{i18n:2hearts.15}}\"/pause 600/speak Emily \"{{i18n:2hearts.16}}\"/pause 600/speak Clint \"{{i18n:2hearts.17}}\"/playMusic spring_day_ambient/speak Shane \"{{i18n:2hearts.18}}\"/faceDirection Clint 3/move Shane 3 0 1 false/speak Shane \"{{i18n:2hearts.19}}\"/move Shane 0 -1 1/faceDirection Clint 2 true/move Shane 5 0 0/speak Shane \"{{i18n:2hearts.20}}\"/move farmer 0 2 2/faceDirection Clint 2/pause 1000/speak Emily \"{{i18n:2hearts.21}}\"/pause 500/faceDirection Shane 3/faceDirection farmer 3/pause 500/playSound coin/showFrame Clint 39/shake Clint 3000/pause 2000/end dialogue Shane \"{{i18n:2hearts.22}}\"/end"
+            },
+            "When": {
+				"HasFlag": "SPB_ClintsOverEmily"
+			},
+            "Update": "OnLocationChange"
+        }
+    ]
+}

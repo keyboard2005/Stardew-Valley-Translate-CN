@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        {
+            "LogName": "Nora Conversation Topics",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Nora",
+            "Entries": {
+                // Vanilla
+                "joja_Begin": "{{i18n:Core.Nora.JojaBegin}}",
+                "cc_Begin": "{{i18n:Core.Nora.CCBegin}}",
+                "cc_Bus": "{{i18n:Core.Nora.CCBus}}",
+                "cc_Complete": "{{i18n:Core.Nora.CCComplete}}",
+                "willyBoatRepaired": "{{i18n:CT.Nora.WillyBoatRepaired}}",
+                "islandResortUnlocked": "{{i18n:CT.Nora.ResortOpen}}",
+                "babyBoy": "{{i18n:CT.Nora.BabyBoy}}",
+                "babyGirl": "{{i18n:CT.Nora.BabyGirl}}",
+                "wedding": "{{i18n:CT.Nora.Wedding}}",
+                "leoValleyArrival": "{{i18n:CT.Nora.LeoArrival}}",
+                "MovieInvitation": "{{i18n:Nora.MovieInvitation}}",
+                "DumpsterDiveComment": "{{i18n:CT.Nora.DumpsterDiving}}",
+                "GreenRain": "{{i18n:CT.Nora.GreenRain.1}}",
+                "GreenRain2": "{{i18n:CT.Nora.GreenRain.2}}",
+
+                // ARV
+                "SterlingDrugs": "{{i18n:CT.Nora.SterlingDrugs}}",
+                "SterlingRelapse": "{{i18n:CT.Nora.SterlingFight}}",
+
+                // LUCICKIEL
+                "LucickielArrives": "{{i18n:CT.Nora.LucickielArrives}}",
+                "ReputationIncreased": "{{i18n:CT.Nora.ReputationIncreased}}",
+
+                // Eli & Dylan
+                "EliIntro": "{{i18n:CT.Nora.EliIntro}}",
+                "EliSaloon": "{{i18n:CT.Nora.EliSaloon}}",
+                "EliGuild": "{{i18n:CT.Nora.EliGuild}}",
+                "EliGuestRoom": "{{i18n:CT.Nora.EliGuestRoom}}",
+                "DylanIntro": "{{i18n:CT.Nora.DylanIntro}}",
+                "DylanBeach": "{{i18n:CT.Nora.DylanBeach}}",
+                "DylanTown": "{{i18n:CT.Nora.DylanTown}}",
+                "DylanSaloon": "{{i18n:CT.Nora.DylanSaloon}}",
+                "DylanLibrary": "{{i18n:CT.Nora.DylanLibrary}}",
+                "DylanLesson": "{{i18n:CT.Nora.DylanLesson}}",
+                "DylanCCAquarium": "{{i18n:CT.Nora.DylanCCAquarium}}",
+                "SootIntro": "{{i18n:CT.Nora.SootIntro}}",
+
+                // Jean & Jorts
+                "MeetTheCats": "{{i18n:CT.Nora.Jean&Jorts}}",
+                "ButteredJorts": "{{i18n:CT.Nora.ButteredJorts}}",
+
+                // Lemur's NPCs
+                "JasperGone2": "{{i18n:CT.Nora.JasperMissing}}",
+                "JasperHomeA": "{{i18n:CT.Nora.JasperBack}}",
+                "JulietGremlin": "{{i18n:CT.Nora.JulietGremlin}}",
+
+                // Creative Differences
+                "TalkWithGunther": "{{i18n:CT.Nora.RodneyIntro}}",
+                "BookLaunchParty": "{{i18n:CT.Nora.BookLaunchParty}}",
+                "RodneyPoetryReading": "{{i18n:CT.Nora.RodneyPoetryReading}}",
+
+                // Cambria
+                "CamieIntro": "{{i18n:CT.Nora.CambriaIntro}}",
+
+                // Never Ending Adventure
+                "MateoConfrontation": "{{i18n:CT.Nora.MateoConfrontation}}",
+                "MateoPain": "{{i18n:CT.Nora.MateoPain}}",
+                "GuildComplete": "{{i18n:CT.Nora.GuildComplete}}",
+                "GuildFinale": "{{i18n:CT.Nora.GuildFinale}}",
+
+                // Nora
+                "NoraChameleon": "{{i18n:CT.Nora.NoraChameleon}}",
+                "RejectNora": "{{i18n:CT.Nora.Reject}}",
+
+                // Diamond in the Rought
+                "DitR_CT_ShadowPlay": "{{i18n:CT.Nora.DitR_CT_ShadowPlay}}",
+                "DitR_CT_SensFlowers": "{{i18n:CT.Nora.DitR_CT_SensFlowers}}",
+
+                // Clown's NPCs
+                "FC.JohnsArrival": "{{i18n:CT.Nora.JohnsArrival}}",
+                "FC.FaintingIncident": "{{i18n:CT.Nora.FaintingIncident}}",
+                "FC.BusFire": "{{i18n:CT.Nora.BusFire}}",
+
+                // Mads' NPCs
+                "SigLowBattery": "{{i18n:CT.Nora.SigLowBattery}}",
+                "SigAndCigarettes": "{{i18n:CT.Nora.SigAndCigarettes}}",
+                "SigHatesCrowds": "{{i18n:CT.Nora.SigHatesCrowds}}",
+                "SigTheSoldier": "{{i18n:CT.Nora.SigTheSoldier}}",
+                "SigTheHero": "{{i18n:CT.Nora.SigTheHero}}",
+                "SigRecovery": "{{i18n:CT.Nora.SigRecovery}}",
+                "SoItBegins": "{{i18n:CT.Nora.SoItBegins}}",
+                "SigFuture": "{{i18n:CT.Nora.SigFuture}}",
+                "SigandHonors": "{{i18n:CT.Nora.SigandHonors}}",
+
+                "ASongForSondra": "{{i18n:CT.Nora.ASongForSondra}}",
+
+                "GudrunQinstagram": "{{i18n:CT.Nora.GudrunQinstagram}}",
+                "GudrunEcoFriendly": "{{i18n:CT.Nora.GudrunEcoFriendly}}",
+                "GudrunWeird": "{{i18n:CT.Nora.GudrunWeird}}",
+                "GudrunRanAway": "{{i18n:CT.Nora.GudrunRanAway}}",
+                "GudrunComesHome": "{{i18n:CT.Nora.GudrunComesHome}}",
+                "GudrunOnCampus": "{{i18n:CT.Nora.GudrunOnCampus}}"
+            }
+        }
+    ]
+}

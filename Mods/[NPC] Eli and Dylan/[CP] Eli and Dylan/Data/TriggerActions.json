@@ -1,0 +1,199 @@
+{
+    "Changes": [
+
+      //Objects
+
+      //Object ID migration
+
+      {
+            "LogName": "Terrible Object IDs Begone",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.Migration": {
+                    "Id": "{{ModID}}_TriggerActions.Migration",
+                    "Trigger": "DayStarted",
+                    "HostOnly": true,
+                    "Actions": [
+
+                        /* Objects */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.ChaosTotem (O){{ModID}}_ChaosTotem",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.JunimoTotem (O){{ModID}}_JunimoTotem",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (F)EnD.AbyssalTank (F){{ModID}}_AbyssalTank",
+
+                        /* Crops */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.MandrakeRoot (O){{ModID}}_MandrakeRoot",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.MandrakeRootSeeds (O){{ModID}}_MandrakeRootSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.SanguineHeart (O){{ModID}}_SanguineHeart",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.SanguineHeartSeeds (O){{ModID}}_SanguineHeartSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.BeholderFruit (O){{ModID}}_BeholderFruit",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.BeholderFruitSeeds (O){{ModID}}_BeholderFruitSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.DragonEye (O){{ModID}}_DragonEye",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.DragonEyeSeeds (O){{ModID}}_DragonEyeSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.CrystallineLily (O){{ModID}}_CrystallineLily",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.CrystallineLilySeeds (O){{ModID}}_CrystallineLilySeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.PixieBloom (O){{ModID}}_PixieBloom",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.PixieBloomSeeds (O){{ModID}}_PixieBloomSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Bluffshroom (O){{ModID}}_Bluffshroom",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.BluffshroomStarter (O){{ModID}}_BluffshroomStarter",
+
+                        /* Fish */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.LambentHyphafin (O){{ModID}}_LambentHyphafin",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Junimeel (O){{ModID}}_Junimeel",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.CombJelly (O){{ModID}}_CombJelly",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.BloodybellyCombJelly (O){{ModID}}_BloodybellyCombJelly",
+
+                        /* Forage */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Marimo (O){{ModID}}_Marimo",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.FrogspawnCoral (O){{ModID}}_FrogspawnCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.TorchCoral (O){{ModID}}_TorchCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.DuncanCoral (O){{ModID}}_DuncanCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Trachyphyllia (O){{ModID}}_Trachyphyllia",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Scolymia (O){{ModID}}_Scolymia",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.AcanCoral (O){{ModID}}_AcanCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.ToadstoolCoral (O){{ModID}}_ToadstoolCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.CandyCaneCoral (O){{ModID}}_CandycaneCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.AcroporaCoral (O){{ModID}}_AcroporaCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.EleganceCoral (O){{ModID}}_EleganceCoral",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O){{ModID}}_TenebrousNova.EnD.Gorgonian (O){{ModID}}_Gorgonian"
+                    ]
+                }
+            }
+        },
+
+      //The Mandrake Root objects to being devoured. You monster.
+
+      {
+        "LogName": "Trigger Action - Mandrake Scream",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_TriggerActions.EatMandrake": {
+            "Id": "{{ModID}}_TriggerActions.EatMandrake",
+            "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+            "Action": "spacechase0.SpaceCore_PlaySound rockGolemHit true",
+            "MarkActionApplied": false,
+            "Condition": "ITEM_ID Input (O){{ModID}}_MandrakeRoot"
+          }
+        }
+      },
+
+      //Adds the Beholder Fruit seeds to the Guest Room (one time only). Thanks for the help, Mads!
+
+      {
+        "LogName": "Trigger Action - Beholder Fruit Spawn",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_SeedGift": {
+            "Id": "{{ModID}}_SeedGift",
+            "Trigger": "Manual",
+            "Condition": "!PLAYER_HAS_MAIL Current {{ModID}}_SeedGift_Received Any", 
+            "Actions": [
+              "AddItem (O){{ModID}}_BeholderFruitSeeds 8",
+              "spacechase0.SpaceCore_PlaySound getNewSpecialItem false",
+              "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:Strings.House.EDGuestRoomBox{{GeneralDialogueTokens}}}}\" (O){{ModID}}_BeholderFruitSeeds",
+              "AddMail Current {{ModID}}_SeedGift_Received received"
+            ]
+          }
+        }
+      },
+
+      //Sends the Crystalline Lily seeds.
+
+      {
+        "LogName": "Trigger Action - Crystalline Lily Seeds",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "EnD.CrystallineLilyMail": {
+            "Id": "EnD.CrystallineLilyMail",
+            "Trigger": "DayStarted",
+            "Condition": "PLAYER_FRIENDSHIP_POINTS Current Nova.Eli 2000, PLAYER_FRIENDSHIP_POINTS Current Nova.Dylan 2000, PLAYER_HAS_SEEN_EVENT Current EnD.Critters.03",
+            "Action": "AddMail Current SentinelLetter Now"
+          }
+        }
+      },
+
+      //Events
+      //Eli
+
+      {
+        "LogName": "Trigger Action - 5 Hearts",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "EnD.OnSeenEli4Hearts": {
+            "Id": "EnD.OnSeenEli4Hearts",
+            "Trigger": "DayStarted",
+            "Condition": "PLAYER_FRIENDSHIP_POINTS Current Nova.Eli 1250, PLAYER_HAS_SEEN_EVENT Current EnD.Eli.05, !PLAYER_HAS_CONVERSATION_TOPIC Current EliWoods",
+            "Action": "AddMail Current EliWarpPrototype Now"
+          }
+        }
+      },
+
+      {
+        "LogName": "Trigger Action - 6 Hearts",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "EnD.OnSeenEli5Hearts": {
+            "Id": "EnD.OnSeenEli5Hearts",
+            "Trigger": "DayStarted",
+            "Condition": "PLAYER_FRIENDSHIP_POINTS Current Nova.Eli 1500, PLAYER_HAS_SEEN_EVENT Current EnD.Eli.09, !PLAYER_HAS_CONVERSATION_TOPIC Current JunimoKingIntro",
+            "Action": "AddMail Current EliCaveInvite Now"
+          }
+        }
+      },
+
+      //Mouse sends shop invite after receiving any of this mod's seeds from mail.
+
+      {
+        "LogName": "Mouse Shop Letter",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+          "{{ModID}}_MouseShopInvite": {
+            "Id": "{{ModID}}_MouseShopInvite",
+            "Trigger": "DayStarted",
+            "Condition": "Any \"PLAYER_HAS_MAIL Current {{ModID}}_SeedGift_Received Received\" \"PLAYER_HAS_MAIL Current EliLetter2 Received\" \"PLAYER_HAS_MAIL Current DylanGift Received\"",
+            "Action": "AddMail Current MouseLetter Now",
+            "MarkActionApplied": true
+          }
+        } 
+      },
+
+      //BETAS Stuff
+
+      {
+        "LogName": "Monster Kill Reaction",
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "When": {
+          "HasMod": "Spiderbuttons.BETAS"
+        },
+        "Entries": {
+          "{{ModID}}_MonsterKilledBETAS1": {
+            "Id": "{{ModID}}_MonsterKilledBETAS1",
+            "Trigger": "Spiderbuttons.BETAS_MonsterKilled",
+            "Condition": "ITEM_ID Target \"Rock Crab\", LOCATION_NAME Here EastScarp_Village",
+            "MarkActionApplied": false,
+            "Actions": [
+              "Spiderbuttons.BETAS_TextAboveHead Nova.Eli \"{{i18n:Betas.NovaEli.KillRockCrab.{{Random:{{Range: 1, 3}}}}{{GeneralDialogueTokens}}}}\"",
+              "Spiderbuttons.BETAS_TextAboveHead Nova.Dylan \"{{i18n:Betas.NovaDylan.KillRockCrab.{{Random:{{Range: 1, 3}}}}{{GeneralDialogueTokens}}}}\""     
+            ]
+          },
+       "{{ModID}}_MonsterKilledBETAS2": {
+         "Id": "{{ModID}}_MonsterKilledBETAS2",
+         "Trigger": "Spiderbuttons.BETAS_MonsterKilled",
+         "Condition": "ITEM_ID Target \"Lava Crab\", LOCATION_NAME Here EastScarp_Village",
+         "MarkActionApplied": false,
+         "Actions": [
+           "Spiderbuttons.BETAS_TextAboveHead Nova.Eli \"{{i18n:Betas.NovaEli.KillLavaCrab.{{Random:{{Range: 1, 3}}}}{{GeneralDialogueTokens}}}}\"",
+           "Spiderbuttons.BETAS_TextAboveHead Nova.Dylan \"{{i18n:Betas.NovaDylan.KillLavaCrab.{{Random:{{Range: 1, 3}}}}{{GeneralDialogueTokens}}}}\""
+         ]
+       }
+      }
+    }
+    ]
+  }

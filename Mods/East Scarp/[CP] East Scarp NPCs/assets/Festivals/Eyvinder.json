@@ -1,0 +1,34 @@
+{
+    "Changes": [ // Ember of Resolutions
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "Eyvinder": "{{i18n:festivals.eyvinder.winter28}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Eyvinder 63 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Eyvinder 55 49 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+    ]
+}

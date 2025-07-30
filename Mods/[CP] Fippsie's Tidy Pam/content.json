@@ -1,0 +1,52 @@
+{
+   "Format": "2.0.0",
+   "Changes": [
+      {
+         "Action": "EditImage",
+         "Target": "maps/fall_town",
+         "FromFile": "assets/fall_town.png",
+         "FromArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+         "ToArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+      },
+      {
+         "Action": "EditImage",
+         "Target": "maps/spring_town",
+         "FromFile": "assets/spring_town.png",
+         "FromArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+         "ToArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+      },
+      {
+         "Action": "EditImage",
+         "Target": "maps/winter_town",
+         "FromFile": "assets/winter_town.png",
+         "FromArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+         "ToArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+      },  
+      {
+         "Action": "EditImage",
+         "Target": "maps/summer_town",
+         "FromFile": "assets/summer_town.png",
+         "FromArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+         "ToArea": { "X": 428, "Y": 752, "Width": 24, "Height": 16 },
+      },
+      {
+         "LogName": "Edit Big Trailer",
+         "Action": "EditMap",
+         "Target": "maps/Trailer_big",
+         "PatchMode": "Replace",
+         "FromFile": "assets/TidyPam.tmx",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10
+         },
+         "ToArea": {
+            "X": 20,
+            "Y": 12,
+            "Width": 10,
+            "Height": 10
+         }
+      }
+   ]
+}

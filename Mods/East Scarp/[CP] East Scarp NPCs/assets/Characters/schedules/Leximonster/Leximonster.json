@@ -1,0 +1,7 @@
+{
+    "rain": "0 EastScarp_Orchard 18 73 0/700 EastScarp_Orchard 11 65 square_5_6/1200 EastScarp_Shack 3 5 1/1600 EastScarp_Orchard 29 74 2/1800 EastScarp_Orchard 25 61 0/2400 EastScarp_Orchard 18 73 2",
+    "spring": "0700 EastScarp_SeaCave 35 9 0/1200 EastScarp_SeaCave 17 4 3/1600 EastScarp_SeaCave 22 9 2/2000 EastScarp_SeaCave 36 6 2/2400 EastScarp_SeaCave 33 5 2",
+    "Sat":"700 EastScarp_SeaCave 17 4 3/940 EastScarp_SeaCave 35 6 2/2000 EastScarp_SeaCave 33 5 2",
+    "Sun":"0 EastScarp_SeaCave 23 21 2/1100 EastScarp_SeaCave 30 21 2/1700 EastScarp_SeaCave 29 26 1/2000 EastScarp_SeaCave 25 20 2",
+	
+}

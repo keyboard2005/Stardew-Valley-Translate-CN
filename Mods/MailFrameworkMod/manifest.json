@@ -1,0 +1,17 @@
+﻿{
+	"Name": "Mail Framework Mod",
+	"Author": "Digus",
+	"Version": "1.20.0",
+	"MinimumApiVersion": "4.0.0",
+	"Description": "Utility classes and content packs to add mail into the game.",
+	"UniqueID": "DIGUS.MailFrameworkMod",
+	"EntryDll": "MailFrameworkMod.dll",
+	"Dependencies": [
+		{
+			"UniqueID": "Cherry.ExpandedPreconditionsUtility",
+			"MinimumVersion": "1.0.1",
+			"IsRequired": false
+		}
+	],
+	"UpdateKeys": [ "Nexus:1536" ]
+}

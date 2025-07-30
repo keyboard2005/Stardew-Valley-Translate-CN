@@ -1,0 +1,13 @@
+﻿{
+  "Name": "No Pam Enabling",
+  "Author": "recon88",
+  "Version": "1.0.0",
+  "Description": "Changes the \"Pam Is Thirsty\" quest to require juice instead of pale ale.",
+  "UniqueID": "recon88.NoPamEnabling",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:23080" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.0.0"
+  }
+}

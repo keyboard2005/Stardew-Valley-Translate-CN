@@ -1,0 +1,874 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Aideen": {
+                    "DisplayName": "{{i18n:Name.Aideen}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 21,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": true,
+                    "LoveInterest": null,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationFrames": [
+                            [
+                                32,
+                                500
+                            ],
+                            [
+                                33,
+                                500
+                            ],
+                            [
+                                0,
+                                3500
+                            ],
+                        ],
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 32,
+                    "HiddenProfileEmoteFrameCount": 4,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_House1",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Beatrice": {
+                    "DisplayName": "{{i18n:Name.Beatrice}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 17,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false, //undecided
+                    "LoveInterest": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 20,
+                    "HiddenProfileEmoteFrameCount": 3,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_Lighthouse",
+                            "Tile": {
+                                "X": 11,
+                                "Y": 10
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Eloise": {
+                    "DisplayName": "{{i18n:Name.Eloise}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 22,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "FriendsAndFamily": {
+                        "Jacob": "{{i18n:Relationship.Eloise.Jacob}}",
+                        "VivienneLK": "{{i18n:Relationship.Eloise.Vivienne}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 33,
+                                "Y": 23
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Eyvinder": {
+                    "DisplayName": "{{i18n:Name.Eyvinder.{{EyvinderName}} }}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 15,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false, //undecided
+                    "IsDarkSkinned": true,
+                    "LoveInterest": "VivienneLK",
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                    "IntroductionsQuest": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 16,
+                    "HiddenProfileEmoteFrameCount": 4,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_EyvinderCave",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 7
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Jacob": {
+                    "DisplayName": "{{i18n:Name.Jacob}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 27,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false, //not yet
+                    "LoveInterest": "ToriLK",
+                    "FlowerDanceCanDance": true,
+                    "FriendsAndFamily": {
+                        "Eloise": "{{i18n:Relationship.Jacob.Eloise}}",
+                        "VivienneLK": "{{i18n:Relationship.Jacob.Vivienne}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 22,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "JosephineK": {
+                    "DisplayName": "{{i18n:Name.Josephine}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57873000, !PLAYER_HAS_SEEN_EVENT Host 57873005",
+                    "IntroductionsQuest": false,
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "FriendsAndFamily": {
+                        "OliverK": "{{i18n:Relationship.Josephine.Oliver}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "JosephineLeaves",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873005"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 9
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "KatarynaLK": {
+                    "DisplayName": "{{i18n:Name.Kataryna}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_MAIL Any KatarynaBecomesSocial",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57876001, !PLAYER_HAS_SEEN_EVENT Host 57876012",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 6,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 4,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        }
+                    },
+                    "Home": [
+                        {
+                            "Id": "KatarynaLeaves",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57876012"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57876001"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Leximonster": {
+                    "DisplayName": "{{i18n:Name.Lexi}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 12,
+                    "HomeRegion": "Other",
+                    "Gender": "Undefined",
+                    "Age": "Teen",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "ItemDeliveryQuests": false,
+                    "LoveInterest": null,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_SeaCave",
+                            "Tile": {
+                                "X": 33,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "OliverK": {
+                    "DisplayName": "{{i18n:Name.Oliver}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 6,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Teen",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Any 57873000",
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "FriendsAndFamily": {
+                        "JosephineK": "{{i18n:Relationship.Oliver.Josephine}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "JosephineLeaves",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 18,
+                                "Y": 21
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873005"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 11
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Rosa": {
+                    "DisplayName": "{{i18n:Name.Rosa}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 7,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Juliet",
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 63,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "ToriLK": {
+                    "DisplayName": "{{i18n:Name.Tori}}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 6,
+                    "HomeRegion": "Other", //change to Town when released
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false, //currently
+                    "LoveInterest": "Jacob",
+                    "CanVisitIsland": "true",
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_ToriSlimeBasement",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 19
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "VivienneLK": {
+                    "DisplayName": "{{i18n:Name.Vivienne}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 14,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Eyvinder",
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "IntroductionsQuest": false,
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "PerfectionScore": false,
+                    "FriendsAndFamily": {
+                        "Jacob": "{{i18n:Relationship.Vivienne.Jacob}}",
+                        "Eloise": "{{i18n:Relationship.Vivienne.Eloise}}",
+                    },
+                    "Home": [
+                        {
+                            "Id": "VivenneMovesIn",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 17,
+                                "Y": 7
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57875000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "LumaJunimo": {
+                    "DisplayName": "{{i18n:Name.Luma}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 4,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    //"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57871100",
+                    "EndSlideShow": "TrailingGroup",
+                    "LoveInterest": null,
+                    "CustomFields": {
+                        "EastScarpe.NPCScale": "0.90"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_LumaHut",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 6
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                //antisocial NPCs
+                "LittleGruff": {
+                    "DisplayName": "{{i18n:Name.LittleGruff}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Child",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57877003",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_EyvinderCave",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 8
+                            },
+                            "Direction": "Left"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "RichieTheMacaw": {
+                    "DisplayName": "{{i18n:Name.Richie}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 21
+                            },
+                            "Direction": "Up"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "HappySlime": {
+                    "DisplayName": "{{i18n:Name.happy}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    //"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870002",
+                    "SpawnIfMissing": true,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 16,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_ToriSlimeBasement",
+                            "Tile": {
+                                "X": -100,
+                                "Y": -100
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 6
+                    },
+                },
+                "PepperPup": {
+                    "DisplayName": "{{i18n:Name.PepperPup}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870020",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 31,
+                                "Y": 22
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "LadySheba": {
+                    "DisplayName": "{{i18n:Name.Sheba}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57879903",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_CatWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 2
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "AbyssRooster": {
+                    "DisplayName": "{{i18n:Name.Abyss}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Teen",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57876022",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 3,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "DuckNPC": {
+                    "DisplayName": "{{i18n:Name.duck1}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870002",
+                    "SpawnIfMissing": true,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 16,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_Village",
+                            "Tile": {
+                                "X": 21,
+                                "Y": 62
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "Duck2NPC": {
+                    "DisplayName": "{{i18n:Name.duck2}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870011",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_Village",
+                            "Tile": {
+                                "X": 22,
+                                "Y": 62
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                }
+            }
+        },
+        {
+            "LogName": "Little Gruff friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "LittleGruff"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57877003"
+            },
+            "When": {
+                "FriendableAnimals |contains=LittleGruff": true
+            }
+        },
+        {
+            "LogName": "Emperor Duck friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "DuckNPC"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57870002"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmperorDuck": true
+            }
+        },
+        {
+            "LogName": "Empress Duck friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Duck2NPC"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57870011"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmpressDuck": true
+            }
+        },
+        {
+            "LogName": "Lady Sheba friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "LadySheba"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57879903"
+            },
+            "When": {
+                "FriendableAnimals |contains=LadyShebaCat": true
+            }
+        },
+        {
+            "LogName": "Make Kataryna Datable once Social",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial"
+            },
+            "TargetField": [
+                "KatarynaLK"
+            ],
+            "Entries": {
+                "BirthSeason": "winter",
+                "BirthDay": 24,
+                "CanBeRomanced": true
+            }
+        }
+    ]
+}

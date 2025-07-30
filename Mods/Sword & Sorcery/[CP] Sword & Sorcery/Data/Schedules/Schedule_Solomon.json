@@ -1,0 +1,27 @@
+{
+	"Changes": [
+		{
+			"LogName": "Solomon's Schedule - Not Unlocked",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Solomon",
+			"Entries": {
+				// Prior to Solomon being unlocked.
+				"spring": "0 EastScarp_TNPCWaitingWarpRoom 16 5 2/1200 EastScarp_TNPCWaitingWarpRoom 16 6 2/1800 EastScarp_TNPCWaitingWarpRoom 16 5 2"
+			}
+		},
+		{
+			"LogName": "Solomon's Schedule - Unlocked",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Solomon",
+			"Entries": {
+				// After Solomon has been unlocked.
+				"rain": "GOTO spring",
+				"spring": "610 EastScarp_SolomonCavern 12 21 0 Solomon_read/1130 EastScarp_LionsMane 11 26/1200 EastScarp_LionsMane 11 26 Solomon_cross/2010 EastScarp_SolomonCavern 12 21 0 Solomon_read"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		}
+	]
+}
+//(0 = up, 1 = right, 2 = down, 3 = left)

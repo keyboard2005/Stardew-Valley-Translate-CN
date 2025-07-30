@@ -1,0 +1,140 @@
+﻿{
+    /**********
+    ** Chest UI
+    **********/
+    // default chest names
+    "default-name.fridge": "Hűtőszekrény",
+    "default-name.other": "{{name}} #{{number}}",
+    "default-name.shipping-bin.store": "Tárgyak elszállítása",
+    "default-name.shipping-bin.take": "Tárgyak visszaszerzése",
+
+    // default category names
+    "default-category.owned-cabin": "Kunyhó ({{owner}})",
+    "default-category.unowned-cabin": "Kunyhó (üres)",
+    "default-category.duplicate": "{{locationName}} #{{number}}",
+
+    // edit-chest labels
+    "label.location": "Helyszín",
+    "label.location.tile": "Pozíció {{x}}, {{y}}",
+    "label.name": "Név",
+    "label.category": "Kategória",
+    "label.order": "Sorrend",
+    "label.hide-chest": "Láda elrejtése",
+    "label.hide-chest-hidden": "Láda elrejtése (a visszavonáshoz meg kell majd találnod a ládát!)",
+    "label.automate-options": "Automate mod",
+    "label.automate-store": "Tegyen tárgyakat ebbe a ládába",
+    "label.automate-store-first": "Először ebbe a ládába tegyen tárgyakat",
+    "label.automate-store-disabled": "Never put items in this chest", // TODO
+    "label.automate-take": "Vegyen ki tárgyakat ebből a ládából",
+    "label.automate-take-first": "Először ebből a ládából vegyen ki tárgyakat",
+    "label.automate-take-disabled": "Never take items from this chest", // TODO
+
+    // button labels
+    "button.edit-chest": "Láda szerkesztése",
+    "button.sort-inventory": "Tárgymenü rendezése",
+    "button.save": "Mentés",
+    "button.reset": "Visszaállítás",
+
+
+    /**********
+    ** Errors
+    **********/
+    "errors.disabled-from-here": "Innen nem férhetsz hozzá a ládákhoz.",
+    "errors.no-chests": "Nincs még egy ládád sem.",
+    "errors.no-chests-in-location": "Nincs egy ládád sem ezen a területen.",
+    "errors.no-chests-in-range": "Nincs egy ládád sem érvényes távolságon belül.",
+
+
+    /**********
+    ** Generic Mod Config Menu UI
+    **********/
+    /****
+    ** general options
+    ****/
+    // TODO
+    "config.title.general-options": "General options",
+
+    "config.show-hover-tooltips.name": "Show hover tooltips",
+    "config.show-hover-tooltips.desc": "Whether to show the chest name in a tooltip when you point at a chest.",
+
+    "config.enable-shipping-bin.name": "Enable shipping bin",
+    "config.enable-shipping-bin.desc": "Whether to enable access to the shipping bin.",
+
+    "config.enable-sprinkler-attachments.name": "Enable sprinkler attachments",
+    "config.enable-sprinkler-attachments.desc": "Whether to enable access to sprinkler attachments like enrichers.",
+
+    "config.add-organize-player-items.name": "Add organize player items button",
+    "config.add-organize-player-items.desc": "Whether to add an 'organize' button in chest UIs for the player inventory.",
+
+    /****
+    ** remote access
+    ****/
+    // TODO
+    "config.title.remote-access": "Remote access",
+
+    "config.range.name": "Range",
+    "config.range.desc": "The range at which chests are accessible through the menu.",
+    "config.range.unlimited": "All chests",
+    "config.range.currentWorldArea": "Chests within the current world area",
+    "config.range.currentLocation": "Chests within the current location",
+    "config.range.none": "None (can't access chests remotely)",
+
+    "config.disable-mines.name": "Disable in mines & skull cavern",
+    "config.disable-mines.desc": "Whether to disable accessing chests remotely while in the mines or Skull Cavern.",
+
+    "config.disable-custom-names.name": "Disable in location names",
+    "config.disable-custom-names.desc": "The internal names (as shown by the Debug Mode mod) for locations from which to disable accessing chests remotely. You can list multiple with commas.",
+
+    /****
+    ** open menu hotkey
+    ****/
+    // TODO
+    "config.title.open-menu-hotkey": "Hotkey to open chest UI",
+
+    "config.toggle-ui-key.name": "Toggle UI",
+    "config.toggle-ui-key.desc": "The keys which show or hide the chest UI.",
+
+    "config.reopen-last-chest.name": "Reopen last chest",
+    "config.reopen-last-chest.desc": "When you press the 'toggle UI' button, whether to reopen the last chest you selected yourself during the current game session.",
+
+    "config.default-category.name": "Default category",
+    "config.default-category.desc": "When you press the 'toggle UI' button, show the chests in this category by default (if set). This applies after 'reopen last chest'.",
+
+    /****
+    ** controls when chest UI is open
+    ****/
+    // TODO
+    "config.title.menu-controls": "Controls when chest UI is open",
+
+    "config.edit-chest.name": "Edit chest",
+    "config.edit-chest.desc": "The keys which edit the options for the current chest.",
+
+    "config.sort-items.name": "Sort player items",
+    "config.sort-items.desc": "The keys which sort items in the player's inventory while a chest is open.",
+
+    "config.navigate-prev-chest.name": "Navigate: previous chest",
+    "config.navigate-prev-chest.desc": "The keys which navigate to the previous chest while the menu is open.",
+
+    "config.navigate-next-chest.name": "Navigate: next chest",
+    "config.navigate-next-chest.desc": "The keys which navigate to the next chest while the menu is open.",
+
+    "config.navigate-prev-category.name": "Navigate: previous category",
+    "config.navigate-prev-category.desc": "The keys which navigate to the previous category while the menu is open.",
+
+    "config.navigate-next-category.name": "Navigate: next category",
+    "config.navigate-next-category.desc": "The keys which navigate to the next category while the menu is open.",
+
+    "config.hold-to-scroll-categories.name": "Hold to scroll categories",
+    "config.hold-to-scroll-categories.desc": "The keys which, when held, enable scrolling the category dropdown with the mouse scroll wheel.",
+
+    "config.hold-to-scroll-chests.name": "Hold to scroll chests",
+    "config.hold-to-scroll-chests.desc": "The keys which, when held, enable scrolling the chests dropdown with the mouse scroll wheel.",
+
+
+    /*********
+    ** Iconic Framework icon
+    *********/
+    // TODO
+    "icon.open-menu.name": "Chests Anywhere",
+    "icon.open-menu.desc": "Open Menu"
+}

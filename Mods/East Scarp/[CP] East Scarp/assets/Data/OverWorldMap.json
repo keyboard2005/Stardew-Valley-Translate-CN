@@ -1,0 +1,771 @@
+{
+    "Changes": [
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+            "FromFile": "assets/Maps/ESmap.png",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+        },
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+            "FromFile": "assets/Maps/ESmap_SVE.png",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Entries": {
+                "EastScarp": {
+                    "BaseTexture": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Texture": "Mods\\Lemurkat.EastScarp\\ESWorldMap"
+                        }
+                    ],
+                    "MapAreas": [
+                        {
+                            "Id": "ScarpCrossing",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 60,
+                                "Width": 80,
+                                "Height": 60
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "JessieHouse",
+                                    "PixelArea": {
+                                        "X": 28,
+                                        "Y": 67,
+                                        "Width": 11,
+                                        "Height": 12
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.JessieLodgingHouse}}"
+                                },
+                                {
+                                    "Id": "JessieCottage",
+                                    "PixelArea": {
+                                        "X": 54,
+                                        "Y": 95,
+                                        "Width": 11,
+                                        "Height": 11
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.JulietRosaHouse}}",
+                                    //"Condition":"PLAYER_HAS_SEEN_EVENT Host 7874099"
+                                },
+                                {
+                                    "Id": "ScarpCrossing",
+                                    "Text": "{{i18n:EastScarp.Locations.ScarpPath}}",
+                                    //  "LeftNeighbor": "",
+                                    //  "RightNeighbor": "Central/Village",
+                                    //  "UpNeighbor": "",
+                                    //  "DownNeighbor": "South/LoreCove"
+                                }
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "JessieHouse",
+                                    "LocationName": "Custom_LK_LodgingHouse",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 28,
+                                        "Y": 67,
+                                        "Width": 11,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.JessieLodgingHouse}}"
+                                },
+                                {
+                                    "Id": "J&RHouse",
+                                    //"Condition": "PLAYER_HAS_SEEN_EVENT Host 7874099",
+                                    "LocationName": "EastScarp_RosJulesHouse",
+                                    "MapPixelArea": {
+                                        "X": 54,
+                                        "Y": 95,
+                                        "Width": 11,
+                                        "Height": 11
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.JulietRosaHouse}}"
+                                },
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_ClearingHouse",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        },
+                        { //When we remove the Scarp Crossing map, subtract -80 from each X coordinate.
+                            "Id": "MainScarp",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 80,
+                                "Y": 0,
+                                "Width": 152,
+                                "Height": 182
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "VetHouse",
+                                    "PixelArea": {
+                                        "X": 98,
+                                        "Y": 23,
+                                        "Width": 12,
+                                        "Height": 13
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Vet}}"
+                                },
+                                {
+                                    "Id": "JacobBarn",
+                                    "PixelArea": {
+                                        "X": 104,
+                                        "Y": 13,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.JBarn}}"
+                                },
+                                {
+                                    "Id": "AideenHouse",
+                                    "PixelArea": {
+                                        "X": 102,
+                                        "Y": 60,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Aideen}}"
+                                },
+                                {
+                                    "Id": "ToriHouse",
+                                    "PixelArea": {
+                                        "X": 94,
+                                        "Y": 75,
+                                        "Width": 10,
+                                        "Height": 7
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Tori}}"
+                                },
+                                {
+                                    "Id": "ScarpeInn",
+                                    "PixelArea": {
+                                        "X": 138,
+                                        "Y": 74,
+                                        "Width": 16,
+                                        "Height": 10
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Inn}}"
+                                },
+                                {
+                                    "Id": "ScarpePond",
+                                    "PixelArea": {
+                                        "X": 115,
+                                        "Y": 82,
+                                        "Width": 12,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Pond}}"
+                                },
+                                {
+                                    "Id": "Tidepools",
+                                    "PixelArea": {
+                                        "X": 148,
+                                        "Y": 130,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Tidepools}}"
+                                },
+                                {
+                                    "Id": "Lighthouse",
+                                    "PixelArea": {
+                                        "X": 180,
+                                        "Y": 142,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Lighthouse}}"
+                                },
+                                {
+                                    "Id": "Underscarp",
+                                    "PixelArea": {
+                                        "X": 143,
+                                        "Y": 107,
+                                        "Width": 5,
+                                        "Height": 3
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.DeepDark}}"
+                                },
+                                {
+                                    "Id": "PlumFarm",
+                                    "PixelArea": {
+                                        "X": 185,
+                                        "Y": 57,
+                                        "Width": 8,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.PlumFarm.false}}"
+                                },
+                                {
+                                    "Id": "Silo",
+                                    "PixelArea": {
+                                        "X": 204,
+                                        "Y": 35,
+                                        "Width": 4,
+                                        "Height": 11
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Silo}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "VetHouse",
+                                    "LocationName": "EastScarp_VetHouse",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 98,
+                                        "Y": 23,
+                                        "Width": 12,
+                                        "Height": 13
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Vet}}"
+                                },
+                                {
+                                    "Id": "JacobBarn",
+                                    "LocationName": "EastScarp_JacobBarn",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 104,
+                                        "Y": 13,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.JBarn}}"
+                                },
+                                {
+                                    "Id": "AideenHouse",
+                                    "LocationName": "EastScarp_House1",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 102,
+                                        "Y": 60,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Aideen}}"
+                                },
+                                {
+                                    "Id": "ToriHouse",
+                                    "LocationName": "EastScarp_NTHouse",
+                                    "MapPixelArea": {
+                                        "X": 94,
+                                        "Y": 74,
+                                        "Width": 9,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Tori}}"
+                                },
+                                {
+                                    "Id": "ToriBasement",
+                                    "LocationName": "EastScarp_ToriSlimeBasement",
+                                    "MapPixelArea": {
+                                        "X": 102,
+                                        "Y": 75,
+                                        "Width": 2,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.ToriBasement}}"
+                                },
+                                {
+                                    "Id": "ScarpeInn",
+                                    "LocationName": "EastScarp_VillageInn",
+                                    "MapPixelArea": {
+                                        "X": 138,
+                                        "Y": 74,
+                                        "Width": 16,
+                                        "Height": 10
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Inn}}"
+                                },
+                                {
+                                    "Id": "Lighthouse",
+                                    "LocationName": "EastScarp_Lighthouse",
+                                    "MapPixelArea": {
+                                        "X": 180,
+                                        "Y": 142,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Lighthouse}}"
+                                },
+                                {
+                                    "Id": "Underscarp",
+                                    "LocationName": "EastScarp_DeepDark",
+                                    "MapPixelArea": {
+                                        "X": 143,
+                                        "Y": 107,
+                                        "Width": 5,
+                                        "Height": 3
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.DeepDark}}"
+                                },
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_Village",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        },
+                        {
+                            "Id": "CherryOrchard",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 228,
+                                "Y": 42,
+                                "Width": 70,
+                                "Height": 100
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "PixelArea": {
+                                        "X": 266,
+                                        "Y": 54,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.OrchardHouse}}"
+                                },
+                                {
+                                    "Id": "SmugglerShack",
+                                    "PixelArea": {
+                                        "X": 246,
+                                        "Y": 118,
+                                        "Width": 6,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Smuggler}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "LocationName": "EastScarp_OrchardHouse",
+                                    "MapPixelArea": {
+                                        "X": 266,
+                                        "Y": 54,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.OrchardHouse}}"
+                                },
+                                {
+                                    "Id": "SmugglerShack",
+                                    "LocationName": "EastScarp_Shack",
+                                    "MapPixelArea": {
+                                        "X": 246,
+                                        "Y": 118,
+                                        "Width": 6,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Smuggler}}"
+                                },
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_Orchard",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        },
+                        {
+                            "Id": "AbandonedMine",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 224,
+                                "Y": 0,
+                                "Width": 59,
+                                "Height": 38
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "PixelArea": {
+                                        "X": 256,
+                                        "Y": 8,
+                                        "Width": 4,
+                                        "Height": 4
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.MineEntrance}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_MineEntrance",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Entries": {
+                "EastScarp": {
+                    "BaseTexture": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Texture": "Mods\\Lemurkat.EastScarp\\ESWorldMap"
+                        }
+                    ],
+                    "MapAreas": [
+                        { //When we remove the Scarp Crossing map, subtract -80 from each X coordinate.
+                            "Id": "MainScarp",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 152,
+                                "Height": 182
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "VetHouse",
+                                    "PixelArea": {
+                                        "X": 18,
+                                        "Y": 23,
+                                        "Width": 12,
+                                        "Height": 13
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Vet}}"
+                                },
+                                {
+                                    "Id": "JacobBarn",
+                                    "PixelArea": {
+                                        "X": 24,
+                                        "Y": 13,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.JBarn}}"
+                                },
+                                {
+                                    "Id": "AideenHouse",
+                                    "PixelArea": {
+                                        "X": 22,
+                                        "Y": 60,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Aideen}}"
+                                },
+                                {
+                                    "Id": "ToriHouse",
+                                    "PixelArea": {
+                                        "X": 14,
+                                        "Y": 75,
+                                        "Width": 10,
+                                        "Height": 7
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Tori}}"
+                                },
+                                {
+                                    "Id": "ScarpeInn",
+                                    "PixelArea": {
+                                        "X": 58,
+                                        "Y": 74,
+                                        "Width": 16,
+                                        "Height": 10
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Inn}}"
+                                },
+                                {
+                                    "Id": "ScarpePond",
+                                    "PixelArea": {
+                                        "X": 35,
+                                        "Y": 82,
+                                        "Width": 12,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Pond}}"
+                                },
+                                {
+                                    "Id": "Tidepools",
+                                    "PixelArea": {
+                                        "X": 68,
+                                        "Y": 130,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Tidepools}}"
+                                },
+                                {
+                                    "Id": "Lighthouse",
+                                    "PixelArea": {
+                                        "X": 100,
+                                        "Y": 142,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Lighthouse}}"
+                                },
+                                {
+                                    "Id": "Underscarp",
+                                    "PixelArea": {
+                                        "X": 63,
+                                        "Y": 107,
+                                        "Width": 5,
+                                        "Height": 3
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.DeepDark}}"
+                                },
+                                {
+                                    "Id": "PlumFarm",
+                                    "PixelArea": {
+                                        "X": 105,
+                                        "Y": 57,
+                                        "Width": 8,
+                                        "Height": 8
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.PlumFarm.false}}"
+                                },
+                                {
+                                    "Id": "Silo",
+                                    "PixelArea": {
+                                        "X": 124,
+                                        "Y": 35,
+                                        "Width": 4,
+                                        "Height": 11
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Silo}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "VetHouse",
+                                    "LocationName": "EastScarp_VetHouse",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 18,
+                                        "Y": 23,
+                                        "Width": 12,
+                                        "Height": 13
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Vet}}"
+                                },
+                                {
+                                    "Id": "JacobBarn",
+                                    "LocationName": "EastScarp_JacobBarn",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 24,
+                                        "Y": 13,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.JBarn}}"
+                                },
+                                {
+                                    "Id": "AideenHouse",
+                                    "LocationName": "EastScarp_House1",
+                                    "ExtendedTileArea": null,
+                                    "MapPixelArea": {
+                                        "X": 22,
+                                        "Y": 60,
+                                        "Width": 9,
+                                        "Height": 8
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Aideen}}"
+                                },
+                                {
+                                    "Id": "ToriHouse",
+                                    "LocationName": "EastScarp_ToriSlimeBasement",
+                                    "MapPixelArea": {
+                                        "X": 14,
+                                        "Y": 75,
+                                        "Width": 10,
+                                        "Height": 7
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Tori}}"
+                                },
+                                {
+                                    "Id": "ScarpeInn",
+                                    "LocationName": "EastScarp_VillageInn",
+                                    "MapPixelArea": {
+                                        "X": 58,
+                                        "Y": 74,
+                                        "Width": 16,
+                                        "Height": 10
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Inn}}"
+                                },
+                                {
+                                    "Id": "Lighthouse",
+                                    "LocationName": "EastScarp_Lighthouse",
+                                    "MapPixelArea": {
+                                        "X": 100,
+                                        "Y": 142,
+                                        "Width": 14,
+                                        "Height": 12
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Lighthouse}}"
+                                },
+                                {
+                                    "Id": "Underscarp",
+                                    "LocationName": "EastScarp_DeepDark",
+                                    "MapPixelArea": {
+                                        "X": 63,
+                                        "Y": 107,
+                                        "Width": 5,
+                                        "Height": 3
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.DeepDark}}"
+                                },
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_Village",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        },
+                        {
+                            "Id": "CherryOrchard",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 148,
+                                "Y": 42,
+                                "Width": 70,
+                                "Height": 100
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "PixelArea": {
+                                        "X": 186,
+                                        "Y": 54,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.OrchardHouse}}"
+                                },
+                                {
+                                    "Id": "SmugglerShack",
+                                    "PixelArea": {
+                                        "X": 166,
+                                        "Y": 118,
+                                        "Width": 6,
+                                        "Height": 6
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.Smuggler}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "LocationName": "EastScarp_OrchardHouse",
+                                    "MapPixelArea": {
+                                        "X": 186,
+                                        "Y": 54,
+                                        "Width": 10,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.OrchardHouse}}"
+                                },
+                                {
+                                    "Id": "SmugglerShack",
+                                    "LocationName": "EastScarp_Shack",
+                                    "MapPixelArea": {
+                                        "X": 166,
+                                        "Y": 118,
+                                        "Width": 6,
+                                        "Height": 6
+                                    },
+                                    "ScrollText": "{{i18n:EastScarp.Locations.Smuggler}}"
+                                },
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_Orchard",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        },
+                        {
+                            "Id": "AbandonedMine",
+                            "Condition": null,
+                            "PixelArea": {
+                                "X": 144,
+                                "Y": 0,
+                                "Width": 59,
+                                "Height": 38
+                            },
+                            "ScrollText": null,
+                            "Textures": [],
+                            "Tooltips": [
+                                {
+                                    "Id": "OrchardHouse",
+                                    "PixelArea": {
+                                        "X": 176,
+                                        "Y": 8,
+                                        "Width": 4,
+                                        "Height": 4
+                                    },
+                                    "Text": "{{i18n:EastScarp.Locations.MineEntrance}}"
+                                },
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "ScrollTextZones": [],
+                                    "Id": "Default",
+                                    "LocationName": "EastScarp_MineEntrance",
+                                    "ScrollText": null
+                                }
+                            ],
+                            "CustomFields": {}
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

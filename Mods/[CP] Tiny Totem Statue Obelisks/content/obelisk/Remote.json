@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.load.remote",
+      "Action": "Load",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_remote_obelisk.png"
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.remote",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/flowers/remote_obelisk.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.remote",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Remote_Obelisk",
+      "FromFile": "assets/moss/remote_obelisk.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "MossEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.data.remote",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+        "Remote Obelisk": {
+          "Name": "{{i18n:remote.obelisk.name}}",
+          "Description": "{{i18n:remote.obelisk.desc}}{{FarmName}}.",
+          "Texture": "Buildings\\Remote_Obelisk",
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": "1",
+            "Y": "1"
+          },
+          "Builder": "Wizard",
+          "BuildDays": 0,
+          "BuildCost": 500000,
+          "BuildMaterials": [
+            {
+              "ItemId": "(O)337",
+              "Amount": 5
+            },
+            {
+              "ItemId": "(O)24",
+              "Amount": 15
+            },
+            {
+              "ItemId": "(O)417",
+              "Amount": 10
+            }
+          ],
+          "MagicalConstruction": true,
+          "DefaultAction": "ObeliskWarp Farm {{RemoteX}} {{RemoteY}} false"
+        }
+      }
+    }
+  ]
+}

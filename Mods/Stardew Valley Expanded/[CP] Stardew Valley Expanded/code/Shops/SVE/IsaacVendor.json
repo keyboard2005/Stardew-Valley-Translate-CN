@@ -1,0 +1,68 @@
+{
+
+    "Changes": [
+        {
+            "Action": "Load", "Priority": "Low",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Isaac_Vendor",
+            "FromFile": "assets/CharacterFiles/Shops/Adventurers/Isaac_Vendor.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_IsaacVendor": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Isaac_Vendor",
+                            "Dialogues": [
+                                {
+                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                "Dialogue": "{{i18n:ShopsDialogue.Isaac}}",
+                                },
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Sword",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Sword",
+                            "Price": 600000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        }, 
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Hammer",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Hammer",
+                            "Price": 400000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        },
+						{
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Galdoran_Knight_Boots",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Galdoran_Knight_Boots",
+                            "Price": 150000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+                            "Price": 12000,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Player"
+                        },
+						{
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Bonefish",
+                            "ItemId": "FlashShifter.StardewValleyExpandedCP_Bonefish",
+                            "Price": 6000,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        },
+                    ]
+                }
+            }
+        }
+    ]
+}

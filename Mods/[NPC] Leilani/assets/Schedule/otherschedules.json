@@ -1,0 +1,54 @@
+{
+	"Changes": [
+		{
+			"LogName": "Summer Rain Schedule",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Leilani",
+			"When": {
+				"Season": "summer",
+				"HasMod |contains=Lemurkat.NPCJasper": false,
+				"HasSeenEvent": "937501"
+			},
+			"Entries": {
+				"rain": "0 Custom_Ridgeside_PikaHouse 18 5 3 leilani_sleep/1000 ArchaeologyHouse 12 10 0/1500 ArchaeologyHouse 21 11 2 leilani_read/1800 Custom_Ridgeside_PikaHouse 7 8 0/2100 Custom_Ridgeside_PikaHouse 18 5 3 leilani_sleep"
+			}
+		},
+		{
+			"LogName": "Summer Rain Schedule - Jasper version",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Leilani",
+			"When": {
+				"Season": "summer",
+				"HasMod |contains=Lemurkat.NPCJasper": true,
+				"HasSeenEvent": "937501"
+			},
+			"Entries": {
+				"rain": "0 Custom_Ridgeside_PikaHouse 18 5 3 leilani_sleep/1000 ArchaeologyHouse 12 9 1/1500 ArchaeologyHouse 21 11 2 leilani_read/1800 Custom_Ridgeside_PikaHouse 7 8 0/2100 Custom_Ridgeside_PikaHouse 18 5 3 leilani_sleep"
+			}
+		},
+		{
+			"LogName": "Pika's Schedule",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Pika",
+			"When": {
+				"HasSeenEvent": "937501"
+			},
+			"Entries": {
+				"summer_1": "610 Beach 31 14 2/1500 Custom_Ridgeside_RidgesideVillage 72 53 0 square_3_1_0/2300 Custom_Ridgeside_PikaHouse 16 5 0 pika_sleep",
+				"summer_23": "610 Custom_Ridgeside_RidgesideVillage 39 55 0/900 Custom_Ridgeside_RidgesideVillage 94 37 0 square_3_1_0/1700 Custom_Ridgeside_PikaHouse 4 8 1/2300 Custom_Ridgeside_PikaHouse 16 5 0 pika_sleep"
+			}
+		},
+		{
+			"LogName": "Keahi's Schedule",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Keahi",
+			"When": {
+				"HasSeenEvent": "937501"
+			},
+			"Entries": {
+				"summer_1": "610 Beach 32 15 3/1500 Custom_Ridgeside_RidgesideVillage 82 73 3 keahi_jump/1400 Custom_Ridgeside_RidgesideVillage 125 105 0/1600 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep",
+				"summer_Wed": "610 Town 97 92 3/1100 ArchaeologyHouse 15 11 1/1130 ArchaeologyHouse 13 11 3 keahi_read/1400 Town 86 98 2 keahi_dance/1600 Custom_Ridgeside_RidgesideVillage 71 59 2 square_1_2_2/1700 Custom_Ridgeside_PikaHouse 7 10 3/2200 Custom_Ridgeside_PikaHouse 26 5 0 keahi_sleep"
+			}
+		},
+	]
+}

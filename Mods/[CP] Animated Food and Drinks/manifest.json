@@ -1,0 +1,21 @@
+{
+    "Name": "Animated Food and Drinks",
+    "Author": "Gervig91 ~zBGEdit/CPA2SC",
+    "Version": "3.5.0",
+    "Description": "Animates food and drinks",
+    "UniqueID": "Gervig91.AnimatedFood",
+    "MinimumApiVersion": "2.10.0",
+    "UpdateKeys": [
+        "Nexus:5607"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "1.6.0"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "Required": true
+        }
+    ]
+}

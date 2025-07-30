@@ -1,0 +1,264 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Clint0": "{{i18n:SpecialDialogue.Clint.Engagment0}}",
+                "Clint1": "{{i18n:SpecialDialogue.Clint.Engagment1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "divorced": "{{i18n:Dialogue.Clint.Divorced}}",
+                "breakUp": "{{i18n:Dialogue.Clint.BreakUp}}",
+                "danceRejection": "{{i18n:Dialogue.Clint.DanceRejection}}",
+                "SPB_Clint4Heart": "{{i18n:ConversationTopic.Clint.SPB4H}}",
+                "SPB_Clint6Heart": "{{i18n:ConversationTopic.Clint.SPB6H}}",
+                "SPB_Clint10Heart": "{{i18n:ConversationTopic.Clint.SPB10H}}",
+                "SPB_Clint14Heart": "{{i18n:ConversationTopic.Clint.SPB14H}}",
+                "Mon2": "{{i18n:Dialogue.Clint.Mon2H}}", 
+                "Mon6": "{{i18n:Dialogue.Clint.Mon6H}}",
+                "Tue2": "{{i18n:Dialogue.Clint.Tue2H}}",
+                "Tue6": "{{i18n:Dialogue.Clint.Tue6H}}",
+                "Tue8": "{{i18n:Dialogue.Clint.Tue8H}}",
+                "Wed4": "{{i18n:Dialogue.Clint.Wed4H}}",
+                "Wed8": "{{i18n:Dialogue.Clint.Wed8H}}",
+                "Thu4": "{{i18n:Dialogue.Clint.Thu4H}}",
+                "Thu8": "{{i18n:Dialogue.Clint.Thu8H}}",
+                "Fri4": "{{i18n:Dialogue.Clint.Fri4H}}",
+                "Fri8": "{{i18n:Dialogue.Clint.Fri8H}}",
+                "Fri10": "{{i18n:Dialogue.Clint.Fri10H}}",
+                "Sat4": "{{i18n:Dialogue.Clint.Sat4H}}",
+                "Sat8": "{{i18n:Dialogue.Clint.Sat8H}}",
+                "Sun4": "{{i18n:Dialogue.Clint.Sun4H}}",
+                "Sun6": "{{i18n:Dialogue.Clint.Sun6H}}",
+                "Sun8": "{{i18n:Dialogue.Clint.Sun8H}}",
+                "Sun10": "{{i18n:Dialogue.Clint.Sun10H}}",   
+                "summer_Thu6": "{{i18n:Dialogue.Clint.SumThu6H}}",
+                "winter_Wed6": "{{i18n:Dialogue.Clint.WinWed6H}}",
+                "spring_12": "{{i18n:Dialogue.Clint.Spr12DA}}",
+                "spring_23": "{{i18n:Dialogue.Clint.Spr23DA}}",
+                "summer_10": "{{i18n:Dialogue.Clint.Sum10D}}",
+                "summer_27": "{{i18n:Dialogue.Clint.Sum27D}}",
+                "fall_15": "{{i18n:Dialogue.Clint.Fal15D}}",
+                "fall_26": "{{i18n:Dialogue.Clint.Fal26D}}",
+                "winter_7": "{{i18n:Dialogue.Clint.Win7D}}",
+                "winter_15": "{{i18n:Dialogue.Clint.Win15D}}",
+                "winter_24": "{{i18n:Dialogue.Clint.Win24D}}",
+                "RejectBouquet_Divorced": "{{i18n:Dialogue.Clint.RejectBouquetDivorced}}",
+                "RejectBouquet_NpcAlreadyMarried": "{{i18n:Dialogue.Clint.RejectBouquetNpcAlreadyMarried}}",
+                "RejectBouquet_VeryLowHearts": "{{i18n:Dialogue.Clint.RejectBouquetVeryLowHearts}}",
+                "RejectBouquet_LowHearts": "{{i18n:Dialogue.Clint.RejectBouquetLowHearts}}",
+                "AcceptBouquet": "{{i18n:Dialogue.Clint.AcceptBouquet}}",
+                "FlowerDance_Accept": "{{i18n:Dialogue.Clint.FlowerDanceAccept}}",
+                "FlowerDance_Accept_Spouse": "{{i18n:Dialogue.Clint.FlowerDanceAcceptSpouse}}",
+                "WipedMemory": "{{i18n:Dialogue.Clint.WipedMemory}}",
+                "SpouseStardrop": "{{i18n:Dialogue.Clint.SpouseStardrop}}",
+                "RejectMermaidPendant": "{{i18n:Dialogue.Clint.RejectMermaidPendant}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:Dialogue.Clint.RejectMermaidPendantDivorced}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:Dialogue.Clint.RejectMermaidPendantNeedHouseUpgrade}}",
+                "RejectMermaidPendant_NpcWithSomeoneElse": "{{i18n:Dialogue.Clint.RejectMermaidPendantNpcWithSomeoneElse}}",
+                "RejectMermaidPendant_PlayerWithSomeoneElse": "{{i18n:Dialogue.Clint.RejectMermaidPendantPlayerWithSomeoneElse}}",
+                "RejectMermaidPendant_Under8Hearts": "{{i18n:Dialogue.Clint.RejectMermaidPendantUnder10Hearts}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:Dialogue.Clint.RejectMermaidPendantUnder10Hearts}}",
+                "RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:Dialogue.Clint.RejectMermaidPendantAskedAgain}}",
+                "SpouseFarmhouseClutter": "{{i18n:Dialogue.Clint.SpouseFarmhouseClutter}}",
+                "HitBySlingshot": "{{i18n:Dialogue.Clint.HitBySlingshot}}"
+            }
+        },
+        {
+            "Action": "EditData",
+			"Target": "Characters/Dialogue/Clint",
+			"Entries": {
+                "dating_Emily": "{{i18n:Dialogue.Clint.DatingEmily}}",
+                "married_Emily": null
+			},
+			"When": {
+				"HasFlag": "SPB_ClintsOverEmily"
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "Resort_Leaving": "{{i18n:Dialogue.Clint.ResortLeaving}}",
+                "Resort_Shore": "{{i18n:Dialogue.Clint.ResortShore}}",
+                "Resort": "{{i18n:Dialogue.Clint.ResortA}}"
+            },
+            "When": {
+                "Hearts:Clint": "6, 7, 8, 9, 10, 11, 12, 13, 14"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "Resort": "{{i18n:Dialogue.Clint.ResortB}}",
+                "spring_23": "{{i18n:Dialogue.Clint.Spr23DB}}"
+            },
+            "When": {
+                "Relationship:Clint": "Dating"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "spring_12": "{{i18n:Dialogue.Clint.Spr12DB}}"
+            },
+            "When": {
+                "HasMod": "SoftPandaBoi.CPAlecRevisited"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueClint",
+            "FromFile": "assets/empty.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueClint",
+            "Entries": {
+                "pregnancy": "{{i18n:MarriageDialogue.Clint.Pregnancy}}",
+                "adoption": "{{i18n:MarriageDialogue.Clint.Adoption}}",
+                "patio_Clint": "{{i18n:MarriageDialogue.Clint.Patio}}",
+                "spouseRoom_Clint": "{{i18n:MarriageDialogue.Clint.Room}}",
+                "Rainy_Day_0": "{{i18n:MarriageDialogue.Clint.RD0}}",  
+                "Rainy_Day_1": "{{i18n:MarriageDialogue.Clint.RD1}}",
+                "Rainy_Day_Clint": "{{i18n:MarriageDialogue.Clint.RD}}",
+                "Rainy_Night_0": "{{i18n:MarriageDialogue.Clint.RN0}}",
+                "Rainy_Night_Clint": "{{i18n:MarriageDialogue.Clint.RN}}",
+                "Indoor_Day_0": "{{i18n:MarriageDialogue.Clint.ID0}}",
+                "Indoor_Day_1": "{{i18n:MarriageDialogue.Clint.ID1}}",
+                "Indoor_Day_Clint": "{{i18n:MarriageDialogue.Clint.ID}}",
+                "Indoor_Night_0": "{{i18n:MarriageDialogue.Clint.IN0}}",
+                "Indoor_Night_1": "{{i18n:MarriageDialogue.Clint.IN1}}",
+                "Indoor_Night_2": "{{i18n:MarriageDialogue.Clint.IN2}}",
+                "Indoor_Night_Clint": "{{i18n:MarriageDialogue.Clint.IN}}",
+                "Outdoor_Clint": "{{i18n:MarriageDialogue.Clint.O}}",
+                "funLeave_Clint": "{{i18n:MarriageDialogue.Clint.FL}}",
+                "funReturn_Clint": "{{i18n:MarriageDialogue.Clint.FR}}",
+                "jobLeave": "{{i18n:arriageDialogue.Clint.JL}}",
+                "OneKid_0": "{{i18n:MarriageDialogue.Clint.OK0}}",
+                "OneKid_1": "{{i18n:MarriageDialogue.Clint.OK1}}",
+                "OneKid_2": "{{i18n:MarriageDialogue.Clint.OK2}}",
+                "TwoKids_0": "{{i18n:MarriageDialogue.Clint.TK0}}",
+                "TwoKids_1": "{{i18n:MarriageDialogue.Clint.TK1}}",
+                "Good_0": "{{i18n:MarriageDialogue.Clint.G0}}",
+                "Good_1": "{{i18n:MarriageDialogue.Clint.G1}}",
+                "Good_2": "{{i18n:MarriageDialogue.Clint.G2}}",
+                "Good_3": "{{i18n:MarriageDialogue.Clint.G3}}",
+                "Neutral_0": "{{i18n:MarriageDialogue.Clint.N0}}",
+                "Neutral_1": "{{i18n:MarriageDialogue.Clint.N1}}",
+                "Bad_0": "{{i18n:MarriageDialogue.Clint.B0}}",
+                "Bad_1": "{{i18n:MarriageDialogue.Clint.B1}}",
+                "Bad_2": "{{i18n:MarriageDialogue.Clint.B2}}",
+                "Bad_3": "{{i18n:MarriageDialogue.Clint.B3}}"
+            }
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Clint": "{{i18n:FestivaDialogue.Clint.FlowerDanceA}}"
+			},
+			"When": {
+				"HasFlag": "SPB_ClintsOverEmily"
+			}
+		},
+        {
+            "Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Clint": "{{i18n:FestivaDialogue.Clint.FlowerDanceB}}"
+			},
+            "When": {
+                "HasSeenEvent": "183450002"
+            }
+		},
+        {
+            "Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"Clint": "{{i18n:FestivaDialogue.Clint.MoonlightJellies}}"
+			},
+			"When": {
+				"Relationship:Clint": "Married"
+			}
+		},
+        {
+            "Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+				"Clint": "{{i18n:FestivaDialogue.Clint.SnowFestival}}"
+			},
+			"When": {
+				"HasFlag": "SPB_ClintsOverEmily"
+			}
+		},
+        {
+            "Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Clint": "{{i18n:FestivaDialogue.Clint.FeastOfTheWinterStar}}"
+            },
+            "When": {
+				"Relationship:Clint": "Married"
+			}
+		},
+        {
+            "Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"Clint_NoInventorySpace": "{{i18n:ExtraDialogue.Clint.NoInvSpa}}"
+			},
+            "When": {
+				"Relationship:Clint": "Married"
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Clint",
+            "Entries": {
+                "SPB_JustThinking.000": "{{i18n:ScheduleDialogue.Clint.JustThinking}}",
+                "SPB_MonWork.000": "{{i18n:ScheduleDialogue.Clint.MonWork}}",
+                "SPB_SatWork.000": "{{i18n:ScheduleDialogue.Clint.SatWork}}",
+                "SPB_SunWork.000": "{{i18n:ScheduleDialogue.Clint.SunWork}}",
+                "SPB_SaloonVisit.000": "{{i18n:ScheduleDialogue.Clint.SaloonVisit}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "fall_Thu8": "{{i18n:Dialogue.Emily.FalThu8H}}"
+            },
+            "When": {
+                "HasFlag": "SPB_ClintsOverEmily"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "Thu6": "{{i18n:Dialogue.Gus.Thu6H}}"
+            },
+            "When": {
+                "HasFlag": "SPB_ClintsOverEmily"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "Saloon_Sat": "{{i18n:Dialogue.Marnie.SalSat}}"
+            },
+            "When": {
+                "HasFlag": "SPB_ClintsOverEmily"
+            }
+        }
+    ]
+}

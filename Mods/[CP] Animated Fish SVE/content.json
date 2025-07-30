@@ -1,0 +1,761 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "Butterfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BabyLunaloo": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Bonefish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BullTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Clownfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Daggerfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "DulseSeaweed": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Frog": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Gemfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Goldenfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GrassCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "KingSalmon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Kittyfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Lunaloo": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MeteorCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Minnow": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Puppyfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RadioactiveBass": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RazorTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Seahorse": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SeaSponge": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "ShinyLunaloo": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SnatcherWorm": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Starfish": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Starfish2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TorpedoTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Undeadfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "VoidEel": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "VoidEel2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "WaterGrub": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Baby Lunaloo",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BabyLunaloo": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_BabyLunaloo": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Baby Lunaloo",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/babylunaloo.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Bonefish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bonefish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Bonefish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Bonefish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bonefish.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Bull Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BullTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_BullTrout": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Bull Trout",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bull_trout.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Butterfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Butterfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Butterfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Butterfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/butterfish.png}}:0..5@30"
+                }
+            }
+        },
+        {
+            "LogName": "Clownfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Clownfish": true,
+                "HasMod |contains=MoreFish": false
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Clownfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Clownfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/clownfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Daggerfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Daggerfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Daggerfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Daggerfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/daggerfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Dulse Seaweed",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "DulseSeaweed": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_DulseSeaweed": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Dulse Seaweed",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/dulse_seaweed.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Frog",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Frog": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Frog": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Frog",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/frog.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Gemfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Gemfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Gemfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Gemfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/gemfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Goldenfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Goldenfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Goldenfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Goldenfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/goldenfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Grass Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GrassCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_GrassCarp": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Grass Carp",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/grass_carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "King Salmon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "KingSalmon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_KingSalmon": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\King Salmon",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/kingsalmon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lunaloo",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Lunaloo": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Lunaloo": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Lunaloo",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lunaloo.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Meteor Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MeteorCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_MeteorCarp": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Meteor Carp",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/meteor_carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Kittyfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Kittyfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Kittyfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Kittyfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/kittyfish.png}}:0..5@20"
+                }
+            }
+        },
+        {
+            "LogName": "Minnow",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Minnow": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Minnow": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Minnow",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/minnow.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Puppyfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Puppyfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Puppyfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Puppyfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/puppyfish.png}}:0..5@30"
+                }
+            }
+        },
+        {
+            "LogName": "Radioactive Bass",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RadioactiveBass": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_RadioactiveBass": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Radioactive Bass",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/radioactive_bass.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Razor Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RazorTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_RazorTrout": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Razor Trout",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/razortrout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Seahorse",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Seahorse": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Seahorse": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Seahorse",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seahorse.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sea Sponge",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SeaSponge": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_SeaSponge": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Sea Sponge",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seasponge.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Shiny Lunaloo",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ShinyLunaloo": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_ShinyLunaloo": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Shiny Lunaloo",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/shinylunaloo.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Snatcher Worm",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SnatcherWorm": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_SnatcherWorm": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Snatcher Worm",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/snatcher_worm.png}}:0..4@40"
+                }
+            }
+        },
+        {
+            "LogName": "Starfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Starfish": true,
+                "HasMod |contains=MoreFish": false
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Starfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Starfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/starfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Starfish2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Starfish2": true,
+                "HasMod |contains=MoreFish": false
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Starfish2": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Starfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/starfish2.png}}:0..15@20"
+                }
+            }
+        },
+        {
+            "LogName": "Torpedo Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TorpedoTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_TorpedoTrout": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Torpedo Trout",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/torpedo_trout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Undeadfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Undeadfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_Undeadfish": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Undeadfish",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/undeadfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Void Eel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VoidEel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_VoidEel": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Void Eel",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/voideel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Void Eel2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VoidEel2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_VoidEel2": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Void Eel",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/voideel2.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Water Grub",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WaterGrub": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFishSVE_WaterGrub": {
+                    "TargetTexture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Water Grub",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/water_grub.png}}:0..3@20"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,216 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Sebastian's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Sebastian_Spring, Portraits/Sebastian_Summer, Portraits/Sebastian_Fall, Portraits/Sebastian_Winter_Outdoor, Portraits/Sebastian_Winter_Indoor, Portraits/Sebastian_FlowerDance, Portraits/Sebastian_SpiritsEve, Portraits/Sebastian_EggF, Portraits/Sebastian_Fair, Portraits/Sebastian_Jellies, Portraits/Sebastian_Luau, Portraits/Sebastian_Winter_IceF, Portraits/Sebastian_Winter_WinterStar, Characters/Sebastian_Spring, Characters/Sebastian_Summer, Characters/Sebastian_Fall, Characters/Sebastian_Winter_Outdoor, Characters/Sebastian_Winter_Indoor, Characters/Sebastian_FlowerDance, Characters/Sebastian_SpiritsEve, Characters/Sebastian_EggF, Characters/Sebastian_Fair, Characters/Sebastian_Jellies, Characters/Sebastian_Luau, Characters/Sebastian_Winter_IceF, Characters/Sebastian_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Sebastian/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Sebastian's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Beach, Characters/Sebastian_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sebastian/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Sebastian - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian_Spring, Characters/Sebastian_Summer, Characters/Sebastian_Fall, Characters/Sebastian_Winter_Outdoor, Characters/Sebastian_Winter_Indoor, Characters/Sebastian_FlowerDance, Characters/Sebastian_SpiritsEve, Characters/Sebastian_EggF, Characters/Sebastian_Fair, Characters/Sebastian_Jellies, Characters/Sebastian_Luau, Characters/Sebastian_Winter_IceF, Characters/Sebastian_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Sebastian/Sebastian_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Sebastian - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Sebastian/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sebastian Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sebastian", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.SebastianSpring": {
+					"Id": "{{ModId}}.SebastianSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Sebastian_Spring",
+					"Portrait": "Portraits/Sebastian_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.SebastianSummer": {
+					"Id": "{{ModId}}.SebastianSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Sebastian_Summer",
+					"Portrait": "Portraits/Sebastian_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SebastianFall": {
+					"Id": "{{ModId}}.SebastianFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Sebastian_Fall",
+					"Portrait": "Portraits/Sebastian_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SebastianWinterIndoor": {
+					"Id": "{{ModId}}.SebastianWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Sebastian_Winter_Indoor",
+					"Portrait": "Portraits/Sebastian_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SebastianWinterOutdoor": {
+					"Id": "{{ModId}}.SebastianWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Sebastian_Winter_Outdoor",
+					"Portrait": "Portraits/Sebastian_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.SebastianEggFest": {
+					"Id": "{{ModId}}.SebastianEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_EggF",
+					"Portrait": "Portraits/Sebastian_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SebastianFlowerDance": {
+					"Id": "{{ModId}}.SebastianFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_FlowerDance",
+					"Portrait": "Portraits/Sebastian_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SebastianLuau": {
+					"Id": "{{ModId}}.SebastianLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_Luau",
+					"Portrait": "Portraits/Sebastian_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SebastianJellies": {
+					"Id": "{{ModId}}.SebastianJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_Jellies",
+					"Portrait": "Portraits/Sebastian_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SebastianFair": {
+					"Id": "{{ModId}}.SebastianFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_Fair",
+					"Portrait": "Portraits/Sebastian_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SebastianSpirit": {
+					"Id": "{{ModId}}.SebastianSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Sebastian_SpiritsEve",
+					"Portrait": "Portraits/Sebastian_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SebastianIceFestival": {
+					"Id": "{{ModId}}.SebastianIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_Winter_IceF",
+					"Portrait": "Portraits/Sebastian_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SebastianWinterStar": {
+					"Id": "{{ModId}}.SebastianWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sebastian_Winter_WinterStar",
+					"Portrait": "Portraits/Sebastian_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.SebastianBeach": {
+					"Id": "{{ModId}}.SebastianBeach",
+					"Sprite": "Characters/Sebastian_Beach",
+					"Portrait": "Portraits/Sebastian_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sebastian - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Sebastian - Motorbike Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+			"ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+		},
+		{
+			"LogName": "Sebastian - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 103, "Y": 311, "Width": 18, "Height": 18},
+			"ToArea": {"X": 103, "Y": 311, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Sebastian Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sebastian",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

@@ -1,0 +1,60 @@
+{
+    "Changes": [
+        {
+            //Add events to the blocklist so they won't show up
+            //in the "Available Events" menu
+            //left-hand side is the event id, right side doesnt matter
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/blocklist",
+            "Entries": {
+                "57870008": "T",
+                "57870015": "T",
+                "57879000": "T",
+                "69660010": "T",
+                "57874011": "T",
+                "57876026": "T",
+                "57876027": "T",
+                "57876029": "T",
+                "57876031": "T",
+                "57877009": "T"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/blocklist",
+            "When": {
+                "HasSeenEvent |contains=57874011": false
+            },
+            "Entries": {
+                "57874012": "T"
+            }
+        },
+        {
+            //Add "displayname" to locations
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/locationnames",
+            "Entries": {
+                "EastScarpe_Village": "{{i18n:EastScarp.Locations.EastScarp}}",
+                "EastScarp_Lighthouse": "{{i18n:EastScarp.Locations.Lighthouse}}",
+                "EastScarp_House1": "{{i18n:EastScarp.Locations.Aideen}}",
+                "EastScarp_ARVHouse": "{{i18n:EastScarp.Locations.ARV}}",
+                /*"EastScarp_House2": "",
+                "EastScarp_House3": "",
+                "EastScarp_House4": "",*/
+                "EastScarp_BirdHide": "{{i18n:EastScarp.Locations.BirdHide}}",
+                "EastScarp_VetHouse": "{{i18n:EastScarp.Locations.Vet}}",
+                "EastScarp_JacobOffice": "{{i18n:EastScarp.Locations.JOffice}}",
+                "EastScarp_JacobBarn": "{{i18n:EastScarp.Locations.JBarn}}",
+                "EastScarp_Silo": "{{i18n:EastScarp.Locations.Silo}}",
+                "EastScarp_DeepMountains": "{{i18n:EastScarp.Locations.DeepMountains}}",
+                "EastScarp_Orchard": "{{i18n:EastScarp.Locations.Orchard}}",
+                "EastScarp_DeepDark": "{{i18n:EastScarp.Locations.DeepDark}}",
+                "EastScarp_OrchardHouse": "{{i18n:EastScarp.Locations.OrchardHouse}}",
+                "EastScarp_Shack": "{{i18n:EastScarp.Locations.Smuggler}}",
+                "EastScarp_SeaCave": "{{i18n:EastScarp.Locations.SeaCave}}",
+                "EastScarp_VillageInn": "{{i18n:EastScarp.Locations.Inn}}",
+                "EastScarp_MeadowFarm": "{{i18n:EastScarp.Locations.MeadowFarm}}",
+            }
+        }
+    ]
+}

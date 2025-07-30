@@ -1,0 +1,77 @@
+{
+  "Name": "HappySlime",
+  "Type": "Walking",
+  "TileSheetPath": "Characters\\HappySlime",
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": false,
+  "EnableShadow": true,
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 255
+  },
+  "TravelSpeed": 2,
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "IsPrismatic": false,
+  "AppearUnderwater": false,
+  "InspectionDialogue": "一只漂亮的金色史莱姆，看起来很友善。",
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 32,
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 175,
+    "IdleAnimation": {
+      "StartingFrame": 8,
+      "NumberOfFrames": 4,
+      "Duration": 175
+    }
+  },
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 175,
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 4,
+      "Duration": 175
+    }
+  },
+  // This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": 12,
+    "NumberOfFrames": 4,
+    "Duration": 175,
+    "IdleAnimation": {
+      "StartingFrame": 12,
+      "NumberOfFrames": 4,
+      "Duration": 175
+    }
+  },
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 175,
+    "IdleAnimation": {
+      "StartingFrame": 4,
+      "NumberOfFrames": 4,
+      "Duration": 175
+    }
+  },
+  "Sounds": [
+    {
+      "SoundName": "slime",
+      "WhenToPlay": "Idle",
+      "TimeBetweenSound": 5000,
+      "ChanceOfPlaying": 0.3
+    }
+  ]
+}

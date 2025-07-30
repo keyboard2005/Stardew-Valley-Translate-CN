@@ -1,0 +1,208 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Elliott's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Elliott_Spring, Portraits/Elliott_Summer, Portraits/Elliott_Fall, Portraits/Elliott_Winter_Outdoor, Portraits/Elliott_Winter_Indoor, Portraits/Elliott_FlowerDance, Portraits/Elliott_SpiritsEve, Portraits/Elliott_EggF, Portraits/Elliott_Fair, Portraits/Elliott_Jellies, Portraits/Elliott_Luau, Portraits/Elliott_Winter_IceF, Portraits/Elliott_Winter_WinterStar, Characters/Elliott_Spring, Characters/Elliott_Summer, Characters/Elliott_Fall, Characters/Elliott_Winter_Outdoor, Characters/Elliott_Winter_Indoor, Characters/Elliott_FlowerDance, Characters/Elliott_SpiritsEve, Characters/Elliott_EggF, Characters/Elliott_Fair, Characters/Elliott_Jellies, Characters/Elliott_Luau, Characters/Elliott_Winter_IceF, Characters/Elliott_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Elliott/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Elliott's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott_Beach, Characters/Elliott_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Elliott/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Elliott - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott_Spring, Characters/Elliott_Summer, Characters/Elliott_Fall, Characters/Elliott_Winter_Outdoor, Characters/Elliott_Winter_Indoor, Characters/Elliott_FlowerDance, Characters/Elliott_SpiritsEve, Characters/Elliott_EggF, Characters/Elliott_Fair, Characters/Elliott_Jellies, Characters/Elliott_Luau, Characters/Elliott_Winter_IceF, Characters/Elliott_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Elliott/Elliott_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Elliott - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Elliott/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Elliott Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Elliott", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.ElliottSpring": {
+					"Id": "{{ModId}}.ElliottSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Elliott_Spring",
+					"Portrait": "Portraits/Elliott_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.ElliottSummer": {
+					"Id": "{{ModId}}.ElliottSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Elliott_Summer",
+					"Portrait": "Portraits/Elliott_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ElliottFall": {
+					"Id": "{{ModId}}.ElliottFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Elliott_Fall",
+					"Portrait": "Portraits/Elliott_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ElliottWinterIndoor": {
+					"Id": "{{ModId}}.ElliottWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Elliott_Winter_Indoor",
+					"Portrait": "Portraits/Elliott_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ElliottWinterOutdoor": {
+					"Id": "{{ModId}}.ElliottWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Elliott_Winter_Outdoor",
+					"Portrait": "Portraits/Elliott_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.ElliottEggFest": {
+					"Id": "{{ModId}}.ElliottEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_EggF",
+					"Portrait": "Portraits/Elliott_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ElliottFlowerDance": {
+					"Id": "{{ModId}}.ElliottFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_FlowerDance",
+					"Portrait": "Portraits/Elliott_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.ElliottLuau": {
+					"Id": "{{ModId}}.ElliottLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_Luau",
+					"Portrait": "Portraits/Elliott_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ElliottJellies": {
+					"Id": "{{ModId}}.ElliottJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_Jellies",
+					"Portrait": "Portraits/Elliott_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.ElliottFair": {
+					"Id": "{{ModId}}.ElliottFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_Fair",
+					"Portrait": "Portraits/Elliott_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ElliottSpirit": {
+					"Id": "{{ModId}}.ElliottSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Elliott_SpiritsEve",
+					"Portrait": "Portraits/Elliott_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.ElliottIceFestival": {
+					"Id": "{{ModId}}.ElliottIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_Winter_IceF",
+					"Portrait": "Portraits/Elliott_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ElliottWinterStar": {
+					"Id": "{{ModId}}.ElliottWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Elliott_Winter_WinterStar",
+					"Portrait": "Portraits/Elliott_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.ElliottBeach": {
+					"Id": "{{ModId}}.ElliottBeach",
+					"Sprite": "Characters/Elliott_Beach",
+					"Portrait": "Portraits/Elliott_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Elliott - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Elliott - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 135, "Y": 311, "Width": 18, "Height": 18},
+			"ToArea": {"X": 135, "Y": 311, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Elliott Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Elliott",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

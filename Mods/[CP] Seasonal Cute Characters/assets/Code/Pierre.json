@@ -1,0 +1,148 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Pierre's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Pierre_Spring, Portraits/Pierre_Summer, Portraits/Pierre_Fall, Portraits/Pierre_Winter_Outdoor, Portraits/Pierre_Winter_Indoor, Portraits/Pierre_FlowerDance, Portraits/Pierre_SpiritsEve, Characters/Pierre_Spring, Characters/Pierre_Summer, Characters/Pierre_Fall, Characters/Pierre_Winter_Outdoor, Characters/Pierre_Winter_Indoor, Characters/Pierre_FlowerDance, Characters/Pierre_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Pierre/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Pierre's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Pierre_Beach, Characters/Pierre_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Pierre/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Pierre - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pierre_Spring, Characters/Pierre_Summer, Characters/Pierre_Fall, Characters/Pierre_Winter_Outdoor, Characters/Pierre_Winter_Indoor, Characters/Pierre_FlowerDance, Characters/Pierre_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Pierre/Pierre_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Pierre - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pierre_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Pierre/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Pierre Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Pierre", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.PierreSpring": {
+					"Id": "{{ModId}}.PierreSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Pierre_Spring",
+					"Portrait": "Portraits/Pierre_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.PierreSummer": {
+					"Id": "{{ModId}}.PierreSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Pierre_Summer",
+					"Portrait": "Portraits/Pierre_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PierreFall": {
+					"Id": "{{ModId}}.PierreFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Pierre_Fall",
+					"Portrait": "Portraits/Pierre_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PierreWinterIndoor": {
+					"Id": "{{ModId}}.PierreWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Pierre_Winter_Indoor",
+					"Portrait": "Portraits/Pierre_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PierreWinterOutdoor": {
+					"Id": "{{ModId}}.PierreWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Pierre_Winter_Outdoor",
+					"Portrait": "Portraits/Pierre_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.PierreFlowerDance": {
+					"Id": "{{ModId}}.PierreFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Pierre_FlowerDance",
+					"Portrait": "Portraits/Pierre_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.PierreSpirit": {
+					"Id": "{{ModId}}.PierreSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Pierre_SpiritsEve",
+					"Portrait": "Portraits/Pierre_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.PierreBeach": {
+					"Id": "{{ModId}}.PierreBeach",
+					"Sprite": "Characters/Pierre_Beach",
+					"Portrait": "Portraits/Pierre_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Pierre - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 27, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 27, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Pierre Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Pierre",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"Changes":[
+		{
+			"LogName": "Desert Trader",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "DesertTrade", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/DesertTrader_{{Trader}}"},
+		},	
+		{
+			"LogName": "Trader Shift",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/LooseSprites/DesertTrader_{{Trader}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 614, "Width": 180, "Height": 26 },
+			"When": {"HasFile:{{FromFile}}": true}
+		},	
+		{
+			"LogName": "Desert Trader Dialogue",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"DesertTrader4_male": "{{i18n:DesertTrader4_male.{{Trader}}}}",
+				"DesertTrader4_female": "{{i18n:DesertTrader4_female.{{Trader}}}}",
+				"DesertTrader3": "{{i18n:DesertTrader3.{{Trader}}}}",
+				"DesertTrader2": "{{i18n:DesertTrader2.{{Trader}}}}",
+				"DesertTrader1": "{{i18n:DesertTrader1.{{Trader}}}}",
+			},
+			"When": {"Trader": "Scholar, RacerGuy"},
+		},
+	],
+}

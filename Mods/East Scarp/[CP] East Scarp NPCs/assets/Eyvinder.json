@@ -1,0 +1,465 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Eyvinder": "{{i18n:gift.love.eyvinder}}/279 (O)EastScarp_Azure_Chrysanthemum (O)EastScarp_Serruria/{{i18n:gift.like.eyvinder}}/417 440 534/{{i18n:gift.dislike.eyvinder}}/-15 -16/{{i18n:gift.hate.eyvinder}}/-20 -24 -8/{{i18n:gift.neutral.eyvinder}}/-81 -2 -79 -75 -4 -5 -7 -26 -74 -6 -18 74 446 797 373/"
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "FriendableAnimals |contains=LittleGruff": true
+            },
+            "Entries": {
+                "LittleGruff": "{{i18n:gift.love.littlegruff}}/613 436 438 300 78/{{i18n:gift.like.littlegruff}}/-75 -79 184 186 433 169 178/{{i18n:gift.dislike.littlegruff}}/-26/{{i18n:gift.hate.littlegruff}}/-15 -16 -19/{{i18n:gift.neutral.littlegruff}}/-7/"
+            }
+        },
+        { //If you're friends with Gruff, Vindr is easier to befriend.
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasFlag": "Eyvindr_GoatFriend"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Eyvinder",
+                        1
+                    ],
+                    "Value": "613",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        { //Eyvinder loves mead from you after 6 hearts
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasFlag": "Eyvinder_DrinkMead"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Eyvinder",
+                        1
+                    ],
+                    "Value": "459",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        { //Eyvinder likes fruit and veges after 3 hearts
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasFlag": "Eyvinder_BringVegesFruit"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Eyvinder",
+                        3
+                    ],
+                    "Value": "-75 -79",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        /* {
+            "LogName": "NPC Exclusion antisocial NPCs",
+            "Action": "EditData",
+            "Target": "Data/CustomNPCExclusions",
+            "Entries": {
+                "Eyvinder": "ALL",
+                "LittleGruff": "ALL"
+            }
+        },
+        {
+            "LogName": "Eyvinder's antisocial flags",
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Eyvinder": true
+            },
+            "When": {
+                "HasSeenEvent |contains=57877001": false
+            }
+        },
+        {
+            "LogName": "Eyvinder's antisocial flags",
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "LittleGruff": true
+            }
+        },*/
+        {
+            "Action": "Load",
+            "Target": "Characters/Eyvinder",
+            "FromFile": "assets/Characters/Eyvinder/Eyvinder_sprites_spring.png"
+        },
+        {
+            "Action": "Load",
+            "Priority":"Low",
+            "Target": "Portraits/Eyvinder",
+            "FromFile": "assets/Portraits/Eyvinder/Eyvinder_portraits_spring.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Eyvinder",
+            "FromFile": "assets/Characters/Eyvinder/Eyvinder_sprites_{{season}}.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Eyvinder",
+            "FromFile": "assets/Portraits/Eyvinder/Eyvinder_portraits_{{season}}.png"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/schedules/Eyvinder",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.json"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Eyvinder.json"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/LittleGruff",
+            "Entries": {
+                "Mon": "{{i18n:littlegruff.mon}}",
+                "Tue": "{{i18n:littlegruff.tue}}",
+                "Wed": "{{i18n:littlegruff.wed}}",
+                "Thu": "{{i18n:littlegruff.thu}}",
+                "Fri": "{{i18n:littlegruff.fri}}",
+                "Sat": "{{i18n:littlegruff.sat}}",
+                "Sun": "{{i18n:littlegruff.sun}}",
+                "AcceptGift_(O)78": "{{i18n:littlegruff.AcceptGift_(O)78}}"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/LittleGruff",
+            "FromFile": "assets/{{target}}.json"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eyvinder",
+            "Entries": {
+                "spring": "610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1100 EastScarp_DeepMountains 110 17 2/1600 EastScarp_DeepMountains 98 57 0/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "Tue": "610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1100 EastScarp_DeepMountains 86 31 2/1600 EastScarp_DeepMountains 92 49 1/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "Wed": "610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1300 EastScarp_DeepMountains 92 49 1/1820 EastScarp_DeepMountains 110 17 2/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "Fri": "MAIL Eyvind_Garden/GOTO Wed/610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1100 EastScarp_DeepMountains 79 13 0 square 5_1_0/1820 EastScarp_DeepMountains 110 17 2/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "Sun": "MAIL Eyvind_Vivienne/GOTO Wed/610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/a1300 EastScarp_Village 48 41 2 eyvinder_sit/1800 EastScarp_DeepMountains 92 49 1/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "Mon": "MAIL Eyvind_Town/GOTO spring/610 EastScarp_EyvinderCave 5 6 2/a1300 Saloon 1 22 2/1700 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+                "rain": "610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1100 EastScarp_EyvinderCave 7 5 0 eyvinder_sit/1700 EastScarp_EyvinderCave 5 6 2/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep"
+            },
+            "When": {
+                "HasSeenEvent:hostPlayer |contains=57877001": true
+            }
+        },
+        //Temporary Actor
+        {
+            "Action": "Load",
+            "Target": "Characters/ESCamera",
+            "FromFile": "assets/Images/camera.png"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/George",
+            "Entries": {
+                "Mon": "MAIL Eyvind_Town/GOTO spring/630 JoshHouse 16 22 0/a1300 Saloon 3 23 3/1700 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/LittleGruff",
+            "Entries": {
+                "spring": "610 EastScarp_EyvinderCave 7 7 3/900 EastScarp_EyvinderCave 19 10 2 square_3_3/1100 EastScarp_DeepMountains 108 16 2 square_3_3/1600 EastScarp_DeepMountains 113 45 0 square_5_3/2200 EastScarp_EyvinderCave 19 8 LittleGruff_Sleep",
+                "Fri": "MAIL Eyvind_Garden/GOTO spring/610 EastScarp_EyvinderCave 7 7 3/900 EastScarp_EyvinderCave 19 8 2/1100 EastScarp_DeepMountains 82 20 square_5_7/1810 EastScarp_DeepMountains 108 16 2 square_3_3/2200 EastScarp_EyvinderCave 19 8 LittleGruff_Sleep",
+                "rain": "610 EastScarp_EyvinderCave 7 7 3/900 EastScarp_EyvinderCave 19 10 2 square_3_3/1100 EastScarp_EyvinderCave 8 7 2 square_3_3/2200 EastScarp_EyvinderCave 19 8 LittleGruff_Sleep"
+                /* "Tue": "0 EastScarp_EyvinderCave 19 8 2/900 EastScarp_EyvinderCave 19 10 2 square_3_3/1100 EastScarp_DeepMountains 86 31 2/1600 EastScarp_DeepMountains 92 49 1/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+        "Wed": "610 EastScarp_EyvinderCave 5 6 2/900 EastScarp_EyvinderCave 16 11 2 eyvinder_spin/1300 EastScarp_DeepMountains 92 49 1/1820 EastScarp_DeepMountains 110 17 2/2200 EastScarp_EyvinderCave 19 7 eyvinder_sleep",
+        "Fri": "GOTO Wed",
+        "Sun": "GOTO Wed"*/
+            },
+            "When": {
+                "HasSeenEvent:anyPlayer |contains=57877003": true
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "eyvinder_spin": "24/24 24 24 25 25 25 26 26 26 27 27 27/24",
+                "eyvinder_sleep": "51/51/51",
+                "eyvinder_sit": "21 22 23/23/23 22 21",
+                "LittleGruff_Sleep": "16 17 18 19/19/19 18 17 16"
+            }
+        },
+        /*{ // not implemented as Eyvinder not yet datable
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eyvinder",
+            "When": {
+                "Relationship:Eyvinder": "Dating, Engaged"
+            }, // kjaere = dear
+            "Entries": {
+                "Mon10": "Never would've thought I'd find happiness with a human.$4#$b#You're a true pearl amongst the swine, kjaere.$1",
+                "Tue10": "I caught a golden trout today, and it made me think of you.$1#$b#Sorry, that was meant to be a compliment. Yeh, it needs work, I know.$2",
+                "Wed10": " ",
+                "Thu10": "",
+                "Fri10": "",
+                "Sat10": "",
+                "Sun10": "",
+                "summer_Mon10": "Greetings @! I was about to take a dip in the lake. Want to join me?$1",
+                "summer_Tue10": "",
+                "summer_Wed10": "",
+                "summer_Thu10": "I've closed myself off to your world for so long, I must've missed so much.#$b#Do you have {{random:flying vehicles, personal robots, telepathy}} yet?#$b#No? Oh, that's a disappointment.$2",
+                "summer_Fri10": "",
+                "summer_Sat10": "",
+                "summer_Sun10": "",
+                "fall_Mon10": "Ah, kjaere, your eyes are as beautiful as your face.$4#$b#And yes, I very much love to make you laugh.$1",
+                "fall_Tue10": "",
+                "fall_Wed10": "",
+                "fall_Thu10": "",
+                "fall_Fri10": "",
+                "fall_Sat10": "",
+                "fall_Sun10": "",
+                "winter_Mon10": "Care to join me by the fire for a night of mead, stories and song?$1#$b#I'm sure you have many fine tales to tell!$4",
+                "winter_Tue10": "",
+                "winter_Wed10": "",
+                "winter_Thu10": "",
+                "winter_Fri10": "",
+                "winter_Sat10": "",
+                "winter_Sun10": "",
+            }
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57877000/j 22/z winter/t 2350 2600": "junimoKart_ghostMusic/-1000 -1000/farmer 1 71 1/addConversationTopic OldGruffCausesTrouble 2/addTemporaryActor VoidBilly 32 32 16 60 2 false animal OldGruff/viewport 14 69 clamp true/advancedMove farmer false 11 0 1 1000/advancedMove OldGruff false 0 11 3 1000/pause 5500/playSound goat/playSound shadowpeep/pause 500/jump farmer 5/emote farmer 16/pause 1000/faceDirection farmer 1/playSound shadowpeep/playSound goat/startJittering farmer/pause 1000/emote OldGruff 12/advancedMove OldGruff false 17 0 1 1000/pause 1000/stopJittering farmer/emote farmer 28/pause 2000/stopAdvancedMoves/end",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57877001/e 57877000/A OldGruffCausesTrouble/t 700 1600/w sunny": "{{season}}_day_ambient/-1000 -1000/Jacob 16 65 2 farmer 11 71 1 Rosa 54 58 1 Eyvinder -100 -100 2/skippable/IgnoreCollisions farmer/viewport 7 71 clamp true/addConversationTopic IntroEyvindr 14/move farmer 5 0 0 true/move Jacob 0 5 2 true/pause 500/textAboveHead Jacob \"{{PlayerName}}\"/pause 1500/speak Jacob \"{{i18n:57877001.02}}\"/pause 500/emote farmer 8/pause 500/speak Jacob \"{{i18n:57877001.03}}\"/pause 500/speak Rosa \"{{i18n:57877001.04}}\"/pause 500/faceDirection Jacob 1/jump farmer 5 true/jump Jacob 5 true/emote farmer 16 true/textAboveHead Jacob \"{{i18n:57877001.05}}\"/playMusic archaeo/speed farmer 5/speed Jacob 5/advancedMove farmer false 10 0 1 1000/advancedMove Jacob false 10 0 1 1000/pause 1000/fade/viewport -1000 -1000/showFrame Rosa 31/addTemporaryActor VoidBilly 32 32 55 61 1 false animal OldGruff/stopAdvancedMoves/warp farmer 48 65/warp Jacob 48 66/viewport 54 62/advancedMove OldGruff false -3 0 2 500 0 2 1 1000/faceDirection farmer 2/emote farmer 8/faceDirection Jacob 0/pause 500/emote Jacob 40/speed farmer 1/speed Jacob 1/advancedMove farmer false 5 0 4 1000/advancedMove Jacob false 4 0 4 1000/pause 500/playSound shadowpeep/playSound goat/pause 2500/playSound shadowpeep/playSound goat/playSound leafrustle/textAboveHead Rosa \"{{i18n:57877001.06}}\"/pause 500/speak Rosa \"{{i18n:57877001.07}}\"/pause 1000/faceDirection OldGruff 2/emote OldGruff 12/playSound shadowpeep/playSound goat/pause 1000/emote farmer 28/question fork0 \"{{i18n:57877001.08}}#{{i18n:57877001.09}}#{{i18n:57877001.10}}\"/fork OldGruff_Sword/pause 500/showFrame farmer 65/playSound achievement/addObject 53 63 613 1/pause 500/emote OldGruff 16/playSound shadowpeep/playSound goat/pause 500/speak Jacob \"{{i18n:57877001.11}}\"/pause 500/emote farmer 56/removeSprite 53 63/animate farmer false false 250 14 12/positionOffset farmer 0 16/animate OldGruff false false 250 1 0/positionOffset OldGruff 0 16/pause 500/textAboveHead Rosa \"{{i18n:57877001.12}}\"/animate farmer false false 250 13 12/positionOffset farmer 0 16/animate OldGruff false false 250 3 0/positionOffset OldGruff 0 16/pause 500/fade/viewport -1000 -1000/warp Jacob -100 -100 true/warp Rosa -100 -100 true/pause 500/playSound shadowpeep/playSound goat/pause 500/addMailReceived Eyvindr_GoatFriend/addTemporaryActor VoidNanny 32 32 67 46 2 false animal VoidNanny/addTemporaryActor VoidKid 32 32 65 45 1 false animal VoidKid/changeLocation EastScarp_DeepMountains/warp OldGruff 66 50 true/warp farmer 65 52 true/warp Eyvinder 66 33 true/viewport 66 51/pause 1000/emote farmer 56/pause 500/faceDirection farmer 1/pause 500/playSound coin/addObject 66 52 613 0/emote OldGruff 20/advancedMove farmer false -1 0 0 3 4 1000/pause 500/advancedMove OldGruff false 0 2 2 1000/pause 1000/playSound eat/removeSprite 66 52/pause 1500/advancedMove farmer false 0 6 2 1000/viewport move 0 -3 5000 true/pause 4000/emote Eyvinder 32/pause 1000/stopAdvancedMoves/end",
+                "OldGruff_Sword": "pause 500/showFrame farmer 44/playSound parry/pause 1000/playSound swordswipe/pause 500/emote OldGruff 16/playSound shadowpeep/playSound goat/pause 500/speak Jacob \"{{i18n:57877001.OldGruff_Sword.01}}\"/pause 500/emote farmer 56/animate farmer false false 250 14 12/positionOffset farmer 0 -16/animate OldGruff false false 250 1 0/positionOffset OldGruff 0 -16/pause 500/textAboveHead Rosa \"{{i18n:57877001.OldGruff_Sword.02}}\"/animate farmer false false 250 13 12/positionOffset farmer 0 -16/animate OldGruff false false 250 3 0/positionOffset OldGruff 0 -16/pause 500/fade/viewport -1000 -1000/warp Jacob -100 -100 true/warp Rosa -100 -100 true/pause 500/playSound swordswipe/pause 500/playSound shadowpeep/playSound goat/pause 500/addMailReceived Eyvindr_GoatEnemy/addTemporaryActor VoidNanny 32 32 70 41 2 false animal VoidNanny/addTemporaryActor VoidKid 32 32 68 41 1 false animal VoidKid/changeLocation EastScarp_DeepMountains/warp OldGruff 66 50 true/warp farmer 66 52 true/warp Eyvinder 66 33 true/viewport 66 51/pause 1000/emote farmer 12/pause 500/playSound swordswipe/advancedMove OldGruff false 0 -8 4 0 4 1000/pause 1000/emote farmer 32/pause 1000/advancedMove farmer false 0 6 2 1000/viewport move 0 -3 5000 true/pause 4000/emote Eyvinder 12/pause 1000/stopAdvancedMoves/end",
+                "57877009/p VivienneLK/p Eyvinder": "{{season}}_day_ambient/54 40/VivienneLK 54 40 2 Eyvinder 63 30 2 farmer 47 40 2 LadySheba 47 41 0/skippable/AddMailReceived Eyvind_Vivienne/animate VivienneLK false true 250 19 19 18 17 18 19/showFrame farmer 29/advancedMove Eyvinder false 0 3 -1 0 0 2 -2 0 0 2 -1 0 0 1 -2 0 2 1000/pause 6500/emote Eyvinder 8/speak Eyvinder \"{{i18n:57877009.01}}\"/stopAnimation VivienneLK 8/move VivienneLK 0 1 0/textAboveHead VivienneLK \"{{i18n:57877009.02}}\"/speed Eyvinder 5/advancedMove Eyvinder false 0 3 -1 0 3 1000/pause 500/faceDirection VivienneLK 1/speak Eyvinder \"{{i18n:57877009.03}}\"/pause 1000/speak VivienneLK \"{{i18n:57877009.04}}\"/pause 500/speak Eyvinder \"{{i18n:57877009.05}}\"/pause 500/speak VivienneLK \"{{i18n:57877009.06}}\"/emote Eyvinder 8/pause 500/speak VivienneLK \"{{i18n:57877009.07}}\"/pause 500/textAboveHead Eyvinder \"{{i18n:57877009.08}}\"/speak Eyvinder \"{{i18n:57877009.09}}\"/emote VivienneLK 60/pause 1000/speak Eyvinder \"{{i18n:57877009.10}}\"/textAboveHead Vivienne \"{{i18n:57877009.11}}\"/pause 500/speak VivienneLK \"{{i18n:57877009.12}}\"/playMusic desolate/faceDirection VivienneLK 2/speak VivienneLK \"{{i18n:57877009.13}}\"/speed Eyvinder 1/advancedMove Eyvinder false -1 0 2 1000/pause 500/textAboveHead Eyvinder \"{{i18n:57877009.14}}\"/speak Eyvinder \"{{i18n:57877009.15}}\"/pause 1000/textAboveHead VivienneLK \"{{i18n:57877009.16}}\"/pause 500/speak VivienneLK \"{{i18n:57877009.17}}\"/pause 500/textAboveHead Eyvinder \"{{i18n:57877009.18}}\"/pause 5000/emote VivienneLK 28 true/emote Eyvinder 28 true/pause 1000/faceDirection Eyvinder 3/speak Eyvinder \"{{i18n:57877009.19}}\"/textAboveHead VivienneLK \"{{i18n:57877009.20}}\"/pause 500/faceDirection Eyvinder 2/pause 500/speak Eyvinder \"{{i18n:57877009.21}}\"/faceDirection Eyvinder 3/speak Eyvinder \"{{i18n:57877009.22}}\"/emote VivienneLK 40/faceDirection VivienneLK 1/pause 500/speak Eyvinder \"{{i18n:57877009.23}}\"/pause 1000/textAboveHead VivienneLK \"{{i18n:57877009.24}}\"/speak VivienneLK \"{{i18n:57877009.25}}\"/pause 1000/speak Eyvinder \"{{i18n:57877009.26}}\"/pause 500/textAboveHead VivienneLK \"{{i18n:57877009.27}}\"/pause 500/faceDirection Eyvinder 3/emote Eyvinder 12/speak Eyvinder \"{{i18n:57877009.28}}\"/faceDirection VivienneLK 2/speak VivienneLK \"{{i18n:57877009.29}}\"/pause 1000/faceDirection VivienneLK 1/faceDirection Eyvinder 3/emote Eyvinder 40/speak VivienneLK \"{{i18n:57877009.30}}\"/pause 500/emote Eyvinder 40/pause 500/speak Eyvinder \"{{i18n:57877009.31}}\"/pause 500/speak VivienneLK \"{{i18n:57877009.32}}\"/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_DeepMountains",
+            "Entries": {
+                "57877002/t 800 1700/f Eyvinder 500/w sunny/z winter": "{{season}}3/47 48/farmer 54 50 3 Eyvinder 47 46 2/skippable/addTemporaryActor VoidBilly 32 32 45 43 2 false animal OldGruff/addTemporaryActor VoidNanny 32 32 44 49 1 false animal VoidNanny/addObject 46 46 168 0/addObject 47 47 167 0/addObject 44 48 167 0/addObject 46 49 167 0/addObject 48 50 168 0/addObject 49 47 172 0/pause 500/move farmer -5 0 0 true/emote Eyvinder 12/speak Eyvinder \"{{i18n:57877002.01}}\"/emote VoidNanny 28/playSound goat/advancedMove VoidNanny false 1 0/pause 500/playSound eat/removeSprite 46 49/pause 500/textAboveHead VoidNanny \"{{i18n:57877002.02}}\"/pause 500/emote Eyvinder 40/pause 500/speak Eyvinder \"{{i18n:57877002.03}}\"/pause 500/emote farmer 36/pause 500/textAboveHead Eyvinder \"{{i18n:57877002.04}}\"/playSound coin/removeSprite 47 47/pause 500/faceDirection Eyvinder 3/pause 400/faceDirection VoidNanny 0/emote VoidNanny 8/playSound goat/pause 500/faceDirection Eyvinder 2/textAboveHead Eyvinder \"{{i18n:57877002.05}}\"/pause 500/faceDirection Eyvinder 3/playSound coin/removeSprite 46 46/advancedMove VoidNanny false 0 -1 4 1000/question fork0 \"{{i18n:57877002.06}}#{{i18n:57877002.07}}#{{i18n:57877002.08}}#\"/fork Eyvinder_HelpLitter/pause 500/move Eyvinder 1 0 2/emote Eyvinder 40/pause 2000/speak Eyvinder \"{{i18n:57877002.09}}\"/pause 500/emote farmer 28/pause 500/move farmer 5 0 1/fade/viewport -100 -100/end",
+                "Eyvinder_HelpLitter": "pause 500/addMailReceived Eyvinder_DrinkMead/faceDirection farmer 3/playSound coin/removeSprite 48 50/pause 500/move farmer -2 0 0/faceDirection Eyvinder 2/emote Eyvinder 32/advancedMove VoidNanny false -1 0 3 1000/pause 500/playSound eat/removeSprite 44 48/textAboveHead Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.01}}\"/pause 500/faceDirection VoidNanny 1/pause 500/playSound goat/textAboveHead VoidNanny \"{{i18n:57877002.Eyvinder_HelpLitter.02}}\"/pause 500/speak Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.03}}\"/pause 1000/emote Eyvinder 40/pause 1000/emote farmer 40/pause 1000/speak Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.04}}\"/quickQuestion #{{i18n:57877002.Eyvinder_HelpLitter.05}}#{{i18n:57877002.Eyvinder_HelpLitter.06}}(break)switchEvent Eyvind_drinkMead(break)speak Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.07}}\"/pause 500/emote farmer 56/pause 1000/emote Eyvinder 32/pause 1000/fade/viewport -100 -100/playSound slosh/warp Eyvinder 97 44/warp farmer 96 44/faceDirection farmer 2/animate Eyvinder false true 240 16 17 18 19 19 18 17 16 16 16 16 16 16 16 16 16/viewport 96 46/pause 1000/stopAnimation Eyvinder 16/speak Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.08}}\"/pause 500/animate farmer false true 200 102 103/pause 1500/faceDirection Eyvinder 3/faceDirection farmer 1/speak Eyvinder \"{{i18n:57877002.Eyvinder_HelpLitter.09}}\"/pause 500/emote farmer 32/pause 1500/end",
+                "Eyvind_drinkMead": "pause 500/emote farmer 56/pause 1000/emote Eyvinder 32/pause 1000/fade/viewport -100 -100/playSound slosh/warp Eyvinder 97 44/warp farmer 96 44/faceDirection farmer 2/animate Eyvinder false true 240 16 17 18 19 19 18 17 16 16 16 16 16 16 16 16 16/showFrame farmer 90/viewport 96 46/pause 1000/stopAnimation Eyvinder 16/speak Eyvinder \"{{i18n:57877002.Eyvind_drinkMead.01}}\"/pause 500/animate farmer false true 200 102 103/pause 1500/faceDirection Eyvinder 3/stopAnimation farmer/faceDirection farmer 1/speak Eyvinder \"{{i18n:57877002.Eyvind_drinkMead.02}}\"/pause 500/emote farmer 32/pause 1500/end",
+                "57877003/t 800 1600/e 57877002/f Eyvinder 1000/w sunny/z winter": "{{season}}2/-100 -100/Eyvinder 96 43 2 farmer 93 33 2/skippable/showFrame Eyvinder 22/addConversationTopic LittleGruffTalk 7/addTemporaryActor LittleGruff 16 32 95 43 1 false/showFrame LittleGruff 17/viewport 96 44/move farmer 0 7 2 true/speak Eyvinder \"{{i18n:57877003.01}}\"/emote farmer 8/speak Eyvinder \"{{i18n:57877003.02}}\"/move farmer 0 2 1/pause 500/showFrame LittleGruff 16/emote LittleGruff 8/showFrame Eyvinder 21/pause 500/showFrame Eyvinder 12/speak Eyvinder \"{{i18n:57877003.03}}\"/quickQuestion #{{i18n:57877003.04}}#{{i18n:57877003.05}}#{{i18n:57877003.06}}(break)emote Eyvinder 32\\pause 500\\speak Eyvinder \"{{i18n:57877003.07}}\"\\switchEvent Eyvinder_GoatStoryTime(break)emote Eyvinder 40\\pause 500\\speak Eyvinder \"{{i18n:57877003.08}}\"(break)emote Eyvinder 12\\pause 500\\speak Eyvinder \"{{i18n:57877003.09}}\"\\playSound goat\\speak Eyvinder \"{{i18n:57877003.10}}\"/pause 500/jump farmer 5/emote farmer 28/move farmer 0 -2 2/pause 500/emote farmer 40/pause 500/faceDirection Eyvinder 2/animate Eyvinder false false 240 21 22 22 22/pause 500/stopAnimation Eyvinder 22/speak Eyvinder \"{{i18n:57877003.11}}\"/pause 1000/fade/viewport -100 -100/end",
+                "Eyvinder_GoatStoryTime": "pause 500/fade/addMailReceived Eyvinder_BringVegesFruit/viewport -100 -100/warp farmer 97 44/faceDirection farmer 2/showFrame LittleGruff 19/showFrame Eyvinder 22/showFrame farmer 70/viewport 96 44/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.01}}\"/pause 500/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.02}}\"/emote farmer 28/pause 500/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.03}}\"/pause 500/emote LittleGruff 24/pause 500/textAboveHead Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.04}}\"/pause 500/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.05}}\"/emote farmer 56/pause 500/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.06}}\"/pause 500/emote Eyvinder 20/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.07}}\"/pause 1500/faceDirection Eyvinder 1/faceDirection farmer 3/pause 500/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.08}}\"/pause 500/emote farmer 56/speak Eyvinder \"{{i18n:57877003.Eyvinder_GoatStoryTime.09}}\"/pause 500/emote farmer 32/pause 500/emote Eyvinder 32/pause 1000/end",
+                "57877004/t 1000 1600/f Eyvinder 1500/w sunny/z winter/z fall/z spring": "{{season}}_day_ambient/-100 -100/Eyvinder 82 13 0 farmer 95 21 3/skippable/removeTile 91 14 Buildings/removeTile 92 14 Buildings/removeTile 93 14 Buildings/viewport 92 14/addMailReceived Eyvind_Garden/move farmer -3 0 0/emote farmer 8/pause 500/move farmer 0 -8 0/pause 500/faceDirection farmer 1/pause 1000/faceDirection farmer 3/move farmer -6 0 3 true/viewport move -1 0 6000 true/advancedMove Eyvinder false -4 0 4 500 2 0 4 1000/pause 1000/emote farmer 8/pause 1000/speak Eyvinder \"{{i18n:57877004.01}}\"/pause 1000/emote farmer 56/pause 500/faceDirection Eyvinder 1/pause 500/speak Eyvinder \"{{i18n:57877004.02}}\"/pause 500/emote farmer 60/pause 500/speak Eyvinder \"{{i18n:57877004.03}}\"/emote farmer 36/pause 500/move farmer -5 0 3/pause 1000/faceDirection Eyvinder 0/faceDirection farmer 0/pause 1000/quickQuestion #{{i18n:57877004.04}}#{{i18n:57877004.05}}#{{i18n:57877004.06}}(break)faceDirection Eyvinder 1\\pause 500\\speak Eyvinder \"{{i18n:57877004.07}}\"(break)faceDirection Eyvinder 1\\pause 500\\speak Eyvinder \"{{i18n:57877004.08}}\"(break)faceDirection Eyvinder 1\\pause 500\\speak Eyvinder \"{{i18n:57877004.09}}\"/pause 500/faceDirection Eyvinder 0/faceDirection farmer 0/speak Eyvinder \"{{i18n:57877004.10}}\"/pause 500/faceDirection farmer 3/emote farmer 16/faceDirection Eyvinder 1/pause 500/speak Eyvinder \"{{i18n:57877004.11}}\"/faceDirection Eyvinder 0/faceDirection farmer 0/speak Eyvinder \"{{i18n:57877004.12}}\"/pause 500/emote farmer 40/pause 1000/faceDirection Eyvinder 1/faceDirection farmer 3/pause 500/speak Eyvinder \"{{i18n:57877004.13.{{Genderneutral}} }}\"/pause 500/emote farmer 60/pause 1000/speak Eyvinder \"{{i18n:57877004.14}}\"/pause 500/faceDirection Eyvinder 0/pause 500/emote farmer 12/pause 1000/end",
+                "57877007/f Eyvinder 2000/t 1800 2400": "spring_night_ambient/-100 -100/Eyvinder 99 39 0 farmer 93 37 2/skippable/addConversationTopic DeathOfOldGruff 7/addTemporaryActor LittleGruff 16 32 100 38 3 false/addTemporaryActor VoidBilly 32 32 98 38 1 false animal OldGruff/showFrame OldGruff 18/addLantern 735 97 40 4/viewport 99 40/advancedMove farmer false 0 5 5 0 4 1000/pause 500/playSound goat/playSound shadowpeep/pause 500/speak Eyvinder \"{{i18n:57877007.01}}\"/pause 100/jump LittleGruff 3/emote LittleGruff 16/pause 500/speak Eyvinder \"{{i18n:57877007.02}}\"/playSound goat/playSound shadowpeep/pause 1000/speak Eyvinder \"{{i18n:57877007.03}}\"/pause 500/playSound goat/playSound shadowpeep/pause 500/positionOffset LittleGruff -2 0/pause 50/positionOffset LittleGruff -2 0/pause 50/positionOffset LittleGruff 2 0/pause 50/positionOffset LittleGruff -2 0/pause 50/positionOffset LittleGruff -2 0/pause 50/faceDirection LittleGruff 2/emote LittleGruff 8/pause 1000/speak Eyvinder \"{{i18n:57877007.04}}\"/pause 500/faceDirection LittleGruff 3/pause 50/positionOffset LittleGruff 2 0/pause 50/positionOffset LittleGruff -2 0/pause 50/positionOffset LittleGruff 2 0/pause 50/positionOffset LittleGruff -2 0/pause 50/pause 1000/speak Eyvinder \"{{i18n:57877007.05}}\"/faceDirection Eyvinder 2/speak Eyvinder \"{{i18n:57877007.06}}\"/pause 500/jump farmer 3/quickQuestion #{{i18n:57877007.07}}#{{i18n:57877007.08}}#{{i18n:57877007.09}}(break)emote Eyvinder 40\\pause 500\\speak Eyvinder \"{{i18n:57877007.10}}\"(break)emote Eyvinder 20\\pause 500\\speak Eyvinder \"{{i18n:57877007.11.{{GenderNeutral}} }}\"(break)emote Eyvinder 12\\pause 500\\speak Eyvinder \"{{i18n:57877007.12}}\"/faceDirection Eyvinder 0/pause 500/speak Eyvinder \"{{i18n:57877007.13}}\"/pause 500/playSound goat/playSound shadowpeep/pause 1000/move Eyvinder 0 3 3/faceDirection farmer 1/pause 500/speak Eyvinder \"{{i18n:57877007.14}}\"/pause 500/faceDirection farmer 0/faceDirection Eyvinder 0/advancedMove LittleGruff false 0 1 -1 0 3 1000/pause 1500/positionOffset LittleGruff 0 -24/showFrame LittleGruff 17/pause 500/showFrame LittleGruff 16/pause 500/faceDirection Eyvinder 3/faceDirection farmer 1/pause 500/speak Eyvinder \"{{i18n:57877007.15}}\"/pause 500/emote farmer 8/pause 500/speak Eyvinder \"{{i18n:57877007.16}}\"/pause 500/faceDirection Eyvinder 0/faceDirection farmer 0/pause 500/speak Eyvinder \"{{i18n:57877007.17}}\"/faceDirection Eyvinder 3/faceDirection farmer 1/pause 500/speak Eyvinder \"{{i18n:57877007.18}}\"/faceDirection Eyvinder 3/faceDirection farmer 1/pause 500/speak Eyvinder \"{{i18n:57877007.19}}\"/faceDirection Eyvinder 0/pause 1000/speak Eyvinder \"{{i18n:57877007.20}}\"/pause 500/move Eyvinder 1 0 0/move Eyvinder 0 -3 3/faceDirection farmer 0/pause 500/speak Eyvinder \"{{i18n:57877007.21}}\"/pause 500/pause 500/playSound goat/playSound shadowpeep/emote farmer 20/pause 1000/end",
+                "57877010/e 57877007/e 57875012/f Eyvinder 2249/A DeathOfOldGruff/t 1700 1900": "{{season}}_day_ambient/80 33/Alex 79 45 1 Haley 80 45 3 LittleGruff 86 39 2 Eyvinder 81 35 3 farmer 80 35 1/addConversationTopic HaleysCamera 3/skippable/ambientLight 100 150 150/pause 500/speak Eyvinder \"{{i18n:57877010.01}}\"/emote farmer 60/pause 1000/playSound sandyStep/pause 500/playSound grassyStep/pause 500/speak Alex \"{{i18n:57877010.02}}\"/pause 500/emote Eyvinder 12 true/emote farmer 8 true/faceDirection farmer 2 true/faceDirection Eyvinder 2 true/viewport move 0 2 5500 true/pause 5500/textAboveHead Alex \"{{i18n:57877010.03}}\"/pause 500/move Haley 6 0 2 true/move Alex 6 0 2 true/viewport move 2 0 3000/pause 3500/textAboveHead Haley \"{{i18n:57877010.04}}\"/pause 500/playSound Ship/addTemporaryActor ESCamera 16 32 86 46 2/speak Haley \"{{i18n:57877010.05}}\"/emote Alex 28/speak Alex \"{{i18n:57877010.06}}\"/speak Haley \"{{i18n:57877010.07}}\"/faceDirection Haley 3/speak Haley \"{{i18n:57877010.08}}\"/faceDirection Haley 2/speak Haley \"{{i18n:57877010.09}}\"/pause 500/emote LittleGruff 16/jump LittleGruff 3/move LittleGruff 0 2 2/pause 500/playSound goat/playSound shadowpeep/pause 500/move LittleGruff 0 2 2 true/pause 50/faceDirection Haley 0 true/faceDirection Alex 0 true/emote Haley 16/speak Haley \"{{i18n:57877010.10}}\"/jump LittleGruff 3/pause 50/jump LittleGruff 3/pause 500/move Haley 0 -1 0/speak Haley \"{{i18n:57877010.11}}\"/faceDirection Haley 1/pause 500/faceDirection Haley 3/pause 500/faceDirection Haley 0/speak Haley \"{{i18n:57877010.12}}\"/emote Alex 28/speak Alex \"{{i18n:57877010.13}}\"/faceDirection Haley 2/textAboveHead Haley \"{{i18n:57877010.14}}\"/pause 500/faceDirection Haley 0/speak Haley \"{{i18n:57877010.15}}\"/pause 500/textAboveHead Alex \"{{i18n:57877010.16}}\"/pause 500/speak Haley \"{{i18n:57877010.17}}\"/speed Eyvinder 5/playMusic crane_game_fast/advancedMove Eyvinder false 0 4 3 0 0 4 1 100/pause 1500/emote Eyvinder 12 true/emote Alex 16 true/textAboveHead Haley \"{{i18n:57877010.18}}\"/emote LittleGruff 20 true/speed Alex 5/advancedMove Alex false -11 0 0 10/speed Haley 5/advancedMove Haley false -12 0 0 11/pause 5000/move LittleGruff -1 0 3/faceDirection Eyvinder 1/advancedMove farmer false 0 3 3 0 0 6 1 100/pause 6000/faceDirection Eyvinder 2/speak Eyvinder \"{{i18n:57877010.19}}\"/stopMusic/pause 1000/speed Eyvinder 2/advancedMove Eyvinder false 0 2 2 0 2 1000/advancedMove farmer false 1 0 0 2 1 0 1 1000/faceDirection LittleGruff 2/pause 2000/speak Eyvinder \"{{i18n:57877010.20}}\"/quickQuestion #{{i18n:57877010.21}}#{{i18n:57877010.22}}#{{i18n:57877010.23}}(break)speak Eyvinder \"{{i18n:57877010.24}}\"(break)speak Eyvinder \"{{i18n:57877010.25}}\"(break)speak Eyvinder \"{{i18n:57877010.26}}\"/pause 1000/textAboveHead Eyvinder \"{{i18n:57877010.27}}\"/pause 500/speak Eyvinder \"{{i18n:57877010.28}}\"/speak Eyvinder \"{{i18n:57877010.29}}\"/pause 500/emote farmer 56/pause 500/faceDirection Eyvinder 2/speak Eyvinder \"{{i18n:57877010.30}}\"/faceDirection farmer 2/emote farmer 8/pause 1000/end",
+                //"57877099/f LittleGruff 4000":"{{season}}_day_ambient/"
+            }
+        },
+        /*{
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_EyvinderCave",
+            "Entries": {
+                //BORING! "57877010/f Eyvinder 2000/A DeathOfOldGruff/w rainy/p Eyvinder":"none/8 7/Eyvinder 7 5 2 LittleGruff 6 6 1 farmer -100 -100 0/showFrame LittleGruff 19/showFrame Eyvinder 23/pause 500/warp farmer 8 11/pause 500/showFrame LittleGruff 5/advancedMove LittleGruff false 2 0 0 1 2 100/move farmer 0 -3 0/playSound goat/showFrame Eyvinder 22/speak Eyvinder \"Oh, it's you. Hello @. Can't say I expected to see you today. Aren't humans allergic to rain?\"/pause 500/emote farmer 36/move Eyvinder 0 1 2/advancedMove farmer false -1 0 0 -1 4 100/faceDirection LittleGruff 3/jump LittleGruff 3/pause 100/jump LittleGruff 3/speak Eyvinder \"Dunno why you keep bothering to visit a grumpy old goat like me. Ain't no reward in it for you.$2\"/jump LittleGruff 3/pause 100/jump LittleGruff 3/quickQuestion #Your company is reward enough.#Stop pretending, I know you appreciate my visits.#I like 'grumpy old goats'.#I don't know why I bothered either. But I did, so there.(break)emote Eyvinder 20\\speak Eyvinder \"Hah! You're really a glutton for punishment, ain't ya?$1\"(break)emote Eyvinder 12\\speak Eyvinder \"Okay yeh... you've nailed the truth on the head there, @, and uncovered my darkest secret.$1\"(break)emote Eyvinder 32\\speak Eyvinder \"Well, there ain't no accounting for taste.$1\"(break)emote Eyvinder 12\\speak Eyvinder \"Gotta respect your honesty, @.$1\"/pause 500/emote Eyvinder 40/jump LittleGruff 3/pause 100/jump LittleGruff 3/speak Eyvinder \"Well, I can't say I ain't glad to see you, lad.^Well, I can't say I ain't glad to see you, lass.#$b#Truth is, it does get a wee bit lonely up here...$2#$b#...not that you heard me admit that, mind.$1\"/pause 500/emote farmer 56/faceDirection Eyvinder 1/jump LittleGruff 3/pause 100/jump LittleGruff 3/pause 500/faceDirection Eyvinder 2/speak Eyvinder \"And I do miss the old days...when it was me and my team...#$b#Hmmm, I wonder what old George is up to these days? You wouldn't happen to know, would you, @?\"/pause 500/emote farmer 40/pause 1000/end"
+            }
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "57877011/e 57877010/t 600 900": "distantBanjo/20 89/Haley -100 -100 2 farmer -100 -100 0 Eyvinder 28 90 3/skippable/move Eyvinder -8 0 0/pause 1000/faceDirection Eyvinder 1/pause 500/playSound Ship/addTemporaryActor ESCamera 16 32 21 90 2/pause 500/advancedMove Eyvinder false 0 1 8 0 0 -4 2 1500/pause 5000/playSound doorOpen/warp Haley 20 89/pause 500/jump Haley 5/emote Haley 16/move Haley 0 2 1/pause 1000/faceDirection Haley 3/pause 1000/faceDirection Haley 1/pause 1000/textAboveHead Haley \"{{i18n:57877011.1}}\"/speak Haley \"{{i18n:57877011.2}}\"/pause 500/emote Eyvinder 60/pause 1000/end dialogue Haley \"{{i18n:57877011.3}}",
+                "57877008/f Eyvinder 2249/f George 1500/e 57877010/t 1000 1800": "distantBanjo/35 60/George 49 60 3 Eyvinder 48 60 1 Caroline 42 57 3 Jodi 41 57 1 farmer 35 59 1/skippable/advancedMove farmer false 7 0 1 500 4 1000/viewport move 2 0 3000 true/addMailReceived Eyvind_Town/pause 500/textAboveHead Jodi \"{{i18n:57877008.01}}\"/pause 2500/textAboveHead Caroline \"{{i18n:57877008.02}}\"/pause 1000/emote farmer 40/pause 500/pause 2500/speak George \"{{i18n:57877008.03}}\"/pause 500/faceDirection farmer 1/textAboveHead Eyvinder \"{{i18n:57877008.04}}\"/speak Eyvinder \"{{i18n:57877008.05}}\"/emote farmer 8/pause 500/speak George \"{{i18n:57877008.06}}\"/advancedMove farmer false 4 0 1 1000/viewport move 2 0 3500 true/pause 500/emote Jodi 40/pause 500/faceDirection Eyvinder 3/speak Eyvinder \"{{i18n:57877008.07}}\"/pause 500/emote farmer 8/move Eyvinder 0 -1 3/speak Eyvinder \"{{i18n:57877008.08}}\"/pause 500/move George -1 0 3/pause 500/faceDirection George 0/pause 500/faceDirection George 3/pause 500/faceDirection George 0/pause 500/faceDirection George 3/speak George \"{{i18n:57877008.09}}\"/quickQuestion #{{i18n:57877008.10}}#{{i18n:57877008.11}}#{{i18n:57877008.12}}(break)emote Eyvinder 60\\faceDirection George 0\\faceDirection Eyvinder 2\\speak George \"{{i18n:57877008.13}}\"(break)emote Eyvinder 28\\faceDirection George 0\\faceDirection Eyvinder 2\\speak George \"{{i18n:57877008.14}}\"(break)emote Eyvinder 60\\faceDirection George 0\\faceDirection Eyvinder 2\\speak George \"{{i18n:57877008.15}}\"/pause 500/move George 1 0 3/advancedMove farmer false 0 1 1 0 1 1000/pause 1000/speak George \"{{i18n:57877008.16}}\"/jump farmer 5 true/emote farmer 16 true/emote Eyvinder 12 true/stopMusic/playMusic desolate/speak Eyvinder \"{{i18n:57877008.17}}\"/pause 500/textAboveHead George \"{{i18n:57877008.18}}\"/pause 500/speak George \"{{i18n:57877008.19}}\"/pause 500/speak Eyvinder \"{{i18n:57877008.20}}\"/pause 500/emote George 12/pause 500/speak George \"{{i18n:57877008.21}}\"/pause 1000/faceDirection George 0/pause 500/speak George \"{{i18n:57877008.22}}\"/move George -1 0 0/pause 500/emote Eyvinder 40/pause 1000/speak George \"{{i18n:57877008.23}}\"/pause 500/textAboveHead Eyvinder \"{{i18n:57877008.24}}\"/pause 500/emote farmer 32/faceDirection Jodi 2/faceDirection Caroline 2/textAboveHead Caroline \"{{i18n:57877008.25}}\"/pause 1000/end"
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_MeadowFarm",
+            "Entries": {
+                "57877005/f Eyvinder 1750/t 1000 1800/w rainy": "rain/-1000 -100/farmer 44 12 0 Eyvinder -100 -100 0/skippable/addSpecialOrder EastScarp.SpecialOrders.EyvindrShed/viewport 44 12 clamp true/pause 500/emote farmer 8/pause 500/move farmer 0 -2 0/message \"{{i18n:57877005.01}}\"/pause 500/playSound doorOpen/warp farmer -100 -100/pause 1000/fade/viewport -1000 -100/changeLocation EastScarp_MeadowShed_Ruins/viewport -1000 -100/warp Eyvinder 9 11/playMusic communityCenter/viewport 8 13 clamp true/pause 500/speak Eyvinder \"{{i18n:57877005.02}}\"/warp farmer 9 19/move farmer 0 -2 0/faceDirection Eyvinder 2/move farmer -1 0 0/move farmer 0 -6 1/faceDirection Eyvinder 3/pause 500/speak Eyvinder \"{{i18n:57877005.03}}\"/pause 500/faceDirection Eyvinder 0/faceDirection farmer 0/speak Eyvinder \"{{i18n:57877005.04}}\"/faceDirection farmer 1/emote farmer 8/pause 500/faceDirection Eyvinder 3/speak Eyvinder \"{{i18n:57877005.05}}\"/faceDirection Eyvinder 0/faceDirection farmer 0/speak Eyvinder \"{{i18n:57877005.06}}\"/textAboveHead Eyvinder \"{{i18n:57877005.07}}\"/pause 1000/emote Eyvinder 20/pause 1000/speak Eyvinder \"{{i18n:57877005.08}}\"/pause 500/faceDirection Eyvinder 3/speak Eyvinder \"{{i18n:57877005.09}}\"/pause 500/emote farmer 16/pause 500/speak Eyvinder \"{{i18n:57877005.10}}\"/pause 500/faceDirection Eyvinder 2/pause 100/faceDirection farmer 2/pause 500/playSound reward/message \"{{i18n:57877005.11}}\"/pause 500/faceDirection farmer 1/emote farmer 32/pause 500/speak Eyvinder \"{{i18n:57877005.12}}\"/pause 500/emote farmer 8/pause 1000/speak Eyvinder \"{{i18n:57877005.13}}\"/pause 500/emote farmer 12/pause 1000/end",
+                "57877006/n EastScarp.SpecialOrders.EyvindrShedMail/w sunny/t 1000 1700": "{{season}}_day_ambient/-1000 -100/farmer 44 12 0 Eyvinder -100 -100 0/addConversationTopic MaryNameDrop 14/skippable/viewport 44 12 clamp true/pause 500/playSound crafting/pause 1200/playSound crafting/emote farmer 8/pause 1200/playSound crafting/pause 500/move farmer 0 -2 0/pause 1000/playSound doorOpen/warp farmer -100 -100/pause 1000/fade/viewport -1000 -100/changeLocation EastScarp_MeadowShed/viewport -1000 -100/stopMusic/warp Eyvinder 9 12/playMusic communityCenter/viewport 8 13 clamp true/pause 500/warp farmer 10 19/pause 500/speak Eyvinder \"{{i18n:57877006.01}}\"/move farmer 0 -7 3/faceDirection Eyvinder 1/pause 500/emote farmer 32/pause 2000/faceDirection Eyvinder 0/faceDirection farmer 0/pause 1000/faceDirection Eyvinder 1/faceDirection farmer 3/speak Eyvinder \"{{i18n:57877006.02}}\"/pause 500/emote farmer 8/pause 500/speak Eyvinder \"{{i18n:57877006.03}}\"/pause 500/emote farmer 8/pause 1000/speak Eyvinder \"{{i18n:57877006.04}}\"/pause 500/emote farmer 56/pause 500/speak Eyvinder \"{{i18n:57877006.05}}\"/pause 500/playMusic desolate/pause 500/faceDirection Eyvinder 2/showFrame Eyvinder 22/faceDirection farmer 2/showFrame farmer 70/pause 500/speak Eyvinder \"{{i18n:57877006.06}}\"/pause 500/emote Eyvinder 40/pause 1000/speak Eyvinder \"{{i18n:57877006.07}}\"/pause 500/emote Eyvinder 28/pause 2000/speak Eyvinder \"{{i18n:57877006.08}}\"/pause 500/showFrame Eyvinder 0/showFrame farmer 0/faceDirection farmer 3/faceDirection Eyvinder 1/speak Eyvinder \"{{i18n:57877006.09}}\"/pause 500/emote farmer 60/pause 1000/faceDirection Eyvinder 0/faceDirection farmer 0/speak Eyvinder \"{{i18n:57877006.10}}\"/faceDirection Eyvinder 1/faceDirection farmer 3/speak Eyvinder \"{{i18n:57877006.11}}\"/pause 500/emote farmer 32/pause 500/emote Eyvinder 20/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DeepMountains",
+            "PatchMode":"Overlay",
+            "ToArea": {
+                "X": 85,
+                "Y": 55,
+                "Width": 2,
+                "Height": 3
+            },
+            "FromFile": "assets/Maps/GoatGrave.tmx",
+            "When": {
+                "HasSeenEvent": "57877007"
+            }
+        },
+        //add MeadowShedRebuildOrder /atravita_addSpecialOrder MeadowShedRebuildOrder/
+        //500 wood, 200 stone, 20 clay
+        //dropbox ESMeadowShed
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "EastScarp.SpecialOrders.EyvindrShed": {
+                    "Name": "[EastScarp.SpecialOrders.EyvindrShed_Name]",
+                    "Requester": "Eyvinder",
+                    //"Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57877005",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.EyvindrShed_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.EyvindrShed_Objective_1_Text]",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_stone"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.EyvindrShed_Objective_2_Text]",
+                            "RequiredCount": "500",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_wood"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.EyvindrShed_Objective_3_Text]",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_clay"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.EyvindrShedMail",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+            "Entries": {
+                "EastScarp.SpecialOrders.EyvindrShed_Name": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Name}}",
+                "EastScarp.SpecialOrders.EyvindrShed_Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Text}}",
+                "EastScarp.SpecialOrders.EyvindrShed_Objective_1_Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_1_Text}}",
+                "EastScarp.SpecialOrders.EyvindrShed_Objective_2_Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_2_Text}}",
+                "EastScarp.SpecialOrders.EyvindrShed_Objective_3_Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_3_Text}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/EastScarp/DurationOverride",
+            "Entries": {
+                "EastScarp.SpecialOrders.EyvindrShed": "-1",
+            }
+        },
+        //Conversation Topics: Old Gruff causes trouble
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jacob",
+            "Entries": {
+                "OldGruffCausesTrouble": "{{i18n:OldGruffTrouble.Jacob}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "OldGruffCausesTrouble": "{{i18n:OldGruffTrouble.Eloise}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "OldGruffCausesTrouble": "{{i18n:OldGruffTrouble.Rosa}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "OldGruffCausesTrouble": "{{i18n:OldGruffTrouble.Aideen}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/LadySheba",
+            "When": {
+                "HasSeenEvent |contains=50706121": true
+            },
+            "Entries": {
+                "OldGruffCausesTrouble": "{{i18n:OldGruffTrouble.Sheba}}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eyvinder",
+             "When": {
+                "HasSeenEvent": "57877004"
+            },
+            "Entries": {
+                "summer_1_2": "{{i18n:dialogue.eyvind.summer_1_2}} [(O)EastScarp_Azure_Chrysanthemum_Seed] $1",
+                "fall_2_2": "{{i18n:dialogue.eyvind.fall_2_2}} [(O)EastScarp_Serruria_Seed]$1",
+                "spring_1_2": "{{i18n:dialogue.eyvind.spring_1_2}} [(O)EastScarp_Azure_Chrysanthemum_Seed (O)EastScarp_Serruria_Seed]$1",
+                "winter_1_2": "{{i18n:dialogue.eyvind.winter_2_2}} [(O)EastScarp_Serruria_Seed]$1",
+                "AcceptGift_category_seeds": "{{i18n:dialogue.eyvind.seeds}} [(O)EastScarp_Azure_Chrysanthemum_Seed (O)EastScarp_Serruria_Seed]$1",
+            }
+        },
+    ]
+}

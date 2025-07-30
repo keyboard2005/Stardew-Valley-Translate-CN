@@ -1,0 +1,219 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Sam's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Sam_Spring, Portraits/Sam_Summer, Portraits/Sam_Fall, Portraits/Sam_Winter_Outdoor, Portraits/Sam_Winter_Indoor, Portraits/Sam_FlowerDance, Portraits/Sam_SpiritsEve, Portraits/Sam_EggF, Portraits/Sam_Fair, Portraits/Sam_Jellies, Portraits/Sam_Luau, Portraits/Sam_Winter_IceF, Portraits/Sam_Winter_WinterStar, Portraits/Sam_Work, Characters/Sam_Spring, Characters/Sam_Summer, Characters/Sam_Fall, Characters/Sam_Winter_Outdoor, Characters/Sam_Winter_Indoor, Characters/Sam_FlowerDance, Characters/Sam_SpiritsEve, Characters/Sam_EggF, Characters/Sam_Fair, Characters/Sam_Jellies, Characters/Sam_Luau, Characters/Sam_Winter_IceF, Characters/Sam_Winter_WinterStar, Characters/Sam_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Sam's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Sam - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Spring, Characters/Sam_Summer, Characters/Sam_Fall, Characters/Sam_Winter_Outdoor, Characters/Sam_Winter_Indoor, Characters/Sam_FlowerDance, Characters/Sam_SpiritsEve, Characters/Sam_EggF, Characters/Sam_Fair, Characters/Sam_Jellies, Characters/Sam_Luau, Characters/Sam_Winter_IceF, Characters/Sam_Winter_WinterStar, Characters/Sam_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/Sam_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Sam - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sam Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sam", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.SamSpring": {
+					"Id": "{{ModId}}.SamSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Sam_Spring",
+					"Portrait": "Portraits/Sam_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.SamSummer": {
+					"Id": "{{ModId}}.SamSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Sam_Summer",
+					"Portrait": "Portraits/Sam_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SamFall": {
+					"Id": "{{ModId}}.SamFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Sam_Fall",
+					"Portrait": "Portraits/Sam_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SamWinterIndoor": {
+					"Id": "{{ModId}}.SamWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Sam_Winter_Indoor",
+					"Portrait": "Portraits/Sam_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SamWinterOutdoor": {
+					"Id": "{{ModId}}.SamWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Sam_Winter_Outdoor",
+					"Portrait": "Portraits/Sam_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.SamEggFest": {
+					"Id": "{{ModId}}.SamEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_EggF",
+					"Portrait": "Portraits/Sam_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SamFlowerDance": {
+					"Id": "{{ModId}}.SamFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_FlowerDance",
+					"Portrait": "Portraits/Sam_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SamLuau": {
+					"Id": "{{ModId}}.SamLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_Luau",
+					"Portrait": "Portraits/Sam_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SamJellies": {
+					"Id": "{{ModId}}.SamJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_Jellies",
+					"Portrait": "Portraits/Sam_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SamFair": {
+					"Id": "{{ModId}}.SamFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_Fair",
+					"Portrait": "Portraits/Sam_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SamSpirit": {
+					"Id": "{{ModId}}.SamSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Sam_SpiritsEve",
+					"Portrait": "Portraits/Sam_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.SamIceFestival": {
+					"Id": "{{ModId}}.SamIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_Winter_IceF",
+					"Portrait": "Portraits/Sam_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SamWinterStar": {
+					"Id": "{{ModId}}.SamWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sam_Winter_WinterStar",
+					"Portrait": "Portraits/Sam_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.SamBeach": {
+					"Id": "{{ModId}}.SamBeach",
+					"Sprite": "Characters/Sam_Beach",
+					"Portrait": "Portraits/Sam_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Work
+				
+				"{{ModId}}.SamWork": {
+					"Id": "{{ModId}}.SamWork",
+					"Condition": "ANY \"{{ExtraOutfits}}, LOCATION_NAME Target JojaMart, DAY_OF_WEEK Monday Wednesday, !PLAYER_HAS_SEEN_EVENT Any 191393\" \"{{ExtraOutfits}}, LOCATION_NAME Target ArchaeologyHouse, DAY_OF_WEEK Monday Wednesday, PLAYER_HAS_SEEN_EVENT Any 191393\"",
+					"Sprite": "Characters/Sam_Work",
+					"Portrait": "Portraits/Sam_Work",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+		
+	// MISCELLANEOUS
+		{
+			"LogName": "Sam - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sam - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 87, "Y": 375, "Width": 18, "Height": 18},
+			"ToArea": {"X": 87, "Y": 375, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Sam Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sam",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

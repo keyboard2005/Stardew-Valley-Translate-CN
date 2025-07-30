@@ -1,0 +1,127 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // CUSTOM GIFT DIALOGUE
+        // STARDROP TEA 
+        "AcceptGift_(O)StardropTea": "{{i18n:Gifts.Hector.GiftReaction.StardropTea}}",
+        // ANCIENT SWEET TEA
+        "AcceptGift_(O){{ModID}}_ancientsweettea": "{{i18n:Gifts.Hector.GiftReaction.AncientSweetTea}}",
+        // FISH
+        "AcceptGift_category_fish": "{{i18n:Gifts.Hector.GiftReaction.CategoryFish}}",
+        "AcceptGift_(O)397": "{{i18n:Gifts.Hector.GiftReaction.SeaUrchin}}",
+        "AcceptGift_(O)717": "{{i18n:Gifts.Hector.GiftReaction.Crab}}",
+        "AcceptGift_(O)732": "{{i18n:Gifts.Hector.GiftReaction.CrabCakes}}",
+        "AcceptGift_(O){{ModID}}_GoldieTheBatteryPoweredFish": "{{i18n:Gifts.Hector.GiftReaction.GoldieTheBatteryPoweredFish}}",
+        // ARTISANAL GOODS
+        "AcceptGift_category_artisan_goods": "{{i18n:Gifts.Hector.GiftReaction.CategoryArtisanalGoods}}",
+        // TRASH
+        "AcceptGiftCategory_trash": "{{i18n:Gifts.Hector.GiftReaction.CategoryTrash}}",
+        // MINERALS & GEMS
+        "AcceptGiftCategory_minerals": "{{i18n:Gifts.Hector.GiftReaction.CategoryGemsMinerals}}",
+        // LOVES
+        "AcceptGift_(O)74": "{{i18n:Gifts.Hector.GiftReaction.PrismaticShard}}",
+        "AcceptGift_(O)259": "{{i18n:Gifts.Hector.GiftReaction.FiddleheadFern}}",
+        "AcceptGift_(O)649": "{{i18n:Gifts.Hector.GiftReaction.FiddleheadRisotto}}",
+        "AcceptGift_(O)300": "{{i18n:Gifts.Hector.GiftReaction.Amaranth}}",
+        "AcceptGift_(O)390": "{{i18n:Gifts.Hector.GiftReaction.Stone}}",
+        // LIKES
+        "AcceptGift_(O)731": "{{i18n:Gifts.Hector.GiftReaction.MapleBar}}",
+        "AcceptGift_(O)768": "{{i18n:Gifts.Hector.GiftReaction.SolarEssence}}",
+        "AcceptGift_(O)769": "{{i18n:Gifts.Hector.GiftReaction.VoidEssence}}",
+        // ALCOHOL 
+        "AcceptGift_(O)346": "{{i18n:Gifts.Hector.GiftReaction.Beer}}",
+        "AcceptGift_(O)303": "{{i18n:Gifts.Hector.GiftReaction.PaleAle}}",
+        "AcceptGift_(O)348": "{{i18n:Gifts.Hector.GiftReaction.Wine}}",
+        // HATES 
+        "AcceptGift_(O)446": "{{i18n:Gifts.Hector.GiftReaction.RabbitsFoot}}",
+        "AcceptGift_(O)220": "{{i18n:Gifts.Hector.GiftReaction.ChocolateCake}}",
+        // ANCIENT CROPS
+        "AcceptGift_(O){{ModID}}_ancientamaranth": "{{i18n:Gifts.Hector.GiftReaction.AncientAmaranth}}",
+        "AcceptGift_(O){{ModID}}_ancientepiphyticfern": "{{i18n:Gifts.Hector.GiftReaction.AncientFern}}",
+        "AcceptGift_(O){{ModID}}_ancientglowinghuckleberry": "{{i18n:Gifts.Hector.GiftReaction.AncientHuckleberry}}",
+        "AcceptGift_(O){{ModID}}_glowingpolyporemushrooms": "{{i18n:Gifts.Hector.GiftReaction.AncientMushroom}}",
+        "AcceptGift_(O){{ModID}}_ancientwildfairyroses": "{{i18n:Gifts.Hector.GiftReaction.AncientRose}}",
+        "AcceptGift_(O){{ModID}}_ancientelderberry": "{{i18n:Gifts.Hector.GiftReaction.AncientElderberry}}",
+        "AcceptGift_(O){{ModID}}_ancientbottlegourd": "{{i18n:Gifts.Hector.GiftReaction.AncientBottleGourd}}",
+        "AcceptGift_(O){{ModID}}_ancientgiantappleberry": "{{i18n:Gifts.Hector.GiftReaction.AncientAppleBerry}}",
+        "AcceptGift_(O){{ModID}}_ancientazuredetura": "{{i18n:Gifts.Hector.GiftReaction.AncientAzureDetura}}",
+        "AcceptGift_(O){{ModID}}_portfiredrakesparkler": "{{i18n:Gifts.Hector.GiftReaction.AncientFood}}",
+        "AcceptGift_(O){{ModID}}_mushroomsredsauce": "{{i18n:Gifts.Hector.GiftReaction.AncientFood}}",
+        "AcceptGift_(O){{ModID}}_ferngreensandpineapple": "{{i18n:Gifts.Hector.GiftReaction.AncientFood}}",
+        "AcceptGift_(O){{ModID}}_ancienthuckleberryicecream": "{{i18n:Gifts.Hector.GiftReaction.AncientFood}}",
+        "AcceptGift_(O){{ModID}}_lavaeelandstirfriedancientbottlegourd": "{{i18n:Gifts.Hector.GiftReaction.AncientFood}}",
+        "AcceptGift_(O){{ModID}}_ancientelderberrygingerbeer": "{{i18n:Gifts.Hector.GiftReaction.AncientBeer}}",
+        "AcceptGift_(O){{ModID}}_ancientappleberrygingerbeer": "{{i18n:Gifts.Hector.GiftReaction.AncientBeer}}",
+        "AcceptGift_(O){{ModID}}_ancienthuckleberrygingerbeer": "{{i18n:Gifts.Hector.GiftReaction.AncientBeer}}",
+        // ITEM REJECTIONS 
+        "RejectItem_(O)458": "{{i18n:Gifts.Hector.GiftReject.Bouquet}}",
+        "RejectItem_(O)787": "{{i18n:Gifts.Hector.GiftReject.Battery}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // CUSTOM GIFT DIALOGUE - BIRTHDAY
+        // BIRTHDAY
+        "AcceptGift_(O)259": "{{i18n:Gifts.Hector.GiftReaction.FiddleheadFern.Birthday}}",
+        "AcceptGift_(O)649": "{{i18n:Gifts.Hector.GiftReaction.FiddleheadRisotto.Birthday}}",
+        "AcceptGift_(O)731": "{{i18n:Gifts.Hector.GiftReaction.MapleBar.Birthday}}",
+        "AcceptGift_(O)768": "{{i18n:Gifts.Hector.GiftReaction.SolarEssence.Birthday}}",
+        "AcceptGift_(O)769": "{{i18n:Gifts.Hector.GiftReaction.VoidEssence.Birthday}}",
+        "AcceptGift_(O)390": "{{i18n:Gifts.Hector.GiftReaction.Stone.Birthday}}",
+      },
+      "When": {
+        "Season": "winter",
+        "Day": "21"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // CUSTOM GIFT DIALOGUE - BIRTHDAY
+        // BIRTHDAY
+        "AcceptGift_(O)390": "{{i18n:Gifts.Hector.GiftReaction.Stone.Birthday.Romantic}}"
+      },
+      "When": {
+        "Season": "winter",
+        "Day": "21",
+        "Relationship:Hector |contains=Dating, Engaged, Married": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // DATING COOLDOWN
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantCooldown}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=HectorMarriageCountdown": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // MARRIAGE PENDANT REACT
+        "RejectItem_(O)460": "{{i18n:miscellaneous.PendantResponse}}#$action spacechase0.SpaceCore_PlayEvent SnS.Ch2.Hector.17 false"
+      },
+      "When": {
+        "HasConversationTopic |contains=HectorMarriageCountdown": false,
+        "Relationship:Hector |contains=Dating": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Hector",
+      "Entries": { // MARRIAGE PENDANT REACT NO FARMHOUSE UPGRADE
+        "RejectItem_(O)460": "{{i18n:miscellaneous.MermaidPendantFarmhouse}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=HectorMarriageCountdown": false,
+        "Relationship:Hector |contains=Dating": true,
+        "FarmhouseUpgrade": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "Changes": [
+    {
+      "LogName": "Violet Moon Foods",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "DN.SnS_ScotchEgg": {
+          "Name": "DN.SnS_ScotchEgg",
+          "DisplayName": "{{i18n:DN.SnS.ScotchEgg}}",
+          "Description": "{{i18n:DN.SnS.ScotchEgg.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Textures/DN.SnS/VioletMoonFood",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "allergen_egg",
+            "allergen_gluten",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Steak_on_a_Stake": {
+          "Name": "DN.SnS_Steak_on_a_Stake",
+          "DisplayName": "{{i18n:DN.SnS.Steak_on_a_Stake}}",
+          "Description": "{{i18n:DN.SnS.Steak_on_a_Stake.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Textures/DN.SnS/VioletMoonFood",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Fruit_Hand_Pie": {
+          "Name": "DN.SnS_Fruit_Hand_Pie",
+          "DisplayName": "{{i18n:DN.SnS.Fruit_Hand_Pie}}",
+          "Description": "{{i18n:DN.SnS.Fruit_Hand_Pie.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Textures/DN.SnS/VioletMoonFood",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "allergen_gluten",
+            "allergen_egg"
+          ]
+        },
+        "DN.SnS_Smoked_TurkeyLeg": {
+          "Name": "DN.SnS_Smoked_TurkeyLeg",
+          "DisplayName": "{{i18n:DN.SnS.Smoked_TurkeyLeg}}",
+          "Description": "{{i18n:DN.SnS.Smoked_TurkeyLeg.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 550, //
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": null,
+          "Texture": "Textures/DN.SnS/VioletMoonFood",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "color_brown",
+            "food_nonvegan",
+            "food_nonvegetarian",
+            "allergen_meat"
+          ]
+        },
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "Name": "DN.SnS_Hand_Pressed_Apple_Cider",
+          "DisplayName": "{{i18n:DN.SnS.Hand_Pressed_Apple_Cider}}",
+          "Description": "{{i18n:DN.SnS.Hand_Pressed_Apple_Cider.Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 500, //
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": null,
+          "Texture": "Textures/DN.SnS/VioletMoonFood",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "color_brown"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "VM Letter",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "DN.SnS_VMRecipeLetter": {
+          "Id": "DN.SnS_VMRecipeLetter",
+          "Trigger": "DayEnding",
+          "Location": "Farm",
+          "Condition": "PLAYER_STAT Current daysPlayed 3", //3 days in
+          "Actions": [
+            "AddMail Current DN.SnS_FaireFoodMail tomorrow"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "BearFamMail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "DN.SnS_FaireFoodMail": "{{i18n:Mail.DN.SnS_FaireFoodMail}}%item cookingRecipe DN.SnS_ScotchEgg%% %item cookingRecipe DN.SnS_Steak_on_a_Stake%% %item cookingRecipe DN.SnS_Fruit_Hand_Pie%% %item cookingRecipe DN.SnS_Smoked_TurkeyLeg%% %item cookingRecipe DN.SnS_Hand_Pressed_Apple_Cider%%[letterbg 0][textcolor black][#]{{i18n:Mail.DN.SnS_FaireFoodMail.Title}}"
+      }
+    },
+    {
+      "LogName": "CookingRecipes",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "DN.SnS_ScotchEgg": "246 1 684 1 -5 1/1 10/DN.SnS_ScotchEgg/null/{{i18n:DN.SnS.ScotchEgg}}", //flour bug meat any egg
+        "DN.SnS_Steak_on_a_Stake": "874 1 169 1/1 10/DN.SnS_Steak_on_a_Stake/null/{{i18n:DN.SnS.Steak_on_a_Stake}}", //bug meat driftwood
+        "DN.SnS_Fruit_Hand_Pie": "-79 1 246 1 -5 1/1 10/DN.SnS_Fruit_Hand_Pie/null/{{i18n:DN.SnS.Fruit_Hand_Pie}}", //any fruit flour
+        "DN.SnS_Smoked_TurkeyLeg": "382 1 874 1/1 10/DN.SnS_Smoked_TurkeyLeg/null/{{i18n:DN.SnS.Smoked_TurkeyLeg}}", //coal bug meat
+        "DN.SnS_Hand_Pressed_Apple_Cider": "613 3/1 10/DN.SnS_Hand_Pressed_Apple_Cider/null/{{i18n:DN.SnS.Hand_Pressed_Apple_Cider}}" //apple 3
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+      "Entries": {
+        "DN.SnS_Fruit_Hand_Pie": {
+          "ProductQualifiedId": "(O)DN.SnS_Fruit_Hand_Pie",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "ContextTag",
+              "Value": "category_fruits",
+              "Amount": 1,
+              "OverrideText": "{{i18n:DN.SnS.AnyFruit}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 352,
+                "Y": 256,
+                "Width": 16,
+                "Height": 16
+              }
+            },
+            {
+              "Type": "Item",
+              "Value": "(O)246",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "category_egg",
+              "Amount": 1,
+              "OverrideText": "{{i18n:DN.SnS.AnyEgg}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 128,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Faire Drinks with Colors",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "When": {
+        "HasMod": "mistyspring.ItemExtensions"
+      },
+      "Fields": {
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "CustomFields": { "mistyspring.ItemExtensions/DrinkColor": "#824925" } //brown
+        }
+      }
+    },
+    {
+      "LogName": "Make Added Faire things More Cool",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "DN.SnS_ScotchEgg": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Steak_on_a_Stake": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Hand_Pressed_Apple_Cider": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Smoked_TurkeyLeg": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        },
+        "DN.SnS_Fruit_Hand_Pie": {
+          "CategoryTextOverride": "{{i18n:DN.SnS.SpaceCoreCategory.FaireFood}}",
+          "CategoryColorOverride": {
+            "R": 162,
+            "G": 26,
+            "B": 158,
+            "A": 255
+          }
+        }
+      }
+    }
+  ]
+}

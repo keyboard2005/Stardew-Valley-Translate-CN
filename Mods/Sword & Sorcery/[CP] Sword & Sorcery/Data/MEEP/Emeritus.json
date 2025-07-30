@@ -1,0 +1,67 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.Emeritus": {
+                    "DisplayName": "{{i18n:Strings.Names.Emeritus}}",
+                    "House": "Barn",
+                    "Texture": "Characters/MateoEmeritus_MEEP",
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "SleepFrame": 24,
+                    "UseFlippedRightForLeft": false,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ShadowWhenBaby": { "Visible": false },
+                    "ShadowWhenAdult": { "Visible": false }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "{{ModId}}.Emeritus_Outside": {
+                    "AnimalId": "{{ModId}}.Emeritus",
+                    "Age": 1,
+                    "LocationId": "EastScarp_Village",
+                    "DisplayName": "{{i18n:Strings.Names.Emeritus}}",
+                    "PortraitTexture": "Portraits/MateoEmeritus",
+                    "PetMessage": [
+                        "{{i18n:MEEP.EmeritusOutside.{{Random: {{Range: 1, 5}}|key=EmDialogue}}}}"
+                    ],
+                    "HomeTileX": 90,
+                    "HomeTileY": 100,
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, WEATHER EastScarp_Village Sun, !PLAYER_NPC_RELATIONSHIP Current Mateo Married"
+                },                
+                "{{ModId}}.Emeritus_Inside": {
+                    "AnimalId": "{{ModId}}.Emeritus",
+                    "Age": 1,
+                    "LocationId": "EastScarp_CoastalGuild",
+                    "DisplayName": "{{i18n:Strings.Names.Emeritus}}",
+                    "PortraitTexture": "Portraits/MateoEmeritus",
+                    "PetMessage": [
+                        "{{i18n:MEEP.EmeritusInside.{{Random: {{Range: 1, 5}}|key=EmDialogue}}}}"
+                    ],
+                    "HomeTileX": 2,
+                    "HomeTileY": 17,
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, !WEATHER EastScarp_Village Sun, !PLAYER_NPC_RELATIONSHIP Current Mateo Married"
+                },
+                "{{ModId}}.Emeritus_MateoMarried": {
+                    "AnimalId": "{{ModId}}.Emeritus",
+                    "Age": 1,
+                    "LocationId": "Farmhouse",
+                    "DisplayName": "{{i18n:Strings.Names.Emeritus}}",
+                    "PortraitTexture": "Portraits/MateoEmeritus",
+                    "PetMessage": [
+                        "{{i18n:MEEP.EmeritusFarmhouse.{{Random: {{Range: 1, 8}}|key=EmDialogueF}}}}"
+                    ],
+                    "HomeTileX": "{{EmeritusSpawnPointX}}",
+                    "HomeTileY": "{{EmeritusSpawnPointY}}",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Mateo Married"
+                }
+            }
+        }
+    ]
+}

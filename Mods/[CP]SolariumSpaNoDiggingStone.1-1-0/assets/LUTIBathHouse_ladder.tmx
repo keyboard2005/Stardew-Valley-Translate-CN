@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="1" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="2">
+ <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <layer id="4" name="Back" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJwTZ2BgEGOAAAAB0AAu
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJybzMrAEMjAwFAIxAALcwFb
+  </data>
+ </layer>
+ <layer id="2" name="Front" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJzjYmVg8AJiEAAAAy4AXw==
+  </data>
+ </layer>
+ <layer id="1" name="Paths" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAAAAAMAAE=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Back"/>
+ <objectgroup id="7" name="Buildings" visible="0">
+  <object id="1" name="TileData" x="0" y="0" width="16" height="48">
+   <properties>
+    <property name="Action" value="Warp 5 16 Custom_SolariumSpa"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="5" name="Paths"/>
+</map>

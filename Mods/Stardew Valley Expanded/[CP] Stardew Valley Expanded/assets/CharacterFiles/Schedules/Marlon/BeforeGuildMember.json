@@ -1,0 +1,15 @@
+{
+    "Changes": [
+        {   
+            //Marlon stuck inside until player is a member
+            "Action": "EditData",
+            "Target": "Characters/schedules/MarlonFay",
+            "When": {
+                "HasFlag |contains=landslideDone": false
+            },
+            "Entries": {
+                "spring": "610 AdventureGuild 4 11 2/2200 Custom_AdventurerSummit 33 22 2"
+            }
+        }
+    ]
+}

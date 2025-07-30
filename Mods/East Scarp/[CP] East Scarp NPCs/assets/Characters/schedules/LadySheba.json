@@ -1,0 +1,32 @@
+{
+ 
+
+/*Other places she might like to go:
+{
+			"Name": "Sheba.nap",
+			"Value": "{{Random:
+EastScarp_Village 7 83 2 sheba_nap,
+EastScarp_Village 65 76 2 sheba_nap,
+EastScarp_Village 23 79 2 sheba_nap,
+EastScarp_Village 3 101 2 sheba_nap}}"
+		},
+
+EastScarp_Village 10 86 2 sheba_sit
+EastScarp_Village 28 104 2 sheba_sit
+EastScarp_Village 1 12 2 sheba_sit
+
+EastScarp_Village 75 80 2 square_5_5
+EastScarp_Village 26 70 0 square_7_0_0
+EastScarp_Village 22 16 2 square_5_4
+EastScarp_Village 45 110 0 square_5_0_0
+EastScarp_Village 16 102 square_5_5
+EastScarp_Village 45 66 0 square 5_0
+
+EastScarp_Village 11 62 2 sheba_grooming
+EastScarp_Village 8 53 2 sheba_grooming
+EastScarp_Village 28 93 2 sheba_grooming
+EastScarp_Village 53 61 2 sheba_grooming
+EastScarp_Village 13 92 2 sheba_grooming
+"spring":"900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 EastScarp_CatWarpRoom 2 4 sheba_nap"
+*/
+}

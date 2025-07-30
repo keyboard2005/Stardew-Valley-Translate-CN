@@ -1,0 +1,546 @@
+{
+    "Changes": [
+     
+        {
+            "Action": "Load",
+            "Target": "Maps/EastScarpeInn_SpiritEve",
+            "FromFile": "assets/Maps/EastScarpInn_SpiritsEve.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": {
+                    "DisplayName": "{{i18n:festival.spiritsevescarpinn.name}}",
+                    "DefaultArrivalTile": {
+                        "X": 44,
+                        "Y": 35
+                    },
+                    "CreateOnLoad": {
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\EastScarpeInn_SpiritEve"
+                    },
+                    "MusicDefault": "EastScarp.SpiritEve",
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/PassiveFestivals",
+            "Entries": {
+                "EastScarpe_SpiritsEve": {
+                    "DisplayName": "{{i18n:festival.spiritsevescarpinn.name}}",
+                    "Condition": "",
+                    "ShowOnCalendar": true,
+                    "Season": "Fall",
+                    "StartDay": 27,
+                    "EndDay": 27,
+                    "StartTime": 1300,
+                    "StartMessage": "{{i18n:festival.spiritsevescarpinn}}",
+                    "MapReplacements": {
+                        "EastScarp_VillageInn": "EastScarp_VillageInn_SpiritEve"
+                    },
+                    "DailySetupMethod": null,
+                    "CleanupMethod": null,
+                    "CustomFields": {}
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_45_31": "{{i18n:spiritsevescarp.rosa.0}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jacob",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.jacob.1}}",
+                "EastScarp_VillageInn_SpiritEve_20_28": "{{i18n:spiritsevescarp.jacob.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_28_26": "{{i18n:spiritsevescarp.eloise.1}}",
+                "EastScarp_VillageInn_SpiritEve_43_21": "{{i18n:spiritsevescarp.eloise.2}}",
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.eloise.3}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_17_18": "{{i18n:spiritsevescarp.aideen.1}}",
+                "EastScarp_VillageInn_SpiritEve_3_18": "{{i18n:spiritsevescarp.aideen.2}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/OliverK",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_29_14": "{{i18n:spiritsevescarp.oliver.1}}",
+                "EastScarp_VillageInn_SpiritEve_17_18": "{{i18n:spiritsevescarp.oliver.2}}"
+            },
+            "When": {
+                "HasSeenEvent": "57873000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/OliverK",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.oliver.lexi.1}}",
+            },
+            "When": {
+                "HasSeenEvent": "9666010"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/JosephineK",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.josephine.1}}"
+            },
+            "HasSeenEvent": "57873000",
+            // "HasSeenEvent |contains=57873005": "false"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leximonster",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.lexi.1}}",
+                "EastScarp_VillageInn_SpiritEve_30_11": "{{i18n:spiritsevescarp.lexi.2}}",
+                "EastScarp_VillageInn_SpiritEve_18_19": "{{i18n:spiritsevescarp.lexi.3}}"
+            }
+        },
+        //vanilla
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.shane.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.jas.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_21_27": "{{i18n:spiritsevescarp.marnie.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve_22_14": "{{i18n:spiritsevescarp.sam.1}}",
+                //"EastScarp_VillageInn_41_18":""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.vincent.1}}"
+            }
+        },
+        //Other Lemurkat mods
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.tristan.1}}"
+            },
+            "When": {
+                "HasSeenEvent": "5295000",
+                "HasMod": "Lemurkat.Tristan.CP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Juliet",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.juliet.1}}"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jessie",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.jessie.1}}"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.jasper.1}}"
+            },
+            "When": {
+                "HasMod": "Lemurkat.NPCJasper"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "fall_27": "{{i18n:spiritsevescarp.rosa.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "EastScarp_VillageInn_Sat": "{{i18n:spiritsevescarp.rosa.2}}"
+            },
+            "When": {
+                "HasSeenEvent": "57874020"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/KatarynaLK",
+            "Entries": {
+                "EastScarp_VillageInn_SpiritEve": "{{i18n:spiritsevescarp.kataryna.1}}"
+            }
+        },
+        //D A N C I N G   A N I M A T I O N S
+        //************************************
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "elliott_dance": "36/36 36 36 37 37 37/36",
+                "leah_dance": "30/30 30 30 31 31 31/30",
+                "maru_dance": "29/29 29 29 30 30 30/29",
+                "emily_dance": "16/16 16 17 17 16 16 17 17 20 20 21 21 20 20 21 21 16 16 17 17 16 16 17 17 22 22 23 23 22 22 23 23/16"
+            }
+        },
+        // *** S c h e d u l e s ***
+        //***************************
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Rosa",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "750 EastScarp_VillageInn 43 10 0 square_5_1_0/1200 EastScarp_VillageInn 45 31 2/2200 Town 26 23 2"
+            },
+            "When": {
+                "HasSeenEvent": "57874020"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Leximonster",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "0 EastScarp_SeaCave 25 20 0/700 EastScarp_SeaCave 30 21 2/a1300 EastScarp_VillageInn 34 30 3/1500 EastScarp_VillageInn 27 11 2/1800 EastScarp_VillageInn 18 19 0/2100 EastScarp_SeaCave 25 20 0"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "0 EastScarp_VillageInn 19 11/800 EastScarp_VillageInn 13 11 1 oliverk_computer/1230 EastScarp_VillageInn 17 27 2/1500 EastScarp_VillageInn 29 8 3/1540 EastScarp_VillageInn 29 11 3/1800 EastScarp_VillageInn 18 19 0"
+            },
+            "When": {
+                "HasSeenEvent": "57873000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "0 EastScarp_VetHouse 18 21 2/a1230 EastScarp_VillageInn 33 29 2/1500 EastScarp_VillageInn 29 8 2/1540 EastScarp_VillageInn 29 11 3/1800 EastScarp_VillageInn 17 18 1/2100 EastScarp_Village 77 109 1/2230 EastScarp_VetHouse 18 21 2"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JosephineK",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "0 EastScarp_VillageInn 8 9/640 EastScarp_VillageInn 3 9 3/1100 EastScarp_VillageInn 42 18 1/1240 EastScarp_VillageInn 17 28 0/1500 EastScarp_VillageInn 17 28 3/1840 EastScarp_VillageInn 27 28 2"
+            },
+            "When": {
+                "HasSeenEvent": "57873000",
+                "HasSeenEvent |contains=57873005": "false"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/JosephineK",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "a1100 EastScarp_VillageInn 42 18 1/1240 EastScarp_VillageInn 17 28 1/1500 EastScarp_VillageInn 17 28 3/1840 EastScarp_VillageInn 27 28 2"
+            },
+            "When": {
+                "HasSeenEvent |contains=57873005": "true"
+            }
+        },
+        //vanilla
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Emily",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "900 HaleyHouse 16 5 2/a1300 EastScarp_VillageInn 28 30 1/1400 EastScarp_VillageInn 22 31 1 emily_dance/1940 HaleyHouse 21 4 1 emily_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1300 EastScarp_VillageInn 28 30 1/1400 EastScarp_VillageInn 22 30 1 emily_dance/1940 HaleyHouse 21 4 1 emily_sleep",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Blacksmith 3 13 2/a1300 EastScarp_VillageInn 15 32 2/1410 EastScarp_VillageInn 17 32 1/1540 EastScarp_VillageInn 17 32 0/1730 EastScarp_VillageInn 15 32 2/1810 EastScarp_VillageInn 15 32 1/2020 Blacksmith 10 4 1 clint_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Shane",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 AnimalShop 24 15 0/a1300 EastScarp_VillageInn 29 30 3/1420 EastScarp_VillageInn 29 31 0/1900 EastScarp_VillageInn 46 20 0/2000 AnimalShop 27 4 1 shane_sleep",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 3 22 1/a1300 EastScarp_VillageInn 29 30 3/1430 EastScarp_VillageInn 29 31 0/1900 EastScarp_VillageInn 46 20 0/2000 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Forest 38 10 2 jas_jumprope \"Strings\\schedules\\Jas:spring.000\"/a1300 EastScarp_VillageInn 45 18 2 jas_read/1900 EastScarp_VillageInn 45 19 2/2000 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Marnie",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "830 AnimalShop 17 5 0/a1300 EastScarp_VillageInn 44 33 0/1320 EastScarp_VillageInn 21 27 3/1500 EastScarp_VillageInn 16 29 0/2000 AnimalShop 12 5 3 marnie_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Elliott",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "800 ElliottHouse 1 5 0/a1330 EastScarp_VillageInn 31 33 0/1350 EastScarp_VillageInn 31 33 1/1430 EastScarp_VillageInn 31 33 3/1440 EastScarp_VillageInn 24 32 1 elliott_dance/1930 ElliottHouse 13 4 1 elliott_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1330 EastScarp_VillageInn 31 33 0/1400 EastScarp_VillageInn 31 33 1/1430 EastScarp_VillageInn 31 33 3/1440 EastScarp_VillageInn 24 32 1 elliott_dance/1930 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Maru",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "800 ScienceHouse 5 6 1 maru_tinker/a1400 EastScarp_VillageInn 35 20 3/1450 EastScarp_VillageInn 10 18 0/1520 EastScarp_VillageInn 17 31 2/1730 EastScarp_VillageInn 21 32 maru_dance/2020 ScienceHouse 2 4 3 maru_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1400 EastScarp_VillageInn 35 20 3/1450 EastScarp_VillageInn 10 18 0/1520 EastScarp_VillageInn 17 31 2/1730 EastScarp_VillageInn 21 32 maru_dance/2020 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Leah",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "900 LeahHouse 3 7 3 leah_sculpt/a1400 EastScarp_VillageInn 33 33 3/1440 EastScarp_VillageInn 25 32 1 leah_dance/1930 LeahHouse 2 4 3 leah_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1400 EastScarp_VillageInn 32 33 3/1440 EastScarp_VillageInn 25 32 1 leah_dance/1930 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sam",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "800 Town 25 98 2/a1310 EastScarp_VillageInn 23 11 1/1700 EastScarp_VillageInn 41 18 2/1950 SamHouse 22 13 1 sam_sleep",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 3 22 1/a1310 EastScarp_VillageInn 23 11 1/2000 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Vincent",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "800 Town 26 98 2/a1300 EastScarp_VillageInn 44 18 1 vincent_read_right/1950 SamHouse 8 22 3 vincent_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sebastian",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 29 11 3/1520 EastScarp_VillageInn 28 12 0/1830 EastScarp_VillageInn 23 9 1/1950 SamHouse 21 13 sebastian_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 29 14 3/1520 EastScarp_VillageInn 28 15 0/1830 EastScarp_VillageInn 23 12 1/1950 bed"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sebastian",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 29 11 3/1520 EastScarp_VillageInn 28 12 0/1530 EastScarp_VillageInn 29 8 2/1800 EastScarp_VillageInn 23 9 0/1830 EastScarp_VillageInn 23 9 1/1950 SamHouse 21 13 sebastian_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 29 11 3/1520 EastScarp_VillageInn 28 12 0/1530 EastScarp_VillageInn 29 8 2/1800 EastScarp_VillageInn 23 9 0/1830 EastScarp_VillageInn 23 9 1/1950 bed"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 25 8 2 abigail_sit/1500 EastScarp_VillageInn 18 19 0/1800 EastScarp_VillageInn 24 9 3/1940 SeedShop 2 9 abigail_sleep",
+                "marriage_EastScarpe_SpiritsEve": "a1310 EastScarp_VillageInn 25 11 2 abigail_sit/1500 EastScarp_VillageInn 18 19 0/1810 EastScarp_VillageInn 24 12 3/1940 bed"
+            }
+        },
+        //Other Lemurkat mods
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/MisterGinger",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Forest 42 10 2 MrG_Grooming/a1240 EastScarp_Village 44 68 2 MrG_Grooming/2020 AnimalShop 7 16 2 MrG_Sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/MisterGinger",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "800 EastScarp_House1 20 19 0/1100 EastScarp_Village 26 60 2/a1310 EastScarp_VillageInn 31 29 2/1430 EastScarp_VillageInn 29 29 2/1900 EastScarp_VillageInn 47 20 0/2000 Town 18 52 2",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 3 22 1/a1310 EastScarp_VillageInn 31 28 2/2000 bed"
+            },
+            "When": {
+                "HasSeenEvent": "5295000",
+                "HasMod": "Lemurkat.Tristan.CP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/a1220 EastScarp_VillageInn 45 35 3/1500 EastScarp_VillageInn 46 33 0/2000 EastScarp_VillageInn 46 31 3/2200 Town 25 23 2",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 3 22 1/a1220 EastScarp_VillageInn 45 30 3/2000 bed"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Custom_LK_LodgingHouse 21 21 3/a1220 EastScarp_VillageInn 45 35 3/1500 EastScarp_VillageInn 46 33 0/2000 EastScarp_VillageInn 46 31 3/2200 Town 25 23 2",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 3 22 1/a1220 EastScarp_VillageInn 45 30 3/2000 bed"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Gremlin",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/a1220 EastScarp_Village 40 69 3 square_7_1/2020 Town 26 23 2",
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+                "HasSeenEvent": "86571101"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "610 Custom_LK_LodgingHouse 18 19 2/900 EastScarp_ClearingHouse 16 9 3 Jessie_waterL/a1200 EastScarp_VillageInn 15 28 0/1500 EastScarp_VillageInn 15 28 1"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "610 Custom_LK_LodgingHouse 18 14 2/a1200 EastScarp_VillageInn 15 28 0/1510 EastScarp_VillageInn 15 29 1"
+            },
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jasper",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "610 Custom_LK_Museum2 18 13 0/700 Custom_LK_Museum2 21 14 3/a1230 EastScarp_VillageInn 43 17 2",
+                "marriage_EastScarpe_SpiritsEve": "730 BusStop 13 22 1/a1230 EastScarp_VillageInn 43 17 2 Jasper_Read/1900 bed"
+            },
+            "When": {
+                "HasMod": "Lemurkat.NPCJasper"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Lucikiel",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "700 Blacksmith 12 16 3/a1300 EastScarp_VillageInn 18 33 3/1420 EastScarp_VillageInn 27 20 2 lucikiel_fire/2020 Blacksmith 12 16 3",
+                "marriage_EastScarpe_SpiritsEve": "a1300 EastScarp_VillageInn 18 33 3/1430 EastScarp_VillageInn 27 20 2 lucikiel_fire/2020 bed"
+            },
+            "When": {
+                "HasMod": "Arknir.Lucikiel"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Mateo",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "MAIL RivalHearts_AideenMateo/GOTO EastScarpe_SpiritsEve_noDeen/700 EastScarp_Village 93 102 2/a1300 EastScarp_VillageInn 33 27 0/1450 EastScarp_VillageInn 31 29 2/1600 EastScarp_VillageInn 26 29 0/1650 EastScarp_VillageInn 20 28 0/1800 EastScarp_VillageInn 4 18 4/2200 Town 20 20 2",
+                "EastScarpe_SpiritsEve_noDeen": "700 EastScarp_Village 93 102 2/a1300 EastScarp_VillageInn 33 27 0/1450 EastScarp_VillageInn 31 29 2/2100 Town 21 20 2",
+                "marriage_EastScarpe_SpiritsEve": "a1300 EastScarp_VillageInn 33 27 0/1450 EastScarp_VillageInn 31 29 2/2020 bed"
+            },
+            "When": {
+                "HasMod |contains=DestyNova.Mateo.CP, DN.SnS.CP, DN.SnS":true,
+            }
+        },
+        //Moves ItsBenter's family
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/ItsBenterEredith",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "600 EastScarp_HartResidence 3 35 1/630 EastScarp_VillageInn 43 10 0 square_3_1_0/800 EastScarp_VillageInn 43 11 2/1200 EastScarp_VillageInn 43 10 0 square_3_1_0/1300 EastScarp_VillageInn 46 27 2/1900 EastScarp_Village 53 63/2030 EastScarp_HartResidence 5 35 0/2300 EastScarp_HartResidence 3 35 1 eredith_sleep",
+            },
+            "When": {
+                "HasMod": "ItsBenter.InnCompanions.CP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/ItsBenterMichal",
+            "Entries": {
+                "EastScarpe_SpiritsEve": "600 EastScarp_HartResidence 4 35 0 michal_sleep/620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 42 11 2/1800 EastScarp_Village 20 67 1/1900 EastScarp_InnBath 18 13 2/2200 EastScarp_HartResidence 7 37 0/2300 EastScarp_HartResidence 4 35 0 michal_sleep",
+            },
+            "When": {
+                "HasMod": "ItsBenter.InnCompanions.CP"
+            }
+        },
+        // *** E v e n t s **
+        // *****************************************
+        //First Year
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VillageInn, Data/Events/EastScarp_VillageInn_SpiritEve",
+            "Entries": {
+                "9666010/z summer/e 57873005/z winter/z spring/u 27": "{{MusicalTrackESSE}}/39 32/Leximonster -1000 -1000 0 OliverK 41 31 1 Rosa 42 31 3 Marnie 31 27 1 Jacob 32 27 3 farmer -1000 -1000 0 Elliott 35 32 1 Vincent 30 33 0 Eloise 31 33 0 Jas 32 33 0/skippable/pause 1000/emote OliverK 40/pause 100/playSound doorOpen/pause 1000/warp farmer 44 36/faceDirection OliverK 2 true/faceDirection Rosa 2 true/pause 1000/textAboveHead Rosa \"{{i18n:9666010.01}} {{playerName}}\"/move farmer 0 -2 3 true/move Rosa 0 2 2 true/emote Marnie 40/pause 1000/emote Jacob 56/speak Rosa \"{{i18n:9666010.02}}\"/emote farmer 32/pause 1000/speak Rosa \"{{i18n:9666010.03}}\"/jump farmer 3/emote farmer 16/pause 1000/advancedMove farmer false -11 0 0 -1 3 1000/pause 1000/move OliverK 0 2 1/faceDirection Rosa 3/faceDirection Jas 1/faceDirection Eloise 1/pause 1000/faceDirection Vincent 1/faceDirection Elliott 2/pause 1000/textAboveHead Jas \"{{i18n:9666010.04}}\"/speak Rosa \"{{i18n:9666010.05}}\"/pause 1000/emote OliverK 60/pause 1000/speak Rosa \"{{i18n:9666010.06}}\"/playSound doorOpen/warp Leximonster 44 36/move Leximonster 0 -2 3/textAboveHead Leximonster \"{{i18n:9666010.07}}\"/faceDirection Rosa 1/pause 100/showFrame Rosa 19/jump Rosa 7/emote Rosa 16/shake Rosa 500/showFrame Rosa 0/speed OliverK 3/move OliverK 0 1 1/textAboveHead OliverK \"{{i18n:9666010.08}}\"/pause 1000/speak OliverK \"{{i18n:9666010.09}}\"/pause 1000/move Leximonster -1 0 3/speak Leximonster \"{{i18n:9666010.10}}\"/emote OliverK 28/pause 1000/move Jas 0 2 1/jump Jas 5/emote Jas 16/pause 1000/faceDirection Jas 0/faceDirection Vincent 2/faceDirection Eloise 2/pause 1000/faceDirection Jas 1/move Eloise 0 1 1 true/pause 1000/move Vincent 0 1 1 true/faceDirection Marnie 2/faceDirection Jacob 2/emote Jacob 8/faceDirection farmer 1/emote farmer 16/pause 1000/speed Jas 3/speed Vincent 3/speed Eloise 3/move Jas 7 0 1 true/move Vincent 7 0 1 true/move Eloise 7 0 1 true/pause 1000/faceDirection farmer 2/pause 1000/faceDirection farmer 1/move Jas 1 0 1/speak Jas \"{{i18n:9666010.11}}\"/faceDirection Leximonster 3/move Vincent 0 1 1/pause 1000/emote Leximonster 32/speak Leximonster \"{{i18n:9666010.12}}\"/move Vincent 1 0 1/pause 1000/speak Vincent \"{{i18n:9666010.13}}\"/pause 500/faceDirection Eloise 2/faceDirection Vincent 0/speak Eloise \"{{i18n:9666010.14}}\"/pause 1000/speak Rosa \"{{i18n:9666010.15}}\"/move Leximonster -1 0 0/faceDirection Vincent 1/faceDirection Eloise 1/speak Leximonster \"{{i18n:9666010.16}}\"/pause 1000/emote Rosa 32/pause 1000/speak Rosa \"{{i18n:9666010.17}}\"/pause 100/emote OliverK 60/pause 1000/faceDirection Leximonster 3/pause 500/faceDirection Leximonster 0/pause 100/speak Leximonster \"{{i18n:9666010.18}}\"/pause 1000/speak Rosa \"{{i18n:9666010.19}}\"/pause 500/emote Leximonster 32/pause 1000/speak Leximonster \"{{i18n:9666010.20}}\"/pause 100/speak Rosa \"{{i18n:9666010.21}}\"/textAboveHead Eloise \"{{i18n:9666010.22}}\"/speak Vincent \"{{i18n:9666010.23}}\"/faceDirection Eloise 3 true/faceDirection Jas 3 true/faceDirection Vincent 3 true/faceDirection Leximonster 3/emote Leximonster 20/speak Leximonster \"{{i18n:9666010.24}}\"/pause 100/move Leximonster 0 1 3/move Eloise -5 0 3 true/move Vincent -5 0 3 true/move Jas -5 0 3 true/move Leximonster -5 0 3 true/pause 1000/faceDirection OliverK 2/emote OliverK 28/pause 1000/end"
+            }
+        },
+    ]
+}

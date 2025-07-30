@@ -1,0 +1,81 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "LASV/FruitTrees",
+            "FromFile": "assets/FruitTrees/FruitTrees.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FruitTrees",
+            "Entries": {
+                "LASV_Umuwi_Lanzones_Sapling": {
+                    "PlantableLocationRules": null,
+                    "DisplayName": "Umuwi Lanzones Tree",
+                    "Seasons": [
+                        "Summer"
+                    ],
+                    "Fruit": [
+                        {
+                            "Season": null,
+                            "Chance": 1,
+                            "Condition": null,
+                            "Id": "(O)LASV_Umuwi_Lanzones",
+                            "ItemId": "(O)LASV_Umuwi_Lanzones",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "LASV/FruitTrees",
+                    "TextureSpriteRow": 0,
+                    "CustomFields": {}
+                },
+                "LASV_Umuwi_Rambutan_Sapling": {
+                    "PlantableLocationRules": null,
+                    "DisplayName": "Umuwi Rambutan Tree",
+                    "Seasons": [
+                        "Spring"
+                    ],
+                    "Fruit": [
+                        {
+                            "Season": null,
+                            "Chance": 1,
+                            "Condition": null,
+                            "Id": "(O)LASV_Umuwi_Rambutan",
+                            "ItemId": "(O)LASV_Umuwi_Rambutan",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "LASV/FruitTrees",
+                    "TextureSpriteRow": 1,
+                    "CustomFields": {}
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,503 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_SalmonOfKnowledge": {
+          "Name": "{{ModID}}_SalmonOfKnowledge",
+          "DisplayName": "{{i18n:fish.salmonofknowledge.name}}",
+          "Description": "{{i18n:fish.salmonofknowledge.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 125,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 92,
+          "ContextTags": [
+            "color_red",
+            "fish_salmonofknowledge",
+            "fish_river"
+          ]
+        },
+
+        "{{ModID}}_Fastitocalon": {
+          "Name": "{{ModID}}_Fastitocalon",
+          "DisplayName": "{{i18n:fish.fastitocalon.name}}",
+          "Description": "{{i18n:fish.fastitocalon.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 300,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 93,
+          "ContextTags": [
+            "color_green",
+            "fish_fastitocalon",
+            "fish_river"
+          ]
+        },
+
+        "{{ModID}}_PallidSailfin": {
+          "Name": "{{ModID}}_PallidSailfin",
+          "DisplayName": "{{i18n:fish.pallidsailfin.name}}",
+          "Description": "{{i18n:fish.pallidsailfin.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 225,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 94,
+          "ContextTags": [
+            "color_brown",
+            "fish_pallidsailfin",
+            "fish_river"
+          ]
+        },
+
+        "{{ModID}}_GiantDragonfish": {
+          "Name": "{{ModID}}_GiantDragonfish",
+          "DisplayName": "{{i18n:fish.giantdragonfish.name}}",
+          "Description": "{{i18n:fish.giantdragonfish.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 175,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 95,
+          "ContextTags": [
+            "color_blue",
+            "fish_giantdragonfish",
+            "fish_river"
+          ]
+        },
+
+        "{{ModID}}_FiveLinedConstellationFish": {
+          "Name": "{{ModID}}_FiveLinedConstellationFish",
+          "DisplayName": "{{i18n:fish.fivelinedconstellationfish.name}}",
+          "Description": "{{i18n:fish.fivelinedconstellationfish.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 215,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 96,
+          "ContextTags": [
+            "color_blue",
+            "fish_fivelinedconstellationfish",
+            "fish_river"
+          ]
+        },
+
+        "{{ModID}}_GoldieTheBatteryPoweredFish": {
+          "Name": "{{ModID}}_GoldieTheBatteryPoweredFish",
+          "DisplayName": "{{i18n:fish.goldiethebatterypoweredfish.name}}",
+          "Description": "{{i18n:fish.goldiethebatterypoweredfish.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+          "ExcludeFromFishingCollection": "{{ExcludeFromPerfection}}",
+          "Price": 2000,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 109,
+          "ContextTags": [
+            "color_blue",
+            "fish_goldiethebatterypoweredfish",
+            "fish_river",
+            "fish_has_roe"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "{{ModID}}_SalmonOfKnowledge": "SalmonOfKnowledge/50/sinker/12/30/600 2400/spring summer/both/688 .6 684 .1/3/.5/.5/0",
+        "{{ModID}}_Fastitocalon": "Fastitocalon/45/floater/8/38/600 2400/spring summer fall winter/both/688 .6 684 .1/2/.5/.5/0",
+        "{{ModID}}_PallidSailfin": "PallidSailfin/40/floater/6/25/600 2400/winter spring/sunny/688 .6 684 .1/2/.5/.5/0",
+        "{{ModID}}_GiantDragonfish": "GiantDragonfish/45/sinker/6/32/600 2400/fall winter/rainy/688 .6 684 .1/2/.5/.5/0",
+        "{{ModID}}_FiveLinedConstellationFish": "FiveLinedConstellationFish/25/sinker/2/10/600 2400/summer fall/sunny/688 .6 684 .1/1/.5/.5/0",
+        "{{ModID}}_GoldieTheBatteryPoweredFish": "GoldieTheBatteryPoweredFish/95/sinker/12/48/600 2600/spring summer fall winter/both/688 .6 684 .1/5/.1/.08/0/true",
+      }
+    },
+    {
+      "LogName": "Aquarium Data",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "{{ModID}}_SalmonOfKnowledge": "1/fish/1////Mods\\{{ModID}}\\snsaquariumfish",
+        "{{ModID}}_FiveLinedConstellationFish": "0/fish/0////Mods\\{{ModID}}\\snsaquariumfish",
+        "{{ModID}}_PallidSailfin": "2/fish/2////Mods\\{{ModID}}\\snsaquariumfish",
+        "{{ModID}}_GiantDragonfish": "3/eel/3////Mods\\{{ModID}}\\snsaquariumfish",
+        "{{ModID}}_GoldieTheBatteryPoweredFish": "4/fish/4////Mods\\{{ModID}}\\snsaquariumfish",
+        "{{ModID}}_Fastitocalon": "5/cephalopod/5/5/6 7 8 9 9 8 7 6/5/Mods\\{{ModID}}\\snsaquariumfish"
+      }
+    },
+    {
+      "LogName": "Aquarium Sprites",
+      "Action": "Load",
+      "Target": "Mods/{{ModID}}/snsaquariumfish",
+      "FromFile": "Assets/Items & Crops/SnSFish.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "{{ModID}}_SalmonOfKnowledge": {
+          "ID": "{{ModID}}_SalmonOfKnowledge",
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_salmonofknowledge"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)DN.SnS_ancientglowinghuckleberry",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_druidicessence",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_WaterEssence",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)DN.SnS_ancientamaranth 3",
+              "(O)DN.SnS_ancientepiphyticfern 3",
+              "(O)DN.SnS_glowingpolyporemushrooms 3"
+            ],
+            "5": [
+              "(O)DN.SnS_ancientwildfairyrose 5",
+              "(O)DN.SnS_ancientelderberry 5",
+              "(O)DN.SnS_ancientbottlegourd 5"
+            ],
+            "7": [
+              "(O)DN.SnS_ancientgiantappleberry 7",
+              "(O)DN.SnS_ancientazuredetura 7",
+              "(O)DN.SnS_ancientglowinghuckleberry 7"
+            ]
+          }
+        },
+
+        "{{ModID}}_Fastitocalon": {
+          "ID": "{{ModID}}_Fastitocalon",
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_fastitocalon"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)DN.SnS_ancientsweettealeaves",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_druidicessence",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_WaterEssence",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)DN.SnS_ancientamaranth 3",
+              "(O)DN.SnS_ancientepiphyticfern 3",
+              "(O)DN.SnS_glowingpolyporemushrooms 3"
+            ],
+            "5": [
+              "(O)DN.SnS_ancientwildfairyrose 5",
+              "(O)DN.SnS_ancientelderberry 5",
+              "(O)DN.SnS_ancientbottlegourd 5"
+            ],
+            "7": [
+              "(O)DN.SnS_ancientgiantappleberry 7",
+              "(O)DN.SnS_ancientazuredetura 7",
+              "(O)DN.SnS_ancientglowinghuckleberry 7"
+            ]
+          }
+        },
+
+        "{{ModID}}_PallidSailfin": {
+          "ID": "{{ModID}}_PallidSailfin",
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_pallidsailfin"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)DN.SnS_ancientgiantappleberry",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_druidicessence",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_WaterEssence",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)DN.SnS_ancientamaranth 3",
+              "(O)DN.SnS_ancientepiphyticfern 3",
+              "(O)DN.SnS_glowingpolyporemushrooms 3"
+            ],
+            "5": [
+              "(O)DN.SnS_ancientwildfairyrose 5",
+              "(O)DN.SnS_ancientelderberry 5",
+              "(O)DN.SnS_ancientbottlegourd 5"
+            ],
+            "7": [
+              "(O)DN.SnS_ancientgiantappleberry 7",
+              "(O)DN.SnS_ancientazuredetura 7",
+              "(O)DN.SnS_ancientglowinghuckleberry 7"
+            ]
+          }
+        },
+
+        "{{ModID}}_GiantDragonfish": {
+          "ID": "{{ModID}}_GiantDragonfish",
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_giantdragonfish"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)DN.SnS_ancientazuredetura",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_druidicessence",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_WaterEssence",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)DN.SnS_ancientamaranth 3",
+              "(O)DN.SnS_ancientepiphyticfern 3",
+              "(O)DN.SnS_glowingpolyporemushrooms 3"
+            ],
+            "5": [
+              "(O)DN.SnS_ancientwildfairyrose 5",
+              "(O)DN.SnS_ancientelderberry 5",
+              "(O)DN.SnS_ancientbottlegourd 5"
+            ],
+            "7": [
+              "(O)DN.SnS_ancientgiantappleberry 7",
+              "(O)DN.SnS_ancientazuredetura 7",
+              "(O)DN.SnS_ancientglowinghuckleberry 7"
+            ]
+          }
+        },
+
+        "{{ModID}}_FiveLinedConstellationFish": {
+          "ID": "{{ModID}}_FiveLinedConstellationFish",
+          "Precedence": 0,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_fivelinedconstellationfish"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)DN.SnS_ancientwildfairyrose",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_druidicessence",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)DN.SnS_WaterEssence",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)DN.SnS_ancientamaranth 3",
+              "(O)DN.SnS_ancientepiphyticfern 3",
+              "(O)DN.SnS_glowingpolyporemushrooms 3"
+            ],
+            "5": [
+              "(O)DN.SnS_ancientwildfairyrose 5",
+              "(O)DN.SnS_ancientelderberry 5",
+              "(O)DN.SnS_ancientbottlegourd 5"
+            ],
+            "7": [
+              "(O)DN.SnS_ancientgiantappleberry 7",
+              "(O)DN.SnS_ancientazuredetura 7",
+              "(O)DN.SnS_ancientglowinghuckleberry 7"
+            ]
+          }
+        },
+
+        "{{ModID}}_GoldieTheBatteryPoweredFish": {
+          "ID": "{{ModID}}_GoldieTheBatteryPoweredFish",
+          "Precedence": 0,
+          "MaxPopulation": 1,
+          "SpawnTime": -1,
+          "RequiredTags": [
+            "fish_goldiethebatterypoweredfish"
+          ],
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.2,
+              "ItemID": "(O)787",
+              "MinQuantity": 15,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": 0.2,
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.7,
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "3": [
+              "(O)787 3"
+            ],
+            "5": [
+              "(O)787 5"
+            ],
+            "7": [
+              "(O)787 7"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

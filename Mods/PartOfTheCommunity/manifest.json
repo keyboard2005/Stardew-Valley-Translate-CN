@@ -1,0 +1,10 @@
+{
+  "Name": "Part of the Community",
+  "Author": "Brandon Marquis Markail Green (Space Baby), 1.6 update by Nikki864, GMCM menu by MickeyMik (Eela11)",
+  "Version": "1.2.1",
+  "Description": "Lets you increase friendship by supporting the community.",
+  "UniqueID": "SpaceBaby.PartOfTheCommunity",
+  "EntryDll": "PartOfTheCommunity.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:923" ]
+}

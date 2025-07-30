@@ -1,0 +1,20 @@
+﻿{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/HighlandsDwarf",
+        "Entries": 
+        {
+
+"Mon": "...",
+"Tue": "...",
+"Wed": "...",
+"Thu": "...",
+"Fri": "...",
+"Sat": "...",
+"Sun": "..."
+
+},
+      },
+    ]
+}

@@ -1,0 +1,300 @@
+{
+    "Changes": [
+        // F E S T I V A L S
+        //******* S P R I N G   F E S T I V A L S
+        //Egg Festival
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Beatrice": "{{i18n:festivals.beatrice.spring13}}",
+                "Beatrice_y2": "{{i18n:festivals.beatrice.spring13.y2}}",
+                "Eloise": "{{i18n:festivals.eloise.spring13}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.spring13.y2}}",
+                "Jacob": "{{i18n:festivals.jacob.spring13}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.spring13.y2}}",
+                "JosephineK": "{{i18n:festivals.josephine.spring13}}",
+                "JosephineK_y2": "{{i18n:festivals.josephine.spring13.y2}}",
+                "KatarynaLK": "{{i18n:festivals.kataryna.spring13}}",
+                "Abyssrooster": "{{i18n:festivals.abyss.spring13}}",
+                "OliverK": "{{i18n:festivals.oliver.spring13.{{LexiOllyFriend}} }}",
+                "OliverK_y2": "{{i18n:festivals.oliver.spring13.{{LexiOllyFriend}}.y2 }}",
+                "Rosa": "{{i18n:festivals.rosa.spring13.{{JulietRef}} }}",
+                "VivienneLK": "{{i18n:festivals.vivienne.spring13}}",
+                "ToriLK": "{{i18n:festivals.tori.spring13}}",
+                "Aideen": "{{i18n:festivals.aideen.spring13}}"
+            }
+        },
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings",
+            "Entries": {
+                "DesertFestival_Kataryna": "{{i18n:festivals.desert.kataryna.1}}",
+                "DesertFestival_Kataryna2": "{{i18n:festivals.desert.kataryna.2}}",
+            }
+        },
+        {
+            "LogName": "EggFest Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "When": {
+                "HasMod": "gwenynnefydd.festivaldecoredits"
+            },
+            "Entries": {
+                "Eloise_y2": "{{i18n:festivals.eloise.spring13.emyn}}"
+            }
+        },
+        //FLower Festival
+        {
+            "LogName": "Flower Dance Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.spring24}}",
+                "Aideen_y2": "{{i18n:festivals.aideen.spring24.y2}}",
+                "Beatrice": "{{i18n:festivals.beatrice.spring24}}",
+                "Eloise": "{{i18n:festivals.eloise.spring24}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.spring24.y2}}",
+                "Jacob": "{{i18n:festivals.jacob.spring24}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.spring24.y2}}",
+                "JosephineK": "{{i18n:festivals.josephine.spring24}}",
+                "OliverK": "{{i18n:festivals.oliver.spring24}}",
+                "Rosa": "{{i18n:festivals.rosa.spring24}}",
+                "Rosa_y2": "{{i18n:festivals.rosa.spring24.y2.{{JulietRef}} }}",
+                "VivienneLK": "{{i18n:festivals.vivienne.spring24}}",
+                "ToriLK": "{{i18n:festivals.tori.spring24}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.spring24.y2}}"
+            }
+        },
+        {
+            "LogName": "Luau Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer11}}",
+                //"Aideen_y2": "{{i18n:festivals.aideen.summer11.2}}",
+                "Beatrice": "{{i18n:festivals.beatrice.summer11}}",
+                "Beatrice_y2": "{{i18n:festivals.beatrice.summer11.2}}",
+                "Eloise": "{{i18n:festivals.eloise.summer11}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.summer11.2}}",
+                "Jacob": "{{i18n:festivals.jacob.summer11}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.summer11.2}}",
+                "Rosa": "{{i18n:festivals.rosa.summer11.{{JulietRef}} }}",
+                "Rosa_y2": "{{i18n:festivals.rosa.summer11.2.{{JulietRef}} }}",
+                "VivienneLK": "{{i18n:festivals.vivienne.summer11}}",
+                "VivienneLK_y2": "{{i18n:festivals.vivienne.summer11.2}}",
+                "KatarynaLK": "{{i18n:festivals.kataryna.summer11}}",
+                "OliverK": "$1 Oliver_Meet#{{i18n:festivals.oliver.summer11.1}}#$e#{{i18n:festivals.oliver.summer11.2}}",
+                "JosephineK": "$1 Josephine_Meet#{{i18n:festivals.josephine.summer11.1}}#$e#{{i18n:festivals.josephine.summer11.2}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.summer11.2}}"
+            }
+        },
+        {
+            "LogName": "Luau Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer11.3005}}",
+                "JosephineK": "{{i18n:festivals.josephine.summer11.3005}}"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "LogName": "Luau Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Jacob": "{{i18n:festivals.jacob.summer11.MrG}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.summer11.2.MrG}}"
+            },
+            "When": {
+                "HasMod": "LemurKat.Mr.Ginger.NPC"
+            }
+        },
+        {
+            "LogName": "Luau Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Jacob": "{{i18n:festivals.jacob.summer11.tris}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.summer11.2.tris}}"
+            },
+            "When": {
+                "HasMod": "LemurKat.Tristan.CP",
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer28}}",
+                "Eloise": "{{i18n:festivals.eloise.summer28}}",
+                "Jacob": "{{i18n:festivals.jacob.summer28}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.summer28.2}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.summer28.2}}",
+                "OliverK": "{{i18n:festivals.oliver.summer28}}",
+                "JosephineK": "{{i18n:festivals.josephine.summer28}}",
+                "Leximonster": "{{i18n:festivals.lexi.summer28}}",
+                "ToriLK": "{{i18n:festivals.tori.summer28}}",
+                "Rosa": "{{i18n:festivals.rosa.summer28.{{JulietRef}} }}",
+                "Linus_y2":"{{i18n:festivals.linus.summer28.2}}",
+            }
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57872012"
+            },
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer28.2012}}"
+            }
+        },
+        {
+            "LogName": "Fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.fall16.{{AideenDating}} }}",
+                "Aideen_spouse": "{{i18n:festivals.aideen.fall16.spouse}}",
+                "Beatrice": "{{i18n:festivals.beatrice.fall16}}",
+                "Eloise": "{{i18n:festivals.eloise.fall16}}",
+                "Jacob": "{{i18n:festivals.jacob.fall16}}",
+                "JosephineK": "{{i18n:festivals.josephine.fall16}}",
+                "KatarynaLK": "{{i18n:festivals.kataryna.fall16}}",
+                "OliverK": "{{i18n:festivals.oliver.fall16}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.fall16}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.fall16.y2}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.fall16.y2}}",
+                //"JosephineK_y2": "{{i18n:festivals.josephine.fall16.y2}}",
+                //"KatarynaLK_y2": "{{i18n:festivals.kataryna.fall16.y2}}",
+                "OliverK_y2": "{{i18n:festivals.oliver.fall16.y2}}",
+                "VivienneLK_y2": "{{i18n:festivals.vivienne.fall16.y2}}",
+                "ToriLK": "{{i18n:festivals.tori.fall16}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.fall16.y2}}",
+                "Rosa": "{{i18n:festivals.rosa.fall16}}"
+            }
+        },
+        {
+            "LogName": "Fair Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "Eloise": "{{i18n:festivals.eloise.fall16.sve}}",
+                "Jacob": "{{i18n:festivals.jacob.fall16.sve}}"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+        },
+        {
+            "LogName": "Spirit's Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall27",
+            "Entries": {
+                "Eloise": "{{i18n:festivals.eloise.fall27}}",
+                "Jacob": "{{i18n:festivals.jacob.fall27}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.fall27.y2}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.fall27.y2}}",
+                "JosephineK": "{{i18n:festivals.josephine.fall27}}",
+                "KatarynaLK": "{{i18n:festivals.kataryna.fall27}}",
+                "KatarynaLK_y2": "{{i18n:festivals.kataryna.fall27.y2}}",
+                "OliverK": "{{i18n:festivals.oliver.fall27}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.fall27}}",
+                "Rosa": "{{i18n:festivals.rosa.fall27.{{JulietRef}} }}",
+                "ToriLK": "{{i18n:festivals.tori.fall27}}",
+            }
+        },
+        //Ice Festival\
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Eloise": "{{i18n:festivals.eloise.winter8.false}}",
+                "Eloise_y2": "{{i18n:festivals.eloise.winter8.{{SVEInstalled}} }}",
+                "Jacob": "{{i18n:festivals.jacob.winter8}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.winter8.{{SVEInstalled}} }}",
+                "Aideen": "{{i18n:festivals.aideen.winter8}}",
+                "JosephineK": "{{i18n:festivals.josephine.winter8}}",
+                "OliverK": "{{i18n:festivals.oliver.winter8}}",
+                "OliverK_y2": "{{i18n:festivals.oliver.winter8.y2}}",
+                "Rosa": "{{i18n:festivals.rosa.winter8.{{JulietRef}} }}",
+                "Rosa_y2": "{{i18n:festivals.rosa.winter8.{{SVEInstalled}} }}",
+                "ToriLK": "{{i18n:festivals.tori.winter8}}",
+                "ToriLK_y2": "{{i18n:festivals.tori.winter8.{{SVEInstalled}} }}"
+            }
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter8.3005}}",
+                "OliverK_y2": "{{i18n:festivals.oliver.winter8.3005}}",
+                "Eloise": "{{i18n:festivals.eloise.winter8.3005}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=57873005": true
+            }
+        },
+        {
+            "LogName": "Ice Festival",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "When": {
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            },
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter8.rvh}}"
+            }
+        },
+        {
+            "LogName": "Winter Star Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter25}}",
+                "Eloise": "{{i18n:festivals.eloise.winter25.{{SVEInstalled}} }}",
+                "Eloise_y2": "{{i18n:festivals.eloise.winter25.y2}}",
+                "Jacob": "{{i18n:festivals.jacob.winter25}}",
+                "Jacob_y2": "{{i18n:festivals.jacob.winter25.y2}}",
+                "JosephineK": "{{i18n:festivals.josephine.winter25}}",
+                "OliverK": "{{i18n:festivals.oliver.winter25}}",
+                "KatarynaLK": "{{i18n:festivals.kataryna.winter25}}",
+                "Rosa": "{{i18n:festivals.rosa.winter25}}",
+                "Tori": "{{i18n:festivals.tori.winter25}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.winter25}}"
+            }
+        },
+        {
+            "LogName": "Winter Star Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Clint": "{{i18n:festivals.clint.winter25}}"
+            },
+            "When": {
+                "HasMod |contains=aeki.ByeByeClintHelloClarice": false
+            }
+        },
+        {
+            "LogName": "Winterstar Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "KatarynaLK": "{{i18n:festivals.kataryna.winter25.visit}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=57876033": true
+            },
+        },
+    ]
+}

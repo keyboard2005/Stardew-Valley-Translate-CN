@@ -1,0 +1,34 @@
+{
+   "Name": "TDIT - Portraits for Vendors",
+   "Author": "Dolphin Is Not a Fish",
+   "Description": "Gives portraits to all vendors in vanilla Stardew Valley",
+   "Version": "1.9.4",
+   "UniqueID": "DolphINaF.VendorPortraits", 
+   "ContentPackFor": {
+       "UniqueID": "Pathoschild.ContentPatcher",
+       "MinimumVersion": "2.0.0"
+   },
+   "UpdateKeys": [ "Nexus:20414" ],
+   "Dependencies": [
+      {
+         "UniqueID": "Poltergeister.CuteSprites",
+         "IsRequired": false
+      },
+      {
+         "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+         "IsRequired": false
+      },
+      {
+         "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+         "IsRequired": false
+      },
+      {
+         "UniqueID": "LemurKat.JulietHouse.NPC",
+         "IsRequired": false
+      },	  
+	  {
+		 "UniqueID": "Pathoschild.CentralStation.Content",
+		 "IsRequired": false,
+	  },	  
+   ],
+}

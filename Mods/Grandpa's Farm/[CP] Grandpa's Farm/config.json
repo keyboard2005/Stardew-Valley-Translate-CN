@@ -1,0 +1,12 @@
+{
+  "MistEffects": "true",
+  "SandboxLayout": "false",
+  "RemoveFences": "false",
+  "RemoveGrassStretch": "false",
+  "RemoveLandExpansionPond": "false",
+  "GrassCropField": "false",
+  "HeavyDebris": "false",
+  "LargerBridgeToGrandpasShed": "false",
+  "LargerGreenhouse": "true",
+  "RemoveGreenhouseObjects": "false"
+}

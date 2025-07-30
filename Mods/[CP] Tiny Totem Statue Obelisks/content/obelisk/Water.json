@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.data.water",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Water Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "WaterObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.load.water",
+      "Action": "Load",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_water_obelisk.png",
+      "When": {
+        "WaterObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.water",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/flowers/water_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.water",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late",
+      "Target": "Buildings/Water Obelisk",
+      "FromFile": "assets/moss/water_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

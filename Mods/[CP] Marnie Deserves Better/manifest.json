@@ -1,0 +1,12 @@
+{
+   "Name": "[CP] Marnie Deserves Better",
+   "Author": "IllogicalMoodSwing",
+   "Version": "1.0.1",
+   "Description": "CP mod to modify and add events, making sure Lewis never ghosts Marnie again.",
+   "UniqueID": "IMS.CP.MarnieDeservesBetter",
+   "MinimumApiVersion": "3.0",
+   "UpdateKeys": ["Nexus:7686"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+	},
+}

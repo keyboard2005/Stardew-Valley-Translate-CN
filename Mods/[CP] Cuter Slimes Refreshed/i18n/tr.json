@@ -1,0 +1,14 @@
+{
+    "config.section.General.name": "Genel Ayarlar",
+    "config.section.Appearance.name": "Görünüm Ayarları",
+
+    "config.Enabled.name": "Sevimli Balçıkları Etkinleştir",
+    "config.Enabled.description": "Tüm balçıklarınızı her zamankinden daha sevimli yapmak için bunu etkinleştirin.",
+    "config.Enabled.values.true": "Evet",
+    "config.Enabled.values.false": "Hayır",
+
+    "config.Mode.name": "Balçık Stili",
+    "config.Mode.description": "Balçıklarınızın nasıl görüneceğini seçin. Jöle onları daha yumuşak ve yarı saydam yaparken, Parlak onlara parlak, yansıtıcı bir görünüm verir.",
+    "config.Mode.values.jelly": "Jöle",
+    "config.Mode.values.glossy": "Parlak"
+}

@@ -1,0 +1,105 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Linus's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Linus_Spring, Portraits/Linus_Summer, Portraits/Linus_Fall, Portraits/Linus_Winter_Outdoor, Portraits/Linus_Winter_Indoor, Portraits/Linus_FlowerDance, Portraits/Linus_SpiritsEve, Characters/Linus_Spring, Characters/Linus_Summer, Characters/Linus_Fall, Characters/Linus_Winter_Outdoor, Characters/Linus_Winter_Indoor, Characters/Linus_FlowerDance, Characters/Linus_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Linus/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Linus Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Linus", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.LinusSpring": {
+					"Id": "{{ModId}}.LinusSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Linus_Spring",
+					"Portrait": "Portraits/Linus_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.LinusSummer": {
+					"Id": "{{ModId}}.LinusSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Linus_Summer",
+					"Portrait": "Portraits/Linus_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LinusFall": {
+					"Id": "{{ModId}}.LinusFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Linus_Fall",
+					"Portrait": "Portraits/Linus_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LinusWinterIndoor": {
+					"Id": "{{ModId}}.LinusWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Linus_Winter_Indoor",
+					"Portrait": "Portraits/Linus_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LinusWinterOutdoor": {
+					"Id": "{{ModId}}.LinusWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Linus_Winter_Outdoor",
+					"Portrait": "Portraits/Linus_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.LinusFlowerDance": {
+					"Id": "{{ModId}}.LinusFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Linus_FlowerDance",
+					"Portrait": "Portraits/Linus_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LinusSpirit": {
+					"Id": "{{ModId}}.LinusSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Linus_SpiritsEve",
+					"Portrait": "Portraits/Linus_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Linus - Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+            "FromFile": "assets/{{NoNose}}/Random/BundleSprites.png",
+			"FromArea": { "X": 160, "Y": 0, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 160, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Linus Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Linus",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },			
+	]
+}

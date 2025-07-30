@@ -1,0 +1,835 @@
+{
+    "Format": "1.28.0",
+
+    "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "FestivalOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "CuteAideen": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+		
+        "CuteEloise": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+		
+        "CuteJacob": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+		"CuteJosephine": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+		"CuteKataryna": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },	
+		"CuteOliver": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },		
+		"CuteRosa": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+		"CuteVivienne": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },	
+				
+        "ExtraNPC": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+    },
+
+    "DynamicTokens": [
+        {
+            "Name": "IndoorVariant", // Indoors
+            "Value": "_Indoor"
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "_Outdoor",
+            "When": {
+                "IsOutdoors": "true"
+            }
+        },
+
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When": {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, Custom_EastScarpeInn, Custom_EastScarpe, temp"
+            }
+        },
+
+    ],
+
+    "Changes": [
+
+//Aideen
+
+
+        {
+            "LogName": "Aideen Season",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen, Portraits/Aideen",
+            "FromFile": "assets/{{Target}}/Aideen_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteAideen": "true",
+            }
+        },
+
+        {
+            "LogName": "Aideen Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen, Portraits/Aideen",
+            "FromFile": "assets/{{Target}}/Aideen_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteAideen": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "Aideen Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Aideen, Characters/Aideen",
+            "FromFile": "assets/{{Target}}/Aideen_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteAideen": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+
+        {
+            "LogName": "Aideen Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/Characters/Aideen/Aideen_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteAideen": "true",				
+                "NoNose": "false",			
+            }
+        },
+ 
+ 
+
+//Eloise
+
+        {
+            "LogName": "Eloise Season",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise, Portraits/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",
+            }
+        },
+
+        {
+            "LogName": "Eloise Season in/out",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise, Portraits/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",
+            }
+        },
+
+        {
+            "LogName": "Eloise Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise, Portraits/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+	
+
+		{
+            "LogName": "Eloise Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Eloise_Beach",
+            "FromFile": "assets/Portraits/Eloise/Eloise_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",
+            },
+	
+			
+        },
+		{
+            "LogName": "Eloise Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise_Beach",
+            "FromFile": "assets/Characters/Eloise/Eloise_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",
+            },
+	
+			
+        },
+        {
+            "LogName": "Eloise Nose overlay Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise_Beach",
+            "FromFile": "assets/Characters/Eloise/Eloise_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",				
+                "NoNose": "false",			
+            }
+        },
+		
+        {
+            "LogName": "Eloise Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise",
+            "FromFile": "assets/Characters/Eloise/Eloise_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+//Jacob
+
+        {
+            "LogName": "Jacob Season",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob, Portraits/Jacob",
+            "FromFile": "assets/{{Target}}/Jacob_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",
+            }
+        },
+
+        {
+            "LogName": "Jacob Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob, Portraits/Jacob",
+            "FromFile": "assets/{{Target}}/Jacob_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+
+
+
+		{
+            "LogName": "Jacob Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Jacob_Beach",
+            "FromFile": "assets/Portraits/Jacob/Jacob_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",
+            },
+	
+			
+        },
+		{
+            "LogName": "Jacob Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob_Beach",
+            "FromFile": "assets/Characters/Jacob/Jacob_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",
+            },
+	
+			
+        },
+        {
+            "LogName": "Jacob Nose overlay Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob_Beach",
+            "FromFile": "assets/Characters/Jacob/Jacob_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",				
+                "NoNose": "false",			
+            }
+        },
+		
+        {
+            "LogName": "Jacob Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob",
+            "FromFile": "assets/Characters/Jacob/Jacob_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+//JosephineK
+
+
+        {
+            "LogName": "JosephineK Season",
+            "Action": "EditImage",
+            "Target": "Characters/JosephineK, Portraits/JosephineK",
+            "FromFile": "assets/{{Target}}/Josephine_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJosephine": "true",
+            }
+        },
+
+        {
+            "LogName": "JosephineK Festival",
+            "Action": "EditImage",
+            "Target": "Characters/JosephineK, Portraits/JosephineK",
+            "FromFile": "assets/{{Target}}/Josephine_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJosephine": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "JosephineK Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/JosephineK, Characters/JosephineK",
+            "FromFile": "assets/{{Target}}/Josephine_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJosephine": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+
+        {
+            "LogName": "JosephineK Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/JosephineK",
+            "FromFile": "assets/Characters/JosephineK/Josephine_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJosephine": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+//KatarynaLK
+
+        {
+            "LogName": "KatarynaLK Season",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK, Portraits/KatarynaLK",
+            "FromFile": "assets/{{Target}}/Kataryna_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",
+            }
+        },
+
+        {
+            "LogName": "KatarynaLK Festival",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK, Portraits/KatarynaLK",
+            "FromFile": "assets/{{Target}}/Kataryna_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "KatarynaLK Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/KatarynaLK, Characters/KatarynaLK",
+            "FromFile": "assets/{{Target}}/Kataryna_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+	
+
+		
+        {
+            "LogName": "KatarynaLK Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK",
+            "FromFile": "assets/Characters/KatarynaLK/KatarynaLK_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",				
+                "NoNose": "false",			
+            }
+        },
+		
+		{
+            "LogName": "KatarynaLK Wet Hair",
+            "Action": "EditImage",
+            "Target": "Portraits/KatarynaLK_wetHair",
+            "FromFile": "assets/Portraits/KatarynaLK/Kataryna_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",
+            },
+         },
+		{
+            "LogName": "KatarynaLK Wet Hair",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK_wetHair",
+            "FromFile": "assets/Characters/KatarynaLK/Kataryna_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",
+            },	
+			
+        },
+
+        {
+            "LogName": "KatarynaLK Nose overlay wet",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK_wetHair",
+            "FromFile": "assets/Characters/KatarynaLK/Kataryna_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "true",				
+                "NoNose": "false",			
+            }
+        },
+		
+//OliverK
+
+
+        {
+            "LogName": "OliverK Season",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK, Portraits/OliverK",
+            "FromFile": "assets/{{Target}}/Oliver_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",
+            }
+        },
+
+        {
+            "LogName": "OliverK Festival",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK, Portraits/OliverK",
+            "FromFile": "assets/{{Target}}/Oliver_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "OliverK Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/OliverK, Characters/OliverK",
+            "FromFile": "assets/{{Target}}/Oliver_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+
+        {
+            "LogName": "OliverK Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK",
+            "FromFile": "assets/Characters/OliverK/Oliver_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+
+        {
+            "LogName": "OliverK Season",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK_gull",
+            "FromFile": "assets/{{Target}}/Oliver_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",
+            }
+        },
+
+        {
+            "LogName": "OliverK Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK_gull",
+            "FromFile": "assets/Characters/OliverK/Oliver_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "true",				
+                "NoNose": "false",			
+            }
+        },
+		
+
+
+		
+
+
+		
+//Rosa
+
+
+        {
+            "LogName": "Rosa Season",
+            "Action": "EditImage",
+            "Target": "Characters/Rosa, Portraits/Rosa",
+            "FromFile": "assets/{{Target}}/Rosa_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "true",
+            }
+        },
+
+        {
+            "LogName": "Rosa Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Rosa, Portraits/Rosa",
+            "FromFile": "assets/{{Target}}/Rosa_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "Rosa Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Rosa, Characters/Rosa",
+            "FromFile": "assets/{{Target}}/Rosa_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+
+        {
+            "LogName": "Rosa Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/Rosa",
+            "FromFile": "assets/Characters/Rosa/Rosa_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+        {
+            "LogName": "Rosa Nose overlay SE",
+            "Action": "EditImage",
+            "Target": "Characters/Rosa",
+            "FromFile": "assets/Characters/Rosa/Rosa_{{Festival}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "true",				
+                "NoNose": "false",			
+            }
+        },		
+
+//VivienneLK
+
+
+        {
+            "LogName": "VivienneLK Season",
+            "Action": "EditImage",
+            "Target": "Characters/VivienneLK, Portraits/VivienneLK",
+            "FromFile": "assets/{{Target}}/Vivienne_{{Season}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVivienne": "true",
+            }
+        },
+
+        {
+            "LogName": "VivienneLK Festival",
+            "Action": "EditImage",
+            "Target": "Characters/VivienneLK, Portraits/VivienneLK",
+            "FromFile": "assets/{{Target}}/Vivienne_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVivienne": "true",
+                "FestivalOutfits": "true",			
+            }
+        },
+ 
+		{
+            "LogName": "VivienneLK Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/VivienneLK, Characters/VivienneLK",
+            "FromFile": "assets/{{Target}}/Vivienne_Beach.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVivienne": "true",
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+            },
+            "Update": "OnTimeChange, OnLocationChange",			
+			
+        },
+
+        {
+            "LogName": "VivienneLK Nose overlay",
+            "Action": "EditImage",
+            "Target": "Characters/VivienneLK",
+            "FromFile": "assets/Characters/VivienneLK/Vivienne_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVivienne": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+
+//Extra
+
+
+
+// Lexie
+
+		{
+			"LogName": "Lexi Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Leximonster",
+			"FromFile": "assets/Characters/Lexi/seamonster.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",					
+            }
+		},
+		{
+			"LogName": "child Lexi Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/LexiChild",
+			"FromFile": "assets/Characters/Lexi/Lexi_Child.png",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",	
+				},		
+		},
+		{
+			"LogName": "Fashion Show",
+			"Action": "EditImage",
+			"Target": "Characters/Leximonster",
+			"FromFile": "assets/Characters/Lexi/Lexi_FashionShow.png",
+			"Update": "OnLocationChange",
+			"When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",					
+				"DayEvent": "Ferngill Fashion Show",
+				"LocationName": "Temp",
+				"HasSeenEvent": "57872012",
+				"HasMod": "UNA.FF.CP"
+			}
+		},
+
+// Vedndor
+
+
+        {
+            "LogName": "Vendor",
+            "Action": "EditImage",
+            "Target": "JessieVendor, RosaVendor",
+            "FromFile": "assets/{{Target}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",
+            }
+        },
+
+// Cameos		
+        {
+            "LogName": "Cameos",
+            "Action": "EditImage",
+            "Target": "Maps/ESCameos",
+            "FromFile": "assets/{{Target}}_{{NoNose}}.png",
+            "Update": "OnLocationChange",            
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",
+            }
+        },		
+//Mona
+
+		{
+			"LogName": "Mona Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/MonaSwimsuit",
+			"FromFile": "assets/Mona_swimsuit.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",
+            }			
+		},
+		{
+			"LogName": "Mona Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/MonaSwimsuit",
+			"FromFile": "assets/Mona_swimsuit_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+  
+		{
+			"LogName": "Governor",
+			"Action": "EditImage",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/GovernorK.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",
+            }			
+			
+		},
+
+		{
+			"LogName": "Governor",
+			"Action": "EditImage",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/GovernorK_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gunther_walking",
+			"FromFile": "assets/Gunther_walking_{{Target}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",
+            }		
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gunther_walking",
+			"FromFile": "assets/Gunther_walking_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "ExtraNPC": "true",				
+                "NoNose": "false",			
+            }
+        },
+
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Mini Bars",
+  "Author": "Coldopa",
+  "Version": "1.0.5",
+  "Description": "A custom healthbar mod.",
+  "UniqueID": "Coldopa.MiniBars",
+  "EntryDll": "MiniBars.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:8329" ]
+}

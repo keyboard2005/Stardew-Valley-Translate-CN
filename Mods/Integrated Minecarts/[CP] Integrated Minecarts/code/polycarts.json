@@ -1,0 +1,615 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        //Rename other mod's minecarts.
+        //All Farm Carts
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Farm_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Farm_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Farm_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Farm_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Farm_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Farm_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Farm_South": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Farm_South",
+			},
+        },
+        //Easts Scarp Carts
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ES_Village": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ES_Village",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_DeepMountains_South": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.DeepMountains_South",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_DeepMountains_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.DeepMountains_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_UnderScarp": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.UnderScarp",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ES_Meadow": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ES_Meadow",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ClearingHouse": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ClearingHouse",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Orchard": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Orchard",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Town_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Town_East",
+			},
+        },
+        //Expa
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Expa": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+        },
+        //Vanilla Carts
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_FarmCave": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.FarmCave",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_GrandpasShed": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.GrandpasShed",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Old_Community_Garden": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Old_Community_Garden",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Town_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Town_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Town_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Town_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Town_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Town_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Beach": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Beach",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Mountain_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Mountain_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Mountain_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Mountain_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Mountain_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Mountain_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Forest_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Forest_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Forest_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Forest_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Forest_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Forest_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Desert_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Desert_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Desert_South": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Desert_South",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Railroad": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Railroad",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_Secret_Woods": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.Secret_Woods",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ForestWest_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ForestWest_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ForestWest_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ForestWest_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ForestWest_South": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ForestWest_South",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_ForestWest_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.ForestWest_West",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_GingerIsland_North": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.GingerIsland_North",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_GingerIsland_East": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.GingerIsland_East",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_GingerIsland_South": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.GingerIsland_South",
+			},
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [
+                "Default",
+                "Destinations"
+            ],
+            "Fields": {
+                "Polydot.PolyCarts_GingerIsland_West": {
+                    "Price": "{{PriceToRide}}",
+                },
+            },
+			"When": {
+				"HasSeenEvent": "Polydot.PolyCarts.Unlock_Event.GingerIsland_West",
+			},
+        },
+    ]
+}

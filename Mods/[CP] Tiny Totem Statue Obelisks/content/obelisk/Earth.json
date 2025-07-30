@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.obelisk.data.earth",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Earth Obelisk": {
+          "DrawShadow": "false",
+          "FadeWhenBehind": "false",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          }
+        }
+      },
+      "When": {
+        "EarthObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.load.earth",
+      "Action": "Load",
+      "Target": "Buildings/Earth Obelisk",
+      "FromFile": "assets/obelisk/{{season}}/{{season}}_earth_obelisk.png",
+      "When": {
+        "EarthObeliskEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.floweroverlay.earth",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late + 10",
+      "Target": "Buildings/Earth Obelisk",
+      "FromFile": "assets/flowers/earth_obelisk.png",
+      "When": {
+        "FlowersEnabled": "true"
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.obelisk.mossoverlay.earth",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Priority": "Late",
+      "Target": "Buildings/Earth Obelisk",
+      "FromFile": "assets/moss/earth_obelisk.png",
+      "When": {
+        "MossEnabled": "true"
+      }
+    }
+  ]
+}

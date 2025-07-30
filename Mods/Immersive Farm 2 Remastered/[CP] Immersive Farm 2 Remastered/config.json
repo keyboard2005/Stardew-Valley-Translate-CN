@@ -1,0 +1,21 @@
+{
+  "Mist_Effects": "false",
+  "Farm_Sandbox_Layout": "false",
+  "Farm_Light_Debris": "false",
+  "Dirt_Crop_Field_1": "false",
+  "Dirt_Crop_Field_2": "false",
+  "Dirt_Crop_Field_3": "false",
+  "Dirt_Crop_Field_4": "false",
+  "Dirt_Crop_Field_5": "false",
+  "Dirt_Crop_Field_6": "false",
+  "Remove_Fences_In_Front_Of_Grandpas_Shed": "true",
+  "Remove_Farm_Animal_Area_Fences": "false",
+  "Remove_Fences_Left_Of_Crop_Field_1": "true",
+  "Remove_Central_Cherry_Blossom_Tree_And_Water_Trough": "false",
+  "Remove_Cherry_Blossom_Tree_From_Southeast_Hill": "false",
+  "Remove_Fences_From_Backyard": "false",
+  "Remove_Minecart_System": "false",
+  "Remove_Objects_From_Greenhouse": "false",
+  "Disable_IF2R_Greenhouse": "false",
+  "Disable_Farm_Cave": "false"
+}

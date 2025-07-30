@@ -1,0 +1,252 @@
+{
+
+// 1.6.0 update Lines for Hat Mouse and Friends. Everyone besides Wizard and Hamster speak in rather broken language. 
+  "HatMouse.Beanie": "Mir haben Hut for every head. Okay, Stups?",
+//The Hamster is a reference to Bijou from Hamtaro. She is from France in the English version (and apparently from Russia in the French version)
+  "HatMouse.Hamster": "Bonjour! Suchen Sie schickes Hut heute? ... Stups?",
+  "HatMouse.Bow": "Willste Schleife? Schleife für Haar? Vielleicht für Hut?",
+  "HatMouse.Dipper": "Mysterie lösen, Hütte verkaufen, alles in einem Tag, Stups.",
+  "HatMouse.Flower": "Du wirst schöner mit richtigem Hut, Stups!",
+  "HatMouse.Goggles": "Alle Helden brauchen Schutzbrille, Stups!",
+  "HatMouse.Headband": "Willste Stirnband? Heh, nicht zum Verkaufen, Stups!",
+  "HatMouse.Link": "-lebhaft gestikulieren-",
+//Mouse Marlon's line is a reference to the real Marlon's own shop line in the Adventurer's Guild
+  "HatMouse.Marlon": "Suchst du nach einem neuen Hut, Stups?",
+  "HatMouse.Post": "Keine Briefe heute. deshalb mir verkauf Hütte, Stups.",
+  "HatMouse.Red": "-starrt schweigend-",
+  "HatMouse.Sailor": "Gestern gesegelt, heute Hütte verkaufen, vielleicht morgen angeln.",
+//Strawhat Mouse's line is a reference to Luffy from One Piece's catchphrase "I'm gonna be King of the Pirates"
+  "HatMouse.Strawhat": "Kauf Hütte, poke! Mich werde König der Hütte!",
+//This is a reference to the Wizard's introduction. The name is a Rasmodius+Mouse wordplay
+  "HatMouse.Wizard": "Ich bin Rasmausius... Sucher der arkanen Wahrheiten.", 
+  
+// Lines for the Casino Vendor, highly disapproving of the farmer being there
+  "CasinoVendor1.Default": "Ach, du. Willst du nur Schaufensterbummel, oder?",
+  "CasinoVendor2.Default": "Du verstehst doch, dass dein Gold keine Werte hier hat, oder?",
+  "CasinoVendor3.Default": "Früher verlangten wir mehr von unseren Clubkartenerhaltern.",
+  "CasinoVendor4.Default": "Alles kann gekauft werden... Solange du dir es verdient hast.",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, short and blunt. The second line is a wordplay referring to his blue skin and blue = sad. If you can't find similar wordplay in the language you're translating, maybe you can change it to just "Why am I blue? I don't know what you're talking about."
+  "CasinoVendor1.Bouncer": "Ich komme bekannt vor? Sie irren sich.",
+  "CasinoVendor2.Bouncer": "Warum bin ich blau? Falsch. Ich habe noch nicht getrunken.",
+  "CasinoVendor3.Bouncer": "Hast du Clubkarte? Komm rein.",
+  "CasinoVendor4.Bouncer": "Alle Gegenstände können mit Qi-Münzen gekauft werden.",
+  
+// 1.6.0 update Lines for the alternate Casino Vendor, friendly.
+  "CasinoVendor1.Green": "Wilkommen zu Qi's Quintessential Quirks. Wir bearbeiten den Name noch.",
+  "CasinoVendor2.Green": "Wir hoffen dass Sie die Zeit in der Kasino geniessen.",
+  "CasinoVendor3.Green": "Der Chef ist glücklich. Wir haben neue Spielsa-- geschätzter Kunde.",
+  "CasinoVendor4.Green": "Tauschen Sie Ihre Qi-Münzen hier aus. Woanders geben Sie sie aus?",
+  
+// Line for the Traveling Merchant during Festival of Ice
+  "TravelerIce": "Ach, die perfekte Kulisse für einige meiner seltensten Funde! Nur für heute, mein Freund.",
+
+// Lines for the Raccoon. "Bobo" is what she calls you.
+  "Raccoon1": "Wir haben Samen, Bobo.",
+  "Raccoon2": "Willst du Samen, Bobo?",
+  "Raccoon3": "Du hast diesen Samen noch nicht, vielleicht.",  
+  
+// 1.7.0 update Lines for the Crow. Just crow sounds.
+  "Crow1": "Krah! Krah!",
+  "Crow2": "Krrk... Krah!",
+  "Crow3": "Kraaahh!",
+  "Crow4": "Krah-Krah-Krah!",  
+  "Crow5": "Kraahhk...",
+
+// 1.9.0 Lines for the Joja Cashier, friendly but canned. "Join us and thrive" calls to JojaMart's slogan "Join us. Thrive".
+  "JojaCashier1.Default": "Welcome to JojaMart! How are you today?",
+  "JojaCashier2.Default": "Remember, as a JojaMart member, you get more for less!",
+  "JojaCashier3.Default": "Mach mit und wachse mit unseren Sonderangeboten für ausgewählte Artikel!",
+  
+// 1.9.0 update special lines for Joja cashier rotations.
+  "JojaCashier1.Daena": "Heya! Willkommen bei JojaMart!",
+  "JojaCashier2.Daena": "Hoffe, dein Tag läuft super! Lass es uns hinter uns bringen, ja?",
+  "JojaCashier3.Daena": "Mach mit! Wachse! Oder geh wenigstens nicht mit leeren Händen nach Hause.",
+  "JojaCashier_JojaDay.Daena": "Es ist Joja Tag! Das heißt 20 Prozent Rabatt auf Saatgut.",
+  "JojaCashier1.Naufal": "Ähm... Willkommen bei JojaMart! Ich hoffe, Sie haben einen schönen Tag.",
+  "JojaCashier2.Naufal": "Möchten Sie bezahlen? Keine Eile, nehmen Sie sich ruhig Zeit!",
+  "JojaCashier3.Naufal": "Wir möchten, dass Sie... äh... Mach mit und wachse? Ah, also... Lassen Sie es mich wissen, wenn Sie etwas brauchen",  
+
+// 1.9.0 update Special lines for various Cashier NPCs
+  "JojaCashier.Juliet": "Wir haben alle Nützliches... und einigen fragwürdigen Sachen im Gang C.",
+  "JojaCashier_JojaDay.Juliet": "So ein Dusel! Es ist Joja Tag. Alle Samen sind bei 20% Rabatt.",
+  "JojaCashier.Jessie": "Schön, dich zu sehen, Schatz. Ich bin hier wenn du Hilfe brauchst.",
+  "JojaCashier.Shane": "Was darf es sein?",
+  
+// Line for the Star Token Exchanger at the Stardew Valley Fair
+  "StarToken": "Hallo! Tausche hier deine Sternenmarken ein, um die beste Beute des Fests zu schnappen!",
+  
+//1.6.0 update Lines for the Scholar who stands in for the Desert Trader
+  "DesertTrader4_male.Scholar": "Ah, der Kamel mag dich, Kumpel. Zwar ein weises Wesen.",
+  "DesertTrader4_female.Scholar": "Ah, der Kamel mag dich, Kumpel. Zwar ein weises Wesen.",
+  "DesertTrader3.Scholar": "In meinem Heimat, Ihre Münze ist wie Sand im Wind. Welcher Schatz können Sie stattdessen anbieten?",
+  "DesertTrader2.Scholar": "Jedes Artefakt hat eine Geschichte, So wie Sie.",
+  "DesertTrader1.Scholar": "Ah, anderer Sucher von Wissen und Waren! Wollen Sie handeln?",
+  
+//1.6.0 update Lines for the Announcer who stands in for the Desert Trader
+  "DesertTrader4_male.RacerGuy": "Der Kamel mag dich wahrscheinlich! ein fantastisches Zeichen!",
+  "DesertTrader4_female.RacerGuy": "Der Kamel mag dich wahrscheinlich! ein fantastisches Zeichen!",
+  "DesertTrader3.RacerGuy": "Ihre Münze gelten hier nicht, Hast du etwas zum Tauschen?",
+  "DesertTrader2.RacerGuy": "Komm rein und siehe Wunder!",
+  "DesertTrader1.RacerGuy": "Willkommen, Reisender! Bereit fürs Handel?",
+  
+// Lines for Pierre at various festivals
+  "PierreJellyfish": "Seltene Waren, die wie eine Mondlichtqualle strahlen! Verpasst es nicht!",
+  "PierreEgg": "Exklusive Waren zu verkaufen! Holt sie, bevor der Sonnenuntergang!",
+  "PierreFeast": "Festliche Leckereien, um dein Fest zu erwärmen! Holt sie, bevor alles ausverkauft ist!",
+  "PierreFlower": "Bezaubere deinen Tanzpartner mit diesen schönen Blumen! Pflücke sie, bevor der letzte Tanz!",
+  "PierreLuau": "Exotische Dekorationen um {{FarmName}} Hof das Stadtgespräch  zu machen! Holt sie, solange du kannst!",
+  "PierreSpirit": "Gruselige Dekorationen für die gruseligste Scheune! Hol sie, bevor sie verschwinden!",
+
+// 1.7.0 Update Lines for the clinic.
+  "MaruClinic": "Ein Schlückchen würde dich sofort prima machen.",
+  "HarveyClinic": "Ah, willkommen! Schön, dass Sie um Sie sich kümmern.",
+  
+// Alex  
+  "AlexIceCream": "Kaltes Eis für so einen heißen Tag. Wie gefällt es dir?",
+
+//1.9.0 Rotation Concession lines
+  "Concessions1.Daena": "Süßes? Getränke? Ich hab, was du brauchst!",
+  "Concessions2.Daena": "Du wirst es bereuen, wenn du mitten im Film keinen Snack hast. Sag’s nur.",
+  "Concessions3.Daena": "Dein Gast sieht hungrig aus. Komm schon, sei nett! Gönn ihm was Gutes!",
+  "Concession.Daena": "Willkommen am Snackstand! Lust, was Leckeres für deinen Gast zu holen?",
+  "ConcessionAlone.Daena": "Allein unterwegs, hm? Bring doch einen Gast mit, dann kannst du ihm auch 'nen Snack holen! Macht den Filmabend viel besser, glaub mir.",
+  "ConcessionPurchased.Daena": "Also willst du {0}, richtig? Wir bringen es {1} auf den Platz, sobald der Film startet!",
+  "ConcessionAfterMovie.Daena": "Film ist vorbei! War er gut? Falls nicht – wenigstens waren die Snacks es!",
+  "Concessions1.Naufal": "Oh, wir haben auch Getränke, falls Sie durstig sind!",
+  "Concessions2.Naufal": "Ein guter Snack macht den Film noch besser!",
+  "Concessions3.Naufal": "Ihr Gast sieht aus, als hätte er Hunger... vielleicht eine kleine Leckerei?",  
+  "Concession.Naufal": "Oh, ähm... willkommen! Möchten Sie einen Snack für Ihren Gast?",
+  "ConcessionAlone.Naufal": "Oh! Nur damit Sie es wissen, wenn Sie mit einem Gast kommen, können Sie ihm einen Snack bestellen. Das ist eine schöne Art, den Film noch besonderer zu machen!",
+  "ConcessionPurchased.Naufal": "Sie haben {0} bestellt, richtig? Wir sorgen dafür, dass {1} es bekommt, sobald der Film beginnt!",
+  "ConcessionAfterMovie.Naufal": "Wie war der Film? Ähm, ich hoffe, Sie hatten eine schöne Zeit!",
+  
+// 1.9.0 Rotation Movie Ticket Lines
+  "BoxOffice.Default": "Hast du einen Freund, den du einladen willst? Gib ihm einfach ein Ticket und zack - Filmabend!",
+  "BoxOffice.Naufal": "Wenn Sie möchten, können Sie einem Freund ein Ticket geben und ihn einladen, mit Ihnen zu kommen!",  
+
+//1.9.0 Central Station cameo
+  "CentralStation.PartTimer": "Teilzeitkraft",
+  "CentralStation.Merchant": "Verkäuferin",  
+  "CentralStation.SailorCat": "Matrosenkatze",     
+  "CentralStation.Naufal.1": "Oh, ähm... hallo. Entschuldigung, ich dachte für einen Moment, Sie wären mein Schichtleiter...",
+  "CentralStation.Naufal.2": "Ich mache viele Nebenjobs... Es ist schön, helfen zu können, aber manchmal... äh... vergesse ich, wohin ich gerade muss.",
+  "CentralStation.Naufal.3": "Die Leute sagen mir immer, ich sollte mal eine Pause machen, aber... ich mag es, beschäftigt zu sein. Es gibt mir das Gefühl, nützlich zu sein.",
+  "CentralStation.Daena.1": "Hast du schon mal im Kundenservice in so ’nem Laden gearbeitet? Fühlt sich an wie ’ne Battle Royale.",
+  "CentralStation.Daena.2": "Teilzeitjob? Eher Überlebenskampf! Erst stehst du an der Fritteuse, und im nächsten Moment bändigst du Touristen.",
+  "CentralStation.Daena.3": "Mein Zeitplan ist ein totales Chaos, aber hey, ich seh die verrücktesten Sachen.",
+  "CentralStation.Daena.4": "Zum Beispiel diesen Flamingo. Warum gibt’s hier überhaupt einen Flamingo??",	
+  "CentralStation.Mark.1": "Noch ein Job, noch eine Schicht... Mann, ich will einfach nur ins Bett.",
+  "CentralStation.Mark.2": "Kennst du das, wenn du müde aufwachst, müde arbeitest und dann noch müder nach Hause kommst? Ja. So ist jeder Tag.",
+  "CentralStation.Merchant.1": "Heute keine Waren, Reisender. Nur vielleicht ein Moment der Ruhe vor der nächsten Reise.",
+  "CentralStation.Merchant.2": "Seltsam, nicht wahr? Ein Ort voller Menschen, und doch bleibt niemand lange. Wir alle sind nur auf der Durchreise.",  
+  "CentralStation.SailorCat.1": "Ich schlafe in Seilrollen. Zugbänke biegen sich nicht richtig. Nicht bequem für eine Katze, verstehst du?",
+  "CentralStation.SailorCat.2": "Auf See wiegt dich alles in den Schlaf. Hier gibt’s nur Lärm und Füße.",  
+	
+// Descriptions for Generic Mod Config Menu
+  "config.Raccoon.name": "Waschbär",
+  "config.Raccoon.description": "Das Porträt des freischaltbaren Händlerwaschbärs in Zundersaftwald ermöglichen.",
+  
+//1.7.0 update  
+  "config.Crow.name": "Krähe",
+  "config.Crow.description": "Das Porträt des Krähenhändlers für verlorene Sachen in Geheimwald, ermöglichen.",
+  
+  "config.Traveler.name": "Reisender Händler",
+  "config.Traveler.description": "Das Porträt des reisenden Händlers, der Freitags und Sonntags in Zundersaftwald kommt, ermöglichen.",
+
+  "config.Bookseller.name": "Buchhändler",
+  "config.Bookseller.description": "Das Porträt des Buchhändlers, der die Stadt zweimal in der Jahreszeit besucht, ermöglichen.",
+  
+  "config.StarToken.name": "Sternenmarker Austauscher",
+  "config.StarToken.description": "Das Porträt des Sternenmarker Austauschers in Sternentautaler Volksfest ermöglichen.",
+  
+  "config.MagicBoat.name": "Zauberhändler",
+  "config.MagicBoat.description": "Das Porträt des Zauberhändlers vom Nachtmarkt ermöglichen.",
+
+  "config.EggShop.name": "Calico-Eiertauscher",
+  "config.EggShop.description": "Das Porträt des Tauschers für Calico-Eier beim Wüstenfestival ermöglichen.",
+  
+//1.4.0 update  
+  "config.OldMariner.name": "Alter Seefahrer",
+  "config.OldMariner.description": "Porträt des alter Seefahrers ermöglichen.", 
+  
+  "config.PierreFestival.name": "Pierres Festporträts",
+  "config.PierreFestival.description": "Porträts von Pierres Stände in allen Feste ermöglichen.",
+  
+// 1.6.0 update
+  "config.section.Desert.name": "Wüstenhändler",
+  "config.DesertTrader.name": "Porträt ermöglichen",
+  "config.DesertShift.name": "Schichten randomisieren",
+  "config.DesertShift.description": "Bewirkt, dass die Händler täglich rotiert.",
+
+// 1.6.0 update
+  "config.section.Club.name": "Casinoanbieter",
+  "config.section.Club.description": "Der Qi-Münzen-Austauscher im verborgenen Wüstencasino.",
+  "config.Casino.name": "Porträt ermöglichen",
+  "config.CasinoShift.name": "Schichten randomisieren",
+  "config.CasinoShift.description": "Bewirkt, dass die Verkäufer täglich rotiert.",
+
+// 1.6.0 update
+  "config.section.Island.name": "Inselhändler",
+  "config.section.Island.description": "Der freischaltbare Händlervogel auf der Ingwerinsel.",
+  "config.IslandTrader.name": "Porträt ermöglichen",
+  "config.BirdShift.name": "Schichten randomisieren",
+  "config.BirdShift.description": "Bewirkt, dass die Händler täglich rotiert.",
+  
+  "config.section.JojaMart.name": "JojaMart Kassierer",
+  
+  "config.JojaCashier.name": "Porträt ermöglichen", 
+  
+//1.6.0 update  
+  "config.JojaShift.name": "Geplante Schicht.",
+  "config.JojaShift.description": "Bewirkt, dass die Kassierer täglich rotiert.",
+  
+  "config.section.Theater.name": "Kinopersonal",
+  
+  "config.MovieTicket.name": "Kassenpersonal",
+  "config.MovieTicket.description": "Das Porträt des Kinokassenpersonal ermöglichen.",
+  
+  "config.MovieConcession.name": "Imbissstandbetreuer",
+  "config.MovieConcession.description": "Das Porträt des Kinoimbissstandbetreuers ermöglichen.",
+  
+//1.6.0 update    
+  "config.MovieShift.name": "Geplante Schicht.",
+  "config.MovieShift.description": "Bewirkt, dass die Positionen des Theaterpersonals täglich rotieren. Betrifft nur den Kassenpersonal, wenn SVE verwendet wird.",
+  
+//1.5.0 update
+  "config.section.HouseMouse.name": "Hutmaus",
+  "config.section.HouseMouse.description": "Die Hutmaus im abgelegenen Haus im Zundersaftwald.",
+  "config.HatMouse.name": "Porträt ermöglichen",
+
+//1.5.0 update  
+  "config.WildflourMouse.name": "Wildflours Hutmaus",
+  "config.WildflourMouse.description": "Der stil wie in 'Ferngill Fashion Festival' verwenden. Funktionieren nur wenn installiert sein.",
+  
+//1.5.0 update
+  "config.section.Volcano.name": "Vulkanzwerg",
+  "config.section.Volcano.description": "Der zwergische Händler im 5. Etage des Vulkankerkers.",
+  "config.VolcanoDwarf.name": "Porträt ermöglichen",
+
+//1.5.0 update  
+  "config.LavenderSkellyDwarf.name": "LavenderSkellys Zwerg",
+  "config.LavenderSkellyDwarf.description": "Der stil wie in 'Dwarf Portrait Replacement'. Funktionieren nur wenn installiert sein.",
+
+//1.5.0 update
+  "config.section.NightMarketDecor.name": "Dekorationsverkäufer",
+  "config.section.NightMarketDecor.description": "Der Dekorationsverkäufer im blauen Boot am Nachtmarkt.",
+  "config.DecorBoat.name": "Porträt ermöglichen", 
+
+//1.5.0 update  
+  "config.CatPipe.name": "Katzenpfeife",
+  "config.CatPipe.description": "Funktionieren nur wenn 'Night Market Cat Boat' installiert ist. Die Katze wird eine Pfeife rauchen.",
+  
+//1.9.0 update  
+  "config.section.Misc.name": "Verschiedenes",
+  "config.Nyapu.name": "Nyapus Porträts",
+  "config.Nyapu.description": "Ändert alle Porträts in Nyapus Kunststil.",
+  "config.CentralStation.name": "Central Station Cameos",
+  "config.CentralStation.description": "Ermöglicht einigen Händlern, in 'Central Station' zu erscheinen, falls sie installiert ist."  
+  
+}
+
+

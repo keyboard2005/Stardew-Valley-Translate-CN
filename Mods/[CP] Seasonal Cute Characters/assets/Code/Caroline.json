@@ -1,0 +1,171 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Caroline's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Caroline_Spring, Portraits/Caroline_Summer, Portraits/Caroline_Fall, Portraits/Caroline_Winter_Outdoor, Portraits/Caroline_Winter_Indoor, Portraits/Caroline_FlowerDance, Portraits/Caroline_SpiritsEve, Portraits/Caroline_Aerobics, Characters/Caroline_Spring, Characters/Caroline_Summer, Characters/Caroline_Fall, Characters/Caroline_Winter_Outdoor, Characters/Caroline_Winter_Indoor, Characters/Caroline_FlowerDance, Characters/Caroline_SpiritsEve, Characters/Caroline_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Caroline's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline_Beach, Characters/Caroline_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}.png"
+		},
+		
+		/*
+		{
+			"LogName": "Aerobics Caroline only during the day",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline_Spring, Portraits/Caroline_Summer, Portraits/Caroline_Fall, Portraits/Caroline_Winter_Outdoor, Portraits/Caroline_Winter_Indoor, Characters/Caroline_Spring, Characters/Caroline_Summer, Characters/Caroline_Fall, Characters/Caroline_Winter_Outdoor, Characters/Caroline_Winter_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/Caroline_Aerobics.png",
+			"When": {
+				"Time": "{{Range: 1100, 1500}}",
+				"LocationName": "SeedShop",
+				"ExtraOutfits": "true",
+			},
+		},
+		*/
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Caroline - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Caroline_Spring, Characters/Caroline_Summer, Characters/Caroline_Fall, Characters/Caroline_Winter_Outdoor, Characters/Caroline_Winter_Indoor, Characters/Caroline_FlowerDance, Characters/Caroline_SpiritsEve, Characters/Caroline_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/Caroline_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Caroline - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Caroline_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Caroline Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Caroline", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.CarolineSpring": {
+					"Id": "{{ModId}}.CarolineSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Caroline_Spring",
+					"Portrait": "Portraits/Caroline_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.CarolineSummer": {
+					"Id": "{{ModId}}.CarolineSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Caroline_Summer",
+					"Portrait": "Portraits/Caroline_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.CarolineFall": {
+					"Id": "{{ModId}}.CarolineFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Caroline_Fall",
+					"Portrait": "Portraits/Caroline_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.CarolineWinterIndoor": {
+					"Id": "{{ModId}}.CarolineWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Caroline_Winter_Indoor",
+					"Portrait": "Portraits/Caroline_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.CarolineWinterOutdoor": {
+					"Id": "{{ModId}}.CarolineWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Caroline_Winter_Outdoor",
+					"Portrait": "Portraits/Caroline_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.CarolineFlowerDance": {
+					"Id": "{{ModId}}.CarolineFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Caroline_FlowerDance",
+					"Portrait": "Portraits/Caroline_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.CarolineSpirit": {
+					"Id": "{{ModId}}.CarolineSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Caroline_SpiritsEve",
+					"Portrait": "Portraits/Caroline_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.CarolineBeach": {
+					"Id": "{{ModId}}.CarolineBeach",
+					"Sprite": "Characters/Caroline_Beach",
+					"Portrait": "Portraits/Caroline_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.CarolineAerobics": {
+					"Id": "{{ModId}}.CarolineAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Caroline_Aerobics",
+					"Sprite": "Characters/Caroline_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Caroline - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 9, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 9, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Caroline Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Caroline",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+
+		
+	]
+}

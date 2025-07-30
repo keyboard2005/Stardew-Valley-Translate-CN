@@ -1,0 +1,227 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Sophia's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Sophia_Spring, Portraits/Sophia_Summer, Portraits/Sophia_Fall, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_FlowerDance, Portraits/Sophia_SpiritsEve, Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Summer_Makeup, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_Beach, Characters/Sophia_Spring, Characters/Sophia_Summer, Characters/Sophia_Fall, Characters/Sophia_Winter_Outdoor, Characters/Sophia_Winter_Indoor, Characters/Sophia_FlowerDance, Characters/Sophia_SpiritsEve, Characters/Sophia_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sophia/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Sophia - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sophia_Spring, Characters/Sophia_Summer, Characters/Sophia_Fall, Characters/Sophia_Winter_Outdoor, Characters/Sophia_Winter_Indoor, Characters/Sophia_FlowerDance, Characters/Sophia_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Sophia/Sophia_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Sophia - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sophia_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Sophia/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//OLDER VARIANT OVERLAY
+		
+		{
+            "LogName": "Sophia Older Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Spring, Portraits/Sophia_Summer, Portraits/Sophia_Fall, Portraits/Sophia_Winter_Outdoor, Portraits/Sophia_Winter_Indoor, Portraits/Sophia_FlowerDance, Portraits/Sophia_Beach", //Beach has no makeup in SVE, so doesn't need older makeup overlay.
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },
+        {
+            "LogName": "Sophia Older Overlay Makeup",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia_Spring_Makeup, Portraits/Sophia_Summer_Makeup, Portraits/Sophia_Fall_Makeup, Portraits/Sophia_Winter_Outdoor_Makeup, Portraits/Sophia_Winter_Indoor_Makeup, Portraits/Sophia_SpiritsEve",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_MU_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "OlderSophia": "true",
+            }
+        },
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Sophia Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Sophia", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.SophiaSpring": {
+					"Id": "{{ModId}}.SophiaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Sophia_Spring",
+					"Portrait": "Portraits/Sophia_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.SophiaSummer": {
+					"Id": "{{ModId}}.SophiaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Sophia_Summer",
+					"Portrait": "Portraits/Sophia_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaFall": {
+					"Id": "{{ModId}}.SophiaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Sophia_Fall",
+					"Portrait": "Portraits/Sophia_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaWinterIndoor": {
+					"Id": "{{ModId}}.SophiaWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Sophia_Winter_Indoor",
+					"Portrait": "Portraits/Sophia_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.SophiaWinterOutdoor": {
+					"Id": "{{ModId}}.SophiaWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Sophia_Winter_Outdoor",
+					"Portrait": "Portraits/Sophia_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Sophia with Makeup
+				"{{ModId}}.SophiaSpringMakeup": {
+					"Id": "{{ModId}}.SophiaSpringMakeup",
+					"Condition": "SEASON spring, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Spring",
+					"Portrait": "Portraits/Sophia_Spring_Makeup",
+					"Precedence": -200,
+				},
+
+				"{{ModId}}.SophiaSummerMakeup": {
+					"Id": "{{ModId}}.SophiaSummerMakeup",
+					"Condition": "SEASON Summer, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Summer",
+					"Portrait": "Portraits/Sophia_Summer_Makeup",
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.SophiaFallMakeup": {
+					"Id": "{{ModId}}.SophiaFallMakeup",
+					"Condition": "SEASON Fall, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Fall",
+					"Portrait": "Portraits/Sophia_Fall_Makeup",
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.SophiaWinterIndoorMakeup": {
+					"Id": "{{ModId}}.SophiaWinterIndoorMakeup",
+					"Condition": "SEASON Winter, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Winter_Indoor",
+					"Portrait": "Portraits/Sophia_Winter_Indoor_Makeup",
+					"Outdoors": false,
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.SophiaWinterOutdoorMakeup": {
+					"Id": "{{ModId}}.SophiaWinterOutdoorMakeup",
+					"Condition": "SEASON Winter, DAY_OF_WEEK Friday Saturday Sunday",
+					"Sprite": "Characters/Sophia_Winter_Outdoor",
+					"Portrait": "Portraits/Sophia_Winter_Outdoor_Makeup",
+					"Indoors": false,
+					"Precedence": -200,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.SophiaFlowerDance": {
+					"Id": "{{ModId}}.SophiaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Sophia_FlowerDance",
+					"Portrait": "Portraits/Sophia_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.SophiaSpirit": {
+					"Id": "{{ModId}}.SophiaSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Sophia_SpiritsEve",
+					"Portrait": "Portraits/Sophia_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.SophiaBeach": {
+					"Id": "{{ModId}}.SophiaBeach",
+					"Sprite": "Characters/Sophia_Beach",
+					"Portrait": "Portraits/Sophia_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+		// MISCELLANIOUS
+		
+		// Temporary Sophia JPK Sprite
+		
+		{
+            "LogName": "Sophia Prairie King Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/SophiaJPKsprite",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",
+        },
+		
+		{
+            "LogName": "Sophia Prairie King Sprite Nose",
+            "Action": "EditImage",
+            "Target": "Characters/SophiaJPKsprite",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "NoNose": "false"
+            }
+        },
+		{
+			"LogName": "Sophia - Spouse Picture",
+			"Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "assets/Characters/SVE_Portraits.png",
+			"FromArea": {"X": 7, "Y": 7, "Width": 18, "Height": 18},
+			"ToArea": {"X": 7, "Y": 7, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Sophia Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Sophia",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },				
+	]		
+}

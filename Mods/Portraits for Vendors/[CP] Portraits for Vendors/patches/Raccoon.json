@@ -1,0 +1,25 @@
+{
+	"Changes":[
+		{
+			"LogName": "Raccoon",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Raccoon", "Owners", "AnyOrNone" ],
+			"Entries": {
+				"Portrait": "Portraits/Raccoon_Default",
+				"Dialogues":  [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Dialogue": null,
+						"RandomDialogue": [
+							"{{i18n:Raccoon1}}",
+							"{{i18n:Raccoon2}}",
+							"{{i18n:Raccoon3}}",
+						],
+					}
+				],
+			},
+		},
+	],
+}

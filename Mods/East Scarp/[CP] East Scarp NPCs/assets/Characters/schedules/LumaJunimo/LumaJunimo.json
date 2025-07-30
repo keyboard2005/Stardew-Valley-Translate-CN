@@ -1,0 +1,5 @@
+{
+  "spring": "800 EastScarp_OrchardHouse 4 24 0/1000 EastScarp_OrchardHouse 11 19 2/1200 EastScarp_Orchard 48 20 2/1450 EastScarp_Orchard 39 13 2/1950 EastScarp_Orchardhouse 14 5 0",
+ // "winter": "610 SeedShop 9 6 0/1200 SeedShop 25 15 0/1300 Seedshop 6 10 1/1240 SeedShop 2 6 0/1730 SeedShop 35 5 0/2000 SeedShop 2 9 3",
+ // "summer_4": "610 SeedShop 39 5 0/1030 Railroad 30 45 0/1400 Mountain 49 31 1/1740 SeedShop 3 6 0/1930 SeedShop 1 9 3",
+}

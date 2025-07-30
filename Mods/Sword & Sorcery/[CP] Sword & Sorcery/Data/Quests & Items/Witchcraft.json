@@ -1,0 +1,168 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModID}}_EarthEssence": {
+          "Name": "{{ModID}}_EarthEssence",
+          "DisplayName": "{{i18n: witchcraft.earth-essence.name}}",
+          "Description": "{{i18n: witchcraft.earth-essence.description}}",
+          "Type": "Basic",
+          "Category": -28,
+          "Price": 15,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 86,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "essence_item",
+            "item_earth_essence",
+            "sns_essence_item",
+            "color_dark_brown"
+          ]
+        },
+        "{{ModID}}_AirEssence": {
+          "Name": "{{ModID}}_AirEssence",
+          "DisplayName": "{{i18n: witchcraft.air-essence.name}}",
+          "Description": "{{i18n: witchcraft.air-essence.description}}",
+          "Type": "Basic",
+          "Category": -28,
+          "Price": 15,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 87,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "essence_item",
+            "item_air_essence",
+            "sns_essence_item",
+            "color_cyan"
+          ]
+        },
+        "{{ModID}}_WaterEssence": {
+          "Name": "{{ModID}}_WaterEssence",
+          "DisplayName": "{{i18n: witchcraft.water-essence.name}}",
+          "Description": "{{i18n: witchcraft.water-essence.description}}",
+          "Type": "Basic",
+          "Category": -28,
+          "Price": 15,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 88,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "essence_item",
+            "item_water_essence",
+            "sns_essence_item",
+            "color_light_cyan"
+          ]
+        },
+        "{{ModID}}_FireEssence": {
+          "Name": "{{ModID}}_FireEssence",
+          "DisplayName": "{{i18n: witchcraft.fire-essence.name}}",
+          "Description": "{{i18n: witchcraft.fire-essence.description}}",
+          "Type": "Basic",
+          "Category": -28,
+          "Price": 15,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 89,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "essence_item",
+            "item_fire_essence",
+            "sns_essence_item",
+            "color_red"
+          ]
+        },
+        "{{ModID}}_TeleportCircle": {
+          "Name": "{{ModID}}_TeleportCircle",
+          "DisplayName": "{{i18n: witchcraft.teleport-circle.name}}",
+          "Description": "{{i18n: witchcraft.teleport-circle.description}}",
+          "Type": "Crafting",
+          "Category": -24,
+          "Price": 0,
+          "Texture": "Textures/DN.SnS/TeleportCircle",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModID}}_ReturnPotion": {
+          "Name": "{{ModID}}_ReturnPotion",
+          "DisplayName": "{{i18n: witchcraft.return-potion.name}}",
+          "Description": "{{i18n: witchcraft.return-potion.description}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 250,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Texture": "Textures/DN.SnS/SnSObjects",
+          "SpriteIndex": 91,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "sns_potion_item",
+            "color_poppyseed"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModID}}_WallOfForce": {
+          "Name": "{{ModID}}_WallOfForce",
+          "DisplayName": "{{i18n: witchcraft.wall-of-force.name}}",
+          "Description": "{{i18n: witchcraft.wall-of-force.description}}",
+          "Fragility": 2,
+          "IsLamp": true,
+          "Texture": "Textures/DN.SnS/SnSMachines",
+          "SpriteIndex": 3
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FloorsAndPaths",
+      "Entries": {
+        "{{ModId}}_TeleportCircleFloor": {
+          "Id": "{{ModId}}_TeleportCircleFloor",
+          "ItemId": "{{ModID}}_TeleportCircle",
+          "Texture": "Textures/DN.SnS/TeleportCircle",
+          "Corner": {
+            "X": 0,
+            "Y": 0
+          },
+          "WinterTexture": "Textures/DN.SnS/TeleportCircle",
+          "WinterCorner": {
+            "X": 0,
+            "Y": 0
+          },
+          "PlacementSound": "coldSpell",
+          "RemovalSound": "coldSpell",
+          "RemovalDebrisType": 12,
+          "FootstepSound": "coldSpell",
+          "ConnectType": "Random",
+          "ShadowType": "Contoured",
+          "CornerSize": 4,
+          "FarmSpeedBuff": -1.0
+        }
+      }
+    },
+    // CRAFTING RECIPES 
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModID}}_TeleportCircle": "{{ModID}}_WaterEssence 10 {{ModID}}_AirEssence 10 {{ModID}}_EarthEssence 10 {{ModID}}_FireEssence 10 769 25/hoot/{{ModID}}_TeleportCircle 1/false/null"
+        //"{{ModID}}_ReturnPotion": "{{ModID}}_WaterEssence 1 {{ModID}}_AirEssence 1 {{ModID}}_EarthEssence 1 {{ModID}}_FireEssence 1 769 5/hoot/{{ModID}}_ReturnPotion 1/false/null"*/
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "{{ModID}}_WaterEssence": "Water Essence/trap/.20//ocean/12/24/false"
+      },
+      "When": { "HasSeenEvent": "SnS.Ch4.Roslin.1" }
+    }
+  ]
+}

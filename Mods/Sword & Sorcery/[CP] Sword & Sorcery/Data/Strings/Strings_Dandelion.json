@@ -1,0 +1,21 @@
+{
+    "Changes": 
+    [
+    {
+        "LogName": "Map Strings",
+        "Action": "EditData",
+        "Target": "strings/StringsFromMaps",
+        "Entries": 
+        {
+            //DANDELION'S STRINGS 
+    
+            "DandyTea1":"{{i18n:Strings.Dandelion.DandyTea1}}",
+            "DandyTea2":"{{i18n:Strings.Dandelion.DandyTea2}}",
+            "DandyTea3":"{{i18n:Strings.Dandelion.DandyTea3}}",
+            "SpicyBooks1":"{{i18n:Strings.Dandelion.SpicyBooks1}}",
+            "SpicyBooks2":"{{i18n:Strings.Dandelion.SpicyBooks2}}",
+    
+        }
+       }
+    ]
+}

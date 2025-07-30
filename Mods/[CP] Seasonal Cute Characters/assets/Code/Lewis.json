@@ -1,0 +1,191 @@
+{
+	"Changes": [
+		
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Lewis's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Lewis_Spring, Portraits/Lewis_Summer, Portraits/Lewis_Fall, Portraits/Lewis_Winter_Outdoor, Portraits/Lewis_Winter_Indoor, Portraits/Lewis_FlowerDance, Portraits/Lewis_SpiritsEve, Portraits/Lewis_Beach, Characters/Lewis_Spring, Characters/Lewis_Summer, Characters/Lewis_Fall, Characters/Lewis_Winter_Outdoor, Characters/Lewis_Winter_Indoor, Characters/Lewis_FlowerDance, Characters/Lewis_SpiritsEve, Characters/Lewis_BeachAdd",
+			"FromFile": "assets/{{TargetPathOnly}}/Lewis/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Lewis's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Lewis/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Lewis - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Spring, Characters/Lewis_Summer, Characters/Lewis_Fall, Characters/Lewis_Winter_Outdoor, Characters/Lewis_Winter_Indoor, Characters/Lewis_FlowerDance, Characters/Lewis_SpiritsEve, Characters/Lewis_BeachAdd",
+			"FromFile": "assets/{{TargetPathOnly}}/Lewis/Lewis_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Lewis - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Lewis/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Lewis Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Lewis", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.LewisSpring": {
+					"Id": "{{ModId}}.LewisSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Lewis_Spring",
+					"Portrait": "Portraits/Lewis_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.LewisSummer": {
+					"Id": "{{ModId}}.LewisSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Lewis_Summer",
+					"Portrait": "Portraits/Lewis_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LewisFall": {
+					"Id": "{{ModId}}.LewisFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Lewis_Fall",
+					"Portrait": "Portraits/Lewis_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LewisWinterIndoor": {
+					"Id": "{{ModId}}.LewisWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Lewis_Winter_Indoor",
+					"Portrait": "Portraits/Lewis_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.LewisWinterOutdoor": {
+					"Id": "{{ModId}}.LewisWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Lewis_Winter_Outdoor",
+					"Portrait": "Portraits/Lewis_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.LewisFlowerDance": {
+					"Id": "{{ModId}}.LewisFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Lewis_FlowerDance",
+					"Portrait": "Portraits/Lewis_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.LewisSpirit": {
+					"Id": "{{ModId}}.LewisSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Lewis_SpiritsEve",
+					"Portrait": "Portraits/Lewis_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.LewisBeach": {
+					"Id": "{{ModId}}.LewisBeach",
+					"Sprite": "Characters/Lewis_BeachAdd",
+					"Portrait": "Portraits/Lewis_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.LewisIsland": {
+					"Id": "{{ModId}}.LewisIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Lewis_BeachAdd",
+					"Portrait": "Portraits/Lewis_Beach",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Lewis - Emoji 1",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Emoji 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Emoji 3",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Clothes Therapy",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"ToArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Lewis Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Lewis",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },			
+	]
+}

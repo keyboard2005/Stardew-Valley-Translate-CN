@@ -1,0 +1,78 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mateo's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Mateo": "{{i18n:Gifts.Mateo.GiftReaction.Love}}/394 373 276 340 595 746 731 732 {{ModID}}_salishBourbon {{ModID}}_autumnalstew {{ModID}}_ancientwildfairyroses {{ModID}}_zuzustylepizza {{ModID}}_zuzustylebagelwithlox {{ModID}}_ancienthuckleberryicecream {{ModID}}_ancientazuredetura/{{i18n:Gifts.Mateo.GiftReaction.Like}}./224 372 446 797 421 578 236 608/{{i18n:Gifts.Mateo.GiftReaction.Dislike}}/-4/{{i18n:Gifts.Mateo.GiftReaction.Hate}}/96 97 98 99 100 101 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 717/{{i18n:Gifts.Mateo.GiftReaction.Neutral}}/-2 591 593 597 402 376 418/"
+            }
+        },
+        {
+            "LogName": "Hector's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Hector": "{{i18n:Gifts.Hector.GiftReaction.Love}}/259 300 649 390 {{ModID}}_ancientmushroomstew {{ModID}}_mushroomsredsauce {{ModID}}_ferngreensandpineapple {{ModID}}_ancienthuckleberryicecream {{ModID}}_lavaeelandstirfriedancientbottlegourd {{ModID}}_ancientamaranth {{ModID}}_ancientepiphyticfern {{ModID}}_glowingpolyporemushrooms {{ModID}}_ancientwildfairyroses {{ModID}}_ancientelderberry {{ModID}}_ancientbottlegourd {{ModID}}_ancientgiantappleberry {{ModID}}_ancientazuredetura {{ModID}}_ancientglowinghuckleberry {{ModID}}_mushroomsredsauce {{ModID}}_ferngreensandpineapple {{ModID}}_ancienthuckleberryicecream {{ModID}}_lavaeelandstirfriedancientbottlegourd {{ModID}}_GoldieTheBatteryPoweredFish/{{i18n:Gifts.Hector.GiftReaction.Like}}/-80 -75 -79 -2 731 60 768 769/{{i18n:Gifts.Hector.GiftReaction.Dislike}}/-4/{{i18n:Gifts.Hector.GiftReaction.Hate}}/96 97 98 99 100 101 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 220 167 171 446/{{i18n:Gifts.Hector.GiftReaction.Neutral}}/-20 -5 -6 -7 787/"
+            }
+        },
+        {
+            "LogName": "Cirrus's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Cirrus": "{{i18n:Gifts.Cirrus.GiftReaction.Love}}/206 212 213 214 614 {{ModID}}_zuzustylebagelwithlox {{ModID}}_zuzustylepizza {{ModID}}_portfiredrakesparkler {{ModID}}_zuzustylecheesecake {{ModID}}_zuzustyleclamchowder {{ModID}}_fountainsoda {{ModID}}_freshpopcorn  {{ModID}}_orangegingerbeer {{ModID}}_blueberrygingerbeer {{ModID}}_pineapplegingerbeer {{ModID}}_rhubarbgingerbeer {{ModID}}_strawberrygingerbeer {{ModID}}_peachgingerbeer {{ModID}}_ancientelderberrygingerbeer {{ModID}}_ancientappleberrygingerbeer {{ModID}}_ancienthuckleberrygingerbeer {{ModID}}_ancientfruitgingerbeer/{{i18n:Gifts.Cirrus.GiftReaction.Like}}/-2 -7 -80 167 225 226 227 228 219 731/{{i18n:Gifts.Cirrus.GiftReaction.Dislike}}/-4 -28/{{i18n:Gifts.Cirrus.GiftReaction.Hate}}/346 303 348 304 459 -20/{{i18n:Gifts.Cirrus.GiftReaction.Neutral}}/-4/"
+            }
+        },
+        {
+            "LogName": "Roslin's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Roslin": "{{i18n:Gifts.Roslin.GiftReaction.Love}}/768 769 {{ModID}}_verdantpotion {{ModID}}_scarletpotion {{ModID}}_heatherpotion {{ModID}}_zydratepotion {{ModID}}_pistachiopotion {{ModID}}_dahliapotion {{ModID}}_slushiepotion {{ModID}}_matrixpotion {{ModID}}_mcdougalpotion {{ModID}}_toirneachpotion/{{i18n:Gifts.Roslin.GiftReaction.Like}}/807 308 74 446 -2/{{i18n:Gifts.Roslin.GiftReaction.Dislike}}/-79 -81 -75/{{i18n:Gifts.Roslin.GiftReaction.Hate}}/-81 -24/{{i18n:Gifts.Roslin.GiftReaction.Neutral}}/373 797 279/"
+            }
+        },
+        {
+            "LogName": "Dandelion's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Dandelion": "{{i18n:Gifts.Dandelion.GiftReaction.Love}}/22 268 614 {{ModID}}_verdantpotion {{ModID}}_scarletpotion {{ModID}}_heatherpotion {{ModID}}_zydratepotion {{ModID}}_pistachiopotion {{ModID}}_dahliapotion {{ModID}}_slushiepotion {{ModID}}_matrixpotion {{ModID}}_mcdougalpotion {{ModID}}_toirneachpotion/{{i18n:Gifts.Dandelion.GiftReaction.Like}}/421 426 430 348/{{i18n:Gifts.Dandelion.GiftReaction.Dislike}}/-20/{{i18n:Gifts.Dandelion.GiftReaction.Hate}}/769/{{i18n:Gifts.Dandelion.GiftReaction.Neutral}}/-4 -2/"
+            }
+        },
+        {
+            "LogName": "Gift Tastes for Vanilla",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Neutral"
+                    ],
+                    "Value": "{{ModID}}_verdantpotion {{ModID}}_scarletpotion {{ModID}}_heatherpotion {{ModID}}_zydratepotion {{ModID}}_pistachiopotion {{ModID}}_dahliapotion {{ModID}}_slushiepotion {{ModID}}_matrixpotion {{ModID}}_mcdougalpotion {{ModID}}_toirneachpotion {{ModID}}_ancientsweettealeaves",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Like"
+                    ],
+                    "Value": "{{ModID}}_orangegingerbeer {{ModID}}_blueberrygingerbeer {{ModID}}_pineapplegingerbeer {{ModID}}_rhubarbgingerbeer {{ModID}}_strawberrygingerbeer {{ModID}}_peachgingerbeer {{ModID}}_ancientelderberrygingerbeer {{ModID}}_ancientappleberrygingerbeer {{ModID}}_ancienthuckleberrygingerbeer {{ModID}}_ancientfruitgingerbeer {{ModID}}_ancientmushroomstew {{ModID}}_mushroomsredsauce {{ModID}}_ferngreensandpineapple {{ModID}}_ancienthuckleberryicecream {{ModID}}_lavaeelandstirfriedancientbottlegourd {{ModID}}_salishBourbon {{ModID}}_autumnalstew {{ModID}}_ancientwildfairyroses {{ModID}}_ancientelderberry {{ModID}}_ancientbottlegourd {{ModID}}_ancientgiantappleberry {{ModID}}_ancientazuredetura {{ModID}}_ancientglowinghuckleberry {{ModID}}_mushroomsredsauce {{ModID}}_ferngreensandpineapple {{ModID}}_ancienthuckleberryicecream {{ModID}}_lavaeelandstirfriedancientbottlegourd",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Love"
+                    ],
+                    "Value": "{{ModID}}_ancientsweettea",
+                    "Delimiter": " "
+                },
+            ]
+        }
+    ]
+}

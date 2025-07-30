@@ -1,0 +1,113 @@
+{
+    "Changes": [
+        //Modded Festivals *************************************************
+        // Fireworks Festival
+        {
+            "LogName": "Add Rosa",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 41 36 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        {
+            "LogName": "Add  dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.summer20}}",
+            },
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        //Modded festivals
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.fall20}}",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 114 41 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasMod |contains=LemurKat.JulietHouse.NPC": true
+            }
+        },
+        //Modded festivals
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.fall20}}",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 114 41 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasMod |contains=LemurKat.JulietHouse.NPC": false
+            }
+        },
+        // Ember of Resolutions
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.winter28}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 37 36 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Rosa 56 48 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+    ]
+}

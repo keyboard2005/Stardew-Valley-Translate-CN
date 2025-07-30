@@ -1,0 +1,2283 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "Albacore": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Anchovy": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Angler": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Blobfish1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Blobfish2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Blobfish3": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Bream": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BrokenCD": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BrokenGlasses": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Bullhead": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Carp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Catfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Chub": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Clam": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Cockle": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Crab1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Crab2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Crayfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Crimsonfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Dorado": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Driftwood": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Eel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Flounder": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Ghostfish1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Ghostfish2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Glacierfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GreenAlgae": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Halibut": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Herring": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "IcePip": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LargeMouthBass": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LavaEel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Legend": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Lingcod": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Lobster": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MidnightCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MidnightSquid1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "MidnightSquid2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Mussel": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MutantCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "NautilusShell": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Octopus": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Oyster": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Perch": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Periwinkle": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pike": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pufferfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RainbowShell": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RainbowTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RedMullet": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RedSnapper": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RottenPlant": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Salmon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sandfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sardine": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "ScorpionCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SeaCucumber": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SeaUrchin": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Seaweed": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Shad": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Shrimp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Slimejack": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SmallmouthBass": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SoggyNewspaper": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Snail": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SpookFish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Squid": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Stonefish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sturgeon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Sunfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SuperCucumber": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TigerTrout": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Tilapia": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Trash": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Tuna": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "VoidSalmon": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Walleye": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "WhiteAlgae": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Woodskip": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SonOfCrimsonfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "MsAngler": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "LegendII": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RadioactiveCarp": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GlacierfishJr": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Stingray": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Lionfish": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BlueDiscus": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RiverJelly": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "CaveJelly": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "SeaJelly": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Goby": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "Albacore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Albacore": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Albacore": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/albacore.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Anchovy",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Anchovy": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Anchovy": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/anchovy.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Angler",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Angler": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Angler": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/angler.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blobfish1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Blobfish1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Blobfish1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blobfish1.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blobfish2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Blobfish2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Blobfish2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blobfish2.png}}:0..18@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blobfish3",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Blobfish3": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Blobfish3": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blobfish3.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bream",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bream": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Bream": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bream.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Broken CD",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BrokenCD": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_BrokenCD": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 112,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/brokencd.png}}:0..15@20"
+                }
+            }
+        },
+        {
+            "LogName": "Broken Glasses",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BrokenGlasses": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_BrokenGlasses": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 112,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/brokenglasses.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Bullhead",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Bullhead": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Bullhead": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/bullhead.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Carp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Carp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Catfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Catfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Catfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/catfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Chub",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Chub": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Chub": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/chub.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Clam",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Clam": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Clam": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 240,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/clam.png}}:0..15@10"
+                }
+            }
+        },
+        {
+            "LogName": "Cockle",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Cockle": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Cockle": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cockle.png}}:0..11@40"
+                }
+            }
+        },
+        {
+            "LogName": "Crab1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Crab1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Crab1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crab1.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crab2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Crab2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Crab2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crab2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crayfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Crayfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Crayfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crayfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Crimsonfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Crimsonfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Crimsonfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 240,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/crimsonfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Dorado",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Dorado": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Dorado": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/dorado.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Driftwood",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Driftwood": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Driftwood": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 112,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/driftwood.png}}:0..7@15"
+                }
+            }
+        },
+        {
+            "LogName": "Eel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Eel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Eel": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/eel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Flounder",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Flounder": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Flounder": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 176,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/flounder.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ghostfish1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Ghostfish1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Ghostfish1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ghostfish1.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ghostfish2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Ghostfish2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Ghostfish2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ghostfish2.png}}:0..15@15"
+                }
+            }
+        },
+        {
+            "LogName": "Glacierfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Glacierfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Glacierfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glacierfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Green Algae",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GreenAlgae": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_GreenAlgae": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 144,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/greenalgae.png}}:0..3@40"
+                }
+            }
+        },
+        {
+            "LogName": "Halibut",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Halibut": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Halibut": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/halibut.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Herring",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Herring": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Herring": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/herring.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ice Pip",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "IcePip": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_IcePip": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/icepip.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Largemouth Bass",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LargeMouthBass": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_LargemouthBass": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/largemouthbass.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lava Eel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LavaEel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_LavaEel": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lavaeel.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Legend",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Legend": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Legend": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/legend.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lingcod",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Lingcod": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Lingcod": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lingcod.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lobster",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Lobster": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Lobster": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lobster.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Midnight Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MidnightCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_MidnightCarp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 176,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/midnightcarp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Midnight Squid1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MidnightSquid1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_MidnightSquid1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/midnightsquid1.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Midnight Squid2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MidnightSquid2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_MidnightSquid2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/midnightsquid2.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Mussel",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Mussel": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Mussel": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/mussel.png}}:0..7@40"
+                }
+            }
+        },
+        {
+            "LogName": "Mutant Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MutantCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_MutantCarp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 448,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/mutantcarp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Nautilus Shell",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "NautilusShell": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_NautilusShell": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/nautilusshell.png}}:0..15@10"
+                }
+            }
+        },
+        {
+            "LogName": "Octopus",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Octopus": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Octopus": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/octopus.png}}:0..6@10"
+                }
+            }
+        },
+        {
+            "LogName": "Oyster",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Oyster": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Oyster": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/oyster.png}}:0..11@40"
+                }
+            }
+        },
+        {
+            "LogName": "Perch",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Perch": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Perch": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/perch.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Periwinkle",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Periwinkle": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Periwinkle": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/periwinkle.png}}:0..7@40"
+                }
+            }
+        },
+        {
+            "LogName": "Pike",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pike": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Pike": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pike.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Pufferfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pufferfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Pufferfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pufferfish.png}}:0..14@15"
+                }
+            }
+        },
+        {
+            "LogName": "Rainboe Shell",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RainbowShell": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RainboeShell": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rainbowshell.png}}:0..11@12"
+                }
+            }
+        },
+        {
+            "LogName": "Rainbow Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RainbowTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RainbowTrout": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rainbowtrout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Red Mullet",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RedMullet": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RedMullet": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/redmullet.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Red Snapper",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RedSnapper": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RedSnapper": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/redsnapper.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Rotten Plant",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RottenPlant": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RottenPlant": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 496,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/rottenplant.png}}:0..7@20"
+                }
+            }
+        },
+        {
+            "LogName": "Salmon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Salmon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Salmon": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 304,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/salmon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sandfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sandfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Sandfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sandfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sardine",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sardine": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Sardine": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sardine.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Scorpion Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ScorpionCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_ScorpionCarp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/scorpioncarp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sea Cucumber",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SeaCucumber": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SeaCucumber": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seacucumber.png}}:0..6@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sea Urchin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SeaUrchin": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SeaUrchin": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seaurchin.png}}:0..3@80"
+                }
+            }
+        },
+        {
+            "LogName": "Seaweed",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Seaweed": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Seaweed": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/seaweed.png}}:0..3@40"
+                }
+            }
+        },
+        {
+            "LogName": "Shad",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Shad": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Shad": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/shad.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Shrimp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Shrimp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Shrimp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/shrimp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Slimejack",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Slimejack": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Slimejack": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/slimejack.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Smallmouth Bass",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SmallmouthBass": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SmallmouthBass": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/smallmouthbass.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Snail",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Snail": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Snail": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/snail.png}}:0..19@40"
+                }
+            }
+        },
+        {
+            "LogName": "Soggy Newspaper",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SoggyNewspaper": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SoggyNewspaper": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 112,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/soggynewspaper.png}}:0..5@15"
+                }
+            }
+        },
+        {
+            "LogName": "Spook Fish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SpookFish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SpookFish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/spookfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Squid",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Squid": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Squid": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/squid.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Stonefish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Stonefish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Stonefish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/stonefish.png}}:0..5@30"
+                }
+            }
+        },
+        {
+            "LogName": "Sturgeon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sturgeon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Sturgeon": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 32,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sturgeon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Sunfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Sunfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Sunfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sunfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Super Cucumber",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SuperCucumber": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SuperCucumber": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/supercucumber.png}}:0..6@20"
+                }
+            }
+        },
+        {
+            "LogName": "Tiger Trout",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TigerTrout": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_TigerTrout": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tigertrout.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Tilapia",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Tilapia": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Tilapia": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 464,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tilapia.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Trash",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Trash": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Trash": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 112,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/trash.png}}:0..3@10"
+                }
+            }
+        },
+        {
+            "LogName": "Tuna",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Tuna": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Tuna": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tuna.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Void Salmon",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VoidSalmon": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_VoidSalmon": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 48,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/voidsalmon.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Walleye",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Walleye": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Walleye": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 80,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/walleye.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "White Algae",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WhiteAlgae": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_WhiteAlgae": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/whitealgae.png}}:0..3@40"
+                }
+            }
+        },
+        {
+            "LogName": "Woodskip",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Woodskip": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Woodskip": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 480,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/woodskip.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Son of Crimsonfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SonOfCrimsonfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SonofCrimsonfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 160,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/son_of_crimsonfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ms Angler",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "MsAngler": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_MsAngler": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ms_angler.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Legend II",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "LegendII": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_LegendII": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/legend_ii.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Radioactive Carp",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RadioactiveCarp": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RadioactiveCarp": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/radioactive_carp.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Glacierfish Jr",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GlacierfishJr": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_GlacierfishJr": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 224,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/glacierfish_jr.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Stingray",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Stingray": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Stingray": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 320,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/stingray.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Lionfish",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Lionfish": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Lionfish": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 336,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/lionfish.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blue Discus",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BlueDiscus": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_BlueDiscus": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 544,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blue_discus.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "River Jelly",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RiverJelly": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_RiverJelly": {
+                    "TargetTexture": "TileSheets/Objects_2",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/river_jelly.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Cave Jelly",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "CaveJelly": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_CaveJelly": {
+                    "TargetTexture": "TileSheets/Objects_2",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/cave_jelly.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Sea Jelly",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SeaJelly": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_SeaJelly": {
+                    "TargetTexture": "TileSheets/Objects_2",
+                    "TargetRect": {
+                        "X": 96,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/sea_jelly.png}}:0..3@30"
+                }
+            }
+        },
+        {
+            "LogName": "Goby",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Goby": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedFish_Goby": {
+                    "TargetTexture": "TileSheets/Objects_2",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 256,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/goby.png}}:0..3@20"
+                }
+            }
+        }
+    ]
+}

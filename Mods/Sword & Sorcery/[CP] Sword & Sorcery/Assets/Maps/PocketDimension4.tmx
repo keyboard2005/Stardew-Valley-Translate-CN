@@ -1,0 +1,3681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="60" height="60" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="7">
+ <properties>
+  <property name="AllowGrassSurviveInWinter" value="T"/>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="TreatAsOutdoors" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="DeepDark1" tilewidth="16" tileheight="16" tilecount="1484" columns="28">
+  <image source="DeepDarkTiles_1.png" width="448" height="862"/>
+ </tileset>
+ <tileset firstgid="1485" name="fall_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+  <image source="fall_outdoorsTileSheet2.png" width="256" height="1120"/>
+ </tileset>
+ <tileset firstgid="2605" name="MadDog_PlanetariumScreen" tilewidth="16" tileheight="16" tilecount="240" columns="24">
+  <image source="MadDog_PlanetariumScreen.png" width="384" height="160"/>
+ </tileset>
+ <tileset firstgid="2845" name="spring_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+  <image source="spring_outdoorsTileSheet2.png" width="256" height="1120"/>
+  <tile id="536">
+   <animation>
+    <frame tileid="536" duration="1000"/>
+    <frame tileid="540" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="537">
+   <animation>
+    <frame tileid="537" duration="1000"/>
+    <frame tileid="541" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="538">
+   <animation>
+    <frame tileid="538" duration="1000"/>
+    <frame tileid="542" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="552">
+   <animation>
+    <frame tileid="552" duration="1000"/>
+    <frame tileid="556" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="553">
+   <animation>
+    <frame tileid="553" duration="1000"/>
+    <frame tileid="557" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="554">
+   <animation>
+    <frame tileid="554" duration="1000"/>
+    <frame tileid="558" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="568">
+   <animation>
+    <frame tileid="568" duration="1000"/>
+    <frame tileid="572" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="569">
+   <animation>
+    <frame tileid="569" duration="1000"/>
+    <frame tileid="573" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="570">
+   <animation>
+    <frame tileid="570" duration="1000"/>
+    <frame tileid="574" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="584">
+   <animation>
+    <frame tileid="584" duration="1000"/>
+    <frame tileid="588" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="585">
+   <animation>
+    <frame tileid="585" duration="1000"/>
+    <frame tileid="589" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="586">
+   <animation>
+    <frame tileid="586" duration="1000"/>
+    <frame tileid="590" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="600">
+   <animation>
+    <frame tileid="600" duration="1000"/>
+    <frame tileid="604" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="601">
+   <animation>
+    <frame tileid="601" duration="1000"/>
+    <frame tileid="605" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="602">
+   <animation>
+    <frame tileid="602" duration="1000"/>
+    <frame tileid="606" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="616">
+   <animation>
+    <frame tileid="616" duration="1000"/>
+    <frame tileid="620" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="617">
+   <animation>
+    <frame tileid="617" duration="1000"/>
+    <frame tileid="621" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="618">
+   <animation>
+    <frame tileid="618" duration="1000"/>
+    <frame tileid="622" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="632">
+   <animation>
+    <frame tileid="632" duration="1000"/>
+    <frame tileid="636" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="633">
+   <animation>
+    <frame tileid="633" duration="1000"/>
+    <frame tileid="637" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="648">
+   <animation>
+    <frame tileid="648" duration="1000"/>
+    <frame tileid="652" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="649">
+   <animation>
+    <frame tileid="649" duration="1000"/>
+    <frame tileid="653" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="664">
+   <animation>
+    <frame tileid="664" duration="1000"/>
+    <frame tileid="668" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="665">
+   <animation>
+    <frame tileid="665" duration="1000"/>
+    <frame tileid="669" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="3965" name="island_tilesheet_1" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
+  <image source="island_tilesheet_1.png" width="512" height="1040"/>
+  <tile id="135">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="160">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="161">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="257">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="261">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="261" duration="250"/>
+    <frame tileid="262" duration="250"/>
+    <frame tileid="263" duration="250"/>
+    <frame tileid="264" duration="250"/>
+    <frame tileid="265" duration="250"/>
+    <frame tileid="266" duration="250"/>
+    <frame tileid="267" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="262">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="263">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="264">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="265">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="266">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="267">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="268">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="288">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="289">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="293">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="293" duration="250"/>
+    <frame tileid="294" duration="250"/>
+    <frame tileid="295" duration="250"/>
+    <frame tileid="296" duration="250"/>
+    <frame tileid="297" duration="250"/>
+    <frame tileid="298" duration="250"/>
+    <frame tileid="299" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="294">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="295">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="296">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="297">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="298">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="299">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="320">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="321">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="325">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="325" duration="250"/>
+    <frame tileid="326" duration="250"/>
+    <frame tileid="327" duration="250"/>
+    <frame tileid="328" duration="250"/>
+    <frame tileid="329" duration="250"/>
+    <frame tileid="330" duration="250"/>
+    <frame tileid="331" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="326">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="327">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="328">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="329">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="330">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="331">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="357">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="357" duration="250"/>
+    <frame tileid="358" duration="250"/>
+    <frame tileid="359" duration="250"/>
+    <frame tileid="360" duration="250"/>
+    <frame tileid="361" duration="250"/>
+    <frame tileid="362" duration="250"/>
+    <frame tileid="363" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="358">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="359">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="360">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="361">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="362">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="363">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="368">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="376">
+   <animation>
+    <frame tileid="376" duration="500"/>
+    <frame tileid="377" duration="500"/>
+    <frame tileid="378" duration="500"/>
+    <frame tileid="379" duration="500"/>
+    <frame tileid="380" duration="500"/>
+    <frame tileid="381" duration="500"/>
+    <frame tileid="382" duration="500"/>
+    <frame tileid="383" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="389">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="389" duration="250"/>
+    <frame tileid="390" duration="250"/>
+    <frame tileid="391" duration="250"/>
+    <frame tileid="392" duration="250"/>
+    <frame tileid="393" duration="250"/>
+    <frame tileid="394" duration="250"/>
+    <frame tileid="395" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="390">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="391">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="392">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="393">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="394">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="395">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="421" duration="250"/>
+    <frame tileid="422" duration="250"/>
+    <frame tileid="423" duration="250"/>
+    <frame tileid="424" duration="250"/>
+    <frame tileid="425" duration="250"/>
+    <frame tileid="426" duration="250"/>
+    <frame tileid="427" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="424">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="425">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="426">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="427">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="453">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="453" duration="250"/>
+    <frame tileid="454" duration="250"/>
+    <frame tileid="455" duration="250"/>
+    <frame tileid="456" duration="250"/>
+    <frame tileid="457" duration="250"/>
+    <frame tileid="458" duration="250"/>
+    <frame tileid="459" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="454">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="455">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="456">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="457">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="458">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="459">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="485">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="485" duration="250"/>
+    <frame tileid="486" duration="250"/>
+    <frame tileid="487" duration="250"/>
+    <frame tileid="488" duration="250"/>
+    <frame tileid="489" duration="250"/>
+    <frame tileid="490" duration="250"/>
+    <frame tileid="491" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="486">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="487">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="488">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="489">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="490">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="491">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="588">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="589">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="590">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="591">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="592">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="593">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="619">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="620">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="621">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="624">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="625">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="626">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="651">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="651" duration="250"/>
+    <frame tileid="652" duration="250"/>
+    <frame tileid="653" duration="250"/>
+    <frame tileid="654" duration="250"/>
+    <frame tileid="655" duration="250"/>
+    <frame tileid="656" duration="250"/>
+    <frame tileid="657" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="652">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="653">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="654">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="655">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="656">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="657">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="658">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="659">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="683">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="683" duration="250"/>
+    <frame tileid="684" duration="250"/>
+    <frame tileid="685" duration="250"/>
+    <frame tileid="686" duration="250"/>
+    <frame tileid="687" duration="250"/>
+    <frame tileid="688" duration="250"/>
+    <frame tileid="689" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="684">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="685">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="686">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="687">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="688">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="689">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="690">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="715">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="715" duration="250"/>
+    <frame tileid="716" duration="250"/>
+    <frame tileid="717" duration="250"/>
+    <frame tileid="718" duration="250"/>
+    <frame tileid="719" duration="250"/>
+    <frame tileid="720" duration="250"/>
+    <frame tileid="721" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="716">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="717">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="718">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="719">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="720">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="721">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="747">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="747" duration="250"/>
+    <frame tileid="748" duration="250"/>
+    <frame tileid="749" duration="250"/>
+    <frame tileid="750" duration="250"/>
+    <frame tileid="751" duration="250"/>
+    <frame tileid="752" duration="250"/>
+    <frame tileid="753" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="748">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="749">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="750">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="751">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="752">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="753">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1238">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="1238" duration="250"/>
+    <frame tileid="1239" duration="250"/>
+    <frame tileid="1240" duration="250"/>
+    <frame tileid="1241" duration="250"/>
+    <frame tileid="1242" duration="250"/>
+    <frame tileid="1243" duration="250"/>
+    <frame tileid="1244" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1239">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1240">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1241">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1242">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1243">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1244">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1270">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="1270" duration="250"/>
+    <frame tileid="1271" duration="250"/>
+    <frame tileid="1272" duration="250"/>
+    <frame tileid="1273" duration="250"/>
+    <frame tileid="1274" duration="250"/>
+    <frame tileid="1275" duration="250"/>
+    <frame tileid="1276" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1273">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1275">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1276">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1651">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1652">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1653">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1682">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1683">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1684">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1685">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1686">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1714">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1715">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1716">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1717">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1718">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1747">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1748">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1749">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1750">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1753">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1754">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1778">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1779">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1780">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1781">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1782">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1783">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1784">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1785">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1786">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1810">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1811">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1812">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1813">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1814">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1815">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1816">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1817">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+  <tile id="1818">
+   <properties>
+    <property name="Water T" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6045" name="fall_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="fall_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="151">
+   <animation>
+    <frame tileid="151" duration="500"/>
+    <frame tileid="152" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="809">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="834">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="859">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="860">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="884">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="885">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="910">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="8020" name="DN.SnS_Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="DN.SnS_Festivals.png" width="512" height="512"/>
+  <tile id="567">
+   <animation>
+    <frame tileid="567" duration="250"/>
+    <frame tileid="568" duration="250"/>
+    <frame tileid="569" duration="250"/>
+    <frame tileid="570" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="598">
+   <animation>
+    <frame tileid="598" duration="250"/>
+    <frame tileid="599" duration="250"/>
+    <frame tileid="600" duration="250"/>
+    <frame tileid="601" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="692">
+   <animation>
+    <frame tileid="692" duration="250"/>
+    <frame tileid="694" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="693">
+   <animation>
+    <frame tileid="693" duration="250"/>
+    <frame tileid="695" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="722">
+   <animation>
+    <frame tileid="722" duration="250"/>
+    <frame tileid="724" duration="250"/>
+    <frame tileid="726" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="723">
+   <animation>
+    <frame tileid="723" duration="250"/>
+    <frame tileid="725" duration="250"/>
+    <frame tileid="727" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="9044" name="Desty_Hector_Tilesheet" tilewidth="16" tileheight="16" tilecount="420" columns="15">
+  <image source="Desty_Hector_Tilesheet.png" width="240" height="448"/>
+  <tile id="105">
+   <animation>
+    <frame tileid="105" duration="1000"/>
+    <frame tileid="150" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="106">
+   <animation>
+    <frame tileid="106" duration="1000"/>
+    <frame tileid="151" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="120">
+   <animation>
+    <frame tileid="120" duration="1000"/>
+    <frame tileid="165" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="121">
+   <animation>
+    <frame tileid="121" duration="1000"/>
+    <frame tileid="166" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="135">
+   <animation>
+    <frame tileid="135" duration="1000"/>
+    <frame tileid="180" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="136">
+   <animation>
+    <frame tileid="136" duration="1000"/>
+    <frame tileid="181" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="405">
+   <animation>
+    <frame tileid="405" duration="250"/>
+    <frame tileid="406" duration="250"/>
+    <frame tileid="407" duration="250"/>
+    <frame tileid="408" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="406">
+   <animation>
+    <frame tileid="407" duration="250"/>
+    <frame tileid="408" duration="250"/>
+    <frame tileid="405" duration="250"/>
+    <frame tileid="406" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="9464" name="spring_Waterfalls" tilewidth="16" tileheight="16" tilecount="900" columns="36">
+  <image source="spring_Waterfalls.png" width="576" height="400"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="100"/>
+    <frame tileid="4" duration="100"/>
+    <frame tileid="8" duration="100"/>
+    <frame tileid="12" duration="100"/>
+    <frame tileid="16" duration="100"/>
+    <frame tileid="20" duration="100"/>
+    <frame tileid="24" duration="100"/>
+    <frame tileid="28" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="100"/>
+    <frame tileid="5" duration="100"/>
+    <frame tileid="9" duration="100"/>
+    <frame tileid="13" duration="100"/>
+    <frame tileid="17" duration="100"/>
+    <frame tileid="21" duration="100"/>
+    <frame tileid="25" duration="100"/>
+    <frame tileid="29" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="2">
+   <animation>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="6" duration="100"/>
+    <frame tileid="10" duration="100"/>
+    <frame tileid="14" duration="100"/>
+    <frame tileid="18" duration="100"/>
+    <frame tileid="22" duration="100"/>
+    <frame tileid="26" duration="100"/>
+    <frame tileid="30" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="3">
+   <animation>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="7" duration="100"/>
+    <frame tileid="11" duration="100"/>
+    <frame tileid="15" duration="100"/>
+    <frame tileid="19" duration="100"/>
+    <frame tileid="23" duration="100"/>
+    <frame tileid="27" duration="100"/>
+    <frame tileid="31" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="36">
+   <animation>
+    <frame tileid="36" duration="100"/>
+    <frame tileid="40" duration="100"/>
+    <frame tileid="44" duration="100"/>
+    <frame tileid="48" duration="100"/>
+    <frame tileid="52" duration="100"/>
+    <frame tileid="56" duration="100"/>
+    <frame tileid="60" duration="100"/>
+    <frame tileid="64" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="37">
+   <animation>
+    <frame tileid="37" duration="100"/>
+    <frame tileid="41" duration="100"/>
+    <frame tileid="45" duration="100"/>
+    <frame tileid="49" duration="100"/>
+    <frame tileid="53" duration="100"/>
+    <frame tileid="57" duration="100"/>
+    <frame tileid="61" duration="100"/>
+    <frame tileid="65" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="38">
+   <animation>
+    <frame tileid="38" duration="100"/>
+    <frame tileid="42" duration="100"/>
+    <frame tileid="46" duration="100"/>
+    <frame tileid="50" duration="100"/>
+    <frame tileid="54" duration="100"/>
+    <frame tileid="58" duration="100"/>
+    <frame tileid="62" duration="100"/>
+    <frame tileid="66" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="39">
+   <animation>
+    <frame tileid="39" duration="100"/>
+    <frame tileid="43" duration="100"/>
+    <frame tileid="47" duration="100"/>
+    <frame tileid="51" duration="100"/>
+    <frame tileid="55" duration="100"/>
+    <frame tileid="59" duration="100"/>
+    <frame tileid="63" duration="100"/>
+    <frame tileid="67" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="72">
+   <animation>
+    <frame tileid="72" duration="100"/>
+    <frame tileid="76" duration="100"/>
+    <frame tileid="80" duration="100"/>
+    <frame tileid="84" duration="100"/>
+    <frame tileid="88" duration="100"/>
+    <frame tileid="92" duration="100"/>
+    <frame tileid="96" duration="100"/>
+    <frame tileid="100" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="73">
+   <animation>
+    <frame tileid="73" duration="100"/>
+    <frame tileid="77" duration="100"/>
+    <frame tileid="81" duration="100"/>
+    <frame tileid="85" duration="100"/>
+    <frame tileid="89" duration="100"/>
+    <frame tileid="93" duration="100"/>
+    <frame tileid="97" duration="100"/>
+    <frame tileid="101" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="74">
+   <animation>
+    <frame tileid="74" duration="100"/>
+    <frame tileid="78" duration="100"/>
+    <frame tileid="82" duration="100"/>
+    <frame tileid="86" duration="100"/>
+    <frame tileid="90" duration="100"/>
+    <frame tileid="94" duration="100"/>
+    <frame tileid="98" duration="100"/>
+    <frame tileid="102" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="75">
+   <animation>
+    <frame tileid="75" duration="100"/>
+    <frame tileid="79" duration="100"/>
+    <frame tileid="83" duration="100"/>
+    <frame tileid="87" duration="100"/>
+    <frame tileid="91" duration="100"/>
+    <frame tileid="95" duration="100"/>
+    <frame tileid="99" duration="100"/>
+    <frame tileid="103" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="108">
+   <animation>
+    <frame tileid="108" duration="100"/>
+    <frame tileid="112" duration="100"/>
+    <frame tileid="116" duration="100"/>
+    <frame tileid="120" duration="100"/>
+    <frame tileid="124" duration="100"/>
+    <frame tileid="128" duration="100"/>
+    <frame tileid="132" duration="100"/>
+    <frame tileid="136" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="109">
+   <animation>
+    <frame tileid="109" duration="100"/>
+    <frame tileid="113" duration="100"/>
+    <frame tileid="117" duration="100"/>
+    <frame tileid="121" duration="100"/>
+    <frame tileid="125" duration="100"/>
+    <frame tileid="129" duration="100"/>
+    <frame tileid="133" duration="100"/>
+    <frame tileid="137" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="110">
+   <animation>
+    <frame tileid="110" duration="100"/>
+    <frame tileid="114" duration="100"/>
+    <frame tileid="118" duration="100"/>
+    <frame tileid="122" duration="100"/>
+    <frame tileid="126" duration="100"/>
+    <frame tileid="130" duration="100"/>
+    <frame tileid="134" duration="100"/>
+    <frame tileid="138" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="111">
+   <animation>
+    <frame tileid="111" duration="100"/>
+    <frame tileid="115" duration="100"/>
+    <frame tileid="119" duration="100"/>
+    <frame tileid="123" duration="100"/>
+    <frame tileid="127" duration="100"/>
+    <frame tileid="131" duration="100"/>
+    <frame tileid="135" duration="100"/>
+    <frame tileid="139" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="10364" name="summer_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+  <image source="summer_outdoorsTileSheet2.png" width="256" height="1120"/>
+ </tileset>
+ <tileset firstgid="11484" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="150">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+   <animation>
+    <frame tileid="151" duration="500"/>
+    <frame tileid="152" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="175">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="250">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="253">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="254">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="255">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="261">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="275">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="276">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="277">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="278">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="279">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="280">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="281">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="286">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="303">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="304">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="308">
+   <animation>
+    <frame tileid="308" duration="1000"/>
+    <frame tileid="1316" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="309">
+   <animation>
+    <frame tileid="309" duration="1000"/>
+    <frame tileid="1317" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="311">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="325">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="326">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="327">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="328">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="329">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="330">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="331">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="332">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="350">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="351">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="352">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="353">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="354">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="355">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="356">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="357">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="375">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="376">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="377">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="378">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="379">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="380">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="381">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="382">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="400">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="401">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="402">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="403">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="404">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="405">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="406">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="449">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="567">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="568">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="569">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="570">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="592">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="593">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="594">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="595">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="619">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="633">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="634">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="654">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="657">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="658">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="659">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="683">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="684">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="704">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="707">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1027">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1028">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1029">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1031">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1055">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1078">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1079">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1092">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1093">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1094">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1095">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1096">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1119">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1120">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1121">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="1225">
+   <animation>
+    <frame tileid="1225" duration="150"/>
+    <frame tileid="1226" duration="150"/>
+    <frame tileid="1250" duration="150"/>
+    <frame tileid="1251" duration="150"/>
+    <frame tileid="1276" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1246">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1247">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1248">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1249">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1273">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1297">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1298">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1299">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1322">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1323">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1324">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13459" name="summer_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="summer_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="150">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+   <animation>
+    <frame tileid="151" duration="500"/>
+    <frame tileid="152" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="175">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <animation>
+    <frame tileid="183" duration="500"/>
+    <frame tileid="1182" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="184">
+   <animation>
+    <frame tileid="184" duration="500"/>
+    <frame tileid="1183" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="185">
+   <animation>
+    <frame tileid="185" duration="500"/>
+    <frame tileid="1184" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="250">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="253">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="254">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="255">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="256">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="275">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="276">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="277">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="278">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="279">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="281">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="303">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="304">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="325">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="326">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="327">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="328">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="329">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="331">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="332">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="350">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="351">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="352">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="353">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="354">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="355">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="356">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="357">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="375">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="376">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="377">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="378">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="379">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="380">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="381">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="382">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="400">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="401">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="402">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="403">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="404">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="405">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="406">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="449">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="567">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="568">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="569">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="570">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="594">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="595">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="619">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="633">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="634">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="654">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="657">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="659">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="683">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="684">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="704">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="707">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="708">
+   <animation>
+    <frame tileid="708" duration="1000"/>
+    <frame tileid="1234" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="709">
+   <animation>
+    <frame tileid="709" duration="1000"/>
+    <frame tileid="1235" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="710">
+   <animation>
+    <frame tileid="710" duration="1000"/>
+    <frame tileid="1236" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="809">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="834">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="859">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="860">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="884">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="885">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="910">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1186">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1187">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1188">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1211">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1212">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1213">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1237">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1238">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1239">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1240">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1241">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1242">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1243">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1244">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1245">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1246">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1247">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1248">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1249">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1263">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1264">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1265">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1266">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1267">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1268">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1269">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1270">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1271">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1272">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1273">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1274">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1287">
+   <animation>
+    <frame tileid="1287" duration="1000"/>
+    <frame tileid="1314" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1288">
+   <animation>
+    <frame tileid="1288" duration="1000"/>
+    <frame tileid="1289" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1297">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1298">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1299">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1322">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1323">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1324">
+   <properties>
+    <property name="Passable" value="T"/>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="15434" name="winter_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="winter_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="17409" name="winter_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+  <image source="winter_outdoorsTileSheet2.png" width="256" height="1120"/>
+ </tileset>
+ <tileset firstgid="18529" name="FlashShifter_Extras" tilewidth="16" tileheight="16" tilecount="208" columns="16">
+  <image source="FlashShifter_Extras.png" width="256" height="208"/>
+ </tileset>
+ <layer id="2" name="Black Background" width="60" height="60">
+  <data encoding="csv">
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,0,0,0,0,0,2807,2807,2807,2807,0,0,0,0,0,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,
+2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807,2807
+</data>
+ </layer>
+ <layer id="3" name="Back" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,11835,12758,12730,12758,11659,11659,11659,11659,11834,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,0,13810,13763,13810,0,0,0,0,13861,4637,4037,4037,4062,4032,4004,0,0,0,0,0,0,0,0,
+0,0,0,0,0,11835,12806,12758,12783,11659,11659,11659,11659,11859,11887,11888,11891,11835,11835,11835,11835,11835,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,13764,13810,13810,13759,13764,13812,13836,13861,13861,4637,4037,5319,5320,4064,4004,4004,4162,0,0,0,0,0,0,
+0,0,0,0,0,11835,11836,12806,12808,11659,11659,11659,11809,11810,11812,11835,11888,11889,11889,11889,11889,11659,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,13763,13810,13759,13812,13835,13835,13836,13861,13734,13634,4669,4671,5351,5352,4064,4004,4004,4162,4590,0,0,0,0,0,
+0,0,0,0,0,11835,11836,12808,12783,11659,11659,11659,11834,11835,11835,11835,11835,11788,11835,11835,11836,11759,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,13735,13736,13737,13836,13634,13734,13861,13861,13861,13609,13634,4637,4037,4037,4064,4004,4162,4162,4333,0,0,0,0,0,
+0,0,0,0,0,11836,12730,12730,12730,12730,11886,11809,11812,11835,11784,11835,11835,11835,11835,11835,11862,11811,11759,11835,11835,0,0,0,0,0,0,0,0,0,0,0,13861,13734,13734,13634,13609,13634,13734,13634,13715,13715,13634,4669,4671,4037,4062,4032,4162,4590,4164,0,0,0,0,0,
+0,0,0,0,0,11836,12730,12730,12806,12758,11886,11834,11835,11835,11835,11835,11835,11835,11835,11784,11835,11836,11659,11835,11835,0,0,0,0,0,0,0,0,0,0,0,13634,13861,13861,13861,13861,13861,13634,13610,13734,4303,13634,13734,4637,5317,5318,4064,4162,4590,4164,0,0,0,0,0,
+0,0,0,0,0,11836,12730,12733,12730,12758,12807,11859,11887,11835,11835,11835,11789,11835,11835,11835,11835,11836,11759,11835,11835,0,0,0,0,0,0,0,0,0,0,0,13861,13610,13734,13609,13634,13734,13784,13760,13762,13786,13634,13634,4637,5349,5350,4064,4162,4162,4591,4164,0,0,0,0,
+0,0,0,0,0,11836,11659,12807,12758,12730,12808,12758,11859,11887,11835,11835,11835,11835,11835,11835,11835,11862,11811,11759,11835,0,0,0,0,0,0,0,0,0,0,13713,13634,13634,13784,13760,13761,13761,13810,13763,13810,13837,13786,13634,4669,4671,4037,4064,4004,4162,4590,4164,0,0,0,0,
+0,0,0,0,0,11836,11659,12758,12730,12730,12758,12806,11759,11834,11835,11835,11835,11835,11835,11788,11835,11835,11836,11759,11835,0,0,0,0,0,0,0,0,0,0,13734,13860,13784,13787,13810,13810,13810,13810,13810,13810,13810,13740,13610,13634,4637,4037,4062,4032,4162,4590,4554,0,0,0,0,
+0,0,0,0,0,11836,12758,12730,12758,12807,12755,12758,11635,11834,11788,11835,11835,11835,11835,11835,11835,11835,11862,11811,11835,0,0,0,0,0,0,0,0,13734,13861,13861,13784,13787,13759,13810,13810,13810,13810,13810,13810,13810,13765,13634,4302,4637,4037,4094,4096,4162,4590,4554,0,0,0,0,
+0,0,0,0,0,11836,12758,12806,12730,12733,11659,11809,11810,11812,11835,11835,11835,11835,11835,11835,11835,11835,11835,11836,11835,0,0,0,0,0,13609,13636,13662,13714,4303,13610,13809,13810,13810,13810,13810,13810,13810,13810,13810,13810,13790,13859,13734,4637,4094,4096,4265,4162,4333,1073746381,0,0,0,0,
+0,0,0,0,0,11862,11811,11759,11634,11809,11810,11812,11835,11835,11835,11835,11835,11835,11835,11835,11835,11789,11835,11835,11837,0,0,0,11686,11715,13612,13972,13636,13662,13734,13784,13787,13810,13810,13810,13764,13810,13810,13810,13810,13810,13811,13634,13861,4637,4064,4004,4162,4590,4554,4655,0,0,0,0,
+0,0,0,0,0,11835,11862,11810,11810,11812,11835,11835,11835,11835,11835,11835,11835,11835,11789,11835,11835,11835,11835,11837,11861,11684,11686,11691,11997,13612,13612,13612,11691,13636,13662,13809,13810,13810,13810,13810,13810,13810,13810,13810,13759,13810,13811,13634,13734,4637,4064,4004,4162,4590,4554,4655,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11789,11835,11835,11835,11835,11784,11835,11835,11835,11835,11835,11835,11835,11835,11835,11836,11635,11709,11972,11637,11637,13612,11710,13922,13635,11665,13687,13809,13763,13810,13810,13810,13810,13810,13810,13810,13810,13810,13837,13786,13715,4637,4064,4004,4162,4590,4164,4557,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11789,11862,11811,11734,11736,13641,11710,11691,13685,11710,13685,13637,13712,13834,13862,13810,13810,13810,13810,13810,13763,13810,13810,13810,13764,13740,13734,4637,4062,4032,4162,4162,4591,4554,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11784,11835,11835,11835,11835,11835,11835,11835,11836,11811,11734,11735,11736,11997,11637,11637,13637,13712,0,13734,13809,13810,13810,13810,13810,13810,13810,13810,13810,13810,13810,13765,13634,4669,4671,4064,4162,4162,4590,4164,0,0,0,0,
+0,0,0,0,0,11835,11835,11784,11835,11835,11784,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11788,11835,11862,11811,11659,11738,11734,11666,13685,11691,0,0,0,0,13834,13862,13810,13759,13810,13810,13810,13810,13810,13810,13810,13790,13634,13609,4637,4064,4004,4162,4162,0,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11809,11810,11811,11835,11835,11835,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,13834,13862,13810,13810,13810,13810,13810,13810,13810,13812,13836,13861,13859,4637,4062,4032,4162,4162,0,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11810,11810,11810,11812,11835,11862,11810,11810,11810,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,13634,13834,13835,13862,13810,13810,13763,13812,13835,13836,4302,13734,13861,4669,4671,4064,4004,0,0,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13634,13834,13735,13736,13737,13836,13734,13734,13734,0,13861,13610,4637,0,0,0,0,0,0,0,0,
+0,0,0,0,0,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13734,13734,13734,13734,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6396,14114,2147497762,14114,2147497762,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11835,11835,11835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6396,14702,14703,14703,14704,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11835,11837,11860,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14702,14727,14728,14728,14729,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11860,11860,11861,11759,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14727,14725,14733,14733,14726,14730,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11659,11759,11759,11659,15709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14733,14705,14733,14733,14730,14705,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15609,15709,15709,15609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14705,14705,14733,14733,14705,6725,6677,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15709,15709,15609,15609,15709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6751,6726,6725,6651,6677,6752,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15709,15709,15709,15709,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6749,6677,6750,6750,6752,6446,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,15609,15609,0,0,0,0,0,0,16113,16064,16065,16091,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6752,6220,6196,6370,6371,6373,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,15609,16088,16089,16089,16089,16089,16091,0,0,16088,16070,16066,16140,16116,15609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6396,6396,6372,6195,6370,6371,6373,6396,6396,6396,6396,6396,6396,0,0,0,0,0,0,
+0,0,0,0,0,0,15609,16088,16090,16069,16066,16140,16040,16065,16089,16089,16090,16115,16065,16090,16065,16089,16091,15709,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6397,6396,6299,6220,6396,6423,6371,6373,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,15709,16113,16041,16114,16065,16090,16114,16064,16114,16069,16115,16115,16115,16115,16115,16040,16065,16089,16091,0,0,0,0,0,0,0,0,0,0,6396,6398,6421,6422,6220,6370,6373,6396,6396,6396,6345,6396,6396,6396,6396,6350,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,15709,15709,16138,16139,16140,16114,16115,16064,16064,16114,16115,16041,16114,16064,16115,16114,16115,16114,16070,16116,0,0,0,0,0,0,0,0,0,0,6396,6220,6299,6220,6370,6373,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,15785,15785,15785,15785,16113,16040,16070,16066,16139,16139,16140,16115,16115,16115,16115,16115,16115,16114,16041,16141,0,0,0,0,0,0,0,0,0,0,6421,6422,6320,6320,6395,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,15785,15609,15609,15709,16138,16139,16139,16141,15609,15609,16138,16139,16139,16140,16070,16114,16064,16115,16116,0,0,0,0,0,0,0,0,0,0,0,6320,6220,6299,6370,6373,6396,6396,6396,6396,6396,6396,6396,6349,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,15709,15609,15609,15785,15609,15785,15785,15785,15785,15785,15785,16138,16138,16140,16041,16115,16064,16116,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6320,6395,6396,6349,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6345,0,0,0,0,0,
+0,0,0,0,0,0,15709,15709,15709,15609,15609,15709,15709,15609,15709,15926,15927,15709,15609,16113,16064,16066,16140,16116,0,0,0,0,0,0,0,0,0,0,0,6320,6320,6370,6373,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,15709,15709,15709,15609,15785,15785,15785,15785,15785,15951,15952,15709,15785,16138,16140,16065,16090,16069,16091,0,0,0,0,0,0,0,0,0,0,6320,6320,6395,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6350,6350,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,15709,15709,15785,15785,15785,15785,15785,15785,15785,15709,15709,15785,15785,15785,16138,16139,16140,16040,16116,15785,0,0,0,0,0,6320,6320,6320,6320,6320,6370,6373,6396,6396,6396,6396,6396,6350,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,15709,15709,15709,15785,15785,15785,15709,15709,15709,15709,15709,15709,15785,15785,15785,15709,16138,16139,16141,16088,16091,15609,15609,6320,6320,6320,6320,6320,6320,6320,6395,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,15759,15761,15709,15709,15709,15709,15709,15709,15759,15760,15761,15709,15709,15709,15709,15709,15709,16088,16091,15709,16138,16141,15609,15609,15609,15609,6320,6320,6320,6320,6370,6373,6396,6350,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6345,6396,6396,6396,6396,6396,0,0,0,0,0,
+0,0,0,0,0,15784,15812,15760,15761,15709,15759,15760,15760,15762,15785,15812,15760,15760,15760,15761,15709,15709,16138,16141,15609,15609,15609,15609,15609,15609,15609,6320,6320,6320,6320,6395,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6349,6396,0,0,0,0,0,
+0,0,0,0,0,15762,16382,15785,15812,15760,15762,15785,15785,15785,15785,15785,15785,15785,15785,15812,15760,15760,15760,15761,15709,15709,15688,15609,15609,15609,0,0,0,0,0,6373,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,8487,8487,8487,8487,6396,0,0,0,0,0,
+0,0,0,0,0,16406,16407,16408,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15812,15760,15760,15609,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6396,6396,6396,6396,6396,6345,6396,6396,6396,6396,6396,8487,8487,8487,8487,8487,0,0,0,0,0,
+0,0,0,0,0,15785,16432,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15787,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6396,6220,6299,6246,6247,6222,2147489894,8487,8487,6396,0,0,0,0,0,
+0,0,0,0,0,0,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,16382,15785,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6349,6396,6396,6396,6396,6220,6246,6247,6271,6198,6221,6198,6222,2147489894,6221,6396,0,0,0,0,0,
+0,0,0,0,0,0,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,15785,16406,16407,16408,0,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6396,6396,6220,6246,6247,6198,6272,6198,6221,6271,6271,6221,6271,6396,6396,0,0,0,0,0,
+0,0,0,0,0,0,0,15785,15785,15785,15785,15785,16382,15785,15785,15785,15785,15785,15785,15785,15785,15785,16432,0,0,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6425,6396,6220,6247,6396,6396,6396,6396,6396,6221,6221,6271,6396,6396,6396,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,16406,16407,16408,15785,15785,15785,15785,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6396,6396,6396,6396,6396,0,0,0,0,6396,6396,6396,6396,6396,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,16432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Back1" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,11977,0,0,0,0,0,0,0,3218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,12002,0,0,0,0,0,0,12626,3234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,12027,0,0,0,0,0,0,0,0,3218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10738,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3413,12730,12730,3415,0,0,0,0,0,0,0,0,0,0,0,0,3218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10754,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3218,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3234,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13691,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12002,11952,11977,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12027,11977,12002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12002,12027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,17794,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,17810,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,15691,0,17794,0,17794,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,17794,0,17810,0,17810,0,0,0,17799,17798,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,17810,15691,0,0,15709,15774,15951,15952,15951,15774,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,17794,0,17794,15799,15976,15977,15976,15799,17794,0,0,0,0,0,0,0,0,0,0,0,0,17779,1870,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,17810,0,17810,0,0,0,0,0,17810,0,0,0,0,0,0,0,0,0,0,1886,0,0,1886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8455,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="Back2" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18597,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18613,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18629,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18645,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back"/>
+ <layer id="5" name="Buildings" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10604,0,0,0,0,10609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,940,940,940,940,940,11837,11860,11861,3216,0,940,940,0,0,940,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,10620,0,0,0,0,0,0,0,0,940,940,940,940,940,940,940,940,0,0,0,0,0,0,0,
+0,0,0,0,11860,11860,3397,0,3383,11835,11835,11836,3219,3220,3232,12626,12627,0,940,940,3218,11834,0,940,940,0,0,0,0,0,0,0,0,0,0,0,10636,10637,10638,10639,10640,10641,10642,0,0,13853,0,0,0,0,0,0,940,940,940,0,0,0,0,0,
+0,0,0,0,3217,3218,3429,11792,3399,11837,11860,11861,3216,3236,3248,0,0,12626,12627,12626,3213,11859,11887,0,940,0,0,0,0,0,0,0,0,0,0,0,10652,10653,10654,10655,10656,10657,10658,0,13716,13878,4366,4367,0,0,0,13716,0,4450,940,940,0,0,0,0,
+0,0,0,940,3233,3213,11885,3413,3415,11861,3225,3226,3232,11741,0,0,0,0,0,0,3229,3218,11834,0,940,940,0,0,0,0,0,0,0,0,0,0,10668,10669,10670,10671,10672,10673,10674,13716,0,10735,0,0,0,0,0,5354,0,4450,4590,940,0,0,0,0,
+0,0,0,940,940,3229,3231,3262,3263,3230,3241,3242,3248,0,0,0,0,0,0,11791,3245,3213,11859,11887,0,940,0,0,0,0,0,0,0,0,0,0,10684,10685,10686,13766,10688,10689,10738,10739,13905,10751,13766,0,0,0,0,0,4386,4418,4333,940,0,0,0,0,
+0,0,0,940,940,3245,3247,3278,3279,3246,3257,11716,0,0,0,0,0,0,0,0,0,3229,3218,11834,0,940,0,0,0,0,0,0,0,0,0,0,0,13716,0,0,0,13691,10735,10755,10774,10767,0,0,0,0,0,0,4450,4590,0,940,0,0,0,0,
+0,0,0,0,940,940,3397,0,0,3415,11919,0,0,0,0,0,0,0,0,0,0,3245,3213,11859,11887,940,0,0,0,0,0,0,0,0,0,0,0,10744,10745,13905,10750,10758,10751,0,13766,0,0,0,0,0,0,0,4450,4590,0,940,940,0,0,0,
+0,0,0,0,0,940,3429,11792,0,3461,3383,0,0,0,0,0,0,0,0,0,0,11741,3229,3218,11834,940,0,0,0,0,0,0,0,0,0,5109,5110,10760,10761,10774,10766,10774,10767,0,0,0,0,0,0,0,0,0,4712,4680,4591,0,940,0,0,0,
+0,0,0,0,0,940,0,3413,0,0,3461,3383,0,0,0,0,0,0,0,0,0,0,3245,3213,11859,940,0,0,0,0,0,0,0,0,940,10774,10775,10776,10777,13716,13691,4366,4367,0,0,0,0,0,0,0,0,0,5354,4450,4590,0,940,0,0,0,
+0,0,0,0,0,940,3381,3463,0,0,0,3399,0,0,0,0,0,0,0,0,0,0,0,3229,3218,940,0,0,0,0,0,0,0,940,940,13716,13766,0,0,0,0,0,0,0,0,0,0,0,0,0,5794,5795,0,4450,4590,0,940,0,0,0,
+0,0,0,0,940,940,3397,0,0,11793,3430,3431,0,0,0,0,0,0,0,0,0,0,0,3245,3213,940,0,0,0,0,0,940,940,0,13691,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5826,5827,0,4450,4590,0,940,0,0,0,
+0,0,0,0,940,0,3429,3430,3430,3431,11716,0,0,0,0,0,0,0,0,0,0,0,11741,0,3229,940,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4386,4418,4333,0,940,0,0,0,
+0,0,0,0,940,0,11791,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3245,940,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4450,4590,0,0,940,0,0,0,
+0,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4450,4590,0,0,940,0,0,0,
+0,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4450,4590,0,0,940,0,0,0,
+0,0,0,0,940,0,11716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4450,4162,0,0,940,0,0,0,
+0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,4366,4367,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4712,4680,4590,0,940,0,0,0,
+0,0,0,0,0,940,0,0,11741,0,0,0,0,0,0,0,0,0,0,0,11791,0,0,0,0,940,0,0,0,0,0,940,940,940,0,940,0,13716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4450,4162,940,940,0,0,0,
+0,0,0,0,0,940,0,0,0,0,0,0,0,0,0,11639,11809,11810,11811,11639,0,0,0,0,940,940,940,940,940,940,940,940,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4712,4680,940,0,0,0,0,
+0,0,0,0,0,940,940,11809,11811,11639,0,0,11639,11597,11598,11810,0,0,0,11597,11598,1073753463,940,940,940,940,0,0,0,0,0,0,0,0,0,0,940,0,13766,0,0,0,0,0,0,0,0,0,4366,4367,0,0,13766,0,940,940,0,0,0,0,
+0,0,0,0,0,940,940,940,940,11810,11810,11810,940,940,940,0,0,0,0,0,940,940,940,11810,940,0,0,0,0,0,0,0,0,0,0,0,940,940,940,0,0,0,0,0,0,0,0,0,940,0,13716,0,940,940,940,0,0,0,0,0,
+0,0,0,0,0,0,940,11812,940,940,940,940,11839,11839,11816,940,0,0,0,940,11866,11810,11839,11810,940,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,940,940,0,0,0,0,940,940,940,940,940,940,0,0,0,0,0,0,0,
+0,0,0,0,0,0,940,940,0,0,0,0,0,11839,11816,940,0,0,0,940,11866,0,11839,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,940,940,940,940,940,0,0,940,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,14115,14167,14268,14268,14169,940,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,14167,14746,14318,14319,14747,940,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,14746,0,14293,14293,0,940,940,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,3216,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,14369,14344,0,6829,940,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,11950,11951,0,11953,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,6776,6829,6929,6929,6777,0,940,940,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,11975,11976,0,11978,12003,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,8579,0,940,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,940,940,940,940,0,0,0,940,940,12001,0,12003,12028,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,16455,940,940,0,0,940,940,940,940,940,940,12026,0,12028,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,8611,0,940,940,0,0,0,0,0,0,0,0,
+0,0,0,0,0,940,16480,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,940,940,940,0,0,0,0,0,0,0,0,940,940,940,0,0,0,0,0,0,
+0,0,0,0,0,940,16455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,940,940,940,0,6464,940,940,0,8611,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,
+0,0,0,0,940,940,16480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,0,0,0,0,0,940,0,0,0,1856,0,0,0,0,0,0,0,0,0,0,9453,0,0,0,940,0,0,0,0,0,
+0,0,0,0,940,17777,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,0,0,0,0,940,940,0,1859,1860,1872,0,9415,0,0,0,0,0,0,0,0,0,0,8579,0,940,940,0,0,0,0,
+0,0,0,0,940,17793,17795,17781,17782,0,0,0,0,0,0,0,3214,3215,0,0,0,0,0,0,0,940,0,0,0,0,0,0,0,0,940,0,0,1875,1876,1888,8579,0,0,0,0,0,0,0,0,0,0,0,0,9416,0,940,0,0,0,0,
+0,0,0,0,940,17809,17820,17819,17777,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,940,0,0,1856,8611,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,940,940,0,0,17793,17782,0,15728,17795,17794,17795,17794,15724,15725,0,0,0,0,0,0,940,0,0,0,0,0,0,0,0,0,940,940,1860,1872,8578,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,0,940,17803,17782,17809,15875,0,15878,17820,17819,17820,17819,17820,15875,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,940,940,1876,1888,0,9453,0,0,0,0,0,0,0,0,0,0,0,0,0,8611,0,940,0,0,0,0,
+0,0,0,0,0,940,17819,17777,16533,15900,15901,15903,15609,15709,15609,17780,17777,15900,15904,0,0,0,0,0,0,940,940,0,0,0,940,940,940,940,940,0,0,0,0,8546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,0,940,15691,17793,17795,15925,15926,15928,17795,17794,17795,17796,17793,15925,15929,15930,0,0,0,0,0,0,940,940,940,940,940,17780,1871,1872,0,0,0,9416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,940,940,16956,17809,17820,15950,15951,15953,17819,17820,17819,17812,17809,15950,15954,15955,15956,0,0,0,0,0,0,1885,17793,17794,17795,17796,1887,1888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,940,0,0,16954,16955,15975,15976,15978,15869,15817,15818,2147499466,15819,15975,15979,15980,15981,15982,0,0,0,0,0,0,17809,17810,17811,17812,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8578,0,940,0,0,0,0,
+0,0,0,0,940,0,0,0,0,15817,15818,15819,0,0,0,0,0,0,15817,15818,2147499466,15819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,
+0,0,0,0,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8454,8455,8579,8455,940,940,0,0,0,0,
+0,0,0,0,940,0,16456,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,940,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,8611,8486,9456,0,8611,940,0,0,0,0,0,
+0,0,0,0,940,0,16481,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,0,0,0,0,0,0,0,940,0,0,0,0,0,0,0,8546,0,6460,6245,6246,2147489894,6246,2147489894,6248,6457,0,940,0,0,0,0,0,
+0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,940,940,0,0,0,8611,9415,0,6460,6245,0,0,9404,9405,9406,0,0,0,6248,940,0,0,0,0,0,
+0,0,0,0,0,940,0,16480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,940,0,0,8579,0,6460,6245,0,0,0,0,9419,9420,9421,0,0,0,940,940,0,0,0,0,0,
+0,0,0,0,0,940,940,0,16505,16506,16507,0,0,0,0,0,0,0,0,0,0,0,940,940,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,0,6460,0,940,940,940,940,940,940,0,0,0,940,940,940,0,0,0,0,0,0,
+0,0,0,0,0,0,940,940,940,940,940,0,0,0,0,0,0,0,940,940,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,940,940,940,940,940,0,0,0,0,940,940,940,940,940,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,940,940,940,940,940,940,940,940,940,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Buildings1" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8683,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9123,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9138,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,15627,15628,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,15652,15653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147492301,2147492300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147492333,2147492332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6302,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="13" name="Buildings"/>
+ <layer id="7" name="Front" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,11588,0,11585,0,0,0,0,0,0,0,0,0,12626,12627,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4334,4335,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,11585,0,0,11588,0,11610,0,0,0,0,0,0,0,0,0,0,11716,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5322,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,11610,9465,9466,11613,0,0,0,0,0,0,0,0,0,0,0,0,0,13350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,9501,9502,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,9536,9537,9538,9539,11894,0,0,0,0,0,0,0,0,0,0,0,0,11791,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,9572,9573,9574,9575,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13326,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13351,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4334,4335,0,0,0,0,0,0,0,0,0,5322,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4334,4335,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11923,11898,11898,11897,11922,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,11923,11897,11898,11922,0,0,11923,11897,11898,11899,0,0,0,11896,11898,11922,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4334,4335,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,11899,0,0,11896,11898,11898,11899,0,0,0,0,0,0,0,0,11896,11897,11898,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8651,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9438,9439,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9401,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,8824,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,8856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9438,9439,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8827,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,8859,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9401,0,8610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,16931,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,16929,16930,0,0,0,15844,15792,15843,2147499441,15794,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,15792,15793,15794,0,0,0,0,0,0,15792,15793,2147499441,15794,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,16431,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9440,9441,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6484,6458,6459,6458,6459,6458,6459,6483,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9400,0,6484,6458,0,0,9389,9390,9391,9300,0,0,6458,0,0,0,0,0,0,
+0,0,0,0,0,0,0,16455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6484,6458,0,6352,0,0,9434,9435,9436,0,0,6352,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6484,9300,9432,0,0,0,9294,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6458,0,0,0,0,0,0,0,0,0,0,9413,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="8" name="Front1" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,11497,11498,11499,0,0,11572,11573,0,0,0,0,11572,11573,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,11522,11523,11524,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,11547,11548,11549,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8610,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8612,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8618,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8610,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9450,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8612,0,0,9449,0,0,8618,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8618,0,0,0,0,8546,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8579,0,0,0,0,9398,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8618,0,0,0,0,0,0,0,0,8612,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="Front"/>
+ <layer id="16" name="AlwaysFront-2" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15871,15847,15872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6484,6458,15849,15609,15846,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6486,6320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront-1" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5254,5255,5256,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5286,5287,5288,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5257,5258,5259,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5289,5290,5291,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9407,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9423,9424,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9378,9379,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9393,9394,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9407,9408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9423,9424,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9380,9381,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9395,9396,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6484,6483,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9411,9412,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15871,6436,6457,6483,15872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9425,9426,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15871,15848,15849,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,2698,2696,2807,2679,2753,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2668,2690,2750,0,0,0,0,0,0,2753,2678,2777,2679,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2795,2633,2699,2807,2698,2687,2811,2649,2794,2643,2690,2750,2794,0,0,2662,2687,0,0,0,0,0,0,0,0,0,0,0,0,0,2672,2650,2651,2652,2684,2774,2660,2757,2758,2687,2698,2637,2768,2750,2691,2777,2798,2794,0,0,0,0,0,0,
+0,0,0,0,2799,2637,2777,2774,2761,2762,2763,2753,2686,2794,2805,2673,2807,2686,2684,2690,2685,2816,2648,2662,2650,2651,2652,0,0,0,0,0,0,0,0,2775,2643,2674,2675,2676,996,2779,2780,2781,2782,2818,2756,2679,2801,2753,2812,968,2616,2684,2638,2638,0,0,0,0,
+0,0,2673,2633,2656,2657,2661,2633,2785,2786,2787,2750,996,2633,2690,2750,2819,2655,2615,2616,2798,2818,2679,968,2674,2675,2676,0,0,0,0,0,0,0,2633,2768,996,2669,2697,2669,2816,2803,2804,2805,2666,2667,2633,996,2816,2792,2750,2639,2640,2691,2648,996,2691,0,0,0,
+0,0,2816,2669,2680,2681,2661,934,937,938,939,2666,2667,934,937,936,938,939,2639,2640,934,938,938,939,2630,2669,2792,2801,0,0,0,0,0,0,2656,2657,2775,934,937,938,938,939,996,2669,934,937,937,937,938,938,938,938,939,996,2818,2650,2651,2652,0,0,
+0,0,2799,2801,2699,934,937,935,963,966,936,938,937,935,963,964,966,936,938,937,935,963,966,967,939,2801,2636,2813,0,0,0,0,0,2663,2680,2681,934,1018,963,965,966,936,938,937,935,963,965,964,965,964,965,966,936,938,939,2674,2675,2676,0,0,
+0,2648,2807,2699,2810,962,963,964,992,993,964,965,964,965,992,0,993,965,964,965,965,992,993,966,1023,2691,2678,2630,2633,0,0,0,0,2768,2679,2691,962,963,992,0,993,965,965,964,964,992,0,0,0,0,0,993,965,966,967,939,2699,2800,0,0,
+0,2774,996,2685,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,967,939,968,2691,2669,0,0,0,2768,2783,996,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,1023,996,2759,2663,0,
+0,2816,996,2669,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,1023,996,2698,2655,0,0,0,2690,2806,2631,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2632,2807,2662,0,
+0,2669,2816,996,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2669,2818,2692,2662,0,0,2673,968,2696,962,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1023,2799,2777,2800,0,
+0,2669,2801,2768,1074,1046,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,939,2819,2806,2813,0,2650,2651,2652,2816,962,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,967,939,996,2648,0,
+0,2650,2651,2652,2678,1077,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,995,1023,2662,2685,2679,2678,2674,2675,2676,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,1023,2656,2657,2654,
+0,2674,2675,2676,968,962,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1078,1079,2817,996,2792,2690,2643,2800,2753,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2680,2681,2799,
+0,0,2801,2648,996,990,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,2656,2657,2768,2800,2792,968,934,937,935,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1023,2819,2636,996,
+0,2669,2801,2643,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,995,1079,2680,2681,996,2692,934,937,935,963,965,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2777,2632,2798,
+2669,2759,968,2776,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,967,968,2753,2812,934,937,935,963,965,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2666,2667,2812,
+2801,2669,2816,2645,962,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,936,938,937,935,963,964,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1023,968,2632,2801,
+2669,2801,2633,990,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,965,964,965,965,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1051,2756,2812,2687,
+2801,2768,996,2684,1077,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,2799,968,2669,
+2805,2801,2673,996,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1049,1048,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,2633,2693,2789,
+2811,2816,2656,2657,1074,1046,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1048,1020,0,0,0,1021,1049,1050,1078,1046,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,2650,2651,2652,
+2768,2693,2680,2681,2693,962,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1077,1047,1049,1048,1048,1050,1078,1076,1079,1074,1046,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,995,1079,2674,2675,2676,
+0,2753,2684,2795,2783,962,1047,1020,11497,11498,11499,0,0,11572,11573,0,0,0,0,11572,11573,1021,1048,1050,1078,1079,1076,1076,1076,1076,1076,1079,2685,2679,2696,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,968,2798,2699,2684,
+0,2789,2816,2795,968,1074,1046,1047,11522,11523,11524,1021,1049,1048,1049,1020,0,0,0,1021,1048,1050,1078,1076,1079,996,2798,968,2679,2696,2633,2687,2812,2697,996,2752,990,1047,1049,1020,0,0,0,0,0,0,0,1021,1048,1020,0,1021,1049,1050,995,1079,2636,2690,2631,0,
+0,2789,2691,2816,2752,968,1074,1075,1077,1047,1048,1050,1078,1076,1077,1047,1020,0,1021,1050,1078,1076,1079,2812,2650,2651,2652,2692,996,2673,2666,2667,2818,2636,2679,2810,1074,1075,1077,1047,1049,1048,1049,1020,0,0,1021,1050,1077,1047,1048,1050,1078,1076,1079,2816,2806,2817,2668,0,
+0,0,2684,2806,996,2692,2816,1075,1074,1075,1078,1076,1079,2690,1074,1046,991,0,994,995,1079,2632,2812,2679,2674,2675,2676,2750,2661,2810,2632,2805,0,2685,2686,2752,968,2759,1074,1075,1075,1075,1077,1019,0,0,994,995,1074,1075,1075,1076,1079,2687,2810,2801,996,2642,0,0,
+0,0,2801,2661,2801,2690,2666,2667,2690,2768,2768,2615,2616,996,2633,990,991,0,1022,1051,2812,2661,968,2761,2762,2763,2685,2750,2638,2687,0,0,0,0,2648,2679,2650,2651,2652,2662,2673,934,1018,991,0,0,994,1051,2615,2616,2636,996,2762,2763,2685,2759,2636,0,0,0,
+0,0,0,2661,2672,2699,2753,2756,2794,2699,2690,2639,2640,996,2774,962,1019,0,1022,1051,2661,2798,2632,2785,2786,2787,2685,0,0,0,0,0,0,0,0,2673,2674,2675,2676,2795,2805,962,963,992,0,0,1022,1023,2639,2640,2678,2785,2786,2787,2685,2638,0,0,0,0,
+0,0,0,0,2672,2750,2673,2818,2810,2756,2673,2810,3221228145,2812,934,1018,1019,0,1022,1023,2661,2698,2632,2794,2673,2816,0,0,0,0,0,0,0,0,0,0,2775,2660,2810,2645,2679,962,991,0,0,0,1022,1023,2805,968,2776,2691,2693,2636,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2679,2669,2660,2756,2750,2810,2789,962,963,992,0,994,967,939,2698,2691,2693,2813,2811,0,0,0,0,0,0,0,0,0,0,0,0,2637,2777,2642,962,1019,0,0,0,1022,967,939,2798,2661,2751,2637,0,0,0,0,0,0,0,
+0,0,0,0,0,2817,2818,2637,2793,2650,2651,2652,2692,2759,990,1047,1020,0,993,966,1023,2685,2801,2685,2661,2636,0,0,0,0,0,0,0,0,0,0,0,0,2750,2812,2655,990,1047,1020,0,0,993,966,1023,2673,968,2816,2642,0,0,0,0,0,0,0,
+0,0,0,0,2637,2761,2762,2763,2756,2674,2675,2676,2648,2816,1074,1046,1019,0,0,1022,967,939,2673,2750,2752,2642,2693,0,0,0,0,0,0,0,0,0,0,2805,2633,968,2655,1074,1046,1019,0,0,0,994,967,939,2632,2811,2816,968,0,0,0,0,0,0,
+0,0,0,2643,2698,2785,2786,2787,2693,2698,2631,2636,2649,2801,2699,990,1047,1020,0,993,966,1023,2648,2813,2685,2655,2673,2631,0,0,0,0,0,0,2637,2633,968,2740,2741,2813,2633,996,990,1047,1020,0,0,993,966,1023,968,2656,2657,2633,2691,0,0,0,0,0,
+0,0,2633,2662,2632,2642,2819,2669,934,937,938,939,2630,2666,2667,1074,1046,991,0,0,994,1023,2648,2698,2812,2656,2657,2699,2638,0,0,0,0,2810,2816,2762,2763,2764,2765,2766,968,2800,940,1046,991,0,0,0,1022,967,939,2680,2681,2752,2636,2692,0,0,0,0,
+0,0,2636,2750,2615,2616,934,937,935,963,966,936,938,938,939,934,935,1019,0,0,1022,967,939,2638,2798,2680,2681,2684,2759,0,0,0,0,968,2785,2786,2787,2788,2655,2636,2662,996,934,1018,1019,0,0,0,993,966,936,939,2685,968,2752,2663,996,0,0,0,
+0,2631,2642,2693,2639,2640,1018,963,965,992,993,964,965,966,936,935,963,992,0,0,993,966,936,938,939,2690,2678,2752,2630,0,0,0,2699,2642,2798,2800,996,934,937,938,939,934,935,963,992,0,0,0,0,993,966,936,938,939,2699,2650,2651,2652,0,0,
+0,2637,2684,2642,2795,962,963,992,0,0,0,0,0,993,965,965,992,0,0,0,0,993,964,966,936,939,2818,2818,2643,2690,0,2818,2643,2816,968,934,937,935,963,966,936,935,963,992,0,0,0,0,0,0,993,964,966,967,939,2674,2675,2676,0,0,
+2819,2662,2663,2631,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,1023,2818,2812,2813,2649,0,968,2801,2643,2633,962,963,965,992,993,965,964,992,0,0,0,0,0,0,0,0,0,993,966,1023,968,2638,2816,0,0,
+2789,2693,2648,2817,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2685,2752,2631,2811,2642,2813,2656,2657,934,1018,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1023,2633,2752,2690,0,0,
+2691,2759,2678,2699,962,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,2636,2777,2643,2642,2673,2631,2680,2681,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,966,1023,968,2633,996,0,0,
+2750,2752,2789,2684,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,995,1079,2687,2761,2762,2763,2685,2795,2699,2691,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,967,939,1079,2800,2812,0,
+0,2810,2801,2632,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1023,2690,2633,2785,2786,2787,2663,2633,2794,2673,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,1023,2615,2616,2678,0,
+0,2692,2666,2667,2816,990,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,967,939,2663,2813,2686,2818,2819,2794,996,2630,934,1018,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1023,2639,2640,968,0,
+0,2633,2752,2693,2654,990,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,967,939,2685,2752,2684,934,937,937,937,935,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,2638,2631,2798,0,
+2739,2740,2741,2678,2692,962,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,966,936,938,938,937,935,963,965,964,965,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,996,2799,2799,0,
+2763,2764,2765,2766,934,1018,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,993,965,964,965,965,965,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,1051,2630,2759,2810,0,
+2787,2788,2789,2668,962,963,992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8610,0,0,1022,1051,968,996,2812,0,
+2633,2756,2656,2657,962,991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1049,1048,1048,1049,1049,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,2800,2632,0,0,
+2752,2789,2680,2681,962,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1049,1049,1050,1078,1076,1076,1075,1046,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,994,995,1079,2692,968,0,0,
+2817,2777,2752,2750,990,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1048,1050,1078,1076,1076,1079,2661,2633,2756,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,2750,2799,2798,0,0,
+2687,2655,2818,2794,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1078,1076,1079,2750,2813,2794,2752,2615,2616,2669,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1022,1051,2813,996,2750,0,0,
+2654,2636,2668,2801,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1078,1079,2648,2756,2650,2651,2652,2801,2639,2640,996,1074,1046,1019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1051,2753,2666,2667,0,0,
+0,2631,2799,2818,2663,990,1047,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,1021,1050,1078,1079,2813,2637,2812,2674,2675,2676,2799,2632,2663,2753,996,990,1047,1049,1020,0,1021,1049,1049,1049,1048,1048,1049,1020,0,1021,1048,1050,995,1079,996,2812,2687,0,0,
+0,2679,2795,2687,2685,1074,1077,1047,1048,1049,1049,1020,0,0,0,0,0,1021,1049,1048,1049,1050,1078,1079,2678,2656,2657,2685,2684,2648,2801,2654,2816,996,2669,2642,1074,1075,1077,1047,1048,1050,1078,1076,1076,1075,1075,1077,1047,1049,1050,1078,1076,1079,2691,2801,2690,0,0,0,
+0,2759,2650,2651,2652,2813,1074,1075,1075,1075,1077,1047,1049,1049,1048,1048,1049,1050,1078,1076,1076,1076,1079,2661,2777,2680,2681,2648,2811,0,0,0,0,2685,2692,2631,968,2794,1074,1075,1075,1076,1079,2656,2657,2686,968,1074,1075,1076,1076,1079,2643,2740,2741,2798,968,0,0,0,
+0,0,2674,2675,2676,2687,2819,2816,2687,2812,1074,1075,1075,1075,1075,1076,1076,1076,1079,2655,2663,2811,2793,2630,2673,2638,2690,2678,0,0,0,0,0,2684,996,2692,2661,2650,2651,2652,2669,2812,2752,2680,2681,996,2690,2662,2663,968,2759,2762,2763,2764,2765,2766,0,0,0,0,
+0,0,2643,2811,2692,2819,2669,2642,2663,2750,2692,2662,2794,2816,2692,2755,2756,2757,2758,2777,2637,2691,2642,2685,2642,2692,2686,0,0,0,0,0,0,0,0,2663,2684,2674,2675,2676,2678,968,2813,2813,2685,2643,2633,2655,2800,2692,2785,2786,2787,2788,0,0,0,0,0,0,
+0,0,0,2798,2812,2636,2632,2801,2685,2648,2799,2752,2615,2616,2816,2779,2780,2781,2782,2666,2667,2795,2636,2798,2812,2669,0,0,0,0,0,0,0,0,0,0,0,2795,2638,2699,2655,2699,2684,0,0,2679,2638,968,2753,2810,2648,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2636,2777,2812,2687,2642,2630,2679,2639,2640,2663,2803,2804,2805,2806,2756,2752,2685,2638,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,2642,2693,2691,2633,2699,2684,2752,2638,2669,2642,2691,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="AlwaysFront1" width="60" height="60">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10540,0,0,0,0,0,10546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1049,1020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="15" name="AlwaysFront"/>
+</map>

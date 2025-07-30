@@ -1,0 +1,148 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                { // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 28 54 2",
+                    "Delimiter": "/"
+                },
+                { // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 36 64 3",
+                    "Delimiter": "/"
+                },
+            ],
+        }, // FLOWER DANCE
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                { // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 20 21 2",
+                    "Delimiter": "/"
+                },
+                { // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 23 24 3",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                { // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 17 5 2",
+                    "Delimiter": "/"
+                },
+                { // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 17 5 2",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                { // LOCATION: SET UP & MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 13 27 1",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+        // STARDEW VALLEY FAIR
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                { // LOCATION: SET UP & MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 37 81 0",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                { // LOCATION: SET UP & MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 14 15 2",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+        // ICE FESTIVAL 
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                { // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 48 29 3",
+                    "Delimiter": "/"
+                },
+                { // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Mateo 71 42 0",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+       
+    ]
+}

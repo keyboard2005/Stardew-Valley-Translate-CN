@@ -1,0 +1,101 @@
+{
+  
+// Diálogo para el Vendedor del Casino, que desaprueba por mucho que el granjero esté allí
+  "CasinoVendor1": "Oh, eres tú. Estás aquí para mirar escaparates, ¿supongo?",
+  "CasinoVendor2": "Te das cuenta de que tu oro no tiene valor aquí, ¿verdad?",
+  "CasinoVendor3": "Solíamos ser más exigentes sobre quién recibe una Tarjeta del club.",
+  "CasinoVendor4": "Todos los artículos están a la venta... siempre y cuando te los ganes.",
+  
+// Diálogo para la Comerciante Ambulante durante el Festival del Hielo
+  "TravelerIce": "¡Ah, el fondo perfecto para algunos de mis hallazgos más raros! Sólo por hoy, amigo.",
+  
+// Diálogo para la Mapache. "Bobo" es como ella te llama.
+  "Raccoon1": "Tenemos semillas, bobo.",
+  "Raccoon2": "¿Quieres algunas semillas, bobo?",
+  "Raccoon3": "No tienes estas semillas, tal vez.",  
+  
+// Diálogo para los cajeros de Joja. "Únete y prospera" es una referencia al eslogan "Únete. Prospera" de MercaJoja, entonces lo extraño de la frase es intencional,
+  "JojaCashier1.Default": "¡Bienvenido a MercaJoja! ¿Cómo estás hoy?",
+  "JojaCashier2.Default": "Recuerda, como miembro de MercaJoja, ¡obtendrás más por menos!",
+  "JojaCashier3.Default": "¡Únete y prospera con nuestras ofertas especiales para artículos seleccionados!",
+  
+// Diálogo para el canjeador de Fichas Estrella en la Feria de Stardew Valley
+  "StarToken": "¡Hola! ¡Cambia aquí tus fichas estrella para conseguir el mejor botín que la Feria tiene para ofrecer!",
+  
+// Diálogo para Pierre en varios festivales
+  "PierreJellyfish": "¡Objetos raros que brillan como una Medusa Lunar! ¡No te lo pierdas!",
+  "PierreEgg": "¡Artículos exclusivos a la venta! ¡Consíguelos antes de que termine el día o te lo perderás!",
+  "PierreFeast": "¡Artículos festivos para hacer más amenas tus fiestas! ¡Hazte con los tuyos mientras duren!",
+  "PierreFlower": "¡Hermosas flores para encantar a tu pareja de baile! ¡Recógelas antes del último baile!",
+  "PierreLuau": "Decoraciones exóticas para que la Granja {{FarmName}} sea la comidilla del pueblo. ¡Hazte con ellas mientras puedas!",
+  "PierreSpirit": "¡Decoraciones espeluznantes para construir el granero más terrorífico! ¡Consíguelas antes de que desaparezcan!",
+
+// Diálogo para la clínica, genérico porque podría ser dicho tanto por Harvey como por Maru.
+  "Clinic": "Tenemos una selección de tónicos para la salud y la energía.",
+  
+// Alex  
+  "AlexIceCream": "¿Qué tal un helado para combatir el calor?",
+
+	
+// Descriptions for Generic Mod Config Menu
+  "config.HatMouse.name": "Ratón Sombreril",
+  "config.HatMouse.description": "Habilita el retrato para el Ratón Sombreril en el Bosque Tizón.",
+
+  "config.Raccoon.name": "Mapache",
+  "config.Raccoon.description": "Habilita el retrato para el mapache comerciante desbloqueable en el Bosque Tizón.",
+    
+  "config.DesertTrader.name": "Comerciante del Desierto",
+  "config.DesertTrader.description": "Habilita el retrato para el comerciante del desierto.",
+  
+  "config.Casino.name": "Vendedor del Casino",
+  "config.Casino.description": "Habilita el retrato para el canjeador de monedas Qi en el Casino oculto del Desierto.",
+  
+  "config.VolcanoDwarf.name": "Enano del Volcán",
+  "config.VolcanoDwarf.description": "Habilita el retrato del comerciante enano que se encuentra en el nivel 5 de la Mazmorra del Volcán.",
+  
+  "config.IslandTrader.name": "Comerciante Isleño",
+  "config.IslandTrader.description": "Habilita el retrato para el ave comerciante desbloqueable en la Isla Jengibre.",
+
+  "config.Traveler.name": "Carro Ambulante",
+  "config.Traveler.description": "Habilita el retrato para la comerciante ambulante que aparece los Viernes y Domingos en el Bosque Tizón.",
+  
+  "config.Bookseller.name": "Librero",
+  "config.Bookseller.description": "Habilita el retrato para el librero que visita la ciudad dos veces por estación.",
+  
+  "config.StarToken.name": "Canjeador de Fichas Estrella",
+  "config.StarToken.description": "Habilita el retrato para el canjeador de Fichas Estrella en la Feria de Stardew Valley.",
+  
+  "config.DecorBoat.name": "Vendedor de Decoraciones",
+  "config.DecorBoat.description": "Habilita el retrato para el vendedor de decoraciones en el Mercado Nocturno.",
+  
+  "config.MagicBoat.name": "Vendedor Ambulante de Magia",
+  "config.MagicBoat.description": "Habilita el retrato para el vendedor ambulante de magia en el Mercado Nocturno.",
+  
+  "config.EggShop.name": "Comerciante de Huevos",
+  "config.EggShop.description": "Habilita el retrato para el comerciante de Huevos Calico en el Festival del Desierto.",  
+  
+  "config.PierreFestival.name": "Pierre en los festivales",
+  "config.PierreFestival.description": "Habilita los retratos para el puesto de Pierre durante todos los festivales.",
+  
+  "config.section.JojaMart.name": "Cajero de MercaJoja",
+  
+  "config.JojaCashier.name": "Habilitar retrato", 
+  "config.JojaCashier.description": "Siempre inhabilitado si se utiliza SVE.",
+  
+  "config.JojaShift.name": "Aleatorizar turno de trabajo",
+  "config.JojaShift.description": "Hace que el cajero cambie aleatoriamente entre el cajero por defecto y un suplente cada día. Siempre inhabilitado si se utiliza SVE.",
+  
+  "config.section.Theater.name": "Personal del cine",
+  
+  "config.MovieTicket.name": "Empleado de taquilla",
+  "config.MovieTicket.description": "Habilita el retrato para el empleado de taquilla del cine.",
+  
+  "config.MovieConcession.name": "Empleado del puesto de comida",
+  "config.MovieConcession.description": "Habilita el retrato para el empleado del puesto de comida del cine.",
+  
+  "config.MovieShift.name": "Aleatorizar turno de trabajo",
+  "config.MovieShift.description": "Hace que los miembros del personal cambien de tareas aleatoriamente cada día. Siempre inhabilitado si se utiliza SVE.",
+  
+}
+
+

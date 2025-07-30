@@ -1,0 +1,75 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.BookInside": {
+                    "DisplayName": "{{i18n:Strings.Names.Book}}",
+                    "House": "Barn",
+                    "Texture": "Characters/HectorBook_MEEP",
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+                    "UseFlippedRightForLeft": false,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ShadowWhenBaby": { "Visible": false },
+                    "ShadowWhenAdult": { "Visible": false }
+                },
+                "{{ModId}}.BookOutside": {
+                    "DisplayName": "Book",
+                    "House": "Barn",
+                    "Texture": "Characters/BookDryad_MEEP",
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 32,
+                    "UseFlippedRightForLeft": false,
+                    "UseDoubleUniqueAnimationFrames": true
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "{{ModId}}.Book_Outside": {
+                    "AnimalId": "{{ModId}}.BookOutside",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DeepMountains",
+                    "DisplayName": "{{i18n:Strings.Names.Book}}",
+                    "PortraitTexture": "Portraits/BookDryad",
+                    "PetMessage": [
+                        "{{i18n:MEEP.BookOutside.{{Random: {{Range: 1, 5}}|key=BookDialogue}}}}"
+                    ],
+                    "HomeTileX": 7,
+                    "HomeTileY": 14,
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch3.Cirrus.11, WEATHER EastScarp_Village Sun"
+                },
+                "{{ModId}}.Book_Inside": {
+                    "AnimalId": "{{ModId}}.BookInside",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DruidTower",
+                    "DisplayName": "{{i18n:Strings.Names.Book}}",
+                    "PortraitTexture": "Portraits/HectorBook",
+                    "PetMessage": [
+                        "{{i18n:MEEP.BookInside.{{Random: {{Range: 1, 5}}|key=BookDialogue}}}}"
+                    ],
+                    "HomeTileX": 10,
+                    "HomeTileY": 15,
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch3.Cirrus.11, !WEATHER EastScarp_Village Sun"
+                },
+                "{{ModId}}.Book_Inside_OG": {
+                    "AnimalId": "{{ModId}}.BookInside",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DruidTower",
+                    "DisplayName": "{{i18n:Strings.Names.Book}}",
+                    "PortraitTexture": "Portraits/HectorBook",
+                    "PetMessage": [
+                        "{{i18n:MEEP.BookInside.{{Random: {{Range: 1, 5}}|key=BookDialogue}}}}"
+                    ],
+                    "HomeTileX": 10,
+                    "HomeTileY": 15,
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Any SnS.Ch3.Cirrus.11"
+                }
+            }
+        }
+    ]
+}

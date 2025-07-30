@@ -1,0 +1,62 @@
+{
+  "Changes": [
+    {
+      "LogName": "Event One - Introduction",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "937501/u 1 2 3 4 5/t 600 1800/z spring/z fall/z winter": "summer_day_ambient/24 15/farmer 20 23 1 Leilani -100 -100 0 Keahi 23 11 2 Pika 24 11 2/skippable/addConversationTopic LeilaniArrives 10/move farmer 4 0 1 true/move Keahi 0 4 2 true/move Pika 0 4 2 true/pause 1000/speak Pika \"{{i18n:MeetLeilaniEvent.0}}\"/pause 400/move farmer 0 -4 0/pause 400/emote farmer 8/pause 400/speak Pika \"{{i18n:MeetLeilaniEvent.1}}\"/pause 400/speak Keahi \"{{i18n:MeetLeilaniEvent.2}}\"/pause 800/speak Pika \"{{i18n:MeetLeilaniEvent.3}}\"/pause 800/speak Keahi \"{{i18n:MeetLeilaniEvent.4}}\"/question fork1 \"{{i18n:MeetLeilaniEvent.5}}\"/fork dontmeetleilani1/pause 400/emote Keahi 56/pause 400/speak Keahi \"{{i18n:MeetLeilaniEvent.6}}\"/pause 400/globalFade/viewport -1000 -1000/changeLocation Beach/playMusic ocean/warp farmer 33 12/warp Keahi 32 15/warp Leilani 30 15/warp Pika 31 14/faceDirection farmer 2/faceDirection Leilani 1/faceDirection Keahi 3/faceDirection Pika 2/viewport 32 14/pause 800/speak Keahi \"{{i18n:MeetLeilaniEvent.7}}\"/pause 800/speak Leilani \"{{i18n:MeetLeilaniEvent.8}}\"/pause 300/move Leilani 1 0 1/showFrame Leilani 18/positionOffset Leilani 15 0/positionOffset Keahi -15 0/showFrame Keahi 21/showFrame Leilani 19/showFrame Keahi 19/pause 300/speak Keahi \"{{i18n:MeetLeilaniEvent.9}}\"/pause 800/speak Leilani \"{{i18n:MeetLeilaniEvent.10}}\"/positionOffset Keahi -10 0/showFrame Keahi 21/pause 400/emote farmer 8/pause 400/speak Pika \"{{i18n:MeetLeilaniEvent.11}}\"/showFrame Leilani 4/showFrame Keahi 12/positionOffset Leilani -15 0/positionOffset Keahi 25 0/pause 800/speak Keahi \"{{i18n:MeetLeilaniEvent.12}}\"/pause 400/emote farmer 56/pause 400/speak Leilani \"{{i18n:MeetLeilaniEvent.13}}\"/pause 800/speak Keahi \"{{i18n:MeetLeilaniEvent.14}}\"/pause 800/speak Leilani \"{{i18n:MeetLeilaniEvent.15}}\"/pause 400/emote Keahi 16/pause 400/speak Keahi \"{{i18n:MeetLeilaniEvent.16}}\"/pause 800/speak Pika \"{{i18n:MeetLeilaniEvent.17}}\"/pause 600/move Pika 0 -6 0 true/move Keahi 0 -6 0 true/move Leilani 0 -4 0 false/faceDirection Leilani 1/pause 400/speak Leilani \"{{i18n:MeetLeilaniEvent.18}}\"/move Leilani 0 -4 0 true/move Keahi 0 -4 0 true/move Pika 0 -4 0 true/pause 600/end",
+        "dontmeetleilani1": "pause 400/emote Keahi 28/pause 400/speak Keahi \"{{i18n:MeetLeilaniEventFork.0}}\"/pause 800/speak Pika \"{{i18n:MeetLeilaniEventFork.1}}\"/pause 800/speak Keahi \"{{i18n:MeetLeilaniEventFork.2}}\"/pause 800/end"
+      }
+    },
+    {
+      "LogName": "Event Two - Washing Dishes",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Ridgeside_RidgesideVillage",
+      "Entries": {
+        "937502/t 1500 2100/e 937501/w sunny/z spring/z fall/z winter/p Leilani": "50s/95 40/farmer 98 45 0 Corine 99 38 2 Leilani 96 37 0 Pika 94 37 0/skippable/animate Leilani true true 200 16 16 17 16/move farmer 0 -5 1/move farmer 1 0 0/move Pika -6 0 0 true/pause 800/speak Corine \"{{i18n:LeilaniDishesEvent.0}}\"/pause 600/emote farmer 56/pause 600/speak Corine \"{{i18n:LeilaniDishesEvent.1}}\"/move Corine -12 0 0 true/move Corine 0 1 1 true/pause 1200/speak Leilani \"{{i18n:LeilaniDishesEvent.2}}\"/faceDirection Pika 3/pause 500/emote farmer 32/pause 500/move farmer -4 0 0 false/move farmer 0 -1 0/emote farmer 8/pause 800/speak Leilani \"{{i18n:LeilaniDishesEvent.3}}\"/pause 400/emote farmer 60/pause 400/speak Leilani \"{{i18n:LeilaniDishesEvent.4}}\"/move Pika 6 0 1/pause 200/speak Pika \"{{i18n:LeilaniDishesEvent.5}}\"/pause 400/farmerEat 612/pause 500/emote farmer 20/pause 400/speak Leilani \"{{i18n:LeilaniDishesEvent.6}}\"/pause 500/emote farmer 32/pause 1000/end"
+      }
+    },
+    {
+      "LogName": "Event Three - A Very Merry UnBirthday",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Ridgeside_PikaHouse",
+      "Entries": {
+        "937503/u 23/z spring/z fall/z winter/t 1900 2200/e 937501": "jaunty/-1000 -1000/farmer -100 -100 0 Leilani -100 -100 0 Keahi -100 -100 0 Pika -100 -100 0/skippable/changeToTemporaryMap PikaHouseBirthday/viewport -1000 -1000/warp Pika 3 7/warp Leilani 6 9/warp Keahi 6 12/warp farmer 5 15/faceDirection Pika 2/faceDirection Leilani 2/faceDirection Keahi 0/faceDirection farmer 0/viewport 5 10/pause 400/speak Pika \"{{i18n:LeilaniBirthdayEvent.0}}\"/pause 400/emote farmer 32/pause 400/faceDirection Keahi 2/speak Keahi \"{{i18n:LeilaniBirthdayEvent.1}}\"/pause 400/emote farmer 8/pause 400/speak Leilani \"{{i18n:LeilaniBirthdayEvent.2}}\"/pause 600/speak Pika \"{{i18n:LeilaniBirthdayEvent.3}}\"/pause 600/speak Keahi \"{{i18n:LeilaniBirthdayEvent.4}}\"/pause 400/emote farmer 56/move farmer 0 -3 0/faceDirection Keahi 0/pause 1000/end"
+      }
+    },
+    {
+      "LogName": "Event Four - Telling Off Keahi",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "937504/e 937501/w sunny/z spring/z fall/z winter/t 1200 1500/!ActiveDialogueEvent LeilaniArrives/DayOfWeek Tue Wed Fri": "distantBanjo/100 92/farmer -100 -100 0 Flor 103 90 1 Jas 107 93 2 Keahi 98 94 3 Leilani 74 94 1 Penny 104 90 3 Trinnie 97 93 2 Vincent 104 93 1/skippable/animate Jas false true 100 0 16 17 18 19 0/pause 1000/speak Penny \"{{i18n:LeilaniKeahiEvent.0}}\"/pause 500/speak Flor \"{{i18n:LeilaniKeahiEvent.1}}\"/pause 500/speak Penny \"{{i18n:LeilaniKeahiEvent.2}}\"/pause 500/speak Leilani \"{{i18n:LeilaniKeahiEvent.3}}\"/speed Leilani 5/move Leilani 18 0 1/emote Leilani 12/pause 200/emote Keahi 16/pause 200/speak Keahi \"{{i18n:LeilaniKeahiEvent.4}}\"/move Leilani 4 0 1/speak Leilani \"{{i18n:LeilaniKeahiEvent.5}}\"/pause 500/speak Keahi \"{{i18n:LeilaniKeahiEvent.6}}\"/pause 500/speak Leilani \"{{i18n:LeilaniKeahiEvent.7}}\"/pause 200/emote Leilani 40/pause 200/speak Leilani \"{{i18n:LeilaniKeahiEvent.8}}\"/pause 250/emote Keahi 60/pause 250/speak Keahi \"{{i18n:LeilaniKeahiEvent.9}}\"/pause 500/speak Leilani \"{{i18n:LeilaniKeahiEvent.10}}\"/move Leilani -20 0 3 true/move Keahi -20 0 3 true/speak Flor \"{{i18n:LeilaniKeahiEvent.11}}\"/pause 200/emote Penny 32/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Event Five - A Dangerous Digsite",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Ridgeside_RidgesideVillage",
+      "Entries": {
+        "937505/e 937501/{{DigsiteEventToken}}/z spring/z fall/z winter/t 900 1700": "libraryTheme/95 40/farmer 99 40 0 Anton 99 42 0 Corine 99 38 2 Leilani 87 43 1 Pika 94 38 0/move Leilani 7 0 0/emote Leilani 16/pause 100/faceDirection Pika 2/pause 100/emote Pika 8/pause 200/emote Leilani 56/move Leilani 0 -4 0/speak Leilani \"{{i18n:LeilaniDigsiteEvent.0}}\"/pause 300/emote Pika 28/pause 200/speak Pika \"{{i18n:LeilaniDigsiteEvent.1}}\"/pause 500/speak Leilani \"{{i18n:LeilaniDigsiteEvent.2}}\"/pause 500/speak Pika \"{{i18n:LeilaniDigsiteEvent.3}}\"/pause 500/speak Leilani \"{{i18n:LeilaniDigsiteEvent.4}}\"/pause 300/emote Leilani 40/pause 200/speak Leilani \"{{i18n:LeilaniDigsiteEvent.5}}\"/pause 300/emote Pika 60/pause 200/speak Pika \"{{i18n:LeilaniDigsiteEvent.6}}\"/pause 300/emote Leilani 32/pause 200/speak Leilani \"{{i18n:LeilaniDigsiteEvent.7}}\"/pause 300/emote Pika 16/pause 300/emote farmer 60/pause 600/end"
+      }
+    },
+    {
+      "LogName": "Bonus Event - No Self Pity",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "937506/e 50709921/t 900 1800/e 937501/w sunny/z spring/z fall/z winter/G {{HasMod |contains= Lemurkat.NPCJasper}}": "ocean/29 36/farmer -100 -100 0 Cameron 26 26 2 Leilani 29 36 2/skippable/pause 1000/move Cameron 0 9 2/move Cameron 2 0 1/move Cameron 0 1 2/pause 1000/faceDirection Leilani 3 true/pause 500/emote Leilani 32/pause 500/faceDirection Leilani 2 true/pause 1000/speak Cameron \"{{i18n:LeilaniCameronEvent.0}}\"/pause 1000/speak Leilani \"{{i18n:LeilaniCameronEvent.1}}\"/pause 1000/speak Cameron \"{{i18n:LeilaniCameronEvent.2}}\"/pause 1000/speak Leilani \"{{i18n:LeilaniCameronEvent.3}}\"/pause 1000/speak Cameron \"{{i18n:LeilaniCameronEvent.4}}\"/pause 1500/emote Leilani 40/pause 1500/speak Leilani \"{{i18n:LeilaniCameronEvent.5}}\"/pause 500/emote Cameron 12/pause 500/speak Cameron \"{{i18n:LeilaniCameronEvent.6}}\"/pause 500/emote Leilani 60/pause 500/speak Leilani \"{{i18n:LeilaniCameronEvent.7}}\"/pause 500/textAboveHead Leilani \"{{i18n:LeilaniCameronEvent.8}}\"/pause 500/speak Leilani \"{{i18n:LeilaniCameronEvent.9}}\"/pause 1000/speak Cameron \"{{i18n:LeilaniCameronEvent.10}}\"/pause 1000/speak Leilani \"{{i18n:LeilaniCameronEvent.11}}\"/pause 1000/speak Cameron \"{{i18n:LeilaniCameronEvent.12}}\"/pause 500/emote Leilani 20/pause 500/speak Leilani \"{{i18n:LeilaniCameronEvent.13}}\"/pause 3000/end"
+      }
+    },
+    {
+      "LogName": "Pika's Eight Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_Ridgeside_PikaHouse",
+      "Entries": {
+        "75160101/f Pika 2000/t 800 900/e 75160100": null,
+        "75160101/f Pika 2000/t 800 1000/e 75160100/z Summer": "none/7 11/farmer -100 -100 0 Pika 7 9 1 Keahi 9 9 3/skippable/pause 500/speak Pika \"{{i18n:LeilaniPikaEvent.0}}\"/warp farmer 5 16/playSound doorClose/emote Keahi 12/pause 500/speak Keahi \"{{i18n:LeilaniPikaEvent.1}}\"/move Keahi 0 2 2/emote farmer 28/pause 400/faceDirection farmer 2/pause 400/speak Pika \"{{i18n:LeilaniPikaEvent.2}}\"/pause 500/emote farmer 32/pause 500/faceDirection farmer 0/pause 500/speak Keahi \"{{i18n:LeilaniPikaEvent.3}}\"/pause 500/emote Pika 28/pause 500/move Pika 1 0 0/move Pika 0 3 1/move Pika 1 0 0/emote Pika 8/speak Pika \"{{i18n:LeilaniPikaEvent.4}}\"/pause 800/speak Keahi \"{{i18n:LeilaniPikaEvent.5}}\"/pause 500/emote Pika 16/pause 500/speak Pika \"{{i18n:LeilaniPikaEvent.6}}\"/playMusic desolate/speak Pika \"{{i18n:LeilaniPikaEvent.7}}\"/pause 500/emote Keahi 28/pause 500/speak Keahi \"{{i18n:LeilaniPikaEvent.8}}\"/emote Pika 16/speak Pika \"{{i18n:LeilaniPikaEvent.9}}\"/pause 800/speak Keahi \"{{i18n:LeilaniPikaEvent.10}}\"/pause 800/speak Pika \"{{i18n:LeilaniPikaEvent.11}}\"/pause 800/message \"{{i18n:LeilaniPikaEvent.12}}\"/speak Keahi \"{{i18n:LeilaniPikaEvent.13}}\"/speak Pika \"{{i18n:LeilaniPikaEvent.14}}\"/showFrame Pika 26/showFrame Keahi 25/pause 1000/message \"{{i18n:LeilaniPikaEvent.15}}\"/pause 1000/speak Pika \"{{i18n:LeilaniPikaEvent.16}}\"/message \"{{i18n:LeilaniPikaEvent.17}}\"/speak Pika \"{{i18n:LeilaniPikaEvent.18}}\"/pause 1000/globalFade/viewport -1000 -1000/pause 500/message \"{{i18n:LeilaniPikaEvent.19}}\"/end dialogue Pika \"{{i18n:LeilaniPikaEvent.20}}\""
+      }
+    }
+  ]
+}

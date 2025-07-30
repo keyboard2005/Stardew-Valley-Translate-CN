@@ -1,0 +1,2857 @@
+{
+    "Changes": [
+        /* { //External Map
+            "Action": "Load",
+            "Target": "Maps/EastScarp_MeadowFarm",
+            "FromFile": "assets/Locations/Outdoors/MeadowPath.tmx"
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                //Template for NEW Location
+                "EastScarp_DeepMountains": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.DeepMountains}}",
+                    "DefaultArrivalTile": {
+                        "X": 60,
+                        "Y": 59
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_DeepMountains"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESDeepMountains"
+                    ],
+                    "ArtifactSpots": [
+                        //This is basically copied directly from the "Mountain" section. Might adjust later. 
+                        {
+                            "Chance": 0.6,
+                            "Id": "(O)382",
+                            "ItemId": "(O)382", //coal
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)581",
+                            "ItemId": "(O)581", //prehistoric skull
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378", //copper ore
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.15,
+                            "Id": "(O)770", //mixed seeds
+                            "ItemId": "(O)770",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390", //stone
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.01,
+                            "Id": "(O)114", //ancient seed
+                            "ItemId": "(O)114",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "FishAreas": {
+                        "Pond": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 47,
+                                "Y": 45,
+                                "Width": 7,
+                                "Height": 5
+                            },
+                            "CrabPotFishTypes": [],
+                            "CrabPotJunkChance": 1.0
+                        },
+                        "DeepLake": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        //Scarp Fish
+                        {
+                            "Season": "Spring",
+                            "FishAreaId": "DeepLake",
+                            "Id": "(O)138", //rainbow trout
+                            "ItemId": "(O)138"
+                        },
+                        // time and weather are still set in fishdata it seems.
+                        {
+                            "Id": "EastScarp_Golden_Trout",
+                            "ItemId": "(O)EastScarp_Golden_Trout",
+                            "FishAreaID": "DeepLake",
+                            "Condition": "LOCATION_Season Here spring summer fall" //not even sure we need this
+                        },
+                        {
+                            "Id": "EastScarp_Kokanee_Salmon",
+                            "ItemId": "(O)EastScarp_Kokanee_Salmon",
+                            "FishAreaID": "DeepLake",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Id": "EastScarp_King_Carp",
+                            "ItemId": "(O)EastScarp_King_Carp",
+                            "FishAreaID": "DeepLake",
+                            "PlayerPosition": { //hopefully sets it so you need to be in the lower part of the lake to catch this fellow. If this doesn't work may need to set a separate Fish Area.
+                                "X": 0,
+                                "Y": 50,
+                                "Width": 255,
+                                "Height": 12
+                            },
+                            "MinDistanceFromShore": 3,
+                            "MaxDistanceFromShore": -1,
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        }, //Vanilla Fish
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "DeepLake",
+                            "Id": "(O)139", //salmon
+                            "ItemId": "(O)139",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "DeepLake",
+                            "Condition": "LOCATION_SEASON Here spring summer fall",
+                            "Id": "(O)699", //Tiger Trout
+                            "ItemId": "(O)699",
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "DeepLake",
+                            "Id": "(O)161", //ice pip
+                            "ItemId": "(O)161",
+                            "MinDistanceFromShore": 0,
+                        },
+                        {
+                            "Chance": "0.1",
+                            "Season": "Winter",
+                            "FishAreaId": "DeepLake",
+                            "Id": "(F)EastScarp_StoneGoat", //stone goat
+                            "ItemId": "(F)EastScarp_StoneGoat",
+                            "MinDistanceFromShore": 0
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)20",
+                            "ItemId": "(O)20",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)16",
+                            "ItemId": "(O)16",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)396",
+                            "ItemId": "(O)396",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.8,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)404",
+                            "ItemId": "(O)404",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)406",
+                            "ItemId": "(O)406",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)408",
+                            "ItemId": "(O)408",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.85,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "MinDailyWeeds": 2,
+                    "MaxDailyWeeds": 5,
+                    "FirstDayWeedMultiplier": 15,
+                    "MinDailyForageSpawn": 1,
+                    "MaxDailyForageSpawn": 4,
+                    "MaxSpawnedForageAtOnce": 8,
+                    "ChanceForClay": 0.03,
+                    "Music": [],
+                    "MusicDefault": null,
+                    "MusicContext": "Default",
+                    "MusicIgnoredInRain": false,
+                    "MusicIgnoredInSpring": false,
+                    "MusicIgnoredInSummer": false,
+                    "MusicIgnoredInFall": false,
+                    "MusicIgnoredInFallDebris": false,
+                    "MusicIgnoredInWinter": false,
+                    "MusicIsTownTheme": false,
+                    "CustomFields": {}
+                },
+                "EastScarp_Village": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.EastScarp}}",
+                    "DefaultArrivalTile": {
+                        "X": 24,
+                        "Y": 97
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_Village"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_EastScarpe"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.01,
+                            "Id": "(O)107",
+                            "ItemId": "(O)107", //dinosaur egg
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)579",
+                            "ItemId": "(O)579", //spacula
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.08,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378", //copper ore
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)112", //rusty cog
+                            "ItemId": "(O)112",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390", //stone
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.01,
+                            "Id": "(O)115", //prehistoric tool
+                            "ItemId": "(O)115",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "FishAreas": {
+                        "ESFreshwater": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 76
+                            },
+                            "CrabPotFishTypes": [],
+                            "CrabPotJunkChance": 0.2
+                        },
+                        "ESTidepools": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 0,
+                                "Y": 85,
+                                "Width": 255,
+                                "Height": 26
+                            },
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        },
+                        "ESBay": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 0,
+                                "Y": 111,
+                                "Width": 255,
+                                "Height": 30
+                            },
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        //freshwater fish
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESFreshwater",
+                            "Id": "(O)142_ESFreshwater", //carp
+                            "ItemId": "(O)142",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "ESFreshwater",
+                            "Id": "(O)144_ESFreshwater",
+                            "ItemId": "(O)144"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESFreshwater",
+                            "Id": "(O)269_ESFreshwater",
+                            "ItemId": "(O)269",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "Fall",
+                            "FishAreaId": "ESFreshwater",
+                            "Id": "(O)139_ESFreshwater", //salmon 
+                            "ItemId": "(O)139", //salmon 
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "ESFreshwater",
+                            "Id": "(O)138_ESFreshwater", //Rainbow Trout 
+                            "ItemId": "(O)138", //Rainbow Trout
+                        },
+                        //TidePools
+                        {
+                            "Season": "Spring",
+                            "Id": "EastScarp_Ornate_Nudibranch",
+                            "ItemId": "(O)EastScarp_Ornate_Nudibranch",
+                            "FishAreaID": "ESTidepools",
+                        },
+                        {
+                            "Season": "Summer",
+                            "Id": "EastScarp_Sea_Bunny_Nudibranch",
+                            "ItemId": "(O)EastScarp_Sea_Bunny_Nudibranch",
+                            "FishAreaID": "ESTidepools",
+                        },
+                        {
+                            "Season": "Fall",
+                            "Id": "EastScarp_Sunset_Nudibranch",
+                            "ItemId": "(O)EastScarp_Sunset_Nudibranch",
+                            "FishAreaID": "ESTidepools",
+                        },
+                        {
+                            "Season": "Winter",
+                            "Id": "EastScarp_Cerulean_Nudibranch",
+                            "ItemId": "(O)EastScarp_Cerulean_Nudibranch",
+                            "FishAreaID": "ESTidepools",
+                        },
+                        //Vanilla Fish
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESTidepools",
+                            "Id": "(O)129_tidepools",
+                            "ItemId": "(O)129",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESTidepools",
+                            "Id": "(O)154_tidepools",
+                            "ItemId": "(O)154",
+                            "Condition": "LOCATION_Season Here summer fall"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESTidepools",
+                            "Id": "(O)155_tidepools",
+                            "ItemId": "(O)155",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESTidepools",
+                            "Id": "(O)153_tidepools",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESTidepools",
+                            "Id": "(O)152_tidepools",
+                            "ItemId": "(O)152"
+                        },
+                        //ESBay
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)153_ESBay",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)152_ESBay",
+                            "ItemId": "(O)152"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)129_ESBay",
+                            "ItemId": "(O)129",
+                            "Condition": "LOCATION_SEASON Here spring fall",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)131_ESBay",
+                            "ItemId": "(O)131",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)147_ESBay",
+                            "ItemId": "(O)147",
+                            "Condition": "LOCATION_Season Here spring winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)148_ESBay",
+                            "ItemId": "(O)148",
+                            "Condition": "LOCATION_SEASON Here spring fall",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)267_ESBay",
+                            "ItemId": "(O)267",
+                            "Condition": "LOCATION_SEASON Here spring summer",
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)708_ESBay",
+                            "ItemId": "(O)708",
+                            "Condition": "LOCATION_Season Here spring summer winter"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)128_ESBay",
+                            "ItemId": "(O)128"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)149_ESBay",
+                            "ItemId": "(O)149"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)155_ESBay",
+                            "ItemId": "(O)155"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)130_ESBay",
+                            "ItemId": "(O)130",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)146_ESBay",
+                            "ItemId": "(O)146",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)150",
+                            "ItemId": "(O)150",
+                            "Condition": "LOCATION_Season Here summer fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)705_ESBay",
+                            "ItemId": "(O)705",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)701_ESBay",
+                            "ItemId": "(O)701",
+                            "Condition": "LOCATION_Season Here summer fall"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)151_ESBay",
+                            "ItemId": "(O)151"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "ESBay",
+                            "Id": "(O)154_ESBay",
+                            "ItemId": "(O)154"
+                        },
+                    ],
+                    "Forage": [
+                        /*{
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)22",
+                            "ItemId": "(O)22",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)396",
+                            "ItemId": "(O)396",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.8,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)406",
+                            "ItemId": "(O)406",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)408",
+                            "ItemId": "(O)408",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.85,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }*/
+                    ],
+                    "MinDailyWeeds": 2,
+                    "MaxDailyWeeds": 5,
+                    "FirstDayWeedMultiplier": 15,
+                    "MinDailyForageSpawn": 1,
+                    "MaxDailyForageSpawn": 4,
+                    "MaxSpawnedForageAtOnce": 8,
+                    "ChanceForClay": 0.03,
+                    "Music": [
+                        {
+                            "Id": "Daytime_fall",
+                            "Track": "FallInEastScarp",
+                            "Condition": "TIME 900 1700, SEASON fall"
+                        },
+                        {
+                            "Id": "Daytime_summer",
+                            "Track": "SummerInTheScarp",
+                            "Condition": "TIME 900 1700, SEASON summer"
+                        },
+                        {
+                            "Id": "Daytime_spring",
+                            "Track": "EastScarpSpringTheme",
+                            "Condition": "TIME 900 1700, SEASON spring"
+                        },
+                        {
+                            "Id": "Daytime_winter",
+                            "Track": "WinterInEastScarp",
+                            "Condition": "TIME 900 1700, SEASON winter"
+                        },
+                    ],
+                    "MusicDefault": null,
+                    "MusicContext": "Default",
+                    "MusicIgnoredInRain": true,
+                    "MusicIgnoredInSpring": false,
+                    "MusicIgnoredInSummer": false,
+                    "MusicIgnoredInFall": false,
+                    "MusicIgnoredInFallDebris": false,
+                    "MusicIgnoredInWinter": false,
+                    "MusicIsTownTheme": false,
+                    "CustomFields": {}
+                },
+                "EastScarp_SeaCave": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.SeaCave}}",
+                    "DefaultArrivalTile": {
+                        "X": 18,
+                        "Y": 23
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_SeaCave"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESSeaCave"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.01,
+                            "Id": "(O)118",
+                            "ItemId": "(O)118", //glass shards
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "Default": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        //ES fish
+                        {
+                            "Season": "Spring",
+                            "Id": "EastScarp_Ornate_Nudibranch",
+                            "ItemId": "(O)EastScarp_Ornate_Nudibranch"
+                        },
+                        {
+                            "Season": "Summer",
+                            "Id": "EastScarp_Sea_Bunny_Nudibranch",
+                            "ItemId": "(O)EastScarp_Sea_Bunny_Nudibranch"
+                        },
+                        {
+                            "Season": "Fall",
+                            "Id": "EastScarp_Sunset_Nudibranch",
+                            "ItemId": "(O)EastScarp_Sunset_Nudibranch"
+                        },
+                        {
+                            "Season": "Winter",
+                            "Id": "EastScarp_Cerulean_Nudibranch",
+                            "ItemId": "(O)EastScarp_Cerulean_Nudibranch"
+                        },
+                        //Vanilla Fish
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Id": "(O)157",
+                            "ItemId": "(O)157"
+                        },
+                        {
+                            "Id": "(O)147",
+                            "ItemId": "(O)147"
+                        },
+                        {
+                            "Id": "(O)154",
+                            "ItemId": "(O)154"
+                        },
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_DeepDark": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.DeepDark}}",
+                    "DefaultArrivalTile": {
+                        "X": 14,
+                        "Y": 67
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_DeepDark"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESDeepDark"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.08,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378", //copper ore
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "Default": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "freshwater"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Id": "(O)156",
+                            "ItemId": "(O)156"
+                        },
+                        {
+                            "Id": "(O)157",
+                            "ItemId": "(O)157"
+                        },
+                        {
+                            "Id": "(O)158",
+                            "ItemId": "(O)158"
+                        },
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Orchard": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Orchard}}",
+                    "DefaultArrivalTile": {
+                        "X": 2,
+                        "Y": 17
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_Orchard"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESOrchard"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)110",
+                            "ItemId": "(O)110",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)118",
+                            "ItemId": "(O)118",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.05,
+                            "Id": "(O)100",
+                            "ItemId": "(O)100",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.05,
+                            "Id": "(O)103",
+                            "ItemId": "(O)103",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.05,
+                            "Id": "(O)106",
+                            "ItemId": "(O)106",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.15,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "OrchardFresh": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 3,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 50
+                            },
+                            "CrabPotFishTypes": [
+                                "freshwater"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        },
+                        "OrchardOcean": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    }, //insert here
+                    "Fish": [
+                        {
+                            "Id": "EastScarp_Fairy_Betta_OrchardFresh",
+                            "ItemId": "(O)EastScarp_Fairy_Betta",
+                            "FishAreaID": "OrchardFresh",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Id": "(O)698", //sturgeon
+                            "ItemId": "(O)698",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Id": "(O)699", //tiger trout
+                            "ItemId": "(O)699"
+                        },
+                        {
+                            "Season": "Spring",
+                            "Id": "(O)129",
+                            "ItemId": "(O)129"
+                        },
+                        {
+                            "Season": "Summer",
+                            "Id": "(O)137",
+                            "ItemId": "(O)137"
+                        },
+                        {
+                            "Season": "Summer",
+                            "Id": "(O)148",
+                            "ItemId": "(O)148"
+                        },
+                        {
+                            "FishAreaId": "OrchardFresh",
+                            "Id": "(O)136_OrchardFresh",
+                            "ItemId": "(O)136"
+                        },
+                        {
+                            "Season": "fall",
+                            "FishAreaId": "OrchardFresh",
+                            "Id": "(O)137_OrchardFresh",
+                            "ItemId": "(O)137"
+                        },
+                        {
+                            "Season": "summer",
+                            "FishAreaId": "OrchardFresh",
+                            "Id": "(O)138_OrchardFresh",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Season": "spring",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)138_OrchardOcean",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Season": "fall",
+                            "FishAreaId": "OrchardFresh",
+                            "Id": "(O)139_OrchardFresh",
+                            "ItemId": "(O)139"
+                        },
+                        {
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)139_OrchardOcean",
+                            "ItemId": "(O)139",
+                            "Condition": "LOCATION_Season Here spring summer"
+                        },
+                        {
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)147_OrchardOcean",
+                            "ItemId": "(O)147",
+                            "Condition": "LOCATION_Season Here spring winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)153_OrchardOcean",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)152",
+                            "ItemId": "(O)152"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)131_OrchardOcean",
+                            "ItemId": "(O)131",
+                            "Condition": "LOCATION_Season Here spring summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)709_OrchardOcean",
+                            "ItemId": "(O)708",
+                            "Condition": "LOCATION_Season Here spring summer winter"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)128_OrchardOcean",
+                            "ItemId": "(O)128"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)149_OrchardOcean",
+                            "ItemId": "(O)149"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)155_OrchardOcean",
+                            "ItemId": "(O)155"
+                        },
+                        {
+                            "Season": "Summer",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)267_OrchardOcean",
+                            "ItemId": "(O)267"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)130_OrchardOcean",
+                            "ItemId": "(O)130",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)146_OrchardOcean",
+                            "ItemId": "(O)146",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)150_OrchardOcean",
+                            "ItemId": "(O)150",
+                            "Condition": "LOCATION_Season Here summer fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)705_OrchardOcean",
+                            "ItemId": "(O)705",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": null,
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)701_OrchardOcean",
+                            "ItemId": "(O)701",
+                            "Condition": "LOCATION_Season Here summer fall"
+                        },
+                        {
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)148_OrchardOcean",
+                            "ItemId": "(O)148",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)151_OrchardOcean",
+                            "ItemId": "(O)151"
+                        },
+                        {
+                            "Season": "Winter",
+                            "FishAreaId": "OrchardOcean",
+                            "Id": "(O)154_OrchardOcean",
+                            "ItemId": "(O)154"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)22",
+                            "ItemId": "(O)22",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)396",
+                            "ItemId": "(O)396",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.8,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.4,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)406",
+                            "ItemId": "(O)406",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)408",
+                            "ItemId": "(O)408",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.85,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.9,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_ClearingHouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.ScarpPath}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 20
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_ClearingHouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESClearingHouse"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)110",
+                            "ItemId": "(O)110",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)583",
+                            "ItemId": "(O)583",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "Fish": [
+                        {
+                            "Id": "(O)132",
+                            "ItemId": "(O)132",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)137",
+                            "ItemId": "(O)137",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)138",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Season": "fall",
+                            "Id": "(O)139",
+                            "ItemId": "(O)139"
+                        },
+                        {
+                            "Id": "(O)140",
+                            "ItemId": "(O)140",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)141",
+                            "ItemId": "(O)141"
+                        },
+                        {
+                            "Id": "(O)143",
+                            "ItemId": "(O)143",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "Id": "(O)144",
+                            "ItemId": "(O)144",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Id": "(O)145",
+                            "ItemId": "(O)145",
+                            "Condition": "LOCATION_Season Here spring summer"
+                        },
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)699",
+                            "ItemId": "(O)699",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)704",
+                            "ItemId": "(O)704"
+                        },
+                        {
+                            "Id": "(O)706",
+                            "ItemId": "(O)706",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)707",
+                            "ItemId": "(O)707"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.6,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                /* "Custom_ESVineyard": {
+                "DisplayName": "{{i18n:EastScarp.Locations.ScarpPath}}",
+                "DefaultArrivalTile": {
+                    "X": 5,
+                    "Y": 20
+                },
+                "ArtifactSpots": [
+                    {
+                        "Chance": 0.2,
+                        "Id": "(O)378",
+                        "ItemId": "(O)378",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1
+                    },
+                    {
+                        "Chance": 0.2,
+                        "Id": "(O)110",
+                        "ItemId": "(O)110",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1
+                    },
+                    {
+                        "Chance": 0.1,
+                        "Id": "(O)583",
+                        "ItemId": "(O)583",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1
+                    },
+                    {
+                        "Chance": 0.2,
+                        "Id": "(O)102",
+                        "ItemId": "(O)102",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1
+                    },
+                    {
+                        "Chance": 0.25,
+                        "Id": "(O)390",
+                        "ItemId": "(O)390",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1
+                    }
+                ],
+                "FishAreas": {
+                    "OrchardFresh": {
+                        "DisplayName": null,
+                        "Position": {
+                            "X": 3,
+                            "Y": 0,
+                            "Width": 255,
+                            "Height": 50
+                        },
+                        "CrabPotFishTypes": [
+                            "freshwater"
+                        ],
+                        "CrabPotJunkChance": 0.2
+                    },
+                    "OrchardOcean": {
+                        "DisplayName": null,
+                        "Position": null,
+                        "CrabPotFishTypes": [
+                            "ocean"
+                        ],
+                        "CrabPotJunkChance": 0.2
+                    }
+                }, //insert here
+                "Fish": [
+                    {
+                        "Id": "(O)132",
+                        "ItemId": "(O)132",
+                        "Condition": "LOCATION_Season Here spring summer fall winter"
+                    },
+                    {
+                        "Id": "(O)137",
+                        "ItemId": "(O)137",
+                        "Condition": "LOCATION_Season Here spring fall"
+                    },
+                    {
+                        "Season": "summer",
+                        "Id": "(O)138",
+                        "ItemId": "(O)138"
+                    },
+                    {
+                        "Season": "fall",
+                        "Id": "(O)139",
+                        "ItemId": "(O)139"
+                    },
+                    {
+                        "Id": "(O)140",
+                        "ItemId": "(O)140",
+                        "Condition": "LOCATION_Season Here fall winter"
+                    },
+                    {
+                        "Season": "winter",
+                        "Id": "(O)141",
+                        "ItemId": "(O)141"
+                    },
+                    {
+                        "Id": "(O)143",
+                        "ItemId": "(O)143",
+                        "Condition": "LOCATION_Season Here spring fall winter"
+                    },
+                    {
+                        "Id": "(O)144",
+                        "ItemId": "(O)144",
+                        "Condition": "LOCATION_Season Here summer winter"
+                    },
+                    {
+                        "Id": "(O)145",
+                        "ItemId": "(O)145",
+                        "Condition": "LOCATION_Season Here spring summer"
+                    },
+                    {
+                        "Id": "(O)153",
+                        "ItemId": "(O)153",
+                        "Condition": "LOCATION_Season Here spring summer fall winter"
+                    },
+                    {
+                        "Id": "(O)699",
+                        "ItemId": "(O)699",
+                        "Condition": "LOCATION_Season Here fall winter"
+                    },
+                    {
+                        "Season": "summer",
+                        "Id": "(O)704",
+                        "ItemId": "(O)704"
+                    },
+                    {
+                        "Id": "(O)706",
+                        "ItemId": "(O)706",
+                        "Condition": "LOCATION_Season Here spring summer fall"
+                    },
+                    {
+                        "Season": "winter",
+                        "Id": "(O)707",
+                        "ItemId": "(O)707"
+                    },
+                ],
+                "Forage": [
+                    {
+                        "Chance": 0.7,
+                        "Season": "Spring",
+                        "Condition": null,
+                        "Id": "(O)18",
+                        "ItemId": "(O)18",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    },
+                    {
+                        "Chance": 0.7,
+                        "Season": "Summer",
+                        "Condition": null,
+                        "Id": "(O)402",
+                        "ItemId": "(O)402",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    },
+                    {
+                        "Chance": 0.6,
+                        "Season": "Fall",
+                        "Condition": null,
+                        "Id": "(O)410",
+                        "ItemId": "(O)410",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    },
+                    {
+                        "Chance": 0.1,
+                        "Season": "Winter",
+                        "Condition": null,
+                        "Id": "(O)414",
+                        "ItemId": "(O)414",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    },
+                    {
+                        "Chance": 0.7,
+                        "Season": "Winter",
+                        "Condition": null,
+                        "Id": "(O)418",
+                        "ItemId": "(O)418",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    },
+                    {
+                        "Chance": 0.5,
+                        "Season": "Winter",
+                        "Condition": null,
+                        "Id": "(O)283",
+                        "ItemId": "(O)283",
+                        "RandomItemId": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                    }
+                ],
+                "CustomFields": {}
+            },*/
+                "EastScarp_SmugglerDen": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.SmugglerDen}}",
+                    "DefaultArrivalTile": {
+                        "X": 23,
+                        "Y": 6
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_SmugglerDen"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESSmugglerDen"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.08,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378", //copper ore
+                            "RandomItemId": null,
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "Default": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153"
+                        },
+                        {
+                            "Id": "(O)156",
+                            "ItemId": "(O)156"
+                        },
+                        {
+                            "Id": "(O)157",
+                            "ItemId": "(O)157"
+                        },
+                        {
+                            "Id": "(O)147",
+                            "ItemId": "(O)147"
+                        },
+                        {
+                            "Id": "(O)796",
+                            "ItemId": "(O)796"
+                        },
+                        {
+                            "Id": "EastScarp_Red_Herring",
+                            "ItemId": "(O)EastScarp_Red_Herring"
+                        },
+                    ],
+                    "CustomFields": {}
+                },
+                /* "EastScarp_MeadowFarm": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MeadowFarm}}",
+                    "CanPlantHere": "true",
+                    "CreateOnLoad": {
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\EastScarp_MeadowFarm"
+                    },
+                    "DefaultArrivalTile": {
+                        "X": 30,
+                        "Y": 38
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMeadowFarm"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)110",
+                            "ItemId": "(O)110",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)583",
+                            "ItemId": "(O)583",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "Fish": [
+                        {
+                            "Id": "(O)132",
+                            "ItemId": "(O)132",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)137",
+                            "ItemId": "(O)137",
+                            "Condition": "LOCATION_Season Here spring fall"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)138",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Season": "fall",
+                            "Id": "(O)139",
+                            "ItemId": "(O)139"
+                        },
+                        {
+                            "Id": "(O)140",
+                            "ItemId": "(O)140",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)141",
+                            "ItemId": "(O)141"
+                        },
+                        {
+                            "Id": "(O)143",
+                            "ItemId": "(O)143",
+                            "Condition": "LOCATION_Season Here spring fall winter"
+                        },
+                        {
+                            "Id": "(O)144",
+                            "ItemId": "(O)144",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Id": "(O)145",
+                            "ItemId": "(O)145",
+                            "Condition": "LOCATION_Season Here spring summer"
+                        },
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)699",
+                            "ItemId": "(O)699",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)704",
+                            "ItemId": "(O)704"
+                        },
+                        {
+                            "Id": "(O)706",
+                            "ItemId": "(O)706",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)707",
+                            "ItemId": "(O)707"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.6,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                },*/
+                "EastScarp_MineEntrance": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MineEntrance}}",
+                    "DefaultArrivalTile": {
+                        "X": 1,
+                        "Y": 22
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_MineEntrance"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMineEntrance"
+                    ],
+                    "ArtifactSpots": [
+                        {
+                            "Chance": 0.06,
+                            "Id": "(O)382",
+                            "ItemId": "(O)382",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)581",
+                            "ItemId": "(O)581",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "(O)378",
+                            "ItemId": "(O)378",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.15,
+                            "Id": "(O)102",
+                            "ItemId": "(O)102",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        },
+                        {
+                            "Chance": 0.25,
+                            "Id": "(O)390",
+                            "ItemId": "(O)390",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1
+                        }
+                    ],
+                    "FishAreas": {
+                        "OrchardFresh": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 3,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 50
+                            },
+                            "CrabPotFishTypes": [
+                                "freshwater"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        },
+                        "OrchardOcean": {
+                            "DisplayName": null,
+                            "Position": null,
+                            "CrabPotFishTypes": [
+                                "ocean"
+                            ],
+                            "CrabPotJunkChance": 0.2
+                        }
+                    }, //insert here
+                    "Fish": [
+                        {
+                            "Id": "EastScarp_Obsidian_Maw",
+                            "ItemId": "(O)EastScarp_Obsidian_Maw"
+                        },
+                        {
+                            "Id": "EastScarp_Slime_Barbel",
+                            "ItemId": "(O)EastScarp_Slime_Barbel"
+                        },
+                        {
+                            "Id": "(O)136",
+                            "ItemId": "(O)136"
+                        },
+                        {
+                            "Season": "summer",
+                            "Id": "(O)138",
+                            "ItemId": "(O)138"
+                        },
+                        {
+                            "Id": "(O)140",
+                            "ItemId": "(O)140",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)141",
+                            "ItemId": "(O)141"
+                        },
+                        {
+                            "Id": "(O)142",
+                            "ItemId": "(O)142",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Id": "(O)153",
+                            "ItemId": "(O)153",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)269",
+                            "ItemId": "(O)269",
+                            "Condition": "LOCATION_Season Here fall winter"
+                        },
+                        {
+                            "Id": "(O)698",
+                            "ItemId": "(O)698",
+                            "Condition": "LOCATION_Season Here summer winter"
+                        },
+                        {
+                            "Id": "(O)702",
+                            "ItemId": "(O)702",
+                            "Condition": "LOCATION_Season Here spring summer fall winter"
+                        },
+                        {
+                            "Id": "(O)700",
+                            "ItemId": "(O)700",
+                            "Condition": "LOCATION_Season Here spring summer fall"
+                        },
+                        {
+                            "Season": "winter",
+                            "Id": "(O)707",
+                            "ItemId": "(O)707"
+                        },
+                    ],
+                    "Forage": [
+                        {
+                            "Chance": 0.7,
+                            "Season": "Spring",
+                            "Condition": null,
+                            "Id": "(O)18",
+                            "ItemId": "(O)18",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Summer",
+                            "Condition": null,
+                            "Id": "(O)402",
+                            "ItemId": "(O)402",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.6,
+                            "Season": "Fall",
+                            "Condition": null,
+                            "Id": "(O)410",
+                            "ItemId": "(O)410",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)414",
+                            "ItemId": "(O)414",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)418",
+                            "ItemId": "(O)418",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        },
+                        {
+                            "Chance": 0.5,
+                            "Season": "Winter",
+                            "Condition": null,
+                            "Id": "(O)283",
+                            "ItemId": "(O)283",
+                            "RandomItemId": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                //Indoor Locations
+                "EastScarp_House1": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Aideen}}",
+                    "DefaultArrivalTile": {
+                        "X": 10,
+                        "Y": 23
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_House1"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESHouse1"
+                    ],
+                    "CustomFields": {}
+                },
+                /*"EastScarp_MeadowShed": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.MeadowShed}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 18
+                    },
+                    "CreateOnLoad": {
+                        "Type": "StardewValley.Locations.DecoratableLocation",
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\EastScarp_MeadowShed"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESMeadowShed"
+                    ],
+                    "CanPlantHere": true,
+                    "CustomFields": {}
+                },*/
+                "EastScarp_BirdHide": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.BirdHide}}",
+                    "DefaultArrivalTile": {
+                        "X": 3,
+                        "Y": 5
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_BirdHide"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESBirdHide"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_VetHouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Vet}}",
+                    "DefaultArrivalTile": {
+                        "X": 12,
+                        "Y": 26
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_VetHouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESVetHouse"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_JacobOffice": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.JOffice}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 5
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_JacobOffice"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESJacobOffice"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_JacobBarn": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.JBarn}}",
+                    "DefaultArrivalTile": {
+                        "X": 11,
+                        "Y": 13
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_JacobBarn"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESJacobBarn"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_LanternRoom": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Lighthouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 1,
+                        "Y": 7
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_LanternRoom"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_LanternRoom"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Silo": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Silo}}",
+                    "DefaultArrivalTile": {
+                        "X": 4,
+                        "Y": 20
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_Silo"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESSilo"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_LumaHut": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.LumaHut}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 8
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_LumaHut"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESLumaHut"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_OrchardHouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.OrchardHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 24
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_OrchardHouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESOrchardHouse"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Shack": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Smuggler}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 9
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_Shack"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESShack"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_VillageInn": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Inn}}",
+                    "DefaultArrivalTile": {
+                        "X": 44,
+                        "Y": 35
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_VillageInn"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_EastScarpeInn"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_InnBath": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Inn}}",
+                    "DefaultArrivalTile": {
+                        "X": 18,
+                        "Y": 5
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_InnBath"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESInnBath"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_UnderwaterLexi": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.underwater}}",
+                    "DefaultArrivalTile": {
+                        "X": 14,
+                        "Y": 67
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_UnderwaterLexi"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_UnderwaterLexi"
+                    ],
+                    //Add some ocean fish code here at some point for Visible Fish compat
+                    "CustomFields": {}
+                },
+                "EastScarp_EyvinderCave": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.EyvCave}}",
+                    "DefaultArrivalTile": {
+                        "X": 8,
+                        "Y": 10
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_EyvinderCave"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESEyvinderCave"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_InnRoomRosa": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.RosaRoom}}",
+                    "DefaultArrivalTile": {
+                        "X": 8,
+                        "Y": 10
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_InnRoomRosa"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ES_InnRoomRosa"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_ToriSlimeBasement": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.SlimeBasement}}",
+                    "DefaultArrivalTile": {
+                        "X": 15,
+                        "Y": 4
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_ToriSlimeBasement"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESToriSlimeBasement"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_RosJulesHouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.JulietRosaHouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 6,
+                        "Y": 24
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_RosJulesHouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESRosJulesHouse"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_ArkOrchard": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Orchard}}",
+                    "DefaultArrivalTile": {
+                        "X": 2,
+                        "Y": 17
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_ArkOrchard"
+                    },
+                    "CustomFields": {}
+                },
+                "EastScarp_NTHouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Tori}}",
+                    "DefaultArrivalTile": {
+                        "X": 14,
+                        "Y": 67
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_NTHouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESNTHouse"
+                    ],
+                    "CustomFields": {}
+                },
+                "Custom_HenryWarp": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.HenryWarp}}",
+                    "DefaultArrivalTile": {
+                        "X": 14,
+                        "Y": 67
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\Custom_HenryWarp"
+                    },
+                    "CustomFields": {}
+                },
+                "EastScarp_Lighthouse": {
+                    "DisplayName": "{{i18n:EastScarp.Locations.Lighthouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 5,
+                        "Y": 14
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps\\EastScarp_Lighthouse"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_ESLighthouse"
+                    ],
+                    "CustomFields": {}
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/LocationContexts",
+            "Entries": {
+                //LOCATION CONTEXT
+                "Lemurkat_EastScarp": {
+                    "PlayRandomAmbientSounds": true,
+                    "CopyWeatherFromLocation": "Default",
+                    /*"PlantableLocations": [
+                        "EastScarp_MeadowFarm"
+                    ],*/
+                    "ReviveLocations": [
+                        {
+                            "Condition": null,
+                            //"PLAYER_LOCATION_CONTEXT Target Lemurkat_EastScarp, PLAYER_CURRENT_MONEY Current 1000"
+                            "Location": "EastScarp_VetHouse",
+                            "Position": {
+                                "X": 3,
+                                "Y": 12
+                            }
+                        }
+                    ],
+                    "PassOutMail": [
+                        {
+                            "ID": "Sleeping In the Scarp",
+                            "Condition": "PLAYER_LOCATION_CONTEXT Target Lemurkat_EastScarp",
+                            "Mail": "passedOutScarp",
+                            "MaxPassOutCost": -1,
+                            "SkipRandomSelection": false
+                        },
+                        {
+                            "ID": "Asleep with Eyvind",
+                            "Condition": "PLAYER_LOCATION_NAME Target EastScarp_EyvinderCave",
+                            "Mail": "passedOutEyvind",
+                            "MaxPassOutCost": 0,
+                            "SkipRandomSelection": false
+                        },
+                    ],
+                    "PassOutLocations": [
+                        {
+                            "Condition": "PLAYER_LOCATION_CONTEXT Target Lemurkat_EastScarp",
+                            "Location": "EastScarp_VillageInn",
+                            "Position": {
+                                "X": 7,
+                                "Y": 25
+                            }
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VetHouse",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 4 12 2 Jacob 5 12 3 Eloise 5 18 0/pause 1500/showFrame 5/message \" ...{{playerName}}?\"/pause 1000/message \"It's okay... you're safe now.\"/viewport 4 12 true/pause 1000/speak Jacob \"Rosa found you unconscious and bleeding... she brought you to me for some emergency First Aid!\"/doAction 5 17/speed Eloise 4/move Eloise 0 -5 0/pause 500/faceDirection Eloise 3/pause 1000/faceDirection Eloise 0/speak Eloise \"Dad! Is Farmer @ gonna be okay?$2\"/faceDirection Jacob 2/emote Jacob 32/pause 1000/speak Jacob \"They were very lucky this time.\"/faceDirection Jacob 3/speak Jacob \"@... in future, please, be more careful.$2\"/pause 1000/money {{random:-100, -200, -500, -750, -1000}}/playSound purchase/message \"You made a donation to Jacob as a 'thank you' for saving your life.\"/emote farmer 28/end"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Orchard",
+            "LogName": "Add tree to forest.",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 17,
+                        "Y": 19,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 19,
+                        "Y": 11,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 22,
+                        "Y": 8,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 21,
+                        "Y": 14,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 21,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 24,
+                        "Y": 12,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 26,
+                        "Y": 10,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 30,
+                        "Y": 20,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 28,
+                        "Y": 23,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 29,
+                        "Y": 27,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 41,
+                        "Y": 7,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 21,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 21,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 40,
+                        "Y": 20,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 46,
+                        "Y": 17,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 37,
+                        "Y": 20,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 40,
+                        "Y": 14,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "LumaJunimo: {{i18n:EastScarpe.FruitTreeCut.Luma}}"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Orchard",
+            "LogName": "Add tree to forest.",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 28
+                    },
+                    "Layer": "Paths",
+                    "SetIndex": 34,
+                    "SetTilesheet": "Paths",
+                    "SetProperties": {
+                        "SpawnTree": "fruit Lemurkat_Wild_Plum_Tree 4 4",
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 28,
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "EastScarpe.FruitTreeCut": "{{i18n:EastScarpe.FruitTreeCut}}"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_NTHouse",
+            "LogName": "Add door",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Doors"
+                    ],
+                    "Value": "21 14 1 120",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "Front 22 3 2371 Front 23 3 2372 Front 22 4 2396 Front 23 4 2397",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "Front 22 3 2373 Front 23 3 2374 Front 22 4 2398 Front 23 4 2399",
+                    "Delimiter": " "
+                },
+            ],
+            "When": {
+                "HasMod": "Bagi.Nora.CP"
+            }
+        },
+        {
+            "LogName": "Adds More New Summer Fish",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "When": {
+                "HasMod": "MoreFish"
+            },
+            "TargetField": [
+                "EastScarp_Village",
+                "Fish",
+            ],
+            "Entries": {
+                "MNF.MoreNewFish_ornate_angelfish": {
+                    "Id": "MNF.MoreNewFish_ornate_angelfish",
+                    "ItemId": "(O)MNF.MoreNewFish_ornate_angelfish",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+                "MNF.MoreNewFish_blue_tang": {
+                    "Id": "MNF.MoreNewFish_blue_tang",
+                    "ItemId": "(O)MNF.MoreNewFish_blue_tang",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+                "MNF.MoreNewFish_dwarf_stingray": {
+                    "Id": "MNF.MoreNewFish_dwarf_stingray",
+                    "ItemId": "(O)MNF.MoreNewFish_dwarf_stingray",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+         
+                "MNF.MoreNewFish_threespot_angelfish": {
+                    "Id": "MNF.MoreNewFish_threespot_angelfish",
+                    "ItemId": "(O)MNF.MoreNewFish_threespot_angelfish",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+                "MNF.MoreNewFish_orange_clownfish": {
+                    "Id": "MNF.MoreNewFish_orange_clownfish",
+                    "ItemId": "(O)MNF.MoreNewFish_orange_clownfish",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+                "MNF.MoreNewFish_yellowtail_clownfish": {
+                    "Id": "MNF.MoreNewFish_yellowtail_clownfish",
+                    "ItemId": "(O)MNF.MoreNewFish_yellowtail_clownfish",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+                "MNF.MoreNewFish_squirrelfish": {
+                    "Id": "MNF.MoreNewFish_squirrelfish",
+                    "ItemId": "(O)MNF.MoreNewFish_squirrelfish",
+                    "FishAreaId": "ESBay",
+                    "Season": "Summer",
+                    "Condition": "DAY_OF_MONTH 12 13 14",
+                },
+            },
+        },
+    ]
+}

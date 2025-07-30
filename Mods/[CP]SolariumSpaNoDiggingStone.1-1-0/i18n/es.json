@@ -1,0 +1,19 @@
+{
+	"BookShelf": "Estantería llena de viejos libros de jardinería.",
+ 
+//Unlock Event
+	"SolariumUnlock.1": "Hola, @.",
+	"SolariumUnlock.2": "Hace mucho que no pasaba por aquí... desde antes de que llegaras.#$b#La granja se ve estupenda.$2",
+	"SolariumUnlock.3": "Ayer estaba tomando el té con Evelyn y me dijo que mi invernadero le recordaba al viejo solario que cuidaba.#$b#Supuestamente esta en la segunda planta del spa, junto a las vías del tren.$1#$b#Allí solía ocuparse de un pequeño jardín del que sacaba las semillas para los parterres del pueblo.#$b#No ha podido seguir porque sus rodillas no le dejan hacer la caminata.$2",
+	"SolariumUnlock.4": "Evelyn me dijo que encontró la llave hace poco, mientras hacía limpieza a fondo.#$b#Ha estado molestándola desde entonces, atrayendo el polvo ahí quieta.$2",
+	"SolariumUnlock.5": "Así que le sugerí dártela a ti.",
+	"SolariumUnlock.6": "¡Conseguiste la llave del solario!",
+	"SolariumUnlock.7": "A Evelyn le ha alegrado tanto la forma en la que has ayudado a todo el pueblo que quería darte algo para agradecértelo.#$b#Ella te tiene alta estima y esta encantada de poder ofrecerle algo a la siguiente generación.",
+	"SolariumUnlock.8": "La escalera se rompió hace tiempo, pero ya le he pedido a Robin que te la arregle.#$b#Me dijo que la tendrá lista para mañana.",
+	"SolariumUnlock.9": "A partir de mañana podrás entrar al solario.",
+	"SolariumUnlock.10": "Espero que te de tantas alegrías como a Evelyn.$1",
+ 
+//Linus's new shelter
+	"LinusNewShelter.1": "Hola, @.#$b#Me encontré antes con Robin y me dijo que habían arreglado este sitio.",
+	"LinusNewShelter.2": "Es un buen sitio para alejarse del frío, ¿no?$h", 
+}

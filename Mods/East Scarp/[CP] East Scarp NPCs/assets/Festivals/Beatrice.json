@@ -1,0 +1,78 @@
+{
+    "Changes": [
+        // E G G   F E S T I V A L
+        /* {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "IsEvenYear": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 39 69 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 39 69 3",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "IsEvenYear": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 36 72 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 36 72 3",
+                    "Delimiter": "/"
+                },
+            ]
+        },*/
+  
+        // I C E   F E S T I V A L
+       
+        // W I N T E R   S T A R
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 35 74 0",
+                    "Delimiter": "/"
+                }
+            ]
+        }
+    ]
+}

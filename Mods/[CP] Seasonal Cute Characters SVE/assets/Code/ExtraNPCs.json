@@ -1,0 +1,1086 @@
+{
+	"Changes": [
+		
+		// Adventurers
+        {
+            "LogName": "Adventurer Edits (Non-Seasonal)",
+            "Action": "EditImage",
+            "Target": "Characters/Aaron, Characters/Brianna, Characters/Brock, Characters/Cassandra, Characters/Cordelia, Characters/Drake, Characters/Edmund, Characters/Ekon, Characters/Emin, Characters/Freya, Characters/Gertrude, Characters/Ricken, Characters/Sawyer, Characters/Vance",
+            "FromFile": "assets/Characters/Adventurers/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "LogName": "Adventurer Nose Edits (Non-Seasonal)",
+            "Action": "EditImage",
+            "Target": "Characters/Aaron, Characters/Brianna, Characters/Brock, Characters/Cassandra, Characters/Cordelia, Characters/Drake, Characters/Edmund, Characters/Ekon, Characters/Emin, Characters/Freya, Characters/Gertrude, Characters/Ricken, Characters/Sawyer, Characters/Vance",
+            "FromFile": "assets/Characters/Adventurers/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+		
+		//Warehouse Completion Ceremony Characters
+		{
+            "LogName": "Joja Warehouse Scene Background Characters",
+            "Action": "EditImage",
+            "Target": "Characters/Axel, Characters/Jace, Characters/Chloe, Characters/Zoey, Characters/Brooklyn",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+		
+		//Temp actors
+        
+		{
+            "LogName": "Temporary Actor Edits",
+            "Action": "EditImage",
+            "Target": "Characters/AdventurerCosplayer, Characters/ArtGuy, Characters/ArtifactCosplayer, Characters/BaldGuy, Characters/BaldGuySittingDown, Characters/BlackhairGuy, Characters/BlueBirdCosplayer, Characters/BlueDressGirl, Characters/BlueMushroomGirlCosplayer, Characters/BrideCosplayer, Characters/CaveGirlCosplayer, Characters/ChefGuyCosplayer, Characters/ConcernedApeCosplayer, Characters/DinoGuyCosplayer, Characters/EmperorCosplayer, Characters/FairyCosplayer, Characters/FairyCosplayer2, Characters/FrogGuyCosplayer, Characters/GaldoranGirlCosplayer, Characters/GenericNPC1, Characters/GenericNPC2, Characters/GenericNPC3, Characters/GenericNPC4, Characters/GenericNPC5, Characters/GenericNPC6, Characters/GenericNPC7, Characters/GenericNPC8, Characters/GirlSittingDown, Characters/GirlSittingDown2, Characters/GoblinCosplayer, Characters/GreenBirdCosplayer, Characters/GreenDressGirl, Characters/GreenGoblinCosplayer, Characters/GreenMushroomGirlCosplayer, Characters/GreenShirtGirl, Characters/GreenShirtGuy, Characters/HamishCameo, Characters/HappyShirtCosplayer, Characters/IcePrincessCosplayer, Characters/JackThePumpkinCosplayer, Characters/JojaGirlCosplayer, Characters/JojaGuyCosplayer, Characters/JojaPetStoreEmployee, Characters/JumperCosplayer, Characters/LittleGirl, Characters/LongNoseGuy, Characters/LuauGirlCosplayer, Characters/LuauGuyCosplayer, Characters/MainStageCosplayer, Characters/NewspaperGuy, Characters/NurseCosplayer, Characters/Nyx, Characters/Pirate2Cosplayer, Characters/PirateCosplayer, Characters/PrinceCosplayer, Characters/PurpleWitchCosplayer, Characters/QiBeanCosplayer, Characters/RedBeanieGuy, Characters/RedHatGuySittingDown, Characters/RedMushroomGirlCosplayer, Characters/RedShirtGuy, Characters/RedWitchCosplayer, Characters/SamJoja, Characters/ShaneJoja, Characters/SunglassesGuy, Characters/ThiefCosplayer, Characters/TopHatCosplayer, Characters/TotemGuyCosplayer, Characters/TrashGirlCosplayer, Characters/TurbanGuyCosplayer, Characters/VikingCosplayer, Characters/WizardCosplayer, Characters/ZoomieDoggoOwner",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+		
+        //Seasonal Temp Actors
+        {
+            "LogName": "Seasonal Temp Actors",
+            "Action": "EditImage",
+            "Target": "Characters/GilSprite, Characters/ZuzuCityBus, Characters/ZuzuCityBus2",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}_{{Season}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+		
+        // Temp Actor Nose Overlays
+        {
+            "LogName": "Temp Actor Noses",
+            "Action": "EditImage",
+            "Target": "Characters/AdventurerCosplayer, Characters/BaldGuy, Characters/BlueDressGirl, Characters/BlueMushroomGirlCosplayer, Characters/BrideCosplayer, Characters/ChefGuyCosplayer, Characters/FairyCosplayer, Characters/FairyCosplayer2, Characters/FrogGuyCosplayer, Characters/GenericNPC1, Characters/GenericNPC2, Characters/GenericNPC3, Characters/GenericNPC4, Characters/GenericNPC5, Characters/GenericNPC8, Characters/GilSprite, Characters/GreenDressGirl, Characters/GreenMushroomGirlCosplayer, Characters/HamishCameo, Characters/JojaGirlCosplayer, Characters/JojaGuyCosplayer, Characters/JojaPetStoreEmployee, Characters/JumperCosplayer, Characters/LuauGuyCosplayer, Characters/MainStageCosplayer, Characters/NurseCosplayer, Characters/Pirate2Cosplayer, Characters/PrinceCosplayer, Characters/PurpleWitchCosplayer, Characters/RedMushroomGirlCosplayer, Characters/RedWitchCosplayer, Characters/ShaneJoja, Characters/ThiefCosplayer, Characters/TopHatCosplayer, Characters/TrashGirlCosplayer, Characters/TurbanGuyCosplayer, Characters/VikingCosplayer, Characters/WizardCosplayer, Characters/ZoomieDoggoOwner",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+		
+		//Shrine of Illusions Farmers
+		
+		{
+            "LogName": "Farmer Illusions",
+            "Action": "EditImage",
+            "Target": "Characters/FemaleFarmer, Characters/MaleFarmer",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+		
+		{
+            "LogName": "Shrine of Illusions Farmer Noses",
+            "Action": "EditImage",
+            "Target": "Characters/FemaleFarmer, Characters/MaleFarmer",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+		
+		// Monsters
+        {
+            "LogName": "FallenAdventurer",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/FallenAdventurerFemale, Characters/Monsters/FallenAdventurerMale",
+            "FromFile": "assets/Characters/Monsters/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "LogName": "FallenAdventurer",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/FallenAdventurerFemale, Characters/Monsters/FallenAdventurerMale",
+            "FromFile": "assets/Characters/Monsters/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+		
+		// TILE SHEETS
+		
+        // festival maps
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 336,
+                "Y": 208,
+                "Width": 96,
+                "Height": 47
+            },
+            "ToArea": {
+                "X": 336,
+                "Y": 208,
+                "Width": 96,
+                "Height": 47
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 480,
+                "Y": 208,
+                "Width": 32,
+                "Height": 35
+            },
+            "ToArea": {
+                "X": 480,
+                "Y": 208,
+                "Width": 32,
+                "Height": 35
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 448,
+                "Y": 117,
+                "Width": 16,
+                "Height": 59
+            },
+            "ToArea": {
+                "X": 448,
+                "Y": 117,
+                "Width": 16,
+                "Height": 59
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 289,
+                "Y": 129,
+                "Width": 79,
+                "Height": 31
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 274,
+                "Y": 129,
+                "Width": 13,
+                "Height": 15
+            },
+            "ToArea": {
+                "X": 274,
+                "Y": 129,
+                "Width": 13,
+                "Height": 15
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": {
+                "X": 496,
+                "Y": 0,
+                "Width": 16,
+                "Height": 50
+            },
+            "ToArea": {
+                "X": 496,
+                "Y": 0,
+                "Width": 16,
+                "Height": 50
+            }
+        },
+		
+        //ZuzuCity
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZuzuCity",
+            "FromFile": "assets/{{NoNose}}/Maps/ZuzuCity.png"
+        },
+		
+        //Stadium
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Stadium",
+            "FromFile": "assets/{{NoNose}}/Maps/Stadium.png"
+        },
+		
+        //Movie Theater (community center)
+        {
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheater_{{Season}}.png"
+        },
+		
+        //Movie Theater (joja)
+        {
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheaterJoja_{{Season}}.png"
+        },
+		
+        //First Slash Guild
+        {
+            "Action": "EditImage",
+            "Target": "Maps/FirstSlashGuildBuilding",
+            "FromFile": "assets/{{NoNose}}/Maps/FirstSlashGuildBuilding.png"
+        },
+		
+        //Grampleton Suburbs
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_GrampletonSuburbsTilesheet",
+            "ToArea": {
+                "X": 192,
+                "Y": 288,
+                "Width": 80,
+                "Height": 32
+            },
+            "FromFile": "assets/{{NoNose}}/Maps/spring_GrampletonSuburbsTilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/summer_GrampletonSuburbsTilesheet",
+            "ToArea": {
+                "X": 192,
+                "Y": 288,
+                "Width": 80,
+                "Height": 32
+            },
+            "FromFile": "assets/{{NoNose}}/Maps/summer_GrampletonSuburbsTilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_GrampletonSuburbsTilesheet",
+            "ToArea": {
+                "X": 192,
+                "Y": 288,
+                "Width": 80,
+                "Height": 32
+            },
+            "FromFile": "assets/{{NoNose}}/Maps/fall_GrampletonSuburbsTilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_GrampletonSuburbsTilesheet",
+            "ToArea": {
+                "X": 192,
+                "Y": 288,
+                "Width": 80,
+                "Height": 32
+            },
+            "FromFile": "assets/{{NoNose}}/Maps/winter_GrampletonSuburbsTilesheet.png"
+        },
+		
+        //Sakura Vineyard
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/GrampletonTrainStationTilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/SakuraVineyardDiningRoomTilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/SakuraVineyardDiningRoomTilesheet.png"
+        },
+        //Zuzu City Comic Con
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_VendorFloor_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_VendorFloor_Tilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_FoodCourt_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_FoodCourt_Tilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Entrance_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_Entrance_Tilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Entrance_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_Entrance_Tilesheet.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZuzuCityStreet_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZuzuCityStreet_Tilesheet.png"
+        },
+        //Season Extras Spring
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": {
+                "X": 128,
+                "Y": 608,
+                "Width": 64,
+                "Height": 256
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 832,
+                "Width": 128,
+                "Height": 128
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": {
+                "X": 105,
+                "Y": 804,
+                "Width": 13,
+                "Height": 26
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": {
+                "X": 112,
+                "Y": 706,
+                "Width": 16,
+                "Height": 94
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": {
+                "X": 160,
+                "Y": 2386,
+                "Width": 16,
+                "Height": 98
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": {
+                "X": 96,
+                "Y": 2386,
+                "Width": 64,
+                "Height": 160
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": {
+                "X": 192,
+                "Y": 2384,
+                "Width": 64,
+                "Height": 112
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": {
+                "X": 256,
+                "Y": 2386,
+                "Width": 31,
+                "Height": 62
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": {
+                "X": 336,
+                "Y": 1376,
+                "Width": 64,
+                "Height": 126
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Spring_Seasonal_l.png",
+            "When": {
+                "Season |contains=Spring": true
+            },
+            "ToArea": {
+                "X": 129,
+                "Y": 913,
+                "Width": 63,
+                "Height": 47
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 3632,
+                "Width": 304,
+                "Height": 176
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": {
+                "X": 304,
+                "Y": 3680,
+                "Width": 96,
+                "Height": 128
+            }
+        },
+        //Season Extras Summer
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": {
+                "X": 128,
+                "Y": 608,
+                "Width": 64,
+                "Height": 256
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 832,
+                "Width": 128,
+                "Height": 128
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": {
+                "X": 105,
+                "Y": 804,
+                "Width": 13,
+                "Height": 26
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": {
+                "X": 112,
+                "Y": 706,
+                "Width": 16,
+                "Height": 94
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": {
+                "X": 160,
+                "Y": 2386,
+                "Width": 16,
+                "Height": 98
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": {
+                "X": 96,
+                "Y": 2386,
+                "Width": 64,
+                "Height": 160
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": {
+                "X": 192,
+                "Y": 2384,
+                "Width": 64,
+                "Height": 112
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": {
+                "X": 256,
+                "Y": 2386,
+                "Width": 31,
+                "Height": 62
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": {
+                "X": 336,
+                "Y": 1376,
+                "Width": 64,
+                "Height": 126
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Summer_Seasonal_l.png",
+            "When": {
+                "Season |contains=Summer": true
+            },
+            "ToArea": {
+                "X": 129,
+                "Y": 913,
+                "Width": 63,
+                "Height": 47
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 3632,
+                "Width": 304,
+                "Height": 176
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": {
+                "X": 304,
+                "Y": 3680,
+                "Width": 96,
+                "Height": 128
+            }
+        },
+        //Season Extras Fall
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": {
+                "X": 128,
+                "Y": 608,
+                "Width": 64,
+                "Height": 256
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 832,
+                "Width": 128,
+                "Height": 128
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": {
+                "X": 105,
+                "Y": 804,
+                "Width": 13,
+                "Height": 26
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": {
+                "X": 112,
+                "Y": 706,
+                "Width": 16,
+                "Height": 94
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": {
+                "X": 160,
+                "Y": 2386,
+                "Width": 16,
+                "Height": 98
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": {
+                "X": 96,
+                "Y": 2386,
+                "Width": 64,
+                "Height": 160
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": {
+                "X": 192,
+                "Y": 2384,
+                "Width": 64,
+                "Height": 112
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": {
+                "X": 256,
+                "Y": 2386,
+                "Width": 31,
+                "Height": 62
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": {
+                "X": 336,
+                "Y": 1376,
+                "Width": 64,
+                "Height": 126
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Fall_Seasonal_l.png",
+            "When": {
+                "Season |contains=Fall": true
+            },
+            "ToArea": {
+                "X": 129,
+                "Y": 913,
+                "Width": 63,
+                "Height": 47
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 3632,
+                "Width": 304,
+                "Height": 176
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": {
+                "X": 304,
+                "Y": 3680,
+                "Width": 96,
+                "Height": 128
+            }
+        },
+		
+        //Season Extras Winter
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": {
+                "X": 128,
+                "Y": 608,
+                "Width": 64,
+                "Height": 256
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 832,
+                "Width": 128,
+                "Height": 128
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": {
+                "X": 105,
+                "Y": 804,
+                "Width": 13,
+                "Height": 26
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": {
+                "X": 112,
+                "Y": 706,
+                "Width": 16,
+                "Height": 94
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": {
+                "X": 160,
+                "Y": 2386,
+                "Width": 16,
+                "Height": 98
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": {
+                "X": 96,
+                "Y": 2386,
+                "Width": 64,
+                "Height": 160
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": {
+                "X": 192,
+                "Y": 2384,
+                "Width": 64,
+                "Height": 112
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": {
+                "X": 256,
+                "Y": 2386,
+                "Width": 31,
+                "Height": 62
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": {
+                "X": 336,
+                "Y": 1376,
+                "Width": 64,
+                "Height": 126
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Winter_Seasonal_l.png",
+            "When": {
+                "Season |contains=Winter": true
+            },
+            "ToArea": {
+                "X": 129,
+                "Y": 913,
+                "Width": 63,
+                "Height": 47
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 3632,
+                "Width": 304,
+                "Height": 176
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": {
+                "X": 304,
+                "Y": 3680,
+                "Width": 96,
+                "Height": 128
+            }
+        },
+        //Cursors
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 1387,
+                "Width": 114,
+                "Height": 34
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 1387,
+                "Width": 114,
+                "Height": 34
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 105,
+                "Y": 1318,
+                "Width": 13,
+                "Height": 31
+            },
+            "ToArea": {
+                "X": 105,
+                "Y": 1318,
+                "Width": 13,
+                "Height": 31
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 390,
+                "Y": 1405,
+                "Width": 36,
+                "Height": 32
+            },
+            "ToArea": {
+                "X": 390,
+                "Y": 1405,
+                "Width": 36,
+                "Height": 32
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 558,
+                "Y": 1425,
+                "Width": 60,
+                "Height": 26
+            },
+            "ToArea": {
+                "X": 558,
+                "Y": 1425,
+                "Width": 60,
+                "Height": 26
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 533,
+                "Y": 1864,
+                "Width": 19,
+                "Height": 27
+            },
+            "ToArea": {
+                "X": 533,
+                "Y": 1864,
+                "Width": 19,
+                "Height": 27
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 405,
+                "Y": 1854,
+                "Width": 47,
+                "Height": 33
+            },
+            "ToArea": {
+                "X": 405,
+                "Y": 1854,
+                "Width": 47,
+                "Height": 33
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 413,
+                "Y": 305,
+                "Width": 253,
+                "Height": 28
+            },
+            "ToArea": {
+                "X": 413,
+                "Y": 305,
+                "Width": 253,
+                "Height": 28
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": {
+                "X": 387,
+                "Y": 1311,
+                "Width": 11,
+                "Height": 15
+            },
+            "ToArea": {
+                "X": 387,
+                "Y": 1311,
+                "Width": 11,
+                "Height": 15
+            }
+        },
+        // Vineyards
+        {
+            "Action": "EditImage",
+            "Target": "maps/AuroraVineyardPicture",
+            "FromFile": "assets/{{NoNose}}/Maps/AuroraVineyardPicture.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/StardustFarmPicture",
+            "FromFile": "assets/{{NoNose}}/Maps/StardustFarmPicture.png"
+        },
+		
+        //add SVE character special order emojis
+        {
+            "LogName": "Icons Special Orders 4",
+            "Action": "EditImage",
+            "Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Maps/SpecialOrderEmojis.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 126,
+                "Width": 126,
+                "Height": 9
+            }
+        },
+	]
+}

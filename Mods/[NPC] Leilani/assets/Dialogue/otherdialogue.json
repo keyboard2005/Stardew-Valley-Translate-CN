@@ -1,0 +1,113 @@
+{
+  "Changes": [
+    {
+      "LogName": "Leilani Luau Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Leilani": "{{i18n:luau.Leilani}}"
+      }
+    },
+    {
+      "LogName": "Leilani Jellies Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "Leilani": "{{i18n:jellies.Leilani}}"
+      }
+    },
+    {
+      "LogName": "Ginger Island Unlocked Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leilani",
+      "When": {
+        "HasSeenEvent": "1039573"
+      },
+      "Entries": {
+        "Sun": "{{i18n:gingerisland.Sun}}"
+      }
+    },
+    {
+      "LogName": "Leilani's Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Leilani": "{{i18n:rain.Leilani}}"
+      }
+    },
+    {
+      "LogName": "Pika's Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Pika",
+      "Entries": {
+        "spring_28_1": "{{i18n:PikaDialogue.spring_28_1}}",
+        "spring_28_2": "{{i18n:PikaDialogue.spring_28_2}}",
+        "summer_22_1": "{{i18n:PikaDialogue.summer_22_1}}",
+        "summer_22_2": "{{i18n:PikaDialogue.summer_22_2}}",
+        "Tue4": "{{i18n:PikaDialogue.Tue4}}",
+        "Thu6": "{{i18n:PikaDialogue.Thu6}}",
+        "Mon10": "{{i18n:PikaDialogue.Mon10}}",
+        "Tue10": "{{i18n:PikaDialogue.Tue10}}"
+      }
+    },
+    {
+      "LogName": "Pika's Luau Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Pika": "{{i18n:luau.Pika}}"
+      }
+    },
+    {
+      "LogName": "Keahi's Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Keahi",
+      "Entries": {
+        "spring_28_1": "{{i18n:KeahiDialogue.spring_28_1}}",
+        "spring_28_2": "{{i18n:KeahiDialogue.spring_28_2}}",
+        "LeilaniArrives": "{{i18n:KeahiDialogue.LeilaniArrives}}",
+        "summer_Tue8": "{{i18n:KeahiDialogue.summer_Tue8}}",
+        "Tue8": "{{i18n:KeahiDialogue.Tue8}}",
+        "Town_97_92": "{{i18n:KeahiDialogue.Town_97_92}}"
+      }
+    },
+    {
+      "LogName": "Corine's Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Corine",
+      "Entries": {
+        "LeilaniArrives": "{{i18n:CorineDialogue.LeilaniArrives}}",
+        "summer_23_1": "{{i18n:CorineDialogue.summer_23_1}}",
+        "summer_23_2": "{{i18n:CorineDialogue.summer_23_2}}"
+      }
+    },
+    {
+      "LogName": "Willy's Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        "spring_28_1": "{{i18n:WillyDialogue.spring_28_1}}",
+        "spring_28_2": "{{i18n:WillyDialogue.spring_28_2}}"
+      }
+    },
+    {
+      "LogName": "Olga's Dialouge",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Olga",
+      "Entries": {
+        "LeilaniArrives": "{{i18n:OlgaDialogue.LeilaniArrives}}"
+      }
+    },
+    {
+      "LogName": "Jasper's Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jasper",
+      "When": {
+        "HasMod |contains=Lemurkat.NPCJasper": true
+      },
+      "Entries": {
+        "LeilaniArrives": "{{i18n:JasperDialogue.LeilaniArrives}}"
+      }
+    }
+  ]
+}

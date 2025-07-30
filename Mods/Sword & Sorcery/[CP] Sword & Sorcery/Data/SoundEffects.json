@@ -1,0 +1,25 @@
+{
+    "Changes": [
+
+        // AUDIO DATA
+        {
+            "LogName": "Gunshot SFX",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "sns_gunshot": {
+                    "ID": "sns_gunshot",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/SoundEffects/sns_gunshot.ogg}}" ],
+                    "UseReverb": true
+                },
+                "sns_babyemeritus": {
+                    "ID": "sns_babyemeritus",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/SoundEffects/sns_babyemeritus.ogg}}" ],
+                    "UseReverb": false
+                }
+            }
+        },
+     ]
+}

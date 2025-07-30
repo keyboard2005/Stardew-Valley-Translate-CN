@@ -1,0 +1,123 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load George's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/George_Spring, Portraits/George_Summer, Portraits/George_Fall, Portraits/George_Winter_Outdoor, Portraits/George_Winter_Indoor, Portraits/George_FlowerDance, Portraits/George_SpiritsEve, Characters/George_Spring, Characters/George_Summer, Characters/George_Fall, Characters/George_Winter_Outdoor, Characters/George_Winter_Indoor, Characters/George_FlowerDance, Characters/George_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/George/{{TargetWithoutPath}}.png"
+		},
+		
+		/*
+		
+		// NOSE OVERLAY (Nose Missing)
+		{
+			"LogName": "George - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/George_Spring, Characters/George_Summer, Characters/George_Fall, Characters/George_Winter_Outdoor, Characters/George_Winter_Indoor, Characters/George_FlowerDance, Characters/George_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/George/George_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		*/
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "George Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["George", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.GeorgeSpring": {
+					"Id": "{{ModId}}.GeorgeSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/George_Spring",
+					"Portrait": "Portraits/George_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.GeorgeSummer": {
+					"Id": "{{ModId}}.GeorgeSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/George_Summer",
+					"Portrait": "Portraits/George_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GeorgeFall": {
+					"Id": "{{ModId}}.GeorgeFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/George_Fall",
+					"Portrait": "Portraits/George_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GeorgeWinterIndoor": {
+					"Id": "{{ModId}}.GeorgeWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/George_Winter_Indoor",
+					"Portrait": "Portraits/George_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GeorgeWinterOutdoor": {
+					"Id": "{{ModId}}.GeorgeWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/George_Winter_Outdoor",
+					"Portrait": "Portraits/George_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.GeorgeFlowerDance": {
+					"Id": "{{ModId}}.GeorgeFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/George_FlowerDance",
+					"Portrait": "Portraits/George_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.GeorgeSpirit": {
+					"Id": "{{ModId}}.GeorgeSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/George_SpiritsEve",
+					"Portrait": "Portraits/George_SpiritsEve",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "George - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "George Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/George",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

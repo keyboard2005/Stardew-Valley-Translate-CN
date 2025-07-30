@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [ "GarbageCans" ],
+            "Entries": {
+                "Lemurkat.EastScarp_ESBeach": {
+                   "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_FishingAids",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)685",
+                                "(O)694",
+                                "(O)695",
+                                "(O)147"
+                            ]
+                        },
+                        {
+                            "ID": "EastScarp_clam",
+                            "ItemID": "(O)372"
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_ToriNora": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_slime",
+                            "ItemId": "(O)766"
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_Aideen": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_Floral",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)421",
+                                "(O)591",
+                                "(O)593",
+                                "(O)376",
+                            ],
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_Coopers": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_Coopers",
+                            "ItemId": "(O)421"
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_YriCharles": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_Yri",
+                            "ItemId": "(O)169"
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_VetHouse": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_VetStuff",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)178",
+                                "(O)180",
+                                "(O)444",
+                                "(O)440",
+                            ],
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_ESInn": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.1 @addDailyLuck",
+                            "Id": "EastScarp_ESInn",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)246",
+                                "(O)731",
+                                "(O)223",
+                                "(O)651",
+                            ],
+                        }
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_JessieJuliet": {
+                    "BaseChance": -1.0,
+                    "Items": [
+                        {
+                            "Condition": "RANDOM 0.2 @addDailyLuck",
+                            "Id": "EastScarp_J&U",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)770",
+                                "(O)453",
+                                "(O)368",
+                                "(O)771",
+                            ],
+                        }
+                    ],
+                    "CustomFields": {}
+                }
+            }
+        }
+    ]
+}

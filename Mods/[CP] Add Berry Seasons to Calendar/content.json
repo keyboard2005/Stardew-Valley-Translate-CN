@@ -1,0 +1,15 @@
+{
+	"Format": "1.11",
+	"Changes": [
+{
+            "Action": "EditImage",
+            "Target": "LooseSprites/Billboard",
+            "FromFile": "assets/forage_overlay_{{Season}}.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "season": "spring, summer, fall"
+            }
+        },
+
+	]
+}

@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    /*
+  _    _ ______          _____ _______   _____ _____          _      ____   _____ _    _ ______ 
+ | |  | |  ____|   /\   |  __ \__   __| |  __ \_   _|   /\   | |    / __ \ / ____| |  | |  ____|
+ | |__| | |__     /  \  | |__) | | |    | |  | || |    /  \  | |   | |  | | |  __| |  | | |__   
+ |  __  |  __|   / /\ \ |  _  /  | |    | |  | || |   / /\ \ | |   | |  | | | |_ | |  | |  __|  
+ | |  | | |____ / ____ \| | \ \  | |    | |__| || |_ / ____ \| |___| |__| | |__| | |__| | |____ 
+ |_|  |_|______/_/    \_\_|  \_\ |_|    |_____/_____/_/    \_\______\____/ \_____|\____/|______|
+
+*/
+    // GENERIC POOL
+    {
+      "LogName": "Roslin Dialogue: Pre-Dandelion",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Roslin",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Roslin.Generic.EarlyHeart.{{Random:{{Range: 1, 20}}}}}}"
+      }
+    },
+    {
+      "LogName": "Roslin Dialogue: Post-Dandelion",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Roslin",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Roslin.Generic.LateHeart.{{Random:{{Range: 1, 45}}}}}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+      }
+    },
+    // SEASONAL POOL
+    {
+      "LogName": "Dialogue - Roslin Seasonal Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Roslin",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Roslin.{{Season}}.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Roslin_OverrideSeenToday received"
+      },
+      "When": {
+        "Query: {{Random: {{Range: 1, 5}}|key=CSO}} = 1": true,
+        "HasFlag |contains=SnS_M_Roslin_OverrideSeenToday": false
+      }
+    },
+    // EPILOGUE POOL 
+    {
+      "LogName": "Dialogue - Roslin Epilogue Override",
+      "Action": "EditData",
+      "Update": "OnLocationChange",
+      "Target": "Characters/Dialogue/Roslin",
+      "Entries": {
+        "{{WeekDay}}": "{{i18n:Core.Roslin.Epilogue.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current SnS_M_Roslin_OverrideSeenToday received"
+      },
+      "When": {
+        "HasSeenEvent |contains=SnS.Ch5.End": true,
+        "Query: {{Random: {{Range: 1, 3}}|key=REO}} = 1": true,
+        "HasFlag |contains=SnS_M_Roslin_OverrideSeenToday": false
+      }
+    },
+  
+    /*
+   _____ ______ _   _ ______ _____  _____ _____   _____ _____          _      ____   _____ _    _ ______ 
+  / ____|  ____| \ | |  ____|  __ \|_   _/ ____| |  __ \_   _|   /\   | |    / __ \ / ____| |  | |  ____|
+ | |  __| |__  |  \| | |__  | |__) | | || |      | |  | || |    /  \  | |   | |  | | |  __| |  | | |__   
+ | | |_ |  __| | . ` |  __| |  _  /  | || |      | |  | || |   / /\ \ | |   | |  | | | |_ | |  | |  __|  
+ | |__| | |____| |\  | |____| | \ \ _| || |____  | |__| || |_ / ____ \| |___| |__| | |__| | |__| | |____ 
+  \_____|______|_| \_|______|_|  \_\_____\_____| |_____/_____/_/    \_\______\____/ \_____|\____/|______|
+
+*/
+    {
+      "LogName": "Roslin Dialogue - Platonic",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Roslin",
+      "Entries": {
+        // NAME & INTRO
+        "Name:": "{{i18n:Core.Roslin.Name}}",
+        "Introduction": "{{i18n:Core.Roslin.Introduction}}",
+        // COMMUNITY CENTER BUNDLES
+        "cc_Complete": "{{i18n:Core.Roslin.CCComplete}}",
+        "movieTheater": "{{i18n:Core.Roslin.MovieTheater}}",
+        // END OF SEASON
+        "spring_28": "{{i18n:Core.Roslin.SpringEnd}}",
+        "summer_28": "{{i18n:Core.Roslin.SummerEnd}}",
+        "fall_28": "{{i18n:Core.Roslin.FallEnd}}",
+        "winter_28": "{{i18n:Core.Roslin.WinterEnd}}",
+        // SVE COMMUNITY DAY
+        "CommunityCenter": "{{i18n:Core.Roslin.CommunityCenter10}}",
+        // FESTIVALS
+        "spring_12": "{{i18n:Core.Roslin.EggFestival}}",
+        "spring_23": "{{i18n:Core.Roslin.FlowerDance}}",
+        "summer_10": "{{i18n:Core.Roslin.Luau}}",
+        "summer_27": "{{i18n:Core.Roslin.MoonlightJelly}}",
+        "fall_15": "{{i18n:Core.Roslin.SDVFair}}",
+        "fall_26": "{{i18n:Core.Roslin.SpiritsEve}}",
+        "winter_7": "{{i18n:Core.Roslin.IceFestival}}",
+        "winter_16": "{{i18n:Core.Roslin.NightMarket}}",
+        "winter_24": "{{i18n:Core.Roslin.WinterStar}}",
+        // RESORT
+        "Resort": "{{i18n:Core.Roslin.Resort}}",
+        // GREEN RAIN 
+        "GreenRain": "{{i18n:Core.Roslin.GreenRain}}",
+        "GreenRainFinished": "{{i18n:Core.Roslin.GreenRainFinished}}",
+        "GreenRain_2": "{{i18n:Core.Roslin.GreenRain2}}",
+      },
+    },
+  ]
+}

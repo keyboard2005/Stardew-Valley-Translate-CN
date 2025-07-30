@@ -1,0 +1,97 @@
+    {
+        "Changes": [
+            {
+                "LogName": "Mainland Dialogue",
+                "Action": "EditData",
+                "Target": "Characters/Dialogue/Leo",
+                "Entries": {
+                    "LeoDeparture": "我得找个地方生活……$s#$b#不过我已经有计划了……我可以依靠我的朋友。",
+                    "Thu8": "一开始我感觉挺糟糕的……离开小岛，来到陌生的土地上。$s#$e#但是过了一段时间，我已经习惯了这里的生活。#$b#我是个适应力很强的人！$h",
+                    "Thu10": "起初我感觉自己在这里像个陌生人。但现在我交到了很多朋友！$h#$b#我第一次感觉到了归属感……",
+                    "Tue": "潘妮小姐在尽量帮我赶上学校的课程。她真是个好人……#$e#……幸运的是，我还记得一些很久很久以前学过的东西……在我被冲到岛上之前……所以也没有想象中那么困难。#$e#潘妮小姐说，她很惊讶我竟然知道这么多东西！",
+                    "Tue10": "我能肯定贾斯和文森特觉得我怪怪的，至少一开始是。我不小心在上课的时候学过几次鸟叫……不受控制的那种。$s#$e#这对所有人来说都是很大的改变，但我们现在已经是好朋友了！$h",
+                    "18": "我刚来这里的时候，莱纳斯给我用树叶做了身衣服，就像他身上的一样……#$b#但我看起来滑稽极了……就像一个长了毛的芒果！$h#$e#我想我还是穿着羽毛比较好。",
+                    "Wed": "在莱纳斯和潘妮小姐那里，我学会了所有需要了解的知识！$h#$e#刘易斯镇长说我正在迅速成为一个“全面发展的公民”……不知道那是什么意思。",
+                    "Thu": "你注意过生活在这里的鸟儿们吗？#$e#如果你仔细倾听，它们可能会告诉你一些事。",
+                    "winter_Thu": "山谷里的鸟儿们没有那么介意寒冷。#$e#我有点嫉妒它们能有温暖的羽毛……$s",
+                    "4": "我看见有一个大芒果在天上飘来飘去，莱纳斯告诉我那是热气球！$u#$b#我还以为只有鸟儿才能飞呢……",
+                    "Fri": "莱纳斯教了我很多关于山谷里野生食物的事情。这里真的有很多好东西！$h#$e#不过……我的确有点怀念把金核桃当早餐的日子……$s",
+                    "winter_Fri": "莱纳斯教了我怎么制作用那种特殊的辛辣浆果涂抹过的鱼……#$b#他说如果我吃得够多，一整个冬天我都会很暖和！$h",
+                    "Fri8": "莱纳斯叔叔说，我应该把鱼“烧熟”再吃……$s#$b#我花了很长时间适应这种做法……太干了……$s",
+                    "Mon": "嘿，@。很高兴看到你回到岛上，就和从前那样。真的很有意思！#$e#你知道，你刚来岛上的时候，我还有点害怕……我知道自己的人生要被改变了。$u",
+                    "Sun": "你知道的，星露谷可能会成为我的新家……但姜岛永远都是我的家。#$e#能回来看看，感觉真的很好。",
+                    "Sat": "或许将来有一天，我会去祖祖城看看……$u#$b#但我现在还远远没有准备好。这个世界对我来说太陌生了，我在这里生活着就很好！$h",
+                    "Sun10": "鹦鹉们想让我谢谢你找到的那么多金核桃。他们真的很喜欢。$h",
+                    "Sat10": "@？嗯……我不太好意思开口……$u#$b#不过……你觉得贾斯喜欢我吗？$u#$b#还是我太奇怪了？$s#$e#算了……不管了。总有一天我会弄明白的。$h",
+                    //New dialogue
+                    "Wed10": "我学鸟叫的时候，爱洛伊斯一点都没觉得奇怪。完全没有！她还想让我教她怎么和鸟儿说话呢。$1#$b#但光会说话是不够的，聆听也很重要……有时候她不太擅长听别人说话。",
+                    "fall_Fri10": "爱洛伊斯想和我一起来岛上，见见我的鸟儿家人们。$1#$b#但我说不好……万一她觉得我是个怪人怎么办？你觉得她会在意这个吗？$2",
+                    "EloisePuppyTalk": "爱洛伊斯邀请我去一个满是小狗的公园玩，但那样的话我就得乘车旅行了。#$b#听起来有点吓人，所以我拒绝了。希望她不会伤心……$2"
+                },
+                "When": {
+                    "HasSeenEvent |contains=6497428": true
+                }
+            },
+            {
+                "LogName": "Mainland Dialogue",
+                "Action": "EditData",
+                "Target": "Characters/Dialogue/LeoMainland",
+                "Entries": {
+                    "Wed10": "我学鸟叫的时候，爱洛伊斯一点都没觉得奇怪。完全没有！她还想让我教她怎么和鸟儿说话呢。$1#$b#但光会说话是不够的，聆听也很重要……有时候她不太擅长听别人说话。",
+                    "fall_Fri10": "爱洛伊斯想和我一起来岛上，见见我的鸟儿家人们。$1#$b#但我说不好……万一她觉得我是个怪人怎么办？你觉得她会在意这个吗？$2",
+                    "EloisePuppyTalk": "爱洛伊斯邀请我去一个满是小狗的公园玩，但那样的话我就得乘车旅行了。#$b#听起来有点吓人，所以我拒绝了。希望她不会伤心……$2"
+                },
+            },
+            {
+                "LogName": "Mainland Schedule",
+                "Action": "EditData",
+                "Target": "Characters/schedules/Leo",
+                "Entries": {
+                    "9": "NOT friendship Sam 6 Penny 6/GOTO spring",
+                    "23": "NOT friendship Sam 6 Penny 6/GOTO spring",
+                    "rain": "0 LeoTreeHouse 2 2 0/700 LeoTreeHouse 2 2 0/1000 Tent 1 3 1 \"Strings\\schedules\\Leo:tent\"/1500 Mountain 18 7 1/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "winter_15": "0 LeoTreeHouse 2 2 0/1100 Mountain 30 9 3/1600 Beach 21 4 2 \"Strings\\schedules\\Leo:winter_15.000\"/2330 LeoTreeHouse 5 4 1 leo_sleep",
+                    "summer": "0 LeoTreeHouse 2 2 0/630 Mountain 35 15 2/940 Mountain 48 24 1/1300 Mountain 49 31 1 square_1_3/1600 Mountain 30 9 3/2000 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "fall": "0 LeoTreeHouse 2 2 0/740 Mountain 30 9 3/900 Town 65 48 2/1400 Mountain 43 17 1/2000 LeoTreeHouse 4 2 1/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "winter": "0 LeoTreeHouse 2 2 01100 Mountain 30 9 3/1400 ArchaeologyHouse 12 9 0 \"Strings\\schedules\\Leo:winter.000\"/2000 LeoTreeHouse 2 2 0/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "Tue": "0 LeoTreeHouse 2 2 0/900 ArchaeologyHouse 18 12 0 leo_sit_up \"Strings\\schedules\\Leo:school\"/1400 Town 91 104 2/1620 Mountain 30 9 3 \"Strings\\schedules\\Leo:dinner\"/2000 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "Wed": "GOTO Tue",
+                    "Sat": "0 LeoTreeHouse 2 2 0/940 Town 34 90 2/1200 Town 19 14 2 square_5_1/1700 Mountain 30 9 3/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "Sun": "610 IslandHut 7 7 0/1030 IslandSouth 38 31 2/1330 IslandEast 7 44 2/1700 IslandNorth 53 71 2/2000 IslandHut 11 10 1 leo_sleep",
+                    "Mon": "0 IslandHut 7 7 0/930 IslandSouth 7 9 2/1400 IslandEast 21 11 2/1700 IslandHut 6 6 0/2100 IslandHut 11 10 1 leo_sleep",
+                    "spring": "0 LeoTreeHouse 2 2 0/700 Mountain 30 9 3/930 Mountain 44 18 1/1400 Mountain 30 9 3/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep"
+                },
+                "When": {
+                    "HasSeenEvent |contains=6497428": true
+                }
+            },
+            {
+                "LogName": "Mainland Schedule",
+                "Action": "EditData",
+                "Target": "Characters/schedules/Leo",
+                "Entries": {
+                    "Sun": "0 LeoTreeHouse 2 2 0/940 Town 34 90 2/1200 Town 19 14 2 square_5_1/1700 Mountain 30 9 3/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "Mon": "0 LeoTreeHouse 2 2 0/940 Town 34 90 2/1200 Town 19 14 2 square_5_1/1700 Mountain 30 9 3/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "rain": "0 LeoTreeHouse 2 2 0/700 LeoTreeHouse 2 2 0/1000 Tent 1 3 1 \"Strings\\schedules\\Leo:tent\"/1500 Mountain 18 7 1/1900 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep"
+                },
+                "When": {
+                    "Weather: Island": "rain",
+                    "DayOfWeek": "Sunday, Monday",
+                    "HasSeenEvent |contains=6497428": true
+                }
+            },
+            /*  {
+                "Action": "EditData",
+                "Target": "Characters/schedules/Leo",
+                "Entries": {
+                    "Tue": "0 LeoTreeHouse 2 2 0/930 CommunityCenter 18 22 0 leo_sit_up \"Strings\\schedules\\Leo:school\"/1400 Town 91 104 2/1620 Mountain 30 9 3 \"Strings\\schedules\\Leo:dinner\"/2000 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep",
+                    "rain": "0 LeoTreeHouse 2 2 0/1000 Tent 1 3 1 \"Strings\\schedules\\Leo:tent\"/1040 CommunityCenter 40 10 0 square 5_1_0 \"Strings\\schedules\\Leo:CC_{{random:FT1,FT2,FT3}}\"/1300 CommunityCenter 5 10 0/1500 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep"
+                },
+                "When": {
+                    "HasSeenEvent |contains=6497428": true,
+                    "HasSeenEvent |contains=191393": true,
+                    "HasMod": "LemurKat.CommunityCenter.CP"
+                }
+            }*/
+        ]
+    }

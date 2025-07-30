@@ -1,0 +1,86 @@
+{
+    "Changes": [
+        // MATEO'S SPOUSE ROOM
+        {
+            "Action": "Load",
+            "Target": "Maps/MateoSpouseRoom",
+            "FromFile": "Assets/Maps/MateoSpouseRoom.tmx",
+            "When": {
+                "MateoSpouseRoomConfig": true
+            }
+        },
+        // MATEO'S SPOUSE PATIO 
+        {
+            "Action": "Load",
+            "Target": "Maps/MateoSpousePatio",
+            "FromFile": "assets/Maps/MateoSpousePatio.tmx",
+            "When": {
+                "MateoSpousePatioConfig": true
+            }
+        },
+        // MAKES MATEO'S BED SLEEPABLE WHEN MARRIED
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_CoastalGuild",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 13,
+                        "Y": 4
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Sleep",
+                        "Bed": "T"
+                    }
+                }
+            ],
+            "When": {
+                "Relationship:Mateo |contains=Dating, Engaged, Married": true
+            }
+        },
+        // MATEO REACTS TO PLAYER'S "DEATH" 
+        {
+            "LogName": "Player Death - Mines",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Mateo 18 10 1/pause 1500/showFrame 5/message \"{{i18n:Core.Mateo.PlayerKilled.Mines.01}}\"/pause 1000/message \"{{i18n:Core.Mateo.PlayerKilled.Mines.02}}\"/viewport 19 10 true/pause 1000/speak Mateo \"{{i18n:Core.Mateo.PlayerKilled.Mines.03}}\"/pause 1000/emote farmer 28/minedeath/end"
+            },
+            "When": {
+                "Relationship:Mateo |contains=Dating, Engaged, Married": true
+            }
+        },
+        {
+            "LogName": "Player Death - Skull Cave",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Mateo 22 8 2/pause 1500/showFrame 5/message \"{{i18n:Core.Mateo.PlayerKilled.Skull.01}}\"/pause 1000/message \"{{i18n:Core.Mateo.PlayerKilled.Skull.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:Core.Mateo.PlayerKilled.Skull.03}}\"/speed Mateo 5/move Mateo 0 3 2/textAboveHead Mateo \"!!!\"/move Mateo -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move Mateo 0 1 3/speak Mateo \"{{i18n:Core.Mateo.PlayerKilled.Skull.04}}\"/emote farmer 60/pause 500/speak Mateo \"{{i18n:Core.Mateo.PlayerKilled.Skull.05{{PlayerPronouns}}}}\"/emote Mateo 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:Core.Mateo.PlayerKilled.Skull.06{{PlayerPronouns}}}}\"/pause 500/speak Harvey \"{{i18n:Core.Mateo.PlayerKilled.Skull.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/pause 500/faceDirection Mateo 3/speak Mateo \"{{i18n:Core.Mateo.PlayerKilled.Skull.08}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end"
+            },
+            "When": {
+                "Relationship:Mateo |contains=Dating, Engaged, Married": true
+            }
+        },
+        // CUSTOM CHILD - SOREN
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Toddler, Characters/Toddler_dark",
+            "FromFile": "assets/Characters/Mateo/Kids/mateo_soren{{MateoHorns}}.png",
+            "When": {
+                "Relationship:Mateo": "Married",
+                "CustomMateoSoren": "true"
+            }
+        },
+        // CUSTOM CHILD - DINAH
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Toddler_girl, Characters/Toddler_girl_dark",
+            "FromFile": "assets/Characters/Mateo/Kids/mateo_dinah{{MateoHorns}}.png",
+            "When": {
+                "Relationship:Mateo": "Married",
+                "CustomMateoDinah": "true"
+            }
+        },
+    ]
+}

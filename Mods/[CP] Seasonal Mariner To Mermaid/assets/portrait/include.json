@@ -1,0 +1,90 @@
+{
+  "Changes": [
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.portrait.rain",
+      "Action": "EditImage",
+      "Target": "Portraits/Mariner",
+      "FromFile": "assets/portrait/{{Season}}_Rain.png"
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.portrait.storm",
+      "Action": "EditImage",
+      "Target": "Portraits/Mariner",
+      "FromFile": "assets/portrait/{{Season}}_Rain.png",
+      "Priority": "Default + 1",
+      "When": {
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false
+      }
+    },
+    {
+      "LogName": "jennajuffuffles.mermaid.editdata.portrait.greenrain",
+      "Action": "EditImage",
+      "Target": "Portraits/Mariner",
+      "FromFile": "assets/portrait/{{Season}}_GreenRain.png",
+      "Priority": "Default + 1",
+      "When": {
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "DolphINaF.MermaidMariner_PendantAcquired": {
+          "Id": "DolphINaF.MermaidMariner_PendantAcquired",
+          "Trigger": "DayStarted LocationChanged",
+          "Condition": "PLAYER_HAS_ITEM Current (O)460",
+          "Actions": [
+            "AddMail Current DolphINaF.MermaidMariner_PendantAcquired now"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "DolphINaF.MermaidMariner_PendantGiven": {
+          "Id": "DolphINaF.MermaidMariner_PendantGiven",
+          "Trigger": "DayStarted LocationChanged",
+          "Condition": "PLAYER_NPC_RELATIONSHIP Any Any Engaged",
+          "Actions": [
+            "RemoveMail Current DolphINaF.MermaidMariner_PendantAcquired",
+            "MarkActionApplied Current DolphINaF.MermaidMariner_PendantAcquired false"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/Mariner",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "FromFile": "assets/pendant/{{season}}.png",
+      "When": {
+        "HasValue:{{spouse}}": "false",
+        "HasFlag |contains=DolphINaF.MermaidMariner_PendantAcquired": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/OldMariner",
+      "Entries": {
+        "PendantQuestion": "{{i18n:MermaidLine}}#$b#$y '{{i18n:MermaidBuyPrompt}}_{{i18n:MermaidBuyYes}}_{{i18n:{{Season}}.{{Weather}}.MermaidBuyYesAnswer}}_{{i18n:MermaidBuyNo}}_{{i18n:{{Season}}.{{Weather}}.MermaidBuyNoAnswer}}'"
+      },
+      "Priority": "Early"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/OldMariner",
+      "Entries": {
+        "PendantQuestion": "{{i18n:MermaidLine}}#$b#$y '{{i18n:MermaidBuyPrompt}}_{{i18n:MermaidBuyYes}}_{{i18n:{{Season}}.Rain.MermaidBuyYesAnswer}}_{{i18n:MermaidBuyNo}}_{{i18n:{{Season}}.Rain.MermaidBuyNoAnswer}}'"
+      },
+      "When": {
+        "Weather": "Storm",
+        "HasMod: |contains=DolphINaF.MermaidMariner": false
+      }
+    }
+  ]
+}

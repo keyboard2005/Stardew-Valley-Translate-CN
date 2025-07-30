@@ -1,0 +1,54 @@
+{
+	"Changes":[
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/OldMariner",
+			"FromFile": "patches/blank.json"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/OldMariner",
+			"Entries": {
+				"PendantQuestion": "{{i18n:MarinerLine1}}#$b#{{i18n:MarinerLine2}}#$b#$y '{{i18n:MarinerBuyPrompt}}_{{i18n:MarinerBuyYes}}_{{i18n:MarinerBuyYesAnswer}}_{{i18n:MarinerBuyNo}}_{{i18n:MarinerBuyNoAnswer}}'",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}-MarinerPendant": {
+					"Id": "{{ModId}}-Mariner",
+					"Trigger": "DolphINaF.Kedi.MarinerDialogue_MarinerTrigger",
+					"HostOnly": false,
+					"MarkActionApplied": false,
+					"Actions": [
+						"null"
+					],
+				}
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Mariner",
+			"FromFile": "assets/Portraits/OldMariner_{{MarinerGhost}}.png",
+			"When": {"HasMod": "SchrodingersKit.GhostlyMariner"}
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Mariner",
+			"FromFile": "assets/Portraits/Nyapu/OldMariner_Default.png",
+			"When": {
+				"Nyapu": true
+			}
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Mariner",
+			"FromFile": "assets/Portraits/Nyapu/OldMariner_{{MarinerGhost}}.png",
+			"When": {
+				"HasMod": "SchrodingersKit.GhostlyMariner",
+				"Nyapu": true
+			}
+		},			
+	],
+}

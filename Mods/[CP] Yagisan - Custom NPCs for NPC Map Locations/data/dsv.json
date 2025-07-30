@@ -1,0 +1,19 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Diverse Stardew Valley - https://www.nexusmods.com/stardewvalley/mods/17059
+        {
+            "LogName": "[Yagi] Diverse Stardew Valley - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=DSVTeam.DiverseStardewValley": true
+            },
+            "Entries": {
+                "Marigold": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+    ]
+}

@@ -1,0 +1,137 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Gus's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Gus_Spring, Portraits/Gus_Summer, Portraits/Gus_Fall, Portraits/Gus_Winter_Outdoor, Portraits/Gus_Winter_Indoor, Portraits/Gus_FlowerDance, Portraits/Gus_SpiritsEve, Characters/Gus_Spring, Characters/Gus_Summer, Characters/Gus_Fall, Characters/Gus_Winter_Outdoor, Characters/Gus_Winter_Indoor, Characters/Gus_FlowerDance, Characters/Gus_SpiritsEve, Portraits/Gus_Beach, Characters/Gus_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Gus/{{TargetWithoutPath}}.png"
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Gus Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Gus", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.GusSpring": {
+					"Id": "{{ModId}}.GusSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Gus_Spring",
+					"Portrait": "Portraits/Gus_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.GusSummer": {
+					"Id": "{{ModId}}.GusSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Gus_Summer",
+					"Portrait": "Portraits/Gus_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GusFall": {
+					"Id": "{{ModId}}.GusFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Gus_Fall",
+					"Portrait": "Portraits/Gus_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GusWinterIndoor": {
+					"Id": "{{ModId}}.GusWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Gus_Winter_Indoor",
+					"Portrait": "Portraits/Gus_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.GusWinterOutdoor": {
+					"Id": "{{ModId}}.GusWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Gus_Winter_Outdoor",
+					"Portrait": "Portraits/Gus_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.GusFlowerDance": {
+					"Id": "{{ModId}}.GusFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Gus_FlowerDance",
+					"Portrait": "Portraits/Gus_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.GusSpirit": {
+					"Id": "{{ModId}}.GusSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Gus_SpiritsEve",
+					"Portrait": "Portraits/Gus_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Island
+
+				"{{ModId}}.GusBeach": {
+					"Id": "{{ModId}}.GusBeach",
+					"Sprite": "Characters/Gus_Beach",
+					"Portrait": "Portraits/Gus_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.GusIsland": {
+					"Id": "{{ModId}}.GusIsland",
+					"Condition": "LOCATION_NAME Target IslandSouth IslandEast IslandNorth IslandWest",
+					"Sprite": "Characters/Gus_Beach",
+					"Portrait": "Portraits/Gus_Beach",
+					"Precedence": -1000,
+				},				
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Gus - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Gus - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Gus Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Gus",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+		
+	]
+}

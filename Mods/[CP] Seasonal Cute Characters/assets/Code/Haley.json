@@ -1,0 +1,219 @@
+{
+	"Changes": [
+
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Haley's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Haley_Spring, Portraits/Haley_Summer, Portraits/Haley_Fall, Portraits/Haley_Winter_Outdoor, Portraits/Haley_Winter_Indoor, Portraits/Haley_FlowerDance, Portraits/Haley_SpiritsEve, Portraits/Haley_EggF, Portraits/Haley_Fair, Portraits/Haley_Jellies, Portraits/Haley_Luau, Portraits/Haley_Winter_IceF, Portraits/Haley_Winter_WinterStar, Characters/Haley_Spring, Characters/Haley_Summer, Characters/Haley_Fall, Characters/Haley_Winter_Outdoor, Characters/Haley_Winter_Indoor, Characters/Haley_FlowerDance, Characters/Haley_SpiritsEve, Characters/Haley_EggF, Characters/Haley_Fair, Characters/Haley_Jellies, Characters/Haley_Luau, Characters/Haley_Winter_IceF, Characters/Haley_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Haley's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Haley - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Spring, Characters/Haley_Summer, Characters/Haley_Fall, Characters/Haley_Winter_Outdoor, Characters/Haley_Winter_Indoor, Characters/Haley_FlowerDance, Characters/Haley_SpiritsEve, Characters/Haley_EggF, Characters/Haley_Fair, Characters/Haley_Jellies, Characters/Haley_Luau, Characters/Haley_Winter_IceF, Characters/Haley_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Haley/Haley_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Haley - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Haley/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Haley Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Haley", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.HaleySpring": {
+					"Id": "{{ModId}}.HaleySpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Haley_Spring",
+					"Portrait": "Portraits/Haley_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.HaleySummer": {
+					"Id": "{{ModId}}.HaleySummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Haley_Summer",
+					"Portrait": "Portraits/Haley_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HaleyFall": {
+					"Id": "{{ModId}}.HaleyFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Haley_Fall",
+					"Portrait": "Portraits/Haley_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HaleyWinterIndoor": {
+					"Id": "{{ModId}}.HaleyWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Haley_Winter_Indoor",
+					"Portrait": "Portraits/Haley_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.HaleyWinterOutdoor": {
+					"Id": "{{ModId}}.HaleyWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Haley_Winter_Outdoor",
+					"Portrait": "Portraits/Haley_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.HaleyEggFest": {
+					"Id": "{{ModId}}.HaleyEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_EggF",
+					"Portrait": "Portraits/Haley_EggF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HaleyFlowerDance": {
+					"Id": "{{ModId}}.HaleyFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_FlowerDance",
+					"Portrait": "Portraits/Haley_FlowerDance",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HaleyLuau": {
+					"Id": "{{ModId}}.HaleyLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_Luau",
+					"Portrait": "Portraits/Haley_Luau",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HaleyJellies": {
+					"Id": "{{ModId}}.HaleyJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_Jellies",
+					"Portrait": "Portraits/Haley_Jellies",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HaleyFair": {
+					"Id": "{{ModId}}.HaleyFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_Fair",
+					"Portrait": "Portraits/Haley_Fair",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HaleySpirit": {
+					"Id": "{{ModId}}.HaleySpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Haley_SpiritsEve",
+					"Portrait": "Portraits/Haley_SpiritsEve",
+					"Precedence": -1000,
+				},
+					
+				"{{ModId}}.HaleyIceFestival": {
+					"Id": "{{ModId}}.HaleyIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_Winter_IceF",
+					"Portrait": "Portraits/Haley_Winter_IceF",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.HaleyWinterStar": {
+					"Id": "{{ModId}}.HaleyWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/Haley_Winter_WinterStar",
+					"Portrait": "Portraits/Haley_Winter_WinterStar",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.HaleyBeach": {
+					"Id": "{{ModId}}.HaleyBeach",
+					"Sprite": "Characters/Haley_Beach",
+					"Portrait": "Portraits/Haley_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Haley - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Cow Photos",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+            "FromFile": "assets/{{NoNose}}/Random/cowPhotos_{{Season}}.png",
+            "When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+            "Update": "OnLocationChange",
+        },
+		{
+			"LogName": "Haley - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/Characters/junimo_furniture.png",
+			"FromArea": {"X": 39, "Y": 279, "Width": 18, "Height": 18},
+			"ToArea": {"X": 39, "Y": 279, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Haley Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Haley",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}

@@ -1,0 +1,196 @@
+{
+ 
+// 1.6.0 update Lines for Hat Mouse and Friends. Everyone besides Wizard and Hamster speak in rather broken language.
+  "HatMouse.Beanie": "J’ai chapeau pour chaque tête. Okay, pote ?",
+//The Hamster is a reference to Bijou from Hamtaro. She is from France in the English version (and apparently from Russia in the French version)
+  "HatMouse.Hamster": "Bonjour ! Vous cherchez un chapeau chic aujourd’hui ? Hum... pote ?",
+  "HatMouse.Bow": "Tu veux un noeud papillon ? Un noeud pour les cheveux ? Peut-être un noeud sur la tête ?",
+  "HatMouse.Dipper": "Résoudre des mystères, vendre des chapeaux, tout ça en une seule journée pote.",
+  "HatMouse.Flower": "Vous rend plutôt joli avec bon chapeau, pote !",
+  "HatMouse.Goggles": "Tous les héros ont besoin de lunettes, pote !",
+  "HatMouse.Headband": "Tu veux bandeau ? Hé, pas à vendre, pote !",
+  "HatMouse.Link": "- fait des gestes animés -",
+//Mouse Marlon's line is a reference to the real Marlon's own shop line in the Adventurer's Guild
+  "HatMouse.Marlon": "Tu veux un nouveau chapeau, pote ?",
+  "HatMouse.Post": "Pas de courrier aujourd’hui donc moi vendre chapeaux, pote.",
+  "HatMouse.Red": "- vous regarde en silence -",
+  "HatMouse.Sailor": "Hier naviguer, aujourd’hui vendre chapeaux, demain peut-être",
+//Strawhat Mouse's line is a reference to Luffy from One Piece's catchphrase "I'm gonna be King of the Pirates"
+  "HatMouse.Strawhat": "Achète chapeaux, pote ! Je serai Roi des Chapeaux !",
+//This is a reference to the Wizard's introduction. The name is a Rasmodeus+Mouse wordplay
+  "HatMouse.Wizard": "Je suis Rasmosouris... Le chercheur des vérités arcaniques.",
+
+// Lines for the Casino Vendor, highly disapproving of the farmer being there
+  "CasinoVendor1.Default": "Oh, c’est vous. Vous faîtes du vol à l’étalage, je suppose ?",
+  "CasinoVendor2.Default": "Vous réalisez que votre or n’a aucune valeur ici, n’est-ce pas ?",
+  "CasinoVendor3.Default": "Nous avions l’habitude d’être plus regardant sur les personnes qui obtenaient un carte de club. Avant.",
+  "CasinoVendor4.Default": "Tous ces objets sont à vendre... Enfin, si vous le méritez.",
+ 
+// 1.6.0 update Lines for the alternate Casino Vendor, short and blunt. The second line is a wordplay referring to his blue skin and blue = sad. If you can't find similar wordplay in the language you're translating, maybe you can change it to just "Why am I blue? I don't know what you're talking about."
+  "CasinoVendor1.Bouncer": "J’ai l’air familier ? Vous devez vous tromper.",
+  "CasinoVendor2.Bouncer": "Pourquoi suis-je bleu ? Je ne vois pas de quoi vous parlez",
+  "CasinoVendor3.Bouncer": "Vous avez une carte de club ? Vous êtes autorisé à rester.",
+  "CasinoVendor4.Bouncer": "Tous ces objets peuvent être achetés avec des pièces Qi.",
+ 
+// 1.6.0 update Lines for the alternate Casino Vendor, friendly.
+  "CasinoVendor1.Green": "Bienvenu aux bizarreries quintessentielles de Qi. Nous sommes encore en train de travailler sur le nom.",
+  "CasinoVendor2.Green": "J’espère que vous apprécierez votre temps au casino.",
+  "CasinoVendor3.Green": "Le patron est très heureux d'avoir un nouveau précieux joue.. client.",
+  "CasinoVendor4.Green": "Échangez simplement vos pièces Qi ici. Où d'autre les dépenseriez-vous ?",
+ 
+// Line for the Traveling Merchant during Festival of Ice
+  "TravelerIce": "Ah, le décor parfait pour certaines de mes trouvailles les plus rares ! Aujourd'hui seulement, mon ami.",
+ 
+// Lines for the Raccoon. "Bobo" is what she calls you.
+  "Raccoon1": "J'ai des graines, bobo.",
+  "Raccoon2": "Envie de quelques graines, bobo ?",
+  "Raccoon3": "Tu n'as peut-être pas ces graines, bobo.",
+ 
+// 1.7.0 update Lines for the Crow. Just crow sounds.
+  "Crow1": "Croa-croa !",
+  "Crow2": "Crrk... croa !",
+  "Crow3": "Croaaa !",
+  "Crow4": "Croa-croa-croa !",  
+  "Crow5": "Crroooaaa...",
+ 
+// Lines for the Joja Cashiers, friendly but canned. "Join us and thrive" is a reference to JojaMart's "Join Us. Thrive" slogan so the awkwardness is intentional,
+  "JojaCashier1.Default": "Bienvenue à JojaMart ! Comment allez-vous aujourd'hui ?",
+  "JojaCashier2.Default": "N'oubliez pas, en tant que membre de JojaMart, vous obtenez plus pour moins cher !",
+  "JojaCashier3.Default": "Rejoignez-nous et prospérez avec nos offres spéciales sur certains articles !",
+
+// 1.7.0 update Special lines for various Cashier NPCs
+  "JojaCashier.Juliet": "Nous avons tous les essentiels… et quelques choses douteuses dans l’allée C.",
+  "JojaCashier_JojaDay.Juliet": "Tu as de la chance ! C’est la Journée Joja et toutes les graines sont à 20 % de réduction.",
+  "JojaCashier.Jessie": "C’est bon de te voir ici. Je suis là si tu as besoin d’aide.",
+  "JojaCashier.Shane": "De quoi as-tu besoin ?",
+ 
+// Line for the Star Token Exchanger at the Stardew Valley Fair
+  "StarToken": "Salut ! Échangez vos jetons étoile ici pour obtenir les meilleurs butins que la Foire a à offrir !",
+ 
+//1.6.0 update Lines for the Scholar who stands in for the Desert Trader
+  "DesertTrader4_male.Scholar": "Ah, le chameau a l’air de vous apprécier, l’ami. Une créature sage.",
+  "DesertTrader4_female.Scholar": "Ah, le chameau a l’air de vous apprécier, l’amie. Une créature sage.",
+  "DesertTrader3.Scholar": "Là où je navigue, votre pièce est comme du sable dans le vent. Quel trésor pouvez-vous m’offrir à la place ?",
+  "DesertTrader2.Scholar": "Chaque artefact a une histoire, comme vous.",
+  "DesertTrader1.Scholar": "Ah, quelqu’un qui cherche la connaissance et les biens, comme moi ! Vous voulez échanger ?",
+ 
+//1.6.0 update Lines for the Announcer who stands in for the Desert Trader
+  "DesertTrader4_male.RacerGuy": "Ah, le chameau a l’air de vous apprécier, l’ami. C’est un signe formidable !",
+  "DesertTrader4_female.RacerGuy": "Ah, le chameau a l’air de vous apprécier, l’amie. C’est un signe formidable !",
+  "DesertTrader3.RacerGuy": "Votre pièce n’a pas de valeur ici mais vous avez peut-être quelque chose de plus excitant à échanger ?",
+  "DesertTrader2.RacerGuy": "Levez-vous et soyez témoin de merveilles !",
+  "DesertTrader1.RacerGuy": "Bienvenue, voyageur ! Prêt à faire un échange ?",
+ 
+// Lines for Pierre at various festivals
+  "PierreJellyfish": "Des articles rares qui brillent comme les méduses lunaires ! Ne manquez pas ça !",
+  "PierreEgg": "Des articles exclusifs en vente ! Achetez-les avant la fin de la journée, sinon vous les manquerez !",
+  "PierreFeast": "Des articles festifs pour réchauffer vos vacances ! Achetez les vôtres tant qu'il en reste !",
+  "PierreFlower": "De belles fleurs pour charmer votre partenaire de danse ! Achetez-les avant la dernière danse !",
+  "PierreLuau": "Des décorations exotiques pour faire parler de la Ferme {{FarmName}} en ville ! Achetez-les tant que vous le pouvez !",
+  "PierreSpirit": "Des décorations horrifiques pour construire la grange la plus effrayante ! Achetez-les avant qu'elles ne disparaissent !",
+
+// 1.7.0 Update Lines for the clinic.
+  "MaruClinic": "Une petite gorgée d’un de ces sirops te remettra sur pied en un rien de temps, promis !",
+  "HarveyClinic": "Ah, bienvenue ! Je suis content de voir que tu prends soin de toi.",
+ 
+// Alex  
+  "AlexIceCream": "Que dirais-tu de déguster une bonne glace pour te rafraîchir ?",
+ 
+// Descriptions for Generic Mod Config Menu
+  "config.Raccoon.name": "Raton laveur",
+  "config.Raccoon.description": "Active le portrait pour le marchand raton laveur déblocable dans la Forêt Sève-Cendreuse.",
+ 
+//1.7.0 update  
+  "config.Crow.name": "Corbeau",
+  "config.Crow.description": "Active le portrait pour le corbeau vendeur des objets perdus dans le Bois Perdu.",
+
+  "config.Traveler.name": "Marchand itinérant",
+  "config.Traveler.description": "Active le portrait pour le marchand itinérant qui apparaît les vendredis et dimanches dans la Forêt Sève-Cendreuse.",
+ 
+  "config.Bookseller.name": "Libraire",
+  "config.Bookseller.description": "Active le portrait pour le libraire qui visite la ville deux fois par saison.",
+ 
+  "config.StarToken.name": "Échangeur de jetons étoile",
+  "config.StarToken.description": "Active le portrait pour l'échangeur de jetons étoile à la Foire de Stardew Valley.",
+ 
+  "config.MagicBoat.name": "Colporteur magique",
+  "config.MagicBoat.description": "Active le portrait du colporteur de magie au marché nocturne.",
+ 
+  "config.EggShop.name": "Marchand d'œufs",
+  "config.EggShop.description": "Active le portrait du marchand d'œufs Calico au Festival du Désert.",  
+
+//1.4.0 update  
+  "config.OldMariner.name": "Vieux marin",
+  "config.OldMariner.description": "Permet le portrait du vieux marin.",
+ 
+  "config.PierreFestival.name": "Pierre aux festivals",
+  "config.PierreFestival.description": "Active les portraits pour le stand de Pierre lors de tous les festivals.",
+
+// 1.6.0 update
+  "config.section.Desert.name": "Marchand du désert",
+  "config.DesertTrader.name": "Marchand du Désert",
+  "config.DesertShift.name": "Rotation aléatoire",
+  "config.DesertShift.description": "Fait en sorte que le vendeur change chaque jour.",
+
+// 1.6.0 update
+  "config.section.Club.name": "Vendeur du Casino",
+  "config.section.Club.description": "L’échangeur de Pièces Qi au Casino du Désert.",
+  "config.Casino.name": "Vendeur du Casino",
+  "config.CasinoShift.name": "Rotation aléatoire",
+  "config.CasinoShift.description": "Fait en sorte que le vendeur change chaque jour.",
+
+// 1.6.0 update
+  "config.section.Island.name": "Marchand de l’île",
+  "config.section.Island.description": "L’oiseau vendeur, déblocab",
+  "config.IslandTrader.name": "Marchand de l'Île",
+  "config.BirdShift.name": "Rotation aléatoire",
+  "config.BirdShift.description": "Fait en sorte que le vendeur change chaque jour.",
+ 
+  "config.section.JojaMart.name": "Caissier JojaMart",
+ 
+  "config.JojaCashier.name": "Portrait du caissier JojaMart",
+
+//1.6.0 update  
+  "config.JojaShift.name": "Changement de poste aléatoire",
+  "config.JojaShift.description": "Fait en sorte que le caissier change aléatoirement entre le caissier par défaut et un alternatif chaque jour. Est toujours désactivé si vous utilisez SVE.",
+ 
+  "config.section.Theater.name": "Personnel du Théâtre",
+ 
+  "config.MovieTicket.name": "Employé de la Billetterie",
+  "config.MovieTicket.description": "Active le portrait pour l'employé de la billetterie du cinéma.",
+ 
+  "config.MovieConcession.name": "Employé de la Concession",
+  "config.MovieConcession.description": "Active le portrait pour l'employé du stand de concession du cinéma.",
+
+//1.6.0 update  
+  "config.MovieShift.name": "Changement de poste aléatoire",
+  "config.MovieShift.description": "Fait en sorte que les membres du personnel changent aléatoirement de poste chaque jour. Est toujours désactivé si vous utilisez SVE.",
+
+//1.5.0 update
+  "config.section.HouseMouse.name": "Souris Chapeau",
+  "config.section.HouseMouse.description": "La Souris Chapeau dans la maison isolée de la Forêt Sève-Cendreuse.",
+  "config.HatMouse.name": "Activer le portrait",
+
+//1.5.0 update  
+  "config.WildflourMouse.name": "Souris Chapeau de [Wildflour]",
+  "config.WildflourMouse.description": "Utilise le style vu dans le «Ferngill Fashion Festival». Ne fonctionne que s'il est installé.",
+ 
+//1.5.0 update
+  "config.section.Volcano.name": "Nain du volcan",
+  "config.section.Volcano.description": "Le commerçant nain trouvé à l'étage 5 du donjon du volcan.",
+  "config.VolcanoDwarf.name": "Activer le portrait",
+
+//1.5.0 update  
+  "config.LavenderSkellyDwarf.name": "Nain de [LavenderSkelly]",
+  "config.LavenderSkellyDwarf.description": "Utilise le style présenté dans «Dwarf Portrait Replacement». Ne fonctionne que s'il est installé.",
+
+//1.5.0 update
+  "config.section.NightMarketDecor.name": "Vendeur de décoration",
+  "config.section.NightMarketDecor.description": "Le vendeur de décoration dans le bateau bleu au marché nocturne.",
+  "config.DecorBoat.name": "Activer le portrait",
+
+//1.5.0 update  
+  "config.CatPipe.name": "Pipe du chat",
+  "config.CatPipe.description": "Fonctionne uniquement avec «Night Market Cat Boat» installé. Fait que le chat fume une pipe.",
+ 
+}

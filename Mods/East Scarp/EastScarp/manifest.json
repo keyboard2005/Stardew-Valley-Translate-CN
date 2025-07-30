@@ -1,0 +1,20 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "atravita.EastScarp",
+  "Name": "East Scarp C#",
+  "Author": "atravita",
+  "Version": "2.4.22",
+  "Description": "ES C# component",
+  "MinimumApiVersion": "4.0.7",
+  "EntryDll": "EastScarp.dll",
+  "UpdateKeys": [
+    "-1"
+  ]
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="12">
+ <properties>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="59 62 EastScarp_Village 73 1 60 62 EastScarp_Village 74 1 61 62 EastScarp_Village 75 1"/>
+ </properties>
+ <tileset firstgid="1" name="Desty_Hector_Tilesheet" tilewidth="16" tileheight="16" tilecount="420" columns="15">
+  <image source="Desty_Hector_Tilesheet.png" width="240" height="448"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <layer id="15" name="Back2" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+284
+</data>
+ </layer>
+ <objectgroup id="16" name="Buildings">
+  <object id="8" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="DropBox DruidAltarSummer"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="1" height="2" visible="0">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="1" height="2">
+  <data encoding="csv">
+269,
+0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="1" height="2">
+  <data encoding="csv">
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,945 @@
+{
+  "Changes": [
+    // COASTAL ADVENTURER'S GUILD LEDGER 
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModID}}_CAGArtifactLedger": {
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Portrait": "ShopPortraits/DN.SnS/CGEmblem",
+              "Dialogues": [
+                {
+                  "Id": "{{ModID}}_CAGArtifactLedger",
+                  "Dialogue": "{{i18n:miscellaneous.CAGArtifactLedger.message}}"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModID}}_CAGGroup1",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)538",
+                "(O)539",
+                "(O)540",
+                "(O)541",
+                "(O)542",
+                "(O)543",
+                "(O)544",
+                "(O)102",
+                "(O)103",
+                "(O)104",
+                "(O)105",
+                "(O)106",
+                "(O)107"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup2",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)545",
+                "(O)546",
+                "(O)547",
+                "(O)548",
+                "(O)549",
+                "(O)550",
+                "(O)551",
+                "(O)552",
+                "(O)553",
+                "(O)554",
+                "(O)589",
+                "(O)96",
+                "(O)97",
+                "(O)98",
+                "(O)99",
+                "(O)100",
+                "(O)101"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup3",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)555",
+                "(O)556",
+                "(O)557",
+                "(O)558",
+                "(O)559",
+                "(O)560",
+                "(O)561",
+                "(O)562",
+                "(O)563",
+                "(O)564",
+                "(O)565",
+                "(O)566",
+                "(O)567",
+                "(O)568",
+                "(O)569",
+                "(O)570",
+                "(O)571"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup4",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)555",
+                "(O)556",
+                "(O)557",
+                "(O)558",
+                "(O)559",
+                "(O)560",
+                "(O)561",
+                "(O)562",
+                "(O)108",
+                "(O)109",
+                "(O)110",
+                "(O)111",
+                "(O)112",
+                "(O)113",
+                "(O)114",
+                "(O)586",
+                "(O)587",
+                "(O)588"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup5",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)563",
+                "(O)564",
+                "(O)565",
+                "(O)566",
+                "(O)567",
+                "(O)568",
+                "(O)569",
+                "(O)570",
+                "(O)571",
+                "(O)115",
+                "(O)116",
+                "(O)117",
+                "(O)118",
+                "(O)119",
+                "(O)120",
+                "(O)121",
+                "(O)583",
+                "(O)584",
+                "(O)585"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup6",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)572",
+                "(O)573",
+                "(O)574",
+                "(O)575",
+                "(O)576",
+                "(O)577",
+                "(O)578",
+                "(O)579",
+                "(O)122",
+                "(O)123",
+                "(O)124",
+                "(O)124",
+                "(O)126",
+                "(O)127",
+                "(O)580",
+                "(O)581",
+                "(O)582"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup7",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)538",
+                "(O)539",
+                "(O)540",
+                "(O)541",
+                "(O)542",
+                "(O)543",
+                "(O)544",
+                "(O)102",
+                "(O)103",
+                "(O)104",
+                "(O)105",
+                "(O)106",
+                "(O)107"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup8",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)545",
+                "(O)546",
+                "(O)547",
+                "(O)548",
+                "(O)549",
+                "(O)550",
+                "(O)551",
+                "(O)552",
+                "(O)553",
+                "(O)554",
+                "(O)589",
+                "(O)96",
+                "(O)97",
+                "(O)98",
+                "(O)99",
+                "(O)100",
+                "(O)101"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup9",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)555",
+                "(O)556",
+                "(O)557",
+                "(O)558",
+                "(O)559",
+                "(O)560",
+                "(O)561",
+                "(O)562",
+                "(O)563",
+                "(O)564",
+                "(O)565",
+                "(O)566",
+                "(O)567",
+                "(O)568",
+                "(O)569",
+                "(O)570",
+                "(O)571"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup10",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)555",
+                "(O)556",
+                "(O)557",
+                "(O)558",
+                "(O)559",
+                "(O)560",
+                "(O)561",
+                "(O)562",
+                "(O)108",
+                "(O)109",
+                "(O)110",
+                "(O)111",
+                "(O)112",
+                "(O)113",
+                "(O)114",
+                "(O)586",
+                "(O)587",
+                "(O)588"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup11",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)563",
+                "(O)564",
+                "(O)565",
+                "(O)566",
+                "(O)567",
+                "(O)568",
+                "(O)569",
+                "(O)570",
+                "(O)571",
+                "(O)115",
+                "(O)116",
+                "(O)117",
+                "(O)118",
+                "(O)119",
+                "(O)120",
+                "(O)121",
+                "(O)583",
+                "(O)584",
+                "(O)585"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_CAGGroup12",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "TradeItemId": "881",
+              "TradeItemAmount": 100,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)572",
+                "(O)573",
+                "(O)574",
+                "(O)575",
+                "(O)576",
+                "(O)577",
+                "(O)578",
+                "(O)579",
+                "(O)122",
+                "(O)123",
+                "(O)124",
+                "(O)124",
+                "(O)126",
+                "(O)127",
+                "(O)580",
+                "(O)581",
+                "(O)582"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    // LION'S MANE TAVERN
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModID}}_LMCafe": {
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 1200 2000",
+              "Portrait": "ShopPortraits/DN.SnS/TheMeadowLark",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:miscellaneous.LMCafe.message}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 600 1200",
+              "ClosedMessage": "{{i18n:miscellaneous.LMCafe.closedmessage}}"
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 2000 2600",
+              "ClosedMessage": "{{i18n:miscellaneous.LMCafe.closedmessage}}"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModID}}_LMCGroup1",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)198",
+                "(O)202",
+                "(O)201",
+                "(O)209",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup2",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)204",
+                "(O)205",
+                "(O)218",
+                "(O)212",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup3",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)209",
+                "(O)210",
+                "(O)214",
+                "(O)215",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup4",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)228",
+                "(O)237",
+                "(O)242",
+                "(O)196",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup5",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)226",
+                "(O)231",
+                "(O)239",
+                "(O)240",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup6",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)241",
+                "(O)244",
+                "(O)218",
+                "(O)230",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup7",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)198",
+                "(O)202",
+                "(O)201",
+                "(O)209",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup8",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)204",
+                "(O)205",
+                "(O)218",
+                "(O)212",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup9",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)209",
+                "(O)210",
+                "(O)214",
+                "(O)215",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup10",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)228",
+                "(O)237",
+                "(O)242",
+                "(O)196",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup11",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)226",
+                "(O)231",
+                "(O)239",
+                "(O)240",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "{{ModID}}_LMCGroup12",
+              "AvailableStock": 3,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "RandomItemId": [
+                "(O)DN.SnS_salishbourbon",
+                "(O)DN.SnS_autumnalstew",
+                "(O)DN.SnS_dandeliongreens",
+                "(O)DN.SnS_portfiredrakesparkler",
+                "(O)DN.SnS_zuzustylepizza",
+                "(O)DN.SnS_zuzustylebagelwithlox",
+                "(O)DN.SnS_zuzustylecheesecake",
+                "(O)DN.SnS_zuzustyleclamchowder",
+                "(O)241",
+                "(O)244",
+                "(O)218",
+                "(O)230",
+                "(O)348",
+                "(O)346",
+                "(O)459",
+                "(O)303"
+              ]
+            },
+            {
+              "Id": "Far Afield Snack Recipe",
+              "ItemId": "{{ModID}}_farafieldsnack", 
+              "Price": 1000,
+              "IsRecipe": true,
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Dandelion.7"
+            },
+          ]
+        }
+      }
+    },
+    // LION'S MANE ARMORY
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModID}}_LMArmory": {
+          "Owners": [
+            {
+              "Name": "AnyOrNone",
+              "Condition": "TIME 1200 2000",
+              "Portrait": "Solomon",
+              "Dialogues": [
+                {
+                  "Dialogue": "{{i18n:miscellaneous.LMArmory.message}}"
+                }
+              ]
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 600 1200",
+              "ClosedMessage": "{{i18n:miscellaneous.LMArmory.closedmessage}}"
+            },
+            {
+              "Name": "None",
+              "Condition": "TIME 2000 2600",
+              "ClosedMessage": "{{i18n:miscellaneous.LMArmory.closedmessage}}"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModID}}_LMARandom1",
+              "AvailableStock": 1,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "Price": 30000,
+              "RandomItemId": [
+                "(W)DN.SnS_keytoscarp",
+                "(W)DN.SnS_savethequeen",
+                "(W)DN.SnS_savetheking"
+              ],
+              "MaxItems": 1
+            },
+            {
+              "Id": "{{ModID}}_LMARandom2",
+              "AvailableStock": 1,
+              "AvoidRepeat": true,
+              "AvailableStockLimit": "Player",
+              "Price": 60000,
+              "RandomItemId": [
+                "(W)DN.SnS_twobecomeone",
+                "(W)DN.SnS_oathkeeper",
+                "(W)DN.SnS_waytothedawn"
+              ],
+              "MaxItems": 1
+            },
+            {
+              "Id": "{{ModId}}_LMA1",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_verdantpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA2",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_scarletpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA3",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_heatherpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA4",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_zydratepotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA5",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_pistachiopotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA6",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_dahliapotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA7",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_slushiepotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA8",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_matrixpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA9",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_mcdougalpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA10",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(O)DN.SnS_toirneachpotion",
+              "Price": 2500
+            },
+            {
+              "Id": "{{ModId}}_LMA11",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_spellbinder",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA12",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_threewishes",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA13",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_ladyluck",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA14",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_bondofflame",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA15",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_destinysembrace",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA16",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_sweetmemories",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA17",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_guardianbell",
+              "Price": 15000
+            },
+            {
+              "Id": "{{ModId}}_LMA18",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_axewaquestion",
+              "Price": 10000
+            },
+            {
+              "Id": "{{ModId}}_LMA19",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_mallymkun",
+              "Price": 10000
+            },
+            {
+              "Id": "{{ModId}}_LMA20",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_absolem",
+              "Price": 10000
+            },
+            {
+              "Id": "{{ModId}}_LMA21",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_mrhandy",
+              "Price": 8000
+            },
+            {
+              "Id": "{{ModId}}_LMA22",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_eldadagordagger",
+              "Price": 8000
+            },
+            {
+              "Id": "{{ModId}}_LMA23",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_glaewndilsword",
+              "Price": 8000
+            },
+            {
+              "Id": "{{ModId}}_LMA24",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemID": "(W)DN.SnS_thondrondhammer",
+              "Price": 8000
+            },
+            {
+              "Id": "Stygium Mushroom Tree Seed",
+              "ItemId": "{{ModID}}_mushroomtreeseed", 
+              "Price": 1000,
+              "IsRecipe": true,
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Dandelion.7"
+            },
+            {
+              "Id": "Stygium Blade",
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "ItemId": "(W){{ModID}}_StygiumBlade", 
+              "Price": 10000,
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Dandelion.7"
+            },
+            {
+              "Id": "Elysium Blade",
+              "ItemId": "{{ModID}}_ElysiumBlade", 
+              "Price": 15000,
+              "IsRecipe": true,
+              "Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch4.Dandelion.7, !PLAYER_HAS_CRAFTING_RECIPE Current {{ModID}}_ElysiumBlade"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Gunnar's Adventurer Pack",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "{{ModID}}_LMArmory", "Items" ],
+      "When": {
+        "HasMod": "MadDog.HashtagBearFam",
+        "HasFlag": "MadDog.HashtagBearFam.GunnarsShop"
+      },
+      "Entries": {
+        "{{ModId}}_AddGunnarAdventurerCache": {
+          "Id": "{{ModId}}_AddGunnarAdventurerCache", //
+          "Condition": "PLAYER_HAS_SEEN_EVENT current MadDog.BearFam.16193000",
+          "AvailableStock": 1,
+          "ItemId": "MadDog.HashtagBearFam_Adventurer_Cache",
+          "Price": 1000
+        }
+      }
+    }
+  ]
+}

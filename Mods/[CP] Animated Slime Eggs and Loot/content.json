@@ -1,0 +1,583 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "ConfigSchema": {
+        "ArcticShard": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "BlueSlimeEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Ectoplasm": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GalaxySoul": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GoldenCoconut": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GoldenEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GoldenPumpkin": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "GreenSlimeEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "HealthHeart": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Pearl1": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "Pearl2": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PrismaticJelly": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "PurpleSlimeEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "QiGem": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "RedSlimeEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Slime1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "Slime2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "SolarEssence": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TigerSlimeEgg": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TreasureChest1": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "TreasureChest2": {
+            "AllowValues": "true,false",
+            "Default": "false",
+            "AllowMultiple": false
+        },
+        "VoidEssence": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        },
+        "WrigglingWorm": {
+            "AllowValues": "true,false",
+            "Default": "true",
+            "AllowMultiple": false
+        }
+    },
+    "Format": "2.4.0",
+    "Changes": [
+        {
+            "LogName": "ArcticShard",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "ArcticShard": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_ArcticShard": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 64,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/arctic_shard.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Blue Slime Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "BlueSlimeEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_BlueSlimeEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 272,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/blueslimeegg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Ectoplasm",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Ectoplasm": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_Ectoplasm": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 176,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/ectoplasm.png}}:0..3@20"
+                }
+            }
+        },
+        {
+            "LogName": "Galaxy Soul",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GalaxySoul": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_GalaxySoul": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 592,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/galaxy_soul.png}}:0..23@10"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Coconut",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoldenCoconut": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_GoldenCoconut": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 368,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/golden_coconut.png}}:0..11@15"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoldenEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_GoldenEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 256,
+                        "Y": 608,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/golden_egg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Golden Pumpkin",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GoldenPumpkin": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_GoldenPumpkin": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 208,
+                        "Y": 240,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/goldenpumpkin.png}}:0..21@5"
+                }
+            }
+        },
+        {
+            "LogName": "Green Slime Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "GreenSlimeEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_GreenSlimeEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 128,
+                        "Y": 448,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/greenslimeegg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Health Heart",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "HealthHeart": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_HealthHeart": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 608,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/health_heart.png}}:0..7@10"
+                }
+            }
+        },
+        {
+            "LogName": "Pearl 1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pearl1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_Pearl1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pearl.png}}:0..13@10"
+                }
+            }
+        },
+        {
+            "LogName": "Pearl 2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Pearl2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_Pearl2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 528,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/pearl2.png}}:0..13@10"
+                }
+            }
+        },
+        {
+            "LogName": "Prismatic Jelly",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PrismaticJelly": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_PrismaticJelly": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 192,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/prismatic_jelly.png}}:0..23@10"
+                }
+            }
+        },
+        {
+            "LogName": "Purple Slime Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "PurpleSlimeEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_PurpleSlimeEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 112,
+                        "Y": 288,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/purpleslimeegg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Qi Gem",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "QiGem": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_QiGem": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 288,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/qi_gem.png}}:0..11@15"
+                }
+            }
+        },
+        {
+            "LogName": "Red Slime Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "RedSlimeEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_RedSlimeEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 288,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/redslimeegg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Slime1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Slime1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_Slime1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 496,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/slime1.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Slime2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "Slime2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_Slime2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 496,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/slime2.png}}:0..16@10"
+                }
+            }
+        },
+        {
+            "LogName": "Solar Essence",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "SolarEssence": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_SolarEssence": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/solaressence.png}}:0..10@6"
+                }
+            }
+        },
+        {
+            "LogName": "Tiger Slime Egg",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TigerSlimeEgg": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_TigerSlimeEgg": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 272,
+                        "Y": 560,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/tiger_slime_egg.png}}:0..9@20"
+                }
+            }
+        },
+        {
+            "LogName": "Treasure Chest1",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TreasureChest1": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_TreasureChest1": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/treasurechest1.png}}:0..21@6"
+                }
+            }
+        },
+        {
+            "LogName": "Treasure Chest2",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "TreasureChest2": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_TreasureChest2": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 352,
+                        "Y": 96,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/treasurechest2.png}}:0..19@6"
+                }
+            }
+        },
+        {
+            "LogName": "Void Essence",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "VoidEssence": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_VoidEssence": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 16,
+                        "Y": 512,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/voidessence.png}}:0..9@12"
+                }
+            }
+        },
+        {
+            "LogName": "Wriggling Worm",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "When": {
+                "WrigglingWorm": true
+            },
+            "Entries": {
+                "Gervig91.AnimatedSlimeEggandLoot_WrigglingWorm": {
+                    "TargetTexture": "Maps/springobjects",
+                    "TargetRect": {
+                        "X": 80,
+                        "Y": 576,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/wriggling_worm.png}}:0..5@12"
+                }
+            }
+        }
+    ]
+}

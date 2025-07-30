@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        //When Stefan is added, he and Oliver can hang out together
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter8.3005}}",
+                "Eloise": "{{i18n:festivals.eloise.winter8.3005}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=57873005": true
+            }
+        },
+        //Modded Festivals *************************************************
+        // Fireworks Festival
+        {
+            "LogName": "Add Oliver",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 89 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        {
+            "LogName": "Add  dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer20}}",
+            },
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        // Ember of Resolutions
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter28}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 53 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "OliverK 52 43 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "LogName": "Add Oliver",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.spring19}}",
+                "Leximonster": "{{i18n:festivals.lexi.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 25 100 2/OliverK 24 100 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57872012",
+                "HasMod": "UNA.FF.CP"
+            },
+        },
+    ]
+}

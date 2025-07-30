@@ -1,0 +1,89 @@
+{
+	"Changes": [
+		{
+			"LogName": "Dandelion's Schedule - Not Unlocked",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// Prior to Dandelion being unlocked.
+				"spring": "0 EastScarp_TNPCWaitingWarpRoom 14 5 2/1200 EastScarp_TNPCWaitingWarpRoom 14 6 2/1800 EastScarp_TNPCWaitingWarpRoom 14 5 2"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": false
+			}
+		},
+		{
+			"LogName": "Dandelion's Schedule - Unlocked",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// After reuniting with Roslin.
+				"rain": "{{Random:610 EastScarp_LionsMane 12 26 0 Dandelion_readfront++610 EastScarp_LionsMane 7 27 0++610 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/1100 EastScarp_LionsMane 8 16 1/1300 EastScarp_VillageInn 12 33 0/{{Random:1800 EastScarp_LionsMane 12 26 0 Dandelion_readfront++1800 EastScarp_LionsMane 7 27 0++1800 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/2200 EastScarp_LionsMane 3 5 1",
+				"spring": "{{Random:610 EastScarp_LionsMane 12 26 0 Dandelion_readfront++610 EastScarp_LionsMane 7 27 0++610 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/1100 EastScarp_LionsMane 8 16 1/1300 EastScarp_Village 66 76 2 Dandelion_loaf/1600 EastScarp_VillageInn 12 33 0/{{Random:1800 EastScarp_LionsMane 12 26 0 Dandelion_readfront++1800 EastScarp_LionsMane 7 27 0++1800 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/2200 EastScarp_LionsMane 3 5 1"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		},
+		/*{
+			"LogName": "Dandelion's Schedule - Night Market & Squid Festival",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// Dandelion will attend the Night Market & Squid Festival.
+				"winter_12": "MAIL beachBridgeFixed/GOTO spring/{{Random:610 EastScarp_LionsMane 12 26 0 Dandelion_readfront++610 EastScarp_LionsMane 7 27 0++610 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/1300 Beach 86 30 3/2200 EastScarp_LionsMane 3 5 1",
+				"winter_13": "GOTO winter_12",
+				"winter_15": "GOTO winter_12",
+				"winter_16": "GOTO winter_12",
+				"winter_17": "GOTO winter_12"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		},*/
+		{
+			"LogName": "Dandelion's Schedule - Trout Derby",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// Dandelion will attend the Trout Derby.
+				"summer_20": "{{Random:610 EastScarp_LionsMane 12 26 0 Dandelion_readfront++610 EastScarp_LionsMane 7 27 0++610 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/800 Forest 70 40 3/2000 EastScarp_LionsMane 3 5 1",
+				"summer_21": "GOTO summer_20"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		},
+		{
+			"LogName": "Dandelion's Schedule - Desert Festival",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// Dandelion will attend the Desert Festival
+				"DesertFestival": "610 EastScarp_LionsMane 3 5 1/630 Desert 5 55 3/2000 EastScarp_LionsMane 3 5 1",
+				"DesertFestival_2": "GOTO DesertFestival",
+				"DesertFestival_3": "GOTO DesertFestival"
+			},
+			"When": {
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		},
+		{
+			"LogName": "Dandelion's Schedule - SVE Community Day",
+			"Action": "EditData",
+			"Target": "Characters/Schedules/Dandelion",
+			"Entries": {
+				// Will attend Community Day if Stardew Valley Expanded is installed.
+				"spring_22": "{{Random:610 EastScarp_LionsMane 12 26 0 Dandelion_readfront++610 EastScarp_LionsMane 7 27 0++610 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/1030 CommunityCenter 16 24 3/{{Random:1800 EastScarp_LionsMane 12 26 0 Dandelion_readfront++1800 EastScarp_LionsMane 7 27 0++1800 EastScarp_LionsMane 2 26 3|inputSeparator=++}}/2200 EastScarp_LionsMane 3 5 1",
+				"summer_22": "GOTO spring_22",
+				"fall_22": "GOTO spring_22",
+				"winter_22": "GOTO spring_22"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=SnS.Ch4.Roslin.6": true
+			}
+		}
+	]
+}
+//(0 = up, 1 = right, 2 = down, 3 = left)

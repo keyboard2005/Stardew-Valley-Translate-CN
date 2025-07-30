@@ -1,0 +1,21 @@
+{
+	"Changes":[
+		{
+			"LogName": "Island Trader",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "IslandTrade", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/IslandTrader_{{Bird}}"},
+		},
+		{
+			"LogName": "Bird Shift",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/LooseSprites/IslandTrader_{{Bird}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 256, "Y": 992, "Width": 144, "Height": 48 },
+			"Priority": "Late",
+			"When": {"HasFile:{{FromFile}}": true}
+		},	
+	],
+}

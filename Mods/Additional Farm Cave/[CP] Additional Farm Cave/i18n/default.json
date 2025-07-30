@@ -1,0 +1,36 @@
+{
+    "config.Ts_AFC_EnableThisMod.name": "Enable the mod.",
+    "config.Ts_AFC_EnableThisMod.description": "On/Off setting of this mod itself.",
+
+    "config.Ts_AFC_AvoidCertainBugs.name": "Avoid certain bugs.",
+    "config.Ts_AFC_AvoidCertainBugs.description": "There was a bug up to v1.3 where warp totems would appear on the collectibles in front of the dusty chapel and would not disappear. If you have this condition, please turn on this item. A word of caution! If you turn this item ON, the cave will be created as a different MAP, although it looks the same. If you have placed valuable items in the cave, please remove them before changing the settings.",
+
+    "config.Ts_AFC_OpenImmediately.name": "Immediate Open",
+    "config.Ts_AFC_OpenImmediately.description": "Originally, they are opened when the conditions are cleared, but checking this item will allow you to enter additional areas immediately.",
+
+
+    "config.section.Ts_AFC_S_FarmCavePack.name": "Below are the settings when using^Kisaa's Farm Cave Pack mod",
+    "config.section.Ts_AFC_S_FarmCavePack.description": "The settings must be exactly the same as the settings in the Kisaa's Farm Cave Pack mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur. (If the cave type is \"Fantasy\", the entrance is shown on the right side of the cave.)",
+
+    "config.Ts_AFC_CRFCP_CaveType.name": "Farm Cave Type",
+
+
+    "config.section.Ts_AFC_Cautions.name": "Below are the settings when using^Hippo's Farm Cave Variety mod",
+    "config.section.Ts_AFC_Cautions.description": "The settings must be exactly the same as the settings in the Hippo's Farm Cave Variety mod. If the settings are not exactly the same, unexpected patching may occur and display problems may occur.",
+
+    "config.Ts_AFC_HFCV_CaveType.name": "CaveType",
+    "config.Ts_AFC_HFCV_MatchFarm.name": "MatchFarm",
+    "config.Ts_AFC_HFCV_AlternateCombat.name": "AlternateCombat",
+    "config.Ts_AFC_HFCV_AlternateIsland.name": "AlternateIsland",
+
+
+    "AdFCms01": "There's a faint rustling sound coming from behind the small shrine...",
+    "AdFCms02": "Someone has been leaving gifts at this shrine. Who could it be?",
+    "AdFCms03": "A breeze from the surface is blowing in through the opening in the shrine.^Maybe it's a passage for small creatures?",
+    "AdFCms04": "There's a small shrine here.^Wait, is there something moving in there...?",
+    "AdFCms05": "This little forest spirit was the one delivering the gifts all along!",
+
+
+    "Mail Title 01": "Opened a hidden room in the farm cave.",
+    "Mail Text 01": "Dear, @.^^Demetrius discovered a boarded-up room in the back of your farm cave while he was setting up his research specimens.^We've removed the boards from the doorway, but unfortunately the room is too bright to expand his experiment. Maybe you can make some use of that extra space!^^-Robin",
+}

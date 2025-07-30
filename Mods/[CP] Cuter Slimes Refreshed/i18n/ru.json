@@ -1,0 +1,14 @@
+{
+    "config.section.General.name": "Общие Настройки",
+    "config.section.Appearance.name": "Настройки Внешнего Вида",
+
+    "config.Enabled.name": "Включить Милых Слаймов",
+    "config.Enabled.description": "Включите это, чтобы сделать всех ваших слаймов милее, чем когда-либо.",
+    "config.Enabled.values.true": "Да",
+    "config.Enabled.values.false": "Нет",
+
+    "config.Mode.name": "Стиль Слаймов",
+    "config.Mode.description": "Выберите, как должны выглядеть ваши слаймы. Желейный делает их более мягкими и полупрозрачными, а Глянцевый придает им блестящий, отражающий вид.",
+    "config.Mode.values.jelly": "Желейный",
+    "config.Mode.values.glossy": "Глянцевый"
+}

@@ -1,0 +1,177 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Pam's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Pam_Spring, Portraits/Pam_Summer, Portraits/Pam_Fall, Portraits/Pam_Winter_Outdoor, Portraits/Pam_Winter_Indoor, Portraits/Pam_FlowerDance, Portraits/Pam_SpiritsEve, Characters/Pam_Spring, Characters/Pam_Summer, Characters/Pam_Fall, Characters/Pam_Winter_Outdoor, Characters/Pam_Winter_Indoor, Characters/Pam_FlowerDance, Characters/Pam_SpiritsEve, Characters/Pam_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Pam/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "Edit Pam's Beach Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam_Beach, Characters/Pam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Pam/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Pam - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam_Spring, Characters/Pam_Summer, Characters/Pam_Fall, Characters/Pam_Winter_Outdoor, Characters/Pam_Winter_Indoor, Characters/Pam_FlowerDance, Characters/Pam_SpiritsEve, Characters/Pam_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Pam/Pam_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Pam - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Pam/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Pam - Spirit's Eve Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam_SpiritsEve",
+            "FromFile": "assets/{{TargetPathOnly}}/Pam/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Pam Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Pam", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.PamSpring": {
+					"Id": "{{ModId}}.PamSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Pam_Spring",
+					"Portrait": "Portraits/Pam_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.PamSummer": {
+					"Id": "{{ModId}}.PamSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Pam_Summer",
+					"Portrait": "Portraits/Pam_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PamFall": {
+					"Id": "{{ModId}}.PamFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Pam_Fall",
+					"Portrait": "Portraits/Pam_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PamWinterIndoor": {
+					"Id": "{{ModId}}.PamWinterIndoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,IndoorOnly}}",
+					"Sprite": "Characters/Pam_Winter_Indoor",
+					"Portrait": "Portraits/Pam_Winter_Indoor",
+					"Outdoors": "{{WinterIndoorOutdoorOutfits |contains=IndoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.PamWinterOutdoor": {
+					"Id": "{{ModId}}.PamWinterOutdoor",
+					"Condition": "SEASON Winter, {{WinterIndoorOutdoorOutfits |contains=IndoorOutdoor,OutdoorOnly}}",
+					"Sprite": "Characters/Pam_Winter_Outdoor",
+					"Portrait": "Portraits/Pam_Winter_Outdoor",
+					"Indoors": "{{WinterIndoorOutdoorOutfits |contains=OutdoorOnly}}",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.PamFlowerDance": {
+					"Id": "{{ModId}}.PamFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Pam_FlowerDance",
+					"Portrait": "Portraits/Pam_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.PamSpirit": {
+					"Id": "{{ModId}}.PamSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Pam_SpiritsEve",
+					"Portrait": "Portraits/Pam_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.PamBeach": {
+					"Id": "{{ModId}}.PamBeach",
+					"Sprite": "Characters/Pam_Beach",
+					"Portrait": "Portraits/Pam_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				"{{ModId}}.PamAerobics": {
+					"Id": "{{ModId}}.PamAerobics",
+					"Condition": "ANY \"LOCATION_NAME Target SeedShop, DAY_OF_WEEK Tuesday, {{ExtraOutfits}}, WEATHER Target Sun Wind Snow\" \"IS_EVENT 58\"",
+					"Portrait": "Portraits/Pam_{{Aerobics}}",
+					"Sprite": "Characters/Pam_Aerobics",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Pam - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Pam - Bus",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 19 },
+			"ToArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 19 },
+		},
+		{
+            "LogName": "Pam Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Pam",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Aerobics}}.png",
+        },		
+		
+	]
+}
