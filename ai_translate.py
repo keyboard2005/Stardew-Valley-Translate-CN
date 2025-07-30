@@ -75,9 +75,92 @@ def translate_json_values(data: Dict[str, Any]) -> Dict[str, Any]:
     
     return translated
 
+def load_existing_translations(output_path: str) -> Dict[str, Any]:
+    """加载已存在的翻译文件"""
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                if content.strip():
+                    return json.loads(content)
+        except (json.JSONDecodeError, FileNotFoundError) as e:
+            print(f"读取已存在翻译文件失败: {e}")
+    return {}
+
+def merge_translations(existing: Dict[str, Any], new_data: Dict[str, Any]) -> Dict[str, Any]:
+    """合并已存在的翻译和新数据，保留已翻译的内容"""
+    merged = existing.copy()
+    
+    for key, value in new_data.items():
+        if key not in merged:
+            merged[key] = value
+        elif isinstance(value, dict) and isinstance(merged[key], dict):
+            # 递归合并嵌套字典
+            merged[key] = merge_translations(merged[key], value)
+        elif isinstance(value, list) and isinstance(merged[key], list):
+            # 合并列表，保持原有长度
+            if len(merged[key]) < len(value):
+                merged[key].extend(value[len(merged[key]):])
+    
+    return merged
+
+def get_untranslated_items(source_data: Dict[str, Any], existing_translations: Dict[str, Any]) -> Dict[str, Any]:
+    """获取需要翻译的项目（排除已翻译的）"""
+    untranslated = {}
+    
+    for key, value in source_data.items():
+        if isinstance(value, str):
+            # 如果不存在翻译或翻译为空，则需要翻译
+            if key not in existing_translations or not existing_translations[key].strip():
+                untranslated[key] = value
+        elif isinstance(value, dict):
+            if key not in existing_translations:
+                existing_translations[key] = {}
+            nested_untranslated = get_untranslated_items(value, existing_translations[key])
+            if nested_untranslated:
+                untranslated[key] = nested_untranslated
+        elif isinstance(value, list):
+            if key not in existing_translations:
+                existing_translations[key] = []
+            
+            # 确保已存在的列表长度足够
+            while len(existing_translations[key]) < len(value):
+                existing_translations[key].append("")
+            
+            untranslated_list = []
+            for i, item in enumerate(value):
+                if isinstance(item, str):
+                    if i >= len(existing_translations[key]) or not existing_translations[key][i].strip():
+                        untranslated_list.append(item)
+                    else:
+                        untranslated_list.append(None)  # 标记为已翻译
+                else:
+                    untranslated_list.append(item)
+            
+            # 只有包含需要翻译的项目时才添加
+            if any(item is not None and isinstance(item, str) for item in untranslated_list):
+                untranslated[key] = untranslated_list
+    
+    return untranslated
+
 async def translate_json_values_async(data: Dict[str, Any], output_path: str, model: str = "gpt-4o", max_concurrent: int = 5) -> Dict[str, Any]:
-    """异步递归翻译JSON中的所有字符串值，真正实时写入，支持并发"""
-    translated = {}
+    """异步递归翻译JSON中的所有字符串值，真正实时写入，支持并发，支持增量翻译"""
+    
+    # 加载已存在的翻译
+    existing_translations = load_existing_translations(output_path)
+    print(f"已加载 {len(existing_translations)} 个已存在的翻译条目")
+    
+    # 获取需要翻译的项目
+    untranslated_data = get_untranslated_items(data, existing_translations)
+    
+    if not untranslated_data:
+        print("所有条目已翻译完成，无需重新翻译")
+        return existing_translations
+    
+    print(f"发现 {len(untranslated_data)} 个需要翻译的条目")
+    
+    # 初始化翻译结果为已存在的翻译
+    translated = existing_translations.copy()
     
     # 确保输出目录存在
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -101,31 +184,38 @@ async def translate_json_values_async(data: Dict[str, Any], output_path: str, mo
             
             return result
     
-    # 处理所有数据项
+    # 处理所有需要翻译的数据项
     tasks = []
-    for key, value in data.items():
+    for key, value in untranslated_data.items():
         if isinstance(value, str):
             # 创建翻译任务
             task = asyncio.create_task(translate_and_save(value, key))
             tasks.append((key, task))
         elif isinstance(value, dict):
             # 递归处理嵌套字典
-            translated[key] = await translate_json_values_async(value, output_path, model, max_concurrent)
+            if key not in translated:
+                translated[key] = {}
+            nested_result = await translate_json_values_async(value, output_path, model, max_concurrent)
+            translated[key].update(nested_result)
         elif isinstance(value, list):
             # 处理列表
-            list_tasks = []
-            translated_list = value.copy()  # 先复制原列表
+            if key not in translated:
+                translated[key] = []
             
+            # 确保列表长度足够
+            while len(translated[key]) < len(value):
+                translated[key].append("")
+            
+            list_tasks = []
             for i, item in enumerate(value):
-                if isinstance(item, str):
+                if isinstance(item, str) and item is not None:  # None表示已翻译
                     async def translate_list_item(text, index, list_key):
                         async with semaphore:
                             result = await translate_text_ai(text, model)
                             
                             # 实时更新列表并写入文件
                             async with write_lock:
-                                translated_list[index] = result
-                                translated[list_key] = translated_list.copy()
+                                translated[list_key][index] = result
                                 with open(output_path, 'w', encoding='utf-8') as file:
                                     json.dump(translated, file, ensure_ascii=False, indent=2)
                                 print(f"已保存列表进度: {list_key}[{index}]")
@@ -138,11 +228,6 @@ async def translate_json_values_async(data: Dict[str, Any], output_path: str, mo
             # 等待所有列表项翻译完成
             if list_tasks:
                 await asyncio.gather(*list_tasks)
-            
-            translated[key] = translated_list
-        else:
-            # 保持其他类型不变
-            translated[key] = value
     
     # 等待所有主要任务完成
     if tasks:
