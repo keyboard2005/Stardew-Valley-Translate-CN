@@ -127,8 +127,8 @@ python ai_translate.py --input default.json --output zh.json
 python name_replace.py --file zh.json --mapping npc_name.json
 ```
 
-## 📋 更新日志
-
+<!-- ## 📋 更新日志 -->
+<!-- 
 ### v0.0.2 (2025-07-30)
 - ✨ 新增 AI 翻译助手
 - 🐛 修复翻译文件加载问题
@@ -137,13 +137,13 @@ python name_replace.py --file zh.json --mapping npc_name.json
 ### v0.0.1 (2025-07-01)
 - 🎉 项目初始发布
 - 🌟 基础翻译框架
-- 📦 支持首批模组翻译
+- 📦 支持首批模组翻译 -->
 
 ## 📞 联系我们
 
 - 🐛 **Bug 报告**：[GitHub Issues](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/issues)
-- 💬 **讨论交流**：[GitHub Discussions](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/discussions)
-- 📧 **邮件联系**：[项目维护者邮箱]
+<!-- - 💬 **讨论交流**：[GitHub Discussions](https://github.com/keyboard2005/Stardew-Valley-Translate-CN/discussions) -->
+- 📧 **邮件联系**：[samuraizd@outlook.com]
 
 ## 📄 开源协议
 
