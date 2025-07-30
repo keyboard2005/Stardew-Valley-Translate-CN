@@ -128,5 +128,19 @@
   "Core.Items.FrogspawnCoral.Description": "一种具有大珊瑚虫的石珊瑚，看起来像青蛙卵。它们可以伸出长长的刺痛触须，攻击靠得太近的邻近珊瑚。",
   "Core.Items.TorchCoral": "火炬珊瑚",
   "Core.Items.TorchCoral.Description": "一种带有大珊瑚虫的石珊瑚，末端是长长的、色彩鲜艳的触手。它具有攻击性，会蛰伤附近的其他珊瑚。",
-  "Core.Items.DuncanCoral": "邓肯·珊瑚"
+  "Core.Items.DuncanCoral": "邓肯·珊瑚",
+  "Core.Items.DuncanCoral.Description": "一种生长迅速的石珊瑚，拥有明亮的青绿色珊瑚虫，末端为短小的紫色触手。它们食欲旺盛，但并不具攻击性。",
+  "Core.Items.Trachyphyllia": "脉菠萝珊瑚",
+  "Core.Items.Trachyphyllia.Description": "被称为开放脑珊瑚，它能够通过膨胀自身的组织，借助水流慢慢移动。",
+  "Core.Items.Scolymia": "扁脑珊瑚",
+  "Core.Items.Scolymia.Description": "一种美丽的石珊瑚，多种惊艳颜色可供选择。水族爱好者非常追捧。",
+  "Core.Items.AcanCoral": "海扇珊瑚",
+  "Core.Items.AcanCoral.Description": "一种石珊瑚，具有大量颜色变化。在生长过程中，珊瑚群形成圆顶状。",
+  "Core.Items.ToadstoolCoral": "蟾蜍珊瑚",
+  "Core.Items.ToadstoolCoral.Description": "一种皮革珊瑚。覆盖在其“帽”上的数百个微小珊瑚虫让其外观柔软且毛茸茸。它可以长到相当大的尺寸！",
+  "Core.Items.CandycaneCoral": "糖果杖珊瑚",
+  "Core.Items.CandycaneCoral.Description": "这种石珊瑚也被称为喇叭珊瑚，可以见到绿色、紫色和棕色的变种。群体可以长到16英尺宽。",
+  "Core.Items.AcroporaCoral": "鹿角珊瑚",
+  "Core.Items.AcroporaCoral.Description": "一种石珊瑚，拥有多种颜色，生长出独特的分枝形态。对水化学变化非常敏感。",
+  "Core.Items.EleganceCoral": "典雅珊瑚"
 }
